@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSE 數學題目庫 (跨課題多行優化版)</title>
+    <script>
+        window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; padding: 20px; margin: 0; background: #f8f9fa; }
+        .filter-container { position: sticky; top: 10px; z-index: 1000; background: rgba(255, 255, 255, 0.98); padding: 15px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); backdrop-filter: blur(8px); margin-bottom: 25px; }
+        .filter-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+        .filter-body { transition: all 0.3s ease; }
+        .filter-container.minimized .filter-body { display: none; }
+        .filter-row { margin-bottom: 12px; display: flex; flex-direction: column; gap: 5px; }
+        .filter-label { font-size: 14px; font-weight: bold; color: #555; }
+        .chip-group { display: flex; flex-wrap: wrap; gap: 8px; }
+        .chip { padding: 6px 14px; border: 1px solid #ddd; border-radius: 20px; font-size: 13px; cursor: pointer; background: #fff; }
+        .chip.active { background: #007aff; color: white; border-color: #007aff; }
+        input[type="text"] { width: 100%; padding: 10px 14px; border: 1px solid #ddd; border-radius: 8px; font-size: 15px; box-sizing: border-box; margin-bottom: 15px; }
+        .btn { padding: 8px 16px; border: none; border-radius: 8px; font-size: 14px; cursor: pointer; font-weight: 500; }
+        .btn-toggle { background: #007aff; color: white; }
+        .btn-reset { background: #e0e0e0; color: #333; }
+        
+        #list { max-width: 800px; margin: 0 auto; padding-bottom: 50px; }
+        .question-card { background: #fff; border: 1px solid #e1e4e8; padding: 22px; margin: 15px 0; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+        .question-card h3 { margin-top: 0; color: #007aff; font-size: 1.1rem; border-bottom: 1px solid #f0f0f0; padding-bottom: 8px; }
+        
+        /* 💡 關鍵：允許文字內容中的反單引號換行或 \n 正常換行 */
+        .question-content, .detail-content { 
+            font-size: 16px; 
+            line-height: 1.7; 
+            margin: 15px 0; 
+            white-space: pre-wrap; 
+        }
+        
+        details { margin-top: 10px; background: #f1f5f9; border-radius: 8px; overflow: hidden; }
+        summary { padding: 12px; font-weight: bold; color: #475569; cursor: pointer; }
+        .detail-content { padding: 15px; background: #fff; font-size: 15px; }
+    </style>
+</head>
+<body>
+
+    <h1>DSE 數學題目庫</h1>
+    
+    <div class="filter-container" id="filterContainer">
+        <div class="filter-header">
+            <button class="btn btn-toggle" id="toggleBtn" onclick="toggleFilter()">隱藏篩選器</button>
+            <div><button class="btn btn-reset" onclick="resetFilters()">重設所有條件</button></div>
+        </div>
+        
+        <div class="filter-body">
+            <input type="text" id="keyword" placeholder="搜尋關鍵字或題號..." oninput="filterData()">
+
+            <div class="filter-row">
+                <span class="filter-label">年份 (可多選):</span>
+                <div class="chip-group" id="yearGroup">
+                    <button class="chip" data-value="2025" onclick="toggleChip(this)">2025</button>
+                    <button class="chip" data-value="2024" onclick="toggleChip(this)">2024</button>
+                </div>
+            </div>
+
+            <div class="filter-row">
+                <span class="filter-label">卷別 (可多選):</span>
+                <div class="chip-group" id="typeGroup">
+                    <button class="chip" data-value="P1" onclick="toggleChip(this)">卷一 (長題目)</button>
+                    <button class="chip" data-value="P2" onclick="toggleChip(this)">卷二 (MC)</button>
+                </div>
+            </div>
+
+            <div class="filter-row">
+                <span class="filter-label">數學範疇 (可多選):</span>
+                <div class="chip-group" id="domainGroup">
+                    <button class="chip" data-value="Algebra" onclick="toggleChip(this)">代數 (Algebra)</button>
+                    <button class="chip" data-value="Geometry" onclick="toggleChip(this)">幾何 (Geometry)</button>
+                </div>
+            </div>
+
+            <div class="filter-row">
+                <span class="filter-label">課題 (可多選):</span>
+                <div class="chip-group" id="topicGroup">
+                    <button class="chip" data-value="Quadratic Functions" onclick="toggleChip(this)">二次函數</button>
+                    <button class="chip" data-value="Coordinate Geometry" onclick="toggleChip(this)">坐標幾何</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="list"></div>
+
+    <script src="data.js"></script>
+    <script>
+        function toggleChip(button) {
+            button.classList.toggle('active');
+            filterData();
+        }
+
+        function getSelectedValues(groupId) {
+            return Array.from(document.querySelectorAll(`#${groupId} .chip.active`)).map(chip => chip.getAttribute('data-value'));
+        }
+
+        async function filterData() {
+            const keyword = document.getElementById('keyword').value.toLowerCase();
+            const selectedYears = getSelectedValues('yearGroup');
+            const selectedTypes = getSelectedValues('typeGroup');
+            const selectedDomains = getSelectedValues('domainGroup');
+            const selectedTopics = getSelectedValues('topicGroup');
+
+            const filtered = questions.filter(q => {
+                const matchKeyword = q.content.toLowerCase().includes(keyword) || q.id.toLowerCase().includes(keyword);
+                const matchYear = selectedYears.length === 0 || selectedYears.includes(q.year.toString());
+                const matchType = selectedTypes.length === 0 || selectedTypes.includes(q.type);
+                
+                // 💡 升級版陣列交集判斷：只要題目的多個標籤中，有包含用家選取的任意一個即可（若用家沒選則視為 All pass）
+                const matchDomain = selectedDomains.length === 0 || 
+                    (Array.isArray(q.domain) ? q.domain.some(d => selectedDomains.includes(d)) : selectedDomains.includes(q.domain));
+                
+                const matchTopic = selectedTopics.length === 0 || 
+                    (Array.isArray(q.topic) ? q.topic.some(t => selectedTopics.includes(t)) : selectedTopics.includes(q.topic));
+
+                return matchKeyword && matchYear && matchType && matchDomain && matchTopic;
+            });
+
+            const list = document.getElementById('list');
+            if(filtered.length === 0) {
+                list.innerHTML = `<p style="text-align:center; color:#999; margin-top:50px;">沒有符合條件的題目。</p>`;
+                return;
+            }
+
+            list.innerHTML = filtered.map(q => `
+                <div class="question-card">
+                    <h3>${q.id}</h3>
+                    <div class="question-content">${q.content}</div>
+                    <details>
+                        <summary>💡 顯示解題提示</summary>
+                        <div class="detail-content">${q.hint}</div>
+                    </details>
+                    <details>
+                        <summary>📝 顯示分題答案 / 題解</summary>
+                        <div class="detail-content">${q.solution}</div>
+                    </details>
+                </div>
+            `).join('');
+
+            if (window.MathJax && MathJax.typesetPromise) {
+                await MathJax.typesetPromise();
+            }
+        }
+
+        function resetFilters() {
+            document.getElementById('keyword').value = "";
+            document.querySelectorAll('.chip.active').forEach(chip => chip.classList.remove('active'));
+            filterData();
+        }
+
+        function toggleFilter() {
+            const container = document.getElementById('filterContainer');
+            const btn = document.getElementById('toggleBtn');
+            if (container.classList.contains('minimized')) {
+                container.classList.remove('minimized');
+                btn.innerText = "隱藏篩選器";
+            } else {
+                container.classList.add('minimized');
+                btn.innerText = "顯示篩選器";
+            }
+        }
+
+        filterData();
+    </script>
+</body>
+</html>
