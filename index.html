@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1303 DSE 數學題目庫</title>
+    <title>1520 DSE 數學題目庫 (難度標籤版)</title>
     <script>
         window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
     </script>
@@ -36,11 +36,21 @@
         
         #list { max-width: 800px; margin: 0 auto; padding-bottom: 50px; }
         .question-card { background: #fff; border: 1px solid #e1e4e8; padding: 22px; margin: 15px 0; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
-        .question-card h3 { margin-top: 0; color: #4a5568; font-size: 1.1rem; border-bottom: 1px solid #f0f0f0; padding-bottom: 8px; }
-        .question-content, .detail-content { font-size: 16px; line-height: 1.7; margin: 15px 0; white-space: pre-wrap; }
         
-        /* 🎯 題目圖片控制：自適應大小與置中 */
-        .q-img { display: block; max-width: 100%; height: auto; margin: 15px auto; border-radius: 4px; }
+        /* 🎯 需求 1：題目卡片頂部改為 Flex 佈局，方便置放 ID 與 難度標籤 */
+        .card-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #f0f0f0; padding-bottom: 8px; margin-bottom: 12px; }
+        
+        /* 🎯 需求 1：題目 id 樣式優化為較小的 monospace 字體 */
+        .q-id { font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace; font-size: 14px; color: #666; font-weight: 600; margin: 0; }
+        
+        /* 🎯 需求 2：難度標籤基礎樣式與三隻專屬顏色 */
+        .diff-badge { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 12px; font-weight: bold; padding: 3px 10px; border-radius: 6px; letter-spacing: 0.5px; }
+        .diff-lv1 { background: #e0f2fe; color: #0369a1; } /* 藍色：Lv.2 基礎 */
+        .diff-lv2 { background: #fef3c7; color: #b45309; } /* 橙色：Lv.3-4 中階 */
+        .diff-lv3 { background: #fee2e2; color: #b91c1c; } /* 紅色：Lv.5+ 高階 */
+
+        .question-content, .detail-content { font-size: 16px; line-height: 1.7; margin: 15px 0; white-space: pre-wrap; }
+        .q-img { display: block; max-width: 100%; height: auto; margin: 15px auto; border-radius: 4px; box-shadow: 0 1px 5px rgba(0,0,0,0.1); }
 
         /* 分數右對齊排版 */
         .q-line { display: flex; justify-content: space-between; align-items: flex-end; width: 100%; margin-bottom: 6px; }
@@ -71,8 +81,8 @@
                     <button class="chip chip-base" data-group="level" data-value="Junior" onclick="toggleChip(this)">初中</button>
                     <button class="chip chip-base" data-group="level" data-value="Senior" onclick="toggleChip(this)">高中</button>
                     <span style="border-left:1px solid #ccc; margin:0 5px;"></span>
-                    <button class="chip chip-base" data-group="type" data-value="P1" onclick="toggleChip(this)">卷一</button>
-                    <button class="chip chip-base" data-group="type" data-value="P2" onclick="toggleChip(this)">卷二</button>
+                    <button class="chip chip-base" data-group="type" data-value="P1" onclick="toggleChip(this)">卷一 (長題目)</button>
+                    <button class="chip chip-base" data-group="type" data-value="P2" onclick="toggleChip(this)">卷二 (MC)</button>
                     <span style="border-left:1px solid #ccc; margin:0 5px;"></span>
                     <button class="chip chip-base" data-group="year" data-value="2025" onclick="toggleChip(this)">2025</button>
                     <button class="chip chip-base" data-group="year" data-value="2024" onclick="toggleChip(this)">2024</button>
@@ -138,11 +148,8 @@
     <div id="list"></div>
 
     <script src="data.js"></script>
+
     <script>
-        // 全局題目池合併陣列邏輯（確保多檔案時 questions 自動匯總）
-        // 註：如果您在其他 js 檔也用 const questions，會衝突。
-        // 建議後續檔案格式都寫成：questions.push({...}); 
-        
         function toggleChip(button) {
             button.classList.toggle('active');
             filterData();
@@ -156,6 +163,14 @@
             return Array.from(document.querySelectorAll(`#${groupId} .chip.active`)).map(chip => chip.getAttribute('data-value'));
         }
 
+        // 🎯 需求 2：根據 difficulty 數值轉換為對應標籤 HTML 的輔助函數
+        function getDifficultyBadge(diff) {
+            if (diff === 1) return `<span class="diff-badge diff-lv1">Lv.2</span>`;
+            if (diff === 2) return `<span class="diff-badge diff-lv2">Lv.3-4</span>`;
+            if (diff === 3) return `<span class="diff-badge diff-lv3">Lv.5+</span>`;
+            return ''; // 預防未填寫的情況
+        }
+
         async function filterData() {
             const keyword = document.getElementById('keyword').value.toLowerCase();
             const selectedLevels = getBaseSelectedValues('level');
@@ -164,13 +179,11 @@
             const selectedDomains = getSelectedValues('domainGroup');
             const selectedTopics = getSelectedValues('topicGroup');
 
-            // 🎯 效能防卡盾核心：如果用家什麼條件都沒選，且搜尋框也是空的，就不主動渲染任何題目
             if (keyword === "" && selectedLevels.length === 0 && selectedYears.length === 0 && selectedTypes.length === 0 && selectedDomains.length === 0 && selectedTopics.length === 0) {
                 document.getElementById('list').innerHTML = `<p style="text-align:center; color:#777; margin-top:50px; font-size:15px;">💡 請選擇上方篩選條件，或在搜尋框輸入關鍵字開始練習。</p>`;
                 return;
             }
 
-            // 確保全域變數 questions 存在
             if (typeof questions === 'undefined') return;
 
             const filtered = questions.filter(q => {
@@ -189,9 +202,13 @@
                 return;
             }
 
+            // 🎯 渲染卡片：將原來的 <h3> 改為包含 .q-id 與難度標籤的 .card-header
             list.innerHTML = filtered.map(q => `
                 <div class="question-card">
-                    <h3>${q.id}</h3>
+                    <div class="card-header">
+                        <div class="q-id">${q.id}</div>
+                        ${getDifficultyBadge(q.difficulty)}
+                    </div>
                     <div class="question-content">${q.content}</div>
                     <details>
                         <summary>💡 顯示解題提示</summary>
@@ -227,7 +244,6 @@
             }
         }
 
-        // 初始化：展示引導提示，不加載題目以維持極速首頁
         filterData();
     </script>
 </body>
