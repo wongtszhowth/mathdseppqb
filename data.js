@@ -12,9 +12,9 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Laws of Indices"],
         difficulty: 1,
-        content: `化簡 $\\frac{(x^{4}y^{-5})^{3}}{xy^{2}}$，並以正指數表示答案。`,
+        content: `化簡 $\\dfrac{(x^{4}y^{-5})^{3}}{xy^{2}}$，並以正指數表示答案。`,
         hint: `先處理分子括號外的次方 $(a^m)^n = a^{mn}$，再利用指數定律化簡乘除法。`,
-        solution: `原式 $= \\frac{x^{12}y^{-15}}{xy^2} = \\frac{x^{12-1}}{y^{2-(-15)}} = \\frac{x^{11}}{y^{17}}$`
+        solution: `原式 $= \\dfrac{x^{12}y^{-15}}{xy^2} = \\dfrac{x^{12-1}}{y^{2-(-15)}} = \\dfrac{x^{11}}{y^{17}}$`
     },
     {
         id: "2025-DSE-MATH-CP1-Q02",
@@ -24,9 +24,9 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Algebraic Fractions and Fractional Equations"],
         difficulty: 1,
-        content: `化簡 $\\frac{1}{3d-4} - \\frac{2}{6d+5}$。`,
+        content: `化簡 $\\dfrac{1}{3d-4} - \\dfrac{2}{6d+5}$。`,
         hint: `通分母後通分化簡分子。`,
-        solution: `原式 $= \\frac{(6d+5) - 2(3d-4)}{(3d-4)(6d+5)} = \\frac{6d+5-6d+8}{(3d-4)(6d+5)} = \\frac{13}{(3d-4)(6d+5)}$`
+        solution: `原式 $= \\dfrac{(6d+5) - 2(3d-4)}{(3d-4)(6d+5)} = \\dfrac{6d+5-6d+8}{(3d-4)(6d+5)} = \\dfrac{13}{(3d-4)(6d+5)}$`
     },
     {
         id: "2025-DSE-MATH-CP1-Q03",
