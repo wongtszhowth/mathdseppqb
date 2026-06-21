@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2200 DSE 數學題目庫</title>
+    <title>2230 DSE 數學題目庫</title>
     <script>
         window.MathJax = {
  tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }, 
@@ -50,7 +50,7 @@
         .diff-lv2 { background: #fef3c7; color: #b45309; }
         .diff-lv3 { background: #fee2e2; color: #b91c1c; }
 
-        .question-content, .detail-content { font-size: normal; letter-spacing: 5%; line-height: 1.7; margin: 15px 0; white-space: pre-wrap; }
+        .question-content, .detail-content { font-family: Georgia, "Times New Roman", "PMingLiU", "新細明體", serif; font-size: normal; letter-spacing: 5%; line-height: 1.7; margin: 15px 0; white-space: pre-wrap; }
         .q-img { display: block; max-width: 100%; height: auto; margin: 15px auto; border-radius: 4px; box-shadow: 0 1px 5px rgba(0,0,0,0.1); }
 
 /* 第一層分題容器 (a, b, c) */
@@ -61,21 +61,18 @@
         box-sizing: border-box;
         margin-top: 5px;
         margin-bottom: 3px;
-        font-family: serif;
     }
 
     /* 第二層分題容器 (i, ii, iii) -> 再凹入一點，並自動扣除縮進寬度防止溢出 */
     .q-line.q-level-2 {
         margin-left: 40px;
         width: calc(100% - 40px);
-        font-family: serif;
     }
 
     /* 題號標籤 (例如 a, b, i, ii) */
     .q-label {
         flex-shrink: 0;
         width: 40px;
-        font-family: serif;
     }
 
     /* 題目文字內容區 */
@@ -83,7 +80,6 @@
         flex-grow: 1;
         min-width: 0;
         word-break: break-word;
-        font-family: serif;
     }
 
     /* 分數標籤 -> 100% 貼齊最右邊 */
