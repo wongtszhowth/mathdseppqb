@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> 1225 DSE 數學題目庫 (排版修正版)</title>
+    <title>1303 DSE 數學題目庫</title>
     <script>
         window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
     </script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
-        /* 還原：與最初版本相同的原生系統字體 */
-        body { font-family: -apple-system, BlinkMacSystemFont, "Times New Roman", Times, serif; padding: 20px; margin: 0; background: #f8f9fa; color: #333; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding: 20px; margin: 0; background: #f8f9fa; color: #333; }
         h1 { font-size: 1.5rem; text-align: center; margin: 10px 0; }
         .filter-container { position: sticky; top: 10px; z-index: 1000; background: rgba(255, 255, 255, 0.98); padding: 15px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); backdrop-filter: blur(8px); margin-bottom: 25px; }
         .filter-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
@@ -38,31 +37,15 @@
         #list { max-width: 800px; margin: 0 auto; padding-bottom: 50px; }
         .question-card { background: #fff; border: 1px solid #e1e4e8; padding: 22px; margin: 15px 0; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
         .question-card h3 { margin-top: 0; color: #4a5568; font-size: 1.1rem; border-bottom: 1px solid #f0f0f0; padding-bottom: 8px; }
+        .question-content, .detail-content { font-size: 16px; line-height: 1.7; margin: 15px 0; white-space: pre-wrap; }
         
-        /* 還原：與最初版本相同的內容字型與排版 */
-        .question-content, .detail-content { 
-            font-size: 16px; 
-            line-height: 1.7; 
-            margin: 15px 0; 
-            white-space: pre-wrap; 
-        }
-        
-        /* 🎯 修正後的專業分數右對齊佈局 */
-        .q-line {
-            display: flex;
-            justify-content: space-between; /* 兩端對齊（左文字，右分數） */
-            align-items: flex-end;
-            width: 100%;
-            margin-bottom: 6px;
-        }
-        .q-text {
-            text-align: left; /* 💡 確保題目文字自身絕對是正常的靠左對齊，不被拉開 */
-            flex: 1;
-        }
-        .marks {
-            padding-left: 20px;
-            white-space: nowrap; /* 防止分數折行 */
-        }
+        /* 🎯 題目圖片控制：自適應大小與置中 */
+        .q-img { display: block; max-width: 100%; height: auto; margin: 15px auto; border-radius: 4px; box-shadow: 0 1px 5px rgba(0,0,0,0.1); }
+
+        /* 分數右對齊排版 */
+        .q-line { display: flex; justify-content: space-between; align-items: flex-end; width: 100%; margin-bottom: 6px; }
+        .q-text { text-align: left; flex: 1; }
+        .marks { padding-left: 20px; white-space: nowrap; }
 
         details { margin-top: 10px; background: #f1f5f9; border-radius: 8px; overflow: hidden; }
         summary { padding: 12px; font-weight: bold; color: #475569; cursor: pointer; }
@@ -80,7 +63,7 @@
         </div>
         
         <div class="filter-body">
-            <input type="text" id="keyword" placeholder="搜尋關鍵字或題號..." oninput="filterData()">
+            <input type="text" id="keyword" placeholder="搜尋關鍵字、題號或輸入空白鍵顯示全部..." oninput="filterData()">
 
             <div class="filter-row">
                 <span class="filter-label">基本資訊:</span>
@@ -88,8 +71,8 @@
                     <button class="chip chip-base" data-group="level" data-value="Junior" onclick="toggleChip(this)">初中</button>
                     <button class="chip chip-base" data-group="level" data-value="Senior" onclick="toggleChip(this)">高中</button>
                     <span style="border-left:1px solid #ccc; margin:0 5px;"></span>
-                    <button class="chip chip-base" data-group="type" data-value="P1" onclick="toggleChip(this)">卷一 (長題目)</button>
-                    <button class="chip chip-base" data-group="type" data-value="P2" onclick="toggleChip(this)">卷二 (MC)</button>
+                    <button class="chip chip-base" data-group="type" data-value="P1" onclick="toggleChip(this)">卷一</button>
+                    <button class="chip chip-base" data-group="type" data-value="P2" onclick="toggleChip(this)">卷二</button>
                     <span style="border-left:1px solid #ccc; margin:0 5px;"></span>
                     <button class="chip chip-base" data-group="year" data-value="2025" onclick="toggleChip(this)">2025</button>
                     <button class="chip chip-base" data-group="year" data-value="2024" onclick="toggleChip(this)">2024</button>
@@ -156,6 +139,10 @@
 
     <script src="data.js"></script>
     <script>
+        // 全局題目池合併陣列邏輯（確保多檔案時 questions 自動匯總）
+        // 註：如果您在其他 js 檔也用 const questions，會衝突。
+        // 建議後續檔案格式都寫成：questions.push({...}); 
+        
         function toggleChip(button) {
             button.classList.toggle('active');
             filterData();
@@ -176,6 +163,15 @@
             const selectedTypes = getBaseSelectedValues('type');
             const selectedDomains = getSelectedValues('domainGroup');
             const selectedTopics = getSelectedValues('topicGroup');
+
+            // 🎯 效能防卡盾核心：如果用家什麼條件都沒選，且搜尋框也是空的，就不主動渲染任何題目
+            if (keyword === "" && selectedLevels.length === 0 && selectedYears.length === 0 && selectedTypes.length === 0 && selectedDomains.length === 0 && selectedTopics.length === 0) {
+                document.getElementById('list').innerHTML = `<p style="text-align:center; color:#777; margin-top:50px; font-size:15px;">💡 請選擇上方篩選條件，或在搜尋框輸入關鍵字開始練習。</p>`;
+                return;
+            }
+
+            // 確保全域變數 questions 存在
+            if (typeof questions === 'undefined') return;
 
             const filtered = questions.filter(q => {
                 const matchKeyword = q.content.toLowerCase().includes(keyword) || q.id.toLowerCase().includes(keyword);
@@ -224,13 +220,14 @@
             const btn = document.getElementById('toggleBtn');
             if (container.classList.contains('minimized')) {
                 container.classList.remove('minimized');
-                btn.innerText = "隱藏篩選器";
+                btn.innerText = "顯示篩選器";
             } else {
                 container.classList.add('minimized');
-                btn.innerText = "顯示篩選器";
+                btn.innerText = "隱藏篩選器";
             }
         }
 
+        // 初始化：展示引導提示，不加載題目以維持極速首頁
         filterData();
     </script>
 </body>
