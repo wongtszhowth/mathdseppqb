@@ -1,6 +1,18 @@
 // data.js
 const questions = [
     {
+        id: "DSE-2025-P1-Q14",
+        year: 2025,
+        type: "P1",
+        level: ["Senior"], // 初中: "Junior", 高中: "Senior"
+        domain: ["Algebra", "Geometry"],
+        topic: ["Functions and Graphs", "Coordinate Geometry"], // 👈 必須使用下方對應的英文名稱
+        difficulty: 4,
+        content: `已知二次函數的圖像 $y = f(x)$ 的頂點為 $V(2, -4)$。`,
+        hint: `利用配方法。`,
+        solution: `頂點為 $(2, -2)$。`
+    },
+    {
         id: "DSE-2025-P1-Q15",
         year: 2025,
         type: "P1",
