@@ -20,8 +20,7 @@ const questions = [
         topic: ["Quadratic Functions", "Coordinate Geometry"],
         difficulty: 4,
         content: `已知二次函數的圖像 $y = f(x)$ 的頂點為 $V(2, -4)$。
-<div class="q-line"><span class="q-text">(a) 求 $f(x)$ 的表達式。</span><span class="marks">(3分)</span></div>
-<div class="q-line"><span class="q-text">(b) 試求圖像平移後的新頂點坐標。</span><span class="marks">(2分)</span></div>`,
+<div class="q-line"><span class="q-text">(a) 求 $f(x)$ 的表達式。</span><span class="marks">(3分)</span></div><div class="q-line"><span class="q-text">(b) 試求圖像平移後的新頂點坐標。</span><span class="marks">(2分)</span></div>`,
         hint: `(a) 設設頂點式為 $f(x) = a(x-2)^2 - 4$。利用對稱性， $A$ 和 $B$ 距離頂點的對稱軸 $x=2$ 各有 3 單位距離，從而導出交點坐標。
 (b) 圖像平移時，頂點 $(h, k)$ 會隨之改變：向右平移增加 $h$，向上平移增加 $k$。`,
         solution: `(a)
