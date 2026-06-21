@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1523 DSE 數學題目庫</title>
+    <title>2200 DSE 數學題目庫</title>
     <script>
-        window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
+        window.MathJax = {
+ tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }, 
+  output: {font: 'mathjax-termes' }
+};
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding: 20px; margin: 0; background: #f8f9fa; color: #333; }
         h1 { font-size: 1.5rem; text-align: center; margin: 10px 0; }
@@ -47,14 +50,54 @@
         .diff-lv2 { background: #fef3c7; color: #b45309; }
         .diff-lv3 { background: #fee2e2; color: #b91c1c; }
 
-        .question-content, .detail-content { font-size: 16px; line-height: 1.7; margin: 15px 0; white-space: pre-wrap; }
+        .question-content, .detail-content { font-size: normal; letter-spacing: 5%; line-height: 1.7; margin: 15px 0; white-space: pre-wrap; }
         .q-img { display: block; max-width: 100%; height: auto; margin: 15px auto; border-radius: 4px; box-shadow: 0 1px 5px rgba(0,0,0,0.1); }
 
-        /* 分數右對齊排版 */
-        .q-line { display: flex; justify-content: space-between; align-items: flex-end; width: 100%; margin-bottom: 6px; }
-        .q-text { text-align: left; flex: 1; }
-        .marks { padding-left: 20px; white-space: nowrap; }
+/* 第一層分題容器 (a, b, c) */
+    .q-line {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 5px;
+        margin-bottom: 3px;
+        font-family: serif;
+    }
 
+    /* 第二層分題容器 (i, ii, iii) -> 再凹入一點，並自動扣除縮進寬度防止溢出 */
+    .q-line.q-level-2 {
+        margin-left: 40px;
+        width: calc(100% - 40px);
+        font-family: serif;
+    }
+
+    /* 題號標籤 (例如 a, b, i, ii) */
+    .q-label {
+        flex-shrink: 0;
+        width: 40px;
+        font-family: serif;
+    }
+
+    /* 題目文字內容區 */
+    .q-text-content {
+        flex-grow: 1;
+        min-width: 0;
+        word-break: break-word;
+        font-family: serif;
+    }
+
+    /* 分數標籤 -> 100% 貼齊最右邊 */
+    .marks {
+        float: right;
+        padding-left: 10px;
+        font-weight: normal; /* 可依喜好決定是否加粗 */
+        letter-spacing: 0.1em;
+    }
+
+    /* 清除浮動，確保卡片高度計算正確 */
+    .q-clearfix {
+        clear: both;
+    }
         details { margin-top: 10px; background: #f1f5f9; border-radius: 8px; overflow: hidden; }
         summary { padding: 12px; font-weight: bold; color: #475569; cursor: pointer; }
         .detail-content { padding: 15px; background: #fff; }
@@ -148,6 +191,7 @@
     <div id="list"></div>
 
     <script src="data.js"></script>
+    <script src="2024dsep1.js"></script>
 
     <script>
         function toggleChip(button) {
@@ -209,11 +253,11 @@
                     </div>
                     <div class="question-content">${q.content}</div>
                     <details>
-                        <summary>💡 顯示解題提示</summary>
+                        <summary>💡</summary>
                         <div class="detail-content">${q.hint}</div>
                     </details>
                     <details>
-                        <summary>📝 顯示分題答案 / 題解</summary>
+                        <summary>📝</summary>
                         <div class="detail-content">${q.solution}</div>
                     </details>
                 </div>
@@ -235,10 +279,10 @@
             const btn = document.getElementById('toggleBtn');
             if (container.classList.contains('minimized')) {
                 container.classList.remove('minimized');
-                btn.innerText = "顯示篩選器";
+                btn.innerText = "隱藏篩選器";
             } else {
                 container.classList.add('minimized');
-                btn.innerText = "隱藏篩選器";
+                btn.innerText = "顯示篩選器";
             }
         }
 
