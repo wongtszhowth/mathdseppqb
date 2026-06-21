@@ -20,7 +20,7 @@ const questions = [
 
 (b) 
 新頂點坐標為 $(5, 1)$。`
-    }
+    },
     {
         id: "DSE-2025-P1-Q14",
         year: 2025,
