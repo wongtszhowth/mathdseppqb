@@ -8,7 +8,8 @@ const questions = [
         domain: ["Algebra", "Geometry"],
         topic: ["Functions and Graphs", "Coordinate Geometry"], // 👈 必須使用下方對應的英文名稱
         difficulty: 4,
-        content: `已知二次函數的圖像 $y = f(x)$ 的頂點為 $V(2, -4)$。`,
+        content: `已知二次函數的圖像 $y = f(x)$ 的頂點為 $V(2, -4)$。
+        <img src="25p1q7.jpg" class="q-img" alt="題目附圖">`,
         hint: `利用配方法。`,
         solution: `頂點為 $(2, -2)$。`
     },
