@@ -1,27 +1,6 @@
 // data.js
 const questions = [
     {
-        id: "DSE-2025-P1-Q12",
-        year: 2025,
-        type: "P1",
-        level: ["Senior"],
-        domain: ["Algebra"],
-        topic: ["Functions and Graphs"],
-        difficulty: 4,
-        content: `已知二次函數的圖像 $y = f(x)$ 的頂點為 $V(2, -4)$。
-該圖像與 $x$ 軸相交於 $A$ 及 $B$ 兩點，且 $AB = 6$。
-
-<div class="q-line"> (a) 求 $f(x)$ 的表達式。 <span class="marks">(3分)</span></div>
-<div class="q-line"> (b) 求新圖像 $y = g(x)$ 新頂點的坐標。 <span class="marks">(2分)</span></div>`,
-        hint: `(a) 設頂點式為 $f(x) = a(x-2)^2 - 4$。
-(b) 考慮圖像的平移。`,
-        solution: `(a) 
-經計算得 $f(x) = \\frac{4}{9}(x-2)^2 - 4$。
-
-(b) 
-新頂點坐標為 $(5, 1)$。`
-    },
-    {
         id: "DSE-2025-P1-Q14",
         year: 2025,
         type: "P1",
