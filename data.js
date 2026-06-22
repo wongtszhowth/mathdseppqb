@@ -12,7 +12,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Laws of Indices"],
         difficulty: 1,
-        content: `化簡 $\\dfrac{(x^{4}y^{-5})^{3}}{xy^{2}}$，並以正指數表示答案。`,
+        content: `化簡 $\\dfrac{(x^{4}y^{-5})^{3}}{xy^{2}}$，並以正指數表示答案。<span class="marks">(3分)</span>`,
         hint: `先處理分子括號外的次方 $(a^m)^n = a^{mn}$，再利用指數定律化簡乘除法。`,
         solution: `原式 $= \\dfrac{x^{12}y^{-15}}{xy^2} = \\dfrac{x^{12-1}}{y^{2-(-15)}} = \\dfrac{x^{11}}{y^{17}}$`
     },
@@ -24,7 +24,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Algebraic Fractions and Fractional Equations"],
         difficulty: 1,
-        content: `化簡 $\\dfrac{1}{3d-4} - \\dfrac{2}{6d+5}$。`,
+        content: `化簡 $\\dfrac{1}{3d-4} - \\dfrac{2}{6d+5}$。<span class="marks">(3分)</span>`,
         hint: `通分母後通分化簡分子。`,
         solution: `原式 $= \\dfrac{(6d+5) - 2(3d-4)}{(3d-4)(6d+5)} = \\dfrac{6d+5-6d+8}{(3d-4)(6d+5)} = \\dfrac{13}{(3d-4)(6d+5)}$`
     },
@@ -36,7 +36,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Linear Equations in Two Unknowns", "Rates, Ratios and Proportions"],
         difficulty: 2,
-        content: `設 $m$ 及 $n$ 為兩數。 $2m$ 與 $3n$ 之和為 $999$ 而 $m$ 與 $n$ 之比為 $8:7$ 。求 $n$ 。`,
+        content: `設 $m$ 及 $n$ 為兩數。 $2m$ 與 $3n$ 之和為 $999$ 而 $m$ 與 $n$ 之比為 $8:7$ 。求 $n$ 。<span class="marks">(3分)</span>`,
         hint: `根據比例設 $m = 8k$ 及 $n = 7k$，或者建立聯立方程組。`,
         solution: `設 $m = 8k$, $n = 7k$。由題意知 $2(8k) + 3(7k) = 999 \\Rightarrow 16k + 21k = 999 \\Rightarrow 37k = 999 \\Rightarrow k = 27$。故 $n = 7(27) = 189$。`
     },
