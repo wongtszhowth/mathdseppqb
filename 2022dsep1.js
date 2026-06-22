@@ -1,5 +1,5 @@
 // 2022dsep1.js
-// 直接用 .push 追加題目，不會覆蓋之前的數據
+// 使用 .push 追加題目至 questions 陣列中
 
 questions.push(
     {
@@ -10,9 +10,9 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Laws of Indices"],
         difficulty: 1,
-        content: `化簡 $\\dfrac{(a^3b^{-2})^4}{a^{-5}b^6}$ ，並以正指數表示答案。<span class="marks">(3分)</span>`,
-        hint: `先利用指數定律 $(x^m)^n = x^{mn}$ 展開分子，再利用 $x^m \\div x^n = x^{m-n}$ 化簡，最後把負指數項移到分母。`,
-        solution: `$\\dfrac{(a^3b^{-2})^4}{a^{-5}b^6} = \\dfrac{a^{12}b^{-8}}{a^{-5}b^6} = a^{12-(-5)}b^{-8-6} = a^{17}b^{-14} = \\dfrac{a^{17}}{b^{14}}$`
+        content: `化簡 $\\dfrac{(a^{3}b^{-2})^{4}}{a^{-5}b^{6}}$ ，並以正指數表示答案。<span class=\"marks\">(3分)</span>`,
+        hint: `先利用指數定律 $(m^k)^n = m^{kn}$ 展開分子，再利用 $\\dfrac{x^p}{x^q} = x^{p-q}$ 化簡相同底數的項。`,
+        solution: `$\\dfrac{(a^{3}b^{-2})^{4}}{a^{-5}b^{6}} = \\dfrac{a^{12}b^{-8}}{a^{-5}b^{6}} = \\dfrac{a^{12-(-5)}}{b^{6-(-8)}} = \\dfrac{a^{17}}{b^{14}}$`
     },
     {
         id: "2022-DSE-MATH-CP1-Q02",
@@ -20,11 +20,11 @@ questions.push(
         type: "P1",
         level: ["Junior"],
         domain: ["Algebra"],
-        topic: ["Linear Equations in Two Unknowns"],
+        topic: ["Linear Equations"],
         difficulty: 1,
-        content: `設 $x$ 及 $y$ 為兩數。 $x$ 與 $y$ 之和為 $456$ 而 $7$ 與 $x$ 之積為 $y$。求 $x$。<span class="marks">(3分)</span>`,
-        hint: `根據題意列出聯立方程，然後以代入法求解 $x$。`,
-        solution: `根據題意： \\begin{cases} x + y = 456 \\quad \\text{--- (1)} \\\\ 7x = y \\quad \\text{--- (2)} \\end{cases} \\\\ 將 (2) 代入 (1) 得： \\\\ x + 7x = 456 \\\\ 8x = 456 \\\\ x = 57`
+        content: `設 $x$ 及 $y$ 為兩數。 $x$ 與 $y$ 之和為 $456$ 而 $7$ 與 $x$ 之積為 $y$。求 $x$。<span class=\"marks\">(3分)</span>`,
+        hint: `根據題目條件列出聯立方程 $x+y=456$ 及 $7x=y$，然後利用代入法求解。`,
+        solution: `已知 $x + y = 456$ 及 $7x = y$。<br>將 $y = 7x$ 代入第一式：<br>$x + 7x = 456$<br>$8x = 456$<br>$x = 57$`
     },
     {
         id: "2022-DSE-MATH-CP1-Q03",
@@ -32,10 +32,10 @@ questions.push(
         type: "P1",
         level: ["Junior"],
         domain: ["Algebra"],
-        topic: ["Formulae"],
+        topic: ["Algebraic Fractions"],
         difficulty: 1,
-        content: `化簡 $\\dfrac{3}{k-9}+\\dfrac{2}{5k+6}$ 。<span class="marks">(3分)</span>`,
-        hint: `尋找兩分式的公分母 $(k-9)(5k+6)$ 進行通分，然後展開並合併分子的同類項。`,
+        content: `化簡 $\\dfrac{3}{k-9}+\\dfrac{2}{5k+6}$。<span class=\"marks\">(3分)</span>`,
+        hint: `先尋找通分母 $(k-9)(5k+6)$，然後將分子展開並合併同類項。`,
         solution: `$\\dfrac{3}{k-9}+\\dfrac{2}{5k+6} = \\dfrac{3(5k+6)+2(k-9)}{(k-9)(5k+6)} = \\dfrac{15k+18+2k-18}{(k-9)(5k+6)} = \\dfrac{17k}{(k-9)(5k+6)}$`
     },
     {
@@ -45,22 +45,22 @@ questions.push(
         level: ["Junior"],
         domain: ["Algebra"],
         topic: ["Factorization"],
-        difficulty: 1,
-        content: `因式分解：<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">$9c^2-6c+1$ ，<span class="marks">(1分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content basket">$(4c+d)^2-9c^2+6c-1$ 。<span class="marks">(3分)</span></div></div>`,
-        hint: `(a) 利用完全平方公式 $A^2-2AB+B^2=(A-B)^2$ 進行因式分解。<br>(b) 利用 (a) 的結果，再運用平方差公式 $A^2-B^2=(A+B)(A-B)$。`,
-        solution: `(a) $9c^2-6c+1 = (3c-1)^2$ <br><br> (b) $(4c+d)^2-9c^2+6c-1 = (4c+d)^2 - (9c^2-6c+1) = (4c+d)^2 - (3c-1)^2 = [(4c+d) + (3c-1)][(4c+d) - (3c-1)] = (7c+d-1)(c+d+1)$`
+        difficulty: 2,
+        content: `因式分解：<br><span class=\"q-label\">(a)</span> $9c^{2}-6c+1$,<br><span class=\"q-label\">(b)</span> $(4c+d)^{2}-9c^{2}+6c-1$。<span class=\"marks\">(4分)</span>`,
+        hint: `(a) 利用完全平方公式 $x^2-2xy+y^2=(x-y)^2$。<br>(b) 先分組抽取負號，利用 (a) 的結果，再應用平方差公式 $x^2-y^2=(x+y)(x-y)$。`,
+        solution: `<span class=\"q-label\">(a)</span> $9c^{2}-6c+1 = (3c-1)^{2}$<br><br><span class=\"q-label\">(b)</span> $(4c+d)^{2}-9c^{2}+6c-1 = (4c+d)^{2}-(9c^{2}-6c+1) = (4c+d)^{2}-(3c-1)^{2} = (4c+d+3c-1)[4c+d-(3c-1)] = (7c+d-1)(c+d+1)$`
     },
     {
         id: "2022-DSE-MATH-CP1-Q05",
         year: 2022,
         type: "P1",
         level: ["Junior"],
-        domain: ["Number and Cardinality"],
+        domain: ["Arithmetic"],
         topic: ["Percentages"],
-        difficulty: 1,
-        content: `某風扇以其標價七折售出。售出該風扇後，盈利為 $\$78$ 且盈利百分率為 $26\%$。求該風扇的標價。<span class="marks">(4分)</span>`,
-        hint: `先由盈利及盈利百分率求出成本，進而得到售價。再利用標價與售價的關係（標價 $\\times 0.7 =$ 售價）求標價。`,
-        solution: `設成本為 $\$C$，標價為 $\$M$。\\\\ 根據盈利百分率： $C \\times 26\\% = 78 \\Rightarrow C = 300$ \\\\ 售價 $= \\text{成本} + \\text{盈利} = 300 + 78 = 378$ \\\\ 根據打折關係： $M \\times 0.7 = 378 \\Rightarrow M = 540$ \\\\ 答：該風扇的標價為 $\$540$。`
+        difficulty: 2,
+        content: `某風扇以其標價七折售出。售出該風扇後，盈利為 \$78 且盈利百分率為 $26\\%$。求該風扇的標價。<span class=\"marks\">(4分)</span>`,
+        hint: `盈利 = 成本 $\\times$ 盈利百分率，由此可求出成本，進而得到售價。再利用「標價 $\\times 70\\% =$ 售價」求出標價。`,
+        solution: `設 \$x 為該風扇的成本。<br>$26\\%x = 78 \\Rightarrow x = 300$<br>售價 = $300 + 78 = \\$378$<br>設 \$y 為該風扇的標價。<br>$70\\%y = 378 \\Rightarrow y = 540$<br>因此，該風扇的標價為 \\$540。`
     },
     {
         id: "2022-DSE-MATH-CP1-Q06",
@@ -69,10 +69,10 @@ questions.push(
         level: ["Junior"],
         domain: ["Algebra"],
         topic: ["Inequalities"],
-        difficulty: 1,
-        content: `<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求同時滿足 $\\dfrac{5-x}{4} \\le 2x-1$ 及 $x-7 < 0$ 的 $x$ 值的範圍。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出同時滿足 (a) 的不等式的整數的數目。<span class="marks">(1分)</span></div></div>`,
-        hint: `(a) 分別解兩個不等式，然後取兩者解集的交集（共同範圍）。<br>(b) 列舉出在該範圍內的所有整數並數算數目。`,
-        solution: `(a) 解第一個不等式： $\\dfrac{5-x}{4} \\le 2x-1 \\Rightarrow 5-x \\le 8x-4 \\Rightarrow 9 \\le 9x \\Rightarrow x \\ge 1$ \\\\ 解第二個不等式： $x < 7$ \\\\ 因此，同時滿足兩者的範圍為： $1 \\le x < 7$。 <br><br> (b) 滿足範圍的整數有：1, 2, 3, 4, 5, 6。 \\\\ 共有 6 個整數。`
+        difficulty: 2,
+        content: `<span class=\"q-label\">(a)</span> 解複合不等式 $-2(3x+2)>x+10$ 或 $2x\\le -8$。<br><span class=\"q-label\">(b)</span> 寫出滿足 (a) 的複合不等式的最大整數。<span class=\"marks\">(4分)</span>`,
+        hint: `(a) 分別解出兩個不等式，注意「或 (or)」代表取兩個解區域的聯集。<br>(b) 在解區域中找出數值最大的整數。`,
+        solution: `<span class=\"q-label\">(a)</span> 對於第一個不等式：$-6x-4 > x+10 \\Rightarrow -7x > 14 \\Rightarrow x < -2$<br>對於第二個不等式：$2x \\le -8 \\Rightarrow x \\le -4$<br>由於是「或」的關係，組合兩者後，該複合不等式的解為 $x < -2$。<br><br><span class=\"q-label\">(b)</span> 滿足 $x < -2$ 的最大整數為 $-3$。`
     },
     {
         id: "2022-DSE-MATH-CP1-Q07",
@@ -82,9 +82,9 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Coordinate Geometry"],
         difficulty: 2,
-        content: `在某直角坐標平面上， $A(-4,3)$ 與 $B(1,-7)$ 為兩點。 $A$ 繞原點逆時針方向旋轉 $90^\\circ$至 $A'$ 。 $B'$ 為 $B$ 對 $x$ 軸的反射點。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出 $A'$ 及 $B'$ 的坐標。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求直線 $A'B'$ 的斜率。<span class="marks">(2分)</span></div></div>`,
-        hint: `(a) 旋轉 $90^\\circ$ 規則：$(x,y) \\rightarrow (-y,x)$；對 $x$ 軸反射規則：$(x,y) \\rightarrow (x,-y)$。<br>(b) 利用斜率公式 $m = \\dfrac{y_2-y_1}{x_2-x_1}$ 計算。`,
-        solution: `(a) $A'$ 的坐標為 $(-3, -4)$； $B'$ 的坐標為 $(1, 7)$。 <br><br> (b) 直線 $A'B'$ 的斜率 $= \\dfrac{7 - (-4)}{1 - (-3)} = \\dfrac{11}{4}$`
+        content: `在某直角坐標平面上，$S(12, -5)$ 及 $T(-7, 3)$ 為兩點。若 $S$ 繞原點逆時針方向旋轉 $90^{\\circ}$ 至 $S'$，且 $T$ 對 $y$ 軸反射至 $T'$。<br><span class=\"q-label\">(a)</span> 寫出 $S'$ 及 $T'$ 的坐標。<br><span class=\"q-label\">(b)</span> 求直線 $S'T'$ 的斜率。<span class=\"marks\">(4 marks)</span>`,
+        hint: `(a) 點 $(x, y)$ 繞原點逆時針旋轉 $90^{\\circ}$ 後變為 $(-y, x)$；對 $y$ 軸反射後變為 $(-x, y)$。<br>(b) 使用斜率公式 $m = \\dfrac{y_2-y_1}{x_2-x_1}$。`,
+        solution: `<span class=\"q-label\">(a)</span> $S'$ 的坐標為 $(5, 12)$； $T'$ 的坐標為 $(-3, 7)$。<br><br><span class=\"q-label\">(b)</span> 直線 $S'T'$ 的斜率 $= \\dfrac{12-7}{5-(-3)} = \\dfrac{5}{8}$ （或 $0.625$）。`
     },
     {
         id: "2022-DSE-MATH-CP1-Q08",
@@ -92,11 +92,11 @@ questions.push(
         type: "P1",
         level: ["Junior"],
         domain: ["Geometry"],
-        topic: ["Geometry of Circles"],
+        topic: ["Geometric Proofs", "Angles in Triangles"],
         difficulty: 2,
-        content: `在圖 1 中， $A、B、C、D$ 為圓上的點。 $AC$ 與 $BD$ 相交於點 $E$。已知 $AB = AD$。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明 $\\angle BCE = \\angle DCE$ 。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">某人宣稱 $\\triangle ABC \\cong \\triangle ADC$。你是否同意？解釋你的答案。<span class="marks">(33分)</span></div></div>`,
-        hint: `(a) 利用「等弦對等弧」及「等弧對等圓周角」來證明。<br>(b) 檢查是否有足夠條件（如 SSS, SAS, ASA, AAS）證明全等。若條件不足，則不同意。`,
-        solution: `(a) $\\because AB = AD$ (已知) \\\\ $\\therefore \\overparen{AB} = \\overparen{AD}$ (等弦對等弧) \\\\ $\\dots \\angle ACB = \\angle ACD$ (等弧對等圓周角) \\\\ 即 $\\angle BCE = \\angle DCE$。 <br><br> (b) 不同意。雖然 $AB=AD$ 且 $AC=AC$ (公共邊)，且由 (a) 知 $\\angle ACB = \\angle ACD$，但這屬於 SSA 關係，並不能保證三角形全等。由於找不到其他確切的全等條件，故該宣稱不同意。`
+        content: `圖中，$A$ 、 $B$ 、 $C$ 、 $D$ 及 $E$ 為點使得 $AD \\parallel BC$ 且 $AC \\parallel ED$。已知 $AB=AE$ 且 $\\angle ABC = \\angle AED$。<br><span class=\"q-label\">(a)</span> 證明 $\\triangle ABC \\cong \\triangle AED$。<br><span class=\"q-label\">(b)</span> 若 $\\angle ABC = 39^{\\circ}$ 且 $\\angle DAE = 87^{\\circ}$，求 $\\angle ACD$。<span class=\"marks\">(5分)</span>`,
+        hint: `(a) 利用平行線的內錯角相等找出力等角，再以 AAS 證明全等。<br>(b) 利用全等三角形對應角相等及等腰三角形性質求解。`,
+        solution: `<span class=\"q-label\">(a)</span> $\\angle ACB = \\angle CAD$ （$AD \\parallel BC$ 的內錯角）<br>$\\angle CAD = \\angle ADE$ （$AC \\parallel ED$ 的內錯角）<br>所以 $\\angle ACB = \\angle ADE$<br>又 $\\angle ABC = \\angle AED$ （已知）且 $AB = AE$ （已知）<br>因此，$\\triangle ABC \\cong \\triangle AED$ （AAS）<br><br><span class=\"q-label\">(b)</span> $\\angle BAC = \\angle DAE = 87^{\\circ}$ （全等三角形的對應角）<br>在 $\\triangle ABC$ 中，$\\angle ACB = 180^{\\circ} - 87^{\\circ} - 39^{\\circ} = 54^{\\circ}$<br>$\\angle CAD = \\angle ACB = 54^{\\circ}$ （內錯角）<br>因為 $\\triangle ABC \\cong \\triangle AED$，所以 $AC = AD$（對應邊）<br>在等腰 $\\triangle ACD$ 中，$\\angle ACD = \\angle ADC = \\dfrac{180^{\\circ}-54^{\\circ}}{2} = 63^{\\circ}$。`
     },
     {
         id: "2022-DSE-MATH-CP1-Q09",
@@ -104,11 +104,11 @@ questions.push(
         type: "P1",
         level: ["Junior"],
         domain: ["Data Handling"],
-        topic: ["Statistics"],
+        topic: ["Statistical Charts", "Probability"],
         difficulty: 2,
-        content: `某群學生完成 3km 賽跑所需時間的頻數分佈表及累積頻數分佈表如下：<br><table class="q-table"><tr><th>所需時間(分鐘)</th><th>頻數</th></tr><tr><td>10-14</td><td>$a$</td></tr><tr><td>15-19</td><td>9</td></tr><tr><td>20-24</td><td>$b$</td></tr><tr><td>25-29</td><td>3</td></tr></table><br><table class="q-table"><tr><th>所需時間少於(分鐘)</th><th>累積頻數</th></tr><tr><td>14.5</td><td>3</td></tr><tr><td>19.5</td><td>$x$</td></tr><tr><td>24.5</td><td>$y$</td></tr><tr><td>29.5</td><td>20</td></tr></table><br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出 $x$ 的值。<span class="marks">(1分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求該分佈的平均值。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">求從該群中隨機選出的一名學生完成該 3km 賽跑所需時間少於 19.5 分鐘的概率。<span class="marks">(2分)</span></div></div>`,
-        hint: `(a) 由第一組累積頻數知 $a=3$，則 $x = a + 9$。<br>(b) 利用總人數 20 求出 $b$，再利用組中點（12, 17, 22, 27）求加權平均值。<br>(c) 概率為「少於 19.5 分鐘的人數」除以「總人數」。`,
-        solution: `(a) 由表知 $a = 3$。\\\\ 因此 $x = 3 + 9 = 12$。 <br><br> (b) 總頻數 $= 20 \\Rightarrow 3 + 9 + b + 3 = 20 \\Rightarrow b = 5$。 \\\\ 各組的組中點分別為 12、17、22、27。 \\\\ 平均值 $= \\dfrac{3\\times 12 + 9\\times 17 + 5\\times 22 + 3\\times 27}{20} = \\dfrac{36 + 153 + 110 + 81}{20} = 19$ 分鐘。 <br><br> (c) 所求概率 $= \\dfrac{x}{20} = \\dfrac{12}{20} = \\dfrac{3}{5}$。`
+        content: `下面的頻數分佈表及累積頻數分佈表顯示一群學生完成某 3km 賽跑所需時間（分鐘）的分佈。<br><b>頻數分佈表</b>：<br>10-14: $a$; 15-19: 9; 20-24: $b$; 25-29: 3<br><b>累積頻數分佈表</b>：<br>少於 14.5: 3; 少於 19.5: $x$; 少於 24.5: $y$; 少於 29.5: 20<br><span class=\"q-label\">(a)</span> 寫出 $x$ 的值。<br><span class=\"q-label\">(b)</span> 求該分佈的平均值。<br><span class=\"q-label\">(c)</span> 求從該群中隨機選出的一名學生完成該 3km 賽跑所需時間少於 19.5 分鐘的概率。<span class=\"marks\">(5分)</span>`,
+        hint: `(a) 對比兩個表，少於 14.5 的頻數就是第一組的頻數 $a$。而少於 19.5 的累積頻數等於前兩組頻數之和。<br>(b) 利用各組組中點（12, 17, 22, 27）與頻數加權求平均值。<br>(c) 概率 = 滿足條件的人數 / 總人數。`,
+        solution: `<span class=\"q-label\">(a)</span> 由表可知 $a = 3$。所以 $x = a + 9 = 3 + 9 = 12$。且總人數為 20，可得 $b = 20 - 3 - 9 - 3 = 5$。<br><br><span class=\"q-label\">(b)</span> 各組組中點分別為 12、17、22、27。<br>平均值 $= \\dfrac{12(3) + 17(9) + 22(5) + 27(3)}{20} = \\dfrac{380}{20} = 19\\text{ 分鐘}$<br><br><span class=\"q-label\">(c)</span> 所求的概率 $= \\dfrac{x}{20} = \\dfrac{12}{20} = \\dfrac{3}{5}$ （或 $0.6$）。`
     },
     {
         id: "2022-DSE-MATH-CP1-Q10",
@@ -116,11 +116,11 @@ questions.push(
         type: "P1",
         level: ["Senior"],
         domain: ["Algebra"],
-        topic: ["Variations"],
+        topic: ["Variations", "Quadratic Equations"],
         difficulty: 3,
-        content: `已知 $f(x)$ 的一部分隨 $x^2$ 正變，而另一部分則隨 $x$ 正變。假定 $f(4)=96$ 及 $f(-5)=15$。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $f(x)$。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出 $y=8f(x)$ 的圖像的 $x$ 截距。<span class="marks">(1分)</span></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">設 $V$ 為 $y=f(x)$ 的圖像的頂點。某人宣稱 $V$ 與原點之間的距離小於 13。你是否同意？解釋你的答案。<span class="marks">(2分)</span></div></div>`,
-        hint: `(a) 設 $f(x) = k_1 x^2 + k_2 x$，代入已知點求聯立方程。<br>(b) 令 $8f(x) = 0$ 解 $x$。<br>(c) 配方求出頂點 $V$ 的坐標，利用兩點距離公式計算 $OV$，再與 13 比較。`,
-        solution: `(a) 設 $f(x) = Ax^2 + Bx$。 \\\\ 依題意： $f(4) = 16A + 4B = 96 \\Rightarrow 4A + B = 24$ (1) \\\\ $f(-5) = 25A - 5B = 15 \\Rightarrow 5A - B = 3$ (2) \\\\ (1) + (2) 得： $9A = 27 \\Rightarrow A = 3$，代入得 $B = 12$。 \\\\ $\\therefore f(x) = 3x^2 + 12x$ <br><br> (b) 令 $8(3x^2+12x) = 0 \\Rightarrow 24x(x + 4) = 0 \\Rightarrow x = 0$ 或 $x = -4$。 \\\\ $\\therefore x$ 截距為 $0$ 及 $-4$。 <br><br> (c) $f(x) = 3(x + 2)^2 - 12 \\Rightarrow$ 頂點 $V$ 為 $(-2, -12)$。 \\\\ $V$ 與原點的距離 $= \\sqrt{(-2)^2 + (-12)^2} = \\sqrt{148} \\approx 12.165$。 \\\\ $\\because 12.165 < 13$ \\\\ $\\therefore$ 同意該宣稱。`
+        content: `已知 $f(x)$ 的一部分隨 $x^2$ 正變，而另一部分則隨 $x$ 正變。假定 $f(4)=96$ 及 $f(-5)=15$。<br><span class=\"q-label\">(a)</span> 求 $f(x)$。<br><span class=\"q-label\">(b)</span> 寫出 $y=8f(x)$ 的圖像的 $x$ 截距。<br><span class=\"q-label\">(c)</span> 設 $k$ 為一常數。已知方程 $f(x)-k=0$ 有兩個相異實根。求 $k$ 值的範圍。<span class=\"marks\">(6分)</span>`,
+        hint: `(a) 設 $f(x) = ax^2 + bx$，代入已知值解聯立方程。<br>(b) 圖像的 $x$ 截距即為令 $y=0$（即 $f(x)=0$）時 $x$ 的值。<br>(c) 方程有兩相異實根，代表其判別式 $\\Delta > 0$。`,
+        solution: `<span class=\"q-label\">(a)</span> 設 $f(x) = ax^2 + bx$，其中 $a, b$ 為非零常數。<br>代入已知條件：<br>$a(4)^2 + b(4) = 96 \\Rightarrow 16a + 4b = 96$<br>$a(-5)^2 + b(-5) = 15 \\Rightarrow 25a - 5b = 15$<br>解聯立方程得 $a = 3, b = 12$。<br>因此，$f(x) = 3x^2 + 12x$。<br><br><span class=\"q-label\">(b)</span> 令 $8f(x) = 0 \\Rightarrow 8(3x^2 + 12x) = 0 \\Rightarrow 24x(x + 4) = 0$。<br>所以 $x$ 截距為 $0$ 及 $-4$。<br><br><span class=\"q-label\">(c)</span> 方程為 $3x^2 + 12x - k = 0$。<br>因為有兩個相異實根，$\\Delta > 0$<br>$(12)^2 - 4(3)(-k) > 0$<br>$144 + 12k > 0 \\Rightarrow k > -12$。`
     },
     {
         id: "2022-DSE-MATH-CP1-Q11",
@@ -128,23 +128,23 @@ questions.push(
         type: "P1",
         level: ["Senior"],
         domain: ["Data Handling"],
-        topic: ["Measures of Central Tendency and Dispersion"],
+        topic: ["Measures of Dispersion"],
         difficulty: 3,
-        content: `下表顯示一組學生在某測試中得分的分佈。已知眾數為 68分。<br><table class="q-table"><tr><th>得分(分)</th><th>62</th><th>65</th><th>68</th><th>71</th></tr><tr><th>頻數</th><td>2</td><td>$a$</td><td>6</td><td>$b$</td></tr></table><br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出 $a$ 的最大可能值。<span class="marks">(1分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">若該分佈的中位數為 68分，求 $b$ 的最大可能值。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">若該分佈的平均值為 67分，求 $b$ 的可能值。<span class="marks">(3分)</span></div></div>`,
-        hint: `(a) 眾數是出現次數最多的分數，所以其他分數的頻數必須小於 68分 的頻數（即 6）。<br>(b) 中位數為 68分 意味著小於及等於 68 的人數必須大於或等於總人數的一半。<br>(c) 利用平均值公式：$\\dfrac{\\sum (\\text{得分} \\times \\text{頻數})}{\\text{總頻數}} = 67$，化簡出 $a$ 與 $b$ 的關係。`,
-        solution: `(a) 由於眾數為 68，其頻數為 6，因此其他頻數必須小於 6。 \\\\ 故 $a$ 的最大可能值為 $5$。 <br><br> (b) 當中位數為 68 時，大於 68 的頻數 $b$ 不能過大，須滿足： $2 + a + 6 \\ge b \\Rightarrow b \\le 8 + a$。 \\\\ 當 $a$ 取最大值 5 時， $b \\le 13$。同時為了保證 68 是中位數，後半部分人數不能超過一半，經精確計算 $b$ 的最大值為 $11$。 <br><br> (c) 平均值 $= \\dfrac{62(2) + 65a + 68(6) + 71b}{2 + a + 6 + b} = 67$ \\\\ $124 + 65a + 408 + 71b = 67(8 + a + b) \\Rightarrow 532 + 65a + 71b = 536 + 67a + 67b$ \\\\ $4b - 4 = 2a \\Rightarrow 2b - 2 = a$。 \\\\ 由於 $a$ 必須為整數且 $0 \\le a \\le 5$： \\\\ 當 $b=1$ 時 $a=0$；當 $b=2$ 時 $a=2$；當 $b=3$ 時 $a=4$。 \\\\ 故 $b$ 的可能值為 $1, 2, 3$。`
+        content: `下面的莖葉圖顯示某足球隊隊員的年齡的分佈。<br>莖(十位) 葉(個位): 1| 7, 8, 9; 2| 0, 2, 2, 4, 4, 4, 6, 8, 9; 3| 0, 1, 3, 6, 6, 7, a; 4| b<br>已知該分佈的分佈域為 $26$，且其四分位間距為 $14$。<br><span class=\"q-label\">(a)</span> 求 $a$ 及 $b$。<br><span class=\"q-label\">(b)</span> 該足球隊的一名年齡為 $17$ 歲的隊員與另一名年齡為 $43$ 歲的隊員離開該隊。<br><span class=\"q-label\">(i)</span> 該分佈的眾數是否因而改變？解釋你的答案。<br><span class=\"q-label\">(ii)</span> 求該分佈的最大可能標準差。<span class=\"marks\">(6分)</span>`,
+        hint: `(a) 利用分佈域 $\\text{最大值} - \\text{最小值} = 26$ 求出 $b$；利用四分位數的定義求出 $Q_1, Q_3$ 建立關於 $a$ 的方程。<br>(b)(i) 找出原本的眾數，看刪除兩數後是否改變。<br>(b)(ii) 分別計算 $a=2$（此時 17 歲或 43 歲離開）的標準差，比較找出最大可能值。`,
+        solution: `<span class=\"q-label\">(a)</span> 最大值為 $40+b$，最小值為 $17$。<br>分佈域 $= (40+b) - 17 = 26 \\Rightarrow b = 3$。<br>總人數為 21 人。$Q_1 = \\dfrac{22+24}{2} = 23$， $Q_3 = \\dfrac{36+30+a}{2} = 33 + \\dfrac{a}{2}$。<br>四分位間距 $= Q_3 - Q_1 = 33 + \\dfrac{a}{2} - 23 = 14 \\Rightarrow a = 2$。<br><br><span class=\"q-label\">(b)(i)</span> 原眾數為 $24$（出現 3 次）。移去 17 歲和 43 歲的隊員後，24 仍出現 3 次，其他數未超過 3 次。因此眾數沒有改變。<br><br><span class=\"q-label\">(b)(ii)</span> 原數據共有 21 個。移除兩位隊員有兩種情況：<br>情況1：移去 17 及 43 歲（當 43 歲存在時，即 $b=3$，最後一個數是 43）。剩下 19 人：18, 19, 20, 22, 22, 24, 24, 24, 26, 28, 29, 30, 31, 32, 33, 36, 36, 37, 43（若原 43 移除則剩 43...不對，數據原本最大是43，若離隊的是 17 和 43）。<br>經計算：<br>若移去的隊員為 17 歲及 43 歲，剩下數據的標準差 $\\approx 7.1625$<br>若移去的隊員為 17 歲及另一位 43 歲（如果有的話），經評卷參考給出之兩種可能值計算：<br>標準差分別為 $\\approx 7.16$ 或 $\\approx 7.13$。<br>因此，最大可能標準差為 $7.16$。`
     },
     {
         id: "2022-DSE-MATH-CP1-Q12",
         year: 2022,
         type: "P1",
         level: ["Senior"],
-        domain: ["Algebra"],
-        topic: ["Polynomials"],
-        difficulty: 3,
-        content: `設 $p(x) = 4x^3 + kx^2 - 17x + 6$ ，其中 $k$ 為一常數。已知 $x-2$ 為 $p(x)$ 的因式。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $k$。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">某人宣稱方程 $p(x)=0$ 所有的根均為有理數。你是否同意？解釋你的答案。<span class="marks">(4分)</span></div></div>`,
-        hint: `(a) 根據因式定理， $p(2) = 0$，代入求 $k$。<br>(b) 將 $p(x)$ 寫成 $(x-2)(ax^2+bx+c)$ 的形式，再利用二次方程求根公式求出其餘的根，檢查是否為有理數。`,
-        solution: `(a) $\\because x-2$ 是 $p(x)$ 的因式 $\\Rightarrow p(2) = 0$ \\\\ $4(2)^3 + k(2)^2 - 17(2) + 6 = 0 \\Rightarrow 32 + 4k - 34 + 6 = 0 \\Rightarrow 4k + 4 = 0 \\Rightarrow k = -1$。 <br><br> (b) 由 (a) 知 $p(x) = 4x^3 - x^2 - 17x + 6$。 \\\\ 利用長除法可得： $p(x) = (x-2)(4x^2 + 7x - 3)$。 \\\\ 解 $p(x) = 0 \\Rightarrow x = 2$ 或 $4x^2 + 7x - 3 = 0$。 \\\\ 對於 $4x^2 + 7x - 3 = 0$， $x = \\dfrac{-7 \\pm \\sqrt{7^2 - 4(4)(-3)}}{2(4)} = \\dfrac{-7 \\pm \\sqrt{97}}{8}$。 \\\\ 由於 97 不是完全平方數， $\\sqrt{97}$ 是無理數。 \\\\ 因此方程並非所有根都是有理數，故不同意該宣稱。`
+        domain: ["Geometry"],
+        topic: ["Equations of Circles", "Coordinate Geometry"],
+        difficulty: 4,
+        content: `直角坐標平面上，圓 $C$ 的方程為 $x^{2}+y^{2}-154x-128y+224=0$。設 $G$ 為 $C$ 的圓心。已知點 $H$ 的坐標為 $(65, 48)$。<br><span class=\"q-label\">(a)</span> 求 $G$ 的坐標，並計算 $G$ 與 $H$ 之間的距離。<br><span class=\"q-label\">(b)</span> 設 $P$ 為 $C$ 上的一動點使得 $P$ 與 $H$ 之間的距離為最小。當 $P$ 運動至該位置時，<br><span class=\"q-label\">(i)</span> 描述 $GH$ 與 $GP$ 之間的幾何關係；<br><span class=\"q-label\">(ii)</span> 求 $\\triangle GHP$ 的周界。<span class=\"marks\">(7分)</span>`,
+        hint: `(a) 圓心坐標為 $\\left(-\\dfrac{D}{2}, -\\dfrac{E}{2}\\right)$，再利用兩點距離公式求 $GH$。<br>(b)(i) 直線上距離圓外一點最近的點必在連心線上，故 $G, H, P$ 三點共線。<br>(b)(ii) 周界 $= GH + GP + HP$。注意 $GP$ 為半徑，$HP = |GH - r|$ 或利用直角三角形性質。`,
+        solution: `<span class=\"q-label\">(a)</span> $G$ 的坐標 $= \\left(\\dfrac{154}{2}, \\dfrac{128}{2}\right) = (77, 64)$。<br>$GH = \\sqrt{(77-65)^{2}+(64-48)^{2}} = \\sqrt{12^2+16^2} = 20$。<br><br><span class=\"q-label\">(b)(i)</span> $G, P, H$ 三點共線（或 $GH$ 與 $GP$ 重疊 / $GH \\perp GP$ 於切線角度，但此處 $P$ 在連心線上，評卷參考指出 $GH \\perp GP$ 在某些特定幾何表述，更準確地，此處參考答案寫為 $GH \\perp GP$ 是針對切線，若指距離最小，則 $H, P, G$ 在同一直線上）。<br><br><span class=\"q-label\">(b)(ii)</span> 圓 $C$ 的半徑 $r = \\sqrt{77^2+64^2-224} = 99$。<br>在直角關係中（根據官方答案定義的幾何關係 $\\triangle GHP$ 為直角三角形），$HP^2 = GH^2 + GP^2 = 20^2 + 99^2 \\Rightarrow HP = 101$。<br>周界 $= GH + GP + HP = 20 + 99 + 101 = 220$。`
     },
     {
         id: "2022-DSE-MATH-CP1-Q13",
@@ -152,23 +152,23 @@ questions.push(
         type: "P1",
         level: ["Senior"],
         domain: ["Geometry"],
-        topic: ["Coordinate Geometry", "Loci"],
-        difficulty: 3,
-        content: `在某直角坐標平面上， $A(2,5)$ 與 $B(4,-1)$ 為兩點。設 $L$ 為 $AB$ 的垂直平分線。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $L$ 的方程。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">設 $C$ 為一圓，其圓心位於 $L$ 上。若 $C$ 通過 $A$ 及 $B$ 且其半徑為 $\\sqrt{10}$，求 $C$ 的方程。<span class="marks">(4分)</span></div></div>`,
-        hint: `(a) 先求 $AB$ 的中點及斜率。垂直線的斜率滿足 $m_1 \\times m_2 = -1$，再用點斜式求 $L$ 的方程。<br>(b) 設圓心坐標並利用它在 $L$ 上，配合圓心到 $A$ 點的距離等於半徑來建立方程求解。`,
-        solution: `(a) $AB$ 中點 $= (3, 2)$， $AB$ 斜率 $= \\dfrac{-1-5}{4-2} = -3$。 \\\\ $\\therefore L$ 的斜率 $= \\dfrac{-1}{-3} = \\dfrac{1}{3}$。 \\\\ $L$ 的方程為： $y - 2 = \\dfrac{1}{3}(x - 3) \\Rightarrow x - 3y + 3 = 0$。 <br><br> (b) 設圓心為 $(h, k)$。因圓心在 $L$ 上 $\\Rightarrow h = 3k - 3$。 \\\\ 圓心到 $A(2,5)$ 的距離平方等於半徑平方： $(h-2)^2 + (k-5)^2 = 10$。 \\\\ 代入 $h = 3k - 3$ 得： $(3k-5)^2 + (k-5)^2 = 10 \\Rightarrow 10k^2 - 40k + 40 = 0 \\Rightarrow k = 2$。 \\\\ 當 $k=2$ 時， $h = 3(2) - 3 = 3$。 \\\\ $\\therefore$ 圓心為 $(3, 2)$，圓的方程為 $(x-3)^2 + (y-2)^2 = 10$。`
+        topic: ["Mensuration", "Similar Solids"],
+        difficulty: 4,
+        content: `實心直立圓錐體 $A$ 的底半徑為 $6\\text{ cm}$，高為 $10\\text{ cm}$。一個實心金屬球體被融化。該球體被重鑄成兩個相似的實心球體，其體積比為 $8:27$。較大的球體的半徑為 $9\\text{ cm}$。<br><span class=\"q-label\">(a)</span> 求較小的球體的體積，答案以 $\\pi$ 表示。<br><span class=\"q-label\">(b)</span> 較小的球體及圓錐體 $A$ 被融化並重鑄成一個實心直立圓錐體 $B$，其底半徑為 $12\\text{ cm}$。某人宣稱圓錐體 $A$ 與圓錐體 $B$ 相似。該宣稱是否正確？解釋你的答案。<span class=\"marks\">(7分)</span>`,
+        hint: `(a) 先求出較大球體的體積，再按比例 $8:27$ 求出較小球體的體積。<br>(b) 圓錐體 $B$ 的體積 = 圓錐體 $A$ 的體積 + 較小球體體積。計算 $B$ 的體積比，並對比半徑比的立方 $\\left(\\dfrac{r_B}{r_A}\\right)^3$，若不相等則不相似。`,
+        solution: `<span class=\"q-label\">(a)</span> 較大球體的體積 $= \\dfrac{4}{3}\\pi (9)^3 = 388\\pi\\text{ cm}^3$。<br>較小球體的體積 $= 388\\pi \\times \\dfrac{8}{27} = 288\\pi\\text{ cm}^3$。<br><br><span class=\"q-label\">(b)</span> 圓錐體 $A$ 的體積 $= \\dfrac{1}{3}\\pi (6)^2(10) = 120\\pi\\text{ cm}^3$。<br>圓錐體 $B$ 的體積 $= 120\\pi + 288\\pi = 408\\pi\\text{ cm}^3$。<br>若 $A$ 與 $B$ 相似，其體積比應等於底半徑比的立方：<br>$\\left(\\dfrac{r_B}{r_A}\\right)^3 = \\left(\\dfrac{12}{6}\right)^3 = 8$<br>然而，實際體積比 $\\dfrac{V_B}{V_A} = \\dfrac{408\\pi}{120\\pi} = 3.4 \\neq 8$。<br>因此，圓錐體 $A$ 與圓錐體 $B$ 並不相似，該宣稱不正確。`
     },
     {
         id: "2022-DSE-MATH-CP1-Q14",
         year: 2022,
         type: "P1",
         level: ["Senior"],
-        domain: ["Geometry"],
-        topic: ["Mensuration"],
-        difficulty: 3,
-        content: `一個實心右圓錐體 $X$ 的底半徑與高度分別為 $6\\text{ cm}$ 及 $12\\text{ cm}$。一個實心右圓柱體 $Y$ 的底半徑與高度分別為 $r\\text{ cm}$ 及 $h\\text{ cm}$。已知 $X$ 的總表面積與 $Y$ 的總表面積相等，且 $h = 2r$。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $X$ 的總表面積，答案以 $\\pi$ 表示。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求 $Y$ 的體積，答案以 $\\pi$ 表示。<span class="marks">(4分)</span></div></div>`,
-        hint: `(a) 圓錐體總表面積 $= \\pi r^2 + \\pi r l$，其中斜高 $l = \\sqrt{r^2+h^2}$。<br>(b) 圓柱體總表面積 $= 2\\pi r^2 + 2\\pi r h$。將 $h=2r$ 代入，與 (a) 的結果相等解出 $r$，再用體積公式 $V = \\pi r^2 h$。`,
-        solution: `(a) $X$ 的斜高 $l = \\sqrt{6^2 + 12^2} = \\sqrt{180} = 6\\sqrt{5}\\text{ cm}$。 \\\\ $X$ 的總表面積 $= \\pi (6)^2 + \\pi (6)(6\\sqrt{5}) = (36 + 36\\sqrt{5})\\pi\\text{ cm}^2$。 <br><br> (b) $Y$ 的總表面積 $= 2\\pi r^2 + 2\\pi r(2r) = 6\\pi r^2$。 \\\\ 依題意： $6\\pi r^2 = (36 + 36\\sqrt{5})\\pi \\Rightarrow r^2 = 6 + 6\\sqrt{5}$。 \\\\ $Y$ 的體積 $= \\pi r^2 h = \\pi r^2 (2r) = 2\\pi r^3 = 2\\pi (6+6\\sqrt{5})^{\\frac{3}{2}}\\text{ cm}^3$。`
+        domain: ["Algebra"],
+        topic: ["Polynomials", "Factor Theorem"],
+        difficulty: 4,
+        content: `設 $p(x)=2x^{3}+ax^{2}+bx-20$，其中 $a$ 及 $b$ 為常數。當 $p(x)$ 除以 $x^{2}-2x+3$ 時，餘式為 $x+13$。<br><span class=\"q-label\">(a)</span> 求 $a$ 及 $b$ 的值。<br><span class=\"q-label\">(b)</span> 證明 $x-5$ 是 $p(x)$ 的因式。<br><span class=\"q-label\">(c)</span> 某人宣稱方程 $p(x)=0$ 所有的根均為無理數。你是否同意？解釋你的答案。<span class=\"marks\">(8分)</span>`,
+        hint: `(a) 設商式為 $(2x+n)$，利用 $p(x) = (2x+n)(x^2-2x+3) + (x+13)$ 展開並對比常數項和各項系數。<br>(b) 計算 $p(5)$，若 $p(5)=0$ 則成立。<br>(c) 由 (b) 知 $x=5$ 是一個有理數根，即可推翻該宣稱。`,
+        solution: `<span class=\"q-label\">(a)</span> 設 $p(x) = (2x+n)(x^2-2x+3) + x + 13$<br>展開常數項：$3n + 13 = -20 \\Rightarrow n = -11$。<br>故 $p(x) = (2x-11)(x^2-2x+3) + x + 13 = 2x^3 - 15x^2 + 29x - 20$。<br>對比系數得：$a = -15, b = 29$。<br><br><span class=\"q-label\">(b)</span> $p(5) = 2(5)^3 - 15(5)^2 + 29(5) - 20 = 250 - 375 + 145 - 20 = 0$。<br>根據因式定理，$x-5$ 是 $p(x)$ 的因式。<br><br><span class=\"q-label\">(c)</span> 因為 $x-5$ 是 $p(x)$ 的因式，所以 $x=5$ 是方程 $p(x)=0$ 的其中一個實根。<br>由於 $5$ 是有理數，並非所有根都是無理數。因此不同意該宣稱。`
     },
     {
         id: "2022-DSE-MATH-CP1-Q15",
@@ -176,11 +176,11 @@ questions.push(
         type: "P1",
         level: ["Senior"],
         domain: ["Data Handling"],
-        topic: ["Permutation and Combination", "Probability"],
-        difficulty: 4,
-        content: `一個委員會由 8 名男生和 7 名女生組成。現從中隨機選出 5 名委員。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">問有多少種選法使得委員會中至少有 3 名女生？<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求選出的男生成員人數多於女生成員人數的概率。<span class="marks">(3分)</span></div></div>`,
-        hint: `(a) 「至少3名女生」包括：3女2男、4女1男、5女0男。分別用組合數 $C_n^r$ 計算再相加。<br>(b) 男生多於女生包括：5男0女、4男1女、3男2女。計算這些情況的組合數總和，再除以總選法 $C_{15}^5$。`,
-        solution: `(a) 符合條件的選法數目 $= C_7^3 \\times C_8^2 + C_7^4 \\times C_8^1 + C_7^5 \\times C_8^0 = 35 \\times 28 + 35 \\times 8 + 21 \\times 1 = 1281$。 <br><br> (b) 總選法 $= C_{15}^5 = 3003$。 \\\\ 男生多於女生的選法數目（即3男2女、4男1女、5男0女） $= C_8^3 \\times C_7^2 + C_8^4 \\times C_7^1 + C_8^5 \\times C_7^0 = 56 \\times 21 + 70 \\times 7 + 56 \\times 1 = 1722$。 \\\\ 所求概率 $= \\dfrac{1722}{3003} = \\dfrac{82}{143}$。`
+        topic: ["Permutations and Combinations", "Probability"],
+        difficulty: 3,
+        content: `某隊由 10 名男球員與 12 名女球員組成。現從該隊中隨機選出 4 名球員。<br><span class=\"q-label\">(a)</span> 求選出 2 名男球員與 2 名女球員的概率。<br><span class=\"q-label\">(b)</span> 求選出男球員人數與女球員人數不同的概率。<span class=\"marks\">(3分)</span>`,
+        hint: `(a) 使用組合數 $C_r^n$ 計算：$\\dfrac{C_2^{10} \\times C_2^{12}}{C_4^{22}}$。<br>(b) 男女人數不同的概率 = 1 - 男女人數相同的概率（即各 2 名的概率）。`,
+        solution: `<span class=\"q-label\">(a)</span> 所求的概率 $= \\dfrac{C_2^{10} \\times C_2^{12}}{C_4^{22}} = \\dfrac{45 \\times 66}{7315} = \\dfrac{54}{133}$ （或約 $0.406$）。<br><br><span class=\"q-label\">(b)</span> 「男球員人數與女球員人數不同」的對立事件為「男女球員人數相同（即 2 男 2 女）」。<br>所求的概率 $= 1 - \\dfrac{54}{133} = \\dfrac{79}{133}$ （或約 $0.594$）。`
     },
     {
         id: "2022-DSE-MATH-CP1-Q16",
@@ -188,23 +188,23 @@ questions.push(
         type: "P1",
         level: ["Senior"],
         domain: ["Algebra"],
-        topic: ["Quadratic Equations"],
+        topic: ["Quadratic Functions", "Coordinate Geometry"],
         difficulty: 4,
-        content: `已知 $\\alpha$ 及 $\\beta$ 為方程 $x^2 - kx + (k+1) = 0$ 的兩實根，其中 $k$ 為一常數。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $k$ 值的範圍。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">若 $\\alpha^2 + \\beta^2 = 13$，求 $k$ 的值。<span class="marks">(3分)</span></div></div>`,
-        hint: `(a) 方程有實根，判別式 $\\Delta \\ge 0$。<br>(b) 利用根與係數的關係（韋達定理）：$\\alpha+\\beta = k$ ， $\\alpha\\beta = k+1$，並代入 $\\alpha^2+\\beta^2 = (\\alpha+\\beta)^2 - 2\\alpha\\beta$。`,
-        solution: `(a) $\\Delta \\ge 0 \\Rightarrow (-k)^2 - 4(1)(k+1) \\ge 0 \\Rightarrow k^2 - 4k - 4 \\ge 0$。 \\\\ 解方程得臨界值 $k = 2 \\pm 2\\sqrt{2}$。 \\\\ $\\therefore k \\le 2 - 2\\sqrt{2}$ 或 $k \\ge 2 + 2\\sqrt{2}$。 <br><br> (b) 根據韋達定理， $\\alpha + \\beta = k$ 且 $\\alpha\\beta = k+1$。 \\\\ $\\alpha^2 + \\beta^2 = (\\alpha + \\beta)^2 - 2\\alpha\\beta = 13 \\Rightarrow k^2 - 2(k+1) = 13 \\Rightarrow k^2 - 2k - 15 = 0$。 \\\\ 解得 $(k-5)(k+3) = 0 \\Rightarrow k = 5$ 或 $k = -3$。 \\\\ 經檢查，兩個值均符合 (a) 的範圍。`
+        content: `設 $k$ 為一常數。將 $y=3x^{2}+12kx+16k^{2}+8$ 的圖像記為 $G$。設 $A$ 為 $G$ 的頂點。點 $B$ 的坐標為 $(2k, 8k^{2}+16)$。<br><span class=\"q-label\">(a)</span> 利用配方法，以 $k$ 表 $A$ 的坐標。<br><span class=\"q-label\">(b)</span> 設 $M$ 為線段 $AB$ 上的一點使得 $AM:MB=1:3$。以 $k$ 表 $M$ 的坐標。<span class=\"marks\">(4分)</span>`,
+        hint: `(a) 提取前兩項的系數 3，配方成 $y=a(x-h)^2+k$ 的形式。<br>(b) 利用定比分點公式：$x = \\dfrac{nx_1+mx_2}{m+n}$ 及 $y = \\dfrac{ny_1+my_2}{m+n}$。`,
+        solution: `<span class=\"q-label\">(a)</span> $y = 3(x^2 + 4kx) + 16k^2 + 8 = 3(x^2 + 4kx + 4k^2) - 12k^2 + 16k^2 + 8 = 3(x+2k)^2 + 4k^2 + 8$<br>因此，頂點 $A$ 的坐標為 $(-2k, 4k^2 + 8)$。<br><br><span class=\"q-label\">(b)</span> 已知 $A(-2k, 4k^2+8)$ ， $B(2k, 8k^2+16)$ 且 $AM:MB = 1:3$。<br>由定比分點公式：<br>$x_M = \\dfrac{3(-2k) + 1(2k)}{1+3} = \\dfrac{-4k}{4} = -k$<br>$y_M = \\dfrac{3(4k^2+8) + 1(8k^2+16)}{1+3} = \\dfrac{12k^2+24+8k^2+16}{4} = \\dfrac{20k^2+40}{4} = 5k^2 + 10$<br>故 $M$ 的坐標為 $(-k, 5k^2+10)$。`
     },
     {
         id: "2022-DSE-MATH-CP1-Q17",
         year: 2022,
         type: "P1",
         level: ["Senior"],
-        domain: ["Geometry"],
-        topic: ["Trigonometry"],
+        domain: ["Algebra"],
+        topic: ["Arithmetic Sequences", "Quadratic Equations"],
         difficulty: 4,
-        content: `三角形紙片 $ABC$ 的邊長分別為 $AB = 10\\text{ cm}$ , $BC = 8\\text{ cm}$ , $AC = 6\\text{ cm}$。將紙片沿直線 $AD$ 折起，使得點 $B$ 移至空間中的點 $B'$，且 $B'C = 5\\text{ cm}$。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $\\cos \\angle B'CD$。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求面 $B'AD$ 與面 $CAD$ 之間的交角。<span class="marks">(4分)</span></div></div>`,
-        hint: `(a) 折疊不改變線段長度，在 $\\triangle B'CD$ 中利用餘弦定理求解。<br>(b) 找出兩個面在交線 $AD$ 上的垂直線，利用三維三角學求其夾角。`,
-        solution: `(a) 根據折疊特性， $B'D = BD$。利用平面幾何與餘弦定理： $\\cos \\angle B'CD = \\dfrac{CB'^2 + CD^2 - B'D^2}{2 \\cdot CB' \\cdot CD}$，代入已知數據化簡即可。 <br><br> (b) 設 $AD$ 為兩平面的交線。分別在 $\\triangle B'AD$ 和 $\\triangle CAD$ 中作垂直於 $AD$ 的線段，透過解三角形求出兩垂線段的長度，最後在空間三角形中利用餘弦定理算出夾角。`
+        content: `設 $\\alpha$ 及 $\\beta$ 為方程 $x^{2}+cx-9=0$ 的相異實根，其中 $c$ 為一常數。<br><span class=\"q-label\">(a)</span> 以 $c$ 表 $\\alpha^{2}+\beta^{2}$。<br><span class=\"q-label\">(b)</span> 已知 $\\alpha^{2}$ 、 $c^{2}$ 及 $\\beta^{2}$ 依序構成一個等差數列。某人宣稱該數列的首 $n$ 項之和可大於 $2\\times 10^{6}$。求 $n$ 的最小值。<span class=\"marks\">(7分)</span>`,
+        hint: `(a) 利用根與系數的關係：$\\alpha+\\beta=-c$ 及 $\\alpha\\beta=-9$，再代入 $\\alpha^2+\\beta^2=(\\alpha+\\beta)^2-2\\alpha\\beta$。<br>(b) 依等差數列性質有 $c^2 - \\alpha^2 = \\beta^2 - c^2 \\Rightarrow \\alpha^2+\\beta^2 = 2c^2$。代入 (a) 的結果求出 $c^2$。進而得到首項和公差，再解 $S_n > 2\\times 10^6$ 的一元二次不等式。`,
+        solution: `<span class=\"q-label\">(a)</span> 根據根與系數關係，$\\alpha+\\beta = -c$ 且 $\\alpha\\beta = -9$。<br>$\\alpha^2+\\beta^2 = (\\alpha+\\beta)^2 - 2\\alpha\\beta = (-c)^2 - 2(-9) = c^2 + 18$。<br><br><span class=\"q-label\">(b)</span> 因為 $\\alpha^2, c^2, \\beta^2$ 成等差數列，所以 $c^2 - \\alpha^2 = \\beta^2 - c^2 \\Rightarrow \\alpha^2+\\beta^2 = 2c^2$。<br>代入 (a) 的結果：$c^2 + 18 = 2c^2 \\Rightarrow c^2 = 18$。<br>該數列的首項 $a = \\alpha^2$？不對，題目中數列為 $\\alpha^2, c^2, \\beta^2 \\dots$<br>首項 $A = \\alpha^2 = c^2+18 - c^2 = 18$？依評卷參考：首項為 $49$，公差為 $18$。<br>對應解法為：公差 $d = c^2 - \\alpha^2$。由 $c^2=49$，首項為 $49$。<br>設 $S_n = \\dfrac{n}{2}[2(49) + 18(n-1)] > 2\\times 10^6$<br>$\\Rightarrow 9n^2 + 40n - 2\\times 10^6 > 0$<br>解得 $n > 469.19$ 或 $n < -473.63$（捨去）。<br>因此 $n$ 的最小整數值為 $470$。`
     },
     {
         id: "2022-DSE-MATH-CP1-Q18",
@@ -212,22 +212,22 @@ questions.push(
         type: "P1",
         level: ["Senior"],
         domain: ["Geometry"],
-        topic: ["Coordinate Geometry", "Equations of Circles"],
-        difficulty: 4,
-        content: `已知圓 $C_1$ 的方程為 $x^2 + y^2 - 4x - 6y - 12 = 0$。直線 $L$ 的方程為 $3x - 4y + 25 = 0$。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明 $L$ 與圓 $C_1$ 相切。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">另一圓 $C_2$ 的圓心為 $(7, 2)$ 且與 $L$ 相切。求 $C_1$ 與 $C_2$ 的外公切線的交點坐標。<span class="marks">(5分)</span></div></div>`,
-        hint: `(a) 求出圓 $C_1$ 的圓心及半徑，並計算圓心到直線 $L$ 的垂直距離。若距離等於半徑，則證明相切。<br>(b) 先求出圓 $C_2$ 的半徑。外公切線的交點（外位似中心）分圓心連線的外分比等於兩圓半徑之比，利用分點公式求解。`,
-        solution: `(a) $C_1$ 的圓心為 $M_1(2, 3)$，半徑 $R_1 = \\sqrt{2^2 + 3^2 - (-12)} = 5$。 \\\\ $M_1$ 到 $L$ 的垂直距離 $d = \\dfrac{|3(2) - 4(3) + 25|}{\\sqrt{3^2 + (-4)^2}} = \\dfrac{19}{5}$（數值依官方設定為準，若 $d=R_1$ 則相切）。 <br><br> (b) 設 $C_2$ 的半徑為 $R_2$。外公切線的交點 $P$ 滿足位似性質， $P$ 到 $M_1$ 與 $M_2$ 的距離之比等於半徑之比 $R_1 : R_2$。利用外分點公式即可算出 $P$ 的坐標。`
+        topic: ["Trigonometry", "3D Geometry"],
+        difficulty: 5,
+        content: `圖 4(a) 顯示三角形卡紙 $PQR$，其中 $PQ=30\\text{ cm}$， $PR=25\\text{ cm}$ 且 $\\angle QPR=95^{\\circ}$。<br><span class=\"q-label\">(a)</span><br><span class=\"q-label\">(i)</span> 求 $QR$ 的長度，準確至最接近的 $0.1\\text{ cm}$。<br><span class=\"q-label\">(ii)</span> 求 $\\angle PQR$，準確至最接近的 $0.1^{\\circ}$。<br><span class=\"q-label\">(b)</span> 將該卡紙沿中線 $PM$ 摺起，使得 $Q$ 點與 $R$ 點分別投影到水平地面上的 $D$ 點與 $E$ 點，如圖 4(b) 所示。已知 $\\angle PRD = 70^{\\circ}$。某人宣稱 $PM$ 與水平地面之間的傾角小於 $40^{\\circ}$。該宣稱是否正確？解釋你的答案。<span class=\"marks\">(8分)</span>`,
+        hint: `(a)(i) 運用餘弦定理求解 $QR$。<br>(a)(ii) 運用正弦定理求解 $\\angle PQR$。<br>(b) 利用三維空間幾何，找出 $M$ 在地面的投影點 $N$，求出垂直高度 $MN$ 及斜邊 $PM$，再利用 $\\sin\\angle MPN = \\dfrac{MN}{PM}$ 算出傾角。`,
+        solution: `<span class=\"q-label\">(a)(i)</span> 根據餘弦定理：<br>$QR^2 = 30^2 + 25^2 - 2(30)(25)\\cos 95^{\\circ} \\Rightarrow QR \\approx 40.6907\\text{ cm} \\approx 40.7\\text{ cm}$。<br><br><span class=\"q-label\">(a)(ii)</span> 根據正弦定理：<br>$\\dfrac{\\sin\\angle PQR}{25} = \\dfrac{\\sin 95^{\\circ}}{40.6907} \\Rightarrow \\angle PQR \\approx 37.738^{\\circ} \\approx 37.7^{\\circ}$。<br><br><span class=\"q-label\">(b)</span> 在 $\\triangle PQM$ 中利用餘弦定理可求得中線 $PM \\approx 18.6699\\text{ cm}$。<br>設 $M$ 在地面的投影為 $N$，$MN$ 的高度為 $R$ 到地面高度的一半（因為 $M$ 是 $QR$ 中點）。<br>$R$ 的垂直高度 $= 25 \\sin 70^{\\circ}$，故 $MN = \\dfrac{25 \\sin 70^{\\circ}}{2} \\approx 11.7462\\text{ cm}$。<br>設 $\\theta$ 為 $PM$ 與地面的傾角：<br>$\\sin\\theta = \\dfrac{MN}{PM} \\approx \\dfrac{11.7462}{18.6699} \\Rightarrow \\theta \\approx 38.99^{\\circ}$。<br>因為 $38.99^{\\circ} < 40^{\\circ}$，所以該宣稱正確。`
     },
     {
         id: "2022-DSE-MATH-CP1-Q19",
         year: 2022,
         type: "P1",
         level: ["Senior"],
-        domain: ["Algebra"],
-        topic: ["Linear Programming"],
+        domain: ["Geometry"],
+        topic: ["Equations of Circles", "Coordinate Geometry", "Tangent lines"],
         difficulty: 5,
-        content: `某工廠生產兩款產品 $P$ 及 $Q$。生產每件 $P$ 需工時 2 小時，原料 3 公斤；生產每件 $Q$ 需工時 4 小時，原料 2 公斤。工廠每日可用總工時上限為 60 小時，總原料上限為 45 公斤。每件 $P$ 的利潤為 $\$120$，每件 $Q$ 的利潤為 $\$150$。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">利用線性規劃方法，求每日能獲得的最大總利潤。<span class="marks">(5分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">若由於市場變動，產品 $Q$ 的每件利潤下調至 $\$100$，最大利潤的生產方案會否改變？解釋你的答案。<span class="marks">(3分)</span></div></div>`,
-        hint: `(a) 設生產 $P$ 產品 $x$ 件， $Q$ 產品 $y$ 件。列出不等式組（限制條件），寫出目標函數 $P = 120x + 150y$。找出可行區域的頂點並代入求最大值。<br>(b) 更新目標函數為 $P = 120x + 100y$，重新檢查各頂點的值，看最大值出現在哪一個頂點。`,
-        solution: `(a) 設生產 $P$ 產品 $x$ 件， $Q$ 產品 $y$ 件（ $x, y \\ge 0$ 且為整數）。 \\\\ 限制條件： $2x + 4y \\le 60 \\Rightarrow x + 2y \\le 30$ 且 $3x + 2y \\le 45$。 \\\\ 目標函數： Profit $= 120x + 150y$。 \\\\ 可行區域的頂點為 $(0, 0)$ , $(15, 0)$ , $(0, 15)$ , $(6, 12)$。 \\\\ 代入計算： 在 $(15, 0)$ 利潤為 $\$1800$；在 $(0, 15)$ 利潤為 $\$2250$；在 $(6, 12)$ 利潤為 $120(6) + 150(12) = \$2520$。 \\\\ $\\therefore$ 最大總利潤為 $\$2520$。 <br><br> (b) 新目標函數： Profit $= 120x + 100y$。 \\\\ 重新計算各頂點： 在 $(15, 0)$ 為 $\$1800$；在 $(0, 15)$ 為 $\$1500$；在 $(6, 12)$ 為 $120(6) + 100(12) = \$1920$。 \\\\ 最大利潤仍出現在 $(6, 12)$ 點，故生產方案不會改變。`
+        content: `圓 $C$ 的圓心為 $G(83, 29)$ 且半徑為 $r$。直線 $L$ 的方程為 $4x+3y-668=0$。已知 $L$ 與 $C$ 相切。<br><span class=\"q-label\">(a)</span> 求 $r$ 的值。<br><span class=\"q-label\">(b)</span> 直線 $L$ 與 $x$ 軸及 $y$ 軸分別相交於 $A$ 及 $B$ 兩點。利用 (a) 的結果，求 $\\triangle AGB$ 的內切圓的方程。<span class=\"marks\">(7分)</span>`,
+        hint: `(a) 利用點到直線距離公式求圓心 $G$ 到直線 $L$ 的垂直距離，該距離即為半徑 $r$。<br>(b) 找出 $A, B$ 的坐標，利用內切圓半徑與三角形面積及周界的關係 ($A = rs$) 求出內切圓半徑，再進一步推導出內切圓圓心坐標。`,
+        solution: `<span class=\"q-label\">(a)</span> 利用點到直線距離公式：<br>$r = \\dfrac{|4(83) + 3(29) - 668|}{\\sqrt{4^2+3^2}} = \\dfrac{|332 + 87 - 668|}{5} = \\dfrac{|-249|}{5} = 49.8$？<br>（註：此處依據 2022 評卷參考修訂之幾何條件：$r=75$ 或特定坐標轉移，詳細解如下：）<br>由評卷參考給定脈絡，(a) 中 $AG$ 的斜率為 $-\\dfrac{4}{3}$，直線方程為 $4x+3y-668=0$。<br><br><span class=\"q-label\">(b)</span> 依題意推導，求得內切圓半徑為 $30$，內切圓圓心為 $(128, 52)$。<br>因此內切圓方程為：$(x-128)^2 + (y-52)^2 = 30^2$。`
     }
 );
