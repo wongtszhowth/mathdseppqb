@@ -97,7 +97,7 @@ questions.push(
         topic: ["Plane Geometry"],
         difficulty: 3,
         content: `圖中，$ST$ 與 $UV$ 相交於點 $W$ 。已知 $SU \\parallel VT$ 及 $W$ 為 $ST$ 的中點。
-<img src="2025dsep1q08.jpg" class="q-img" alt="題目附圖">
+<img src="img/2025dsep1q08.jpg" class="q-img" alt="題目附圖" style="max-width: 400px; height: auto;">
 <div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明 $\\Delta SUW \\cong \\Delta TVW$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">設 $X$ 為 $TW$ 上的一點使得 $\\Delta SUW \\sim \\Delta VXW$。若 $SU = 57\\text{ cm}$、 $SW = 63\\text{ cm}$ 及 $WX = 7\\text{ cm}$，求 $\\Delta TVX$ 的周界。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 利用平行線的內錯角 (A.A.S. 或 A.S.A.) 證明全等；(b) 運用相似三角形的對應邊成比例求出未知邊長。`,
         solution: `(a) 因為 $SU \\parallel VT$，所以 $\\angle USW = \\angle VTW$ (內錯角)。又 $SW = TW$ ($W$ 為中點)，且 $\\angle SWU = \\angle TWV$ (對頂角)。故 $\\Delta SUW \\cong \\Delta TVW$ (A.S.A.)。<br>(b) 由全等知 $TV = SU = 57\\text{ cm}$, $VW = UW$。利用相似三角形與比例關係算出各邊，進而求得周界。`
@@ -146,7 +146,10 @@ questions.push(
         domain: ["Data Handling"],
         topic: ["Statistical Graphs", "Measures of Dispersion"],
         difficulty: 3,
-        content: `下面的幹葉圖顯示一些運動員在訓練前的體重（以 $\\text{kg}$ 為單位）的分佈：<pre style="white-space: pre-wrap; word-break: break-all;">幹(十位) | 葉(個位)\n4        | 5 6 7 8 9\n5        | 0 3 4 5 6 7 8\n6        | 2 4 w\n7        | w</pre>上述分佈的分佈域與四分位數間距之差為 $25\\text{ kg}$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出上述分佈的分佈域（以 $w$ 表示）。由此，求 $w$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">下面的框線圖顯示該些運動員在訓練後的體重分佈。求因訓練而引致該分佈的上四分位數的改變。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">該些運動員在訓練後的體重的分佈的離差是否較訓練前的小？試解釋你的答案。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `下面的幹葉圖顯示一些運動員在訓練前的體重（以 $\\text{kg}$ 為單位）的分佈：<pre style="white-space: pre-wrap; word-break: break-all;">幹(十位) | 葉(個位)\n4        | 5 6 7 8 9\n5        | 0 3 4 5 6 7 8\n6        | 2 4 w\n7        | w</pre>上述分佈的分佈域與四分位數間距之差為 $25\\text{ kg}$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出上述分佈的分佈域（以 $w$ 表示）。由此，求 $w$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">下面的框線圖顯示該些運動員在訓練後的體重分佈。</div></div>
+        <img src="img/2025dsep1q12b.jpg" class="q-img" alt="題目附圖" style="max-width: 400px; height: auto;">
+        <div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求因訓練而引致該分佈的上四分位數的改變。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">該些運動員在訓練後的體重的分佈的離差是否較訓練前的小？試解釋你的答案。</div></div>
+        <span class="marks">(4分)</span><div class="q-clearfix"></div>`,
         hint: `分佈域 $=$ 最大值 $-$ 最小值。四分位數間距 $= Q_3 - Q_1$。依據二者之差建立關於 $w$ 的方程。`,
         solution: `(a) 最大值為 $70+w$，最小值為 $45$，分佈域 $= 70+w - 45 = 25+w$。結合四分位數間距計算可解出 $w$。<br>(b) 讀取框線圖的上四分位數，再減去訓練前的 $Q_3$ 即可。<br>(c) 比較兩者的分佈域或四分位數間距（離差指標）來做判斷。`
     },
