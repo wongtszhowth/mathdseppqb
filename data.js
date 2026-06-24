@@ -97,7 +97,7 @@ questions.push(
         topic: ["Plane Geometry"],
         difficulty: 3,
         content: `圖中，$ST$ 與 $UV$ 相交於點 $W$ 。已知 $SU \\parallel VT$ 及 $W$ 為 $ST$ 的中點。
-<img src="img/2025dsep1q08.jpg" class="q-img" alt="題目附圖" style="width: inherit; max-width: 400px; height: auto;">
+<img src="img/2025dsep1q08.jpg" class="q-img" alt="題目附圖" style="max-width: 350px;">
 <div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明 $\\Delta SUW \\cong \\Delta TVW$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">設 $X$ 為 $TW$ 上的一點使得 $\\Delta SUW \\sim \\Delta VXW$。若 $SU = 57\\text{ cm}$、 $SW = 63\\text{ cm}$ 及 $WX = 7\\text{ cm}$，求 $\\Delta TVX$ 的周界。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 利用平行線的內錯角 (A.A.S. 或 A.S.A.) 證明全等；(b) 運用相似三角形的對應邊成比例求出未知邊長。`,
         solution: `(a) $\\angle SWU = \\angle TWV$ （對頂角）<br>$SW = TW$ （已知）<br>$\\angle USW = \\angle VTW$ （內錯角， $SU \\parallel VT$）<br>$\\triangle SUW \\cong \\triangle TVW$ （ASA）<br><br>(b) 注意 $\\triangle SUW \\sim \\triangle VXW$。<br>$$\\frac{SU}{VX} = \\frac{UW}{XW} = \\frac{SW}{VW}$$<br>由 (a) 可得 $UW = VW$。<br>因此，<br>$$\\frac{57}{VX} = \\frac{VW}{7} = \\frac{63}{VW}$$<br>解得 $VW = 21\\text{ cm}$ 且 $VX = 19\\text{ cm}$。<br><br>$\\triangle TVX$ 的周界 $\\begin{aligned} &= TV + VX + TX \\\\ &= 57 + 19 + (63 - 7) \\\\ &= 132\\text{ cm} \\end{aligned}$`
