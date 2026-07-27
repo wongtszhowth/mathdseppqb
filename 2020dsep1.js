@@ -22,7 +22,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Factorization"],
         difficulty: 1,
-        content: `因式分解<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">$a^2 + a - 6$ ，<span class="marks">(1分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$a^4 + a^3 - 6a^2$ 。<span class="marks">(2分)</span></div></div>`,
+        content: `因式分解<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">$\alpha^2 + \alpha - 6$ ，<span class="marks">(1分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$\alpha^4 + \alpha^3 - 6\alpha^2$ 。<span class="marks">(2分)</span></div></div>`,
         hint: `(a) 尋找兩個數，其積為 $-6$、和為 $1$。<br>(b) 先提取公因式 $a^2$，再利用 (a) 的結果。`,
         solution: `(a) $a^2 + a - 6 = (a + 3)(a - 2)$ <br><br> (b) $a^4 + a^3 - 6a^2 = a^2(a^2 + a - 6) = a^2(a + 3)(a - 2)$`
     },
@@ -46,7 +46,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Ratio and Proportion"],
         difficulty: 1,
-        content: `設 $a$、$b$ 及 $c$ 均為非零的數使得 $\\dfrac{a}{b} = \\dfrac{6}{7}$ 及 $3a = 4c$。求 $\\dfrac{b+2c}{a+2b}$。<span class="marks">(3分)</span>`,
+        content: `設 $a$、$b$ 及 $c$ 均為非零的數使得 $\\dfrac{a}{b} = \\dfrac{6}{7}$ 及 $3a = 4c$。 求 $\\dfrac{b+2c}{a+2b}$。<span class="marks">(3分)</span>`,
         hint: `設 $a = 6k$、$b = 7k$，代入 $3a = 4c$ 求出 $c$，再代入所求分式。`,
         solution: `設 $a = 6k$、$b = 7k$。\\\\ 由 $3a = 4c$ 得 $3(6k) = 4c \\Rightarrow c = \\dfrac{9}{2}k$。\\\\ $\\dfrac{b+2c}{a+2b} = \\dfrac{7k + 2(\\dfrac{9}{2}k)}{6k + 2(7k)} = \\dfrac{7k + 9k}{6k + 14k} = \\dfrac{16k}{20k} = \\dfrac{4}{5}$`
     },
@@ -58,7 +58,7 @@ questions.push(
         domain: ["Number and Cardinality"],
         topic: ["Percentages"],
         difficulty: 2,
-        content: `在某招聘活動中，男申請者的人數較女申請者的人數多 $28\\%$。男申請者的人數與女申請者的人數之差為 $91$。求在該招聘活動中男申請者的人數。<span class="marks">(4分)</span>`,
+        content: `在某招聘活動中，男申請者的人數較女申請者的人數多 $28\\%$。 男申請者的人數與女申請者的人數之差為 $91$。 求在該招聘活動中男申請者的人數。<span class="marks">(4分)</span>`,
         hint: `設女申請者人數為 $F$，則男申請者人數為 $1.28F$。利用兩者之差列出方程求解。`,
         solution: `設女申請者人數為 $F$，則男申請者人數為 $1.28F$。\\\\ $1.28F - F = 91 \\Rightarrow 0.28F = 91 \\Rightarrow F = 325$。\\\\ 男申請者人數 $= 1.28 \\times 325 = 416$。\\\\ 答：男申請者的人數為 $416$。`
     },
@@ -70,7 +70,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Inequalities"],
         difficulty: 2,
-        content: `考慮複合不等式<br>$$3 - x > \\dfrac{7 - x}{2}$$  或  $$5 + x > 4$$ ............ (*) 。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">解 (*)。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出滿足 (*) 的最大負整數。<span class="marks">(1分)</span></div></div>`,
+        content: `考慮複合不等式<br>$3 - x > \\dfrac{7 - x}{2}$  或  $5 + x > 4$ ............ (*) 。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">解 (*)。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出滿足 (*) 的最大負整數。<span class="marks">(1分)</span></div></div>`,
         hint: `(a) 分別解兩個不等式，再取聯集。<br>(b) 在解集中找出最大的負整數。`,
         solution: `(a) 解第一個不等式： $3 - x > \\dfrac{7 - x}{2} \\Rightarrow 6 - 2x > 7 - x \\Rightarrow -x > 1 \\Rightarrow x < -1$。\\\\ 解第二個不等式： $5 + x > 4 \\Rightarrow x > -1$。\\\\ 因此 (*) 的解為 $x < -1$ 或 $x > -1$（即 $x \\neq -1$）。 <br><br> (b) 滿足 (*) 的負整數中最大者為 $-2$。`
     },
@@ -82,7 +82,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Quadratic Equations"],
         difficulty: 2,
-        content: `設 $p(x) = 4x^2 + 12x + c$，其中 $c$ 為一常數。方程 $p(x) = 0$ 有等根。求<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">$c$，<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$y = p(x) - 169$ 的圖像的 $x$ 截距。<span class="marks">(3分)</span></div></div>`,
+        content: `設 $\mathrm{p}(x) = 4x^2 + 12x + c$，其中 $c$ 為一常數。 方程 $\mathrm{p}(x) = 0$ 有等根。 求<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">$c$，<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$y = \mathrm{p}(x) - 169$ 的圖像的 $x$ 截距。<span class="marks">(3分)</span></div></div>`,
         hint: `(a) 利用判別式 $\\Delta = 0$ 求 $c$。<br>(b) 將 $c$ 代入後令 $y = 0$ 解二次方程。`,
         solution: `(a) $\\Delta = 12^2 - 4(4)c = 0 \\Rightarrow 144 - 16c = 0 \\Rightarrow c = 9$。 <br><br> (b) $y = 4x^2 + 12x + 9 - 169 = 4x^2 + 12x - 160 = 4(x^2 + 3x - 40) = 4(x + 8)(x - 5)$。\\\\ 令 $y = 0$ 得 $x = -8$ 或 $x = 5$。\\\\ 故 $x$ 截距為 $-8$ 及 $5$。`
     },
@@ -94,7 +94,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Plane Geometry"],
         difficulty: 3,
-        content: `圖 1 中，$$B$$ 及 $$D$$ 分別為 $$AC$$ 及 $$AE$$ 上的點。 $$BE$$ 與 $$CD$$ 相交於點 $$F$$。 已知 $AB = BE$ 、 $BD \\parallel CE$ 、 $\\angle CAE = 30^\\circ$ 及 $\\angle ADB = 42^\\circ$。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $\\angle BEC$。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">設 $\\angle BDC = \\theta$。 以 $\\theta$ 表 $\\angle CFE$。<span class="marks">(2分)</span></div></div>`,
+        content: `圖 1 中，$B$ 及 $D$ 分別為 $AC$ 及 $AE$ 上的點。 $BE$ 與 $CD$ 相交於點 $F$。 已知 $AB = BE$ 、 $BD \\parallel CE$ 、 $\\angle CAE = 30^\\circ$ 及 $\\angle ADB = 42^\\circ$。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $\\angle BEC$。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">設 $\\angle BDC = \\theta$。 以 $\\theta$ 表 $\\angle CFE$。<span class="marks">(2分)</span></div></div>`,
         hint: `(a) 利用 $AB = BE$ 得等腰三角形，再配合平行線性質及三角形內角和。<br>(b) 利用三角形外角等於不相鄰兩內角之和，或以 $\\theta$ 表示相關角。`,
         solution: `(a) 在 $\\triangle ABD$ 中，$\\angle BAD = 30^\\circ$（已知），$\\angle ADB = 42^\\circ$，故 $\\angle ABD = 180^\\circ - 30^\\circ - 42^\\circ = 108^\\circ$。\\\\ 因 $AB = BE$，故 $\\triangle ABE$ 為等腰三角形，$\\angle BAE = \\angle BEA$。\\\\ 又 $\\angle BAE = 30^\\circ$，故 $\\angle BEA = 30^\\circ$，從而 $\\angle ABE = 120^\\circ$。\\\\ 因 $BD \\parallel CE$，故 $\\angle BCE = \\angle ABD = 108^\\circ$（同位角）。\\\\ 在 $\\triangle BEC$ 中，$\\angle BEC = 180^\\circ - 108^\\circ - 30^\\circ = 42^\\circ$。 <br><br> (b) 在 $\\triangle BDC$ 中，$\\angle BDC = \\theta$，故 $\\angle BCD = 180^\\circ - 108^\\circ - \\theta = 72^\\circ - \\theta$。\\\\ 在 $\\triangle CFE$ 中，$\\angle CFE = 180^\\circ - \\angle BCE - \\angle CEF$。\\\\ 因 $BD \\parallel CE$，可得 $\\angle CFE = 108^\\circ - \\theta$。`
     },
