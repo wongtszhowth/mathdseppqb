@@ -22,7 +22,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Factorization"],
         difficulty: 1,
-        content: `因式分解<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">$\alpha^2 + \alpha - 6$ ，<span class="marks">(1分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$\alpha^4 + \alpha^3 - 6\alpha^2$ 。<span class="marks">(2分)</span></div></div>`,
+        content: `因式分解<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">$\\alpha^2 + \\alpha - 6$ ，<span class="marks">(1分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$\\alpha^4 + \\alpha^3 - 6\\alpha^2$ 。<span class="marks">(2分)</span></div></div>`,
         hint: `(a) 尋找兩個數，其積為 $-6$、和為 $1$。<br>(b) 先提取公因式 $a^2$，再利用 (a) 的結果。`,
         solution: `(a) $a^2 + a - 6 = (a + 3)(a - 2)$ <br><br> (b) $a^4 + a^3 - 6a^2 = a^2(a^2 + a - 6) = a^2(a + 3)(a - 2)$`
     },
@@ -70,7 +70,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Inequalities"],
         difficulty: 2,
-        content: `考慮複合不等式<br>$3 - x > \\dfrac{7 - x}{2}$  或  $5 + x > 4$ ............ (*) 。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">解 (*)。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出滿足 (*) 的最大負整數。<span class="marks">(1分)</span></div></div>`,
+        content: `考慮複合不等式<br><div style="text-align: center;">$3 - x > \\dfrac{7 - x}{2}$  或  $5 + x > 4$ ............ (*) 。</div><br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">解 (*)。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出滿足 (*) 的最大負整數。<span class="marks">(1分)</span></div></div>`,
         hint: `(a) 分別解兩個不等式，再取聯集。<br>(b) 在解集中找出最大的負整數。`,
         solution: `(a) 解第一個不等式： $3 - x > \\dfrac{7 - x}{2} \\Rightarrow 6 - 2x > 7 - x \\Rightarrow -x > 1 \\Rightarrow x < -1$。\\\\ 解第二個不等式： $5 + x > 4 \\Rightarrow x > -1$。\\\\ 因此 (*) 的解為 $x < -1$ 或 $x > -1$（即 $x \\neq -1$）。 <br><br> (b) 滿足 (*) 的負整數中最大者為 $-2$。`
     },
@@ -82,7 +82,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Quadratic Equations"],
         difficulty: 2,
-        content: `設 $\mathrm{p}(x) = 4x^2 + 12x + c$，其中 $c$ 為一常數。 方程 $\mathrm{p}(x) = 0$ 有等根。 求<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">$c$，<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$y = \mathrm{p}(x) - 169$ 的圖像的 $x$ 截距。<span class="marks">(3分)</span></div></div>`,
+        content: `設 $\\mathrm{p}(x) = 4x^2 + 12x + c$，其中 $c$ 為一常數。 方程 $\\mathrm{p}(x) = 0$ 有等根。 求<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">$c$，<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$y = \\mathrm{p}(x) - 169$ 的圖像的 $x$ 截距。<span class="marks">(3分)</span></div></div>`,
         hint: `(a) 利用判別式 $\\Delta = 0$ 求 $c$。<br>(b) 將 $c$ 代入後令 $y = 0$ 解二次方程。`,
         solution: `(a) $\\Delta = 12^2 - 4(4)c = 0 \\Rightarrow 144 - 16c = 0 \\Rightarrow c = 9$。 <br><br> (b) $y = 4x^2 + 12x + 9 - 169 = 4x^2 + 12x - 160 = 4(x^2 + 3x - 40) = 4(x + 8)(x - 5)$。\\\\ 令 $y = 0$ 得 $x = -8$ 或 $x = 5$。\\\\ 故 $x$ 截距為 $-8$ 及 $5$。`
     },
@@ -94,7 +94,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Plane Geometry"],
         difficulty: 3,
-        content: `圖 1 中，$B$ 及 $D$ 分別為 $AC$ 及 $AE$ 上的點。 $BE$ 與 $CD$ 相交於點 $F$。 已知 $AB = BE$ 、 $BD \\parallel CE$ 、 $\\angle CAE = 30^\\circ$ 及 $\\angle ADB = 42^\\circ$。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $\\angle BEC$。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">設 $\\angle BDC = \\theta$。 以 $\\theta$ 表 $\\angle CFE$。<span class="marks">(2分)</span></div></div>`,
+        content: `圖 1 中，$B$ 及 $D$ 分別為 $AC$ 及 $AE$ 上的點。 $BE$ 與 $CD$ 相交於點 $F$。 已知 $AB = BE$ 、 $BD \mathbin{\!/\!/} CE$ 、 $\\angle CAE = 30^\\circ$ 及 $\\angle ADB = 42^\\circ$。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $\\angle BEC$。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">設 $\\angle BDC = \\theta$。 以 $\\theta$ 表 $\\angle CFE$。<span class="marks">(2分)</span></div></div>`,
         hint: `(a) 利用 $AB = BE$ 得等腰三角形，再配合平行線性質及三角形內角和。<br>(b) 利用三角形外角等於不相鄰兩內角之和，或以 $\\theta$ 表示相關角。`,
         solution: `(a) 在 $\\triangle ABD$ 中，$\\angle BAD = 30^\\circ$（已知），$\\angle ADB = 42^\\circ$，故 $\\angle ABD = 180^\\circ - 30^\\circ - 42^\\circ = 108^\\circ$。\\\\ 因 $AB = BE$，故 $\\triangle ABE$ 為等腰三角形，$\\angle BAE = \\angle BEA$。\\\\ 又 $\\angle BAE = 30^\\circ$，故 $\\angle BEA = 30^\\circ$，從而 $\\angle ABE = 120^\\circ$。\\\\ 因 $BD \\parallel CE$，故 $\\angle BCE = \\angle ABD = 108^\\circ$（同位角）。\\\\ 在 $\\triangle BEC$ 中，$\\angle BEC = 180^\\circ - 108^\\circ - 30^\\circ = 42^\\circ$。 <br><br> (b) 在 $\\triangle BDC$ 中，$\\angle BDC = \\theta$，故 $\\angle BCD = 180^\\circ - 108^\\circ - \\theta = 72^\\circ - \\theta$。\\\\ 在 $\\triangle CFE$ 中，$\\angle CFE = 180^\\circ - \\angle BCE - \\angle CEF$。\\\\ 因 $BD \\parallel CE$，可得 $\\angle CFE = 108^\\circ - \\theta$。`
     },
@@ -106,7 +106,7 @@ questions.push(
         domain: ["Data Handling"],
         topic: ["Statistics"],
         difficulty: 2,
-        content: `下表顯示某班學生所修科目的數目的分佈。<br><table class="q-table"><tr><th>所修科目的數目</th><th>4</th><th>5</th><th>6</th><th>7</th></tr><tr><th>學生人數</th><td>8</td><td>12</td><td>16</td><td>4</td></tr></table><br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出上述分佈的平均值、中位數及標準差。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">現有一新生加入該班。該新生所修科目的數目為 5。求加入這學生而引致該分佈的中位數的改變。<span class="marks">(2分)</span></div></div>`,
+        content: `下表顯示某班學生所修科目的數目的分佈。<br><table class="q-table"><tr><th>所修科目的數目</th><th>4</th><th>5</th><th>6</th><th>7</th></tr><tr><th>學生人數</th><td>8</td><td>12</td><td>16</td><td>4</td></tr></table><br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出上述分佈的平均值、中位數及標準差。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">現有一新生加入該班。 該新生所修科目的數目為 5。 求加入這學生而引致該分佈的中位數的改變。<span class="marks">(2分)</span></div></div>`,
         hint: `(a) 平均值用加權平均；中位數取第 20 及 21 項的平均；標準差用公式計算。<br>(b) 加入後總人數變為 41，重新找出中位數。`,
         solution: `(a) 總人數 $= 8+12+16+4 = 40$。\\\\ 平均值 $= \\dfrac{4\\times8 + 5\\times12 + 6\\times16 + 7\\times4}{40} = \\dfrac{32+60+96+28}{40} = 5.4$。\\\\ 中位數為第 20 及 21 項的平均，兩者皆為 6，故中位數 $= 6$。\\\\ 標準差 $= \\sqrt{\\dfrac{8(4-5.4)^2 + 12(5-5.4)^2 + 16(6-5.4)^2 + 4(7-5.4)^2}{40}} = \\sqrt{0.84} \\approx 0.917$。 <br><br> (b) 加入後總人數 $= 41$，中位數為第 21 項，仍為 6。\\\\ 中位數沒有改變（改變量為 0）。`
     },
@@ -118,7 +118,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Variations"],
         difficulty: 3,
-        content: `一個高度為 $h$ cm 的 X 牌紀念品的價錢為 $\\$P$。$P$ 的一部分為常數，而另一部分隨 $h^3$ 正變。當 $h=3$ 時，$P=59$；且當 $h=7$ 時，$P=691$。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求一個高度為 4 cm 的 X 牌紀念品的價錢。<span class="marks">(4分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">某人宣稱一個高度為 5 cm 的 X 牌紀念品的價錢高於兩個高度均為 4 cm 的 X 牌紀念品的總價錢。該宣稱是否正確？試解釋你的答案。<span class="marks">(2分)</span></div></div>`,
+        content: `一個高度為 $h$ cm 的 $X$ 牌紀念品的價錢為 $\\$P$。 $P$ 的一部分為常數，而另一部分隨 $h^3$ 正變。 當 $h=3$ 時，$P=59$； 且當 $h=7$ 時，$P=691$。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求一個高度為 4 cm 的 $X$ 牌紀念品的價錢。<span class="marks">(4分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">某人宣稱一個高度為 5 cm 的 $X$ 牌紀念品的價錢高於兩個高度均為 4 cm 的 $X$ 牌紀念品的總價錢。 該宣稱是否正確？ 試解釋你的答案。<span class="marks">(2分)</span></div></div>`,
         hint: `(a) 設 $P = A + B h^3$，代入兩組已知值求 $A$、$B$。<br>(b) 計算 $h=5$ 的價錢與 $2 \\times (h=4$ 的價錢) 比較。`,
         solution: `(a) 設 $P = A + B h^3$。\\\\ 當 $h=3$：$A + 27B = 59$ (1)\\\\ 當 $h=7$：$A + 343B = 691$ (2)\\\\ (2)-(1)：$316B = 632 \\Rightarrow B = 2$，代入得 $A = 5$。\\\\ 故 $P = 5 + 2h^3$。\\\\ 當 $h=4$：$P = 5 + 2(64) = 133$。\\\\ 答：價錢為 $\$133$。 <br><br> (b) 當 $h=5$：$P = 5 + 2(125) = 255$。\\\\ 兩個高度 4 cm 的總價錢 $= 2 \\times 133 = 266$。\\\\ 因 $255 < 266$，故該宣稱不正確。`
     },
@@ -142,7 +142,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Mensuration"],
         difficulty: 3,
-        content: `一實心直立圓錐體的高及底半徑分別為 36 cm 及 15 cm。將該圓錐體以兩平行於其底的平面分成三部分。該三部分的高相等。以 $\\pi$ 表<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">該圓錐體的中間部分的體積，<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">該圓錐體的中間部分的曲面面積。<span class="marks">(3分)</span></div></div>`,
+        content: `一實心直立圓錐體的高及底半徑分別為 36&nbspcm 及 15&nbspcm。 將該圓錐體以兩平行於其底的平面分成三部分。 該三部分的高相等。 以 $\\pi$ 表<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">該圓錐體的中間部分的體積，<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">該圓錐體的中間部分的曲面面積。<span class="marks">(3分)</span></div></div>`,
         hint: `(a) 利用相似比求各截面半徑，再用大圓錐減去小圓錐求中間部分體積。<br>(b) 中間部分曲面面積 = 大圓錐側面積 − 小圓錐側面積。`,
         solution: `(a) 三部分高各為 12 cm。\\\\ 由頂點起，高度 12 cm 的小圓錐底半徑 $= 15 \\times \\dfrac{12}{36} = 5$ cm。\\\\ 高度 24 cm 的中圓錐底半徑 $= 15 \\times \\dfrac{24}{36} = 10$ cm。\\\\ 中間部分體積 $= \\dfrac{1}{3}\\pi(10)^2(24) - \\dfrac{1}{3}\\pi(5)^2(12) = 800\\pi - 100\\pi = 700\\pi$ cm$^3$。 <br><br> (b) 大圓錐斜高 $= \\sqrt{15^2 + 36^2} = 39$ cm。\\\\ 高度 24 cm 的中圓錐斜高 $= 39 \\times \\dfrac{24}{36} = 26$ cm。\\\\ 高度 12 cm 的小圓錐斜高 $= 39 \\times \\dfrac{12}{36} = 13$ cm。\\\\ 中間部分曲面面積 $= \\pi \\times 10 \\times 26 - \\pi \\times 5 \\times 13 = 260\\pi - 65\\pi = 195\\pi$ cm$^2$。`
     },
