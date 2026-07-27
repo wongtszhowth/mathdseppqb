@@ -36,7 +36,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Linear Equations in Two Unknowns", "Rates, Ratios and Proportions"],
         difficulty: 2,
-        content: `設 $m$ 及 $n$ 為兩數。 $2m$ 與 $3n$ 之和為 $999$ 而 $m$ 與 $n$ 之比為 $8:7$ 。求 $n$ 。<span class="marks">(3分)</span>`,
+        content: `設 $m$ 及 $n$ 為兩數。 $2m$ 與 $3n$ 之和為 $999$ 而 $m$ 與 $n$ 之比為 $8:7$。 求 $n$。<span class="marks">(3分)</span>`,
         hint: `根據比例設 $m = 8k$ 及 $n = 7k$，或者建立聯立方程組。`,
         solution: `注意 $2m+3n=999$ 且 $7m=8n$。<br>因此，可得：<br>$$2\\left(\\frac{8n}{7}\\right)+3n=999$$<br>解方程，可得 $n=189$。`
     },
@@ -48,7 +48,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Coordinate Geometry"],
         difficulty: 2,
-        content: `點 $A$ 的坐標為 $(4,-2)$ 。 $A$ 繞原點順時針方向旋轉 $90^{\\circ}$ 至 $B$ 。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出 $B$ 的坐標。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">假定 $B$ 向上平移 $k$ 單位至點 $C$ 。若 $A$ 、 $O$ 與 $C$ 共線，求 $k$ 。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `點 $A$ 的坐標為 $(4,-2)$ 。 $A$ 繞原點順時針方向旋轉 $90^{\\circ}$ 至 $B$ 。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出 $B$ 的坐標。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">假定 $B$ 向上平移 $k$ 單位至點 $C$ 。 若 $A$ 、 $O$ 與 $C$ 共線，求 $k$ 。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `旋轉公式：$(x, y)$ 繞原點順時針旋轉 $90^{\\circ}$ 變為 $(y, -x)$。共線代表斜率相等，即 $m_{OA} = m_{OC}$。`,
         solution: `(a) $(-2,-4)$<br>(b) $C$ 的坐標為 $(-2,t-4)$。<br>$\\begin{aligned} \\frac{t-4}{-2} &= \\frac{-2}{4} \\\\ t-4 &= 1 \\\\ t &= 5 \\end{aligned}$`
     },
@@ -60,7 +60,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Factorization"],
         difficulty: 1,
-        content: `因式分解<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">$10pr-6qr$<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$25p^{2}-9q^{2}$<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">$25p^{2}-9q^{2}-10pr+6qr$<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `因式分解<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">$10pr-6qr$ ，<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$25p^{2}-9q^{2}$ ，<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">$25p^{2}-9q^{2}-10pr+6qr$ 。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 抽公因式；(b) 利用平方差公式；(c) 結合前面兩問的結果進行分組分解。`,
         solution: `(a) $\\begin{aligned} &10pr-6qr \\\\=& 2r(5p-3q) \\end{aligned}$<br>(b) $\\begin{aligned} &25p^{2}-9q^{2} \\\\=& (5p+3q)(5p-3q) \\end{aligned}$<br>(c) $\\begin{aligned} &25p^{2}-9q^{2}-10pr+6qr \\\\=& (25p^{2}-9q^{2})-(10pr-6qr) \\\\=& (5p+3q)(5p-3q)-2r(5p-3q) \\\\=& (5p-3q)(5p+3q-2r) \\end{aligned}$`
     },
@@ -72,7 +72,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Linear Inequalities and Compound Inequalities"],
         difficulty: 2,
-        content: `考慮複合不等式 $\\dfrac{6x+1}{2} < x-8$ 或 $3x-21 \\ge 0$ …… $(*)$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">解 $(*)$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出滿足 $(*)$ 的最大整數。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `考慮複合不等式 <br><div style="text-align: center;">$\\dfrac{6x+1}{2} < x-8$ 或 $3x-21 \\ge 0$ ...............(*)。</div><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">解 $(*)$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出滿足 $(*)$ 的最大整數。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `注意複合不等式使用的是「或 (or)」，解出兩個不等式後取其聯集。`,
         solution: `(a) $\\begin{aligned} \\frac{6x+1}{2} &< x-8 \\\\ 6x+1 &< 2x-16 \\\\ 6x-2x &< -16-1 \\\\ 4x &< -17 \\\\ x &< \\frac{-17}{4} \\end{aligned}$ 且 $\\begin{aligned} 3x &\\le -21 \\\\ x &\\le -7 \\end{aligned}$<br>因此，(*) 的解為 $x \\le -7$。<br>(b) $-5$`
     },
@@ -84,7 +84,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Percentages"],
         difficulty: 2,
-        content: `某紀念品的售價為 $378 。該紀念品以其標價四折售出。該紀念品的標價較其成本高 75%。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求該紀念品的標價。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求該紀念品的成本。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">判別售出該紀念品後是獲利還是虧蝕。試解釋你的答案。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `某紀念品的售價為 $378。 該紀念品以其標價四折售出。 該紀念品的標價較其成本高 75%。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求該紀念品的標價。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求該紀念品的成本。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">判別售出該紀念品後是獲利還是虧蝕。 試解釋你的答案。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 售價 $=$ 標價 $\\times 0.4$；(b) 標價 $=$ 成本 $\\times (1 + 75\\%)$；(c) 比較售價與成本。`,
         solution: `(a) 該紀念品的標價 $\\begin{aligned} &= \\frac{378}{40\\%} \\\\ &= \\$945 \\end{aligned}$<br>(b) 該紀念品的成本 $\\begin{aligned} &= \\frac{945}{1+75\\%} \\\\ &= \\$540 \\end{aligned}$<br>(c) 因為 $540 > 378$，所以售出該紀念品後錄得虧蝕。`
     },
@@ -96,9 +96,9 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Plane Geometry"],
         difficulty: 3,
-        content: `圖中，$ST$ 與 $UV$ 相交於點 $W$ 。已知 $SU \\parallel VT$ 及 $W$ 為 $ST$ 的中點。
+        content: `圖中，$ST$ 與 $UV$ 相交於點 $W$ 。 已知 $SU\text{//}VT$ 及 $W$ 為 $ST$ 的中點。
 <img src="img/2025dsep1q08.jpg" class="q-img" alt="題目附圖" style="max-width: 350px;">
-<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明 $\\Delta SUW \\cong \\Delta TVW$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">設 $X$ 為 $TW$ 上的一點使得 $\\Delta SUW \\sim \\Delta VXW$。若 $SU = 57\\text{ cm}$、 $SW = 63\\text{ cm}$ 及 $WX = 7\\text{ cm}$，求 $\\Delta TVX$ 的周界。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
+<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明 $\\Delta SUW \\cong \\Delta TVW$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">設 $X$ 為 $TW$ 上的一點使得 $\\Delta SUW \\sim \\Delta VXW$。 若 $SU = 57\\text{ cm}$、 $SW = 63\\text{ cm}$ 及 $WX = 7\\text{ cm}$，求 $\\Delta TVX$ 的周界。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 利用平行線的內錯角 (A.A.S. 或 A.S.A.) 證明全等；(b) 運用相似三角形的對應邊成比例求出未知邊長。`,
         solution: `(a) $\\angle SWU = \\angle TWV$ （對頂角）<br>$SW = TW$ （已知）<br>$\\angle USW = \\angle VTW$ （內錯角， $SU \\parallel VT$）<br>$\\triangle SUW \\cong \\triangle TVW$ （ASA）<br><br>(b) 注意 $\\triangle SUW \\sim \\triangle VXW$。<br>$$\\frac{SU}{VX} = \\frac{UW}{XW} = \\frac{SW}{VW}$$<br>由 (a) 可得 $UW = VW$。<br>因此，<br>$$\\frac{57}{VX} = \\frac{VW}{7} = \\frac{63}{VW}$$<br>解得 $VW = 21\\text{ cm}$ 且 $VX = 19\\text{ cm}$。<br><br>$\\triangle TVX$ 的周界 $\\begin{aligned} &= TV + VX + TX \\\\ &= 57 + 19 + (63 - 7) \\\\ &= 132\\text{ cm} \\end{aligned}$`
     },
@@ -110,7 +110,7 @@ questions.push(
         domain: ["Data Handling"],
         topic: ["Measures of Central Tendency", "Measures of Dispersion"],
         difficulty: 3,
-        content: `下表顯示一些學生擁有原子筆的數目的分佈。該分佈的中位數為 $7$。<div style="overflow-x: auto; width: 100%; margin-bottom: 8px;"><table class="q-table" style="width: 100%; min-width: 300px;"><tr><th>原子筆的數目</th><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr><tr><th>學生人數</th><td>9</td><td>13</td><td>2</td><td>$s$</td><td>11</td></tr></table></div><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $s$ 的最小可取值。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出 $s$ 的最大可取值。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">求該分佈的最大可取標準差。<span class="marks">(22分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `下表顯示一些學生擁有原子筆的數目的分佈。<div style="overflow-x: auto; width: 100%; margin-bottom: 8px;"><table class="q-table" style="width: 100%; min-width: 300px;"><tr><th>原子筆的數目</th><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr><tr><th>學生人數</th><td>9</td><td>13</td><td>2</td><td>$s$</td><td>11</td></tr></table></div>該分佈的中位數為 $7$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $s$ 的最小可取值。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出 $s$ 的最大可取值。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">求該分佈的最大可取標準差。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `中位數為 $7$ 代表小於或等於 $7$ 的數據個數與大於或等於 $7$ 的數據個數需要滿足中位數的定義限制。`,
         solution: `(a) 設 $m$ 為 $s$ 的最小可能值。<br>$\\begin{aligned} 9+13 &= 1+m+11 \\\\ m &= 10 \\end{aligned}$<br>因此，$s$ 的最小可能值為 10。<br><br>(b) 12<br><br>(c) 共有三種情況。<br>情況 1： 當 $s=10$ 時，該分佈的標準差 $\\approx 1.512744216$<br>情況 2： 當 $s=11$ 時，該分佈的標準差 $\\approx 1.502990088$<br>情況 3： 當 $s=12$ 時，該分佈的標準差 $\\approx 1.493307842$<br><br>因此，該分佈的最大可能標準差為 1.51。`
     },
