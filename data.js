@@ -185,7 +185,7 @@ questions.push(
         domain: ["Data Handling"],
         topic: ["Probability"],
         difficulty: 3,
-        content: `某盒子內有 $8$ 隻白色碟、$4$ 隻紅色碟及 $1$ 隻黑色碟。若從該盒子中隨機同時抽出 $3$ 隻碟，求<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">所抽出 $3$ 隻碟的顏色是相同的概率；<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">所抽出 $3$ 隻碟的顏色是全不相同的概率。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `某盒子內有 8 隻白色碟、4 隻紅色碟及 1 隻黑色碟。 若從該盒子中隨機同時抽出 3 隻碟，求<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">所抽出 3 隻碟的顏色是相同的概率；<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">所抽出 3 隻碟的顏色是全不相同的概率。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `總碟數為 $13$。同時抽出 $3$ 隻使用組合數 $C_{3}^{13}$。(a) 考慮全白 or 全紅；(b) 白、紅、黑各抽一隻。`,
         solution: `(a) 所求概率 $\\begin{aligned} &= \\frac{C_{3}^{8}+C_{3}^{4}}{C_{3}^{13}} \\\\ &= \\frac{30}{143} \\end{aligned}$<br>【或】<br>$\\begin{aligned} &= \\left(\\frac{8}{13}\\right)\\left(\\frac{7}{12}\\right)\\left(\\frac{6}{11}\\right)+\\left(\\frac{4}{13}\\right)\\left(\\frac{3}{12}\\right)\\left(\\frac{2}{11}\\right) \\\\ &= \\frac{30}{143} \\end{aligned}$<br><br>(b) 所求概率 $\\begin{aligned} &= \\frac{C_{1}^{8}C_{1}^{4}C_{1}^{1}}{C_{3}^{13}} \\\\ &= \\frac{16}{143} \\end{aligned}$<br>【或】<br>$\\begin{aligned} &= 6\\left(\\frac{8}{13}\\right)\\left(\\frac{4}{12}\\right)\\left(\\frac{1}{11}\\right) \\\\ &= \\frac{16}{143} \\end{aligned}$`
     },
@@ -197,7 +197,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Exponential Functions and Logarithm Functions"],
         difficulty: 3,
-        content: `考慮方程組 $\\begin{cases}\\log_{3}x+\\log_{3}y=9\\\\ \\log_{x}81-\\log_{y}9=1\\end{cases}$ 其中 $0 < x < y$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">設 $u = \\log_{3}y$。證明 $u^2-3u-18=0$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求 $x$。<span class="marks">(22分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `已知 $\\begin{cases}\\log_{3}x+\\log_{3}y=9\\\\ \\log_{x}81-\\log_{y}9=1\\end{cases}$ ，其中 $0 < x < y$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">設 $u = \\log_{3}y$。 證明 $u^2-3u-18=0$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求 $x$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 由第一式得 $\\log_{3}x = 9 - u$。利用換底公式將第二式的底數轉為 $3$，即 $\\log_x 81 = \\dfrac{4}{\\log_3 x}$ 及 $\\log_y 9 = \\dfrac{2}{u}$。`,
         solution: `(a) 注意 $\\log_{3}x = 9-u$。<br>由於 $\\log_{x}81 - \\log_{y}9 = 1$，可得：<br>$$\\frac{\\log_{3}81}{\\log_{3}x} - \\frac{\\log_{3}9}{\\log_{3}y} = 1$$<br>因此， $\\frac{4}{\\log_{3}x} - \\frac{2}{\\log_{3}y} = 1$。<br>代入得 $\\frac{4}{9-u} - \\frac{2}{u} = 1$。<br>展開得 $4u - 2(9-u) = u(9-u)$。<br>整理解得 $u^{2}-3u-18 = 0$。<br><br>(b) 由 (a) 可得 $u=6$ 或 $u=-3$。<br>對應的解為：<br>$$\\begin{cases}x=27\\\\ y=729\\end{cases} \\quad \\text{或} \\quad \\begin{cases}x=531441\\\\ y=\\frac{1}{27}\\end{cases}$$<br>由於已知 $x<y$，因此 $x=27$。`
     },
@@ -209,7 +209,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Sequences"],
         difficulty: 3,
-        content: `設 $T(n)$ 為一等差數列的第 $n$ 項使得 $T(1) \\neq T(2)$ 及 $T(47)=456$。已知 $T(9)$，$T(47)$，$T(199)$ 為一等比數列。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $T(1)$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求 $n$ 的最小值使得該等差數列的首 $n$ 項之和大於 $10^9$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `設 $\\mathrm{T}(n)$ 為一等差數列的第 $n$ 項使得 $T(1) \\neq T(2)$ 及 $T(47)=456$。已知 $T(9)$，$T(47)$，$T(199)$ 為一等比數列。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $T(1)$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求 $n$ 的最小值使得該等差數列的首 $n$ 項之和大於 $10^9$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 設首項為 $a$，公差為 $d$。利用等比中項性質 $T(47)^2 = T(9) \\times T(199)$ 求解；(b) 運用等差數列求和公式 $S_n > 10^9$ 建立不等式。`,
         solution: `(a) 設 $a$ 與 $d$ 分別為該等差數列的第 1 項和公差。<br>$$\\frac{a+46d}{a+8d} = \\frac{a+198d}{a+46d}$$<br>已知 $a+46d=456$，<br>代入得 $\\frac{456}{456-38d} = \\frac{456+152d}{456}$。<br>化簡得 $51984d - 5776d^2 = 0$。<br>因為 $T(1) \\neq T(2)$，所以 $d=9$。<br>進而求得 $T(1)=42$。<br><br>(b) $T(1)+T(2)+T(3)+\\cdots+T(n) > 10^{6}$<br>$\\begin{aligned} \\frac{n}{2}(2(42)+(n-1)(9)) &&> 10^{6} \\\\ 9n^{2}+75n-2\\times10^{6} &&> 0 \\end{aligned}$<br>考慮對應方程的根：<br>$$n = \\frac{-75 \\pm \\sqrt{75^{2}-4(9)(-2\\times10^{6})}}{2(9)}$$<br>得 $n < -475.5896013$ 或 $n > 467.256268$。<br>因此， $n$ 的最小可能值為 468。`
     },
