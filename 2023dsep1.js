@@ -9,7 +9,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Formulae"],
         difficulty: 1,
-        content: `令 $h$ 成為公式 $\\dfrac{5}{h+k}=\\dfrac{k}{h-3}$ 的主項。`,
+        content: `令 $h$ 成為公式 $\\dfrac{5}{h+k}=\\dfrac{k}{h-3}$ 的主項。<span class="marks">(3分)</span>`,
         hint: `交叉相乘展開方程，將所有含有 $h$ 的項移到等號左邊，抽公因式後即可單獨導出 $h$。`,
         solution: `$5(h-3) = k(h+k) \\Rightarrow 5h - 15 = kh + k^2 \\Rightarrow 5h - kh = k^2 + 15 \\Rightarrow h(5-k) = k^2 + 15 \\Rightarrow h = \\dfrac{k^2+15}{5-k}$`
     },
@@ -21,7 +21,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Laws of Indices"],
         difficulty: 1,
-        content: `化簡 $\\dfrac{x^{-8}y}{(x^{7}y^{9})^{-6}}$ ，並以正指數表示答案。`,
+        content: `化簡 $\\dfrac{x^{-8}y}{(x^{7}y^{9})^{-6}}$ ，並以正指數表示答案。<span class="marks">(3分)</span>`,
         hint: `先處理分母的負整數冪次分配律，然後再根據底數相同相除時指數相減的法則進行化簡。`,
         solution: `原式 $= \\dfrac{x^{-8}y}{x^{-42}y^{-54}} = x^{-8-(-42)}y^{1-(-54)} = x^{34}y^{55}$`
     },
@@ -33,7 +33,7 @@ questions.push(
         domain: ["Number and Measures"],
         topic: ["Estimation and Error"],
         difficulty: 2,
-        content: `若一包芝士的重量量得 $220\\text{g}$ 準確至最接近的 $10\\text{g}$，則稱它為普通裝。某人宣稱 $250$ 包普通裝芝士的總重量可量得 $53.6\\text{kg}$ 準確至最接近的 $0.1\\text{kg}$。該宣稱是否正確？試解釋你的答案。`,
+        content: `若一包芝士的重量量得 $220\\text{ g}$ 準確至最接近的 $10\\text{ g}$，則稱它為<i>普通裝</i>。 某人宣稱 250 包普通裝芝士的總重量可量得 $53.6\\text{ kg}$ 準確至最接近的 $0.1\\text{ kg}$。 該宣稱是否正確？ 試解釋你的答案。<span class="marks">(3分)</span>`,
         hint: `找出單包普通裝芝士的最大可取值上限，乘上 $250$ 包得到總重上限，再與宣稱重量的最上限作比較。`,
         solution: `單包普通裝最大可取重量 $< 225\\text{g}$。$250$ 包的總重量 $< 225 \\times 250 = 56250\\text{g} = 56.25\\text{kg}$。而宣稱的 $53.6\\text{kg}$ 範圍為 $53.55\\text{kg} \\le W < 53.65\\text{kg}$，兩者範圍有重疊，故宣稱有可能正確。`
     },
@@ -45,7 +45,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Linear Inequalities and Compound Inequalities"],
         difficulty: 2,
-        content: `考慮複合不等式 $3x+2>\\dfrac{4x-5}{2}$ 及 $3x-2<7 \\quad (*)$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">解 $(*)$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">有多少個負整數滿足 $(*)$？<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `考慮複合不等式 <div style="text-align: center;">$3x+2>\\dfrac{4x-5}{2}$ 及 $3x-2<7$ ...............(*)。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">解 $(*)$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">有多少個負整數滿足 $(*)$？<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 分別解出兩個不等式並取交集（及 / and）；(b) 在解的範圍內數出負整數的數量。`,
         solution: `(a) 第一個：$6x+4 > 4x-5 \\Rightarrow 2x > -9 \\Rightarrow x > -4.5$。第二個：$3x < 9 \\Rightarrow x < 3$。共同範圍為 $-4.5 < x < 3$。<br>(b) 負整數有 $-4, -3, -2, -1$，共 $4$ 個。`
     },
@@ -117,7 +117,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Loci", "Coordinate Geometry", "Equations of Circles"],
         difficulty: 3,
-        content: `已知 $A$ 及 $B$ 為直角坐標平面上的兩相異點。設 $P$ 為該直角坐標平面上的一動點使得 $P$ 與 $A$ 及 $B$ 等距。將 $P$ 的軌跡記為 $\\Gamma$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">描述 $\\Gamma$ 與 $AB$ 之間的幾何關係。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">假定 $A$ 的坐標為 $(2,-4)$ 及 $\\Gamma$ 的方程為 $3x+y-12=0$。求：</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">通過 $A$ 及 $B$ 的直線的方程，</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">以 $AB$ 為一直徑的圓的方程。<span class="marks">(5分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `已知 $A$ 及 $B$ 為直角坐標平面上的兩相異點。 設 $P$ 為該直角坐標平面上的一動點使得 $P$ 與 $A$ 及 $B$ 等距。 將 $P$ 的軌跡記為 $\\Gamma$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">描述 $\\Gamma$ 與 $AB$ 之間的幾何關係。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">假定 $A$ 的坐標為 $(2,-4)$ 及 $\\Gamma$ 的方程為 $3x+y-12=0$。 求</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">通過 $A$ 及 $B$ 的直線的方程，</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">以 $AB$ 為一直徑的圓的方程。<br><span class="marks">(5分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 到兩定點等距的點的軌跡是垂直平分線；(b)(i) 直線 $AB$ 垂直於 $\\Gamma$ 且通過 $A$，斜率之積為 $-1$；(b)(ii) 找出 $\\Gamma$ 與 $AB$ 的交點即為 $AB$ 的中點（圓心），再求半徑。`,
         solution: `(a) $\\Gamma$ 是線段 $AB$ 的垂直平分線。<br>(b)(i) $\\Gamma$ 的斜率為 $-3$，故 直線 $AB$ 的斜率為 $\\dfrac{1}{3}$。方程為 $y - (-4) = \\dfrac{1}{3}(x-2) \\Rightarrow x - 3y - 14 = 0$。<br>(ii) 聯立 $\\Gamma$ 與 $AB$ 的方程求得中點（圓心）為 $(5, 3)$。利用圓心到 $A(2,-4)$ 的距離公式求得半徑平方為 $58$。圓方程為 $(x-5)^2 + (y-3)^2 = 58$。`
     },
