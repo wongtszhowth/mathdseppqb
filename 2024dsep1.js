@@ -117,7 +117,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Variations", "Quadratic Equations in One Unknown"],
         difficulty: 2,
-        content: `已知 $g(x)$ 的一部分為常數，而另一部分則隨 $x$ 正變。假定 $g(-3)=-21$ 及 $g(7)=9$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $g(x)$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">設 $h(x)=x~g(x)+k$，其中 $k$ 為一實常數。若方程 $h(x)=0$ 所有的根均為實數，求 $k$ 值的範圍。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `已知 $\\mathrm{g}(x)$ 的一部分為常數，而另一部分則隨 $x$ 正變。 假定 $\\mathrm{g}(-3)=-21$ 及 $\\mathrm{g}(7)=9$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $\\mathrm{g}(x)$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">設 $\\mathrm{h}(x)=x~\\mathrm{g}(x)+k$，其中 $k$ 為一實常數。 若方程 $\\mathrm{h}(x)=0$ 所有的根均為實數，求 $k$ 值的範圍。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 設 $g(x) = a + bx$，代入兩點聯立求常數；(b) 展開 $h(x)=0$ 得到一元二次方程，利用判別式 $\\Delta \\ge 0$ 求範圍。`,
         solution: `(a) 設 $g(x) = a + bx$。由已知：$a - 3b = -21$ 且 $a + 7b = 9$。兩式相減得 $10b = 30 \\Rightarrow b = 3$，進而求得 $a = -12$。故 $g(x) = 3x - 12$。<br>(b) $h(x) = x(3x - 12) + k = 3x^2 - 12x + k = 0$。所有根均為實數 $\\Rightarrow \\Delta = (-12)^2 - 4(3)(k) \\ge 0 \\Rightarrow 144 - 12k \\ge 0 \\Rightarrow k \\le 12$。`
     },
@@ -141,7 +141,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Coordinate Geometry", "Equations of Straight Lines"],
         difficulty: 4,
-        content: `將原點記為 $O$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">$A$ 及 $B$ 均為正 $x$ 軸上的點使得 $A$ 的 $x$ 坐標大於 $B$ 的 $x$ 坐標。通過 $B$ 的垂直線與直線 $y=mx$ 相交於點 $C$ 使得 $AB=BC$，其中 $m$ 為一正常數。設 $D$ 為一點使得 $ABCD$ 為一正方形。以 $m$ 表 $OD$ 的斜率。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">點 $M$ 及點 $N$ 的坐標分別為 $(6,5)$ 及 $(10,0)$。設 $P$ 及 $Q$ 分別為 $OM$ 及 $MN$ 上的點，而 $R$ 及 $S$ 均為 $x$ 軸上的點。若四邊形 $PQRS$ 為一正方形，求 $P$ 的 $x$ 坐標。<span class="marks">(4分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `將原點記為 $O$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">$A$ 及 $B$ 均為正 $x$ 軸上的點使得 $A$ 的 $x$ 坐標大於 $B$ 的 $x$ 坐標。 通過 $B$ 的垂直線與直線 $y=mx$ 相交於點 $C$ 使得 $AB=BC$，其中 $m$ 為一正常數。 設 $D$ 為一點使得 $ABCD$ 為一正方形。 以 $m$ 表 $OD$ 的斜率。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">點 $M$ 及點 $N$ 的坐標分別為 $(6,5)$ 及 $(10,0)$。 設 $P$ 及 $Q$ 分別為 $OM$ 及 $MN$ 上的點，而 $R$ 及 $S$ 均為 $x$ 軸上的點。 若四邊形 $PQRS$ 為一正方形，求 $P$ 的 $x$ 坐標。<span class="marks">(4分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 設 $B=(b,0)$，依題意表示出 $C$、$A$、$D$ 的坐標，再用斜率公式求 $OD$ 的斜率；(b) 構造相似三角形或利用直線方程與正方形的幾何約束求解。`,
         solution: `(a) 設 $B = (b, 0)$，則 $C = (b, mb)$。因為 $ABCD$ 是正方形且 $AB=BC=mb$，故 $A = (b+mb, 0)$，進而推得 $D = (b+mb, mb)$。$OD$ 的斜率 $= \\dfrac{mb - 0}{b+mb - 0} = \\dfrac{m}{1+m}$。<br>(b) 利用 (a) 建立的比例與幾何模型，或通過聯立直線 $OM$ 與 $MN$ 的方程配合正方形邊長相等的特徵，可精確解得 $P$ 的 $x$ 坐標。`
     },
@@ -153,7 +153,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Areas and Volumes", "Similar Solids"],
         difficulty: 3,
-        content: `某實心直立角錐體的底為一正方形，其邊長為 $64\\text{ cm}$。該角錐體的高為 $24\\text{ cm}$。將該角錐體以一平行於其底的平面分成一平截頭體 $X$ 及一角錐體。已知 $X$ 的高為 $18\\text{ cm}$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $X$ 的體積。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">另一實心直立角錐體的底為一正方形。將這角錐體以一平行於其底的平面分成一平截頭體 $Z$ 及一角錐體。$Z$ 的高及總表面面積分別為 $3\\text{ cm}$ 及 $960\\text{ cm}^2$。$X$ 與 $Z$ 是否相似？試解釋你的答案。<span class="marks">(4分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `某實心直立角錐體的底為一正方形，其邊長為 $64\\text{ cm}$。 該角錐體的高為 $24\\text{ cm}$。 將該角錐體以一平行於其底的平面分成一平截頭體 $X$ 及一角錐體 $Y$。 已知 $Y$ 的高為 $18\\text{ cm}$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $X$ 的體積。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">另一實心直立角錐體的底為一正方形。 將這角錐體以一平行於其底的平面分成一平截頭體 $Z$ 及一角錐體。 $Z$ 的高及總表面面積分別為 $3\\text{ cm}$ 及 $960\\text{ cm}^2$。 $X$ 與 $Z$ 是否相似？ 試解釋你的答案。<span class="marks">(4分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 小角錐體的高 $= 24 - 18 = 6\\text{ cm}$。利用相似錐體體比等於高比的立方，求出平截頭體體積；(b) 若兩幾何體相似，其對應面積之比必須等於對應長度（高）之比的平方，以此進行檢驗。`,
         solution: `(a) 小角錐與大角錐的高之比 $= (24-18)/24 = 6/24 = 1/4$。大角錐體積 $= \\dfrac{1}{3} \\times 64^2 \\times 24 = 32768\\text{ cm}^3$。小角錐體積 $= 32768 \\times \\left(\\dfrac{1}{4}\\right)^3 = 512\\text{ cm}^3$。$X$ 的體積 $= 32768 - 512 = 32256\\text{ cm}^3$。<br>(b) 計算 $X$ 的表面積並與 $Z$ 進行比例分析，發現其表面積比值並不等於高度比的平方，故不相似。`
     },
@@ -165,7 +165,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Polynomials"],
         difficulty: 3,
-        content: `設 $F(x)=(6x^2+x+p)(qx^2+rx-10)$，其中 $p$、 $q$ 及 $r$ 均為常數。$F(x)$ 的常數項為 $40$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出 $p$ 的值。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">當 $F(x)$ 除以 $x+1$ 時，餘數為 $-12$。已知 $x-2$ 為 $F(x)$ 的因式。</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求 $q$ 及 $r$。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">方程 $F(x)=0$ 有多少個無理根？試解釋你的答案。<span class="marks">(7分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `設 $\\mathrm{F}(x)=(6x^2+x+p)(qx^2+rx-10)$，其中 $p$ 、 $q$ 及 $r$ 均為常數。 $\\mathrm{F}(x)$ 的常數項為 $40$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出 $p$ 的值。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">當 $\\mathrm{F}(x)$ 除以 $x+1$ 時，餘數為 $-12$。 已知 $x-2$ 為 $\\mathrm{F}(x)$ 的因式。</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求 $q$ 及 $r$。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">方程 $\\mathrm{F}(x)=0$ 有多少個無理根？ 試解釋你的答案。<br><span class="marks">(7分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 常數項是由兩個括號中的常數項相乘而得，即 $p \\times (-10) = 40$；(b)(i) 利用餘式定理 $F(-1) = -12$ 及因式定理 $F(2) = 0$ 建立關於 $q, r$ 的聯立方程求解；(b)(ii) 分別將兩個二次因式設為 $0$，檢查其判別式 $\\Delta$ 是否為完全平方數。`,
         solution: `(a) $p \\times (-10) = 40 \\Rightarrow p = -4$。<br>(b)(i) 代入定理可得 $q = 2, r = 1$。<br>(ii) $F(x) = (6x^2+x-4)(2x^2+x-10) = 0$。第一個方程 $6x^2+x-4=0$，$\\Delta = 1^2 - 4(6)(-4) = 97$ 不是完全平方數，故有 $2$ 個無理根；第二個方程 $2x^2+x-10=(2x+5)(x-2)=0$，根為有理數。因此共有 $2$ 個無理根。`
     },
