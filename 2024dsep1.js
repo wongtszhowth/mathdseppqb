@@ -177,7 +177,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Exponential Functions and Logarithm Functions"],
         difficulty: 3,
-        content: `已知 $\\log_9 y$ 為 $\\log_3 x$ 的線性函數。將該線性函數的圖像記為 $L$。$L$ 的斜率為 $4$ 及 $L$ 通過點 $(5,22)$。以 $x$ 表 $y$。`,
+        content: `已知 $\\log_9 y$ 為 $\\log_3 x$ 的線性函數。 將該線性函數的圖像記為 $L$。 $L$ 的斜率為 4 及 $L$ 通過點 $(5,22)$。 以 $x$ 表 $y$。<span class="marks">(3分)</span>`,
         hint: `建立線性方程 $\\log_9 y = 4 \\log_3 x + c$，利用換底公式將 $\\log_9 y$ 轉化為以 $3$ 為底數的對數形式，求出 $c$ 後化簡除去對數符號。`,
         solution: `依題意設 $\\log_9 y = 4 \\log_3 x + c$。代入點 $(5,22)$ 得 $22 = 4(5) + c \\Rightarrow c = 2$。故 $\\log_9 y = 4 \\log_3 x + 2$。利用換底公式：$\\dfrac{\\log_3 y}{2} = 4 \\log_3 x + 2 \\Rightarrow \\log_3 y = 8 \\log_3 x + 4 \\Rightarrow \\log_3 y = \\log_3(x^8) + \\log_3(3^4) \\Rightarrow y = 81x^8$`
     },
@@ -189,7 +189,7 @@ questions.push(
         domain: ["Data Handling"],
         topic: ["Probability"],
         difficulty: 3,
-        content: `某袋子內有 $16$ 個紅色杯及 $4$ 個白色杯。若從該袋子中隨機同時抽出 $5$ 個杯，求<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">抽出恰好 $1$ 個白色杯的概率；<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">抽出至多 $3$ 個紅色杯的概率。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `某袋子內有 16 個紅色杯及 4 個白色杯。 若從該袋子中隨機同時抽出 5 個杯，求<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">抽出恰好 $1$ 個白色杯的概率；<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">抽出至多 $3$ 個紅色杯的概率。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `總杯數為 $20$，同時抽出 $5$ 個杯的總組合數為 $C_{5}^{20}$。(a) 分子為 $C_1^4 \\times C_4^{16}$；(b) 「至多 3 個紅」等價於「至少 2 個白」，即考慮 2白3紅、3白2紅、4白1紅的概率之和。`,
         solution: `(a) $P(\\text{1白4紅}) = \\dfrac{C_1^4 \\times C_4^{16}}{C_5^{20}} = \\dfrac{4 \\times 1820}{15504} = \\dfrac{455}{969}$。<br>(b) 至多3個紅即白杯數 $\\ge 2$。$P(\\text{白} \\ge 2) = \\dfrac{C_2^4 C_3^{16} + C_3^4 C_2^{16} + C_4^4 C_1^{16}}{C_5^{20}} = \\dfrac{6(560) + 4(120) + 1(16)}{15504} = \\dfrac{3856}{15504} = \\dfrac{241}{969}$。`
     },
@@ -201,7 +201,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Loci", "Coordinate Geometry", "Equations of Circles"],
         difficulty: 4,
-        content: `點 $Q$ 及點 $R$ 的坐標分別為 $(10,-1)$ 及 $(-4,-9)$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">設 $P$ 為直角坐標平面上的一動點使得 $PQ=PR$。將 $P$ 的軌跡記為 $\\Gamma$。</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">描述 $\\Gamma$ 與 $QR$ 之間的幾何關係。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">求 $\\Gamma$ 的方程。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">設 $C$ 為通過 $Q$、 $R$ 及點 $(4,3)$ 的圓。</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求 $C$ 的方程。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">點 $U$ 的坐標為 $(10,4)$。現知 $U$ 位於 $C$ 以外。$UV$ 及 $UW$ 分別為 $C$ 在點 $V$ 及點 $W$ 的切線。$\\Delta UVW$ 的外接圓的面積是否大於 $100$？試解釋你的答案。<span class="marks">(5分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `點 $Q$ 及點 $R$ 的坐標分別為 $(10,-1)$ 及 $(-4,-9)$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">設 $P$ 為直角坐標平面上的一動點使得 $PQ=PR$。 將 $P$ 的軌跡記為 $\\mathit{\\Gamma}$。</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">描述 $\\mathit{\\Gamma}$ 與 $QR$ 之間的幾何關係。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">求 $\\mathit{\\Gamma}$ 的方程。<br><span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">設 $C$ 為通過 $Q$、 $R$ 及點 $(4,3)$ 的圓。</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求 $C$ 的方程。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">點 $U$ 的坐標為 $(10,4)$。 現知 $U$ 位於 $C$ 以外。 $UV$ 及 $UW$ 分別為 $C$ 在點 $V$ 及點 $W$ 的切線。 $\\Delta UVW$ 的外接圓的面積是否大於 $100$？ 試解釋你的答案。<br><span class="marks">(5分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a)(i) 到兩定點等距的軌跡為垂直平分線；(b)(i) 設圓的一般式或利用弦的垂直平分線過圓心聯立求方程；(b)(ii) $\\Delta UVW$ 的外接圓以圓心 $I$ 與 $U$ 的連線 $IU$ 為直徑，計算直徑後算出面積作比較。`,
         solution: `(a)(i) $\\Gamma$ 是線段 $QR$ 的垂直平分線。<br>(ii) $QR$ 中點為 $(3, -5)$，斜率為 $\\dfrac{4}{7}$。故 $\\Gamma$ 的斜率為 $-\\dfrac{7}{4}$，方程為 $7x + 4y - 1 = 0$。<br>(b)(i) 經計算圓心為 $(2, -3)$，半徑為 $\\sqrt{68}$。圓方程為 $(x-2)^2 + (y+3)^2 = 68$。<br>(ii) 圓心 $I=(2,-3)$，離 $U(10,4)$ 的距離平方 $IU^2 = (10-2)^2 + (4+3)^2 = 113$。外接圓直徑為 $IU$，面積 $= \\pi \\left(\\dfrac{IU}{2}\\right)^2 = \\dfrac{113\\pi}{4} \\approx 88.75 < 100$，故不大於 $100$。`
     },
