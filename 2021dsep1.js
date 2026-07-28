@@ -10,7 +10,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Laws of Indices"],
         difficulty: 1,
-        content: `化簡 $(\\alpha\\beta^3)(\\alpha\\beta^2)$，並以正指數表示答案。<span class="marks">(3分)</span>`,
+        content: `化簡 $(\\alpha\\beta^3)(\\alpha^-2\\beta^4)^5$，並以正指數表示答案。<span class="marks">(3分)</span>`,
         hint: `利用指數定律 $\\alpha^m \\cdot \\alpha^n = \\alpha^{m+n}$ 及 $\\beta^m \\cdot \\beta^n = \\beta^{m+n}$ 將同底數的項合併。`,
         solution: `$(\\alpha\\beta^3)(\\alpha\\beta^2) = \\alpha^{1+1}\\beta^{3+2} = \\alpha^2\\beta^5$`
     },
@@ -34,7 +34,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Factorization"],
         difficulty: 2,
-        content: `因式分解<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">$6x^{2}+xy-2y^{2}$</div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$8x-4y-6x^{2}-xy+2y^{2}$<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `因式分解<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">$6x^{2}+xy-2y^{2}$ ，<span class="marks">(1分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$8x-4y-6x^{2}-xy+2y^{2}$ 。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 使用十字相乘法將二次三項式因式分解。<br>(b) 先將前兩項提取公因式，後三項提取負號並代入 (a) 的結果，再提取整體公因式。`,
         solution: `(a) $6x^2 + xy - 2y^2 = (2x - y)(3x + 2y)$<br><br>(b) $8x - 4y - 6x^2 - xy + 2y^2$<br>$= 4(2x - y) - (6x^2 + xy - 2y^2)$<br>$= 4(2x - y) - (2x - y)(3x + 2y)$<br>$= (2x - y)[4 - (3x + 2y)]$<br>$= (2x - y)(4 - 3x - 2y)$`
     },
@@ -46,7 +46,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Inequalities"],
         difficulty: 2,
-        content: `<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求同時滿足 $\\dfrac{7(x-2)}{5}+11>3(x-1)$ 及 $x+42 \\ge 0$ 的 $x$ 值的範圍。</div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">有多少個正整數同時滿足 (a) 的不等式？<span class="marks">(4分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求同時滿足 $\\dfrac{7(x-2)}{5}+11>3(x-1)$ 及 $x+42 \\ge 0$ 的 $x$ 值的範圍。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">有多少個正整數同時滿足 (a) 的不等式？<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 先解第一個不等式（兩邊同乘以 5 展開並去括號），再解第二個不等式，最後求兩者解集的交集。<br>(b) 在得到的 $x$ 範圍內，數出屬於正整數（1, 2, 3...）的個數。`,
         solution: `(a) 解第一個不等式：<br>$\\dfrac{7(x-2)}{5} + 11 > 3(x-1)$<br>$7(x-2) + 55 > 15(x-1)$<br>$7x - 14 + 55 > 15x - 15$<br>$7x + 41 > 15x - 15$<br>$-8x > -56 \\Rightarrow x < 7$<br>解第二個不等式：<br>$x + 42 \\ge 0 \\Rightarrow x \\ge -42$<br>同時滿足兩者的 $x$ 範圍為： $-42 \\le x < 7$。<br><br>(b) 滿足 $-42 \\le x < 7$ 的正整數有 $1, 2, 3, 4, 5, 6$，共 6 個。`
     },
