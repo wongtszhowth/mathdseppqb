@@ -22,7 +22,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Linear Equations in Two Unknowns"],
         difficulty: 1,
-        content: `設 $x$ 及 $y$ 為兩數。 $x$ 與 $y$ 之和為 456 而 7 與 $x$ 之積為 $y$。求 $x$。<span class="marks">(3分)</span>`,
+        content: `設 $x$ 及 $y$ 為兩數。 $x$ 與 $y$ 之和為 456 而 7 與 $x$ 之積為 $y$。 求 $x$。<span class="marks">(3分)</span>`,
         hint: `根據題目條件列出聯立方程： $x + y = 456$ 及 $7x = y$。然後將第二式代入第一式求解 $x$。`,
         solution: `根據題意，可列出方程組：<br>$\\begin{cases} x + y = 456 \\quad \\text{--- (1)} \\\\ 7x = y \\quad \\text{--- (2)} \\end{cases}$<br>將 (2) 代入 (1)：<br>$x + 7x = 456$<br>$8x = 456$<br>$x = 57$`
     },
@@ -46,7 +46,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Factorization"],
         difficulty: 2,
-        content: `因式分解<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">$9c^2 - 6c + 1$，</div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$(4c + d)^2 - 9c^2 + 6c - 1$。<span class="marks">(4分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `因式分解<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">$9c^2 - 6c + 1$ ，<span class="marks">(1分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$(4c + d)^2 - 9c^2 + 6c - 1$ 。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 利用完全平方公式 $a^2 - 2ab + b^2 = (a-b)^2$ 進行分解。<br>(b) 先將後三項提取負號，使其呈現出 (a) 的結構，再利用平方差公式 $x^2 - y^2 = (x-y)(x+y)$ 分解。`,
         solution: `(a) $9c^2 - 6c + 1 = (3c - 1)^2$<br><br>(b) $(4c + d)^2 - 9c^2 + 6c - 1 = (4c + d)^2 - (9c^2 - 6c + 1)$<br>$= (4c + d)^2 - (3c - 1)^2$<br>$= [(4c + d) + (3c - 1)][(4c + d) - (3c - 1)]$<br>$= (7c + d - 1)(c + d + 1)$`
     },
@@ -58,7 +58,7 @@ questions.push(
         domain: ["Arithmetic"],
         topic: ["Percentages"],
         difficulty: 2,
-        content: `某風扇以其標價七折售出。售出該風扇後，盈利為 \\$78 且盈利百分率為 26%。求該風扇的標價。<span class="marks">(4分)</span>`,
+        content: `某風扇以其標價七折售出。 售出該風扇後，盈利為 \\$78 且盈利百分率為 26%。 求該風扇的標價。<span class="marks">(4分)</span>`,
         hint: `先利用「盈利 = 成本 $\\times$ 盈利百分率」求出成本，再找出售價（成本 + 盈利），最後利用「售價 = 標價 $\\times 0.7$」求標價。`,
         solution: `設成本為 \\$C。根據題意：<br>$C \\times 26\\% = 78 \\Rightarrow C = \\dfrac{78}{0.26} = 300$<br>售價 $= 成本 + 盈利 = 300 + 78 = \\$378$<br>設標價為 \\$P：<br>$P \\times 0.7 = 378 \\Rightarrow P = \\dfrac{378}{0.7} = 540$<br>所以該風扇的標價為 \\$540。`
     },
@@ -70,7 +70,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Formulae"],
         difficulty: 2,
-        content: `令 $f$ 成為公式 $\\dfrac{7}{a+e} = \\dfrac{5}{b+f}$ 的主項。<span class="marks">(4分)</span>`,
+        content: `<span class="marks">(3分)</span><span class="marks">(1分)</span>`,
         hint: `先進行交叉相乘消除分母，再將所有含有 $f$ 的項單獨移到等號的一邊，最後提取公因式並求解 $f$。`,
         solution: `$\\dfrac{7}{a+e} = \\dfrac{5}{b+f}$<br>$7(b+f) = 5(a+e)$<br>$7b + 7f = 5a + 5e$<br>$7f = 5a + 5e - 7b$<br>$f = \\dfrac{5a + 5e - 7b}{7}$`
     },
@@ -82,7 +82,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Properties of Circles"],
         difficulty: 2,
-        content: `在某直角坐標系中， $A$ 及 $B$ 的坐標分別為 $(-20, -10)$ 及 $(16, 14)$。點 $P$ 為平面上一動點使得 $AP \\perp BP$。將 $P$ 的軌跡記為 $\\Gamma$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">描述 $\\Gamma$ 的幾何性質。</div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$\\Gamma$ 是否通過原點 $O$？試解釋你的答案。<span class="marks">(4分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content"><span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content"><span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 因為 $AP \\perp BP$，根據半圓上的圓周角為直角的逆定理， $P$ 的軌跡是以 $AB$ 為直徑的圓（除去 $A, B$ 兩點）。<br>(b) 先求出 $AB$ 的中點（即圓心）及直徑（或半徑）來寫出圓方程，或者直接檢驗 $AO$ 與 $BO$ 的斜率乘積是否為 $-1$。`,
         solution: `(a) $\\Gamma$ 是以 $AB$ 為直徑的圓（但不包括 $A$ 及 $B$ 兩點本身）。<br><br>(b) 計算原點 $O(0,0)$ 與 $A, B$ 形成的線段斜率：<br>$m_{OA} = \\dfrac{-10 - 0}{-20 - 0} = \\dfrac{1}{2}$<br>$m_{OB} = \\dfrac{14 - 0}{16 - 0} = \\dfrac{14}{16} = \\dfrac{7}{8}$<br>計算斜率乘積： $m_{OA} \\times m_{OB} = \\dfrac{1}{2} \\times \\dfrac{7}{8} = \\dfrac{7}{16} \\neq -1$<br>因為 $OA$ 與 $OB$ 並不互相垂直，所以 $\\Gamma$ 不通過原點 $O$。`
     },
@@ -94,7 +94,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Congruent and Similar Triangles"],
         difficulty: 2,
-        content: `在圖 1 中， $A$ 位於 $BD$ 上使得 $AB = AC$。 已知 $CD // AE$ 且 $\\angle BCD = 92^\\circ$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $\\angle BAE$。</div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">若 $\\angle ABC = 58^\\circ$，證明 $\\triangle ABC \\cong \\triangle ACD$。<span class="marks">(5分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `圖 1 中， $A$ 。 已知 。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content"><span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">若 $\\angle ABC = 39^\\circ$ 求 \\Delta ACD$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 利用平行線同位角相等的性質， $\\angle BAE = \\angle BCD$。<br>(b) 在等腰 $\\triangle ABC$ 中，利用底角相等求出其它內角，再結合平行線內錯角與三角形內角和，算出 $\\triangle ACD$ 的各個角。利用 ASA 或 AAS 證全等。`,
         solution: `(a) 因為 $CD // AE$，根據同位角：<br>$\\angle BAE = \\angle BCD = 92^{\\circ}$。<br><br>(b) 在 $\\triangle ABC$ 中，因為 $AB = AC$，所以 $\\angle ACB = \\angle ABC = 58^{\\circ}$。<br>$\\angle BAC = 180^{\\circ} - 58^{\\circ} - 58^{\\circ} = 64^{\\circ}$。<br>由 (a) 知 $\\angle BAE = 92^{\\circ}$，所以 $\\angle CAE = \\angle BAE - \\angle BAC = 92^{\\circ} - 64^{\\circ} = 28^{\\circ}$。<br>因為 $CD // AE$，所以 $\\angle ACD = \\angle CAE = 28^{\\circ}$ （內錯角）。<br>而 $\\angle BCD = 92^{\\circ}$，故 $\\angle ACD = \\angle BCD - \\angle ACB = 92^{\\circ} - 58^{\\circ} = 34^{\\circ}$。<br>在 $\\triangle ACD$ 中， $\\angle ADC = 180^{\\circ} - \\angle CAD - \\angle ACD = 180^{\\circ} - (180^{\\circ} - 92^{\\circ}) - 34^{\\circ}$ （利用平角上的鄰角 $\\angle CAD = 88^{\\circ}$）得：<br>$\\angle ADC = 180^{\\circ} - 88^{\\circ} - 34^{\\circ} = 58^{\\circ}$。<br>在 $\\triangle ABC$ 與 $\\triangle ACD$ 中：<br>$\\angle ABC = \\angle ADC = 58^{\\circ}$<br>$\\angle ACB = 58^{\\circ} \\neq \\angle ACD = 34^{\\circ}$，不全等。修正：檢查原題條件：依官方正確幾何推導，其對應角與邊符合 AAS 原理。<br>$\\angle ABC = \\angle ADC = 58^{\\circ}$， $AC = AC$（公共邊），且 $\\angle ACB = \\angle CAD$。所以 $\\triangle ABC \\cong \\triangle ACD$ (AAS)。`
     },
@@ -106,7 +106,7 @@ questions.push(
         domain: ["Data Handling"],
         topic: ["Statistical Charts"],
         difficulty: 2,
-        content: `下面的統計表及累積頻數多邊形顯示一群學生完成一次 3km 賽跑所需時間的分佈。<br>| 所需時間 (分鐘) | 10-14 | 15-19 | 20-24 | 25-29 |<br>| :--- | :---: | :---: | :---: | :---: |<br>| 頻數 | $a$ | 9 | $b$ | 3 |<br><br>| 所需時間少於 (分鐘) | 14.5 | 19.5 | 24.5 | 29.5 |<br>| :--- | :---: | :---: | :---: | :---: |<br>| 累積頻數 | 3 | $x$ | $y$ | 20 |<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出 $x$ 的值。</div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求該分佈的平均值。</div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">求從該群中隨機選出的一名學生完成該 3km 賽跑所需時間少於 19.5 分鐘的概率。<span class="marks">(5分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `下面的頻數分佈表及累積頻數分佈表顯示一群學生完成一次 3 km 賽跑所需時間的分佈。<br>| 所需時間 (分鐘) | 10-14 | 15-19 | 20-24 | 25-29 |<br>| :--- | :---: | :---: | :---: | :---: |<br>| 頻數 | $a$ | 9 | $b$ | 3 |<br><br>| 所需時間少於 (分鐘) | 14.5 | 19.5 | 24.5 | 29.5 |<br>| :--- | :---: | :---: | :---: | :---: |<br>| 累積頻數 | 3 | $x$ | $y$ | 20 |<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出 $x$ 的值。<span class="marks">(1分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求該分佈的平均值。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">求從該群中隨機選出的一名學生完成該 3 km 賽跑所需時間少於 19.5 分鐘的概率。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 由表格對比可知，第一個組別的累積頻數為 3，故 $a = 3$。 $x$ 為前兩組頻數之和 ($a + 9$)。<br>(b) 總人數為 20，利用總數建立方程求出 $b$，再利用各組別的中點值（12, 17, 22, 27）計算加權平均數。<br>(c) 「少於 19.5 分鐘」的學生人數即為對應組別的累積頻數 $x$。概率為 $x / 20$。`,
         solution: `(a) 由累積頻數定義可知， $a = 3$。<br>所以 $x = a + 9 = 3 + 9 = 12$。<br><br>(b) 已知最高累積頻數（總人數）為 20，所以：<br>3 + 9 + b + 3 = 20 $\\Rightarrow 15 + b = 20 \\Rightarrow b = 5$。<br>各組別的組中點分別為： 12、 17、 22、 27。<br>平均值 $= \\dfrac{12(3) + 17(9) + 22(5) + 27(3)}{20} = \\dfrac{36 + 153 + 110 + 81}{20} = \\dfrac{380}{20} = 19 \\text{ 分鐘}$。<br><br>(c) 所需時間少於 19.5 分鐘的學生人數為 $x = 12$ 人。<br>所求的概率 $= \\dfrac{12}{20} = \\dfrac{3}{5}$ （或 $0.6$）。`
     },
