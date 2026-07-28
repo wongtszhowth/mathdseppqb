@@ -9,7 +9,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Algebraic Fractions and Fractional Equations"],
         difficulty: 1,
-        content: `化簡 $\\dfrac{4}{h-7} - \\dfrac{6}{h-5}$。`,
+        content: `化簡 $\\dfrac{2}{4h-7} - \\dfrac{3}{6h-5}$。<span class="marks">(3分)</span>`,
         hint: `先通分母，然後展開分子並小心合併同類項（注意負號的分配）。`,
         solution: `原式 $= \\dfrac{4(h-5) - 6(h-7)}{(h-7)(h-5)} = \\dfrac{4h-20-6h+42}{(h-7)(h-5)} = \\dfrac{22-2h}{(h-7)(h-5)}$`
     },
@@ -21,7 +21,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Formulae"],
         difficulty: 1,
-        content: `令 $x$ 成為公式 $\\dfrac{Ax+C}{B}=3x$ 的主項。`,
+        content: `令 $x$ 成為公式 $\\dfrac{Ax+C}{B}=3x$ 的主項。<span class="marks">(3分)</span>`,
         hint: `兩邊同乘以 $B$ 消除分母，將所有含有 $x$ 的項移到等號同一邊，抽公因式後即可單獨導出 $x$。`,
         solution: `$Ax+C = 3Bx \\Rightarrow C = 3Bx - Ax \\Rightarrow C = x(3B-A) \\Rightarrow x = \\dfrac{C}{3B-A}$`
     },
@@ -33,7 +33,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Factorization"],
         difficulty: 1,
-        content: `因式分解<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">$6r^{2}-13rs-28s^{2}$<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$4r-14s+6r^{2}-13rs-28s^{2}$<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `因式分解<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">$6r^{2}-13rs-28s^{2}$ ，<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$4r-14s+6r^{2}-13rs-28s^{2}$ 。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 使用十字相乘法；(b) 利用 (a) 的結果，將前兩項提取公因式後進行整體分組分解。`,
         solution: `(a) $(2r-7s)(3r+4s)$<br>(b) $2(2r-7s) + (2r-7s)(3r+4s) = (2r-7s)(2+3r+4s)$`
     },
@@ -57,7 +57,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Rates, Ratios and Proportions"],
         difficulty: 2,
-        content: `設 $a$、 $b$ 及 $c$ 均為非零的數使得 $5a=6c$ 及 $\\dfrac{2b+7c}{b+c}=4$。求 $\\dfrac{5a+8b}{2b+3c}$ 的值。`,
+        content: `設 $a$ 、 $b$ 及 $c$ 均為非零的數使得 $5a=6c$ 及 $\\dfrac{2b+7c}{b+c}=4$。 求 $\\dfrac{5a+8b}{2b+3c}$ 的值。<span class="marks">(4分)</span>`,
         hint: `利用已知條件將 $a$ 和 $b$ 都用含 $c$ 的代數式表示，然後代入所求分數中將 $c$ 約去。`,
         solution: `由 $\\dfrac{2b+7c}{b+c}=4 \\Rightarrow 2b+7c = 4b+4c \\Rightarrow 3c = 2b \\Rightarrow b = 1.5c$。又由 $5a = 6c \\Rightarrow 5a = 6c$（或 $a = 1.2c$）。代入所求式：$\\dfrac{6c + 8(1.5c)}{2(1.5c) + 3c} = \\dfrac{6c + 12c}{3c + 3c} = \\dfrac{18c}{6c} = 3$`
     },
@@ -69,7 +69,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Percentages"],
         difficulty: 2,
-        content: `某計算機的標價較其成本高 $40\\%$。該計算機以其標價七五折售出並獲利 \\$13。求該計算機的標價。`,
+        content: `某計算機的標價較其成本高 40%。 該計算機以其標價七五折售出並獲利 \\$13。 求該計算機的標價。<span class="marks">(4分)</span>`,
         hint: `設成本為 $C$，則標價為 $1.4C$，售價為 $1.4C \\times 0.75$。利用「售價 $-$ 成本 $=$ 獲利」建立方程。`,
         solution: `設成本為 $C$。標價 $= 1.4C$，售價 $= 1.4C \\times 0.75 = 1.05C$。獲利 $= 1.05C - C = 0.05C = 13 \\Rightarrow C = 260$。則標價 $= 1.4 \\times 260 = \\$364$。`
     },
@@ -81,7 +81,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Trigonometry (2D)", "Coordinate Geometry"],
         difficulty: 2,
-        content: `在某極坐標系中，$O$ 為極點。點 $P$、點 $Q$ 及點 $R$ 的極坐標分別為 $(11,59^{\\circ})$、$(60,149^{\\circ})$ 及 $(144,239^{\\circ})$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $\\angle POQ$。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content)$P$、$O$ 與 $R$ 是否共線？試解釋你的答案。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">求 $\\Delta PQR$ 的周界。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `在某極坐標系中，$O$ 為極點。 點 $P$、點 $Q$ 及點 $R$ 的極坐標分別為 $(11,59^{\\circ})$、$(60,149^{\\circ})$ 及 $(144,239^{\\circ})$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $\\angle POQ$。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$P$、$O$ 與 $R$ 是否共線？ 試解釋你的答案。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">求 $\\Delta PQR$ 的周界。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 兩點的極角相減；(b) 檢查 $P$ 與 $R$ 的極角相差是否為 $180^{\\circ}$；(c) 利用共線與垂直關係，在直角三角形中應用畢氏定理求邊長。`,
         solution: `(a) $\\angle POQ = 149^{\\circ} - 59^{\\circ} = 90^{\\circ}$。<br>(b) $\\angle POR = 239^{\\circ} - 59^{\\circ} = 180^{\\circ}$，故 $P$、$O$、$R$ 三點共線。<br>(c) 由上可知 $PR = PO + OR = 11 + 144 = 155$。由於 $\\angle POQ = 90^{\\circ}$，故 $OQ \\perp PR$。由畢氏定理：$PQ = \\sqrt{11^2 + 60^2} = 61$，$QR = \\sqrt{60^2 + 144^2} = 156$。$\\Delta PQR$ 的周界 $= 61 + 156 + 155 = 372$。`
     },
@@ -93,7 +93,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Plane Geometry", "Areas and Volumes"],
         difficulty: 3,
-        content: `圖中，$E$ 為 $AC$ 與 $BD$ 的交點。已知 $\\angle ACB=\\angle ADB=90^{\\circ}$ 及 $AD=BC$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明 $\\Delta ABC\\cong\\Delta BAD$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">若 $AD=12\\text{ cm}$ 及 $DE=9\\text{ cm}$，求五邊形 $ABCED$ 的面積。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `圖中，$E$ 為 $AC$ 與 $BD$ 的交點。 已知 $\\angle ACB=\\angle ADB=90^{\\circ}$ 及 $AD=BC$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明 $\\Delta ABC\\cong\\Delta BAD$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">若 $AD=12\\text{ cm}$ 及 $DE=9\\text{ cm}$，求五邊形 $ABCED$ 的面積。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 利用 R.H.S.（斜邊、直角邊）證明全等；(b) 由全等推出對應邊相等，進而利用畢氏定理求出直角三角形的其餘邊長，最後將圖形分割成兩個三角形求面積和。`,
         solution: `(a) $AB = BA$ (公共邊)，$\\angle ACB = \\angle ADB = 90^{\\circ}$ (已知)，$BC = AD$ (已知)，故 $\\Delta ABC \\cong \\Delta BAD$ (R.H.S.)。<br>(b) 由全等知 $AC = BD$ 且 $\\angle EAB = \\angle EBA \\Rightarrow EA = EB$，因此 $EC = ED = 9\\text{ cm}$。在直角 $\\Delta ADE$ 中，$AE = \\sqrt{12^2 + 9^2} = 15\\text{ cm}$，得 $AC = 15 + 9 = 24\\text{ cm}$。五邊形面積 $= S_{\\Delta ABC} + S_{\\Delta ADE} = \\dfrac{1}{2}(24)(12) + \\dfrac{1}{2}(12)(9) = 144 + 54 = 198\\text{ cm}^2$。`
     },
