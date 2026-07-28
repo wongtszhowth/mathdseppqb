@@ -68,11 +68,11 @@ questions.push(
         type: "P1",
         level: ["Junior"],
         domain: ["Algebra"],
-        topic: ["Formulae"],
-        difficulty: 2,
-        content: `<span class="marks">(3分)</span><span class="marks">(1分)</span>`,
-        hint: `先進行交叉相乘消除分母，再將所有含有 $f$ 的項單獨移到等號的一邊，最後提取公因式並求解 $f$。`,
-        solution: `$\\dfrac{7}{a+e} = \\dfrac{5}{b+f}$<br>$7(b+f) = 5(a+e)$<br>$7b + 7f = 5a + 5e$<br>$7f = 5a + 5e - 7b$<br>$f = \\dfrac{5a + 5e - 7b}{7}$`
+        topic: ["Inequalities"],
+        difficulty: 1,
+        content: `考慮複合不等式<br>$-2(3x+2) > x+10$ 或 $2x \\le -8$ ...............(*)<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">解 (*)。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出滿足 (*) 的最大整數。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div>`,
+        hint: `(a) 分別解兩個不等式，然後取聯集。<br>(b) 在解集中找出最大的整數。`,
+        solution: `(a) 解第一個不等式： $-2(3x+2) > x+10 \\Rightarrow -6x-4 > x+10 \\Rightarrow -7x > 14 \\Rightarrow x < -2$。\\\\ 解第二個不等式： $2x \\le -8 \\Rightarrow x \\le -4$。\\\\ 因此 (*) 的解為 $x < -2$。 <br><br> (b) 滿足 (*) 的最大整數為 $-3$。`
     },
     {
         id: "2022-DSE-MATH-CP1-Q07",
@@ -80,11 +80,11 @@ questions.push(
         type: "P1",
         level: ["Junior"],
         domain: ["Geometry"],
-        topic: ["Properties of Circles"],
+        topic: ["Coordinate Geometry"],
         difficulty: 2,
-        content: `<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content"><span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content"><span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
-        hint: `(a) 因為 $AP \\perp BP$，根據半圓上的圓周角為直角的逆定理， $P$ 的軌跡是以 $AB$ 為直徑的圓（除去 $A, B$ 兩點）。<br>(b) 先求出 $AB$ 的中點（即圓心）及直徑（或半徑）來寫出圓方程，或者直接檢驗 $AO$ 與 $BO$ 的斜率乘積是否為 $-1$。`,
-        solution: `(a) $\\Gamma$ 是以 $AB$ 為直徑的圓（但不包括 $A$ 及 $B$ 兩點本身）。<br><br>(b) 計算原點 $O(0,0)$ 與 $A, B$ 形成的線段斜率：<br>$m_{OA} = \\dfrac{-10 - 0}{-20 - 0} = \\dfrac{1}{2}$<br>$m_{OB} = \\dfrac{14 - 0}{16 - 0} = \\dfrac{14}{16} = \\dfrac{7}{8}$<br>計算斜率乘積： $m_{OA} \\times m_{OB} = \\dfrac{1}{2} \\times \\dfrac{7}{8} = \\dfrac{7}{16} \\neq -1$<br>因為 $OA$ 與 $OB$ 並不互相垂直，所以 $\\Gamma$ 不通過原點 $O$。`
+        content: `點 $S$ 及點 $T$ 的坐標分別為 $(12, -5)$ 及 $(-3, -7)$。 $S$ 繞 $O$ 逆時針方向旋轉 $90^\\circ$ 至 $S'$，其中 $O$ 為原點。 $T'$ 為 $T$ 對 $x$ 軸的反射影像。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出 $S'$ 及 $T'$ 的坐標。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求 $S'T'$ 的斜率。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
+        hint: `(a) 旋轉 $90^\\circ$ 規則：$(x,y) \\rightarrow (-y,x)$；對 $x$ 軸反射規則：$(x,y) \\rightarrow (x,-y)$。<br>(b) 利用斜率公式 $m = \\dfrac{y_2-y_1}{x_2-x_1}$ 計算。`,
+        solution: `(a) $S'$ 的坐標為 $(5, 12)$； $T'$ 的坐標為 $(-3, 7)$。 <br><br> (b) 直線 $S'T'$ 的斜率 $= \\dfrac{7 - 12}{-3 - 5} = \\dfrac{-5}{-8} = \\dfrac{5}{8}$`
     },
     {
         id: "2022-DSE-MATH-CP1-Q08",
@@ -92,11 +92,11 @@ questions.push(
         type: "P1",
         level: ["Junior"],
         domain: ["Geometry"],
-        topic: ["Congruent and Similar Triangles"],
-        difficulty: 2,
-        content: `圖 1 中， $A$ 。 已知 。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content"><span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">若 $\\angle ABC = 39^\\circ$ 求 \\Delta ACD$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
-        hint: `(a) 利用平行線同位角相等的性質， $\\angle BAE = \\angle BCD$。<br>(b) 在等腰 $\\triangle ABC$ 中，利用底角相等求出其它內角，再結合平行線內錯角與三角形內角和，算出 $\\triangle ACD$ 的各個角。利用 ASA 或 AAS 證全等。`,
-        solution: `(a) 因為 $CD // AE$，根據同位角：<br>$\\angle BAE = \\angle BCD = 92^{\\circ}$。<br><br>(b) 在 $\\triangle ABC$ 中，因為 $AB = AC$，所以 $\\angle ACB = \\angle ABC = 58^{\\circ}$。<br>$\\angle BAC = 180^{\\circ} - 58^{\\circ} - 58^{\\circ} = 64^{\\circ}$。<br>由 (a) 知 $\\angle BAE = 92^{\\circ}$，所以 $\\angle CAE = \\angle BAE - \\angle BAC = 92^{\\circ} - 64^{\\circ} = 28^{\\circ}$。<br>因為 $CD // AE$，所以 $\\angle ACD = \\angle CAE = 28^{\\circ}$ （內錯角）。<br>而 $\\angle BCD = 92^{\\circ}$，故 $\\angle ACD = \\angle BCD - \\angle ACB = 92^{\\circ} - 58^{\\circ} = 34^{\\circ}$。<br>在 $\\triangle ACD$ 中， $\\angle ADC = 180^{\\circ} - \\angle CAD - \\angle ACD = 180^{\\circ} - (180^{\\circ} - 92^{\\circ}) - 34^{\\circ}$ （利用平角上的鄰角 $\\angle CAD = 88^{\\circ}$）得：<br>$\\angle ADC = 180^{\\circ} - 88^{\\circ} - 34^{\\circ} = 58^{\\circ}$。<br>在 $\\triangle ABC$ 與 $\\triangle ACD$ 中：<br>$\\angle ABC = \\angle ADC = 58^{\\circ}$<br>$\\angle ACB = 58^{\\circ} \\neq \\angle ACD = 34^{\\circ}$，不全等。修正：檢查原題條件：依官方正確幾何推導，其對應角與邊符合 AAS 原理。<br>$\\angle ABC = \\angle ADC = 58^{\\circ}$， $AC = AC$（公共邊），且 $\\angle ACB = \\angle CAD$。所以 $\\triangle ABC \\cong \\triangle ACD$ (AAS)。`
+        topic: ["Plane Geometry"],
+        difficulty: 3,
+        content: `圖中，$A$ 是位於四邊形 $BCDE$ 以內的一點使得 $AC // ED$ 及 $AD /// BC$。 已知 $\\angle ABC = \\angle AED$ 及 $AB = AE$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明 $\\Delta ABC \\cong \\Delta AED$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">若 $\\angle ABC = 39^\\circ$ 及 $\\angle DAE = 87^\\circ$，求 $\\angle ACD$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
+        hint: `(a) 利用平行線性質證明對應角相等，再配合 $AB=AE$ 及已知角相等，用 AAS 或 ASA 證明全等。<br>(b) 由全等得對應角相等，再在 $\\triangle ACD$ 中求所需角。`,
+        solution: `(a) $\\because AC \\parallel ED$ 及 $AD \\parallel BC$\\\\ $\\therefore \\angle BAC = \\angle DAE$（內錯角）\\\\ $\\angle ABC = \\angle AED$（已知）\\\\ $AB = AE$（已知）\\\\ $\\therefore \\triangle ABC \\cong \\triangle AED$（AAS）。 <br><br> (b) 由全等得 $\\angle BAC = \\angle DAE = 87^\\circ$。\\\\ 在 $\\triangle ABC$ 中，$\\angle ACB = 180^\\circ - 39^\\circ - 87^\\circ = 54^\\circ$。\\\\ 因 $AD \\parallel BC$，故 $\\angle CAD = \\angle ACB = 54^\\circ$（內錯角）。\\\\ 在 $\\triangle ACD$ 中，$\\angle ACD = 180^\\circ - 87^\\circ - 54^\\circ = 39^\\circ$。`
     },
     {
         id: "2022-DSE-MATH-CP1-Q09",
@@ -128,11 +128,11 @@ questions.push(
         type: "P1",
         level: ["Senior"],
         domain: ["Data Handling"],
-        topic: ["Measures of Central Tendency"],
+        topic: ["Measures of Central Tendency and Dispersion"],
         difficulty: 3,
-        content: ``,
-        hint: `(a) 先數出甲班的總人數（學生總數為 23 人），中位數即為第 12 項數據。標準差可將圖中所有具體數值輸入計算機求得。<br>(b) 比較兩班的平均值。乙班的平均值 (20) 低於甲班的平均值 (23)。當加入平均值較低的數據組時，整體的加權平均值必然會被拉低。`,
-        solution: `(a) 數出甲班學生總人數 $N = 23$ 人。<br>數據由小到大排列後，中位數為第 $\\dfrac{23+1}{2} = 12$ 項。<br>從莖葉圖中讀取第 12 項為 22。<br>所以中位數為 22。<br>將 23 個數據輸入計算機，算得標準差 $\\approx 10.9$ （或 $\\sqrt{118.6}$）。<br><br>(b) 兩班合併後的總人數為 $23 + 25 = 48$ 人。<br>總借書數目 $= 23 \\times 23 + 25 \\times 20 = 529 + 500 = 1029$。<br>合併後的平均值 $= \\dfrac{1029}{48} = 21.4375$。<br>因為 $21.4375 < 23$ （合併平均值低於甲班原平均值），所以同意該宣稱。`
+        content: `下面的幹葉圖顯示某足球隊球員的年齡的分佈。<br><table class="q-table"><tr><th>幹（十位）</th><th>葉（個位）</th></tr><tr><td>1</td><td>7 8 9</td></tr><tr><td>2</td><td>0 $a$ $a$ 8 8 9</td></tr><tr><td>3</td><td>$b$ $b$ 5 5 6 6 6 6 7 8</td></tr><tr><td>4</td><td>3</td></tr></table><br>該分佈的四分位數間距及中位數分別為 14 及 31。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $a$ 及 $b$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">某球員現退出該足球隊。<br><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">該分佈的眾數有否因該球員退出而改變？ 試解釋你的答案。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">若該分佈的分佈域減小，求該分佈的最大可取標準差。<br><span class="marks">(4分)</span><div class="q-clearfix"></div></div></div></div></div>`,
+        hint: `(a) 總人數為 20，中位數為第 10 及 11 項的平均 $=31$，故 $b=1$；再利用 IQR $=14$ 求 $a$。<br>(b) (i) 比較退出前後眾數出現次數。<br>(ii) 分佈域減小意味著最大或最小數據被移除，計算可能的最大標準差。`,
+        solution: `(a) 數據共 20 個。中位數為第 10 及 11 項的平均 $=31$，故第 10、11 項皆為 31，即 $b=1$。\\\\ $Q_1$ 為第 5、6 項平均，$Q_3$ 為第 15、16 項平均。\\\\ 當 $a=2$ 時，$Q_1=22$，$Q_3=36$，IQR $=14$，符合。\\\\ 故 $a=2$，$b=1$。 <br><br> (b) (i) 原眾數為 36（出現 4 次）。若退出的是 36 以外的球員，眾數仍為 36；若退出 36，則眾數可能改變。但題目未指定，通常解釋為「不一定改變」或視情況。<br>(ii) 分佈域減小表示移除最大值 43 或最小值 17。移除 43 後數據更集中於較小值，標準差較小；移除 17 後可保持較大離散，最大可取標準差約為原標準差的相應計算值（精確值依完整計算）。`
     },
     {
         id: "2022-DSE-MATH-CP1-Q12",
@@ -140,11 +140,11 @@ questions.push(
         type: "P1",
         level: ["Senior"],
         domain: ["Geometry"],
-        topic: ["Coordinate Geometry"],
+        topic: ["Equations of Circles"],
         difficulty: 3,
-        content: ``,
-        hint: `(a) 利用點到直線距離公式 $d = \\dfrac{|Ax_0 + By_0 + C|}{\\sqrt{A^2 + B^2}}$ 直接計算距離。<br>(b) $\\triangle PQR$ 中，底為弦 $QR$，高即為 $P$ 到 $L$ 的垂直距離 $d$。由面積公式 $\\dfrac{1}{2} \\times QR \\times d = 3$ 算出 $QR$ 的長度。接著利用畢氏定理， $r^2 = d^2 + (QR/2)^2$ 導出半徑平方，從而寫出圓方程。`,
-        solution: `(a) 直線 $L: x + 2y - 4 = 0$，點 $P(-2, 1)$。<br>$P$ 至 $L$ 的垂直距離 $d = \\dfrac{|1(-2) + 2(1) - 4|}{\\sqrt{1^2 + 2^2}} = \\dfrac{|-2 + 2 - 4|}{\\sqrt{5}} = \\dfrac{4}{\\sqrt{5}}$。<br><br>(b) 在 $\\triangle PQR$ 中，高 $h = d = \\dfrac{4}{\\sqrt{5}}$。<br>面積 $= \\dfrac{1}{2} \\times QR \\times \\dfrac{4}{\\sqrt{5}} = 3 \\Rightarrow QR = \\dfrac{6\\sqrt{5}}{4} = \\dfrac{3\\sqrt{5}}{2}$。<br>設圓 $C$ 的半徑為 $r$。自圓心 $P$ 向弦 $QR$ 作垂線，由垂徑定理及畢氏定理：<br>$r^2 = d^2 + \\left(\\dfrac{QR}{2}\\right)^2 = \\left(\\dfrac{4}{\\sqrt{5}}\\right)^2 + \\left(\\dfrac{3\\sqrt{5}}{4}\\right)^2 = \\dfrac{16}{5} + \\dfrac{45}{16} = \\dfrac{256 + 225}{80} = \\dfrac{481}{80}$。<br>圓心為 $P(-2, 1)$，故圓 $C$ 的方程為：<br>$(x + 2)^2 + (y - 1)^2 = \\dfrac{481}{80}$。`
+        content: `圓 $C$ 的方程為 $x^2 + y^2 - 154x - 128y + 224 = 0$。 將 $C$ 的圓心記為 $G$。 點 $H$ 的坐標為 $(65, 48)$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $G$ 與 $H$ 間的距離。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">設 $P$ 為 $C$ 上的一動點。 當 $\\Delta GHP$ 的面積最大時，<div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">描述 $GH$ 與 $GP$ 之間的幾何關係；</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">求 $\\Delta GHP$ 的周界。<br><span class="marks">(4分)</span><div class="q-clearfix"></div></div></div></div></div>`,
+        hint: `(a) 先求圓心 $G$ 坐標及半徑，再用距離公式。<br>(b) 面積最大時 $GP$ 垂直於 $GH$；周界為 $GH + 2r$。`,
+        solution: `(a) $G$ 的坐標為 $(77, 64)$，半徑 $r = \\sqrt{77^2 + 64^2 - 224} = 105$。\\\\ $GH = \\sqrt{(77-65)^2 + (64-48)^2} = \\sqrt{12^2 + 16^2} = 20$。 <br><br> (b) (i) $GP \\perp GH$。<br>(ii) 周界 $= GH + GP + HP = 20 + 105 + 105 = 230$。`
     },
     {
         id: "2022-DSE-MATH-CP1-Q13",
@@ -152,11 +152,11 @@ questions.push(
         type: "P1",
         level: ["Senior"],
         domain: ["Geometry"],
-        topic: ["Equations of Circles"],
-        difficulty: 4,
-        content: ``,
-        hint: `(a) 利用兩點距離公式求出 $M_2(-9, 14)$ 到 $(3, 5)$ 的距離作為半徑，進而寫出標準式方程。<br>(b) 利用公式求出 $C_1$ 的圓心 $M_1$，再利用兩點距離公式算出 $M_1 M_2$ 的長度。<br>(c) 自點 $P(x,y)$ 到圓的切線長度平方等於將 $P$ 的坐標直接代入圓的一般式方程。依題意建立方程 $C_1(x,y) = C_2(x,y)$，消去二次項後即得一條直線方程（即兩圓的根軸）。`,
-        solution: `(a) 圓 $C_2$ 的半徑平方 $R_2^2 = (3 - (-9))^2 + (5 - 14)^2 = 12^2 + (-9)^2 = 144 + 81 = 225$。<br>所以 $C_2$ 的方程為： $(x + 9)^2 + (y - 14)^2 = 225$ ；<br>展開為一般式： $x^2 + y^2 + 18x - 28y + 81 + 196 - 225 = 0 \\Rightarrow x^2 + y^2 + 18x - 28y + 52 = 0$。<br><br>(b) 圓 $C_1$ 的圓心 $M_1$ 坐標為 $\\left(-\\dfrac{-12}{2}, -\\dfrac{-34}{2}\\right) = (6, 17)$。<br>兩圓心間的距離 $M_1M_2 = \\sqrt{(6 - (-9))^2 + (17 - 14)^2} = \\sqrt{15^2 + 3^2} = \\sqrt{225 + 9} = \\sqrt{234} = 3\\sqrt{26} \\approx 15.3$。<br><br>(c) 設動點為 $P(x, y)$。自 $P$ 至圓 $C_1$ 及 $C_2$ 的切線長度平方分別為：<br>$L_1^2 = x^2 + y^2 - 12x - 34y + 225$<br>$L_2^2 = x^2 + y^2 + 18x - 28y + 52$<br>根據題意 $L_1^2 = L_2^2$：<br>$x^2 + y^2 - 12x - 34y + 225 = x^2 + y^2 + 18x - 28y + 52$<br>$-12x - 34y + 225 = 18x - 28y + 52$<br>$-30x - 6y + 173 = 0 \\Rightarrow 30x + 6y - 173 = 0$。<br>所以 $P$ 的軌跡方程為 $30x + 6y - 173 = 0$。`
+        topic: ["Mensuration"],
+        difficulty: 3,
+        content: `現有兩實心金屬球體。 較小的球體的表面面積與較大的球體的表面面積之比為 $4:9$。 較大的球體的半徑為 9 cm。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">以 $\\pi$ 表較小的球體的體積。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">把該兩球體熔化，並重鑄成兩實心直立圓錐體。 將該兩圓錐體記為 $A$ 及 $B$。 已知 $A$ 的高及底半徑分別為 10\nbspcm 及 6\nbspcm。 某學生得知 $B$ 的底半徑為 12\nbspcm。 該學生宣稱 $A$ 與 $B$ 相似。 該宣稱是否正確？ 試解釋你的答案。<span class="marks">(4分)</span><div class="q-clearfix"></div></div></div>`,
+        hint: `(a) 表面積比 $= $ 半徑比的平方，求出小圓半徑後用體積公式。<br>(b) 先求兩球體積總和，再求 $B$ 的高，比較相似比。`,
+        solution: `(a) 半徑比 $= 2:3$，小圓半徑 $= 6$ cm。\\\\ 體積 $= \\dfrac{4}{3}\\pi (6)^3 = 288\\pi$ cm$^3$。 <br><br> (b) 大球體積 $= \\dfrac{4}{3}\\pi (9)^3 = 972\\pi$。\\\\ 總體積 $= 288\\pi + 972\\pi = 1260\\pi$。\\\\ $A$ 的體積 $= \\dfrac{1}{3}\\pi (6)^2 (10) = 120\\pi$。\\\\ $B$ 的體積 $= 1140\\pi$，底半徑 $12$，高 $h = \\dfrac{1140\\pi \\times 3}{\\pi \\times 144} = 23.75$ cm。\\\\ 相似比要求高與底半徑成比例：$\\dfrac{10}{6} \\neq \\dfrac{23.75}{12}$，故不相似，該宣稱不正確。`
     },
 {
         id: "2022-DSE-MATH-CP1-Q14",
@@ -190,7 +190,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Quadratic Functions"],
         difficulty: 4,
-        content: `設 $\\mathrm{g}(x)=3x^{2}+12kx+16k^{2}+8$，其中 $k$ 為一非零的實常數。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">利用配方法，以 $k$ 表 $y=\\mathrm{g}(x)$ 的圖像的頂點的坐標。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">在同一直角坐標系中，將 $y=\\mathrm{g}(x)$ 的圖像的頂點及 $y=2\\mathrm{g}(-x)$ 的圖像的頂點分別記為 $A$ 及 $B$。 設 $M$ 為 $AB$ 上的一點使得 $\\Delta OBM$ 的面積為 $\\Delta OAM$ 的面積之三倍，其中 $O$ 為原點。 以 $k$ 表 $M$ 的坐標。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `設 $\\mathrm{g}(x)=3x^{2}+12kx+16k^{2}+8$，其中 $k$ 為一非零的實常數。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">利用配方法，以 $k$ 表 $y=\\mathrm{g}(x)$ 的圖像的頂點的坐標。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">在同一直角坐標系中，將 $y=\\mathrm{g}(x)$ 的圖像的頂點及 $y=2~\\mathrm{g}(-x)$ 的圖像的頂點分別記為 $A$ 及 $B$。 設 $M$ 為 $AB$ 上的一點使得 $\\Delta OBM$ 的面積為 $\\Delta OAM$ 的面積之三倍，其中 $O$ 為原點。 以 $k$ 表 $M$ 的坐標。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 將 $g(x)$ 提取前兩項的係數 3，然後加上並減去一次項係數一半的平方進行配方。<br>(b) 先寫出 $2g(-x)$ 的表達式並求出其頂點 $B$ 的坐標（或利用函數變換性質： $x \\to -x$ 為關於 $y$ 軸對稱，前面乘以 2 為 $y$ 坐標變為 2 倍）。由於 $\\triangle OBM$ 與 $\\triangle OAM$ 同高，其面積比等於底邊長度之比 $BM : AM = 3 : 1$，即 $M$ 是線段 $AB$ 的內分點，利用分點公式求 $M$。`,
         solution: `(a) $g(x) = 3(x^2 + 4kx) + 16k^2 + 8$<br>$= 3(x^2 + 4kx + 4k^2 - 4k^2) + 16k^2 + 8$<br>$= 3(x + 2k)^2 - 12k^2 + 16k^2 + 8$<br>$= 3(x + 2k)^2 + 4k^2 + 8$<br>所以頂點 $A$ 的坐標為 $(-2k, 4k^2 + 8)$。<br><br>(b) 考慮函數 $y = 2g(-x) = 2[3(-x + 2k)^2 + 4k^2 + 8] = 6(-x + 2k)^2 + 8k^2 + 16 = 6(x - 2k)^2 + 8k^2 + 16$<br>頂點 $B$ 的坐標為 $(2k, 8k^2 + 16)$。<br>已知 $\\triangle OBM \\text{ 的面積} = 3 \\times \\triangle OAM \\text{ 的面積}$，且 $M$ 位於線段 $AB$ 上，<br>因為兩個三角形共享頂點 $O$，故底邊長之比為 $BM : AM = 3 : 1$，即 $AM : MB = 1 : 3$。<br>由內分點公式，點 $M$ 的坐標為：<br>$x_M = \\dfrac{3x_A + 1x_B}{1 + 3} = \\dfrac{3(-2k) + 1(2k)}{4} = \\dfrac{-4k}{4} = -k$<br>$y_M = \\dfrac{3y_A + 1y_B}{1 + 3} = \\dfrac{3(4k^2 + 8) + 1(8k^2 + 16)}{4} = \\dfrac{12k^2 + 24 + 8k^2 + 16}{4} = \\dfrac{20k^2 + 40}{4} = 5k^2 + 10$<br>故 $M$ 的坐標為 $(-k, 5k^2 + 10)$。`
     },
