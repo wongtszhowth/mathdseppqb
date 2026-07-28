@@ -179,7 +179,7 @@ questions.push(
         domain: ["Data Handling"],
         topic: ["Probability"],
         difficulty: 3,
-        content: `某盒子內有 $5$ 個紅球及 $4$ 個黑球。從該盒子中隨機同時抽出 $2$ 個球。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求所抽出的 $2$ 個球均為紅色的概率。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">某袋子內有 $8$ 個紅球。把從該盒子中所抽出的 $2$ 個球放入該袋子內，然後從該袋子中隨機同時抽出 $3$ 個球。求所抽出的 $3$ 個球為相同顏色的概率。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `某盒子內有 5 個紅球及 4 個黑球。 從該盒子中隨機同時抽出 2 個球。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求所抽出的 2 個球均為紅色的概率。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">某袋子內有 8 個紅球。 把從該盒子中所抽出的 2 個球放入該袋子內，然後從該袋子中隨機同時抽出 3 個球。 求所抽出的 3 個球為相同顏色的概率。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 組合數計算。<br>(b) 分情況討論抽出的兩球顏色，再計算條件概率。`,
         solution: `(a) $\\dfrac{C_5^2}{C_9^2} = \\dfrac{10}{36} = \\dfrac{5}{18}$。 <br><br> (b) 分三種情況（2紅、1紅1黑、2黑）計算後加總，概率為 $\\dfrac{67}{90}$。`
     },
@@ -191,7 +191,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Quadratic Equations", "Coordinate Geometry"],
         difficulty: 4,
-        content: `<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">設 $a$ 及 $b$ 均為實常數。若方程 $x^2 + ax + b = 0$ 的根為 $p$ 及 $5p$，證明 $5a^2 = 36b$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">將圓 $x^2 + y^2 - 6x - 12y + 20 = 0$ 記為 $C$。求常數 $m$ 使得直線 $y = mx$ 與 $C$ 相交於點 $Q$ 及點 $R$ 且 $OQ:QR = 1:4$，其中 $O$ 為原點。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">設 $a$ 及 $b$ 均為實常數。 若方程 $x^2 + ax + b = 0$ 的根為 $p$ 及 $5p$，證明 $5a^2 = 36b$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">將圓 $x^2 + y^2 - 6x - 12y + 20 = 0$ 記為 $C$。 求常數 $m$ 使得直線 $y = mx$ 與 $C$ 相交於點 $Q$ 及點 $R$ 且 $OQ:QR = 1:4$，其中 $O$ 為原點。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 利用韋達定理。<br>(b) 聯立方程後利用距離比條件。`,
         solution: `(a) 由韋達：$p+5p = -a \\Rightarrow 6p = -a$，$p\\cdot5p = b \\Rightarrow 5p^2 = b$。\\\\ $a^2 = 36p^2 \\Rightarrow 5a^2 = 180p^2 = 36\\times5p^2 = 36b$。 <br><br> (b) 經計算得 $m = \\dfrac{3}{4}$ 或適當值。`
     },
@@ -203,7 +203,8 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Trigonometry"],
         difficulty: 4,
-        content: `<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">已知 $WXY$ 為三角形，其中 $WX = 6$ cm、$XY = 5$ cm 及 $\\angle WYX = 70^\\circ$。求 $\\angle WXY$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">圖 3 顯示角錐體 $WXYZ$，其中 $WZ = XZ = YZ$。這角錐體的底為 (a) 所描述的三角形 $WXY$。已知 $WZ$ 與三角形 $WXY$ 間的交角為 $30^\\circ$。三角形 $WXY$ 與三角形 $XYZ$ 間的交角是否超過 $45^\\circ$？試解釋你的答案。<span class="marks">(4分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">已知 $WXY$ 為三角形，其中 $WX = 6\\text{ cm}$ 、$XY = 5\\text{ cm}$ 及 $\\angle WYX = 70^\\circ$。 求 $\\angle WXY$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">下圖顯示角錐體 $WXYZ$，其中 $WZ = XZ = YZ$。 這角錐體的底為 (a) 所描述的三角形 $WXY$。 <br>
+        已知 $WZ$ 與三角形 $WXY$ 間的交角為 $30^\\circ$。 三角形 $WXY$ 與三角形 $XYZ$ 間的交角是否超過 $45^\\circ$？ 試解釋你的答案。<span class="marks">(4分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 用正弦公式。<br>(b) 求高及側面傾角，比較。`,
         solution: `(a) 由正弦公式 $\\dfrac{6}{\\sin 70^\\circ} = \\dfrac{5}{\\sin \\angle WXY}$，解得 $\\angle WXY \\approx 54.2^\\circ$。 <br><br> (b) 經計算交角約 $48^\\circ > 45^\\circ$，故是。`
     },
@@ -215,7 +216,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Sequences", "Logarithms"],
         difficulty: 4,
-        content: `假定 $\\alpha, 7, \\beta$ 為一等比數列，其中 $1 < \\alpha < \\beta$。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">以 $\\log_7 \\beta$ 表 $\\log_7 \\alpha$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">若 $\\log_7 \\alpha, \\log_7 7, \\log_7 \\beta$ 為一等差數列，求該等差數列的公差。<span class="marks">(5分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `假定 $\\alpha, 7, \\beta$ 為一等比數列，其中 $1 < \\alpha < \\beta$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">以 $\\log_7 \\beta$ 表 $\\log_7 \\alpha$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">若 $\\log_\\beta \\alpha, \\log_7 \\beta, \\log_\\alpha \\beta$ 為一等差數列，求該等差數列的公差。<span class="marks">(5分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 由等比得 $\\alpha \\beta = 49$，取對數。<br>(b) 等差條件列出方程求解。`,
         solution: `(a) $\\alpha \\cdot \\beta = 7^2 = 49 \\Rightarrow \\log_7 \\alpha + \\log_7 \\beta = 2 \\Rightarrow \\log_7 \\alpha = 2 - \\log_7 \\beta$。 <br><br> (b) 等差：$2 \\log_7 7 = \\log_7 \\alpha + \\log_7 \\beta \\Rightarrow 2 = 2$，恆成立，但結合條件得公差為 $\\dfrac{1}{2}$。`
     },
@@ -227,7 +228,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Coordinate Geometry"],
         difficulty: 5,
-        content: `點 $P$ 及點 $Q$ 的坐標分別為 $(50, 0)$ 及 $(32, t)$，其中 $t > 0$。將原點記為 $O$。設 $R$ 為一點使得 $OQ$ 為 $\\triangle OPR$ 的中線。假定 $G$ 及 $H$ 分別為 $\\triangle OPR$ 的外心及垂心。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">以 $t$ 表 $G$ 及 $H$ 的坐標。<span class="marks">(5分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">設 $S$ 為 $OP$ 上的一點使得 $QS$ 垂直於 $OP$。已知 $\\angle PQS = \\angle POQ$。<br><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">藉考慮 $\\tan \\angle PQS$，證明 $t = 24$。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">$O$、$G$ 與 $Q$ 是否共線？試解釋你的答案。</div></div><div class="q-line q-level-2"><span class="q-label">(iii)</span><div class="q-text-content">將 $\\triangle OPR$ 的內心記為 $I$。求 $\\triangle GHR$ 的面積與 $\\triangle IPQ$ 的面積之比。<br><span class="marks">(7分)</span><div class="q-clearfix"></div></div></div></div></div>`,
+        content: `點 $P$ 及點 $Q$ 的坐標分別為 $(50, 0)$ 及 $(32, t)$，其中 $t > 0$。 將原點記為 $O$。 設 $R$ 為一點使得 $OQ$ 為 $\\Delta OPR$ 的中線。 假定 $G$ 及 $H$ 分別為 $\\Delta OPR$ 的外心及垂心。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">以 $t$ 表 $G$ 及 $H$ 的坐標。<span class="marks">(5分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">設 $S$ 為 $OP$ 上的一點使得 $QS$ 垂直於 $OP$。 已知 $\\angle PQS = \\angle POQ$。<div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">藉考慮 $\\tan \\angle PQS$，證明 $t = 24$。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">$O$、$G$ 與 $Q$ 是否共線？ 試解釋你的答案。</div></div><div class="q-line q-level-2"><span class="q-label">(iii)</span><div class="q-text-content">將 $\\Delta OPR$ 的內心記為 $I$。 求 $\\Delta GHR$ 的面積與 $\\Delta IPQ$ 的面積之比。<br><span class="marks">(7分)</span><div class="q-clearfix"></div></div></div></div></div>`,
         hint: `(a) 中線性質得 $R$ 坐標，再求外心垂心公式。<br>(b) 用三角及坐標計算。`,
         solution: `(a) 因 $OQ$ 為中線，$R$ 的中點相關得 $R=(14, 2t)$ 等。$G$ 及 $H$ 坐標分別為 $\\left(25, \\dfrac{t}{2}\\right)$ 及適當表達。<br>(b) (i) 由 $\\tan$ 相等得 $t=24$。<br>(ii) 代入後檢查斜率是否相同，結論為是或否。<br>(iii) 面積比為特定分數。`
     }
