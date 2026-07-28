@@ -10,7 +10,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Laws of Indices"],
         difficulty: 1,
-        content: `化簡 $(\\alpha\\beta^3)(\\alpha^-2\\beta^4)^5$，並以正指數表示答案。<span class="marks">(3分)</span>`,
+        content: `化簡 $(\\alpha\\beta^3)(\\alpha^{-2}\\beta^4)^5$，並以正指數表示答案。<span class="marks">(3分)</span>`,
         hint: `利用指數定律 $\\alpha^m \\cdot \\alpha^n = \\alpha^{m+n}$ 及 $\\beta^m \\cdot \\beta^n = \\beta^{m+n}$ 將同底數的項合併。`,
         solution: `$(\\alpha\\beta^3)(\\alpha\\beta^2) = \\alpha^{1+1}\\beta^{3+2} = \\alpha^2\\beta^5$`
     },
