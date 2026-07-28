@@ -154,7 +154,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Mensuration"],
         difficulty: 3,
-        content: `現有兩實心金屬球體。 較小的球體的表面面積與較大的球體的表面面積之比為 $4:9$。 較大的球體的半徑為 9 cm。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">以 $\\pi$ 表較小的球體的體積。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">把該兩球體熔化，並重鑄成兩實心直立圓錐體。 將該兩圓錐體記為 $A$ 及 $B$。 已知 $A$ 的高及底半徑分別為 10\nbspcm 及 6\nbspcm。 某學生得知 $B$ 的底半徑為 12\nbspcm。 該學生宣稱 $A$ 與 $B$ 相似。 該宣稱是否正確？ 試解釋你的答案。<span class="marks">(4分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `現有兩實心金屬球體。 較小的球體的表面面積與較大的球體的表面面積之比為 $4:9$。 較大的球體的半徑為 9\nbspcm。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">以 $\\pi$ 表較小的球體的體積。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">把該兩球體熔化，並重鑄成兩實心直立圓錐體。 將該兩圓錐體記為 $A$ 及 $B$。 已知 $A$ 的高及底半徑分別為 10\nbspcm 及 6\nbspcm。 某學生得知 $B$ 的底半徑為 12\nbspcm。 該學生宣稱 $A$ 與 $B$ 相似。 該宣稱是否正確？ 試解釋你的答案。<span class="marks">(4分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 表面積比 $= $ 半徑比的平方，求出小圓半徑後用體積公式。<br>(b) 先求兩球體積總和，再求 $B$ 的高，比較相似比。`,
         solution: `(a) 半徑比 $= 2:3$，小圓半徑 $= 6$ cm。\\\\ 體積 $= \\dfrac{4}{3}\\pi (6)^3 = 288\\pi$ cm$^3$。 <br><br> (b) 大球體積 $= \\dfrac{4}{3}\\pi (9)^3 = 972\\pi$。\\\\ 總體積 $= 288\\pi + 972\\pi = 1260\\pi$。\\\\ $A$ 的體積 $= \\dfrac{1}{3}\\pi (6)^2 (10) = 120\\pi$。\\\\ $B$ 的體積 $= 1140\\pi$，底半徑 $12$，高 $h = \\dfrac{1140\\pi \\times 3}{\\pi \\times 144} = 23.75$ cm。\\\\ 相似比要求高與底半徑成比例：$\\dfrac{10}{6} \\neq \\dfrac{23.75}{12}$，故不相似，該宣稱不正確。`
     },
