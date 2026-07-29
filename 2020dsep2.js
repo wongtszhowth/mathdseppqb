@@ -286,7 +286,7 @@ D.\t$4:9$。
         domain: ["Geometry"],
         topic: ["Plane Geometry", "Areas and Volumes"],
         difficulty: 4,
-        content: `圖中，$ABCD$ 為一平行四邊形。設 $E$ 為 $AD$ 上的一點使得 $AE:ED = 2:5$。延長 $CB$ 至點 $F$ 使得 $BF = DE$。將 $AB$ 與 $EF$ 的交點記為 $G$。已知 $BD$ 與 $CG$ 相交於點 $H$。若 $\\triangle AEG$ 的面積為 $48$ cm$^2$，則 $\\triangle CDH$ 的面積為
+        content: `圖中，$ABCD$ 為一平行四邊形。設 $E$ 為 $AD$ 上的一點使得 $AE:ED = 2:5$。延長 $CB$ 至點 $F$ 使得 $BF = DE$。將 $AB$ 與 $EF$ 的交點記為 $G$。已知 $BD$ 與 $CG$ 相交於點 $H$。若 $\\Delta AEG$ 的面積為 $48$ cm$^2$，則 $\\Delta CDH$ 的面積為
 <div class="q-mcopt">
 A.\t$98$ cm$^2$。<br>
 B.\t$343$ cm$^2$。<br>
@@ -641,7 +641,7 @@ D.\t$10$。
         domain: ["Geometry"],
         topic: ["Trigonometry (3D)"],
         difficulty: 4,
-        content: `圖中，$ABCDEF$ 為一直立三角柱體。$P$ 為 $AE$ 上的一點。若 $AB = AC = 12$ cm、$AP = 9$ cm、$EP = 5$ cm 及 $BD = 2k$ cm，求 $\\triangle BDP$ 的面積。
+        content: `圖中，$ABCDEF$ 為一直立三角柱體。$P$ 為 $AE$ 上的一點。若 $AB = AC = 12$ cm、$AP = 9$ cm、$EP = 5$ cm 及 $BD = 2k$ cm，求 $\\Delta BDP$ 的面積。
 <div class="q-mcopt">
 A.\t$\\sqrt{(k^2-1)(196-k^2)}$ cm$^2$<br>
 B.\t$\\sqrt{(k^2-1)(196+k^2)}$ cm$^2$<br>
