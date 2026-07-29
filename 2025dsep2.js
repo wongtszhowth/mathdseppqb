@@ -59,10 +59,10 @@ D.	$14$。
         difficulty: 2,
         content: `若 $(3c+1)(d-4) = 2d(5c-1)$，則 $c=$
 <div class="q-mcopt">
-A.	$\\dfrac{3d-4}{7d+12}$<br>
-B.	$\\dfrac{3d+4}{7d-12}$<br>
-C.	$\\dfrac{7d-12}{3d+4}$<br>
-D.	$\\dfrac{7d+12}{3d-4}$
+A.	$\\dfrac{3d-4}{7d+12}$。<br>
+B.	$\\dfrac{3d+4}{7d-12}$。<br>
+C.	$\\dfrac{7d-12}{3d+4}$。<br>
+D.	$\\dfrac{7d+12}{3d-4}$。
 </div>`
     },
     {
@@ -75,10 +75,10 @@ D.	$\\dfrac{7d+12}{3d-4}$
         difficulty: 2,
         content: `設 $k$ 為一常數。 解方程 $x^2+4x=k^2-2k-3$。 
 <div class="q-mcopt">
-A.	$x=k-3$ 或 $x=-k-1$<br>
-B.	$x=k-3$ 或 $x=-k+1$<br>
-C.	$x=k+3$ 或 $x=-k-1$<br>
-D.	$x=k+3$ 或 $x=-k+1$
+A.	$x=k-3$  或  $x=-k-1$<br>
+B.	$x=k-3$  或  $x=-k+1$<br>
+C.	$x=k+3$  或  $x=-k-1$<br>
+D.	$x=k+3$  或  $x=-k+1$
 </div>`
     },
     {
@@ -107,10 +107,10 @@ D.	$5.665 \\le x < 5.675$
         difficulty: 2,
         content: `$4y+1 < 5y-3 \\le 8y-9$ 的解為
 <div class="q-mcopt">
-A.	$y > -4$<br>
-B.	$y \\ge -2$<br>
-C.	$y \\ge 2$<br>
-D.	$y > 4$
+A.	$y > -4$。<br>
+B.	$y \\ge -2$。<br>
+C.	$y \\ge 2$。<br>
+D.	$y > 4$。
 </div>`
     },
     {
@@ -139,10 +139,10 @@ D.	$6$
         difficulty: 2,
         content: `設 $\\mathrm{p}(x) = nx^3 - 3nx + 36$，其中 $n$ 為一常數。 若 $x+3$ 為 $\\mathrm{p}(x)$ 的因式，則 $\\mathrm{p}(3) =$
 <div class="q-mcopt">
-A.	$-2$<br>
-B.	$0$<br>
-C.	$2$<br>
-D.	$72$
+A.	$-2$。<br>
+B.	$0$。<br>
+C.	$2$。<br>
+D.	$72$。
 </div>`
     },
     {
@@ -153,12 +153,12 @@ D.	$72$
         domain: ["Algebra"],
         topic: ["Percentages"],
         difficulty: 2,
-        content: `存款 $\\$40{,}000$，年利率 $3\\%$，年期 $5$ 年，複利計算，每半年一結。 求本利和準確至最接近的元。 
+        content: `存款 $\\$40~000$，年利率 $3\\%$，年期 $5$ 年，複利計算，每半年一結。 求本利和準確至最接近的元。 
 <div class="q-mcopt">
-A.	$\\$46{,}000$<br>
-B.	$\\$46{,}371$<br>
-C.	$\\$46{,}422$<br>
-D.	$\\$46{,}465$
+A.	$\\$46~000$<br>
+B.	$\\$46~371$<br>
+C.	$\\$46~422$<br>
+D.	$\\$46~465$
 </div>`
     },
     {
@@ -171,10 +171,10 @@ D.	$\\$46{,}465$
         difficulty: 3,
         content: `若 $\\alpha$、$\\beta$ 及 $\\gamma$ 均為非零的常數使得 $(\\alpha + 2\\beta):(\\beta + 2\\gamma):(\\gamma + 2\\alpha) = 4:9:5$，則 $\\alpha:\\beta =$
 <div class="q-mcopt">
-A.	$2:5$<br>
-B.	$5:2$<br>
-C.	$128:149$<br>
-D.	$149:128$
+A.	$2:5$。<br>
+B.	$5:2$。<br>
+C.	$128:149$。<br>
+D.	$149:128$。
 </div>`
     },
     {
@@ -201,7 +201,7 @@ D.	$243$。
         domain: ["Algebra"],
         topic: ["Sequences"],
         difficulty: 2,
-        content: `設 $a_n$ 為某數列的第 $n$ 項。 若 $a_2 = 3$、$a_5 = 41$ 及對任意正整數 $n$，$a_{n+2} = 2a_{n+1} + a_n$，則 $a_6 =$
+        content: `設 $a_n$ 為某數列的第 $n$ 項。 若 $a_2 = 3$ 、 $a_5 = 41$ 及對任意正整數 $n$，$a_{n+2} = 2a_{n+1} + a_n$，則 $a_6 =$
 <div class="q-mcopt">
 A.	$99$。 <br>
 B.	$101$。 <br>
@@ -275,7 +275,7 @@ D.	$864\\pi$ cm$^3$。
         domain: ["Geometry"],
         topic: ["Plane Geometry", "Areas and Volumes"],
         difficulty: 3,
-        content: `圖中，$ABCD$ 為一平行四邊形。 設 $E$、$F$ 及 $G$ 分別為 $AB$、$AD$ 及 $CD$ 上的點使得 $BE = 3AE$、$2DF = 3AF$ 及 $DG = 2CG$。 已知 $BC$ 的延線與 $EG$ 的延線相交於點 $H$。 若 $\\Delta CGH$ 的面積為 $16$ cm$^2$，則四邊形 $DFBG$ 的面積為
+        content: `圖中，$ABCD$ 為一平行四邊形。 設 $E$ 、 $F$ 及 $G$ 分別為 $AB$ 、 $AD$ 及 $CD$ 上的點使得 $BE = 3AE$ 、 $2DF = 3AF$ 及 $DG = 2CG$。 已知 $BC$ 的延線與 $EG$ 的延線相交於點 $H$。 若 $\\Delta CGH$ 的面積為 $16$ cm$^2$，則四邊形 $DFBG$ 的面積為
 <div class="q-mcopt">
 A.	$46$ cm$^2$。 <br>
 B.	$49$ cm$^2$。 <br>
@@ -291,7 +291,7 @@ D.	$115$ cm$^2$。
         domain: ["Geometry"],
         topic: ["Plane Geometry", "Similar Triangles"],
         difficulty: 3,
-        content: `圖中所示為三角形 $WXY$。 設 $Z$ 為 $WY$ 上的一點使得 $WY:XY = XY:YZ$。 若 $WX=65$ cm、$WZ=25$ cm 及 $XZ=60$ cm，則 $XY =$
+        content: `圖中所示為三角形 $WXY$。 設 $Z$ 為 $WY$ 上的一點使得 $WY:XY = XY:YZ$。 若 $WX=65$ cm 、 $WZ=25$ cm 及 $XZ=60$ cm，則 $XY =$
 <div class="q-mcopt">
 A.	$131$ cm。 <br>
 B.	$144$ cm。 <br>
@@ -310,7 +310,7 @@ D.	$169$ cm。
         content: `圖中，$ABCD$ 為一正方形。 設 $E$ 為一點使得 $CDEF$ 為一菱形，其中 $F$ 為 $AC$ 的延線上的一點。 延長 $DF$ 至點 $G$ 使得 $AF//BG$。 下列何者正確？
 <div class="q-mcms">
 I.	$DF = FG$
-II.	$\\triangle BFG \\sim \\triangle DEF$
+II.	$\\Delta BFG \\sim \\Delta DEF$
 III.	$\\angle ABG + \\angle BFD = 180^\\circ$
 </div>
 <div class="q-mcopt">
@@ -328,7 +328,7 @@ D.	I、II 及 III
         domain: ["Geometry"],
         topic: ["Plane Geometry", "Trigonometry (2D)"],
         difficulty: 3,
-        content: `已知 $PQRS$ 為一梯形且 $PQ//SR$。 若 $PS = 41$ cm、$RS = 53$ cm、$\\angle PSR = 120^\\circ$ 及 $\\angle QRS = 150^\\circ$，則 $PQ =$
+        content: `已知 $PQRS$ 為一梯形且 $PQ//SR$。 若 $PS = 41$ cm 、 $RS = 53$ cm 、 $\\angle PSR = 120^\\circ$ 及 $\\angle QRS = 150^\\circ$，則 $PQ =$
 <div class="q-mcopt">
 A.	$82$ cm。 <br>
 B.	$100$ cm。 <br>
@@ -344,7 +344,7 @@ D.	$135$ cm。
         domain: ["Geometry"],
         topic: ["Plane Geometry", "Areas and Volumes"],
         difficulty: 2,
-        content: `圖中，$ABCD$ 為一長方形。 已知 $AE = 20$ cm 及 $\\angle AED = 90^\\circ$。 若 $\\triangle ADE$ 的面積為 $150$ cm$^2$，則由 $E$ 至 $CD$ 的垂直距離為
+        content: `圖中，$ABCD$ 為一長方形。 已知 $AE = 20$ cm 及 $\\angle AED = 90^\\circ$。 若 $\\Delta ADE$ 的面積為 $150$ cm$^2$，則由 $E$ 至 $CD$ 的垂直距離為
 <div class="q-mcopt">
 A.	$8$ cm。 <br>
 B.	$9$ cm。 <br>
