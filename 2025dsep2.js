@@ -424,7 +424,7 @@ D.	直線。
         domain: ["Geometry"],
         topic: ["Equations of Straight Lines", "Coordinate Geometry"],
         difficulty: 3,
-        content: `直線 $L_1$ 與直線 $L_2$ 互相垂直。 $L_1$ 及 $L_2$ 的方程分別為 $3x+4y-20=0$ 及 $mx+ny-20=0$，其中 $m$ 及 $n$ 均為常數。 假定 $L_1$ 及 $L_2$ 分別與 $x$ 軸相交於點 $A$ 及點 $B$。 設 $C$ 為 $L_1$ 與 $L_2$ 的交點。 已知 $C$ 在 $x$ 軸之上方。 若 $\\triangle ABC$ 的面積為 $6$，求 $n$。 
+        content: `直線 $L_1$ 與直線 $L_2$ 互相垂直。 $L_1$ 及 $L_2$ 的方程分別為 $3x+4y-20=0$ 及 $mx+ny-20=0$，其中 $m$ 及 $n$ 均為常數。 假定 $L_1$ 及 $L_2$ 分別與 $x$ 軸相交於點 $A$ 及點 $B$。 設 $C$ 為 $L_1$ 與 $L_2$ 的交點。 已知 $C$ 在 $x$ 軸之上方。 若 $\\Delta ABC$ 的面積為 $6$，求 $n$。 
 <div class="q-mcopt">
 A.	$-12$<br>
 B.	$-9$<br>
@@ -529,7 +529,7 @@ D.	$2^{53} + 2^{52} + 2^{51} + 2^{50} + 2^{49}$。
         domain: ["Algebra"],
         topic: ["Polynomials"],
         difficulty: 2,
-        content: `$p^2 - 4q^2$、$p^3 - 8q^3$ 及 $(p+2q)(p^2 - 4q^2)$ 的 L.C.M. 為
+        content: `$p^2 - 4q^2$ 、 $p^3 - 8q^3$ 及 $(p+2q)(p^2 - 4q^2)$ 的 L.C.M. 為
 <div class="q-mcopt">
 A.	$p-2q$。 <br>
 B.	$p^2 - 4q^2$。 <br>
@@ -545,7 +545,7 @@ D.	$(p+2q)(p^2 - 4q^2)(p^3 - 8q^3)$。
         domain: ["Algebra"],
         topic: ["Exponential Functions and Logarithm Functions"],
         difficulty: 3,
-        content: `已知 $\\log_5 y$ 為 $\\log_2 x$ 的線性函數。 該線性函數的圖像在垂直軸上的截距及在水平軸上的截距分別為 $12$ 及 $2$。 若 $y = mx^n$，則 $n=$
+        content: `已知 $\\log_5 y$ 為 $\\log_{25} x$ 的線性函數。 該線性函數的圖像在垂直軸上的截距及在水平軸上的截距分別為 $12$ 及 $2$。 若 $y = mx^n$，則 $n=$
 <div class="q-mcopt">
 A.	$-12$。 <br>
 B.	$-4$。 <br>
@@ -601,12 +601,12 @@ D.	$i$。
         content: `考慮以下的不等式組：
 $$
 \\begin{cases}
-x < 11 \\\\
+x \\le 11 \\\\
 4x + 5y - 19 \\ge 0 \\\\
 7x - 6y + 11 \\le 0
 \\end{cases}
 $$
-設 $D$ 為表示以上的不等式組的解之區域，若 $(x, y)$ 為 $D$ 中的一點，則 $8x - 6y + 11$ 的最大值為
+設 $D$ 為表示以上的不等式組的解之區域。 若 $(x, y)$ 為 $D$ 中的一點，則 $8x - 6y + 11$ 的最大值為
 <div class="q-mcopt">
 A.	$1$。 <br>
 B.	$11$。 <br>
@@ -626,7 +626,7 @@ D.	$129$。
 <div class="q-mcms">
 I.	$3^p, 3^q, 3^r$ 為一等比數列。 
 II.	$\\dfrac{5}{p}, \\dfrac{5}{q}, \\dfrac{5}{r}$ 為一等比數列。 
-III.	$p-q, q-r, r-p$ 為一等差數列。 
+III.	$p-q$ ,  $q-r$ ,  $r-p$ 為一等差數列。 
 </div>
 <div class="q-mcopt">
 A.	只有 I<br>
@@ -709,10 +709,10 @@ D.	$250$
         difficulty: 3,
         content: `某委員會由 $2$ 名經理、$4$ 名主任及 $12$ 名文員組成。 若從該委員會中選出 $7$ 名委員組成一個有至少 $1$ 名經理的工作小組，則可組成多少個不同的工作小組？
 <div class="q-mcopt">
-A.	$16016$<br>
-B.	$20384$<br>
-C.	$22880$<br>
-D.	$31824$
+A.	$16~016$<br>
+B.	$20~384$<br>
+C.	$22~880$<br>
+D.	$31~824$
 </div>`
     },
     {
@@ -741,10 +741,10 @@ D.	$\\dfrac{714}{715}$
         difficulty: 2,
         content: `某男生及某女生在數學測驗的標準分分別為 $-2$ 及 $z$。 數學測驗的得分的標準差為 $2$ 分。 若該男生的測驗得分與該女生的測驗得分之差為 $6$ 分，求 $z$。 
 <div class="q-mcopt">
-A.	$-5$ 或 $1$<br>
-B.	$-5$ 或 $3$<br>
-C.	$-3$ 或 $1$<br>
-D.	$-3$ 或 $3$
+A.	$-5$  或  $1$<br>
+B.	$-5$  或  $3$<br>
+C.	$-3$  或  $1$<br>
+D.	$-3$  或  $3$
 </div>`
     },
     {
