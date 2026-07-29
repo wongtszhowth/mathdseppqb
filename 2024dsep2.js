@@ -25,12 +25,12 @@ D.\t$2x^2 + 18y^2$。
         domain: ["Algebra"],
         topic: ["Indices"],
         difficulty: 1,
-        content: `$\\dfrac{(2a)^3}{(4a^{-5})^{-1}} =$
+        content: `$\\dfrac{(2\\alpha)^3}{(4\\alpha^{-5})^{-1}} =$
 <div class="q-mcopt">
-A.\t$2a^8$。<br>
-B.\t$32a^8$。<br>
-C.\t$\\dfrac{2}{a^2}$。<br>
-D.\t$\\dfrac{32}{a^2}$。
+A.\t$2\\alpha^8$。<br>
+B.\t$32\\alpha^8$。<br>
+C.\t$\\dfrac{2}{\\alpha^2}$。<br>
+D.\t$\\dfrac{32}{\\alpha^2}$。
 </div>`
     },
     {
@@ -57,7 +57,7 @@ D.\t$\\dfrac{2(n-k)}{5}$。
         domain: ["Algebra"],
         topic: ["Approximate Values and Numerical Estimation"],
         difficulty: 1,
-        content: `$\\sqrt{335} =$
+        content: `$\\sqrt{333} =$
 <div class="q-mcopt">
 A.\t$18$（準確至最接近的整數）。<br>
 B.\t$18.24$（準確至二位小數）。<br>
@@ -89,7 +89,7 @@ D.\t$\\$84$。
         domain: ["Algebra"],
         topic: ["Polynomials"],
         difficulty: 2,
-        content: `若 $a$、$b$ 及 $c$ 均為非零的常數使得 $4x^2+2ax+3a=x(4x+b)+2c$，則 $a:b:c=$
+        content: `若 $a$ 、 $b$ 及 $c$ 均為非零的常數使得 $4x^2+2ax+3a \\equiv x(4x+b)+2c$，則 $a:b:c=$
 <div class="q-mcopt">
 A.\t$2:4:3$。<br>
 B.\t$3:4:2$。<br>
@@ -137,7 +137,7 @@ D.\t$24$。
         domain: ["Algebra"],
         topic: ["Polynomials"],
         difficulty: 2,
-        content: `設 $\\mathrm{f}(x)=x^3+kx^2+5x+10$，其中 $k$ 為一常數。若 $\\mathrm{f}(x)$ 可被 $x+k$ 整除，求當 $\\mathrm{f}(x)$ 除以 $x+1$ 時的餘數。
+        content: `設 $\\mathrm{f}(x)=x^3+kx^2+5x+10$，其中 $k$ 為一常數。 若 $\\mathrm{f}(x)$ 可被 $x+k$ 整除，求當 $\\mathrm{f}(x)$ 除以 $x+1$ 時的餘數。
 <div class="q-mcopt">
 A.\t$-2$<br>
 B.\t$2$<br>
@@ -153,12 +153,12 @@ D.\t$18$
         domain: ["Algebra"],
         topic: ["Linear Inequalities and Compound Inequalities"],
         difficulty: 2,
-        content: `$\\dfrac{1-x}{2} \\ge 4$ 或 $7+5x \\le -3$ 的解為
+        content: `$\\dfrac{1-x}{2} \\ge 4$  或  $7+5x \\le -3$ 的解為
 <div class="q-mcopt">
 A.\t$x \\le -7$。<br>
 B.\t$x \\le -2$。<br>
 C.\t$-7 \\le x \\le -2$。<br>
-D.\t$x \\le -7$ 或 $x \\ge -2$。
+D.\t$x \\le -7$  或  $x \\ge -2$。
 </div>`
     },
     {
@@ -169,7 +169,7 @@ D.\t$x \\le -7$ 或 $x \\ge -2$。
         domain: ["Algebra"],
         topic: ["Percentages"],
         difficulty: 2,
-        content: `在某校，40% 學生為女生且 $\\beta\\%$ 女生為外地生。已知該校中 30% 男生為外地生。在該校，外地生人數與女生人數相等。求 $\\beta$。
+        content: `在某校，40% 學生為女生且 $\\beta\\%$ 女生為外地生。 已知該校中 30% 男生為外地生。 在該校，外地生人數與女生人數相等。 求 $\\beta$。
 <div class="q-mcopt">
 A.\t$20$<br>
 B.\t$45$<br>
@@ -201,7 +201,7 @@ D.\t$54$ km/h。
         domain: ["Algebra"],
         topic: ["Variations"],
         difficulty: 2,
-        content: `已知 $z$ 隨 $x$ 的平方正變且隨 $y$ 反變。若 $x$ 增加 $20\\%$ 且 $y$ 減少 $20\\%$，則 $z$
+        content: `已知 $z$ 隨 $x$ 的平方正變且隨 $y$ 反變。 若 $x$ 增加 $20\\%$ 且 $y$ 減少 $20\\%$，則 $z$
 <div class="q-mcopt">
 A.\t增加 $20\\%$。<br>
 B.\t減少 $20\\%$。<br>
@@ -249,7 +249,7 @@ D.\t$72^\\circ$。
         domain: ["Geometry"],
         topic: ["Areas and Volumes"],
         difficulty: 3,
-        content: `一直立圓柱體的高與一直立圓錐體的高之比為 $32:15$，而該圓柱體的體積與該圓錐體的體積之比為 $10:9$。若該圓柱體的底半徑為 $25$ cm，則該圓錐體的底半徑為
+        content: `一直立圓柱體的高與一直立圓錐體的高之比為 $32:15$，而該圓柱體的體積與該圓錐體的體積之比為 $10:9$。 若該圓柱體的底半徑為 $25$ cm，則該圓錐體的底半徑為
 <div class="q-mcopt">
 A.\t$20$ cm。<br>
 B.\t$24$ cm。<br>
@@ -265,7 +265,7 @@ D.\t$60$ cm。
         domain: ["Geometry"],
         topic: ["Plane Geometry", "Areas and Volumes"],
         difficulty: 3,
-        content: `圖中，$ABCD$ 為一正方形。設 $M$ 為 $BC$ 的中點。$E$ 為 $AD$ 上的一點使得 $AE:ED = 3:1$。$F$ 為 $BC$ 的延線上的一點使得 $EF//AM$。$CD$ 與 $EF$ 相交於點 $G$ 而 $AM$ 與 $BG$ 相交於點 $H$。若 $\\triangle BMH$ 的面積為 $4$ cm$^2$，則梯形 $AEGH$ 的面積為
+        content: `圖中，$ABCD$ 為一正方形。 設 $M$ 為 $BC$ 的中點。 $E$ 為 $AD$ 上的一點使得 $AE:ED = 3:1$。 $F$ 為 $BC$ 的延線上的一點使得 $EF//AM$。 $CD$ 與 $EF$ 相交於點 $G$ 而 $AM$ 與 $BG$ 相交於點 $H$。 若 $\\triangle BMH$ 的面積為 $4$ cm$^2$，則梯形 $AEGH$ 的面積為
 <div class="q-mcopt">
 A.\t$12$ cm$^2$。<br>
 B.\t$33$ cm$^2$。<br>
@@ -281,7 +281,7 @@ D.\t$45$ cm$^2$。
         domain: ["Geometry"],
         topic: ["Plane Geometry", "Trigonometry (2D)"],
         difficulty: 3,
-        content: `圖中，$ABC$ 為一直線。已知 $AD = 37$ cm、$BC = 5$ cm、$BD = 12$ cm、$CD = 13$ cm 及 $CE = 9$ cm。若 $\\angle ACE = 90^\\circ$，求四邊形 $ADCE$ 的周界。
+        content: `圖中，$ABC$ 為一直線。 已知 $AD = 37$ cm 、 $BC = 5$ cm 、 $BD = 12$ cm 、 $CD = 13$ cm 及 $CE = 9$ cm。 若 $\\angle ACE = 90^\\circ$，求四邊形 $ADCE$ 的周界。
 <div class="q-mcopt">
 A.\t$76$ cm<br>
 B.\t$90$ cm<br>
@@ -315,8 +315,8 @@ D.\t$p+q+r-s=540^\\circ$
         difficulty: 2,
         content: `若一正多邊形的內角和為 $900^\\circ$，則下列何者正確？
 <div class="q-mcms">
-I.\t該多邊形的對角線數目為 $7$。<br>
-II.\t該多邊形的旋轉對稱的折式數目為 $7$。<br>
+I.\t該多邊形的對角線數目為 $7$。
+II.\t該多邊形的旋轉對稱的折式數目為 $7$。
 III.\t該多邊形的反射對稱軸的數目為 $7$。
 </div>
 <div class="q-mcopt">
@@ -334,11 +334,11 @@ D.\t只有 II 及 III
         domain: ["Geometry"],
         topic: ["Plane Geometry"],
         difficulty: 3,
-        content: `圖中，$ABCD$ 為一菱形。將 $AC$ 與 $BD$ 的交點記為 $E$。設 $F$ 為一點使得 $BH//EF$ 且 $CFHG$ 為一長方形，其中 $G$ 及 $H$ 分別為 $AC$ 的延線及 $BC$ 的延線上的點。將 $CD$ 與 $EF$ 的交點記為 $I$。下列何者必為正確？
+        content: `圖中，$ABCD$ 為一菱形。 將 $AC$ 與 $BD$ 的交點記為 $E$。 設 $F$ 為一點使得 $BH//EF$ 且 $CFHG$ 為一長方形，其中 $G$ 及 $H$ 分別為 $AC$ 的延線及 $BC$ 的延線上的點。 將 $CD$ 與 $EF$ 的交點記為 $I$。 下列何者必為正確？
 <div class="q-mcms">
-I.\t$CI=FI$<br>
-II.\t$\\angle ABE=\\angle GCH$<br>
-III.\t$\\triangle ADE \\cong \\triangle HCF$
+I.\t$CI=FI$
+II.\t$\\angle ABE=\\angle GCH$
+III.\t$\\Delta ADE \\cong \\Delta HCF$
 </div>
 <div class="q-mcopt">
 A.\t只有 I 及 II<br>
@@ -355,7 +355,7 @@ D.\tI、II 及 III
         domain: ["Geometry"],
         topic: ["Circle Geometry"],
         difficulty: 3,
-        content: `圖中，$ABCDE$ 為一圓。$AC$ 及 $BE$ 均為該圓的直徑。設 $P$ 為 $AC$ 與 $BD$ 的交點。若 $\\angle ABE = 46^\\circ$ 及 $\\angle DBE = 16^\\circ$，則 $\\angle APD =$
+        content: `圖中，$ABCDE$ 為一圓。 $AC$ 及 $BE$ 均為該圓的直徑。 設 $P$ 為 $AC$ 與 $BD$ 的交點。 若 $\\angle ABE = 46^\\circ$ 及 $\\angle DBE = 16^\\circ$，則 $\\angle APD =$
 <div class="q-mcopt">
 A.\t$104^\\circ$。<br>
 B.\t$108^\\circ$。<br>
@@ -371,7 +371,7 @@ D.\t$135^\\circ$。
         domain: ["Geometry"],
         topic: ["Trigonometry (2D)"],
         difficulty: 2,
-        content: `圖中，$ABC$ 為一直線。$\\dfrac{BC}{AD} =$
+        content: `圖中，$ABC$ 為一直線。 $\\dfrac{BC}{AD} =$
 <div class="q-mcopt">
 A.\t$\\dfrac{\\sin \\theta}{\\tan \\phi}$。<br>
 B.\t$\\dfrac{\\tan \\phi}{\\sin \\theta}$。<br>
