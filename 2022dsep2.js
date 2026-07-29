@@ -376,7 +376,7 @@ D.\t$845$ cm。
         domain: ["Geometry"],
         topic: ["Trigonometry (2D)"],
         difficulty: 2,
-        content: `已知 $PQRS$ 為一菱形。設 $T$ 為 $PR$ 與 $QS$ 的交點。若 $\\angle QRT = \\theta$，則 $\\dfrac{PQ}{ST} =$
+        content: `已知 $PQRS$ 為一菱形。 設 $T$ 為 $PR$ 與 $QS$ 的交點。 若 $\\angle QRT = \\theta$，則 $\\dfrac{PQ}{ST} =$
 <div class="q-mcopt">
 A.\t$\\sin\\theta$。<br>
 B.\t$\\cos\\theta$。<br>
@@ -392,10 +392,10 @@ D.\t$\\dfrac{1}{\\cos\\theta}$。
         domain: ["Geometry"],
         topic: ["Equations of Straight Lines"],
         difficulty: 2,
-        content: `圖中所示為直線 $mx+ny=3$ 的圖像。下列何者正確？
+        content: `圖中所示為直線 $mx+ny=3$ 的圖像。 下列何者正確？
 <div class="q-mcms">
-I.\t$m<0$<br>
-II.\t$n>3$<br>
+I.\t$m<0$
+II.\t$n>3$
 III.\t$m+n=0$
 </div>
 <div class="q-mcopt">
@@ -413,7 +413,7 @@ D.\tI、II 及 III
         domain: ["Geometry"],
         topic: ["Coordinate Geometry"],
         difficulty: 2,
-        content: `點 $Q$ 的直角坐標為 $(4\\sqrt{3}, -4)$。若 $Q$ 繞原點順時針方向旋轉 $90^\\circ$，則它的像的極坐標為
+        content: `點 $Q$ 的直角坐標為 $(4\\sqrt{3}, -4)$。 若 $Q$ 繞原點順時針方向旋轉 $90^\\circ$，則它的像的極坐標為
 <div class="q-mcopt">
 A.\t$(8, 60^\\circ)$。<br>
 B.\t$(8, 120^\\circ)$。<br>
@@ -429,7 +429,7 @@ D.\t$(8, 240^\\circ)$。
         domain: ["Geometry"],
         topic: ["Loci", "Coordinate Geometry"],
         difficulty: 3,
-        content: `直線 $12x - 5y = 60$ 分別與 $x$ 軸及 $y$ 軸相交於點 $A$ 及點 $B$。設 $P$ 為直角坐標平面上的一動點使得 $AP = BP$。求 $P$ 的軌跡的方程。
+        content: `直線 $12x - 5y = 60$ 分別與 $x$ 軸及 $y$ 軸相交於點 $A$ 及點 $B$。 設 $P$ 為直角坐標平面上的一動點使得 $AP = BP$。 求 $P$ 的軌跡的方程。
 <div class="q-mcopt">
 A.\t$10x + 24y + 119 = 0$<br>
 B.\t$15x + 36y + 179 = 0$<br>
@@ -445,7 +445,7 @@ D.\t$x^2 + y^2 + 12x - 133 = 0$
         domain: ["Geometry"],
         topic: ["Equations of Circles"],
         difficulty: 3,
-        content: `點 $P$ 及點 $Q$ 的坐標分別為 $(10, -24)$ 及 $(17, -7)$。設 $C$ 為通過原點、$P$ 及 $Q$ 的圓。下列何者正確？
+        content: `點 $P$ 及點 $Q$ 的坐標分別為 $(10, -24)$ 及 $(17, -7)$。 設 $C$ 為通過原點、$P$ 及 $Q$ 的圓。 下列何者正確？
 <div class="q-mcopt">
 A.\t$PQ$ 為 $C$ 的一直徑。<br>
 B.\t$C$ 的面積為 $196\\pi$。<br>
@@ -461,7 +461,7 @@ D.\t$C$ 的圓心在直線 $5x + 12y = 0$ 上。
         domain: ["Data Handling"],
         topic: ["Probability"],
         difficulty: 1,
-        content: `$5\\blacklozenge 2$ 為三位數，其中 $\\blacklozenge$ 為 $0$ 至 $9$（包括 $0$ 及 $9$）內的整數。求該三位數可被 $7$ 整除的概率。
+        content: `5&#9670;2 為三位數，其中 &#9670; 為 $0$ 至 $9$（包括 $0$ 及 $9$）內的整數。 求該三位數可被 $7$ 整除的概率。
 <div class="q-mcopt">
 A.\t$\\dfrac{1}{5}$<br>
 B.\t$\\dfrac{1}{7}$<br>
@@ -477,7 +477,7 @@ D.\t$\\dfrac{1}{10}$
         domain: ["Data Handling"],
         topic: ["Measures of Central Tendency"],
         difficulty: 1,
-        content: `$60$ 名男演員和 $40$ 名女演員的平均體重為 $57$ kg。若男演員的平均體重為 $63$ kg，則女演員的平均體重為
+        content: `$60$ 名男演員和 $40$ 名女演員的平均體重為 $57$ kg。 若男演員的平均體重為 $63$ kg，則女演員的平均體重為
 <div class="q-mcopt">
 A.\t$48$ kg。<br>
 B.\t$50$ kg。<br>
@@ -497,8 +497,8 @@ D.\t$60$ kg。
 $2$ $5$ $6$ $6$ $x$ $x$ $x$ $y$
 若以上正整數的平均值及中位數均為 $6$，則下列何者必為正確？
 <div class="q-mcms">
-I.\t以上正整數的眾數為 $6$。<br>
-II.\t以上正整數的最小可取分佈域為 $6$。<br>
+I.\t以上正整數的眾數為 $6$。
+II.\t以上正整數的最小可取分佈域為 $6$。
 III.\t以上正整數的最大可取方差為 $6$。
 </div>
 <div class="q-mcopt">
@@ -532,10 +532,10 @@ D.\t$\\left(\\dfrac{2}{543}\\right)^{876}$
         domain: ["Algebra"],
         topic: ["Exponential Functions and Logarithm Functions"],
         difficulty: 3,
-        content: `已知 $\\log_a y$ 為 $x$ 的線性函數，其中 $0 < a < 1$。該線性函數的圖像在垂直軸上的截距及在水平軸上的截距分別為 $6$ 及 $3$。若 $y=m x^n$，則下列何者正確？
+        content: `已知 $\\log_a y$ 為 $x$ 的線性函數，其中 $0 < a < 1$。 該線性函數的圖像在垂直軸上的截距及在水平軸上的截距分別為 $6$ 及 $3$。 若 $y=m x^n$，則下列何者正確？
 <div class="q-mcms">
-I.\t$m<1$<br>
-II.\t$n<1$<br>
+I.\t$m<1$
+II.\t$n<1$
 III.\t$mn^3=1$
 </div>
 <div class="q-mcopt">
@@ -553,12 +553,12 @@ D.\t只有 II 及 III
         domain: ["Algebra"],
         topic: ["Exponential Functions and Logarithm Functions"],
         difficulty: 3,
-        content: `若 $\\log_a y = 2x - 1$ 及 $(\\log_a y)^2 = 20x - 31$，則 $\\log_2 y =$
+        content: `若 $\\log_4 y = 2x - 1$ 及 $(\\log_4 y)^2 = 20x - 31$，則 $\\log_2 y =$
 <div class="q-mcopt">
-A.\t$1$ 或 $2$。<br>
-B.\t$2$ 或 $4$。<br>
-C.\t$3$ 或 $7$。<br>
-D.\t$6$ 或 $14$。
+A.\t$1$  或  $2$。<br>
+B.\t$2$  或  $4$。<br>
+C.\t$3$  或  $7$。<br>
+D.\t$6$  或  $14$。
 </div>`
     },
     {
@@ -569,7 +569,7 @@ D.\t$6$ 或 $14$。
         domain: ["Algebra"],
         topic: ["Number Systems"],
         difficulty: 2,
-        content: `$12\\mathrm{B}00\\mathrm{CD}000000\\mathrm{E}_{16} =$
+        content: `$\\text{12B00CD000000E}_{16} =$
 <div class="q-mcopt">
 A.\t$299 \\times 4^{22} + 205 \\times 4^{14} + 14$。<br>
 B.\t$300 \\times 4^{22} + 222 \\times 4^{14} + 15$。<br>
@@ -585,7 +585,7 @@ D.\t$300 \\times 4^{22} + 222 \\times 4^{16} + 15$。
         domain: ["Algebra"],
         topic: ["Complex Numbers"],
         difficulty: 3,
-        content: `設 $z = 4 + 5i^{10} - ki^{15} + 6i^{21} + 2ki^{28}$，其中 $k$ 為一實數。若 $z$ 的實部與虛部相等，則 $z$ 的實部為
+        content: `設 $z = 4 + 5i^{10} - ki^{15} + 6i^{21} + 2ki^{28}$，其中 $k$ 為一實數。 若 $z$ 的實部與虛部相等，則 $z$ 的實部為
 <div class="q-mcopt">
 A.\t$7$。<br>
 B.\t$13$。<br>
@@ -609,7 +609,7 @@ $$
 4x + 3y \\le 22
 \\end{cases}
 $$
-設 $R$ 為表示以上的不等式組的解之區域。若 $(x, y)$ 為 $R$ 中的一點，則 $7x + 6y$ 的最小值為
+設 $R$ 為表示以上的不等式組的解之區域。 若 $(x, y)$ 為 $R$ 中的一點，則 $7x + 6y$ 的最小值為
 <div class="q-mcopt">
 A.\t$32$。<br>
 B.\t$38$。<br>
@@ -625,7 +625,7 @@ D.\t$43$。
         domain: ["Algebra"],
         topic: ["Sequences"],
         difficulty: 3,
-        content: `設 $a_n$ 為一等比數列的第 $n$ 項。已知 $a_1=8p^2$、$a_2=1$ 及 $a_3=27p$，其中 $p$ 為一實數。求 $a_4$。
+        content: `設 $a_n$ 為一等比數列的第 $n$ 項。 已知 $a_1=8p^2$ 、 $a_2=1$ 及 $a_3=27p$，其中 $p$ 為一實數。 求 $a_4$。
 <div class="q-mcopt">
 A.\t$\\dfrac{1}{6}$<br>
 B.\t$\\dfrac{2}{9}$<br>
@@ -641,12 +641,12 @@ D.\t$\\dfrac{81}{4}$
         domain: ["Geometry"],
         topic: ["Circle Geometry"],
         difficulty: 3,
-        content: `圖中，$ABCD$ 為一圓。$PA$ 及 $QB$ 分別為該圓在 $A$ 及 $B$ 的切線。若 $\\angle ADC=79^\\circ$、$\\angle CBQ=39^\\circ$ 及 $\\angle DAP=42^\\circ$，則 $\\angle BCD=$
+        content: `圖中，$ABCD$ 為一圓。 $PA$ 及 $QB$ 分別為該圓在 $A$ 及 $B$ 的切線。 若 $\\angle ADC=79^\\circ$ 、 $\\angle CBQ=39^\\circ$ 及 $\\angle DAP=42^\\circ$，則 $\\angle BCD=$
 <div class="q-mcopt">
-A.\t$76^\\circ$<br>
-B.\t$79^\\circ$<br>
-C.\t$81^\\circ$<br>
-D.\t$82^\\circ$
+A.\t$76^\\circ$。<br>
+B.\t$79^\\circ$。<br>
+C.\t$81^\\circ$。<br>
+D.\t$82^\\circ$。
 </div>`
     },
     {
@@ -673,7 +673,7 @@ D.\t$5$
         domain: ["Geometry"],
         topic: ["Trigonometry (3D)"],
         difficulty: 4,
-        content: `圖中，$ABCDEFGH$ 為一正方體。設 $\\alpha$ 為 $\\Delta AFG$ 與 $\\Delta AFH$ 間的交角，而 $\\beta$ 為 $\\Delta AFH$ 與 $\\Delta FGH$ 間的交角。下列何者正確？
+        content: `圖中，$ABCDEFGH$ 為一正方體。 設 $\\alpha$ 為 $\\Delta AFG$ 與 $\\Delta AFH$ 間的交角，而 $\\beta$ 為 $\\Delta AFH$ 與 $\\Delta FGH$ 間的交角。 下列何者正確？
 <div class="q-mcopt">
 A.\t$\\alpha<60^\\circ<\\beta$<br>
 B.\t$\\alpha<\\beta<60^\\circ$<br>
@@ -689,12 +689,12 @@ D.\t$60^\\circ<\\beta<\\alpha$
         domain: ["Geometry"],
         topic: ["Coordinate Geometry"],
         difficulty: 4,
-        content: `設 $O$ 為原點。點 $A$ 及點 $B$ 的坐標分別為 $(a,0)$ 及 $(0,b)$，其中 $a$ 及 $b$ 均為正數。若 $\\Delta OAB$ 的外心在直線 $4x+16y=17a$ 上，則 $a:b=$
+        content: `設 $O$ 為原點。 點 $A$ 及點 $B$ 的坐標分別為 $(a,0)$ 及 $(0,b)$，其中 $a$ 及 $b$ 均為正數。 若 $\\Delta OAB$ 的外心在直線 $4x+16y=17a$ 上，則 $a:b=$
 <div class="q-mcopt">
-A.\t$8:15$<br>
-B.\t$15:8$<br>
-C.\t$16:47$<br>
-D.\t$47:16$
+A.\t$8:15$。<br>
+B.\t$15:8$。<br>
+C.\t$16:47$。<br>
+D.\t$47:16$。
 </div>`
     },
     {
@@ -710,7 +710,7 @@ D.\t$47:16$
 A.\t$10$<br>
 B.\t$240$<br>
 C.\t$480$<br>
-D.\t$5040$
+D.\t$5~040$
 </div>`
     },
     {
@@ -721,7 +721,7 @@ D.\t$5040$
         domain: ["Data Handling"],
         topic: ["Probability"],
         difficulty: 3,
-        content: `一盒子內有 $2$ 個白球、$2$ 個黃球及 $3$ 個紅球。某男生及某女生輪流從該盒子中隨機取一個球，且取球後須放回該盒子中，直至其中一人取出白球或黃球為止。該男生首先取球。求該女生取出白球的概率。
+        content: `一盒子內有 $2$ 個白球、$2$ 個黃球及 $3$ 個紅球。 某男生及某女生輪流從該盒子中隨機取一個球，且取球後須放回該盒子中，直至其中一人取出白球或黃球為止。 該男生首先取球。 求該女生取出白球的概率。
 <div class="q-mcopt">
 A.\t$\\dfrac{3}{10}$<br>
 B.\t$\\dfrac{3}{20}$<br>
@@ -737,12 +737,12 @@ D.\t$\\dfrac{17}{20}$
         domain: ["Data Handling"],
         topic: ["Measures of Central Tendency", "Measures of Dispersion"],
         difficulty: 3,
-        content: `某測驗中，一班學生的測驗得分的中位數為 $30$ 分。全部學生在該測驗均不及格，故此將每名學生的測驗得分調整，使每個得分均增加 $50\\%$ 然後額外加 $8$ 分。設 $x$ 分為該班學生在得分調整後的測驗得分的中位數。該測驗中，某學生在得分調整前的標準分為 $-2$。將這學生在得分調整後的標準分記為 $z$。求 $x$ 及 $z$。
+        content: `某測驗中，一班學生的測驗得分的中位數為 $30$ 分。 全部學生在該測驗均不及格，故此將每名學生的測驗得分調整，使每個得分均增加 $50\\%$ 然後額外加 $8$ 分。 設 $x$ 分為該班學生在得分調整後的測驗得分的中位數。 該測驗中，某學生在得分調整前的標準分為 $-2$。 將這學生在得分調整後的標準分記為 $z$。 求 $x$ 及 $z$。
 <div class="q-mcopt">
-A.\t$x=45$ 及 $z=-2$<br>
-B.\t$x=45$ 及 $z=-1$<br>
-C.\t$x=53$ 及 $z=-2$<br>
-D.\t$x=53$ 及 $z=-1$
+A.\t$x=45$  及  $z=-2$<br>
+B.\t$x=45$  及  $z=-1$<br>
+C.\t$x=53$  及  $z=-2$<br>
+D.\t$x=53$  及  $z=-1$
 </div>`
     },
     {
@@ -753,10 +753,10 @@ D.\t$x=53$ 及 $z=-1$
         domain: ["Data Handling"],
         topic: ["Measures of Central Tendency", "Measures of Dispersion"],
         difficulty: 3,
-        content: `已知 $d$ 為一實數。設 $S_1$ 為一組數 $\\{d-6, d-2, d-1, d+3, d+5, d+7\\}$ 而 $S_2$ 為另一組數 $\\{d-7, d-5, d-3, d+1, d+2, d+6\\}$。下列何者正確？
+        content: `已知 $d$ 為一實數。 設 $S_1$ 為一組數 $\\{d-6, d-2, d-1, d+3, d+5, d+7\\}$ 而 $S_2$ 為另一組數 $\\{d-7, d-5, d-3, d+1, d+2, d+6\\}$。 下列何者正確？
 <div class="q-mcms">
-I.\t$S_1$ 與 $S_2$ 的平均值相等。<br>
-II.\t$S_1$ 與 $S_2$ 的標準差相等。<br>
+I.\t$S_1$ 與 $S_2$ 的平均值相等。
+II.\t$S_1$ 與 $S_2$ 的標準差相等。
 III.\t$S_1$ 與 $S_2$ 的四分位數間距相等。
 </div>
 <div class="q-mcopt">
