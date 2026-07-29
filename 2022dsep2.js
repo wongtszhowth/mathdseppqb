@@ -11,10 +11,10 @@ questions.push(
         difficulty: 1,
         content: `$\\alpha^2 - \\alpha - \\beta^2 + \\beta =$
 <div class="q-mcopt">
-A.\t$(\\alpha + \\beta)(\\alpha - \\beta + 1)$<br>
-B.\t$(\\alpha + \\beta)(\\alpha - \\beta - 1)$<br>
-C.\t$(\\alpha - \\beta)(\\alpha + \\beta + 1)$<br>
-D.\t$(\\alpha - \\beta)(\\alpha + \\beta - 1)$
+A.\t$(\\alpha + \\beta)(\\alpha - \\beta + 1)$。<br>
+B.\t$(\\alpha + \\beta)(\\alpha - \\beta - 1)$。<br>
+C.\t$(\\alpha - \\beta)(\\alpha + \\beta + 1)$。<br>
+D.\t$(\\alpha - \\beta)(\\alpha + \\beta - 1)$。
 </div>`
     },
     {
@@ -27,10 +27,10 @@ D.\t$(\\alpha - \\beta)(\\alpha + \\beta - 1)$
         difficulty: 1,
         content: `$\\dfrac{8^{12n+3}}{(27^{n+1})^2} =$
 <div class="q-mcopt">
-A.\t$3$<br>
-B.\t$3^{2n+6}$<br>
-C.\t$3^{4n+8}$<br>
-D.\t$3^{10n+14}$
+A.\t$3$。<br>
+B.\t$3^{2n+6}$。<br>
+C.\t$3^{4n+8}$。<br>
+D.\t$3^{10n+14}$。
 </div>`
     },
     {
@@ -43,10 +43,10 @@ D.\t$3^{10n+14}$
         difficulty: 2,
         content: `若 $m$ 及 $n$ 均為常數使得 $(x+3)^2 + mx \\equiv (x-n)(x+1) + 2n$，則 $m =$
 <div class="q-mcopt">
-A.\t$-14$<br>
-B.\t$-8$<br>
-C.\t$4$<br>
-D.\t$9$
+A.\t$-14$。<br>
+B.\t$-8$。<br>
+C.\t$4$。<br>
+D.\t$9$。
 </div>`
     },
     {
@@ -57,12 +57,12 @@ D.\t$9$
         domain: ["Algebra"],
         topic: ["Quadratic Equations in One Unknown"],
         difficulty: 2,
-        content: `設 $c$ 為一常數。解方程 $(x-c)(x-4c) = (3c-x)(x-4c)$。
+        content: `設 $c$ 為一常數。 解方程 $(x-c)(x-4c) = (3c-x)(x-4c)$。
 <div class="q-mcopt">
 A.\t$x=2c$<br>
 B.\t$x=3c$<br>
-C.\t$x=c$ 或 $x=3c$<br>
-D.\t$x=2c$ 或 $x=4c$
+C.\t$x=c$  或  $x=3c$<br>
+D.\t$x=2c$  或  $x=4c$
 </div>`
     },
     {
@@ -75,10 +75,10 @@ D.\t$x=2c$ 或 $x=4c$
         difficulty: 1,
         content: `若 $\\dfrac{2}{u} + \\dfrac{3}{v} = 4$，則 $u =$
 <div class="q-mcopt">
-A.\t$\\dfrac{2v}{4v-3}$<br>
-B.\t$\\dfrac{2v}{3-4v}$<br>
-C.\t$\\dfrac{3v}{4v-2}$<br>
-D.\t$\\dfrac{3v}{2-4v}$
+A.\t$\\dfrac{2v}{4v-3}$。<br>
+B.\t$\\dfrac{2v}{3-4v}$。<br>
+C.\t$\\dfrac{3v}{4v-2}$。<br>
+D.\t$\\dfrac{3v}{2-4v}$。
 </div>`
     },
     {
@@ -89,7 +89,7 @@ D.\t$\\dfrac{3v}{2-4v}$
         domain: ["Algebra"],
         topic: ["Approximate Values and Numerical Estimation"],
         difficulty: 2,
-        content: `已知 $x$ 為一實數。若將 $x$ 下捨入至三位有效數字，則結果為 $345$。求 $x$ 值的範圍。
+        content: `已知 $x$ 為一實數。 若將 $x$ 下捨入至三位有效數字，則結果為 $345$。 求 $x$ 值的範圍。
 <div class="q-mcopt">
 A.\t$344 < x \\le 345$<br>
 B.\t$345 \\le x < 346$<br>
@@ -107,10 +107,10 @@ D.\t$344.5 \\le x < 345.5$
         difficulty: 2,
         content: `$3y - 5 < 5y + 1 \\le 11$ 的解為
 <div class="q-mcopt">
-A.\t$-3 < y \\le 2$<br>
-B.\t$-3 \\le y < 2$<br>
-C.\t$-2 < y \\le 3$<br>
-D.\t$-2 \\le y < 3$
+A.\t$-3 < y \\le 2$。<br>
+B.\t$-3 \\le y < 2$。<br>
+C.\t$-2 < y \\le 3$。<br>
+D.\t$-2 \\le y < 3$。
 </div>`
     },
     {
@@ -121,7 +121,7 @@ D.\t$-2 \\le y < 3$
         domain: ["Algebra"],
         topic: ["Functions and Graphs"],
         difficulty: 2,
-        content: `設 $\\mathrm{f}(x) = x^2 - x + 1$。若 $k$ 為一常數，則下列何者必為正確？
+        content: `設 $\\mathrm{f}(x) = x^2 - x + 1$。 若 $k$ 為一常數，則下列何者必為正確？
 <div class="q-mcopt">
 A.\t$\\mathrm{f}(k) = \\mathrm{f}(-k)$<br>
 B.\t$\\mathrm{f}(k) = \\mathrm{f}(1-k)$<br>
@@ -137,7 +137,7 @@ D.\t$\\mathrm{f}(k-1) = \\mathrm{f}(k) - \\mathrm{f}(1)$
         domain: ["Algebra"],
         topic: ["Polynomials"],
         difficulty: 2,
-        content: `設 $\\mathrm{g}(x)=x^2+ax+b$，其中 $a$ 及 $b$ 均為常數。若 $\\mathrm{g}(x)$ 可被 $x+2a$ 整除，求當 $\\mathrm{g}(x)$ 除以 $x-2a$ 時的餘數。
+        content: `設 $\\mathrm{g}(x)=x^2+ax+b$，其中 $a$ 及 $b$ 均為常數。 若 $\\mathrm{g}(x)$ 可被 $x+2a$ 整除，求當 $\\mathrm{g}(x)$ 除以 $x-2a$ 時的餘數。
 <div class="q-mcopt">
 A.\t$-2a^2$<br>
 B.\t$0$<br>
@@ -153,10 +153,10 @@ D.\t$4a^2$
         domain: ["Algebra"],
         topic: ["Functions and Graphs"],
         difficulty: 2,
-        content: `設 $h$ 及 $k$ 均為實常數使得 $hk<0$。下列有關 $y=(h-x)(k-x)$ 的圖像之敍述，何者正確？
+        content: `設 $h$ 及 $k$ 均為實常數使得 $hk<0$。 下列有關 $y=(h-x)(k-x)$ 的圖像之敍述，何者正確？
 <div class="q-mcms">
-I.\t該圖像開口向上。<br>
-II.\t該圖像有兩個 $x$ 截距。<br>
+I.\t該圖像開口向上。
+II.\t該圖像有兩個 $x$ 截距。
 III.\t該圖像的 $y$ 截距為正值。
 </div>
 <div class="q-mcopt">
@@ -174,12 +174,12 @@ D.\tI、II 及 III
         domain: ["Algebra"],
         topic: ["Percentages"],
         difficulty: 2,
-        content: `存款 $\\$88\\,000$，年利率 $6\\%$，年期 $4$ 年，複利計算，每月一結。求利息準確至最接近的元。
+        content: `存款 $\\$88~000$，年利率 $6\\%$，年期 $4$ 年，複利計算，每月一結。 求利息準確至最接近的元。
 <div class="q-mcopt">
-A.\t$\\$21\\,120$<br>
-B.\t$\\$23\\,098$<br>
-C.\t$\\$23\\,803$<br>
-D.\t$\\$23\\,825$
+A.\t$\\$21~120$<br>
+B.\t$\\$23~098$<br>
+C.\t$\\$23~803$<br>
+D.\t$\\$23~825$
 </div>`
     },
     {
