@@ -387,7 +387,7 @@ D.\t$\\dfrac{\\tan \\phi}{\\cos \\theta}$。
         domain: ["Geometry"],
         topic: ["Coordinate Geometry"],
         difficulty: 2,
-        content: `點 $U$ 的坐標為 $(-3, -8)$。$U$ 繞原點逆時針方向旋轉 $90^\\circ$ 至點 $V$，然後 $V$ 對直線 $x=2$ 作反射至點 $W$。求 $W$ 的 $x$ 坐標。
+        content: `點 $U$ 的坐標為 $(-3, -8)$。 $U$ 繞原點逆時針方向旋轉 $90^\\circ$ 至點 $V$，然後 $V$ 對直線 $x=2$ 作反射至點 $W$。 求 $W$ 的 $x$ 坐標。
 <div class="q-mcopt">
 A.\t$-4$<br>
 B.\t$-3$<br>
@@ -403,7 +403,7 @@ D.\t$12$
         domain: ["Geometry"],
         topic: ["Coordinate Geometry", "Loci"],
         difficulty: 3,
-        content: `點 $A$ 及點 $B$ 的坐標分別為 $(-3,1)$ 及 $(-7,-5)$。若 $P$ 為直線 $x-y+13=0$ 上的一點使得 $AP=PB$，則 $P$ 的 $y$ 坐標為
+        content: `點 $A$ 及點 $B$ 的坐標分別為 $(-3,1)$ 及 $(-7,-5)$。 若 $P$ 為直線 $x-y+13=0$ 上的一點使得 $AP=PB$，則 $P$ 的 $y$ 坐標為
 <div class="q-mcopt">
 A.\t$-11$。<br>
 B.\t$-2$。<br>
@@ -435,10 +435,10 @@ D.\t$16$
         domain: ["Geometry"],
         topic: ["Equations of Circles"],
         difficulty: 3,
-        content: `將圓 $3x^2+3y^2-6x+12y-4=0$ 記為 $C$。下列何者正確？
+        content: `將圓 $3x^2+3y^2-6x+12y-4=0$ 記為 $C$。 下列何者正確？
 <div class="q-mcms">
-I.\t原點位於 $C$ 以內。<br>
-II.\t$C$ 的圓周少於 $16$。<br>
+I.\t原點位於 $C$ 以內。
+II.\t$C$ 的圓周少於 $16$。
 III.\t由 $C$ 的圓心至 $x$ 軸的垂直距離為 $2$。
 </div>
 <div class="q-mcopt">
@@ -472,7 +472,7 @@ D.\t$\\dfrac{8}{15}$
         domain: ["Data Handling"],
         topic: ["Measures of Dispersion", "Statistical Graphs"],
         difficulty: 2,
-        content: `下面的框線圖顯示一群小童在某遊戲中所獲代幣的數目的分佈。若該分佈的分佈域為其四分位數間距的三倍，求 $m$。
+        content: `下面的框線圖顯示一群小童在某遊戲中所獲代幣的數目的分佈。 若該分佈的分佈域為其四分位數間距的三倍，求 $m$。
 <div class="q-mcopt">
 A.\t$248$<br>
 B.\t$275$<br>
@@ -490,10 +490,10 @@ D.\t$360$
         difficulty: 3,
         content: `考慮以下正整數：
 $5$ $5$ $5$ $6$ $9$ $9$ $11$ $13$ $m$ $n$
-設 $p$、$q$ 及 $r$ 分別為以上正整數的標準差、眾數及中位數。若以上正整數的平均值為 $7$，則下列何者必為正確？
+設 $p$ 、 $q$ 及 $r$ 分別為以上正整數的標準差、眾數及中位數。 若以上正整數的平均值為 $7$，則下列何者必為正確？
 <div class="q-mcms">
-I.\t$p>3$<br>
-II.\t$q=5$<br>
+I.\t$p>3$
+II.\t$q=5$
 III.\t$r<7$
 </div>
 <div class="q-mcopt">
@@ -527,7 +527,7 @@ D.\t$u^3v^3w^4$。
         domain: ["Algebra"],
         topic: ["Number Systems"],
         difficulty: 2,
-        content: `AF000000000BC$_{16} =$
+        content: `$\\text{AF000000000BC}_{16} =$
 <div class="q-mcopt">
 A.\t$175 \\times 16^{11} + 188$。<br>
 B.\t$192 \\times 16^{11} + 205$。<br>
@@ -547,8 +547,8 @@ D.\t$192 \\times 16^{12} + 205$。
 <div class="q-mcopt">
 A.\t$1$。<br>
 B.\t$8$。<br>
-C.\t$1$ 或 $3$。<br>
-D.\t$3$ 或 $8$。
+C.\t$1$  或  $3$。<br>
+D.\t$3$  或  $8$。
 </div>`
     },
     {
@@ -559,7 +559,7 @@ D.\t$3$ 或 $8$。
         domain: ["Algebra"],
         topic: ["Functions and Graphs"],
         difficulty: 2,
-        content: `圖中的圖像顯示 $y^3$ 與 $\\sqrt{x}$ 之間的線性關係。若 $x=36$，則 $y=$
+        content: `圖中的圖像顯示 $y^3$ 與 $\\sqrt{x}$ 之間的線性關係。 若 $x=36$，則 $y=$
 <div class="q-mcopt">
 A.\t$-64$。<br>
 B.\t$-16$。<br>
@@ -575,7 +575,7 @@ D.\t$-4$。
         domain: ["Algebra"],
         topic: ["Complex Numbers"],
         difficulty: 3,
-        content: `設 $z=(a-5)i+\\dfrac{(a+2)i}{2+i}$。若 $a$ 及 $z$ 均為實數，則 $a-z=$
+        content: `設 $z=(a-5)i+\\dfrac{(a+2)i}{2+i}$。 若 $a$ 及 $z$ 均為實數，則 $a-z=$
 <div class="q-mcopt">
 A.\t$2$。<br>
 B.\t$3$。<br>
@@ -591,10 +591,10 @@ D.\t$5$。
         domain: ["Algebra"],
         topic: ["Sequences"],
         difficulty: 3,
-        content: `某數列的首 $n$ 項之和為 $n(2n+3)$。下列何者正確？
+        content: `某數列的首 $n$ 項之和為 $n(2n+3)$。 下列何者正確？
 <div class="q-mcms">
-I.\t$14$ 為該數列的其中一項。<br>
-II.\t該數列的第 $n$ 項為 $4n+1$。<br>
+I.\t$14$ 為該數列的其中一項。
+II.\t該數列的第 $n$ 項為 $4n+1$。
 III.\t該數列為一等差數列。
 </div>
 <div class="q-mcopt">
@@ -620,7 +620,7 @@ x + 4y \\le 13 \\\\
 2x - y \\ge -1
 \\end{cases}
 $$
-設 $R$ 為表示以上的不等式組的解之區域。求常數 $c$ 使得 $5x - 2y + c$ 的最小值為 $22$，其中 $(x, y)$ 為 $R$ 中的一點。
+設 $R$ 為表示以上的不等式組的解之區域。 求常數 $c$ 使得 $5x - 2y + c$ 的最小值為 $22$，其中 $(x, y)$ 為 $R$ 中的一點。
 <div class="q-mcopt">
 A.\t$1$<br>
 B.\t$23$<br>
@@ -636,7 +636,7 @@ D.\t$29$
         domain: ["Geometry"],
         topic: ["Circle Geometry"],
         difficulty: 3,
-        content: `圖中，$TA$ 為圓 $ABCDE$ 在點 $A$ 的切線。$BC$ 的延線與 $ED$ 的延線相交於點 $P$。若 $\\angle ACB = 43^\\circ$、$\\angle DAT = 55^\\circ$ 及 $\\angle CPD = 29^\\circ$，則 $\\angle CBE =$
+        content: `圖中，$TA$ 為圓 $ABCDE$ 在點 $A$ 的切線。 $BC$ 的延線與 $ED$ 的延線相交於點 $P$。 若 $\\angle ACB = 43^\\circ$、$\\angle DAT = 55^\\circ$ 及 $\\angle CPD = 29^\\circ$，則 $\\angle CBE =$
 <div class="q-mcopt">
 A.\t$64^\\circ$。<br>
 B.\t$69^\\circ$。<br>
@@ -668,12 +668,12 @@ D.\t$6$
         domain: ["Geometry"],
         topic: ["Trigonometry (3D)"],
         difficulty: 4,
-        content: `圖中，四面體 $PQRS$ 的底 $PQR$ 在水平地面上。已知 $Q$ 鉛垂於 $S$ 之下。若 $\\angle PQR = 90^\\circ$、$\\angle QPS = 30^\\circ$ 及 $\\angle QRS = 45^\\circ$，則 $\\cos \\angle PRS =$
+        content: `圖中，四面體 $PQRS$ 的底 $PQR$ 在水平地面上。 已知 $Q$ 鉛垂於 $S$ 之下。 若 $\\angle PQR = 90^\\circ$ 、 $\\angle QPS = 30^\\circ$ 及 $\\angle QRS = 45^\\circ$，則 $\\cos \\angle PRS =$
 <div class="q-mcopt">
 A.\t$\\dfrac{1}{2}$。<br>
 B.\t$\\dfrac{3}{4}$。<br>
 C.\t$\\dfrac{\\sqrt{2}}{4}$。<br>
-D.\t$\\dfrac{\\sqrt{5}}{6}$。
+D.\t$\\dfrac{\\sqrt{3}}{6}$。
 </div>`
     },
     {
@@ -684,10 +684,10 @@ D.\t$\\dfrac{\\sqrt{5}}{6}$。
         domain: ["Geometry"],
         topic: ["Plane Geometry"],
         difficulty: 3,
-        content: `設 $G$、$H$、$I$ 及 $J$ 分別為 $\\triangle PQR$ 的形心、垂心、內心及外心。若 $\\angle PQR = \\angle PRQ = 22^\\circ$，則下列何者正確？
+        content: `設 $G$ 、 $H$ 、 $I$ 及 $J$ 分別為 $\\Delta PQR$ 的形心、垂心、內心及外心。 若 $\\angle PQR = \\angle PRQ = 22^\\circ$，則下列何者正確？
 <div class="q-mcms">
-I.\t$G$ 位於 $\\triangle PQR$ 以內。<br>
-II.\t$H$ 位於 $\\triangle PQR$ 以外。<br>
+I.\t$G$ 位於 $\\Delta PQR$ 以內。
+II.\t$H$ 位於 $\\Delta PQR$ 以外。
 III.\t$I$、$J$ 與 $Q$ 共線。
 </div>
 <div class="q-mcopt">
@@ -705,12 +705,12 @@ D.\tI、II 及 III
         domain: ["Data Handling"],
         topic: ["Permutations and Combinations"],
         difficulty: 2,
-        content: `2 名經理與 7 名主任排成一隊。若沒有經理相鄰而排，則可排成多少不同的隊？
+        content: `2 名經理與 7 名主任排成一隊。 若沒有經理相鄰而排，則可排成多少不同的隊？
 <div class="q-mcopt">
-A.\t$80640$<br>
-B.\t$141120$<br>
-C.\t$282240$<br>
-D.\t$362880$
+A.\t$80~640$<br>
+B.\t$141~120$<br>
+C.\t$282~240$<br>
+D.\t$362~880$
 </div>`
     },
     {
@@ -721,7 +721,7 @@ D.\t$362880$
         domain: ["Data Handling"],
         topic: ["Probability"],
         difficulty: 2,
-        content: `某測驗共設三題。某學生答對第一題、答對第二題及答對第三題的概率分別為 $0.6$、$0.7$ 及 $0.8$。求該學生在這測驗中答對至少 $1$ 題的概率。
+        content: `某測驗共設三題。 某學生答對第一題、答對第二題及答對第三題的概率分別為 $0.6$、$0.7$ 及 $0.8$。 求該學生在這測驗中答對至少 $1$ 題的概率。
 <div class="q-mcopt">
 A.\t$0.024$<br>
 B.\t$0.188$<br>
@@ -741,8 +741,8 @@ D.\t$0.976$
 $39$ $10$ $13$ $16$ $17$ $19$ $25$ $26$ $28$ $30$ $30$ $32$
 下列何者正確？
 <div class="q-mcms">
-I.\t該些考生的考試得分的中位數為 $22$ 分。<br>
-II.\t每名考生在該考試的標準分均低於 $2$。<br>
+I.\t該些考生的考試得分的中位數為 $22$ 分。
+II.\t每名考生在該考試的標準分均低於 $2$。
 III.\t該些考生的考試得分的標準差超過 $8$ 分。
 </div>
 <div class="q-mcopt">
@@ -760,7 +760,7 @@ D.\t只有 II 及 III
         domain: ["Data Handling"],
         topic: ["Measures of Dispersion"],
         difficulty: 2,
-        content: `若七個數 $x_1$、$x_2$、$x_3$、$x_4$、$x_5$、$x_6$ 及 $x_7$ 的方差為 $16$，則 $9x_1 - 5$、$9x_2 - 5$、$9x_3 - 5$、$9x_4 - 5$、$9x_5 - 5$、$9x_6 - 5$ 及 $9x_7 - 5$ 這七個數的標準差為
+        content: `若七個數 $x_1$、$x_2$、$x_3$、$x_4$、$x_5$、$x_6$ 及 $x_7$ 的方差為 $16$，則 $9x_1 - 5$ 、 $9x_2 - 5$ 、 $9x_3 - 5$ 、 $9x_4 - 5$ 、 $9x_5 - 5$ 、 $9x_6 - 5$ 及 $9x_7 - 5$ 這七個數的標準差為
 <div class="q-mcopt">
 A.\t$31$。<br>
 B.\t$36$。<br>
