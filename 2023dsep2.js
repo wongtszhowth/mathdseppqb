@@ -511,10 +511,10 @@ D.\t$\\$29~529$
         difficulty: 2,
         content: `$1011001011001011_2=$
 <div class="q-mcopt">
-A.\t$11 \\times 2^{11} + 11 \\times 2^5 + 11$<br>
-B.\t$11 \\times 2^{12} + 11 \\times 2^6 + 11$<br>
-C.\t$11 \\times 2^{13} + 11 \\times 2^7 + 11$<br>
-D.\t$11 \\times 2^{14} + 11 \\times 2^8 + 11$
+A.\t$11 \\times 2^{11} + 11 \\times 2^5 + 11$。<br>
+B.\t$11 \\times 2^{12} + 11 \\times 2^6 + 11$。<br>
+C.\t$11 \\times 2^{13} + 11 \\times 2^7 + 11$。<br>
+D.\t$11 \\times 2^{14} + 11 \\times 2^8 + 11$。
 </div>`
     },
     {
@@ -525,12 +525,12 @@ D.\t$11 \\times 2^{14} + 11 \\times 2^8 + 11$
         domain: ["Algebra"],
         topic: ["Polynomials"],
         difficulty: 1,
-        content: `$a^4b^2c$、$a^3b^4c$ 及 $a^2b^5c^2$ 的 L.C.M. 為
+        content: `$a^4b^2c$ 、 $a^3b^4c$ 及 $a^2b^5c^2$ 的 L.C.M. 為
 <div class="q-mcopt">
-A.\t$a^2b^5c$<br>
-B.\t$a^2b^2c^2$<br>
-C.\t$a^4b^5c$<br>
-D.\t$a^4b^5c^2$
+A.\t$a^2b^2c$。<br>
+B.\t$a^2b^2c^2$。<br>
+C.\t$a^4b^5c$。<br>
+D.\t$a^4b^5c^2$。
 </div>`
     },
     {
@@ -541,7 +541,7 @@ D.\t$a^4b^5c^2$
         domain: ["Algebra"],
         topic: ["Exponential Functions and Logarithm Functions"],
         difficulty: 3,
-        content: `已知 $\\log_8 y$ 為 $\\log_4 x$ 的線性函數。該線性函數的圖像在垂直軸上的截距及在水平軸上的截距分別為 $5$ 及 $3$。下列何者必為正確？
+        content: `已知 $\\log_8 y$ 為 $\\log_4 x$ 的線性函數。 該線性函數的圖像在垂直軸上的截距及在水平軸上的截距分別為 $5$ 及 $3$。 下列何者必為正確？
 <div class="q-mcopt">
 A.\t$x^5y^2 = 8^{10}$<br>
 B.\t$x^6y^5 = 8^{20}$<br>
@@ -573,10 +573,10 @@ D.\t$\\dfrac{k-2}{k^2+1}$。
         domain: ["Algebra"],
         topic: ["Functions and Graphs"],
         difficulty: 3,
-        content: `設 $\\mathrm{f}(x) = 3x^3 + 18mx + 22m^2$，其中 $m$ 為一實常數。下列有關 $y = -\\mathrm{f}(3x)$ 的圖像之敍述，何者必為正確？
+        content: `設 $\\mathrm{f}(x) = 3x^2 + 18mx + 22m^2$，其中 $m$ 為一實常數。 下列有關 $y = -\\mathrm{f}(3x)$ 的圖像之敍述，何者必為正確？
 <div class="q-mcms">
-I.\t該圖像的頂點的 $x$ 坐標為 $m$。<br>
-II.\t該圖像的頂點的 $y$ 坐標為 $5m^2$。<br>
+I.\t該圖像的頂點的 $x$ 坐標為 $m$。
+II.\t該圖像的頂點的 $y$ 坐標為 $5m^2$。
 III.\t該圖像的對稱軸的方程為 $x+m=0$。
 </div>
 <div class="q-mcopt">
@@ -594,7 +594,7 @@ D.\t只有 II 及 III
         domain: ["Algebra"],
         topic: ["Sequences"],
         difficulty: 3,
-        content: `設 $T(n)$ 為一等差數列的第 $n$ 項。若 $T(11)=83$ 及 $T(25)+T(30)=463$，求 $k$ 的最小值使得 $T(1)+T(2)+T(3)+\\cdots+T(k)>4\\times10^5$。
+        content: `設 $\\mathrm{T}(n)$ 為一等差數列的第 $n$ 項。 若 $\\mathrm{T}(11)=83$ 及 $\\mathrm{T}(25)+\\mathrm{T}(30)=463$，求 $k$ 的最小值使得 $\\mathrm{T}(1)+\\mathrm{T}(2)+\\mathrm{T}(3)+\\cdots+\\mathrm{T}(k)>4\\times10^5$。
 <div class="q-mcopt">
 A.\t$299$<br>
 B.\t$300$<br>
@@ -618,7 +618,7 @@ x+3 \\ge 0 \\\\
 5x-3y+12 \\le 0
 \\end{cases}
 $$
-設 $D$ 為表示以上的不等式組的解之區域。求 $\\beta$ 值的範圍使得 $\\beta x+6y$ 的最大值為 $24$，其中 $(x, y)$ 為 $D$ 中的一點。
+設 $D$ 為表示以上的不等式組的解之區域。 求 $\\beta$ 值的範圍使得 $\\beta x+6y$ 的最大值為 $24$，其中 $(x, y)$ 為 $D$ 中的一點。
 <div class="q-mcopt">
 A.\t$\\beta \\le -10$<br>
 B.\t$\\beta \\ge -10$<br>
@@ -634,12 +634,12 @@ D.\t$\\beta \\ge 4$
         domain: ["Geometry"],
         topic: ["Circle Geometry"],
         difficulty: 3,
-        content: `圖中，$P$、$Q$ 及 $R$ 均為圓上的點。$ST$、$TU$ 及 $SU$ 分別為該圓在 $P$、$Q$ 及 $R$ 的切線。$RQ$ 的延線與 $ST$ 的延線相交於點 $V$。若 $\\angle PSR = 34^\\circ$ 及 $\\angle QPT = 46^\\circ$，則 $\\angle PVQ =$
+        content: `圖中，$P$、$Q$ 及 $R$ 均為圓上的點。 $ST$、$TU$ 及 $SU$ 分別為該圓在 $P$、$Q$ 及 $R$ 的切線。 $RQ$ 的延線與 $ST$ 的延線相交於點 $V$。 若 $\\angle PSR = 34^\\circ$ 及 $\\angle QPT = 46^\\circ$，則 $\\angle PVQ =$
 <div class="q-mcopt">
-A.\t$17^\\circ$<br>
-B.\t$22^\\circ$<br>
-C.\t$27^\\circ$<br>
-D.\t$28^\\circ$
+A.\t$17^\\circ$。<br>
+B.\t$22^\\circ$。<br>
+C.\t$27^\\circ$。<br>
+D.\t$28^\\circ$。
 </div>`
     },
     {
@@ -650,7 +650,7 @@ D.\t$28^\\circ$
         domain: ["Geometry"],
         topic: ["Equations of Circles", "Equations of Straight Lines"],
         difficulty: 3,
-        content: `直線 $hx+ky=6$ 與圓 $x^2+y^2-8x-4y-18=0$ 相交於點 $M$ 及點 $N$，其中 $h$ 及 $k$ 均為常數。若 $MN$ 的中點的坐標為 $(1, 0)$，求 $k$。
+        content: `直線 $hx+ky=6$ 與圓 $x^2+y^2-8x-4y-18=0$ 相交於點 $M$ 及點 $N$，其中 $h$ 及 $k$ 均為常數。 若 $MN$ 的中點的坐標為 $(1, 0)$，求 $k$。
 <div class="q-mcopt">
 A.\t$4$<br>
 B.\t$6$<br>
@@ -666,7 +666,7 @@ D.\t$12$
         domain: ["Geometry"],
         topic: ["Trigonometry (3D)"],
         difficulty: 4,
-        content: `直立角錐體 $VABCD$ 的底為正方形 $ABCD$。設 $\\theta$ 為 $\\Delta ABV$ 與 $\\Delta BCV$ 間的交角。若 $AB : AV = 5 : 4$，則 $\\cos \\theta =$
+        content: `直立角錐體 $VABCD$ 的底為正方形 $ABCD$。 設 $\\theta$ 為 $\\Delta ABV$ 與 $\\Delta BCV$ 間的交角。 若 $AB : AV = 5 : 4$，則 $\\cos \\theta =$
 <div class="q-mcopt">
 A.\t$\\dfrac{-25}{39}$。<br>
 B.\t$\\dfrac{-17}{33}$。<br>
@@ -698,12 +698,12 @@ D.\t$7k$。
         domain: ["Data Handling"],
         topic: ["Permutations and Combinations"],
         difficulty: 2,
-        content: `某群有 $15$ 名教師。若從該群中選出 $5$ 名教師組成一個有 $1$ 名主席及 $4$ 名委員的委員會，則可組成多少個不同的委員會？
+        content: `某群有 $15$ 名教師。 若從該群中選出 $5$ 名教師組成一個有 $1$ 名主席及 $4$ 名委員的委員會，則可組成多少個不同的委員會？
 <div class="q-mcopt">
-A.\t$3003$<br>
-B.\t$15015$<br>
-C.\t$20475$<br>
-D.\t$360360$
+A.\t$3~003$<br>
+B.\t$15~015$<br>
+C.\t$20~475$<br>
+D.\t$360~360$
 </div>`
     },
     {
@@ -714,7 +714,7 @@ D.\t$360360$
         domain: ["Data Handling"],
         topic: ["Probability"],
         difficulty: 2,
-        content: `當某男生擲一飛鏢時，他擲中目標的概率為 $0.6$。若這男生擲該飛鏢 $4$ 次，求他擲中目標至少 $2$ 次的概率。
+        content: `當某男生擲一飛鏢時，他擲中目標的概率為 $0.6$。 若這男生擲該飛鏢 $4$ 次，求他擲中目標至少 $2$ 次的概率。
 <div class="q-mcopt">
 A.\t$0.5248$<br>
 B.\t$0.7056$<br>
@@ -748,10 +748,10 @@ D.\t$78$
         domain: ["Data Handling"],
         topic: ["Measures of Central Tendency", "Measures of Dispersion"],
         difficulty: 3,
-        content: `已知 $n$ 為一整數。設 $u$、$v$ 及 $w$ 分別為 $\\{1-9n, 3-9n, 4-9n, 5-9n, 7-9n\\}$ 這組數的標準差、中位數及分佈域。下列何者必為正確？
+        content: `已知 $n$ 為一整數。 設 $u$、$v$ 及 $w$ 分別為 $\\{1-9n, 3-9n, 4-9n, 5-9n, 7-9n\\}$ 這組數的標準差、中位數及分佈域。 下列何者必為正確？
 <div class="q-mcms">
-I.\t$u = 2$<br>
-II.\t$v < 4$<br>
+I.\t$u = 2$
+II.\t$v < 4$
 III.\t$w > 6$
 </div>
 <div class="q-mcopt">
