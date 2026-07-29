@@ -387,7 +387,7 @@ D.\t$\\sin\\alpha\\cos\\alpha$
         domain: ["Geometry"],
         topic: ["Coordinate Geometry"],
         difficulty: 2,
-        content: `點 $P$ 的直角坐標為 $(\\sqrt{2}, -\\sqrt{2})$。若 $P$ 繞原點逆時針方向旋轉 $90^\\circ$，則它的像的極坐標為
+        content: `點 $P$ 的直角坐標為 $(\\sqrt{2}, -\\sqrt{2})$。 若 $P$ 繞原點逆時針方向旋轉 $90^\\circ$，則它的像的極坐標為
 <div class="q-mcopt">
 A.\t$(\\sqrt{2}, 45^\\circ)$。<br>
 B.\t$(\\sqrt{2}, 225^\\circ)$。<br>
@@ -419,11 +419,11 @@ D.\t$4$
         domain: ["Geometry"],
         topic: ["Equations of Straight Lines", "Loci"],
         difficulty: 3,
-        content: `直線 $\\ell$ 及直線 $L$ 的方程分別為 $9x+12y-37=0$ 及 $12x+16y+85=0$。$\\ell$ 與 $x$ 軸相交於點 $A$ 而 $L$ 與 $y$ 軸相交於點 $B$。設 $P$ 為直角坐標平面上的一動點使得由 $P$ 至 $\\ell$ 的垂直距離等於由 $P$ 至 $L$ 的垂直距離。將 $P$ 的軌跡記為 $\\Gamma$。下列何者正確？
+        content: `直線 $\\mathit{\\ell}$ 及直線 $L$ 的方程分別為 $9x+12y-37=0$ 及 $12x+16y+85=0$。 $\\mathit{\\ell}$ 與 $x$ 軸相交於點 $A$ 而 $L$ 與 $y$ 軸相交於點 $B$。 設 $P$ 為直角坐標平面上的一動點使得由 $P$ 至 $\\mathit{\\ell}$ 的垂直距離等於由 $P$ 至 $L$ 的垂直距離。 將 $P$ 的軌跡記為 $\\mathit{\\Gamma}$。 下列何者正確？
 <div class="q-mcms">
-I.\t$\\Gamma$ 平行於 $L$。<br>
-II.\t$\\Gamma$ 垂直於 $AB$。<br>
-III.\t$\\Gamma$ 通過 $AB$ 的中點。
+I.\t$\\mathit{\\Gamma}$ 平行於 $L$。
+II.\t$\\mathit{\\Gamma}$ 垂直於 $AB$。
+III.\t$\\mathit{\\Gamma}$ 通過 $AB$ 的中點。
 </div>
 <div class="q-mcopt">
 A.\t只有 I 及 II<br>
@@ -440,10 +440,10 @@ D.\tI、II 及 III
         domain: ["Geometry"],
         topic: ["Equations of Circles"],
         difficulty: 3,
-        content: `圓 $C_1$ 及圓 $C_2$ 的方程分別為 $x^2+y^2+7x-4y+15=0$ 及 $2x^2+2y^2-2x-16y-17=0$。設 $G_1$ 及 $G_2$ 分別為 $C_1$ 的圓心及 $C_2$ 的圓心。將原點記為 $O$。下列何者正確？
+        content: `圓 $C_1$ 及圓 $C_2$ 的方程分別為 $x^2+y^2+7x-4y+15=0$ 及 $2x^2+2y^2-2x-16y-17=0$。 設 $G_1$ 及 $G_2$ 分別為 $C_1$ 的圓心及 $C_2$ 的圓心。 將原點記為 $O$。 下列何者正確？
 <div class="q-mcms">
-I.\t$\\triangle OG_1G_2$ 為一等邊三角形。<br>
-II.\t線段 $OG_1$ 位於 $C_2$ 以內。<br>
+I.\t$\\Delta OG_1G_2$ 為一等邊三角形。
+II.\t線段 $OG_1$ 位於 $C_2$ 以內。
 III.\t$C_1$ 與 $C_2$ 相交於兩相異點。
 </div>
 <div class="q-mcopt">
@@ -461,7 +461,7 @@ D.\tI、II 及 III
         domain: ["Data Handling"],
         topic: ["Probability"],
         difficulty: 2,
-        content: `一盒子內有五張分別記有數字 $1$、$2$、$3$、$4$ 及 $5$ 的紙卡，而另一盒子內有四張分別記有數字 $6$、$7$、$8$ 及 $9$ 的紙卡。若從每一盒子中各隨機抽出一個數字，求抽出的兩個數字之積可被 $4$ 整除的概率。
+        content: `一盒子內有五張分別記有數字 $1$、$2$、$3$、$4$ 及 $5$ 的紙卡，而另一盒子內有四張分別記有數字 $6$、$7$、$8$ 及 $9$ 的紙卡。 若從每一盒子中各隨機抽出一個數字，求抽出的兩個數字之積可被 $4$ 整除的概率。
 <div class="q-mcopt">
 A.\t$\\dfrac{1}{5}$<br>
 B.\t$\\dfrac{3}{10}$<br>
@@ -477,7 +477,7 @@ D.\t$\\dfrac{9}{20}$
         domain: ["Data Handling"],
         topic: ["Measures of Dispersion", "Statistical Graphs"],
         difficulty: 1,
-        content: `下面的框線圖顯示在某年一些工程師的培訓時數的分佈。求該分佈的上四分位數。
+        content: `下面的框線圖顯示在某年一些工程師的培訓時數的分佈。 求該分佈的上四分位數。
 <div class="q-mcopt">
 A.\t$20$<br>
 B.\t$40$<br>
@@ -493,12 +493,12 @@ D.\t$70$
         domain: ["Data Handling"],
         topic: ["Measures of Central Tendency"],
         difficulty: 2,
-        content: `某公司有 $14$ 名全職僱員及 $56$ 名兼職僱員。該些全職僱員的平均薪金為 $\\$31530$，而該些兼職僱員的平均薪金為 $\\$21525$。求該公司這些僱員的平均薪金。
+        content: `某公司有 $14$ 名全職僱員及 $56$ 名兼職僱員。 該些全職僱員的平均薪金為 $\\$31~530$，而該些兼職僱員的平均薪金為 $\\$21~525$。 求該公司這些僱員的平均薪金。
 <div class="q-mcopt">
-A.\t$\\$23526$<br>
-B.\t$\\$25527$<br>
-C.\t$\\$27528$<br>
-D.\t$\\$29529$
+A.\t$\\$23~526$<br>
+B.\t$\\$25~527$<br>
+C.\t$\\$27~528$<br>
+D.\t$\\$29~529$
 </div>`
     },
     {
