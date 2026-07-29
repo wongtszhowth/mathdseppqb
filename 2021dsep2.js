@@ -310,8 +310,8 @@ D.\t$39^\\circ$。
         content: `圖中，$ABCD$ 為一長方形。設 $E$ 為 $AC$ 上的一點使得 $BE$ 垂直於 $AC$。延長 $BE$ 至點 $F$ 使得 $CF = AD$。將 $BF$ 與 $CD$ 的交點記為 $G$。下列何者正確？
 <div class="q-mcms">
 I.\t$\\angle DAB = \\angle DGF$<br>
-II.\t$\\triangle BCE \\sim \\triangle CGE$<br>
-III.\t$\\triangle BCE \\cong \\triangle FCE$
+II.\t$\\Delta BCE \\sim \\Delta CGE$<br>
+III.\t$\\Delta BCE \\cong \\Delta FCE$
 </div>
 <div class="q-mcopt">
 A.\t只有 I 及 II<br>
@@ -328,7 +328,7 @@ D.\tI、II 及 III
         domain: ["Geometry"],
         topic: ["Plane Geometry", "Areas and Volumes"],
         difficulty: 3,
-        content: `圖中，$ABCD$ 為一正方形。設 $E$ 及 $F$ 分別為 $AB$ 及 $BC$ 上的點使得 $AE = 3BE$ 且 $\\angle DEF = 90^\\circ$。若 $\\triangle DEF$ 的面積為 $25$ cm$^2$，則 $\\triangle CDF$ 的面積為
+        content: `圖中，$ABCD$ 為一正方形。設 $E$ 及 $F$ 分別為 $AB$ 及 $BC$ 上的點使得 $AE = 3BE$ 且 $\\angle DEF = 90^\\circ$。若 $\\Delta DEF$ 的面積為 $25$ cm$^2$，則 $\\Delta CDF$ 的面積為
 <div class="q-mcopt">
 A.\t$48$ cm$^2$。<br>
 B.\t$50$ cm$^2$。<br>
@@ -429,7 +429,7 @@ D.\t$x^2+y^2-12x-16y+98=0$
         domain: ["Geometry"],
         topic: ["Coordinate Geometry"],
         difficulty: 3,
-        content: `點 $A$、點 $B$ 及點 $C$ 的坐標分別為 $(3,3)$、$(5,8)$ 及 $(9,2)$。設 $P$ 為一點使得 $AP$ 為 $\\triangle ABC$ 的中線。求通過 $A$ 及 $P$ 的直線的方程。
+        content: `點 $A$、點 $B$ 及點 $C$ 的坐標分別為 $(3,3)$、$(5,8)$ 及 $(9,2)$。設 $P$ 為一點使得 $AP$ 為 $\\Delta ABC$ 的中線。求通過 $A$ 及 $P$ 的直線的方程。
 <div class="q-mcopt">
 A.\t$x-2y+3=0$<br>
 B.\t$2x-3y+1=0$<br>
@@ -681,7 +681,7 @@ D.\t$(x-8)^2+(y-6)^2=100$。
         domain: ["Geometry"],
         topic: ["Coordinate Geometry"],
         difficulty: 4,
-        content: `設 $O$ 為原點。點 $P$ 的坐標為 $(26,-18)$。若 $\\triangle OPQ$ 的垂心的坐標為 $(21,-3)$，則 $Q$ 的 $y$ 坐標為
+        content: `設 $O$ 為原點。點 $P$ 的坐標為 $(26,-18)$。若 $\\Delta OPQ$ 的垂心的坐標為 $(21,-3)$，則 $Q$ 的 $y$ 坐標為
 <div class="q-mcopt">
 A.\t$-30$。<br>
 B.\t$-10$。<br>
