@@ -11,10 +11,10 @@ questions.push(
         difficulty: 1,
         content: `若 $\\dfrac{a+5b}{7a+2b} = \\dfrac{1}{b+3}$，則 $a=$
 <div class="q-mcopt">
-A.\t$\\dfrac{4-b}{5b^2+13b}$<br>
-B.\t$\\dfrac{4+b}{5b^2+13b}$<br>
-C.\t$\\dfrac{5b^2+13b}{4-b}$<br>
-D.\t$\\dfrac{5b^2+13b}{4+b}$
+A.\t$\\dfrac{4-b}{5b^2+13b}$。<br>
+B.\t$\\dfrac{4+b}{5b^2+13b}$。<br>
+C.\t$\\dfrac{5b^2+13b}{4-b}$。<br>
+D.\t$\\dfrac{5b^2+13b}{4+b}$。
 </div>`
     },
     {
@@ -27,10 +27,10 @@ D.\t$\\dfrac{5b^2+13b}{4+b}$
         difficulty: 1,
         content: `$\\dfrac{2}{5-4x} - \\dfrac{1}{5+4x} =$
 <div class="q-mcopt">
-A.\t$\\dfrac{5+4x}{25-16x^2}$<br>
-B.\t$\\dfrac{5-4x}{25-16x^2}$<br>
-C.\t$\\dfrac{5+12x}{25-16x^2}$<br>
-D.\t$\\dfrac{5-12x}{25-16x^2}$
+A.\t$\\dfrac{5+4x}{25-16x^2}$。<br>
+B.\t$\\dfrac{5-4x}{25-16x^2}$。<br>
+C.\t$\\dfrac{5+12x}{25-16x^2}$。<br>
+D.\t$\\dfrac{5-12x}{25-16x^2}$。
 </div>`
     },
     {
@@ -41,12 +41,12 @@ D.\t$\\dfrac{5-12x}{25-16x^2}$
         domain: ["Algebra"],
         topic: ["Indices"],
         difficulty: 1,
-        content: `$4^{n+2}3^{2n+4} =$
+        content: `$4^{n+2}~3^{2n+4} =$
 <div class="q-mcopt">
-A.\t$6^{2n+4}$<br>
-B.\t$6^{4n+8}$<br>
-C.\t$12^{2n+4}$<br>
-D.\t$12^{3n+6}$
+A.\t$6^{2n+4}$。<br>
+B.\t$6^{4n+8}$。<br>
+C.\t$12^{2n+4}$。<br>
+D.\t$12^{3n+6}$。
 </div>`
     },
     {
@@ -59,10 +59,10 @@ D.\t$12^{3n+6}$
         difficulty: 2,
         content: `$2x^2 + xy - y^2 + 4x + 4y =$
 <div class="q-mcopt">
-A.\t$(x+y)(2x+y-4)$<br>
-B.\t$(x+y)(2x-y+4)$<br>
-C.\t$(x-y)(2x+y-4)$<br>
-D.\t$(x-y)(2x-y+4)$
+A.\t$(x+y)(2x+y-4)$。<br>
+B.\t$(x+y)(2x-y+4)$。<br>
+C.\t$(x-y)(2x+y-4)$。<br>
+D.\t$(x-y)(2x-y+4)$。
 </div>`
     },
     {
@@ -75,10 +75,10 @@ D.\t$(x-y)(2x-y+4)$
         difficulty: 2,
         content: `若 $c$ 及 $d$ 均為常數使得 $(x+2)(x+c)+12 \\equiv x(x+d)+6c(x+1)$，則 $d=$
 <div class="q-mcopt">
-A.\t$-13$<br>
-B.\t$-3$<br>
-C.\t$3$<br>
-D.\t$17$
+A.\t$-13$。<br>
+B.\t$-3$。<br>
+C.\t$3$。<br>
+D.\t$17$。
 </div>`
     },
     {
@@ -89,12 +89,12 @@ D.\t$17$
         domain: ["Algebra"],
         topic: ["Linear Inequalities and Compound Inequalities"],
         difficulty: 2,
-        content: `$x-3<-5$ 或 $\\dfrac{6-x}{4}<2$ 的解為
+        content: `$x-3<-5$  或  $\\dfrac{6-x}{4}<2$ 的解為
 <div class="q-mcopt">
-A.\t$x<-2$<br>
-B.\t$x>-2$<br>
-C.\t$x=-2$<br>
-D.\t$x \\neq -2$
+A.\t$x<-2$。<br>
+B.\t$x>-2$。<br>
+C.\t$x=-2$。<br>
+D.\t$x \\neq -2$。
 </div>`
     },
     {
@@ -110,7 +110,7 @@ D.\t$x \\neq -2$
 A.\t$73.7 \\le y < 73.9$<br>
 B.\t$73.7 < y \\le 73.9$<br>
 C.\t$73.75 \\le y < 73.85$<br>
-D.\t$73.75 < y < 73.85$
+D.\t$73.75 < y \\le 73.85$
 </div>`
     },
     {
@@ -121,7 +121,7 @@ D.\t$73.75 < y < 73.85$
         domain: ["Algebra"],
         topic: ["Functions and Graphs"],
         difficulty: 1,
-        content: `設 $\\mathrm{g}(x) = 13 - 5x^2$。若 $\\alpha$ 為一常數，求 $\\mathrm{g}(1-3\\alpha)$。
+        content: `設 $\\mathrm{g}(x) = 13 - 5x^2$。 若 $\\alpha$ 為一常數，求 $\\mathrm{g}(1-3\\alpha)$。
 <div class="q-mcopt">
 A.\t$8 - 45\\alpha^2$<br>
 B.\t$8 + 45\\alpha^2$<br>
@@ -137,7 +137,7 @@ D.\t$8 + 30\\alpha - 45\\alpha^2$
         domain: ["Algebra"],
         topic: ["Polynomials"],
         difficulty: 2,
-        content: `設 $\\mathrm{h}(x) = ax^6 + 16x^3 + b$，其中 $a$ 及 $b$ 均為常數。若 $\\mathrm{h}(x)$ 可被 $2x-3$ 整除，求當 $\\mathrm{h}(x)$ 除以 $2x+3$ 時的餘數。
+        content: `設 $\\mathrm{h}(x) = ax^6 + 16x^3 + b$，其中 $a$ 及 $b$ 均為常數。 若 $\\mathrm{h}(x)$ 可被 $2x-3$ 整除，求當 $\\mathrm{h}(x)$ 除以 $2x+3$ 時的餘數。
 <div class="q-mcopt">
 A.\t$-108$<br>
 B.\t$-54$<br>
@@ -169,7 +169,7 @@ D.\t該圖像通過點 $(3, 5)$。
         domain: ["Algebra"],
         topic: ["Percentages"],
         difficulty: 2,
-        content: `某外套的標價較其成本高 $60\\%$。該外套以其標價七五折售出並獲利 $\\$104$。求該外套的成本。
+        content: `某外套的標價較其成本高 $60\\%$。 該外套以其標價七五折售出並獲利 $\\$104$。 求該外套的成本。
 <div class="q-mcopt">
 A.\t$\\$416$<br>
 B.\t$\\$520$<br>
@@ -185,7 +185,7 @@ D.\t$\\$832$
         domain: ["Geometry"],
         topic: ["Areas and Volumes"],
         difficulty: 2,
-        content: `某地圖的比例尺為 $1:50\\,000$。若一機場的實際面積為 $10$ km$^2$，則這機場在該地圖上的面積為
+        content: `某地圖的比例尺為 $1:50~000$。 若一機場的實際面積為 $10$ km$^2$，則這機場在該地圖上的面積為
 <div class="q-mcopt">
 A.\t$2$ cm$^2$。<br>
 B.\t$4$ cm$^2$。<br>
@@ -201,7 +201,7 @@ D.\t$40$ cm$^2$。
         domain: ["Algebra"],
         topic: ["Variations"],
         difficulty: 2,
-        content: `已知 $z$ 隨 $x$ 的平方及 $y$ 的立方根正變。當 $x=12$ 及 $y=64$ 時，$z=36$。當 $x=16$ 及 $y=729$ 時，$z=$
+        content: `已知 $z$ 隨 $x$ 的平方及 $y$ 的立方根正變。 當 $x=12$ 及 $y=64$ 時，$z=36$。 當 $x=16$ 及 $y=729$ 時，$z=$
 <div class="q-mcopt">
 A.\t$108$。<br>
 B.\t$144$。<br>
@@ -217,7 +217,7 @@ D.\t$216$。
         domain: ["Algebra"],
         topic: ["Sequences"],
         difficulty: 2,
-        content: `設 $a_n$ 為某數列的第 $n$ 項。若 $a_6 = 23$、$a_8 = 60$ 及對任意正整數 $n$，$a_{n+2} = a_{n+1} + a_n$，則 $a_3 =$
+        content: `設 $a_n$ 為某數列的第 $n$ 項。 若 $a_6 = 23$ 、 $a_8 = 60$ 及對任意正整數 $n$，$a_{n+2} = a_{n+1} + a_n$，則 $a_3 =$
 <div class="q-mcopt">
 A.\t$4$。<br>
 B.\t$5$。<br>
@@ -233,7 +233,7 @@ D.\t$14$。
         domain: ["Geometry"],
         topic: ["Areas and Volumes"],
         difficulty: 3,
-        content: `某實心正方體的邊長為 $60$ cm。一實心直立圓柱體的體積等於該正方體的體積，而該圓柱體的曲面面積等於該正方體的總表面面積。求該圓柱體的底半徑。
+        content: `某實心正方體的邊長為 $60$ cm。 一實心直立圓柱體的體積等於該正方體的體積，而該圓柱體的曲面面積等於該正方體的總表面面積。 求該圓柱體的底半徑。
 <div class="q-mcopt">
 A.\t$20$ cm<br>
 B.\t$30$ cm<br>
@@ -249,7 +249,7 @@ D.\t$172$ cm
         domain: ["Geometry"],
         topic: ["Areas and Volumes", "Circle Geometry"],
         difficulty: 3,
-        content: `圖中，$AC$ 為圓 $ABCD$ 的一直徑而 $BD$ 及 $EF$ 均為圓 $BEDF$ 的直徑。已知 $C$ 及 $E$ 均在 $AF$ 上。設 $G$ 為 $AF$ 與 $BD$ 的交點。若 $AG=30$ cm 及 $CG=10$ cm，求陰影區域的面積準確至最接近的 cm$^2$。
+        content: `圖中，$AC$ 為圓 $ABCD$ 的一直徑而 $BD$ 及 $EF$ 均為圓 $BEDF$ 的直徑。 已知 $C$ 及 $E$ 均在 $AF$ 上。 設 $G$ 為 $AF$ 與 $BD$ 的交點。 若 $AG=30$ cm 及 $CG=10$ cm，求陰影區域的面積準確至最接近的 cm$^2$。
 <div class="q-mcopt">
 A.\t$209$ cm$^2$<br>
 B.\t$367$ cm$^2$<br>
@@ -265,7 +265,7 @@ D.\t$540$ cm$^2$
         domain: ["Geometry"],
         topic: ["Plane Geometry", "Areas and Volumes"],
         difficulty: 3,
-        content: `圖中，$PQRS$ 為一平行四邊形。設 $X$ 為 $PQ$ 上的一點。將 $PR$ 與 $SX$ 的交點記為 $Y$。若 $\\Delta PXY$ 的面積及四邊形 $QRYX$ 的面積分別為 $32$ cm$^2$ 及 $58$ cm$^2$，則 $\\Delta RSY$ 的面積為
+        content: `圖中，$PQRS$ 為一平行四邊形。 設 $X$ 為 $PQ$ 上的一點。 將 $PR$ 與 $SX$ 的交點記為 $Y$。 若 $\\Delta PXY$ 的面積及四邊形 $QRYX$ 的面積分別為 $32$ cm$^2$ 及 $58$ cm$^2$，則 $\\Delta RSY$ 的面積為
 <div class="q-mcopt">
 A.\t$40$ cm$^2$。<br>
 B.\t$50$ cm$^2$。<br>
@@ -283,8 +283,8 @@ D.\t$72$ cm$^2$。
         difficulty: 2,
         content: `根據圖中所示，下列何者必為正確？
 <div class="q-mcms">
-I.\t$a+b=90^\\circ$<br>
-II.\t$c+d=180^\\circ$<br>
+I.\t$a+b=90^\\circ$
+II.\t$c+d=180^\\circ$
 III.\t$a+b+c=d$
 </div>
 <div class="q-mcopt">
@@ -302,10 +302,10 @@ D.\tI、II 及 III
         domain: ["Geometry"],
         topic: ["Plane Geometry"],
         difficulty: 2,
-        content: `已知 $ABCD$ 為一菱形。將 $AC$ 與 $BD$ 的交點記為 $E$。下列何者必為正確？
+        content: `已知 $ABCD$ 為一菱形。 將 $AC$ 與 $BD$ 的交點記為 $E$。 下列何者必為正確？
 <div class="q-mcms">
-I.\t$AE = BE$<br>
-II.\t$\\dfrac{AE}{AC} = \\dfrac{BE}{BD}$<br>
+I.\t$AE = BE$
+II.\t$\\dfrac{AE}{AC} = \\dfrac{BE}{BD}$
 III.\t$AE^2 + BE^2 = CD^2$
 </div>
 <div class="q-mcopt">
@@ -323,7 +323,7 @@ D.\tI、II 及 III
         domain: ["Geometry"],
         topic: ["Plane Geometry"],
         difficulty: 3,
-        content: `圖中所示為正方形 $ABCD$、正五邊形 $ADEFG$ 及正六邊形 $AGHIJK$。求 $\\angle ABK$。
+        content: `圖中所示為正方形 $ABCD$、正五邊形 $ADEFG$ 及正六邊形 $AGHIJK$。 求 $\\angle ABK$。
 <div class="q-mcopt">
 A.\t$69^\\circ$<br>
 B.\t$72^\\circ$<br>
@@ -339,12 +339,12 @@ D.\t$75^\\circ$
         domain: ["Geometry"],
         topic: ["Plane Geometry"],
         difficulty: 3,
-        content: `圖中，$PQRS$ 為一長方形。設 $T$ 為 $QR$ 上的一點使得 $\\angle PTS = 90^\\circ$。$PQ$ 的延線與 $ST$ 的延線相交於點 $U$。延長 $PT$ 至點 $V$ 使得 $RT = RV$。下列何者必為正確？
+        content: `圖中，$PQRS$ 為一長方形。 設 $T$ 為 $QR$ 上的一點使得 $\\angle PTS = 90^\\circ$。 $PQ$ 的延線與 $ST$ 的延線相交於點 $U$。 延長 $PT$ 至點 $V$ 使得 $RT = RV$。 下列何者必為正確？
 <div class="q-mcopt">
 A.\t$RV // ST$<br>
 B.\t$\\angle PTQ = \\angle RTS$<br>
-C.\t$\\triangle PST \\sim \\triangle UTQ$<br>
-D.\t$\\triangle PQT \\cong \\triangle TRS$
+C.\t$\\Delta PST \\sim \\Delta UTQ$<br>
+D.\t$\\Delta PQT \\cong \\Delta TRS$
 </div>`
     },
     {
@@ -355,7 +355,7 @@ D.\t$\\triangle PQT \\cong \\triangle TRS$
         domain: ["Geometry"],
         topic: ["Circle Geometry"],
         difficulty: 3,
-        content: `圖中所示為圓內接四邊形 $RSTU$，其中 $ST = TU$。$RS$ 的延線與 $UT$ 的延線相交於點 $V$ 而 $RU$ 的延線與 $ST$ 的延線相交於點 $W$。若 $\\angle RWS = 32^\\circ$ 及 $\\angle RVU = 48^\\circ$，則 $\\angle RSU =$
+        content: `圖中所示為圓內接四邊形 $RSTU$，其中 $ST = TU$。 $RS$ 的延線與 $UT$ 的延線相交於點 $V$ 而 $RU$ 的延線與 $ST$ 的延線相交於點 $W$。 若 $\\angle RWS = 32^\\circ$ 及 $\\angle RVU = 48^\\circ$，則 $\\angle RSU =$
 <div class="q-mcopt">
 A.\t$65^\\circ$。<br>
 B.\t$73^\\circ$。<br>
@@ -371,7 +371,7 @@ D.\t$82^\\circ$。
         domain: ["Geometry"],
         topic: ["Trigonometry (2D)"],
         difficulty: 3,
-        content: `圖中，$ABCD$ 為一梯形且 $AD//BC$。設 $E$ 為 $AD$ 的中點，已知 $\\angle ABE = \\angle BCE = 90^\\circ$。求 $\\dfrac{CE}{DE}$。
+        content: `圖中，$ABCD$ 為一梯形且 $AD//BC$。 設 $E$ 為 $AD$ 的中點。 已知 $\\angle ABE = \\angle BCE = 90^\\circ$。 求 $\\dfrac{CE}{DE}$。
 <div class="q-mcopt">
 A.\t$\\dfrac{1}{2}$<br>
 B.\t$1$<br>
