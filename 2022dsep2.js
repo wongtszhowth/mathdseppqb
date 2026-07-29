@@ -190,12 +190,12 @@ D.\t$\\$23~825$
         domain: ["Algebra"],
         topic: ["Rates, Ratios and Proportions"],
         difficulty: 2,
-        content: `設 $x$、$y$ 及 $z$ 均為非零的數。若 $x:y=8:5$ 及 $2x=4z-3y$，則 $y:z=$
+        content: `設 $x$、$y$ 及 $z$ 均為非零的數。 若 $x:y=8:5$ 及 $2x=4z-3y$，則 $y:z=$
 <div class="q-mcopt">
-A.\t$16:17$<br>
-B.\t$17:16$<br>
-C.\t$20:31$<br>
-D.\t$31:20$
+A.\t$16:17$。<br>
+B.\t$17:16$。<br>
+C.\t$20:31$。<br>
+D.\t$31:20$。
 </div>`
     },
     {
@@ -208,8 +208,8 @@ D.\t$31:20$
         difficulty: 2,
         content: `若 $u$ 隨 $v$ 的平方根正變且隨 $w$ 反變，則下列何者正確？
 <div class="q-mcms">
-I.\t$u^2$ 隨 $v$ 正變且隨 $w$ 的平方反變。<br>
-II.\t$v$ 隨 $w$ 正變且隨 $u$ 的平方根反變。<br>
+I.\t$u^2$ 隨 $v$ 正變且隨 $w$ 的平方反變。
+II.\t$v$ 隨 $w$ 正變且隨 $u$ 的平方根反變。
 III.\t$w$ 隨 $v$ 的平方根正變且隨 $u$ 反變。
 </div>
 <div class="q-mcopt">
@@ -227,7 +227,7 @@ D.\tI、II 及 III
         domain: ["Algebra"],
         topic: ["Sequences"],
         difficulty: 2,
-        content: `圖中，第 $1$ 個圖案包含 $8$ 粒點子。對任意正整數 $n$，第 $(n+1)$ 個圖案是由第 $n$ 個圖案加上 $(2n+6)$ 粒點子所組成。求第 $7$ 個圖案的點子數目。
+        content: `圖中，第 $1$ 個圖案包含 $8$ 粒點子。 對任意正整數 $n$，第 $(n+1)$ 個圖案是由第 $n$ 個圖案加上 $(2n+6)$ 粒點子所組成。 求第 $7$ 個圖案的點子數目。
 <div class="q-mcopt">
 A.\t$52$<br>
 B.\t$68$<br>
@@ -243,7 +243,7 @@ D.\t$106$
         domain: ["Geometry"],
         topic: ["Areas and Volumes"],
         difficulty: 2,
-        content: `一實心半球體的半徑與一實心直立圓柱體的底半徑相等。若該圓柱體的高等於其底直徑，則該半球體的總表面面積與該圓柱體的總表面面積之比為
+        content: `一實心半球體的半徑與一實心直立圓柱體的底半徑相等。 若該圓柱體的高等於其底直徑，則該半球體的總表面面積與該圓柱體的總表面面積之比為
 <div class="q-mcopt">
 A.\t$1:2$。<br>
 B.\t$1:3$。<br>
@@ -259,7 +259,7 @@ D.\t$2:5$。
         domain: ["Geometry"],
         topic: ["Areas and Volumes"],
         difficulty: 3,
-        content: `某圓的直徑為 $10$ cm。一長度為 $8$ cm 的弦把該圓分成一優弓形及一劣弓形。求該優弓形的面積準確至最接近的 cm$^2$。
+        content: `某圓的直徑為 $10$ cm。 一長度為 $8$ cm 的弦把該圓分成一優弓形及一劣弓形。 求該優弓形的面積準確至最接近的 cm$^2$。
 <div class="q-mcopt">
 A.\t$11$ cm$^2$<br>
 B.\t$23$ cm$^2$<br>
@@ -275,7 +275,7 @@ D.\t$67$ cm$^2$
         domain: ["Geometry"],
         topic: ["Plane Geometry", "Areas and Volumes"],
         difficulty: 3,
-        content: `圖中，$M$ 及 $N$ 分別為 $PQ$ 及 $QR$ 上的點使得 $PM:MQ = 5:6$ 及 $QN:NR = 3:4$。若四邊形 $MNRP$ 的面積為 $59$ cm$^2$，則 $\\Delta MNQ$ 的面積為
+        content: `圖中，$M$ 及 $N$ 分別為 $PQ$ 及 $QR$ 上的點使得 $PM:MQ = 5:6$ 及 $QN:NR = 3:4$。 若四邊形 $MNRP$ 的面積為 $59$ cm$^2$，則 $\\Delta MNQ$ 的面積為
 <div class="q-mcopt">
 A.\t$17$ cm$^2$。<br>
 B.\t$18$ cm$^2$。<br>
@@ -291,7 +291,7 @@ D.\t$20$ cm$^2$。
         domain: ["Geometry"],
         topic: ["Plane Geometry", "Trigonometry (2D)"],
         difficulty: 3,
-        content: `圖中，長方形 $ABCD$ 的周界為 $170$ cm。已知 $EBF$ 為一直線及 $\\angle AEB = \\angle BFC = 90^\\circ$。若 $AE = 24$ cm 及 $BC = 34$ cm，則 $EF =$
+        content: `圖中，長方形 $ABCD$ 的周界為 $170$ cm。 已知 $EBF$ 為一直線及 $\\angle AEB = \\angle BFC = 90^\\circ$。 若 $AE = 24$ cm 及 $BC = 34$ cm，則 $EF =$
 <div class="q-mcopt">
 A.\t$45$ cm。<br>
 B.\t$51$ cm。<br>
@@ -307,7 +307,7 @@ D.\t$75$ cm。
         domain: ["Geometry"],
         topic: ["Plane Geometry"],
         difficulty: 3,
-        content: `圖中，$ABC$ 為一等邊三角形。設 $D$ 及 $E$ 分別為 $AC$ 及 $BC$ 上的點使得 $AD = CE$。若 $\\angle CBD = 38^\\circ$，則 $\\angle AEB =$
+        content: `圖中，$ABC$ 為一等邊三角形。 設 $D$ 及 $E$ 分別為 $AC$ 及 $BC$ 上的點使得 $AD = CE$。 若 $\\angle CBD = 38^\\circ$，則 $\\angle AEB =$
 <div class="q-mcopt">
 A.\t$73^\\circ$。<br>
 B.\t$75^\\circ$。<br>
@@ -323,10 +323,10 @@ D.\t$82^\\circ$。
         domain: ["Geometry"],
         topic: ["Plane Geometry"],
         difficulty: 2,
-        content: `圖中所示為一平行四邊形。下列何者必為正確？
+        content: `圖中所示為一平行四邊形。 下列何者必為正確？
 <div class="q-mcms">
-I.\t$a+b=180^\\circ$<br>
-II.\t$b+c=360^\\circ$<br>
+I.\t$a+b=180^\\circ$
+II.\t$b+c=360^\\circ$
 III.\t$c+d=540^\\circ$
 </div>
 <div class="q-mcopt">
@@ -344,7 +344,7 @@ D.\tI、II 及 III
         domain: ["Geometry"],
         topic: ["Circle Geometry"],
         difficulty: 2,
-        content: `圖中，$O$ 為圓 $ABC$ 的圓心。若 $\\angle ABO = 36^\\circ$ 及 $\\angle BOC = 164^\\circ$，則 $\\angle ACO =$
+        content: `圖中，$O$ 為圓 $ABC$ 的圓心。 若 $\\angle ABO = 36^\\circ$ 及 $\\angle BOC = 164^\\circ$，則 $\\angle ACO =$
 <div class="q-mcopt">
 A.\t$41^\\circ$。<br>
 B.\t$46^\\circ$。<br>
@@ -360,7 +360,7 @@ D.\t$64^\\circ$。
         domain: ["Geometry"],
         topic: ["Circle Geometry"],
         difficulty: 3,
-        content: `圖中，$ABC$ 為一直角三角形且 $\\angle ABC = 90^\\circ$。設 $D$ 及 $E$ 分別為 $AC$ 及 $BC$ 上的點使得 $ABED$ 為一圓內接四邊形。若 $AB = 660$ cm、$AD = 572$ cm 及 $BE = 275$ cm，則 $CD =$
+        content: `圖中，$ABC$ 為一直角三角形且 $\\angle ABC = 90^\\circ$。 設 $D$ 及 $E$ 分別為 $AC$ 及 $BC$ 上的點使得 $ABED$ 為一圓內接四邊形。 若 $AB = 660$ cm 、 $AD = 572$ cm 及 $BE = 275$ cm，則 $CD =$
 <div class="q-mcopt">
 A.\t$429$ cm。<br>
 B.\t$715$ cm。<br>
