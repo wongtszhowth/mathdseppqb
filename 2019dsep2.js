@@ -238,12 +238,12 @@ D.\t$42$
         domain: ["Geometry"],
         topic: ["Areas and Volumes"],
         difficulty: 2,
-        content: `某實心直立角錐體的底為一正方形，其邊長為 $18\text{ cm}$。 若該角錐體的高為 $12\text{ cm}$，則該角錐體的總表面面積為
+        content: `某實心直立角錐體的底為一正方形，其邊長為 $18\\text{ cm}$。 若該角錐體的高為 $12\\text{ cm}$，則該角錐體的總表面面積為
 <div class="q-mcopt">
-A.\t$432\text{ cm}^2$。 <br>
-B.\t$540\text{ cm}^2$。 <br>
-C.\t$756\text{ cm}^2$。 <br>
-D.\t$864\text{ cm}^2$。 
+A.\t$432\\text{ cm}^2$。 <br>
+B.\t$540\\text{ cm}^2$。 <br>
+C.\t$756\\text{ cm}^2$。 <br>
+D.\t$864\\text{ cm}^2$。 
 </div>`
     },
     {
