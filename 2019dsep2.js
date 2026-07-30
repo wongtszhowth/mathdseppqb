@@ -11,10 +11,10 @@ questions.push(
         difficulty: 1,
         content: `$(a-b)(a^2+ab-b^2) =$
 <div class="q-mcopt">
-A.\t$(a-b)^3$<br>
-B.\t$a^3-b^3$<br>
-C.\t$a^3-2ab^2+b^3$<br>
-D.\t$a^3-2a^2b+2ab^2+b^3$
+A.\t$(a-b)^3$。<br>
+B.\t$a^3-b^3$。<br>
+C.\t$a^3-2ab^2+b^3$。<br>
+D.\t$a^3-2a^2b+2ab^2+b^3$。
 </div>`
     },
     {
@@ -27,10 +27,10 @@ D.\t$a^3-2a^2b+2ab^2+b^3$
         difficulty: 1,
         content: `$\\dfrac{(6x^7)^2}{4x^5} =$
 <div class="q-mcopt">
-A.\t$3x^4$<br>
-B.\t$9x^4$<br>
-C.\t$3x^9$<br>
-D.\t$9x^9$
+A.\t$3x^4$。<br>
+B.\t$9x^4$。<br>
+C.\t$3x^9$。<br>
+D.\t$9x^9$。
 </div>`
     },
     {
@@ -43,10 +43,10 @@ D.\t$9x^9$
         difficulty: 1,
         content: `若 $6x-7y=40=2x+11y$，則 $y=$
 <div class="q-mcopt">
-A.\t$-4$<br>
-B.\t$2$<br>
-C.\t$4$<br>
-D.\t$9$
+A.\t$-4$。<br>
+B.\t$2$。<br>
+C.\t$4$。<br>
+D.\t$9$。
 </div>`
     },
     {
@@ -57,12 +57,12 @@ D.\t$9$
         domain: ["Algebra"],
         topic: ["Polynomials"],
         difficulty: 2,
-        content: `若 $\\alpha$ 及 $\\beta$ 均為常數使得 $(x-8)(x+\\alpha)-6=(x-9)^2+\\beta$，則 $\\beta=$
+        content: `若 $\\alpha$ 及 $\\beta$ 均為常數使得 $(x-8)(x+\\alpha)-6 \\equiv (x-9)^2+\\beta$，則 $\\beta=$
 <div class="q-mcopt">
-A.\t$-26$<br>
-B.\t$-10$<br>
-C.\t$-7$<br>
-D.\t$-6$
+A.\t$-26$。<br>
+B.\t$-10$。<br>
+C.\t$-7$。<br>
+D.\t$-6$。
 </div>`
     },
     {
@@ -105,7 +105,7 @@ D.\t$x=0.0656$（準確至三位有效數字）
         domain: ["Algebra"],
         topic: ["Linear Inequalities and Compound Inequalities"],
         difficulty: 2,
-        content: `滿足複合不等式 $-2(x-5)+5 < 21$ 或 $\\dfrac{3x-5}{-7} > 1$ 的最小整數為
+        content: `滿足複合不等式  $-2(x-5)+5 < 21$  或  $\\dfrac{3x-5}{-7} > 1$  的最小整數為
 <div class="q-mcopt">
 A.\t$-3$。 <br>
 B.\t$-2$。 <br>
@@ -190,7 +190,7 @@ D.\t$\\$113\\,609$
         domain: ["Algebra"],
         topic: ["Rates, Ratios and Proportions"],
         difficulty: 2,
-        content: `A 牌及 B 牌茶葉的成本分別為 $\\$140/$kg 及 $\\$315/$kg。 若 $x$ kg 的 A 牌茶葉與 $y$ kg 的 B 牌茶葉混合使得混合後的茶葉的成本為 $\\$210/$kg，則 $x:y=$
+        content: `$A$ 牌及 $B$ 牌茶葉的成本分別為 $\\$140/$kg 及 $\\$315/$kg。 若 $x$ kg 的 $A$ 牌茶葉與 $y$ kg 的 $B$ 牌茶葉混合使得混合後的茶葉的成本為 $\\$210/$kg，則 $x:y=$
 <div class="q-mcopt">
 A.\t$2:3$。 <br>
 B.\t$3:2$。 <br>
@@ -238,12 +238,12 @@ D.\t$42$
         domain: ["Geometry"],
         topic: ["Areas and Volumes"],
         difficulty: 2,
-        content: `某實心直立角錐體的底為一正方形，其邊長為 $18$ cm。 若該角錐體的高為 $12$ cm，則該角錐體的總表面面積為
+        content: `某實心直立角錐體的底為一正方形，其邊長為 $18\text{ cm}$。 若該角錐體的高為 $12\text{ cm}$，則該角錐體的總表面面積為
 <div class="q-mcopt">
-A.\t$432$ cm$^2$。 <br>
-B.\t$540$ cm$^2$。 <br>
-C.\t$756$ cm$^2$。 <br>
-D.\t$864$ cm$^2$。 
+A.\t$432\text{ cm}^2$。 <br>
+B.\t$540\text{ cm}^2$。 <br>
+C.\t$756\text{ cm}^2$。 <br>
+D.\t$864\text{ cm}^2$。 
 </div>`
     },
     {
@@ -254,12 +254,12 @@ D.\t$864$ cm$^2$。
         domain: ["Geometry"],
         topic: ["Plane Geometry", "Areas and Volumes"],
         difficulty: 3,
-        content: `圖中，$ABCD$ 為一平行四邊形及 $AEFG$ 為一正方形。 已知 $BE:EF:FG = 2:7:3$。 $BD$ 分別與 $AE$ 及 $FG$ 相交於點 $X$ 及點 $Y$。 若 $\\Delta ABX$ 的面積為 $24$ cm$^2$，則四邊形 $CDYF$ 的面積為
+        content: `圖中，$ABCD$ 為一平行四邊形及 $AEFG$ 為一正方形。 已知 $BE:EF:FG = 2:7:3$。 $BD$ 分別與 $AE$ 及 $FG$ 相交於點 $X$ 及點 $Y$。 若 $\\Delta ABX$ 的面積為 $24\\text{ cm}^2$，則四邊形 $CDYF$ 的面積為
 <div class="q-mcopt">
-A.\t$54$ cm$^2$。 <br>
-B.\t$77$ cm$^2$。 <br>
-C.\t$81$ cm$^2$。 <br>
-D.\t$87$ cm$^2$。 
+A.\t$54\\text{ cm}^2$。 <br>
+B.\t$77\\text{ cm}^2$。 <br>
+C.\t$81\\text{ cm}^2$。 <br>
+D.\t$87\\text{ cm}^2$。 
 </div>`
     },
     {
@@ -286,12 +286,12 @@ D.\t$38^\\circ$。
         domain: ["Geometry"],
         topic: ["Plane Geometry"],
         difficulty: 3,
-        content: `圖中，$ABC$ 為一等腰三角形且 $AB = AC$。 $D$ 及 $E$ 均為 $AB$ 上的點使得 $AD = DE = 2EB$，而 $F$ 為 $AC$ 上的一點使得 $DF//EC$。 若 $\\angle ADF = 90^\\circ$ 及 $CE = 60$ cm，則 $EF =$
+        content: `圖中，$ABC$ 為一等腰三角形且 $AB = AC$。 $D$ 及 $E$ 均為 $AB$ 上的點使得 $AD = DE = 2EB$，而 $F$ 為 $AC$ 上的一點使得 $DF//EC$。 若 $\\angle ADF = 90^\\circ$ 及 $CE = 60\\text{ cm}$，則 $EF =$
 <div class="q-mcopt">
-A.\t$40$ cm。 <br>
-B.\t$45$ cm。 <br>
-C.\t$48$ cm。 <br>
-D.\t$50$ cm。 
+A.\t$40\\text{ cm}$。 <br>
+B.\t$45\\text{ cm}$。 <br>
+C.\t$48\\text{ cm}$。 <br>
+D.\t$50\\text{ cm}$。 
 </div>`
     },
     {
@@ -302,12 +302,12 @@ D.\t$50$ cm。
         domain: ["Geometry"],
         topic: ["Plane Geometry", "Areas and Volumes"],
         difficulty: 3,
-        content: `圖中，$ABCD$ 為一梯形且 $AB//DC$ 及 $\\angle ABD = 90^\\circ$。 若 $AB = 18$ cm、$BC = 26$ cm 及 $AD = 30$ cm，求梯形 $ABCD$ 的面積。 
+        content: `圖中，$ABCD$ 為一梯形且 $AB//DC$ 及 $\\angle ABD = 90^\\circ$。 若 $AB = 18\\text{ cm}$、$BC = 26\\text{ cm}$ 及 $AD = 30\\text{ cm}$，求梯形 $ABCD$ 的面積。 
 <div class="q-mcopt">
-A.\t$336$ cm$^2$<br>
-B.\t$400$ cm$^2$<br>
-C.\t$504$ cm$^2$<br>
-D.\t$552$ cm$^2$
+A.\t$336\\text{ cm}^2$<br>
+B.\t$400\\text{ cm}^2$<br>
+C.\t$504\\text{ cm}^2$<br>
+D.\t$552\\text{ cm}^2$
 </div>`
     },
     {
@@ -529,10 +529,10 @@ D.\t$x^8y^7 = 3^{56}$
         difficulty: 3,
         content: `若 $\\dfrac{3}{3\\log x - 2} + 7 = \\dfrac{2}{2\\log x + 1}$，則 $\\log \\dfrac{1}{x} =$
 <div class="q-mcopt">
-A.\t$-3$ 或 $2$。 <br>
-B.\t$-2$ 或 $3$。 <br>
-C.\t$\\dfrac{-1}{3}$ 或 $\\dfrac{1}{2}$。 <br>
-D.\t$\\dfrac{-1}{2}$ 或 $\\dfrac{1}{3}$。 
+A.\t$-3$  或  $2$。 <br>
+B.\t$-2$  或  $3$。 <br>
+C.\t$\\dfrac{-1}{3}$  或  $\\dfrac{1}{2}$。 <br>
+D.\t$\\dfrac{-1}{2}$  或  $\\dfrac{1}{3}$。 
 </div>`
     },
     {
@@ -559,7 +559,7 @@ D.\t$19 \\times 2^{11} + 44$。
         domain: ["Algebra"],
         topic: ["Complex Numbers"],
         difficulty: 3,
-        content: `若 $a$ 為一實數，則 $\\dfrac{4+i^5}{a+i}$ 的實部為
+        content: `若 $a$ 為一實數，則 $\\dfrac{4+i^5}{a+i} - i^6$ 的實部為
 <div class="q-mcopt">
 A.\t$\\dfrac{4a+1}{a^2-1}$。 <br>
 B.\t$\\dfrac{4a+1}{a^2+1}$。 <br>
@@ -601,10 +601,10 @@ D.\t$115$。
         difficulty: 3,
         content: `一等比數列的第 $2$ 項與第 $5$ 項之和為 $9$，而該數列的第 $7$ 項與第 $10$ 項之和為 $288$。 求該數列的第 $20$ 項。 
 <div class="q-mcopt">
-A.\t$65536$<br>
-B.\t$131072$<br>
-C.\t$262144$<br>
-D.\t$524288$
+A.\t$65\\,536$<br>
+B.\t$131\\,072$<br>
+C.\t$262\\,144$<br>
+D.\t$524\\,288$
 </div>`
     },
     {
@@ -631,12 +631,12 @@ D.\t$248$
         domain: ["Geometry"],
         topic: ["Areas and Volumes"],
         difficulty: 3,
-        content: `圖中，$O$ 為扇形 $OABC$ 的圓心。 已知 $\\Delta OAB$ 為一等邊三角形，$AC$ 與 $OB$ 相交於點 $D$。 若 $OA=12$ cm 及 $\\angle AOC=90^\\circ$，求陰影區域 $BCD$ 的面積準確至最接近的 cm$^2$。 
+        content: `圖中，$O$ 為扇形 $OABC$ 的圓心。 已知 $\\Delta OAB$ 為一等邊三角形，$AC$ 與 $OB$ 相交於點 $D$。 若 $OA=12\\text{ cm}$ 及 $\\angle AOC=90^\\circ$，求陰影區域 $BCD$ 的面積準確至最接近的 $\\text{ cm}^2$。 
 <div class="q-mcopt">
-A.\t$11$ cm$^2$<br>
-B.\t$16$ cm$^2$<br>
-C.\t$26$ cm$^2$<br>
-D.\t$38$ cm$^2$
+A.\t$11\\text{ cm}^2$<br>
+B.\t$16\\text{ cm}^2$<br>
+C.\t$26\\text{ cm}^2$<br>
+D.\t$38\\text{ cm}^2$
 </div>`
     },
     {
