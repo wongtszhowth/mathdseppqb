@@ -125,7 +125,7 @@ D.\t$2$。
 <div class="q-mcms">
 I.\t$a<0$
 II.\t$ab<1$
-III.\t$ac<b$ 123
+III.\t$ac \\lt b$
 </div>
 <div class="q-mcopt">
 A.\t只有 I 及 II<br>
