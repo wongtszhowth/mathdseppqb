@@ -158,10 +158,10 @@ D.\t$80$
         domain: ["Geometry"],
         topic: ["Areas and Volumes"],
         difficulty: 2,
-        content: `某高爾夫球場的實際面積為 $0.75$ km$^2$。 若該球場在某地圖上的面積為 $300$ cm$^2$，則該地圖的比例尺為
+        content: `某高爾夫球場的實際面積為 $0.75\\text{ km}^2$。 若該球場在某地圖上的面積為 $300\\text{ cm}^2$，則該地圖的比例尺為
 <div class="q-mcopt">
 A.\t$1:250$。<br>
-B.\t$1:5000$。<br>
+B.\t$1:5\\,000$。<br>
 C.\t$1:62\\,500$。<br>
 D.\t$1:25\\,000\\,000$。
 </div>`
@@ -206,7 +206,7 @@ D.\t$51$
         domain: ["Algebra"],
         topic: ["Linear Inequalities and Compound Inequalities"],
         difficulty: 2,
-        content: `$5-4x<9$  及  $\\dfrac{2x-3}{7}>1$ 的解為
+        content: `$5-4x<9$  及  $\\dfrac{2x-3}{7}>1$  的解為
 <div class="q-mcopt">
 A.\t$x<-1$。<br>
 B.\t$x>-1$。<br>
@@ -222,7 +222,7 @@ D.\t$x>5$。
         domain: ["Algebra"],
         topic: ["Approximate Values and Numerical Estimation"],
         difficulty: 3,
-        content: `圖中，$PQRST$ 為五邊形，其中所有的量度均準確至最接近的 cm。 設 $A$ cm$^2$ 為該五邊形的實際面積。 求 $A$ 值的範圍。 
+        content: `圖中，$PQRST$ 為五邊形，其中所有的量度均準確至最接近的 cm。 設 $A\\text{ cm}^2$ 為該五邊形的實際面積。 求 $A$ 值的範圍。 
 <div class="q-mcopt">
 A.\t$27.83 \\le A < 31.83$<br>
 B.\t$44.75 \\le A < 60.75$<br>
@@ -254,12 +254,12 @@ D.\t$150$
         domain: ["Geometry"],
         topic: ["Areas and Volumes"],
         difficulty: 2,
-        content: `若一底半徑為 $5a$ cm 及高為 $7b$ cm 的直立圓柱體的體積為 $525$ cm$^3$，則一底半徑為 $7a$ cm 及高為 $5b$ cm 的直立圓錐體的體積為
+        content: `若一底半徑為 $5a\\text{ cm}$ 及高為 $7b\\text{ cm}$ 的直立圓柱體的體積為 $525\\text{ cm}^3$，則一底半徑為 $7a\\text{ cm}$ 及高為 $5b\\text{ cm}$ 的直立圓錐體的體積為
 <div class="q-mcopt">
-A.\t$175$ cm$^3$。<br>
-B.\t$245$ cm$^3$。<br>
-C.\t$490$ cm$^3$。<br>
-D.\t$735$ cm$^3$。
+A.\t$175\\text{ cm}^3$。<br>
+B.\t$245\\text{ cm}^3$。<br>
+C.\t$490\\text{ cm}^3$。<br>
+D.\t$735\\text{ cm}^3$。
 </div>`
     },
     {
@@ -286,12 +286,12 @@ D.\t$4:9$。
         domain: ["Geometry"],
         topic: ["Plane Geometry", "Areas and Volumes"],
         difficulty: 4,
-        content: `圖中，$ABCD$ 為一平行四邊形。 設 $E$ 為 $AD$ 上的一點使得 $AE:ED = 2:5$。 延長 $CB$ 至點 $F$ 使得 $BF = DE$。 將 $AB$ 與 $EF$ 的交點記為 $G$。 已知 $BD$ 與 $CG$ 相交於點 $H$。 若 $\\Delta AEG$ 的面積為 $48$ cm$^2$，則 $\\Delta CDH$ 的面積為
+        content: `圖中，$ABCD$ 為一平行四邊形。 設 $E$ 為 $AD$ 上的一點使得 $AE:ED = 2:5$。 延長 $CB$ 至點 $F$ 使得 $BF = DE$。 將 $AB$ 與 $EF$ 的交點記為 $G$。 已知 $BD$ 與 $CG$ 相交於點 $H$。 若 $\\Delta AEG$ 的面積為 $48\\text{ cm}^2$，則 $\\Delta CDH$ 的面積為
 <div class="q-mcopt">
-A.\t$98$ cm$^2$。 <br>
-B.\t$343$ cm$^2$。 <br>
-C.\t$420$ cm$^2$。 <br>
-D.\t$588$ cm$^2$。 
+A.\t$98\\text{ cm}^2$。 <br>
+B.\t$343\\text{ cm}^2$。 <br>
+C.\t$420\\text{ cm}^2$。 <br>
+D.\t$588\\text{ cm}^2$。 
 </div>`
     },
     {
@@ -339,12 +339,12 @@ D.\t$29^\\circ$。
         domain: ["Geometry"],
         topic: ["Plane Geometry"],
         difficulty: 2,
-        content: `圖中，$ABCD$ 為一長方形。 設 $E$ 為 $AD$ 上的一點使得 $BE = 8$ cm 及 $CE = 15$ cm。 若 $BC = 17$ cm，求長方形 $ABCD$ 的面積。 
+        content: `圖中，$ABCD$ 為一長方形。 設 $E$ 為 $AD$ 上的一點使得 $BE = 8\\text{ cm}$ 及 $CE = 15\\text{ cm}$。 若 $BC = 17\\text{ cm}$，求長方形 $ABCD$ 的面積。 
 <div class="q-mcopt">
-A.\t$60$ cm$^2$<br>
-B.\t$68$ cm$^2$<br>
-C.\t$120$ cm$^2$<br>
-D.\t$136$ cm$^2$
+A.\t$60\\text{ cm}^2$<br>
+B.\t$68\\text{ cm}^2$<br>
+C.\t$120\\text{ cm}^2$<br>
+D.\t$136\\text{ cm}^2$
 </div>`
     },
     {
@@ -355,12 +355,12 @@ D.\t$136$ cm$^2$
         domain: ["Geometry"],
         topic: ["Circle Geometry"],
         difficulty: 3,
-        content: `圖中，$ABCDE$ 為一圓。 若 $AB = 10$ cm 、 $BC = 5$ cm 、 $\\angle ABC = 90^\\circ$ 及 $\\angle CED = 40^\\circ$，求 $CD$ 準確至最接近的 cm。 
+        content: `圖中，$ABCDE$ 為一圓。 若 $AB = 10\\text{ cm}$ 、 $BC = 5\\text{ cm}$ 、 $\\angle ABC = 90^\\circ$ 及 $\\angle CED = 40^\\circ$，求 $CD$ 準確至最接近的 cm。 
 <div class="q-mcopt">
-A.\t$5$ cm<br>
-B.\t$6$ cm<br>
-C.\t$7$ cm<br>
-D.\t$8$ cm
+A.\t$5\\text{ cm}$<br>
+B.\t$6\\text{ cm}$<br>
+C.\t$7\\text{ cm}$<br>
+D.\t$8\\text{ cm}$
 </div>`
     },
     {
@@ -371,12 +371,12 @@ D.\t$8$ cm
         domain: ["Geometry"],
         topic: ["Trigonometry (2D)"],
         difficulty: 2,
-        content: `某船位於燈塔以西 $50$ km。 若該船沿 S$60^\\circ$E 方向移動，求該船與燈塔間的最短距離。 
+        content: `某船位於燈塔以西 $50\\text{ km}$。 若該船沿 S$60^\\circ$E 方向移動，求該船與燈塔間的最短距離。 
 <div class="q-mcopt">
-A.\t$20$ km<br>
-B.\t$25$ km<br>
-C.\t$43$ km<br>
-D.\t$87$ km
+A.\t$20\\text{ km}$<br>
+B.\t$25\\text{ km}$<br>
+C.\t$43\\text{ km}$<br>
+D.\t$87\\text{ km}$
 </div>`
     },
     {
@@ -582,9 +582,9 @@ D.\t$33$。
         difficulty: 2,
         content: `若 $a>0$，則下列何者為等差數列？
 <div class="q-mcms">
-I.\t$\\log a^{-3}, \\log a, \\log a^5$
-II.\t$8-4a, 9-5a, 10-6a$
-III.\t$\\cos(90-a)^\\circ, \\cos 90^\\circ, \\cos(90+a)^\\circ$
+I.\t$\\log a^{-3}$ ,  $\\log a$ ,  $\\log a^5$
+II.\t$8-4a$ ,  $9-5a$ ,  $10-6a$
+III.\t$\\cos(90-a)^\\circ$ ,  $\\cos 90^\\circ$ ,  $\\cos(90+a)^\\circ$
 </div>
 <div class="q-mcopt">
 A.\t只有 I 及 II<br>
@@ -641,12 +641,12 @@ D.\t$10$。
         domain: ["Geometry"],
         topic: ["Trigonometry (3D)"],
         difficulty: 4,
-        content: `圖中，$ABCDEF$ 為一直立三角柱體。 $P$ 為 $AE$ 上的一點。 若 $AB = AC = 12$ cm 、 $AP = 9$ cm 、 $EP = 5$ cm 及 $BD = 2k$ cm，求 $\\Delta BDP$ 的面積。 
+        content: `圖中，$ABCDEF$ 為一直立三角柱體。 $P$ 為 $AE$ 上的一點。 若 $AB = AC = 12\\text{ cm}$ 、 $AP = 9\\text{ cm}$ 、 $EP = 5\\text{ cm}$ 及 $BD = 2k\\text{ cm}$，求 $\\Delta BDP$ 的面積。 
 <div class="q-mcopt">
-A.\t$\\sqrt{(k^2-1)(196-k^2)}$ cm$^2$<br>
-B.\t$\\sqrt{(k^2-1)(196+k^2)}$ cm$^2$<br>
-C.\t$\\sqrt{(k^2+1)(196-k^2)}$ cm$^2$<br>
-D.\t$\\sqrt{(k^2+1)(196+k^2)}$ cm$^2$
+A.\t$\\sqrt{(k^2-1)(196-k^2)}\\text{ cm}^2$<br>
+B.\t$\\sqrt{(k^2-1)(196+k^2)}\\text{ cm}^2$<br>
+C.\t$\\sqrt{(k^2+1)(196-k^2)}\\text{ cm}^2$<br>
+D.\t$\\sqrt{(k^2+1)(196+k^2)}\\text{ cm}^2$
 </div>`
     },
     {
@@ -707,10 +707,10 @@ D.\t$c \\le -8$  或  $c \\ge 56$
         difficulty: 2,
         content: `$6$ 名男生與 $5$ 名女生排成一隊。 若沒有男生相鄰而排，則可排成多少不同的隊？
 <div class="q-mcopt">
-A.\t$86400$<br>
-B.\t$172800$<br>
-C.\t$213444$<br>
-D.\t$39916800$
+A.\t$86\\,400$<br>
+B.\t$172\\,800$<br>
+C.\t$213\\,444$<br>
+D.\t$39\\,916\\,800$
 </div>`
     },
     {
