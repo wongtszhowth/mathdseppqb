@@ -1,0 +1,765 @@
+// 2018dsep2.js
+// 直接用 .push 追加題目，不會覆蓋之前的數據
+questions.push(
+    {
+        id: "2018-DSE-MATH-CP2-Q01",
+        year: 2018,
+        type: "P2",
+        level: ["Junior"],
+        domain: ["Algebra"],
+        topic: ["Indices"],
+        difficulty: 1,
+        content: `$\\dfrac{8^{2n+1}}{4^{3n+1}} =$
+<div class="q-mcopt">
+A.\t$1$。<br>
+B.\t$2$。<br>
+C.\t$2^n$。<br>
+D.\t$2^{-n}$。
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q02",
+        year: 2018,
+        type: "P2",
+        level: ["Junior"],
+        domain: ["Algebra"],
+        topic: ["Formulae"],
+        difficulty: 1,
+        content: `若 $\\dfrac{\\alpha - \\beta}{1-x} = \\dfrac{\\beta}{x}$，則 $x =$
+<div class="q-mcopt">
+A.\t$\\dfrac{\\alpha}{\\alpha - \\beta}$。<br>
+B.\t$\\dfrac{\\alpha}{\\alpha + \\beta}$。<br>
+C.\t$\\dfrac{\\beta}{\\alpha - \\beta}$。<br>
+D.\t$\\dfrac{\\beta}{\\alpha + \\beta}$。
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q03",
+        year: 2018,
+        type: "P2",
+        level: ["Junior"],
+        domain: ["Algebra"],
+        topic: ["Factorization"],
+        difficulty: 2,
+        content: `$h^2 - 6h - 4k^2 - 12k =$
+<div class="q-mcopt">
+A.\t$(h-2k)(h-2k+6)$。<br>
+B.\t$(h-2k)(h+2k+6)$。<br>
+C.\t$(h+2k)(h-2k-6)$。<br>
+D.\t$(h+2k)(h+2k-6)$。
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q04",
+        year: 2018,
+        type: "P2",
+        level: ["Junior"],
+        domain: ["Algebra"],
+        topic: ["Algebraic Fractions and Fractional Equations"],
+        difficulty: 1,
+        content: `$\\dfrac{1}{3x+7} - \\dfrac{1}{3x-7} =$
+<div class="q-mcopt">
+A.\t$\\dfrac{14}{49-9x^2}$<br>
+B.\t$\\dfrac{14}{9x^2-49}$<br>
+C.\t$\\dfrac{6x}{49-9x^2}$<br>
+D.\t$\\dfrac{6x}{9x^2-49}$
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q05",
+        year: 2018,
+        type: "P2",
+        level: ["Junior"],
+        domain: ["Algebra"],
+        topic: ["Functions and Graphs"],
+        difficulty: 1,
+        content: `下列有關 $y=16-(x-6)^2$ 的圖像之敍述，何者正確？
+<div class="q-mcopt">
+A.\t該圖像與 $x$ 軸相交。<br>
+B.\t該圖像開口向上。<br>
+C.\t該圖像的 $y$ 截距為 $16$。<br>
+D.\t該圖像通過原點。
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q06",
+        year: 2018,
+        type: "P2",
+        level: ["Junior"],
+        domain: ["Geometry"],
+        topic: ["Equations of Straight Lines"],
+        difficulty: 2,
+        content: `圖中，直線 $L_1$ 及直線 $L_2$ 的方程分別為 $3x+ay=b$ 及 $cx+y=d$。下列何者正確？
+<div class="q-mcms">
+I.\t$ac<3$<br>
+II.\t$ad<b$<br>
+III.\t$bc<3d$
+</div>
+<div class="q-mcopt">
+A.\t只有 II<br>
+B.\t只有 III<br>
+C.\t只有 I 及 II<br>
+D.\t只有 I 及 III
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q07",
+        year: 2018,
+        type: "P2",
+        level: ["Junior"],
+        domain: ["Algebra"],
+        topic: ["Functions and Graphs"],
+        difficulty: 1,
+        content: `若 $\\mathrm{f}(x) = 3x^2 - 2x + 1$，則 $\\mathrm{f}(2m-1) =$
+<div class="q-mcopt">
+A.\t$6m^2 - 4m + 2$。<br>
+B.\t$6m^2 - 4m + 6$。<br>
+C.\t$12m^2 - 16m + 2$。<br>
+D.\t$12m^2 - 16m + 6$。
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q08",
+        year: 2018,
+        type: "P2",
+        level: ["Junior"],
+        domain: ["Algebra"],
+        topic: ["Polynomials"],
+        difficulty: 2,
+        content: `設 $\\mathrm{g}(x) = x^8 + ax^7 + b$，其中 $a$ 及 $b$ 均為常數。若 $\\mathrm{g}(x)$ 可被 $x-1$ 整除，求當 $\\mathrm{g}(x)$ 除以 $x+1$ 時的餘數。
+<div class="q-mcopt">
+A.\t$0$<br>
+B.\t$2a$<br>
+C.\t$-2a$<br>
+D.\t$-2a + 2$
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q09",
+        year: 2018,
+        type: "P2",
+        level: ["Junior"],
+        domain: ["Algebra"],
+        topic: ["Percentages"],
+        difficulty: 2,
+        content: `存款 $\\$100\\,000$，年利率 $2\\%$，年期 $3$ 年，複利計算，每月一結。求利息準確至最接近的元。
+<div class="q-mcopt">
+A.\t$\\$6000$<br>
+B.\t$\\$6121$<br>
+C.\t$\\$6176$<br>
+D.\t$\\$6178$
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q10",
+        year: 2018,
+        type: "P2",
+        level: ["Junior"],
+        domain: ["Algebra"],
+        topic: ["Rates, Ratios and Proportions"],
+        difficulty: 2,
+        content: `設 $a$、$b$ 及 $c$ 均為非零的數。若 $3a = 4b$ 及 $a:c = 2:5$，則 $\\dfrac{a+3b}{b+3c} =$
+<div class="q-mcopt">
+A.\t$\\dfrac{5}{3}$。<br>
+B.\t$\\dfrac{13}{33}$。<br>
+C.\t$\\dfrac{30}{53}$。<br>
+D.\t$\\dfrac{75}{38}$。
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q11",
+        year: 2018,
+        type: "P2",
+        level: ["Junior"],
+        domain: ["Algebra"],
+        topic: ["Variations"],
+        difficulty: 2,
+        content: `若 $w$ 隨 $u$ 的平方根正變且隨 $v$ 的平方反變，則下列何者必為常數？
+<div class="q-mcopt">
+A.\t$u^4 v w^2$<br>
+B.\t$uv^4 w^2$<br>
+C.\t$\\dfrac{v w^2}{u^4}$<br>
+D.\t$\\dfrac{v^4 w^2}{u}$
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q12",
+        year: 2018,
+        type: "P2",
+        level: ["Junior"],
+        domain: ["Algebra"],
+        topic: ["Sequences"],
+        difficulty: 2,
+        content: `設 $a_n$ 為某數列的第 $n$ 項。若 $a_3 = 21$、$a_6 = 89$ 及對任意正整數 $n$，$a_{n+2} = a_n + a_{n+1}$，則 $a_1 =$
+<div class="q-mcopt">
+A.\t$8$。<br>
+B.\t$13$。<br>
+C.\t$34$。<br>
+D.\t$55$。
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q13",
+        year: 2018,
+        type: "P2",
+        level: ["Junior"],
+        domain: ["Algebra"],
+        topic: ["Linear Inequalities and Compound Inequalities"],
+        difficulty: 2,
+        content: `$\\dfrac{1-2x}{3} \\ge x-3$ 或 $4x+9<1$ 的解為
+<div class="q-mcopt">
+A.\t$x<-2$。<br>
+B.\t$x>-2$。<br>
+C.\t$x \\le 2$。<br>
+D.\t$x \\ge 2$。
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q14",
+        year: 2018,
+        type: "P2",
+        level: ["Junior"],
+        domain: ["Algebra"],
+        topic: ["Approximate Values and Numerical Estimation"],
+        difficulty: 3,
+        content: `圖中，$ABCDEFGH$ 為八邊形，其中所有的量度均準確至最接近的 cm。設 $x$ cm$^2$ 為該八邊形的實際面積。求 $x$ 值的範圍。
+<div class="q-mcopt">
+A.\t$13 < x < 23$<br>
+B.\t$13 < x < 27$<br>
+C.\t$17 < x < 23$<br>
+D.\t$17 < x < 27$
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q15",
+        year: 2018,
+        type: "P2",
+        level: ["Junior"],
+        domain: ["Geometry"],
+        topic: ["Areas and Volumes"],
+        difficulty: 2,
+        content: `圖中，實心直立三角柱體的體積為
+<div class="q-mcopt">
+A.\t$544$ cm$^3$。<br>
+B.\t$600$ cm$^3$。<br>
+C.\t$660$ cm$^3$。<br>
+D.\t$720$ cm$^3$。
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q16",
+        year: 2018,
+        type: "P2",
+        level: ["Junior"],
+        domain: ["Geometry"],
+        topic: ["Plane Geometry", "Areas and Volumes"],
+        difficulty: 3,
+        content: `圖中，$ABCD$ 為一平行四邊形。$E$ 為 $BC$ 上的一點使得 $BE:EC = 5:3$。$AE$ 與 $BD$ 相交於點 $F$。若 $\\triangle ABF$ 的面積為 $120$ cm$^2$，則四邊形 $CDFE$ 的面積為
+<div class="q-mcopt">
+A.\t$237$ cm$^2$。<br>
+B.\t$307$ cm$^2$。<br>
+C.\t$312$ cm$^2$。<br>
+D.\t$429$ cm$^2$。
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q17",
+        year: 2018,
+        type: "P2",
+        level: ["Junior"],
+        domain: ["Geometry"],
+        topic: ["Areas and Volumes"],
+        difficulty: 3,
+        content: `圖中，$O$ 為扇形 $OABCD$ 的圓心。$AD$ 與 $OC$ 互相垂直且相交於點 $E$。$F$ 為 $AD$ 上的一點使得 $BF$ 垂直於 $AD$。若 $AF = 9$ cm、$DF = 39$ cm 及 $OE = 18$ cm，則扇形 $OBC$ 的面積為
+<div class="q-mcopt">
+A.\t$48\\pi$ cm$^2$。<br>
+B.\t$75\\pi$ cm$^2$。<br>
+C.\t$96\\pi$ cm$^2$。<br>
+D.\t$150\\pi$ cm$^2$。
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q18",
+        year: 2018,
+        type: "P2",
+        level: ["Junior"],
+        domain: ["Geometry"],
+        topic: ["Plane Geometry"],
+        difficulty: 3,
+        content: `圖中，$ABCD$ 為一菱形。$E$ 及 $F$ 分別為 $AB$ 及 $AD$ 上的點使得 $AE = AF$ 及 $\\angle ECF = 42^\\circ$。若 $\\angle BAD = 110^\\circ$，則 $\\angle BEC =$
+<div class="q-mcopt">
+A.\t$70^\\circ$。<br>
+B.\t$76^\\circ$。<br>
+C.\t$80^\\circ$。<br>
+D.\t$84^\\circ$。
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q19",
+        year: 2018,
+        type: "P2",
+        level: ["Junior"],
+        domain: ["Geometry"],
+        topic: ["Plane Geometry"],
+        difficulty: 3,
+        content: `圖中，$ABCDE$ 為一正五邊形。$AD$ 與 $CE$ 相交於點 $F$。下列何者正確？
+<div class="q-mcms">
+I.\t$CD = CF$<br>
+II.\t$\\triangle ABF \\equiv \\triangle CBF$<br>
+III.\t$\\angle AFB + \\angle EAF = 90^\\circ$
+</div>
+<div class="q-mcopt">
+A.\t只有 I 及 II<br>
+B.\t只有 I 及 III<br>
+C.\t只有 II 及 III<br>
+D.\tI、II 及 III
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q20",
+        year: 2018,
+        type: "P2",
+        level: ["Junior"],
+        domain: ["Geometry"],
+        topic: ["Plane Geometry"],
+        difficulty: 3,
+        content: `圖中，$ABCD$ 為一正方形。$E$ 為 $AB$ 的延線上的一點使得 $BE = 4$ cm。$BC$ 與 $DE$ 相交於點 $F$。若 $EF = 5$ cm，則 $DF =$
+<div class="q-mcopt">
+A.\t$12$ cm。<br>
+B.\t$15$ cm。<br>
+C.\t$16$ cm。<br>
+D.\t$20$ cm。
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q21",
+        year: 2018,
+        type: "P2",
+        level: ["Junior"],
+        domain: ["Geometry"],
+        topic: ["Trigonometry (2D)"],
+        difficulty: 3,
+        content: `圖中，$ABCD$ 為一梯形且 $\\angle ABC = \\angle BAD = 90^\\circ$。$E$ 及 $F$ 均為 $AB$ 上的點使得 $E$ 與 $F$ 將 $AB$ 分成三等分。下列何者必為正確？
+<div class="q-mcms">
+I.\t$AF \\sin \\alpha = BE \\sin \\beta$<br>
+II.\t$CE \\cos \\alpha = DF \\cos \\beta$<br>
+III.\t$AD \\tan \\alpha = BC \\tan \\beta$
+</div>
+<div class="q-mcopt">
+A.\t只有 I 及 II<br>
+B.\t只有 I 及 III<br>
+C.\t只有 II 及 III<br>
+D.\tI、II 及 III
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q22",
+        year: 2018,
+        type: "P2",
+        level: ["Junior"],
+        domain: ["Geometry"],
+        topic: ["Circle Geometry"],
+        difficulty: 3,
+        content: `圖中，$ABCD$ 為一圓。$AD$ 的延線與 $BC$ 的延線相交於點 $E$。已知 $BD = DE$、$\\angle BAC = 66^\\circ$ 及 $\\angle ABD = 30^\\circ$。求 $\\angle CED$。
+<div class="q-mcopt">
+A.\t$20^\\circ$<br>
+B.\t$28^\\circ$<br>
+C.\t$36^\\circ$<br>
+D.\t$42^\\circ$
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q23",
+        year: 2018,
+        type: "P2",
+        level: ["Junior"],
+        domain: ["Geometry"],
+        topic: ["Plane Geometry"],
+        difficulty: 1,
+        content: `下面的圖形包含八個完全相同的正方形。該圖形的旋轉對稱的折式數目為
+<div class="q-mcopt">
+A.\t$2$。<br>
+B.\t$4$。<br>
+C.\t$6$。<br>
+D.\t$8$。
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q24",
+        year: 2018,
+        type: "P2",
+        level: ["Junior"],
+        domain: ["Geometry"],
+        topic: ["Coordinate Geometry"],
+        difficulty: 2,
+        content: `點 $C$、點 $D$ 及點 $E$ 的極坐標分別為 $(16, 127^\\circ)$、$(12, 217^\\circ)$ 及 $(5, 307^\\circ)$。求 $\\triangle CDE$ 的周界。
+<div class="q-mcopt">
+A.\t$54$<br>
+B.\t$78$<br>
+C.\t$126$<br>
+D.\t$130$
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q25",
+        year: 2018,
+        type: "P2",
+        level: ["Junior"],
+        domain: ["Geometry"],
+        topic: ["Loci"],
+        difficulty: 2,
+        content: `直線 $L_1$ 及直線 $L_2$ 的方程分別為 $3x - y + 7 = 0$ 及 $12x - 4y - 11 = 0$。設 $P$ 為直角坐標平面上的一動點使得由 $P$ 至 $L_1$ 的垂直距離等於由 $P$ 至 $L_2$ 的垂直距離。求 $P$ 的軌跡的方程。
+<div class="q-mcopt">
+A.\t$8x - 24y - 17 = 0$<br>
+B.\t$8x - 24y + 17 = 0$<br>
+C.\t$24x - 8y - 17 = 0$<br>
+D.\t$24x - 8y + 17 = 0$
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q26",
+        year: 2018,
+        type: "P2",
+        level: ["Junior"],
+        domain: ["Geometry"],
+        topic: ["Equations of Straight Lines", "Areas and Volumes"],
+        difficulty: 3,
+        content: `直線 $L_1$ 的方程為 $4x + 3y - 36 = 0$。直線 $L_2$ 垂直於 $L_1$ 且與 $L_1$ 相交於 $y$ 軸上的一點。求 $L_1$、$L_2$ 與 $x$ 軸圍成的區域的面積。
+<div class="q-mcopt">
+A.\t$96$<br>
+B.\t$108$<br>
+C.\t$150$<br>
+D.\t$192$
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q27",
+        year: 2018,
+        type: "P2",
+        level: ["Junior"],
+        domain: ["Geometry"],
+        topic: ["Equations of Circles"],
+        difficulty: 3,
+        content: `圓 $C$ 的方程為 $5x^2 + 5y^2 - 30x + 10y + 6 = 0$。下列何者正確？
+<div class="q-mcopt">
+A.\t原點位於 $C$ 以內。<br>
+B.\t$C$ 位於第二象限內。<br>
+C.\t$C$ 的周長少於 $20$。<br>
+D.\t$C$ 的圓心的坐標為 $(15, -5)$。
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q28",
+        year: 2018,
+        type: "P2",
+        level: ["Junior"],
+        domain: ["Data Handling"],
+        topic: ["Probability"],
+        difficulty: 2,
+        content: `從七張分別記有數字 $1$、$1$、$1$、$2$、$2$、$3$ 及 $4$ 的紙卡中，隨機同時抽出兩個數字。求抽出數字之和為 $5$ 的概率。
+<div class="q-mcopt">
+A.\t$\\dfrac{5}{21}$<br>
+B.\t$\\dfrac{5}{42}$<br>
+C.\t$\\dfrac{5}{49}$<br>
+D.\t$\\dfrac{10}{49}$
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q29",
+        year: 2018,
+        type: "P2",
+        level: ["Junior"],
+        domain: ["Data Handling"],
+        topic: ["Measures of Central Tendency"],
+        difficulty: 1,
+        content: `某 $10$ 本雜誌的頁數的平均值為 $132$。若這 $10$ 本雜誌其中 $6$ 本的頁數的平均值為 $108$，則餘下 $4$ 本雜誌的頁數的平均值為
+<div class="q-mcopt">
+A.\t$148$。<br>
+B.\t$156$。<br>
+C.\t$168$。<br>
+D.\t$176$。
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q30",
+        year: 2018,
+        type: "P2",
+        level: ["Junior"],
+        domain: ["Data Handling"],
+        topic: ["Measures of Dispersion", "Statistical Graphs"],
+        difficulty: 3,
+        content: `下面的幹葉圖顯示 $20$ 名學生在一年內閱書數目的分佈。
+<div style="overflow-x: auto; width: 100%; margin-bottom: 8px;"><table class="q-table" style="width: 100%; min-width: 300px;"><tr><td>幹（十位）</td><td>葉（個位）</td></tr><tr><td>$2$</td><td>$1$ $2$ $2$ $8$</td></tr><tr><td>$3$</td><td>$a$ $a$</td></tr><tr><td>$4$</td><td>$0$ $2$ $4$ $5$ $5$ $7$ $8$</td></tr><tr><td>$5$</td><td>$3$</td></tr><tr><td>$6$</td><td>$b$ $b$ $9$ $9$</td></tr><tr><td>$7$</td><td>$0$ $8$</td></tr></table></div>
+若上述分佈的四分位數間距至多為 $25$，則下列何者必為正確？
+<div class="q-mcms">
+I.\t$5 \\le a \\le 9$<br>
+II.\t$0 \\le b \\le 4$<br>
+III.\t$1 \\le a - b \\le 6$
+</div>
+<div class="q-mcopt">
+A.\t只有 I 及 II<br>
+B.\t只有 I 及 III<br>
+C.\t只有 II 及 III<br>
+D.\tI、II 及 III
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q31",
+        year: 2018,
+        type: "P2",
+        level: ["Senior"],
+        domain: ["Algebra"],
+        topic: ["Functions and Graphs"],
+        difficulty: 3,
+        content: `設 $\\mathrm{f}(x)$ 為二次函數。下圖可表示 $y=\\mathrm{f}(x)$ 的圖像及
+<div class="q-mcopt">
+A.\t$y=-3\\mathrm{f}(x)$ 的圖像。<br>
+B.\t$y=\\mathrm{f}(-3x)$ 的圖像。<br>
+C.\t$y=-\\mathrm{f}(x+4)$ 的圖像。<br>
+D.\t$y=\\mathrm{f}(-x+11)$ 的圖像。
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q32",
+        year: 2018,
+        type: "P2",
+        level: ["Senior"],
+        domain: ["Algebra"],
+        topic: ["Exponential Functions and Logarithm Functions"],
+        difficulty: 3,
+        content: `圖中所示為在同一直角坐标系上 $y=\\log_a x$ 的圖像及 $y=\\log_b x$ 的圖像，其中 $a$ 及 $b$ 均為正常數。若一垂直線分別與 $y=\\log_a x$ 的圖像、$y=\\log_b x$ 的圖像及 $x$ 軸相交於點 $A$、點 $B$ 及點 $C$，則下列何者正確？
+<div class="q-mcms">
+I.\t$a>1$<br>
+II.\t$a>b$<br>
+III.\t$\\dfrac{AB}{BC} = \\log_a \\dfrac{b}{a}$
+</div>
+<div class="q-mcopt">
+A.\t只有 I<br>
+B.\t只有 II<br>
+C.\t只有 I 及 III<br>
+D.\t只有 II 及 III
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q33",
+        year: 2018,
+        type: "P2",
+        level: ["Senior"],
+        domain: ["Algebra"],
+        topic: ["Exponential Functions and Logarithm Functions"],
+        difficulty: 3,
+        content: `圖中，直線 $L$ 顯示 $\\log_4 x$ 與 $\\log_4 y$ 之間的關係。已知 $L$ 通過點 $(1, 2)$ 及點 $(9, 6)$。若 $y=kx^a$，則 $k=$
+<div class="q-mcopt">
+A.\t$\\dfrac{1}{2}$。<br>
+B.\t$\\dfrac{3}{2}$。<br>
+C.\t$2$。<br>
+D.\t$8$。
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q34",
+        year: 2018,
+        type: "P2",
+        level: ["Senior"],
+        domain: ["Algebra"],
+        topic: ["Linear Inequalities and Compound Inequalities", "Linear Programming"],
+        difficulty: 3,
+        content: `考慮以下的不等式組：
+$$
+\\begin{cases}
+x-21 \\le 0 \\\\
+x-y-35 \\le 0 \\\\
+x+5y-91 \\le 0 \\\\
+3x+2y \\ge 0
+\\end{cases}
+$$
+設 $D$ 為表示以上的不等式組的解之區域。若 $(x, y)$ 為 $D$ 中的一點，則 $5x+6y+234$ 的最小值為
+<div class="q-mcopt">
+A.\t$45$。<br>
+B.\t$150$。<br>
+C.\t$178$。<br>
+D.\t$423$。
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q35",
+        year: 2018,
+        type: "P2",
+        level: ["Senior"],
+        domain: ["Algebra"],
+        topic: ["Sequences"],
+        difficulty: 3,
+        content: `若某數列的首 $n$ 項之和為 $6n^2 - n$，則下列何者正確？
+<div class="q-mcms">
+I.\t$22$ 為該數列的其中一項。<br>
+II.\t該數列的第 $1$ 項為 $5$。<br>
+III.\t該數列為一等比數列。
+</div>
+<div class="q-mcopt">
+A.\t只有 I<br>
+B.\t只有 II<br>
+C.\t只有 I 及 III<br>
+D.\t只有 II 及 III
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q36",
+        year: 2018,
+        type: "P2",
+        level: ["Senior"],
+        domain: ["Algebra"],
+        topic: ["Quadratic Equations in One Unknown"],
+        difficulty: 3,
+        content: `若 $m \\neq n$ 且 $2m^2 + 5m = 2n^2 + 5n = 14$，則 $(m+2)(n+2) =$
+<div class="q-mcopt">
+A.\t$-8$。<br>
+B.\t$2$。<br>
+C.\t$6$。<br>
+D.\t$16$。
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q37",
+        year: 2018,
+        type: "P2",
+        level: ["Senior"],
+        domain: ["Algebra"],
+        topic: ["Complex Numbers"],
+        difficulty: 3,
+        content: `$\\dfrac{2i^{12} + 3i^{13} + 4i^{14} + 5i^{15} + 6i^{16}}{1-i}$ 的實部為
+<div class="q-mcopt">
+A.\t$-3$。<br>
+B.\t$-1$。<br>
+C.\t$1$。<br>
+D.\t$3$。
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q38",
+        year: 2018,
+        type: "P2",
+        level: ["Senior"],
+        domain: ["Algebra"],
+        topic: ["Trigonometric Equations"],
+        difficulty: 2,
+        content: `當 $0^\\circ \\le x < 360^\\circ$ 時，方程 $6\\cos^2 x = \\cos x + 5$ 有多少個根？
+<div class="q-mcopt">
+A.\t$2$<br>
+B.\t$3$<br>
+C.\t$4$<br>
+D.\t$5$
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q39",
+        year: 2018,
+        type: "P2",
+        level: ["Senior"],
+        domain: ["Geometry"],
+        topic: ["Circle Geometry"],
+        difficulty: 3,
+        content: `圖中，$TA$ 為圓 $ABCD$ 在點 $A$ 的切線。$CD$ 的延線與 $TA$ 的延線相交於點 $E$。已知 $AB = CD$、$\\angle BAT = 24^\\circ$ 及 $\\angle AED = 72^\\circ$。求 $\\angle ABC$。
+<div class="q-mcopt">
+A.\t$60^\\circ$<br>
+B.\t$66^\\circ$<br>
+C.\t$72^\\circ$<br>
+D.\t$78^\\circ$
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q40",
+        year: 2018,
+        type: "P2",
+        level: ["Senior"],
+        domain: ["Geometry"],
+        topic: ["Coordinate Geometry"],
+        difficulty: 4,
+        content: `已知 $a$ 為一正常數。直線 $2x+5y=a$ 分別與 $x$ 軸及 $y$ 軸相交於點 $P$ 及點 $Q$。設 $R$ 為 $y$ 軸上的一點使得 $\\triangle PQR$ 的垂心的 $x$ 坐標為 $10$。求 $R$ 的 $y$ 坐標。
+<div class="q-mcopt">
+A.\t$-25$<br>
+B.\t$-4$<br>
+C.\t$4$<br>
+D.\t$25$
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q41",
+        year: 2018,
+        type: "P2",
+        level: ["Senior"],
+        domain: ["Geometry"],
+        topic: ["Trigonometry (3D)"],
+        difficulty: 4,
+        content: `圖中，$ABCDEFGH$ 為一長方體。設 $X$ 為 $DE$ 上的一點使得 $DX=9$ cm 及 $EX=4$ cm。將 $BX$ 與平面 $ABGF$ 間的交角記為 $\\theta$。求 $\\cos\\theta$。
+<div class="q-mcopt">
+A.\t$\\dfrac{3}{5}$<br>
+B.\t$\\dfrac{4}{5}$<br>
+C.\t$\\dfrac{8}{17}$<br>
+D.\t$\\dfrac{15}{17}$
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q42",
+        year: 2018,
+        type: "P2",
+        level: ["Senior"],
+        domain: ["Data Handling"],
+        topic: ["Permutations and Combinations"],
+        difficulty: 2,
+        content: `某班有 $14$ 名男生及 $15$ 名女生。若從該班中選出 $3$ 名相同性別的學生組成一隊，則可組成多少不同的隊？
+<div class="q-mcopt">
+A.\t$819$<br>
+B.\t$3654$<br>
+C.\t$4914$<br>
+D.\t$165620$
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q43",
+        year: 2018,
+        type: "P2",
+        level: ["Senior"],
+        domain: ["Data Handling"],
+        topic: ["Probability"],
+        difficulty: 3,
+        content: `偉明及小麗輪流投擲一枚勻稱骰子，直至其中一人擲得點數「$1$」或「$6$」為止。偉明首先投擲該骰子。求偉明擲得點數「$6$」的概率。
+<div class="q-mcopt">
+A.\t$\\dfrac{1}{2}$<br>
+B.\t$\\dfrac{1}{6}$<br>
+C.\t$\\dfrac{3}{10}$<br>
+D.\t$\\dfrac{7}{10}$
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q44",
+        year: 2018,
+        type: "P2",
+        level: ["Senior"],
+        domain: ["Data Handling"],
+        topic: ["Measures of Dispersion"],
+        difficulty: 2,
+        content: `在某測驗，測驗得分的平均值為 $68$ 分。文俊在該測驗得 $46$ 分且他的標準分為 $-2.2$。若素珊在該測驗得 $52$ 分，則她的標準分為
+<div class="q-mcopt">
+A.\t$-2.5$。<br>
+B.\t$-1.6$。<br>
+C.\t$-0.6$。<br>
+D.\t$1.6$。
+</div>`
+    },
+    {
+        id: "2018-DSE-MATH-CP2-Q45",
+        year: 2018,
+        type: "P2",
+        level: ["Senior"],
+        domain: ["Data Handling"],
+        topic: ["Measures of Dispersion"],
+        difficulty: 2,
+        content: `某等差數列有 $49$ 項。若該數列首 $7$ 項的方差為 $9$，則該數列最後 $7$ 項的方差為
+<div class="q-mcopt">
+A.\t$9$。<br>
+B.\t$18$。<br>
+C.\t$49$。<br>
+D.\t$81$。
+</div>`
+    }
+);
