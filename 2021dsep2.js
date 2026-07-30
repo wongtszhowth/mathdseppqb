@@ -600,7 +600,7 @@ D.\tI、II 及 III
 <div class="q-mcms">
 I.\t$ps = qr$
 II.\t$p+s=q+r$
-III.\t$p<q<r<s$ \t
+III.\t$p \\lt q \\lt r \\lt s$
 </div>
 <div class="q-mcopt">
 A.\t只有 I<br>
