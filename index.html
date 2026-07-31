@@ -95,6 +95,30 @@
         width: calc(100% - 20px);
     }
 
+.q-mcopt,
+.q-mcms {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 12px;
+    /* 原本的 margin / width / line-height 保留 */
+}
+
+.q-mcltext {
+    flex: 1 1 auto;   /* 盡量佔剩餘空間 */
+    min-width: 0;     /* 預設值，真正的 min-width 用 inline 覆蓋 */
+}
+
+.q-rimg {
+    flex: 0 1 auto;   /* 不強制放大，可縮小 */
+}
+
+.q-rimg img {
+    display: block;
+    max-width: 100%;  /* 保護：不會超出自己的容器 */
+    height: auto;
+}
+        
     /* 分數標籤 -> 100% 貼齊最右邊 */
     .marks {
         float: right;
