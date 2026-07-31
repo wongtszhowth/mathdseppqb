@@ -218,12 +218,11 @@ D.	$243$。
         topic: ["Equations of Straight Lines", "Coordinate Geometry"],
         difficulty: 2,
         content: `圖中，直線 $L$ 的方程為 $px + qy = 7$。 下列何者正確？
-<div class="q-mcms">
+<div class="q-mcms"><img src="img/2025dsep2q14.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px;">
 I.	$p > 7$
 II.	$q > 7$
 III.	$q > p$
 </div>
-<img src="img/2025dsep2q14.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px;">
 <div class="q-mcopt">
 A.	只有 I<br>
 B.	只有 II<br>
