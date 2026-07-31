@@ -72,7 +72,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Linear Inequalities and Compound Inequalities"],
         difficulty: 2,
-        content: `考慮複合不等式 <br><div style="text-align: center;">$\\dfrac{6x+1}{2} < x-8$ 或 $3x-21 \\ge 0$ ...............(*)。</div><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">解 $(*)$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出滿足 $(*)$ 的最大整數。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `考慮複合不等式 <br><div style="text-align: center;">$\\dfrac{6x+1}{2} < x-8$  或  $3x-21 \\ge 0$  ...............(*)。</div><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">解 (*)。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出滿足 (*) 的最大整數。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `注意複合不等式使用的是「或 (or)」，解出兩個不等式後取其聯集。`,
         solution: `(a) $\\begin{aligned} \\frac{6x+1}{2} &< x-8 \\\\ 6x+1 &< 2x-16 \\\\ 6x-2x &< -16-1 \\\\ 4x &< -17 \\\\ x &< \\frac{-17}{4} \\end{aligned}$ 且 $\\begin{aligned} 3x &\\le -21 \\\\ x &\\le -7 \\end{aligned}$<br>因此，(*) 的解為 $x \\le -7$。<br>(b) $-5$`
     },
@@ -96,7 +96,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Plane Geometry"],
         difficulty: 3,
-        content: `圖中，$ST$ 與 $UV$ 相交於點 $W$ 。 已知 $SU\text{//}VT$ 及 $W$ 為 $ST$ 的中點。
+        content: `圖中，$ST$ 與 $UV$ 相交於點 $W$ 。 已知 $SU//VT$ 及 $W$ 為 $ST$ 的中點。
 <img src="img/2025dsep1q08.jpg" class="q-img" alt="題目附圖" style="max-width: 40%;">
 <div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明 $\\Delta SUW \\cong \\Delta TVW$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">設 $X$ 為 $TW$ 上的一點使得 $\\Delta SUW \\sim \\Delta VXW$。 若 $SU = 57\\text{ cm}$、 $SW = 63\\text{ cm}$ 及 $WX = 7\\text{ cm}$，求 $\\Delta TVX$ 的周界。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 利用平行線的內錯角 (A.A.S. 或 A.S.A.) 證明全等；(b) 運用相似三角形的對應邊成比例求出未知邊長。`,
@@ -146,8 +146,7 @@ questions.push(
         domain: ["Data Handling"],
         topic: ["Statistical Graphs", "Measures of Dispersion"],
         difficulty: 3,
-        content: `下面的幹葉圖顯示一些運動員在訓練前的體重（以 $\\text{kg}$ 為單位）的分佈：<pre style="white-space: pre-wrap; word-break: break-all;">幹(十位) | 葉(個位)\n4        | 5 6 7 8 9\n5        | 0 3 4 5 6 7 8\n6        | 2 4 w\n7        | w</pre>上述分佈的分佈域與四分位數間距之差為 $25\\text{ kg}$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出上述分佈的分佈域。 由此，求 $w$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">下面的框線圖顯示該些運動員在訓練後的體重（以 kg 為單位）的分佈。</div></div><img src="img/2025dsep1q12b.jpg" class="q-img" alt="題目附圖" style="max-width: 70%; height: auto;"><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求因訓練而引致該分佈的上四分位數的改變。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">該些運動員在訓練後的體重的分佈的離差是否較訓練前的小？ 試解釋你的答案。</div></div>
-        <span class="marks">(4分)</span><div class="q-clearfix"></div>`,
+        content: `下面的幹葉圖顯示一些運動員在訓練前的體重（以 $\\text{kg}$ 為單位）的分佈：<pre style="white-space: pre-wrap; word-break: break-all;">幹(十位) | 葉(個位)\n4        | 5 6 7 8 9\n5        | 0 3 4 5 6 7 8\n6        | 2 4 w\n7        | w</pre>上述分佈的分佈域與四分位數間距之差為 $25\\text{ kg}$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出上述分佈的分佈域。 由此，求 $w$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">下面的框線圖顯示該些運動員在訓練後的體重（以 kg 為單位）的分佈。</div></div><img src="img/2025dsep1q12b.jpg" class="q-img" alt="題目附圖" style="max-width: 70%; height: auto;"><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求因訓練而引致該分佈的上四分位數的改變。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">該些運動員在訓練後的體重的分佈的離差是否較訓練前的小？ 試解釋你的答案。</div></div><span class="marks">(4分)</span><div class="q-clearfix"></div>`,
         hint: `分佈域 $=$ 最大值 $-$ 最小值。四分位數間距 $= Q_3 - Q_1$。依據二者之差建立關於 $w$ 的方程。`,
         solution: `(a) 分佈域 $= 42\\text{ kg}$<br>四分位數間距 $= 42-25 = 17\\text{ kg}$<br>上四分位數 $= 69\\text{ kg}$<br>下四分位數 $= 69-17 = 52\\text{ kg}$<br>由此可得 $w=2$。<br><br>(b) (i) 上四分位數的變化 $= 64-69 = -5\\text{ kg}$<br>因此，上四分位數減少了 $5\\text{ kg}$。<br><br>(ii) 訓練前該分佈的分佈域 $= 42\\text{ kg}$<br>訓練後該分佈的分佈域 $= 67-46 = 21\\text{ kg}$<br>由於訓練後的分佈域小於訓練前，因此運動員體重的分佈較訓練前更凝聚。<br>【或】<br>訓練前該分佈的四分位數間距 $= 17\\text{ kg}$<br>訓練後該分佈的四分位數間距 $= 64-54 = 10\\text{ kg}$<br>由於訓練後的四分位數間距小於訓練前，開得運動員體重的分佈較訓練前更凝聚。`
     },
