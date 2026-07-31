@@ -110,16 +110,15 @@ questions.push(
         domain: ["Data Handling"],
         topic: ["Measures of Central Tendency", "Measures of Dispersion"],
         difficulty: 3,
-        content: `下表顯示一些學生擁有原子筆的數目的分佈。
-        <div style="overflow-x: auto; width: 100%; margin-bottom: 8px;">
-  <table class="q-table" style="width: 100%; min-width: 300px; border-collapse: collapse; table-layout: auto;">
+        content: `下表顯示一些學生擁有原子筆的數目的分佈。<div style="overflow-x: auto; width: 100%; margin-bottom: 8px;">
+  <table class="q-table" style="min-width: 300px; border-collapse: collapse; table-layout: auto;">
     <colgroup>
       <col style="width: auto;">
-      <col style="width: 1fr;">
-      <col style="width: 1fr;">
-      <col style="width: 1fr;">
-      <col style="width: 1fr;">
-      <col style="width: 1fr;">
+      <col style="width: 2.5em;">
+      <col style="width: 2.5em;">
+      <col style="width: 2.5em;">
+      <col style="width: 2.5em;">
+      <col style="width: 2.5em;">
     </colgroup>
     <tr>
       <th style="border: 1px solid #000; text-align: center; padding: 6px 10px;">原子筆的數目</th>
