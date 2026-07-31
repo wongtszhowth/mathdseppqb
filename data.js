@@ -110,7 +110,36 @@ questions.push(
         domain: ["Data Handling"],
         topic: ["Measures of Central Tendency", "Measures of Dispersion"],
         difficulty: 3,
-        content: `下表顯示一些學生擁有原子筆的數目的分佈。<div style="overflow-x: auto; width: 100%; margin-bottom: 8px;"><table class="q-table" style="width: 100%; min-width: 300px;"><tr><th>原子筆的數目</th><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr><tr><th>學生人數</th><td>9</td><td>13</td><td>2</td><td>$s$</td><td>11</td></tr></table></div>該分佈的中位數為 $7$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $s$ 的最小可取值。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出 $s$ 的最大可取值。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">求該分佈的最大可取標準差。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `下表顯示一些學生擁有原子筆的數目的分佈。
+        <div style="overflow-x: auto; width: 100%; margin-bottom: 8px;">
+  <table class="q-table" style="width: 100%; min-width: 300px; border-collapse: collapse; table-layout: auto;">
+    <colgroup>
+      <col style="width: auto;">
+      <col style="width: 1fr;">
+      <col style="width: 1fr;">
+      <col style="width: 1fr;">
+      <col style="width: 1fr;">
+      <col style="width: 1fr;">
+    </colgroup>
+    <tr>
+      <th style="border: 1px solid #000; text-align: center; padding: 6px 10px;">原子筆的數目</th>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">5</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">6</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">7</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">8</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">9</td>
+    </tr>
+    <tr>
+      <th style="border: 1px solid #000; text-align: center; padding: 6px 10px;">學生人數</th>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">9</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">13</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">2</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">$s$</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">11</td>
+    </tr>
+  </table>
+</div>
+該分佈的中位數為 $7$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $s$ 的最小可取值。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出 $s$ 的最大可取值。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">求該分佈的最大可取標準差。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `中位數為 $7$ 代表小於或等於 $7$ 的數據個數與大於或等於 $7$ 的數據個數需要滿足中位數的定義限制。`,
         solution: `(a) 設 $m$ 為 $s$ 的最小可能值。<br>$\\begin{aligned} 9+13 &= 1+m+11 \\\\ m &= 10 \\end{aligned}$<br>因此，$s$ 的最小可能值為 10。<br><br>(b) 12<br><br>(c) 共有三種情況。<br>情況 1： 當 $s=10$ 時，該分佈的標準差 $\\approx 1.512744216$<br>情況 2： 當 $s=11$ 時，該分佈的標準差 $\\approx 1.502990088$<br>情況 3： 當 $s=12$ 時，該分佈的標準差 $\\approx 1.493307842$<br><br>因此，該分佈的最大可能標準差為 1.51。`
     },
