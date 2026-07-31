@@ -292,11 +292,12 @@ D.	$115$ cm$^2$。
         topic: ["Plane Geometry", "Similar Triangles"],
         difficulty: 3,
         content: `圖中所示為三角形 $WXY$。 設 $Z$ 為 $WY$ 上的一點使得 $WY:XY = XY:YZ$。 若 $WX=65$ cm 、 $WZ=25$ cm 及 $XZ=60$ cm，則 $XY =$
-<div class="q-mcopt"><img src="img/2025dsep2q18.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 60%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
-A.	$131$ cm。 <br>
-B.	$144$ cm。 <br>
-C.	$156$ cm。 <br>
-D.	$169$ cm。 
+<div class="q-mcopt"><div class="q-rimg"><img src="img/2025dsep2q18.jpg" alt="題目附圖" style="max-width: 60%;"></div>
+<div class="q-mcltext" style="min-width: 500px;">
+A.	$131$ cm。<br>
+B.	$144$ cm。<br>
+C.	$156$ cm。<br>
+D.	$169$ cm。</div>
 </div>`
     },
     {
