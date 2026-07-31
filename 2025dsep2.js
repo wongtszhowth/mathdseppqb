@@ -218,7 +218,7 @@ D.	$243$。
         topic: ["Equations of Straight Lines", "Coordinate Geometry"],
         difficulty: 2,
         content: `圖中，直線 $L$ 的方程為 $px + qy = 7$。 下列何者正確？
-<div class="q-mcms"><img src="img/2025dsep2q14.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px;">
+<div class="q-mcms"><img src="img/2025dsep2q14.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 I.	$p > 7$
 II.	$q > 7$
 III.	$q > p$
@@ -276,7 +276,7 @@ D.	$864\\pi$ cm$^3$。
         topic: ["Plane Geometry", "Areas and Volumes"],
         difficulty: 3,
         content: `圖中，$ABCD$ 為一平行四邊形。 設 $E$ 、 $F$ 及 $G$ 分別為 $AB$ 、 $AD$ 及 $CD$ 上的點使得 $BE = 3AE$ 、 $2DF = 3AF$ 及 $DG = 2CG$。 已知 $BC$ 的延線與 $EG$ 的延線相交於點 $H$。 若 $\\Delta CGH$ 的面積為 $16$ cm$^2$，則四邊形 $DFBG$ 的面積為
-<div class="q-mcopt"><img src="img/2025dsep2q17.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 60%; margin-left: 15px; margin-bottom: 5px;">
+<div class="q-mcopt"><img src="img/2025dsep2q17.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 60%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.	$46$ cm$^2$。 <br>
 B.	$49$ cm$^2$。 <br>
 C.	$105$ cm$^2$。 <br>
@@ -292,7 +292,7 @@ D.	$115$ cm$^2$。
         topic: ["Plane Geometry", "Similar Triangles"],
         difficulty: 3,
         content: `圖中所示為三角形 $WXY$。 設 $Z$ 為 $WY$ 上的一點使得 $WY:XY = XY:YZ$。 若 $WX=65$ cm 、 $WZ=25$ cm 及 $XZ=60$ cm，則 $XY =$
-<div class="q-mcopt"><img src="img/2025dsep2q18.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 60%; margin-left: 15px; margin-bottom: 5px;">
+<div class="q-mcopt"><img src="img/2025dsep2q18.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 60%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.	$131$ cm。 <br>
 B.	$144$ cm。 <br>
 C.	$156$ cm。 <br>
