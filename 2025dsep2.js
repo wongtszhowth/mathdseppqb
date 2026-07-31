@@ -223,7 +223,7 @@ I.	$p > 7$
 II.	$q > 7$
 III.	$q > p$
 </div>
-<img src="img/2025dsep2q14.jpg" class="q-img" alt="題目附圖" style="max-width: 350px;">
+<img src="img/2025dsep2q14.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px;">
 <div class="q-mcopt">
 A.	只有 I<br>
 B.	只有 II<br>
