@@ -223,6 +223,7 @@ I.	$p > 7$
 II.	$q > 7$
 III.	$q > p$
 </div>
+<img src="img/2025dsep2q14.jpg" class="q-img" alt="題目附圖" style="max-width: 350px;">
 <div class="q-mcopt">
 A.	只有 I<br>
 B.	只有 II<br>
@@ -276,6 +277,7 @@ D.	$864\\pi$ cm$^3$。
         topic: ["Plane Geometry", "Areas and Volumes"],
         difficulty: 3,
         content: `圖中，$ABCD$ 為一平行四邊形。 設 $E$ 、 $F$ 及 $G$ 分別為 $AB$ 、 $AD$ 及 $CD$ 上的點使得 $BE = 3AE$ 、 $2DF = 3AF$ 及 $DG = 2CG$。 已知 $BC$ 的延線與 $EG$ 的延線相交於點 $H$。 若 $\\Delta CGH$ 的面積為 $16$ cm$^2$，則四邊形 $DFBG$ 的面積為
+<img src="img/2025dsep2q17.jpg" class="q-img" alt="題目附圖" style="max-width: 350px;">
 <div class="q-mcopt">
 A.	$46$ cm$^2$。 <br>
 B.	$49$ cm$^2$。 <br>
@@ -292,6 +294,7 @@ D.	$115$ cm$^2$。
         topic: ["Plane Geometry", "Similar Triangles"],
         difficulty: 3,
         content: `圖中所示為三角形 $WXY$。 設 $Z$ 為 $WY$ 上的一點使得 $WY:XY = XY:YZ$。 若 $WX=65$ cm 、 $WZ=25$ cm 及 $XZ=60$ cm，則 $XY =$
+<img src="img/2025dsep2q18.jpg" class="q-img" alt="題目附圖" style="max-width: 350px;">
 <div class="q-mcopt">
 A.	$131$ cm。 <br>
 B.	$144$ cm。 <br>
@@ -308,6 +311,7 @@ D.	$169$ cm。
         topic: ["Plane Geometry"],
         difficulty: 3,
         content: `圖中，$ABCD$ 為一正方形。 設 $E$ 為一點使得 $CDEF$ 為一菱形，其中 $F$ 為 $AC$ 的延線上的一點。 延長 $DF$ 至點 $G$ 使得 $AF//BG$。 下列何者正確？
+<img src="img/2025dsep2q19.jpg" class="q-img" alt="題目附圖" style="max-width: 350px;">
 <div class="q-mcms">
 I.	$DF = FG$
 II.	$\\Delta BFG \\sim \\Delta DEF$
@@ -345,6 +349,7 @@ D.	$135$ cm。
         topic: ["Plane Geometry", "Areas and Volumes"],
         difficulty: 2,
         content: `圖中，$ABCD$ 為一長方形。 已知 $AE = 20$ cm 及 $\\angle AED = 90^\\circ$。 若 $\\Delta ADE$ 的面積為 $150$ cm$^2$，則由 $E$ 至 $CD$ 的垂直距離為
+<img src="img/2025dsep2q21.jpg" class="q-img" alt="題目附圖" style="max-width: 350px;">
 <div class="q-mcopt">
 A.	$8$ cm。 <br>
 B.	$9$ cm。 <br>
@@ -361,6 +366,7 @@ D.	$15$ cm。
         topic: ["Circle Geometry"],
         difficulty: 3,
         content: `圖中，$RSTUV$ 為一圓。 已知 $RT//VU$ 及 $RT$ 為 $\\triangle SRU$ 的角平分線。 若 $\\angle RTS = \\angle URV = 33^\\circ$，則 $\\angle RUT =$
+<img src="img/2025dsep2q22.jpg" class="q-img" alt="題目附圖" style="max-width: 350px;">
 <div class="q-mcopt">
 A.	$36^\\circ$。 <br>
 B.	$49^\\circ$。 <br>
@@ -377,6 +383,7 @@ D.	$71^\\circ$。
         topic: ["Trigonometry (2D)"],
         difficulty: 2,
         content: `圖中所示為四邊形 $ABCD$。 若 $\\angle ABC + \\angle ADC = \\angle ACD = \\angle BAC = 90^\\circ$，則下列何者必為正確？
+<img src="img/2025dsep2q23.jpg" class="q-img" alt="題目附圖" style="max-width: 350px;">
 <div class="q-mcopt">
 A.	$\\tan \\angle ACB = \\dfrac{AB}{AD}$<br>
 B.	$\\tan \\angle ACB = \\dfrac{AB}{CD}$<br>
@@ -475,6 +482,7 @@ D.	$25$
         topic: ["Measures of Dispersion", "Statistical Graphs"],
         difficulty: 2,
         content: `下面的棒形圖顯示一些教師在某月內的閱書數目的分佈。 求該分佈的四分位數間距。 
+<img src="img/2025dsep2q29zh.jpg" class="q-img" alt="題目附圖" style="max-width: 550px;">
 <div class="q-mcopt">
 A.	$1$<br>
 B.	$2$<br>
@@ -644,6 +652,7 @@ D.	只有 II 及 III
         topic: ["Circle Geometry"],
         difficulty: 3,
         content: `圖中，$AC$ 為圓 $ABCD$ 的一直徑。 將 $AC$ 與 $BD$ 的交點記為 $E$。 已知 $TD$ 為該圓在 $D$ 的切線。 若 $\\angle BEC = 96^\\circ$ 及 $\\angle CDT = 41^\\circ$，則 $\\angle CDE =$
+<img src="img/2025dsep2q17.jpg" class="q-img" alt="題目附圖" style="max-width: 450px;">
 <div class="q-mcopt">
 A.	$47^\\circ$。 <br>
 B.	$48^\\circ$。 <br>
