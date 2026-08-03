@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>0803-2050 DSE 數學題目庫</title>
+    <title>0803-2100 DSE 數學題目庫</title>
     <script>
         window.MathJax = {
             tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }, 
@@ -124,7 +124,7 @@
         .btn-toggle { background: #475569; color: white; padding: 4px 10px; font-size: 12px; }
         .btn-reset { background: #e2e8f0; color: #334155; padding: 4px 10px; font-size: 12px; }
         
-        /* 🎯 新增：錯題簿切換按鈕樣式 */
+        /* 錯題簿切換按鈕樣式 */
         .btn-mistake-mode { background: #fee2e2; color: #991b1b; padding: 4px 10px; font-size: 12px; font-weight: bold; border: 1px solid #fca5a5; }
         .btn-mistake-mode.active { background: #dc2626; color: white; border-color: #b91c1c; }
 
@@ -162,7 +162,7 @@
         summary { padding: 12px; font-weight: bold; color: #475569; cursor: pointer; }
         .detail-content { padding: 15px; background: #fff; }
 
-        /* 🎯 新增：錯題簿相關的卡片控制 UI */
+        /* 錯題簿相關的卡片控制 UI */
         .card-actions { display: flex; justify-content: flex-end; margin-top: 10px; gap: 8px; }
         .btn-mistake { padding: 4px 10px; font-size: 12px; border-radius: 6px; border: 1px solid #cbd5e1; background: #f8fafc; cursor: pointer; transition: all 0.2s; color: #475569; }
         .btn-mistake:hover { background: #f1f5f9; }
@@ -389,7 +389,7 @@
     <script src="2018dsep2.js"></script>
     
     <script>
-        // ---------------- LocalStorage 錯題簿管理 ----------------
+        // LocalStorage 錯題簿管理
         const STORAGE_KEY = 'dse_math_mistakes';
         let isMistakeOnlyMode = false;
 
@@ -418,8 +418,6 @@
             const existingNote = mistakes[qId] ? mistakes[qId].note : '';
             
             const note = prompt(`請輸入對 ${qId} 的錯題筆記（例如：錯解原因、概念漏洞）：`, existingNote);
-            
-            // 如果點擊取消，不進行任何操作
             if (note === null) return;
 
             const now = new Date();
@@ -457,7 +455,7 @@
             applyFilter();
         }
 
-        // ---------------- 介面互動與篩選邏輯 ----------------
+        // 介面互動與篩選邏輯
         function toggleChip(button) {
             button.classList.toggle('active');
         }
@@ -532,6 +530,18 @@
 
             const mistakes = getMistakes();
 
+            // 🎯 關鍵防護：如果不是錯題模式，且完全沒有輸入或選擇任何條件，則不進行載入
+            const isNoCondition = keyword === "" && selectedLevels.length === 0 && selectedTypes.length === 0 && 
+                                  selectedSections.length === 0 && selectedYears.length === 0 && 
+                                  selectedDiffs.length === 0 && selectedTopics.length === 0;
+
+            const list = document.getElementById('list');
+
+            if (!isMistakeOnlyMode && isNoCondition) {
+                list.innerHTML = `<p style="text-align:center; color:#777; margin-top:50px; font-size:15px;">💡 請選擇上方篩選條件並點擊「套用篩選條件」，或輸入關鍵字開始練習。</p>`;
+                return;
+            }
+
             if (typeof questions === 'undefined') return;
 
             const filtered = questions.filter(q => {
@@ -551,10 +561,9 @@
                 return matchKeyword && matchLevel && matchType && matchSection && matchYear && matchDiff && matchTopic;
             });
 
-            const list = document.getElementById('list');
             if(filtered.length === 0) {
                 if (isMistakeOnlyMode) {
-                    list.innerHTML = `<p style="text-align:center; color:#999; margin-top:50px;">目前錯題簿中沒有符合篩選條件的題目。</p>`;
+                    list.innerHTML = `<p style="text-align:center; color:#999; margin-top:50px;">目前錯題簿中沒有符合條件的題目。</p>`;
                 } else {
                     list.innerHTML = `<p style="text-align:center; color:#999; margin-top:50px;">沒有符合條件的題目。</p>`;
                 }
