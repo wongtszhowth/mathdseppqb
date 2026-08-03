@@ -621,7 +621,7 @@ D.	$4$
       <td style="border: 0px; text-align: center; padding: 0px 0px;">$4$</td>
     </tr>
   </table>
-$\\alpha$　$\\beta$　$-4$　$-3$　$1$　$1$　$1$　$4$
+$\\alpha$　　$\\beta$　　$-4$　　$-3$　　$1$　　$1$　　$1$　　$4$
 將以上數據的眾數及中位數分別記為 $s$ 及 $t$。 若以上數據的平均值及分佈域分別為 $0$ 及 $10$，則下列何者正確？
 <div class="q-mcms">
 I.	$s = 1$
