@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>0803-1450 DSE 數學題目庫</title>
+    <title>0803-1500 DSE 數學題目庫</title>
     <script>
         window.MathJax = {
             tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }, 
@@ -29,10 +29,10 @@
         .filter-sub-group { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; }
         .filter-divider-text { color: #cbd5e1; font-weight: bold; margin: 0 2px; font-size: 12px; }
         
-        /* 精簡 Chips 邊距 (Padding 3px 8px) */
+        /* 🎯 1. 所有 Chips 通用精簡 padding (3px 8px) */
         .chip-group { display: flex; flex-wrap: wrap; gap: 4px; }
         .chip { 
-            padding: 3px 8px; 
+            padding: 3px 8px !important; 
             border: 1px solid #cbd5e1; 
             border-radius: 8px; 
             font-size: 12.5px; 
@@ -48,16 +48,16 @@
         }
         .chip:hover { border-color: #94a3b8; background: #f8fafc; }
         
-        /* 基本資訊預設使用「淺紫色」主題色 */
+        /* 一般基本資訊 (卷別/級別) 激活時使用「淺紫色」主題色 */
         .chip.active { background: #8b5cf6; color: white; border-color: #7c3aed; font-weight: 500; }
 
-        /* 年份 Chips 專屬等寬樣式 */
+        /* 年份 Chips 專屬等寬 */
         .chip-year {
             min-width: 52px;
             text-align: center;
         }
 
-        /* 難度 Chips 專屬等寬樣式與題目標籤專屬對應色 */
+        /* 難度 Chips 專屬等寬與對應標籤色彩 */
         .chip-diff { 
             min-width: 68px; 
             text-align: center; 
@@ -74,7 +74,7 @@
         .domain-header .arrow { transition: transform 0.3s ease; font-size: 11px; color: #64748b; margin-left: 6px; }
         .domain-accordion.open .domain-header .arrow { transform: rotate(180deg); }
         
-        /* 範疇全選按鈕樣式 */
+        /* 範疇全選按鈕基礎樣式 */
         .btn-select-all { 
             font-size: 11px; 
             padding: 2px 6px; 
@@ -88,10 +88,21 @@
         }
         .btn-select-all:hover { background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
         
-        /* 三大範疇主題色彩標頭 */
+        /* 🎯 2 & 3. 三大範疇主題色彩、課題 Chips 顏色與全選按鈕激活色系對齊 */
+        /* [範疇 1: 數與代數 - 藍色系] */
         .domain-algebra .domain-header { background: #eef2ff; color: #1e40af; }
+        .domain-algebra .chip.active { background: #3b82f6; border-color: #1d4ed8; color: white; }
+        .domain-algebra .btn-select-all.active { background: #2563eb; color: white; border-color: #1d4ed8; font-weight: 500; }
+
+        /* [範疇 2: 度量、圖形與空間 - 綠色系] */
         .domain-geometry .domain-header { background: #f0fdf4; color: #166534; }
+        .domain-geometry .chip.active { background: #10b981; border-color: #047857; color: white; }
+        .domain-geometry .btn-select-all.active { background: #059669; color: white; border-color: #047857; font-weight: 500; }
+
+        /* [範疇 3: 數據處理 - 橙/琥珀色系] */
         .domain-data .domain-header { background: #fff7ed; color: #9a3412; }
+        .domain-data .chip.active { background: #f97316; border-color: #c2410c; color: white; }
+        .domain-data .btn-select-all.active { background: #ea580c; color: white; border-color: #c2410c; font-weight: 500; }
 
         .domain-body { display: none; padding: 10px 12px; background: #fff; border-top: 1px solid #e2e8f0; }
         .domain-accordion.open .domain-body { display: block; }
@@ -151,7 +162,7 @@
     <div class="filter-container" id="filterContainer">
         <div class="filter-header">
             <button class="btn btn-toggle" id="toggleBtn" onclick="toggleFilter()">隱藏篩選器</button>
-            <div><button class="btn btn-reset" onclick="resetFilters()">重設條件</button></div>
+            <div><button class="btn btn-reset" onclick="resetFilters()">重設所有條件</button></div>
         </div>
         
         <div class="filter-body">
@@ -162,11 +173,11 @@
                 
                 <!-- 1. 卷別 -->
                 <div class="filter-item">
-                    <div class="filter-title">卷別</div>
+                    <div class="filter-title">卷別：</div>
                     <div class="filter-item-row">
                         <div class="filter-sub-group" id="p1Group">
-                            <button class="chip" data-group="type" data-value="P1" onclick="toggleChip(this)">卷一</button>
-                            <span class="filter-divider-text"> </span>
+                            <button class="chip" data-group="type" data-value="P1" onclick="toggleChip(this)">卷一 (長題目)</button>
+                            <span class="filter-divider-text">&gt;</span>
                             <button class="chip" data-group="section" data-value="A1" onclick="toggleChip(this)">甲部(1)</button>
                             <button class="chip" data-group="section" data-value="A2" onclick="toggleChip(this)">甲部(2)</button>
                             <button class="chip" data-group="section" data-value="B" onclick="toggleChip(this)">乙部</button>
@@ -174,8 +185,8 @@
                     </div>
                     <div class="filter-item-row" style="margin-top: 2px;">
                         <div class="filter-sub-group" id="p2Group">
-                            <button class="chip" data-group="type" data-value="P2" onclick="toggleChip(this)">卷二</button>
-                            <span class="filter-divider-text"> </span>
+                            <button class="chip" data-group="type" data-value="P2" onclick="toggleChip(this)">卷二 (MC)</button>
+                            <span class="filter-divider-text">&gt;</span>
                             <button class="chip" data-group="section" data-value="MC_A" onclick="toggleChip(this)">甲部</button>
                             <button class="chip" data-group="section" data-value="MC_B" onclick="toggleChip(this)">乙部</button>
                         </div>
@@ -184,7 +195,7 @@
 
                 <!-- 2. 年份 (.chip-year) -->
                 <div class="filter-item">
-                    <div class="filter-title">年份</div>
+                    <div class="filter-title">年份：</div>
                     <div class="chip-group" id="yearGroup">
                         <button class="chip chip-year" data-group="year" data-value="2025" onclick="toggleChip(this)">2025</button>
                         <button class="chip chip-year" data-group="year" data-value="2024" onclick="toggleChip(this)">2024</button>
@@ -205,7 +216,7 @@
 
                 <!-- 3. 級別與難度 -->
                 <div class="filter-item">
-                    <div class="filter-title">級別與難度</div>
+                    <div class="filter-title">級別與難度：</div>
                     <div class="chip-group">
                         <button class="chip" data-group="level" data-value="Junior" onclick="toggleChip(this)">初中</button>
                         <button class="chip" data-group="level" data-value="Senior" onclick="toggleChip(this)">高中</button>
@@ -218,13 +229,13 @@
                     </div>
                 </div>
 
-                <!-- 4. 範疇與課題 (含範疇全選/取消按鈕) -->
+                <!-- 4. 範疇與課題 (課題與全選按鈕套用專屬範疇顏色系) -->
                 <div class="filter-item">
-                    <div class="filter-title">範疇與課題</div>
+                    <div class="filter-title">範疇與課題：</div>
                     
                     <div style="display: flex; flex-direction: column; gap: 6px;" id="topicGroupContainer">
                         
-                        <!-- 範疇 1: 數與代數 -->
+                        <!-- 範疇 1: 數與代數 (藍色系) -->
                         <div class="domain-accordion domain-algebra" id="accordionAlgebra">
                             <div class="domain-header" onclick="toggleAccordion('accordionAlgebra')">
                                 <div class="domain-header-left">
@@ -285,7 +296,7 @@
                             </div>
                         </div>
 
-                        <!-- 範疇 2: 度量、圖形與空間 -->
+                        <!-- 範疇 2: 度量、圖形與空間 (綠色系) -->
                         <div class="domain-accordion domain-geometry" id="accordionGeometry">
                             <div class="domain-header" onclick="toggleAccordion('accordionGeometry')">
                                 <div class="domain-header-left">
@@ -330,7 +341,7 @@
                             </div>
                         </div>
 
-                        <!-- 範疇 3: 數據處理 -->
+                        <!-- 範疇 3: 數據處理 (橙/琥珀色系) -->
                         <div class="domain-accordion domain-data" id="accordionData">
                             <div class="domain-header" onclick="toggleAccordion('accordionData')">
                                 <div class="domain-header-left">
@@ -398,7 +409,7 @@
             accordion.classList.toggle('open');
         }
 
-        /* 範疇一鍵全選 / 全取消 */
+        /* 🎯 範疇一鍵全選 / 全取消 (同步切換按鈕色系 active 類別) */
         function toggleDomainSelectAll(event, accordionId) {
             event.stopPropagation(); // 阻止觸發摺疊選單
             const accordion = document.getElementById(accordionId);
@@ -410,9 +421,11 @@
             if (allActive) {
                 chips.forEach(chip => chip.classList.remove('active'));
                 btn.innerText = "全選";
+                btn.classList.remove('active');
             } else {
                 chips.forEach(chip => chip.classList.add('active'));
                 btn.innerText = "取消全選";
+                btn.classList.add('active');
             }
         }
 
@@ -434,7 +447,7 @@
         }
 
         function applyFilter() {
-            // 🎯 按下套用後自動隱藏篩選器
+            // 按下套用後自動隱藏篩選器
             const container = document.getElementById('filterContainer');
             const btn = document.getElementById('toggleBtn');
             if (!container.classList.contains('minimized')) {
@@ -516,7 +529,10 @@
         function resetFilters() {
             document.getElementById('keyword').value = "";
             document.querySelectorAll('.chip.active').forEach(chip => chip.classList.remove('active'));
-            document.querySelectorAll('.btn-select-all').forEach(btn => btn.innerText = "全選");
+            document.querySelectorAll('.btn-select-all').forEach(btn => {
+                btn.innerText = "全選";
+                btn.classList.remove('active');
+            });
             applyFilter();
         }
 
