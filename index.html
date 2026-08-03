@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>0803-2100 DSE 數學題目庫</title>
+    <title>0803-2110 DSE 數學題目庫</title>
     <script>
         window.MathJax = {
             tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }, 
@@ -186,7 +186,7 @@
         </div>
         
         <div class="filter-body">
-            <input type="text" id="keyword" placeholder="搜尋關鍵字、題目編號..." onkeydown="if(event.key === 'Enter') applyFilter()">
+            <input type="text" id="keyword" placeholder="搜尋關鍵字、題目編號..." onkeydown="if(event.key === 'Enter') applyFilter(false)">
 
             <!-- 清單形式篩選區塊 -->
             <div class="filter-list">
@@ -366,7 +366,7 @@
             </div>
 
             <div class="btn-group-action">
-                <button class="btn btn-apply" onclick="applyFilter()">🔍 套用篩選條件</button>
+                <button class="btn btn-apply" onclick="applyFilter(false)">🔍 套用篩選條件</button>
             </div>
         </div>
     </div>
@@ -429,7 +429,7 @@
             };
 
             saveMistakes(mistakes);
-            applyFilter();
+            applyFilter(true); // 保留當前滾動位置
         }
 
         function removeMistake(qId) {
@@ -437,7 +437,7 @@
                 const mistakes = getMistakes();
                 delete mistakes[qId];
                 saveMistakes(mistakes);
-                applyFilter();
+                applyFilter(true); // 保留當前滾動位置
             }
         }
 
@@ -452,7 +452,7 @@
                 btn.innerHTML = `📌 我的錯題簿 (<span id="mistakeCount">0</span>)`;
             }
             updateMistakeBadge();
-            applyFilter();
+            applyFilter(false);
         }
 
         // 介面互動與篩選邏輯
@@ -501,7 +501,9 @@
             return '';
         }
 
-        function applyFilter() {
+        function applyFilter(keepScroll = false) {
+            const currentScroll = keepScroll ? window.scrollY : 0;
+
             const container = document.getElementById('filterContainer');
             const btn = document.getElementById('toggleBtn');
             if (!container.classList.contains('minimized')) {
@@ -516,10 +518,10 @@
                     <div>正在搜尋與排版題目，請稍候...</div>
                 </div>
             `;
-            setTimeout(filterData, 50);
+            setTimeout(() => filterData(currentScroll), 50);
         }
 
-        async function filterData() {
+        async function filterData(targetScrollY) {
             const keyword = document.getElementById('keyword').value.toLowerCase();
             const selectedLevels = getSelectedGroupValues('group', 'level');
             const selectedTypes = getSelectedGroupValues('group', 'type');
@@ -530,7 +532,7 @@
 
             const mistakes = getMistakes();
 
-            // 🎯 關鍵防護：如果不是錯題模式，且完全沒有輸入或選擇任何條件，則不進行載入
+            // 🎯 防護機制：沒有選條件不載入
             const isNoCondition = keyword === "" && selectedLevels.length === 0 && selectedTypes.length === 0 && 
                                   selectedSections.length === 0 && selectedYears.length === 0 && 
                                   selectedDiffs.length === 0 && selectedTopics.length === 0;
@@ -545,7 +547,6 @@
             if (typeof questions === 'undefined') return;
 
             const filtered = questions.filter(q => {
-                // 如果開啟了「純錯題模式」
                 if (isMistakeOnlyMode && !mistakes[q.id]) {
                     return false;
                 }
@@ -608,7 +609,7 @@
                             <button class="btn-mistake is-saved" onclick="addOrEditMistake('${q.id}')">✏️ 編輯筆記</button>
                             <button class="btn-mistake" onclick="removeMistake('${q.id}')">❌ 移除錯題</button>
                         ` : `
-                            <button class="btn-mistake" onclick="addOrEditMistake('${q.id}')">➕ 加入錯題簿</button>
+                            <button class="btn-mistake" onclick="addOrEditMistake('${q.id}')">📌</button>
                         `}
                     </div>
                 </div>
@@ -616,6 +617,11 @@
 
             if (window.MathJax && MathJax.typesetPromise) {
                 await MathJax.typesetPromise();
+            }
+
+            // 🎯 自動滾動還原至原本瀏覽位置
+            if (targetScrollY > 0) {
+                window.scrollTo({ top: targetScrollY, behavior: 'instant' });
             }
         }
 
@@ -626,7 +632,7 @@
                 btn.innerText = "全選";
                 btn.classList.remove('active');
             });
-            applyFilter();
+            applyFilter(false);
         }
 
         function toggleFilter() {
@@ -643,7 +649,7 @@
 
         // 初始化錯題數量與頁面
         updateMistakeBadge();
-        applyFilter();
+        applyFilter(false);
     </script>
 </body>
 </html>
