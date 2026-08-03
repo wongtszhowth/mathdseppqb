@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>0803-1500 DSE 數學題目庫</title>
+    <title>0803-1508 DSE 數學題目庫</title>
     <script>
         window.MathJax = {
             tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }, 
@@ -16,7 +16,22 @@
         h1 { font-size: 1.5rem; text-align: center; margin: 10px 0; }
         
         /* 篩選器容器 */
-        .filter-container { position: sticky; top: 10px; z-index: 1000; background: rgba(255, 255, 255, 0.98); padding: 16px 20px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); backdrop-filter: blur(8px); margin-bottom: 25px; }
+        .filter-container {
+    position: sticky;
+    top: 10px;
+    z-index: 1000;
+    background: rgba(240, 240, 240, 0.8);
+    padding: 16px 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    backdrop-filter: blur(8px);
+    margin-bottom: 10px;
+
+    /* 🎯 關鍵改進：限制篩選器最大高度與啟用獨立滾動條 */
+    max-height: 80vh;            /* 不超過螢幕高度的 80% */
+    overflow-y: auto;             /* 內容過長時出現篩選器自身的滾動條 */
+    overscroll-behavior: contain;/* 捲動到篩選器頂端/底端時，不會帶動背後題目的捲動 */
+}
         .filter-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
         .filter-body { transition: all 0.3s ease; }
         .filter-container.minimized .filter-body { display: none; }
