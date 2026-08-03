@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>0803-1750 DSE 數學題目庫</title>
+    <title>0803-2050 DSE 數學題目庫</title>
     <script>
         window.MathJax = {
             tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }, 
@@ -26,14 +26,11 @@
             box-shadow: 0 4px 20px rgba(51,2,64,0.3);
             backdrop-filter: blur(3px);
             margin-bottom: 10px;
-
-            /* 🎯 關鍵改進：限制篩選器最大高度與啟用獨立滾動條 */
-            max-height: 70vh;            /* 不超過螢幕高度的 80% */
-            overflow-y: auto;             /* 內容過長時出現篩選器自身的滾動條 */
-            overscroll-behavior: contain;/* 捲動到篩選器頂端/底端時，不會帶動背後題目的捲動 */
+            max-height: 80vh;
+            overflow-y: auto;
+            overscroll-behavior: contain;
         }
 
-        /* 🎯 2. 隱藏篩選器時，縮減容器上下內襯與去除邊距 */
         .filter-container.minimized {
             padding: 8px 16px;
         }
@@ -43,6 +40,11 @@
             justify-content: space-between; 
             align-items: center; 
             margin-bottom: 0; 
+        }
+
+        .filter-header-left {
+            display: flex;
+            gap: 6px;
         }
 
         .filter-body { 
@@ -60,7 +62,7 @@
         .filter-sub-group { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; }
         .filter-divider-text { color: #cbd5e1; font-weight: bold; margin: 0 2px; font-size: 12px; }
         
-        /* 🎯 1. 所有 Chips 通用精簡 padding (3px 8px) */
+        /* Chips 通用精簡 padding */
         .chip-group { display: flex; flex-wrap: wrap; gap: 4px; }
         .chip { 
             padding: 3px 8px !important; 
@@ -78,26 +80,15 @@
             justify-content: center;
         }
         .chip:hover { border-color: #94a3b8; background: #f8fafc; }
-        
-        /* 一般基本資訊 (卷別/級別) 激活時使用「淺紫色」主題色 */
         .chip.active { background: #8b5cf6; color: white; border-color: #7c3aed; font-weight: 500; }
 
-        /* 年份 Chips 專屬等寬 */
-        .chip-year {
-            min-width: 52px;
-            text-align: center;
-        }
-
-        /* 難度 Chips 專屬等寬與對應標籤色彩 */
-        .chip-diff { 
-            min-width: 68px; 
-            text-align: center; 
-        }
+        .chip-year { min-width: 52px; text-align: center; }
+        .chip-diff { min-width: 68px; text-align: center; }
         .chip-diff[data-value="1"].active { background: #0284c7; border-color: #0369a1; color: white; }
         .chip-diff[data-value="2"].active { background: #d97706; border-color: #b45309; color: white; }
         .chip-diff[data-value="3"].active { background: #dc2626; border-color: #b91c1c; color: white; }
 
-        /* 可展開/摺疊 Accordion 範疇區塊 */
+        /* Accordion */
         .domain-accordion { border: 1px solid #e2e8f0; border-radius: 8px; background: #fafafa; overflow: hidden; margin-top: 4px; }
         .domain-header { padding: 8px 12px; font-weight: bold; font-size: 13.5px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; transition: background 0.2s; }
         .domain-header:hover { background: #f1f5f9; }
@@ -105,32 +96,17 @@
         .domain-header .arrow { transition: transform 0.3s ease; font-size: 11px; color: #64748b; margin-left: 6px; }
         .domain-accordion.open .domain-header .arrow { transform: rotate(180deg); }
         
-        /* 範疇全選按鈕基礎樣式 */
-        .btn-select-all { 
-            font-size: 11px; 
-            padding: 2px 6px; 
-            border-radius: 4px; 
-            background: rgba(255,255,255,0.8); 
-            border: 1px solid rgba(0,0,0,0.15); 
-            color: #333; 
-            cursor: pointer; 
-            font-weight: normal;
-            transition: all 0.2s;
-        }
+        .btn-select-all { font-size: 11px; padding: 2px 6px; border-radius: 4px; background: rgba(255,255,255,0.8); border: 1px solid rgba(0,0,0,0.15); color: #333; cursor: pointer; font-weight: normal; transition: all 0.2s; }
         .btn-select-all:hover { background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
         
-        /* 🎯 2 & 3. 三大範疇主題色彩、課題 Chips 顏色與全選按鈕激活色系對齊 */
-        /* [範疇 1: 數與代數 - 藍色系] */
         .domain-algebra .domain-header { background: #eef2ff; color: #1e40af; }
         .domain-algebra .chip.active { background: #3b82f6; border-color: #1d4ed8; color: white; }
         .domain-algebra .btn-select-all.active { background: #2563eb; color: white; border-color: #1d4ed8; font-weight: 500; }
 
-        /* [範疇 2: 度量、圖形與空間 - 綠色系] */
         .domain-geometry .domain-header { background: #f0fdf4; color: #166534; }
         .domain-geometry .chip.active { background: #10b981; border-color: #047857; color: white; }
         .domain-geometry .btn-select-all.active { background: #059669; color: white; border-color: #047857; font-weight: 500; }
 
-        /* [範疇 3: 數據處理 - 橙/琥珀色系] */
         .domain-data .domain-header { background: #fff7ed; color: #9a3412; }
         .domain-data .chip.active { background: #f97316; border-color: #c2410c; color: white; }
         .domain-data .btn-select-all.active { background: #ea580c; color: white; border-color: #c2410c; font-weight: 500; }
@@ -138,34 +114,33 @@
         .domain-body { display: none; padding: 10px 12px; background: #fff; border-top: 1px solid #e2e8f0; }
         .domain-accordion.open .domain-body { display: block; }
         
-        /* 課題分組分隔線 */
         .topic-group-block { display: flex; flex-wrap: wrap; gap: 4px; }
         .topic-divider { width: 100%; height: 1px; background-color: #f1f5f9; margin: 3px 0; }
 
-        /* 搜尋輸入框與按鈕 */
         input[type="text"] { width: 100%; padding: 8px 12px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 14px; box-sizing: border-box; margin-bottom: 8px; }
         .btn-group-action { display: flex; gap: 8px; margin-top: 12px; }
-        .btn { padding: 6px 14px; border: none; border-radius: 8px; font-size: 13px; cursor: pointer; font-weight: 500; transition: background 0.2s; }
+        .btn { padding: 6px 14px; border: none; border-radius: 8px; font-size: 13px; cursor: pointer; font-weight: 500; transition: all 0.2s; }
         
-        /* 🎯 1. 縮小「顯示/隱藏篩選器」與「重設所有條件」按鈕尺寸 */
         .btn-toggle { background: #475569; color: white; padding: 4px 10px; font-size: 12px; }
         .btn-reset { background: #e2e8f0; color: #334155; padding: 4px 10px; font-size: 12px; }
         
+        /* 🎯 新增：錯題簿切換按鈕樣式 */
+        .btn-mistake-mode { background: #fee2e2; color: #991b1b; padding: 4px 10px; font-size: 12px; font-weight: bold; border: 1px solid #fca5a5; }
+        .btn-mistake-mode.active { background: #dc2626; color: white; border-color: #b91c1c; }
+
         .btn-apply { background: #7c3aed; color: white; font-weight: bold; padding: 9px 18px; font-size: 14.5px; flex: 1; border-radius: 8px; }
         .btn-apply:hover { background: #6d28d9; }
 
-        /* Loading 動畫 */
         .loading-box { text-align: center; padding: 40px 20px; color: #4b5563; }
         .spinner { display: inline-block; width: 28px; height: 28px; border: 3px solid rgba(124, 58, 237, 0.2); border-radius: 50%; border-top-color: #7c3aed; animation: spin 0.8s ease-in-out infinite; margin-bottom: 10px; }
         @keyframes spin { to { transform: rotate(360deg); } }
         
         /* 題目卡片 */
         #list { max-width: 800px; margin: 0 auto; padding-bottom: 50px; }
-        .question-card { background: #fff; border: 1px solid #e2e8f0; padding: 20px; margin: 15px 0; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+        .question-card { background: #fff; border: 1px solid #e2e8f0; padding: 20px; margin: 15px 0; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); position: relative; }
         .card-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #f1f5f9; padding-bottom: 8px; margin-bottom: 12px; }
         .q-id { font-family: SFMono-Regular, Consolas, Menlo, monospace; font-size: 14px; color: #64748b; font-weight: 600; }
         
-        /* 題目卡片難度標籤 */
         .diff-badge { font-size: 12px; font-weight: bold; padding: 3px 10px; border-radius: 6px; }
         .diff-lv1 { background: #e0f2fe; color: #0369a1; }
         .diff-lv2 { background: #fef3c7; color: #b45309; }
@@ -186,6 +161,15 @@
         details { margin-top: 10px; background: #f8fafc; border-radius: 8px; overflow: hidden; }
         summary { padding: 12px; font-weight: bold; color: #475569; cursor: pointer; }
         .detail-content { padding: 15px; background: #fff; }
+
+        /* 🎯 新增：錯題簿相關的卡片控制 UI */
+        .card-actions { display: flex; justify-content: flex-end; margin-top: 10px; gap: 8px; }
+        .btn-mistake { padding: 4px 10px; font-size: 12px; border-radius: 6px; border: 1px solid #cbd5e1; background: #f8fafc; cursor: pointer; transition: all 0.2s; color: #475569; }
+        .btn-mistake:hover { background: #f1f5f9; }
+        .btn-mistake.is-saved { background: #fef2f2; border-color: #fca5a5; color: #dc2626; font-weight: 500; }
+        
+        .mistake-note-box { margin-top: 10px; background: #fff5f5; border: 1px dashed #fca5a5; padding: 10px 12px; border-radius: 8px; font-size: 13px; color: #991b1b; }
+        .mistake-note-header { display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 4px; font-size: 12px; color: #b91c1c; }
     </style>
 </head>
 <body>
@@ -194,7 +178,10 @@
     
     <div class="filter-container" id="filterContainer">
         <div class="filter-header">
-            <button class="btn btn-toggle" id="toggleBtn" onclick="toggleFilter()">隱藏篩選器</button>
+            <div class="filter-header-left">
+                <button class="btn btn-toggle" id="toggleBtn" onclick="toggleFilter()">隱藏篩選器</button>
+                <button class="btn btn-mistake-mode" id="mistakeModeBtn" onclick="toggleMistakeMode()">📌 我的錯題簿 (<span id="mistakeCount">0</span>)</button>
+            </div>
             <div><button class="btn btn-reset" onclick="resetFilters()">重設所有條件</button></div>
         </div>
         
@@ -262,12 +249,11 @@
                     </div>
                 </div>
 
-                <!-- 4. 範疇與課題 (課題與全選按鈕套用專屬範疇顏色系) -->
+                <!-- 4. 範疇與課題 -->
                 <div class="filter-item">
                     <div class="filter-title">範疇與課題</div>
                     
                     <div style="display: flex; flex-direction: column; gap: 6px;" id="topicGroupContainer">
-                        
                         <!-- 範疇 1: 數與代數 (藍色系) -->
                         <div class="domain-accordion domain-algebra" id="accordionAlgebra">
                             <div class="domain-header" onclick="toggleAccordion('accordionAlgebra')">
@@ -286,43 +272,29 @@
                                     <button class="chip" data-value="Algebraic Fractions and Fractional Equations" onclick="toggleChip(this)">代數分式及分式方程</button>
                                     <button class="chip" data-value="Identities" onclick="toggleChip(this)">恆等式</button>
                                     <button class="chip" data-value="Base Conversion" onclick="toggleChip(this)">進制轉換</button>
-                                    
                                     <div class="topic-divider"></div>
-                                    
                                     <button class="chip" data-value="Approximation and Errors" onclick="toggleChip(this)">近似與誤差</button>
                                     <button class="chip" data-value="Estimation" onclick="toggleChip(this)">估算</button>
                                     <button class="chip" data-value="Complex Numbers" onclick="toggleChip(this)">複數</button>
-                                    
                                     <div class="topic-divider"></div>
-
                                     <button class="chip" data-value="Percentages" onclick="toggleChip(this)">百分法</button>
                                     <button class="chip" data-value="Rates, Ratios and Proportions" onclick="toggleChip(this)">率、比及比例</button>
-
                                     <div class="topic-divider"></div>
-
                                     <button class="chip" data-value="Linear Equations in Two Unknowns" onclick="toggleChip(this)">二元一次方程</button>
                                     <button class="chip" data-value="Quadratic Equations in One Unknown" onclick="toggleChip(this)">一元二次方程</button>
-
                                     <div class="topic-divider"></div>
-
                                     <button class="chip" data-value="Linear Inequalities and Compound Inequalities" onclick="toggleChip(this)">一元一次不等式及複合不等式</button>
                                     <button class="chip" data-value="Quadratic Inequalities in One Unknown" onclick="toggleChip(this)">一元二次不等式</button>
                                     <button class="chip" data-value="Linear Inequalities in Two Unknowns" onclick="toggleChip(this)">二元一次不等式</button>
                                     <button class="chip" data-value="Linear Programming" onclick="toggleChip(this)">線性規劃</button>
-
                                     <div class="topic-divider"></div>
-
                                     <button class="chip" data-value="Sequences" onclick="toggleChip(this)">數列</button>
                                     <button class="chip" data-value="Variations" onclick="toggleChip(this)">變分</button>
-
                                     <div class="topic-divider"></div>
-
                                     <button class="chip" data-value="Polynomials" onclick="toggleChip(this)">多項式</button>
                                     <button class="chip" data-value="Remainder Theorem and Factor Theorem" onclick="toggleChip(this)">餘式定理及因式定理</button>
                                     <button class="chip" data-value="H.C.F. and L.C.M." onclick="toggleChip(this)">最大公因式及最小公倍式</button>
-
                                     <div class="topic-divider"></div>
-
                                     <button class="chip" data-value="Functions and Graphs" onclick="toggleChip(this)">函數及其圖像</button>
                                     <button class="chip" data-value="Exponential Functions and Logarithm Functions" onclick="toggleChip(this)">指數函數與對數函數</button>
                                 </div>
@@ -342,33 +314,23 @@
                                 <div class="topic-group-block">
                                     <button class="chip" data-value="Perimeters and Areas" onclick="toggleChip(this)">周界及面積</button>
                                     <button class="chip" data-value="Mensuration" onclick="toggleChip(this)">求積法</button>
-
                                     <div class="topic-divider"></div>
-
                                     <button class="chip" data-value="Geometry (Triangles)" onclick="toggleChip(this)">幾何 (三角形)</button>
                                     <button class="chip" data-value="Geometry (Polygons)" onclick="toggleChip(this)">幾何 (多邊形)</button>
                                     <button class="chip" data-value="Geometry (Circles)" onclick="toggleChip(this)">幾何 (圓形)</button>
                                     <button class="chip" data-value="Four Centres of a Triangle" onclick="toggleChip(this)">三角形的四心</button>
-
                                     <div class="topic-divider"></div>
-
                                     <button class="chip" data-value="Pythagoras Theorem" onclick="toggleChip(this)">畢氏定理</button>
-
                                     <div class="topic-divider"></div>
-
                                     <button class="chip" data-value="Equations of Straight Lines" onclick="toggleChip(this)">直線方程</button>
                                     <button class="chip" data-value="Equations of Circles" onclick="toggleChip(this)">圓方程</button>
                                     <button class="chip" data-value="Coordinate Geometry" onclick="toggleChip(this)">坐標幾何</button>
                                     <button class="chip" data-value="Intersection of Straight Line and Circle" onclick="toggleChip(this)">直線與圓的相交</button>
-
                                     <div class="topic-divider"></div>
-
                                     <button class="chip" data-value="Trigonometric Ratios" onclick="toggleChip(this)">三角比</button>
                                     <button class="chip" data-value="Trigonometry (2D)" onclick="toggleChip(this)">三角學 (2D)</button>
                                     <button class="chip" data-value="Trigonometry (3D)" onclick="toggleChip(this)">三角學 (3D)</button>
-
                                     <div class="topic-divider"></div>
-
                                     <button class="chip" data-value="Loci" onclick="toggleChip(this)">軌跡</button>
                                 </div>
                             </div>
@@ -386,16 +348,12 @@
                             <div class="domain-body">
                                 <div class="topic-group-block">
                                     <button class="chip" data-value="Statistical Graphs" onclick="toggleChip(this)">統計圖表</button>
-
                                     <div class="topic-divider"></div>
-
                                     <button class="chip" data-value="Measures of Central Tendency" onclick="toggleChip(this)">集中趨勢的量度</button>
                                     <button class="chip" data-value="Measures of Dispersion" onclick="toggleChip(this)">離差的量度</button>
                                     <button class="chip" data-value="Standard Score" onclick="toggleChip(this)">標準分</button>
                                     <button class="chip" data-value="Change of Data" onclick="toggleChip(this)">數據的改變</button>
-
                                     <div class="topic-divider"></div>
-
                                     <button class="chip" data-value="Permutations and Combinations" onclick="toggleChip(this)">排列與組合</button>
                                     <button class="chip" data-value="Probability" onclick="toggleChip(this)">概率</button>
                                 </div>
@@ -407,7 +365,6 @@
 
             </div>
 
-            <!-- 動作按鈕 -->
             <div class="btn-group-action">
                 <button class="btn btn-apply" onclick="applyFilter()">🔍 套用篩選條件</button>
             </div>
@@ -416,7 +373,6 @@
 
     <div id="list"></div>
 
-    <!-- JavaScript 題目庫載入 -->
     <script src="data.js"></script>
     <script src="2025dsep2.js"></script>
     <script src="2024dsep1.js"></script>
@@ -433,6 +389,75 @@
     <script src="2018dsep2.js"></script>
     
     <script>
+        // ---------------- LocalStorage 錯題簿管理 ----------------
+        const STORAGE_KEY = 'dse_math_mistakes';
+        let isMistakeOnlyMode = false;
+
+        function getMistakes() {
+            try {
+                return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
+            } catch (e) {
+                return {};
+            }
+        }
+
+        function saveMistakes(mistakes) {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(mistakes));
+            updateMistakeBadge();
+        }
+
+        function updateMistakeBadge() {
+            const mistakes = getMistakes();
+            const count = Object.keys(mistakes).length;
+            const countEl = document.getElementById('mistakeCount');
+            if (countEl) countEl.innerText = count;
+        }
+
+        function addOrEditMistake(qId) {
+            const mistakes = getMistakes();
+            const existingNote = mistakes[qId] ? mistakes[qId].note : '';
+            
+            const note = prompt(`請輸入對 ${qId} 的錯題筆記（例如：錯解原因、概念漏洞）：`, existingNote);
+            
+            // 如果點擊取消，不進行任何操作
+            if (note === null) return;
+
+            const now = new Date();
+            const timeStr = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')} ${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}`;
+
+            mistakes[qId] = {
+                note: note.trim(),
+                time: timeStr
+            };
+
+            saveMistakes(mistakes);
+            applyFilter();
+        }
+
+        function removeMistake(qId) {
+            if (confirm(`確定要將 ${qId} 從錯題簿中移除嗎？`)) {
+                const mistakes = getMistakes();
+                delete mistakes[qId];
+                saveMistakes(mistakes);
+                applyFilter();
+            }
+        }
+
+        function toggleMistakeMode() {
+            isMistakeOnlyMode = !isMistakeOnlyMode;
+            const btn = document.getElementById('mistakeModeBtn');
+            if (isMistakeOnlyMode) {
+                btn.classList.add('active');
+                btn.innerHTML = `📌 顯示全部題目 (<span id="mistakeCount">0</span>)`;
+            } else {
+                btn.classList.remove('active');
+                btn.innerHTML = `📌 我的錯題簿 (<span id="mistakeCount">0</span>)`;
+            }
+            updateMistakeBadge();
+            applyFilter();
+        }
+
+        // ---------------- 介面互動與篩選邏輯 ----------------
         function toggleChip(button) {
             button.classList.toggle('active');
         }
@@ -442,9 +467,8 @@
             accordion.classList.toggle('open');
         }
 
-        /* 🎯 範疇一鍵全選 / 全取消 (同步切換按鈕色系 active 類別) */
         function toggleDomainSelectAll(event, accordionId) {
-            event.stopPropagation(); // 阻止觸發摺疊選單
+            event.stopPropagation();
             const accordion = document.getElementById(accordionId);
             const btn = event.target;
             const chips = accordion.querySelectorAll('.domain-body .chip');
@@ -480,7 +504,6 @@
         }
 
         function applyFilter() {
-            // 按下套用後自動隱藏篩選器
             const container = document.getElementById('filterContainer');
             const btn = document.getElementById('toggleBtn');
             if (!container.classList.contains('minimized')) {
@@ -507,18 +530,16 @@
             const selectedDiffs = getSelectedGroupValues('group', 'diff');
             const selectedTopics = getAllActiveTopicValues();
 
-            const isNoCondition = keyword === "" && selectedLevels.length === 0 && selectedTypes.length === 0 && 
-                                  selectedSections.length === 0 && selectedYears.length === 0 && 
-                                  selectedDiffs.length === 0 && selectedTopics.length === 0;
-
-            if (isNoCondition) {
-                document.getElementById('list').innerHTML = `<p style="text-align:center; color:#777; margin-top:50px; font-size:15px;">💡 請選擇上方篩選條件並點擊「套用篩選條件」，或輸入關鍵字開始練習。</p>`;
-                return;
-            }
+            const mistakes = getMistakes();
 
             if (typeof questions === 'undefined') return;
 
             const filtered = questions.filter(q => {
+                // 如果開啟了「純錯題模式」
+                if (isMistakeOnlyMode && !mistakes[q.id]) {
+                    return false;
+                }
+
                 const matchKeyword = q.content.toLowerCase().includes(keyword) || q.id.toLowerCase().includes(keyword);
                 const matchLevel = selectedLevels.length === 0 || (Array.isArray(q.level) ? q.level.some(l => selectedLevels.includes(l)) : selectedLevels.includes(q.level));
                 const matchType = selectedTypes.length === 0 || selectedTypes.includes(q.type);
@@ -532,17 +553,26 @@
 
             const list = document.getElementById('list');
             if(filtered.length === 0) {
-                list.innerHTML = `<p style="text-align:center; color:#999; margin-top:50px;">沒有符合條件的題目。</p>`;
+                if (isMistakeOnlyMode) {
+                    list.innerHTML = `<p style="text-align:center; color:#999; margin-top:50px;">目前錯題簿中沒有符合篩選條件的題目。</p>`;
+                } else {
+                    list.innerHTML = `<p style="text-align:center; color:#999; margin-top:50px;">沒有符合條件的題目。</p>`;
+                }
                 return;
             }
 
-            list.innerHTML = filtered.map(q => `
+            list.innerHTML = filtered.map(q => {
+                const mistakeInfo = mistakes[q.id];
+                const isSaved = !!mistakeInfo;
+
+                return `
                 <div class="question-card">
                     <div class="card-header">
                         <div class="q-id">${q.id}</div>
                         ${getDifficultyBadge(q.difficulty)}
                     </div>
                     <div class="question-content">${q.content}</div>
+                    
                     <details>
                         <summary>💡</summary>
                         <div class="detail-content">${q.hint}</div>
@@ -551,8 +581,29 @@
                         <summary>🔑</summary>
                         <div class="detail-content">${q.solution}</div>
                     </details>
+
+                    <!-- 錯題筆記區塊 -->
+                    ${isSaved ? `
+                        <div class="mistake-note-box">
+                            <div class="mistake-note-header">
+                                <span>📝 錯題筆記</span>
+                                <span>加入時間：${mistakeInfo.time}</span>
+                            </div>
+                            <div>${mistakeInfo.note || '（未輸入筆記）'}</div>
+                        </div>
+                    ` : ''}
+
+                    <!-- 操作按鈕列 -->
+                    <div class="card-actions">
+                        ${isSaved ? `
+                            <button class="btn-mistake is-saved" onclick="addOrEditMistake('${q.id}')">✏️ 編輯筆記</button>
+                            <button class="btn-mistake" onclick="removeMistake('${q.id}')">❌ 移除錯題</button>
+                        ` : `
+                            <button class="btn-mistake" onclick="addOrEditMistake('${q.id}')">➕ 加入錯題簿</button>
+                        `}
+                    </div>
                 </div>
-            `).join('');
+            `}).join('');
 
             if (window.MathJax && MathJax.typesetPromise) {
                 await MathJax.typesetPromise();
@@ -581,6 +632,8 @@
             }
         }
 
+        // 初始化錯題數量與頁面
+        updateMistakeBadge();
         applyFilter();
     </script>
 </body>
