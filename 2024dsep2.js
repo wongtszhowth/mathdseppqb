@@ -620,8 +620,7 @@ D.\t$u^3v^3w^4$。
         domain: ["Algebra"],
         topic: ["Base Conversion"],
         difficulty: 2,
-        content: `$\\text{AF000000000BC}_{16} =$
-<div class="q-mcopt">
+        content: `<div style="color: red;">$\\text{AF000000000BC}_{16} =$</div><div class="q-mcopt" style="color: red;">
 A.\t$175 \\times 16^{11} + 188$。<br>
 B.\t$192 \\times 16^{11} + 205$。<br>
 C.\t$175 \\times 16^{12} + 188$。<br>
