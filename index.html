@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>0803-2110 DSE 數學題目庫</title>
+    <title>0803-2130 DSE 數學題目庫</title>
     <script>
         window.MathJax = {
             tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }, 
@@ -54,6 +54,38 @@
 
         .filter-container.minimized .filter-body { display: none; }
         
+        /* 搜尋與排序欄位組合 */
+        .search-sort-row {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"] { 
+            flex: 1; 
+            padding: 8px 12px; 
+            border: 1px solid #cbd5e1; 
+            border-radius: 8px; 
+            font-size: 14px; 
+            box-sizing: border-box; 
+        }
+
+        .sort-select {
+            padding: 8px 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: 13.5px;
+            background: #fff;
+            color: #334155;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.2s;
+        }
+
+        .sort-select:hover, .sort-select:focus {
+            border-color: #8b5cf6;
+        }
+
         /* 清單式架構與精簡行距 */
         .filter-list { display: flex; flex-direction: column; gap: 10px; margin-top: 8px; }
         .filter-item { display: flex; flex-direction: column; gap: 4px; }
@@ -117,7 +149,6 @@
         .topic-group-block { display: flex; flex-wrap: wrap; gap: 4px; }
         .topic-divider { width: 100%; height: 1px; background-color: #f1f5f9; margin: 3px 0; }
 
-        input[type="text"] { width: 100%; padding: 8px 12px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 14px; box-sizing: border-box; margin-bottom: 8px; }
         .btn-group-action { display: flex; gap: 8px; margin-top: 12px; }
         .btn { padding: 6px 14px; border: none; border-radius: 8px; font-size: 13px; cursor: pointer; font-weight: 500; transition: all 0.2s; }
         
@@ -180,20 +211,31 @@
         <div class="filter-header">
             <div class="filter-header-left">
                 <button class="btn btn-toggle" id="toggleBtn" onclick="toggleFilter()">隱藏篩選器</button>
-                <button class="btn btn-mistake-mode" id="mistakeModeBtn" onclick="toggleMistakeMode()">📌 我的錯題簿 (<span id="mistakeCount">0</span>)</button>
+                <button class="btn btn-mistake-mode" id="mistakeModeBtn" onclick="toggleMistakeMode()">📌 打開錯題簿 (<span id="mistakeCount">0</span>)</button>
             </div>
             <div><button class="btn btn-reset" onclick="resetFilters()">重設所有條件</button></div>
         </div>
         
         <div class="filter-body">
-            <input type="text" id="keyword" placeholder="搜尋關鍵字、題目編號..." onkeydown="if(event.key === 'Enter') applyFilter(false)">
+            <!-- 搜尋框與排序選單同行 -->
+            <div class="search-sort-row">
+                <input type="text" id="keyword" placeholder="搜尋關鍵字、題目編號..." onkeydown="if(event.key === 'Enter') applyFilter(false)">
+                <select id="sortBy" class="sort-select" onchange="applyFilter(true)">
+                    <option value="type">📄 按卷別 (卷一 ➔ 卷二)</option>
+                    <option value="year-desc">📅 按年份 (新 ➔ 舊)</option>
+                    <option value="year-asc">📅 按年份 (舊 ➔ 新)</option>
+                    <option value="diff-asc">🔥 按難度 (低 ➔ 高)</option>
+                    <option value="diff-desc">🔥 按難度 (高 ➔ 低)</option>
+                    <option value="time-desc">⏱️ 按加入錯題時間 (新 ➔ 舊)</option>
+                </select>
+            </div>
 
             <!-- 清單形式篩選區塊 -->
             <div class="filter-list">
                 
                 <!-- 1. 卷別 -->
                 <div class="filter-item">
-                    <div class="filter-title">卷別</div>
+                    <div class="filter-title">📄 卷別</div>
                     <div class="filter-item-row">
                         <div class="filter-sub-group" id="p1Group">
                             <button class="chip" data-group="type" data-value="P1" onclick="toggleChip(this)">卷一</button>
@@ -215,7 +257,7 @@
 
                 <!-- 2. 年份 (.chip-year) -->
                 <div class="filter-item">
-                    <div class="filter-title">年份</div>
+                    <div class="filter-title">📅 年份</div>
                     <div class="chip-group" id="yearGroup">
                         <button class="chip chip-year" data-group="year" data-value="2025" onclick="toggleChip(this)">2025</button>
                         <button class="chip chip-year" data-group="year" data-value="2024" onclick="toggleChip(this)">2024</button>
@@ -236,7 +278,7 @@
 
                 <!-- 3. 級別與難度 -->
                 <div class="filter-item">
-                    <div class="filter-title">級別與難度</div>
+                    <div class="filter-title">🔥 級別 | 難度</div>
                     <div class="chip-group">
                         <button class="chip" data-group="level" data-value="Junior" onclick="toggleChip(this)">初中</button>
                         <button class="chip" data-group="level" data-value="Senior" onclick="toggleChip(this)">高中</button>
@@ -417,7 +459,7 @@
             const mistakes = getMistakes();
             const existingNote = mistakes[qId] ? mistakes[qId].note : '';
             
-            const note = prompt(`請輸入對 ${qId} 的錯題筆記（例如：錯解原因、概念漏洞）：`, existingNote);
+            const note = prompt(`📝 ${qId} 的錯題筆記（例如：錯解原因、概念漏洞）`, existingNote);
             if (note === null) return;
 
             const now = new Date();
@@ -429,7 +471,7 @@
             };
 
             saveMistakes(mistakes);
-            applyFilter(true); // 保留當前滾動位置
+            applyFilter(true);
         }
 
         function removeMistake(qId) {
@@ -437,7 +479,7 @@
                 const mistakes = getMistakes();
                 delete mistakes[qId];
                 saveMistakes(mistakes);
-                applyFilter(true); // 保留當前滾動位置
+                applyFilter(true);
             }
         }
 
@@ -446,10 +488,10 @@
             const btn = document.getElementById('mistakeModeBtn');
             if (isMistakeOnlyMode) {
                 btn.classList.add('active');
-                btn.innerHTML = `📌 顯示全部題目 (<span id="mistakeCount">0</span>)`;
+                btn.innerHTML = `📌 合上錯題簿 (<span id="mistakeCount">0</span>)`;
             } else {
                 btn.classList.remove('active');
-                btn.innerHTML = `📌 我的錯題簿 (<span id="mistakeCount">0</span>)`;
+                btn.innerHTML = `📌 打開錯題簿 (<span id="mistakeCount">0</span>)`;
             }
             updateMistakeBadge();
             applyFilter(false);
@@ -523,6 +565,7 @@
 
         async function filterData(targetScrollY) {
             const keyword = document.getElementById('keyword').value.toLowerCase();
+            const sortBy = document.getElementById('sortBy').value;
             const selectedLevels = getSelectedGroupValues('group', 'level');
             const selectedTypes = getSelectedGroupValues('group', 'type');
             const selectedSections = getSelectedGroupValues('group', 'section');
@@ -532,7 +575,7 @@
 
             const mistakes = getMistakes();
 
-            // 🎯 防護機制：沒有選條件不載入
+            // 防護機制：沒有選條件不載入
             const isNoCondition = keyword === "" && selectedLevels.length === 0 && selectedTypes.length === 0 && 
                                   selectedSections.length === 0 && selectedYears.length === 0 && 
                                   selectedDiffs.length === 0 && selectedTopics.length === 0;
@@ -540,13 +583,13 @@
             const list = document.getElementById('list');
 
             if (!isMistakeOnlyMode && isNoCondition) {
-                list.innerHTML = `<p style="text-align:center; color:#777; margin-top:50px; font-size:15px;">💡 請選擇上方篩選條件並點擊「套用篩選條件」，或輸入關鍵字開始練習。</p>`;
+                list.innerHTML = `<p style="text-align:center; color:#777; margin-top:50px; font-size:15px;">請選擇篩選條件或輸入關鍵字，並點擊「🔍 套用篩選條件」。加油！</p>`;
                 return;
             }
 
             if (typeof questions === 'undefined') return;
 
-            const filtered = questions.filter(q => {
+            let filtered = questions.filter(q => {
                 if (isMistakeOnlyMode && !mistakes[q.id]) {
                     return false;
                 }
@@ -560,6 +603,26 @@
                 const matchTopic = selectedTopics.length === 0 || (Array.isArray(q.topic) ? q.topic.some(t => selectedTopics.includes(t)) : selectedTopics.includes(q.topic));
                 
                 return matchKeyword && matchLevel && matchType && matchSection && matchYear && matchDiff && matchTopic;
+            });
+
+            // 🎯 排序邏輯處理
+            filtered.sort((a, b) => {
+                if (sortBy === 'year-desc') {
+                    return parseInt(b.year) - parseInt(a.year);
+                } else if (sortBy === 'year-asc') {
+                    return parseInt(a.year) - parseInt(b.year);
+                } else if (sortBy === 'type') {
+                    return a.type.localeCompare(b.type);
+                } else if (sortBy === 'diff-asc') {
+                    return (a.difficulty || 0) - (b.difficulty || 0);
+                } else if (sortBy === 'diff-desc') {
+                    return (b.difficulty || 0) - (a.difficulty || 0);
+                } else if (sortBy === 'time-desc') {
+                    const timeA = mistakes[a.id] ? mistakes[a.id].time : '';
+                    const timeB = mistakes[b.id] ? mistakes[b.id].time : '';
+                    return timeB.localeCompare(timeA);
+                }
+                return 0;
             });
 
             if(filtered.length === 0) {
@@ -619,7 +682,7 @@
                 await MathJax.typesetPromise();
             }
 
-            // 🎯 自動滾動還原至原本瀏覽位置
+            // 自動滾動還原至原本瀏覽位置
             if (targetScrollY > 0) {
                 window.scrollTo({ top: targetScrollY, behavior: 'instant' });
             }
@@ -627,6 +690,7 @@
 
         function resetFilters() {
             document.getElementById('keyword').value = "";
+            document.getElementById('sortBy').value = "year-desc";
             document.querySelectorAll('.chip.active').forEach(chip => chip.classList.remove('active'));
             document.querySelectorAll('.btn-select-all').forEach(btn => {
                 btn.innerText = "全選";
