@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>0730-1630 DSE 數學題目庫</title>
+    <title>0803-1130 DSE 數學題目庫</title>
     <script>
         window.MathJax = {
- tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }, 
-  output: {font: 'mathjax-termes' }
-};
+            tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }, 
+            output: { font: 'mathjax-termes' }
+        };
     </script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <style>
@@ -33,9 +33,19 @@
         .chip-data.active { background: #f97316; color: white; border-color: #ea580c; }
 
         input[type="text"] { width: 100%; padding: 10px 14px; border: 1px solid #ddd; border-radius: 8px; font-size: 15px; box-sizing: border-box; margin-bottom: 15px; }
-        .btn { padding: 8px 16px; border: none; border-radius: 8px; font-size: 14px; cursor: pointer; font-weight: 500; }
+        
+        /* 按鈕樣式加強 */
+        .btn-group-action { display: flex; gap: 10px; margin-top: 15px; }
+        .btn { padding: 8px 16px; border: none; border-radius: 8px; font-size: 14px; cursor: pointer; font-weight: 500; transition: background 0.2s; }
         .btn-toggle { background: #4a5568; color: white; }
         .btn-reset { background: #e0e0e0; color: #333; }
+        .btn-apply { background: #2563eb; color: white; font-weight: bold; padding: 10px 20px; font-size: 15px; flex: 1; }
+        .btn-apply:hover { background: #1d4ed8; }
+
+        /* Loading 載入動畫提示 */
+        .loading-box { text-align: center; padding: 40px 20px; color: #4b5563; }
+        .spinner { display: inline-block; width: 30px; height: 30px; border: 3px solid rgba(59, 130, 246, 0.3); border-radius: 50%; border-top-color: #2563eb; animation: spin 0.8s ease-in-out infinite; margin-bottom: 12px; }
+        @keyframes spin { to { transform: rotate(360deg); } }
         
         #list { max-width: 800px; margin: 0 auto; padding-bottom: 50px; }
         .question-card { background: #fff; border: 1px solid #e1e4e8; padding: 22px; margin: 15px 0; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
@@ -53,62 +63,16 @@
         .question-content, .detail-content { font-family: Times, "Times New Roman", "PMingLiU", "新細明體", serif; font-size: normal; letter-spacing: 5%; line-height: 1.7; margin: 15px 0; white-space: pre-wrap; }
         .q-img { display: block; max-width: 100%; height: auto; margin: 15px auto; }
 
-/* 第一層分題容器 (a, b, c) */
-    .q-line {
-        display: flex;
-        align-items: flex-start;
-        width: 100%;
-        box-sizing: border-box;
-        margin-top: 5px;
-        margin-bottom: 3px;
-    }
+        /* 排版樣式 */
+        .q-line { display: flex; align-items: flex-start; width: 100%; box-sizing: border-box; margin-top: 5px; margin-bottom: 3px; }
+        .q-line.q-level-2 { margin-left: 40px; width: calc(100% - 40px); }
+        .q-label { flex-shrink: 0; width: 40px; }
+        .q-text-content { flex-grow: 1; min-width: 0; word-break: break-word; }
+        .q-mcopt { margin-left: 40px; width: calc(100% - 40px); line-height: 1.2; white-space: pre; }
+        .q-mcms { margin-left: 20px; width: calc(100% - 20px); white-space: pre; }
+        .marks { float: right; padding-left: 10px; font-weight: normal; letter-spacing: 0.1em; }
+        .q-clearfix { clear: both; }
 
-    /* 第二層分題容器 (i, ii, iii) -> 再凹入一點，並自動扣除縮進寬度防止溢出 */
-    .q-line.q-level-2 {
-        margin-left: 40px;
-        width: calc(100% - 40px);
-    }
-
-    /* 題號標籤 (例如 a, b, i, ii) */
-    .q-label {
-        flex-shrink: 0;
-        width: 40px;
-    }
-
-    /* 題目文字內容區 */
-    .q-text-content {
-        flex-grow: 1;
-        min-width: 0;
-        word-break: break-word;
-    }
-
-    /* MC Options */
-    .q-mcopt {
-        margin-left: 40px;
-        width: calc(100% - 40px);
-        line-height: 1.2;
-        white-space: pre;
-    }
-
-    /* MC Multi-statement */
-    .q-mcms {
-        margin-left: 20px;
-        width: calc(100% - 20px);
-        white-space: pre;
-    }
-
-    /* 分數標籤 -> 100% 貼齊最右邊 */
-    .marks {
-        float: right;
-        padding-left: 10px;
-        font-weight: normal; /* 可依喜好決定是否加粗 */
-        letter-spacing: 0.1em;
-    }
-
-    /* 清除浮動，確保卡片高度計算正確 */
-    .q-clearfix {
-        clear: both;
-    }
         details { margin-top: 10px; background: #f1f5f9; border-radius: 8px; overflow: hidden; }
         summary { padding: 12px; font-weight: bold; color: #475569; cursor: pointer; }
         .detail-content { padding: 15px; background: #fff; }
@@ -125,7 +89,8 @@
         </div>
         
         <div class="filter-body">
-            <input type="text" id="keyword" placeholder="搜尋關鍵字、題號或輸入空白鍵顯示全部..." oninput="filterData()">
+            <!-- 💡 Enter 鍵也可以觸發套用搜尋 -->
+            <input type="text" id="keyword" placeholder="搜尋關鍵字、題號或輸入空白鍵顯示全部... (按下 Enter 或點擊套用)" onkeydown="if(event.key === 'Enter') applyFilter()">
 
             <div class="filter-row">
                 <span class="filter-label">基本資訊:</span>
@@ -197,9 +162,14 @@
                     <button class="chip chip-data" data-value="Statistical Graphs" onclick="toggleChip(this)">統計圖表</button>
                     <button class="chip chip-data" data-value="Measures of Central Tendency" onclick="toggleChip(this)">集中趨勢的量度</button>
                     <button class="chip chip-data" data-value="Measures of Dispersion" onclick="toggleChip(this)">離差的量度</button>
-                    <button class="chip chip-data" data-value="Permutations and Combinations" onclick="toggleChip(this)">排列與組合</button>
+                    <button class="chip chip-data" data-value="Permutationsand Combinations" onclick="toggleChip(this)">排列與組合</button>
                     <button class="chip chip-data" data-value="Probability" onclick="toggleChip(this)">概率</button>
                 </div>
+            </div>
+
+            <!-- 🎯 底部新增「套用篩選條件」按鈕 -->
+            <div class="btn-group-action">
+                <button class="btn btn-apply" onclick="applyFilter()">🔍 套用篩選條件</button>
             </div>
         </div>
     </div>
@@ -222,9 +192,9 @@
     <script src="2018dsep2.js"></script>
     
     <script>
+        // 💡 點擊按鈕時只切換樣式，不再立刻執行 filterData()
         function toggleChip(button) {
             button.classList.toggle('active');
-            filterData();
         }
 
         function getBaseSelectedValues(groupName) {
@@ -242,6 +212,21 @@
             return '';
         }
 
+        // 🎯 新增觸發函式：先顯示 Loading 動畫，再非同步執行篩選
+        function applyFilter() {
+            const list = document.getElementById('list');
+            // 顯示圓形轉圈與提示
+            list.innerHTML = `
+                <div class="loading-box">
+                    <div class="spinner"></div>
+                    <div>正在搜尋與排版題目，請稍候...</div>
+                </div>
+            `;
+            
+            // 延遲 50 毫秒執行，確保瀏覽器有空檔先繪製出 Loading 動畫
+            setTimeout(filterData, 50);
+        }
+
         async function filterData() {
             const keyword = document.getElementById('keyword').value.toLowerCase();
             const selectedLevels = getBaseSelectedValues('level');
@@ -251,7 +236,7 @@
             const selectedTopics = getSelectedValues('topicGroup');
 
             if (keyword === "" && selectedLevels.length === 0 && selectedYears.length === 0 && selectedTypes.length === 0 && selectedDomains.length === 0 && selectedTopics.length === 0) {
-                document.getElementById('list').innerHTML = `<p style="text-align:center; color:#777; margin-top:50px; font-size:15px;">💡 請選擇上方篩選條件，或在搜尋框輸入關鍵字開始練習。</p>`;
+                document.getElementById('list').innerHTML = `<p style="text-align:center; color:#777; margin-top:50px; font-size:15px;">💡 請選擇上方篩選條件並點擊「套用篩選條件」，或輸入關鍵字開始練習。</p>`;
                 return;
             }
 
@@ -291,6 +276,7 @@
                 </div>
             `).join('');
 
+            // MathJax 渲染
             if (window.MathJax && MathJax.typesetPromise) {
                 await MathJax.typesetPromise();
             }
@@ -299,7 +285,7 @@
         function resetFilters() {
             document.getElementById('keyword').value = "";
             document.querySelectorAll('.chip.active').forEach(chip => chip.classList.remove('active'));
-            filterData();
+            applyFilter();
         }
 
         function toggleFilter() {
@@ -307,14 +293,15 @@
             const btn = document.getElementById('toggleBtn');
             if (container.classList.contains('minimized')) {
                 container.classList.remove('minimized');
-                btn.innerText = "隱藏篩選器";
+                btn.innerText = "顯示篩選器";
             } else {
                 container.classList.add('minimized');
-                btn.innerText = "顯示篩選器";
+                btn.innerText = "隱藏篩選器";
             }
         }
 
-        filterData();
+        // 初始化
+        applyFilter();
     </script>
 </body>
 </html>
