@@ -539,7 +539,29 @@ D.	$x^2+y^2+14x-10y-119=0$。
         topic: ["Probability"],
         difficulty: 2,
         content: `一盒子內有六張分別記有數字 $2$、$2$、$2$、$3$、$4$ 及 $5$ 的紙卡。 在一遊戲中，從該盒子內隨機抽出一個數字，並將根據下表獲得若干個代幣：
-<div style="overflow-x: auto; width: 100%; margin-bottom: 8px;"><table class="q-table" style="width: 100%; min-width: 300px;"><tr><th>所抽出的數字</th><td>2</td><td>3</td><td>4</td><td>5</td></tr><tr><th>所獲代幣的數目</th><td>10</td><td>15</td><td>25</td><td>50</td></tr></table></div>
+        <table class="q-table" style="margin-left: auto; margin-right: auto; min-width: 300px; border-collapse: collapse; table-layout: auto;">
+    <colgroup>
+      <col style="width: auto;">
+      <col style="width: 3em;">
+      <col style="width: 3em;">
+      <col style="width: 3em;">
+      <col style="width: 3em;">
+    </colgroup>
+    <tr>
+      <th style="border: 1px solid #000; text-align: center; padding: 6px 10px;">所抽出的數字</th>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">2</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">3</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">4</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">5</td>
+    </tr>
+    <tr>
+      <th style="border: 1px solid #000; text-align: center; padding: 6px 10px;">所獲代幣的數目</th>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">10</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">15</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">25</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">50</td>
+    </tr>
+  </table>
 求在該遊戲中所獲代幣的數目的期望值。 
 <div class="q-mcopt">
 A.	$3$<br>
@@ -579,7 +601,26 @@ D.	$4$
         topic: ["Measures of Central Tendency", "Measures of Dispersion"],
         difficulty: 2,
         content: `考慮以下數據：
-$\\alpha$ $\\beta$ $-4$ $-3$ $1$ $1$ $1$ $4$
+<table class="q-table" style="margin-left: auto; margin-right: auto; min-width: 300px; border-collapse: collapse; table-layout: auto;">
+    <colgroup>
+      <col style="width: 3em;">
+      <col style="width: 3em;">
+      <col style="width: 3em;">
+      <col style="width: 3em;">
+      <col style="width: 3em;">
+      <col style="width: 3em;">
+    </colgroup>
+    <tr>
+      <td style="border: 0px; text-align: center; padding: 0px 0px;">$\\alpha$</th>
+      <td style="border: 0px; text-align: center; padding: 0px 0px;">$\\beta$</td>
+      <td style="border: 0px; text-align: center; padding: 0px 0px;">$-4$</td>
+      <td style="border: 0px; text-align: center; padding: 0px 0px;">$-3$</td>
+      <td style="border: 0px; text-align: center; padding: 0px 0px;">$1$</td>
+      <td style="border: 0px; text-align: center; padding: 0px 0px;">$1$</td>
+      <td style="border: 0px; text-align: center; padding: 0px 0px;">$1$</td>
+      <td style="border: 0px; text-align: center; padding: 0px 0px;">$4$</td>
+    </tr>
+  </table>
 將以上數據的眾數及中位數分別記為 $s$ 及 $t$。 若以上數據的平均值及分佈域分別為 $0$ 及 $10$，則下列何者正確？
 <div class="q-mcms">
 I.	$s = 1$
