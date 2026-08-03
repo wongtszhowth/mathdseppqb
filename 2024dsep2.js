@@ -219,12 +219,12 @@ D.\t$80$
         domain: ["Algebra"],
         topic: ["Rates, Ratios and Proportions"],
         difficulty: 1,
-        content: `某汽車以平均速率 $60$ km/h 行駛 $18$ 分鐘，該汽車然後以平均速率 $40$ km/h 行駛 $27$ 分鐘。 該汽車在整段行程的平均速率為
+        content: `某汽車以平均速率 $60\\text{ km/h}$ 行駛 $18$ 分鐘，該汽車然後以平均速率 $40\\text{ km/h}$ 行駛 $27$ 分鐘。 該汽車在整段行程的平均速率為
 <div class="q-mcopt">
-A.\t$48$ km/h。<br>
-B.\t$50$ km/h。<br>
-C.\t$52$ km/h。<br>
-D.\t$54$ km/h。
+A.\t$48\\text{ km/h}$。<br>
+B.\t$50\\text{ km/h}$。<br>
+C.\t$52\\text{ km/h}$。<br>
+D.\t$54\\text{ km/h}$。
 </div>`,
         hint: `先求總距離及總時間。`,
         solution: `A (73%)`
@@ -315,12 +315,12 @@ D.\t$60$ cm。
         topic: ["Geometry (Polygons)"],
         difficulty: 2,
         content: `圖中，$ABCD$ 為一正方形。 設 $M$ 為 $BC$ 的中點。 $E$ 為 $AD$ 上的一點使得 $AE:ED = 3:1$。 $F$ 為 $BC$ 的延線上的一點使得 $EF//AM$。 $CD$ 與 $EF$ 相交於點 $G$ 而 $AM$ 與 $BG$ 相交於點 $H$。 若 $\\triangle BMH$ 的面積為 $4$ cm$^2$，則梯形 $AEGH$ 的面積為
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2024dsep2q17.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px;">
 A.\t$12$ cm$^2$。<br>
 B.\t$33$ cm$^2$。<br>
 C.\t$39$ cm$^2$。<br>
 D.\t$45$ cm$^2$。
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用相似三角形或面積比關係。`,
         solution: `C (35%)`
     },
@@ -334,12 +334,12 @@ D.\t$45$ cm$^2$。
         topic: ["Trigonometry (2D)"],
         difficulty: 1,
         content: `圖中，$ABC$ 為一直線。 已知 $AD = 37$ cm 、 $BC = 5$ cm 、 $BD = 12$ cm 、 $CD = 13$ cm 及 $CE = 9$ cm。 若 $\\angle ACE = 90^\\circ$，求四邊形 $ADCE$ 的周界。
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2024dsep2q18.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px;">
 A.\t$76$ cm<br>
 B.\t$90$ cm<br>
 C.\t$100$ cm<br>
 D.\t$180$ cm
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `先用畢氏定理求 $AC$ 及 $AE$。`,
         solution: `C (82%)`
     },
@@ -353,12 +353,12 @@ D.\t$180$ cm
         topic: ["Geometry (Polygons)"],
         difficulty: 2,
         content: `根據圖中所示，下列何者必為正確？
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2024dsep2q19.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px;">
 A.\t$p+q-r=90^\\circ$<br>
 B.\t$p-r+s=180^\\circ$<br>
 C.\t$p+q-r+s=270^\\circ$<br>
 D.\t$p+q+r-s=540^\\circ$
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用多邊形內角和及直線上的角。`,
         solution: `D (51%)`
     },
@@ -396,7 +396,7 @@ D.\t只有 II 及 III
         topic: ["Geometry (Polygons)"],
         difficulty: 2,
         content: `圖中，$ABCD$ 為一菱形。 將 $AC$ 與 $BD$ 的交點記為 $E$。 設 $F$ 為一點使得 $BH//EF$ 且 $CFHG$ 為一長方形，其中 $G$ 及 $H$ 分別為 $AC$ 的延線及 $BC$ 的延線上的點。 將 $CD$ 與 $EF$ 的交點記為 $I$。 下列何者必為正確？
-<div class="q-mcms">
+<div class="q-mcms"><img src="img/2024dsep2q21.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 60%; margin-left: 15px; margin-bottom: 5px;">
 I.\t$CI=FI$
 II.\t$\\angle ABE=\\angle GCH$
 III.\t$\\Delta ADE \\cong \\Delta HCF$
@@ -406,7 +406,7 @@ A.\t只有 I 及 II<br>
 B.\t只有 I 及 III<br>
 C.\t只有 II 及 III<br>
 D.\tI、II 及 III
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用菱形及長方形的性質。`,
         solution: `B (36%)`
     },
@@ -420,12 +420,12 @@ D.\tI、II 及 III
         topic: ["Geometry (Circles)"],
         difficulty: 2,
         content: `圖中，$ABCDE$ 為一圓。 $AC$ 及 $BE$ 均為該圓的直徑。 設 $P$ 為 $AC$ 與 $BD$ 的交點。 若 $\\angle ABE = 46^\\circ$ 及 $\\angle DBE = 16^\\circ$，則 $\\angle APD =$
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2024dsep2q22.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px;">
 A.\t$104^\\circ$。<br>
 B.\t$108^\\circ$。<br>
 C.\t$120^\\circ$。<br>
 D.\t$135^\\circ$。
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用直徑所對的圓周角及圓心角性質。`,
         solution: `B (64%)`
     },
@@ -439,12 +439,12 @@ D.\t$135^\\circ$。
         topic: ["Trigonometry (2D)"],
         difficulty: 2,
         content: `圖中，$ABC$ 為一直線。 $\\dfrac{BC}{AD} =$
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2024dsep2q23.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 60%; margin-left: 15px; margin-bottom: 5px;">
 A.\t$\\dfrac{\\sin \\theta}{\\tan \\phi}$。<br>
 B.\t$\\dfrac{\\tan \\phi}{\\sin \\theta}$。<br>
 C.\t$\\dfrac{\\cos \\theta}{\\tan \\phi}$。<br>
 D.\t$\\dfrac{\\tan \\phi}{\\cos \\theta}$。
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `在直角三角形中表達各邊。`,
         solution: `A (56%)`
     },
@@ -558,6 +558,7 @@ D.\t$\\dfrac{8}{15}$
         topic: ["Statistical Graphs", "Measures of Dispersion"],
         difficulty: 1,
         content: `下面的框線圖顯示一群小童在某遊戲中所獲代幣的數目的分佈。 若該分佈的分佈域為其四分位數間距的三倍，求 $m$。
+<img src="img/2024dsep2q29.jpg" class="q-img" alt="題目附圖" style="max-width: 95%; margin-left: 15px; margin-bottom: 5px;">
 <div class="q-mcopt">
 A.\t$248$<br>
 B.\t$275$<br>
@@ -576,9 +577,7 @@ D.\t$360$
         domain: ["Data Handling"],
         topic: ["Measures of Central Tendency", "Measures of Dispersion"],
         difficulty: 2,
-        content: `考慮以下正整數：
-$5$ $5$ $5$ $6$ $9$ $9$ $11$ $13$ $m$ $n$
-設 $p$ 、 $q$ 及 $r$ 分別為以上正整數的標準差、眾數及中位數。 若以上正整數的平均值為 $7$，則下列何者必為正確？
+        content: `考慮以下正整數：<div style="text-align: center;">$5$　$5$　$5$　$6$　$9$　$9$　$11$　$13$　$m$　$n$</div>設 $p$ 、 $q$ 及 $r$ 分別為以上正整數的標準差、眾數及中位數。 若以上正整數的平均值為 $7$，則下列何者必為正確？
 <div class="q-mcms">
 I.\t$p>3$
 II.\t$q=5$
@@ -660,12 +659,12 @@ D.\t$3$  或  $8$。
         topic: ["Functions and Graphs"],
         difficulty: 2,
         content: `圖中的圖像顯示 $y^3$ 與 $\\sqrt{x}$ 之間的線性關係。 若 $x=36$，則 $y=$
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2024dsep2q34.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px;">
 A.\t$-64$。<br>
 B.\t$-16$。<br>
 C.\t$-8$。<br>
 D.\t$-4$。
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `由圖像讀取斜率及截距後代入。`,
         solution: `D (54%)`
     },
@@ -749,12 +748,12 @@ D.\t$29$
         topic: ["Geometry (Circles)"],
         difficulty: 2,
         content: `圖中，$TA$ 為圓 $ABCDE$ 在點 $A$ 的切線。 $BC$ 的延線與 $ED$ 的延線相交於點 $P$。 若 $\\angle ACB = 43^\\circ$、$\\angle DAT = 55^\\circ$ 及 $\\angle CPD = 29^\\circ$，則 $\\angle CBE =$
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2024dsep2q38.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 70%; margin-left: 15px; margin-bottom: 5px;">
 A.\t$64^\\circ$。<br>
 B.\t$69^\\circ$。<br>
 C.\t$72^\\circ$。<br>
 D.\t$78^\\circ$。
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用切線與弦的夾角及圓周角性質。`,
         solution: `B (47%)`
     },
@@ -787,12 +786,12 @@ D.\t$6$
         topic: ["Trigonometry (3D)"],
         difficulty: 2,
         content: `圖中，四面體 $PQRS$ 的底 $PQR$ 在水平地面上。 已知 $Q$ 鉛垂於 $S$ 之下。 若 $\\angle PQR = 90^\\circ$ 、 $\\angle QPS = 30^\\circ$ 及 $\\angle QRS = 45^\\circ$，則 $\\cos \\angle PRS =$
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2024dsep2q40.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 60%; margin-left: 15px; margin-bottom: 5px;">
 A.\t$\\dfrac{1}{2}$。<br>
 B.\t$\\dfrac{3}{4}$。<br>
 C.\t$\\dfrac{\\sqrt{2}}{4}$。<br>
 D.\t$\\dfrac{\\sqrt{3}}{6}$。
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `設邊長並用餘弦定理。`,
         solution: `C (46%)`
     },
@@ -867,9 +866,7 @@ D.\t$0.976$
         domain: ["Data Handling"],
         topic: ["Standard Score"],
         difficulty: 1,
-        content: `在某考試，考生的得分（以分為單位）如下：
-$39$ $10$ $13$ $16$ $17$ $19$ $25$ $26$ $28$ $30$ $30$ $32$
-下列何者正確？
+        content: `在某考試，考生的得分（以分為單位）如下：<div style="text-align: center;">$39$　$10$　$13$　$16$　$17$　$19$　$25$　$26$　$28$　$30$　$30$　$32$</div>下列何者正確？
 <div class="q-mcms">
 I.\t該些考生的考試得分的中位數為 $22$ 分。
 II.\t每名考生在該考試的標準分均低於 $2$。
