@@ -604,8 +604,7 @@ D.	I、II 及 III
         domain: ["Algebra"],
         topic: ["Base Conversion"],
         difficulty: 2,
-        content: `<div style="color: red;">$\\text{3E000000000000}_{16} =$</div>
-<div class="q-mcopt" style="color: red;">
+        content: `<div style="color: red;">$\\text{3E000000000000}_{16} =$</div><div class="q-mcopt" style="color: red;">
 A.	$2^{16} + 2^{15} + 2^{14} + 2^{13} + 2^{12}$。 <br>
 B.	$2^{17} + 2^{16} + 2^{15} + 2^{14} + 2^{13}$。 <br>
 C.	$2^{52} + 2^{51} + 2^{50} + 2^{49} + 2^{48}$。 <br>
