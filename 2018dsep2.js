@@ -91,9 +91,9 @@ D.\t該圖像通過原點。
         difficulty: 2,
         content: `圖中，直線 $L_1$ 及直線 $L_2$ 的方程分別為 $3x+ay=b$ 及 $cx+y=d$。 下列何者正確？
 <div class="q-mcms">
-I.\t$ac<3$
-II.\t$ad<b$
-III.\t$bc<3d$
+I.\t$ac \\lt 3$
+II.\t$ad \\lt b$
+III.\t$bc \\lt 3d$
 </div>
 <div class="q-mcopt">
 A.\t只有 II<br>
