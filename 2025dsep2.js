@@ -268,7 +268,7 @@ A.	只有 I<br>
 B.	只有 II<br>
 C.	只有 I 及 III<br>
 D.	只有 II 及 III
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `觀察截距判斷 $p$ 與 $q$ 的大小。`,
         solution: `A (53%)`
     },
