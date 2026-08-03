@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>0803-2150 DSE 數學題目庫</title>
+    <title>0803-2200 DSE 數學題目庫</title>
     <script>
         window.MathJax = {
             tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }, 
@@ -203,6 +203,78 @@
         
         .mistake-note-box { margin-top: 10px; background: #fff5f5; border: 1px dashed #fca5a5; padding: 10px 12px; border-radius: 8px; font-size: 13px; color: #991b1b; }
         .mistake-note-header { display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 4px; font-size: 12px; color: #b91c1c; }
+        .mistake-note-body { white-space: pre-wrap; line-height: 1.5; }
+
+        /* 多行文字輸入 Modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(2px);
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s ease;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .modal-card {
+            background: #fff;
+            width: 90%;
+            max-width: 500px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .modal-header {
+            font-size: 16px;
+            font-weight: bold;
+            color: #1e293b;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-textarea {
+            width: 100%;
+            min-height: 120px;
+            max-height: 300px;
+            padding: 10px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: 14px;
+            font-family: inherit;
+            resize: vertical;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        .modal-textarea:focus {
+            border-color: #8b5cf6;
+            box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.2);
+        }
+
+        .modal-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 8px;
+        }
+
+        .btn-modal-cancel { background: #e2e8f0; color: #475569; }
+        .btn-modal-save { background: #dc2626; color: white; }
+        .btn-modal-save:hover { background: #b91c1c; }
     </style>
 </head>
 <body>
@@ -418,6 +490,20 @@
 
     <div id="list"></div>
 
+    <!-- 多行文字錯題筆記 Modal -->
+    <div class="modal-overlay" id="mistakeModal">
+        <div class="modal-card">
+            <div class="modal-header">
+                <span id="modalTitle">📝 錯題筆記</span>
+            </div>
+            <textarea class="modal-textarea" id="modalNoteText" placeholder="請輸入錯題筆記（支援多行文字，如：錯解原因、概念漏洞）..."></textarea>
+            <div class="modal-actions">
+                <button class="btn btn-modal-cancel" onclick="closeMistakeModal()">取消</button>
+                <button class="btn btn-modal-save" onclick="saveMistakeModal()">儲存筆記</button>
+            </div>
+        </div>
+    </div>
+
     <script src="data.js"></script>
     <script src="2025dsep2.js"></script>
     <script src="2024dsep1.js"></script>
@@ -437,6 +523,7 @@
         // LocalStorage 錯題簿管理
         const STORAGE_KEY = 'dse_math_mistakes';
         let isMistakeOnlyMode = false;
+        let currentTargetQId = null; // 目前編輯中的題目 ID
 
         function getMistakes() {
             try {
@@ -458,22 +545,40 @@
             if (countEl) countEl.innerText = count;
         }
 
+        /* 打開多行文字 Modal 編輯筆記 */
         function addOrEditMistake(qId) {
+            currentTargetQId = qId;
             const mistakes = getMistakes();
             const existingNote = mistakes[qId] ? mistakes[qId].note : '';
-            
-            const note = prompt(`📝 ${qId} 的錯題筆記（例如：錯解原因、概念漏洞）`, existingNote);
-            if (note === null) return;
 
+            document.getElementById('modalTitle').innerText = `📝 ${qId} 的錯題筆記`;
+            document.getElementById('modalNoteText').value = existingNote;
+            document.getElementById('mistakeModal').classList.add('active');
+            
+            // 自動 focus 到輸入框
+            setTimeout(() => document.getElementById('modalNoteText').focus(), 100);
+        }
+
+        function closeMistakeModal() {
+            document.getElementById('mistakeModal').classList.remove('active');
+            currentTargetQId = null;
+        }
+
+        function saveMistakeModal() {
+            if (!currentTargetQId) return;
+            
+            const note = document.getElementById('modalNoteText').value;
+            const mistakes = getMistakes();
             const now = new Date();
             const timeStr = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')} ${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}`;
 
-            mistakes[qId] = {
+            mistakes[currentTargetQId] = {
                 note: note.trim(),
                 time: timeStr
             };
 
             saveMistakes(mistakes);
+            closeMistakeModal();
             applyFilter(true);
         }
 
@@ -665,7 +770,7 @@
                                 <span>📝 錯題筆記</span>
                                 <span>加入時間：${mistakeInfo.time}</span>
                             </div>
-                            <div>${mistakeInfo.note || '（未輸入筆記）'}</div>
+                            <div class="mistake-note-body">${mistakeInfo.note || '（未輸入筆記）'}</div>
                         </div>
                     ` : ''}
 
