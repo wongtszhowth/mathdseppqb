@@ -330,7 +330,7 @@ A.	$46$ cm$^2$。 <br>
 B.	$49$ cm$^2$。 <br>
 C.	$105$ cm$^2$。 <br>
 D.	$115$ cm$^2$。 
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用面積比與高度或底的比例關係。`,
         solution: `B (39%)`
     },
@@ -344,7 +344,7 @@ D.	$115$ cm$^2$。
         topic: ["Geometry (Triangles)"],
         difficulty: 2,
         content: `圖中所示為三角形 $WXY$。 設 $Z$ 為 $WY$ 上的一點使得 $WY:XY = XY:YZ$。 若 $WX=65$ cm 、 $WZ=25$ cm 及 $XZ=60$ cm，則 $XY =$
-<div class="q-mcopt"><img src="img/2025dsep2q18.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px;">
+<div class="q-mcopt" style="overflow: auto;"><img src="img/2025dsep2q18.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px;">
 A.	$131$ cm。<br>
 B.	$144$ cm。<br>
 C.	$156$ cm。<br>
