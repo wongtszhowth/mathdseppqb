@@ -8,7 +8,7 @@ questions.push(
         section: "MC_A",
         level: ["Junior"],
         domain: ["Algebra"],
-        topic: ["Indices"],
+        topic: ["Laws of Indices"],
         difficulty: 1,
         content: `$\\dfrac{(27x)^5}{(3x^{-2})^4} =$
 <div class="q-mcopt">
@@ -46,7 +46,7 @@ D.	$(6 + 3m - 4n)(6 - 3m - 4n)$。
         section: "MC_A",
         level: ["Junior"],
         domain: ["Algebra"],
-        topic: ["Polynomials"],
+        topic: ["Identities"],
         difficulty: 1,
         content: `若 $a$ 及 $b$ 均為常數使得 $(x+8)(x+a)+b \\equiv x^2 + 5a(x+3)$，則 $b=$
 <div class="q-mcopt">
@@ -65,7 +65,7 @@ D.	$14$。
         section: "MC_A",
         level: ["Junior"],
         domain: ["Algebra"],
-        topic: ["Formulae"],
+        topic: ["Change of Subject"],
         difficulty: 1,
         content: `若 $(3c+1)(d-4) = 2d(5c-1)$，則 $c=$
 <div class="q-mcopt">
@@ -103,7 +103,7 @@ D.	$x=k+3$  或  $x=-k+1$
         section: "MC_A",
         level: ["Junior"],
         domain: ["Algebra"],
-        topic: ["Approximate Values and Numerical Estimation"],
+        topic: ["Approximation and Errors"],
         difficulty: 1,
         content: `若 $x=5.67$（準確至二位小數），求 $x$ 值的範圍。 
 <div class="q-mcopt">
@@ -160,7 +160,7 @@ D.	$6$
         section: "MC_A",
         level: ["Junior"],
         domain: ["Algebra"],
-        topic: ["Polynomials"],
+        topic: ["Remainder Theorem and Factor Theorem"],
         difficulty: 1,
         content: `設 $\\mathrm{p}(x) = nx^3 - 3nx + 36$，其中 $n$ 為一常數。 若 $x+3$ 為 $\\mathrm{p}(x)$ 的因式，則 $\\mathrm{p}(3) =$
 <div class="q-mcopt">
@@ -255,7 +255,7 @@ D.	$243$。
         section: "MC_A",
         level: ["Junior"],
         domain: ["Geometry"],
-        topic: ["Equations of Straight Lines", "Coordinate Geometry"],
+        topic: ["Equations of Straight Lines"],
         difficulty: 2,
         content: `圖中，直線 $L$ 的方程為 $px + qy = 7$。 下列何者正確？
 <div class="q-mcms"><img src="img/2025dsep2q14.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
@@ -279,7 +279,7 @@ D.	只有 II 及 III
         section: "MC_A",
         level: ["Junior"],
         domain: ["Geometry"],
-        topic: ["Areas and Volumes", "Trigonometry (2D)"],
+        topic: ["Mensuration"],
         difficulty: 3,
         content: `扇形 $OMN$ 的周界為 $12\\pi$ cm，其中 $O$ 為扇形 $OMN$ 的圓心。 若扇形 $OMN$ 的半徑為 $3\\pi$ cm，則下列何者正確？
 <div class="q-mcms">
@@ -303,7 +303,7 @@ D.	I、II 及 III
         section: "MC_A",
         level: ["Junior"],
         domain: ["Geometry"],
-        topic: ["Areas and Volumes"],
+        topic: ["Mensuration"],
         difficulty: 2,
         content: `一實心直立圓柱體的高及總表面面積分別為 $35$ cm 及 $492\\pi$ cm$^2$。 若一實心球體的半徑等於該圓柱體的底半徑，則該球體的體積為
 <div class="q-mcopt">
@@ -322,7 +322,7 @@ D.	$864\\pi$ cm$^3$。
         section: "MC_A",
         level: ["Junior"],
         domain: ["Geometry"],
-        topic: ["Plane Geometry", "Areas and Volumes"],
+        topic: ["Geometry (Polygons)"],
         difficulty: 2,
         content: `圖中，$ABCD$ 為一平行四邊形。 設 $E$ 、 $F$ 及 $G$ 分別為 $AB$ 、 $AD$ 及 $CD$ 上的點使得 $BE = 3AE$ 、 $2DF = 3AF$ 及 $DG = 2CG$。 已知 $BC$ 的延線與 $EG$ 的延線相交於點 $H$。 若 $\\Delta CGH$ 的面積為 $16$ cm$^2$，則四邊形 $DFBG$ 的面積為
 <div class="q-mcopt"><img src="img/2025dsep2q17.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 60%; margin-left: 15px; margin-bottom: 5px;">
@@ -341,7 +341,7 @@ D.	$115$ cm$^2$。
         section: "MC_A",
         level: ["Junior"],
         domain: ["Geometry"],
-        topic: ["Plane Geometry", "Similar Triangles"],
+        topic: ["Geometry (Triangles)"],
         difficulty: 2,
         content: `圖中所示為三角形 $WXY$。 設 $Z$ 為 $WY$ 上的一點使得 $WY:XY = XY:YZ$。 若 $WX=65$ cm 、 $WZ=25$ cm 及 $XZ=60$ cm，則 $XY =$
 <div class="q-mcopt"><img src="img/2025dsep2q18.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px;">
@@ -360,7 +360,7 @@ D.	$169$ cm。
         section: "MC_A",
         level: ["Junior"],
         domain: ["Geometry"],
-        topic: ["Plane Geometry"],
+        topic: ["Geometry (Polygons)"],
         difficulty: 3,
         content: `圖中，$ABCD$ 為一正方形。 設 $E$ 為一點使得 $CDEF$ 為一菱形，其中 $F$ 為 $AC$ 的延線上的一點。 延長 $DF$ 至點 $G$ 使得 $AF//BG$。 下列何者正確？
 <div class="q-mcms"><img src="img/2025dsep2q19.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 70%; margin-left: 15px; margin-bottom: 5px;">
@@ -384,7 +384,7 @@ D.	I、II 及 III
         section: "MC_A",
         level: ["Junior"],
         domain: ["Geometry"],
-        topic: ["Plane Geometry", "Trigonometry (2D)"],
+        topic: ["Trigonometry (2D)"],
         difficulty: 2,
         content: `已知 $PQRS$ 為一梯形且 $PQ//SR$。 若 $PS = 41$ cm 、 $RS = 53$ cm 、 $\\angle PSR = 120^\\circ$ 及 $\\angle QRS = 150^\\circ$，則 $PQ =$
 <div class="q-mcopt">
@@ -403,7 +403,7 @@ D.	$135$ cm。
         section: "MC_A",
         level: ["Junior"],
         domain: ["Geometry"],
-        topic: ["Plane Geometry", "Areas and Volumes"],
+        topic: ["Mensuration"],
         difficulty: 2,
         content: `圖中，$ABCD$ 為一長方形。 已知 $AE = 20$ cm 及 $\\angle AED = 90^\\circ$。 若 $\\Delta ADE$ 的面積為 $150$ cm$^2$，則由 $E$ 至 $CD$ 的垂直距離為
 <div class="q-mcopt"><img src="img/2025dsep2q21.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 60%; margin-left: 15px; margin-bottom: 5px;">
@@ -422,7 +422,7 @@ D.	$15$ cm。
         section: "MC_A",
         level: ["Junior"],
         domain: ["Geometry"],
-        topic: ["Circle Geometry"],
+        topic: ["Geometry (Circles)"],
         difficulty: 2,
         content: `圖中，$RSTUV$ 為一圓。 已知 $RT//VU$ 及 $RT$ 為 $\\triangle SRU$ 的角平分線。 若 $\\angle RTS = \\angle URV = 33^\\circ$，則 $\\angle RUT =$
 <div class="q-mcopt"><img src="img/2025dsep2q22.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 60%; margin-left: 15px; margin-bottom: 5px;">
@@ -441,7 +441,7 @@ D.	$71^\\circ$。
         section: "MC_A",
         level: ["Junior"],
         domain: ["Geometry"],
-        topic: ["Plane Geometry", "Trigonometry (2D)"],
+        topic: ["Trigonometry (2D)"],
         difficulty: 3,
         content: `圖中所示為四邊形 $ABCD$。 若 $\\angle ABC + \\angle ADC = \\angle ACD = \\angle BAC = 90^\\circ$，則下列何者必為正確？
 <div class="q-mcopt"><img src="img/2025dsep2q23.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 70%; margin-left: 15px; margin-bottom: 5px;">
@@ -460,7 +460,7 @@ D.	$\\tan \\angle ADC = \\dfrac{BC}{CD}$
         section: "MC_A",
         level: ["Junior"],
         domain: ["Geometry"],
-        topic: ["Coordinate Geometry", "Trigonometry (2D)"],
+        topic: ["Coordinate Geometry"],
         difficulty: 3,
         content: `點 $X$、點 $Y$ 及點 $Z$ 的極坐標分別為 $(1, 20^\\circ)$、$(2, 80^\\circ)$ 及 $(r, \\theta)$，其中 $20^\\circ < \\theta < 80^\\circ$。 若 $\\Delta XYZ$ 為一等邊三角形，求 $r$。 
 <div class="q-mcopt">
@@ -479,7 +479,7 @@ D.	$\\sqrt{10}$
         section: "MC_A",
         level: ["Junior"],
         domain: ["Geometry"],
-        topic: ["Loci", "Coordinate Geometry"],
+        topic: ["Loci"],
         difficulty: 2,
         content: `將原點記為 $O$。 點 $A$ 的坐標為 $(a, 2a)$，其中 $a > 0$。 設 $P$ 為直角坐標平面上的一動點使得 $AP = OA$。 $P$ 的軌跡為一
 <div class="q-mcopt">
@@ -498,7 +498,7 @@ D.	直線。
         section: "MC_A",
         level: ["Junior"],
         domain: ["Geometry"],
-        topic: ["Equations of Straight Lines", "Coordinate Geometry"],
+        topic: ["Equations of Straight Lines"],
         difficulty: 2,
         content: `直線 $L_1$ 與直線 $L_2$ 互相垂直。 $L_1$ 及 $L_2$ 的方程分別為 $3x+4y-20=0$ 及 $mx+ny-20=0$，其中 $m$ 及 $n$ 均為常數。 假定 $L_1$ 及 $L_2$ 分別與 $x$ 軸相交於點 $A$ 及點 $B$。 設 $C$ 為 $L_1$ 與 $L_2$ 的交點。 已知 $C$ 在 $x$ 軸之上方。 若 $\\Delta ABC$ 的面積為 $6$，求 $n$。 
 <div class="q-mcopt">
@@ -557,7 +557,7 @@ D.	$25$
         section: "MC_A",
         level: ["Junior"],
         domain: ["Data Handling"],
-        topic: ["Measures of Dispersion", "Statistical Graphs"],
+        topic: ["Statistical Graphs", "Measures of Dispersion"],
         difficulty: 1,
         content: `下面的棒形圖顯示一些教師在某月內的閱書數目的分佈。 求該分佈的四分位數間距。 
 <div class="q-mcopt"><img src="img/2025dsep2q29zh.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 70%; margin-left: 15px; margin-bottom: 5px;">
@@ -602,7 +602,7 @@ D.	I、II 及 III
         section: "MC_B",
         level: ["Senior"],
         domain: ["Algebra"],
-        topic: ["Number Systems"],
+        topic: ["Base Conversion"],
         difficulty: 2,
         content: `$\\text{3E000000000000}_{16} =$
 <div class="q-mcopt">
@@ -621,7 +621,7 @@ D.	$2^{53} + 2^{52} + 2^{51} + 2^{50} + 2^{49}$。
         section: "MC_B",
         level: ["Senior"],
         domain: ["Algebra"],
-        topic: ["Polynomials"],
+        topic: ["H.C.F. and L.C.M."],
         difficulty: 2,
         content: `$p^2 - 4q^2$ 、 $p^3 - 8q^3$ 及 $(p+2q)(p^2 - 4q^2)$ 的 L.C.M. 為
 <div class="q-mcopt">
@@ -661,7 +661,7 @@ D.	$-1$。
         domain: ["Algebra"],
         topic: ["Exponential Functions and Logarithm Functions", "Functions and Graphs"],
         difficulty: 3,
-        content: `在同一直角坐標系上，$y = \\log_a x$ 的圖像分別與 $y = a^x$ 的圖像及 $x$ 軸相交於點 $P$ 及點 $Q$，其中 $a$ 為一正常數。 將原點記為 $O$。 下列何者正確？
+        content: `在同一直角坐标系上，$y = \\log_a x$ 的圖像分別與 $y = a^x$ 的圖像及 $x$ 軸相交於點 $P$ 及點 $Q$，其中 $a$ 為一正常數。 將原點記為 $O$。 下列何者正確？
 <div class="q-mcms">
 I.	$a < 1$
 II.	$OQ > a$
@@ -702,7 +702,7 @@ D.	$i$。
         section: "MC_B",
         level: ["Senior"],
         domain: ["Algebra"],
-        topic: ["Linear Inequalities and Compound Inequalities", "Linear Programming"],
+        topic: ["Linear Programming"],
         difficulty: 3,
         content: `考慮以下的不等式組：
 $$
@@ -753,10 +753,10 @@ D.	只有 II 及 III
         section: "MC_B",
         level: ["Senior"],
         domain: ["Geometry"],
-        topic: ["Circle Geometry"],
+        topic: ["Geometry (Circles)"],
         difficulty: 2,
         content: `圖中，$AC$ 為圓 $ABCD$ 的一直徑。 將 $AC$ 與 $BD$ 的交點記為 $E$。 已知 $TD$ 為該圓在 $D$ 的切線。 若 $\\angle BEC = 96^\\circ$ 及 $\\angle CDT = 41^\\circ$，則 $\\angle CDE =$
-<div class="q-mcopt"><img src="img/2025dsep2q38.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 60%; margin-left: 15px; margin-bottom: 5px;">
+<div class="q-mcopt"><img src="img/2025dsep2q17.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 70%; margin-left: 15px; margin-bottom: 5px;">
 A.	$47^\\circ$。 <br>
 B.	$48^\\circ$。 <br>
 C.	$52^\\circ$。 <br>
@@ -772,7 +772,7 @@ D.	$55^\\circ$。
         section: "MC_B",
         level: ["Senior"],
         domain: ["Algebra"],
-        topic: ["Trigonometric Equations"],
+        topic: ["Trigonometric Ratios"],
         difficulty: 2,
         content: `當 $90^\\circ < \\theta < 270^\\circ$ 時，方程 $\\tan^3 \\theta = 2 \\tan \\theta$ 有多少個根？
 <div class="q-mcopt">
@@ -810,7 +810,7 @@ D.	$71^\\circ$
         section: "MC_B",
         level: ["Senior"],
         domain: ["Geometry"],
-        topic: ["Coordinate Geometry", "Plane Geometry"],
+        topic: ["Coordinate Geometry"],
         difficulty: 2,
         content: `將原點記為 $O$。 點 $U$ 的坐標為 $(20, 0)$。 設 $V$ 為正 $y$ 軸上的一點使得 $\\Delta OUV$ 的內心的 $x$ 坐標為 $6$。 求 $\\Delta OUV$ 的面積。 
 <div class="q-mcopt">
@@ -867,7 +867,7 @@ D.	$\\dfrac{714}{715}$
         section: "MC_B",
         level: ["Senior"],
         domain: ["Data Handling"],
-        topic: ["Measures of Dispersion"],
+        topic: ["Standard Score"],
         difficulty: 2,
         content: `某男生及某女生在數學測驗的標準分分別為 $-2$ 及 $z$。 數學測驗的得分的標準差為 $2$ 分。 若該男生的測驗得分與該女生的測驗得分之差為 $6$ 分，求 $z$。 
 <div class="q-mcopt">
@@ -886,7 +886,7 @@ D.	$-3$  或  $3$
         section: "MC_B",
         level: ["Senior"],
         domain: ["Data Handling"],
-        topic: ["Measures of Central Tendency", "Measures of Dispersion"],
+        topic: ["Change of Data"],
         difficulty: 2,
         content: `已知 $a$、$b$、$c$ 及 $d$ 為四個相異的實數。 設 $m_1$、$r_1$ 及 $v_1$ 分別為 $\\{a, b, c, d\\}$ 這組數的平均值、分佈域及方差，而 $m_2$、$r_2$ 及 $v_2$ 分別為 $\\{2a, 2b, 2c, 2d\\}$ 這組數的平均值、分佈域及方差。 將 $\\{a+3, b+3, c+3, d+3\\}$ 這組數的平均值、分佈域及方差分別記為 $m_3$、$r_3$ 及 $v_3$。 下列何者正確？
 <div class="q-mcms">
