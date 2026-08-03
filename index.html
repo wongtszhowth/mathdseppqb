@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>0803-2130 DSE 數學題目庫</title>
+    <title>0803-2150 DSE 數學題目庫</title>
     <script>
         window.MathJax = {
             tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }, 
@@ -219,7 +219,7 @@
         </div>
         
         <div class="filter-body">
-            <!-- 搜尋框獨立單行 -->
+            <!-- 搜尋欄位 -->
             <div class="search-sort-row">
                 <input type="text" id="keyword" placeholder="搜尋關鍵字、題目編號..." onkeydown="if(event.key === 'Enter') applyFilter(false)">
             </div>
@@ -287,7 +287,7 @@
 
                 <!-- 4. 範疇與課題 -->
                 <div class="filter-item">
-                    <div class="filter-title">範疇與課題</div>
+                    <div class="filter-title">🧩 範疇與課題</div>
                     
                     <div style="display: flex; flex-direction: column; gap: 6px;" id="topicGroupContainer">
                         <!-- 範疇 1: 數與代數 (藍色系) -->
@@ -403,7 +403,7 @@
 
             <!-- 排序下拉選單與套用按鈕放置於同一行，各佔一半 -->
             <div class="btn-group-action">
-                <select id="sortBy" class="sort-select" onchange="applyFilter(true)">
+                <select id="sortBy" class="sort-select">
                     <option value="type">📄 按卷別 (卷一 ➔ 卷二)</option>
                     <option value="year-desc">📅 按年份 (新 ➔ 舊)</option>
                     <option value="year-asc">📅 按年份 (舊 ➔ 新)</option>
@@ -411,7 +411,7 @@
                     <option value="diff-desc">🔥 按難度 (高 ➔ 低)</option>
                     <option value="time-desc">⏱️ 按加入錯題時間 (新 ➔ 舊)</option>
                 </select>
-                <button class="btn btn-apply" onclick="applyFilter(false)">🔍 套用篩選條件</button>
+                <button class="btn btn-apply" onclick="applyFilter(false)">🔍 篩選</button>
             </div>
         </div>
     </div>
@@ -586,7 +586,7 @@
             const list = document.getElementById('list');
 
             if (!isMistakeOnlyMode && isNoCondition) {
-                list.innerHTML = `<p style="text-align:center; color:#777; margin-top:50px; font-size:15px;">請選擇篩選條件或輸入關鍵字，並點擊「🔍 套用篩選條件」。加油！</p>`;
+                list.innerHTML = `<p style="text-align:center; color:#777; margin-top:50px; font-size:15px;">請選擇篩選條件或輸入關鍵字，並點擊「🔍 篩選」。加油！</p>`;
                 return;
             }
 
