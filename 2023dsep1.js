@@ -81,8 +81,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Geometry of Circles"],
         difficulty: 2,
-        content: `圖中，$PR$ 為圓 $PQRS$ 的一直徑。 將 $PR$ 與 $QS$ 的交點記為 $T$。<br>
-        若 $\\angle PSQ = 41^\\circ$ 及 $\\angle PTQ = 68^\\circ$，求 $\\angle RQS$ 及 $\\angle PQS$。<span class="marks">(4分)</span>`,
+        content: `圖中，$PR$ 為圓 $PQRS$ 的一直徑。 將 $PR$ 與 $QS$ 的交點記為 $T$。<br><img src="img/2023dsep1q07.jpg" class="q-img" alt="題目附圖" style="max-width: 50%;"><br>若 $\\angle PSQ = 41^\\circ$ 及 $\\angle PTQ = 68^\\circ$，求 $\\angle RQS$ 及 $\\angle PQS$。<span class="marks">(4分)</span>`,
         hint: `利用直徑所對圓周角為直角、三角形內角和及對頂角性質。`,
         solution: `因 $PR$ 為直徑，$\\angle PQR = \\angle PSR = 90^\\circ$。\\\\ 在 $\\triangle PTQ$ 中，$\\angle PQT = 180^\\circ - 68^\\circ - \\angle QPT$。\\\\ 由圓周角性質及計算得 $\\angle RQS = 27^\\circ$，$\\angle PQS = 63^\\circ$。`
     },
@@ -94,8 +93,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Similar Triangles"],
         difficulty: 3,
-        content: `圖中，$AB$ 與 $CD$ 相交於點 $E$。 已知 $AC // DB$。<br>
-        <div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明 $\\Delta ACE \\sim \\Delta BDE$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">假定 $AB = 20\\text{ cm}$ 、 $AC = 10\\text{ cm}$ 、 $BD = 15\\text{ cm}$ 及 $CE = 7\\text{ cm}$。 $\\Delta BDE$ 是否一直角三角形？ 試解釋你的答案。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `圖中，$AB$ 與 $CD$ 相交於點 $E$。 已知 $AC // DB$。<br><img src="img/2023dsep1q08.jpg" class="q-img" alt="題目附圖" style="max-width: 60%;"><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明 $\\Delta ACE \\sim \\Delta BDE$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">假定 $AB = 20\\text{ cm}$ 、 $AC = 10\\text{ cm}$ 、 $BD = 15\\text{ cm}$ 及 $CE = 7\\text{ cm}$。 $\\Delta BDE$ 是否一直角三角形？ 試解釋你的答案。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 利用平行線得對應角相等，證明 AA 相似。<br>(b) 先由相似比求 $DE$ 及 $BE$，再檢查是否滿足畢氏定理。`,
         solution: `(a) $\\because AC \\parallel DB$\\\\ $\\therefore \\angle CAE = \\angle DBE$（同位角）\\\\ $\\angle ACE = \\angle BDE$（同位角）\\\\ $\\therefore \\triangle ACE \\sim \\triangle BDE$（AA）。 <br><br> (b) 相似比 $= \\dfrac{AC}{BD} = \\dfrac{10}{15} = \\dfrac{2}{3}$。\\\\ $\\dfrac{CE}{DE} = \\dfrac{2}{3} \\Rightarrow DE = \\dfrac{3}{2} \\times 7 = 10.5$ cm。\\\\ $\\dfrac{AE}{BE} = \\dfrac{2}{3}$，又 $AE + BE = 20$，解得 $BE = 12$ cm。\\\\ 檢查 $DE^2 + BE^2 = 10.5^2 + 12^2 = 110.25 + 144 = 254.25 \\neq AB^2$ 等，經計算 $\\triangle BDE$ 的邊長不滿足畢氏定理，故不是直角三角形。`
     },
@@ -131,7 +129,31 @@ questions.push(
         domain: ["Data Handling"],
         topic: ["Measures of Central Tendency and Dispersion"],
         difficulty: 3,
-        content: `下表顯示某班學生擁有計算機的數目的分佈。<br><table class="q-table"><tr><th>擁有計算機的數目</th><th>1</th><th>2</th><th>3</th><th>4</th></tr><tr><th>學生人數</th><td>8</td><td>5</td><td>$n$</td><td>1</td></tr></table><br>該分佈的平均值為 2。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求該分佈的中位數、四分位數間距及方差。<span class="marks">(5分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">該班現有兩名學生退學。 得知該分佈的平均值維持不變。 該分佈的分佈域有否因該兩名學生退學而改變？ 試解釋你的答案。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `下表顯示某班學生擁有計算機的數目的分佈。
+        <table class="q-table" style="margin-left: auto; margin-right: auto; min-width: 300px; border-collapse: collapse; table-layout: auto;">
+    <colgroup>
+      <col style="width: auto;">
+      <col style="width: 3em;">
+      <col style="width: 3em;">
+      <col style="width: 3em;">
+      <col style="width: 3em;">
+    </colgroup>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">擁有計算機的數目</th>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">1</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">2</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">3</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">4</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">學生人數</th>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">8</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">5</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">$n$</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">1</td>
+    </tr>
+  </table>
+該分佈的平均值為 2。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求該分佈的中位數、四分位數間距及方差。<span class="marks">(5分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">該班現有兩名學生退學。 得知該分佈的平均值維持不變。 該分佈的分佈域有否因該兩名學生退學而改變？ 試解釋你的答案。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 先由平均值求 $n$，再求中位數、IQR 及方差。<br>(b) 平均值不變意味著退出學生的平均擁有數仍為 2，討論是否影響最大/最小值。`,
         solution: `(a) 總人數 $= 8+5+n+1 = 14+n$。\\\\ 平均值 $= \\dfrac{1\\times8 + 2\\times5 + 3n + 4\\times1}{14+n} = 2 \\Rightarrow 8+10+3n+4 = 2(14+n) \\Rightarrow 22+3n = 28+2n \\Rightarrow n=6$。\\\\ 總人數 $=20$。中位數為第 10、11 項平均 $=2$。\\\\ $Q_1$ 為第 5、6 項平均 $=1$，$Q_3$ 為第 15、16 項平均 $=3$，IQR $=2$。\\\\ 方差 $= \\dfrac{8(1-2)^2 + 5(2-2)^2 + 6(3-2)^2 + 1(4-2)^2}{20} = \\dfrac{8+0+6+4}{20} = 0.9$。 <br><br> (b) 退出兩名學生後平均值仍為 2，表示退出者平均擁有 2 部。若退出的不是擁有 1 或 4 的學生，分佈域不變；若退出擁有 4 的，則分佈域可能減小。因此分佈域不一定改變。`
     },
@@ -203,8 +225,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Trigonometry"],
         difficulty: 4,
-        content: `<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">已知 $WXY$ 為三角形，其中 $WX = 6\\text{ cm}$ 、$XY = 5\\text{ cm}$ 及 $\\angle WYX = 70^\\circ$。 求 $\\angle WXY$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">下圖顯示角錐體 $WXYZ$，其中 $WZ = XZ = YZ$。 這角錐體的底為 (a) 所描述的三角形 $WXY$。 <br>
-        已知 $WZ$ 與三角形 $WXY$ 間的交角為 $30^\\circ$。 三角形 $WXY$ 與三角形 $XYZ$ 間的交角是否超過 $45^\\circ$？ 試解釋你的答案。<span class="marks">(4分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">已知 $WXY$ 為三角形，其中 $WX = 6\\text{ cm}$ 、$XY = 5\\text{ cm}$ 及 $\\angle WYX = 70^\\circ$。 求 $\\angle WXY$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">下圖顯示角錐體 $WXYZ$，其中 $WZ = XZ = YZ$。 這角錐體的底為 (a) 所描述的三角形 $WXY$。 <br><img src="img/2023dsep1q17b.jpg" class="q-img" alt="題目附圖" style="max-width: 50%;"><br>已知 $WZ$ 與三角形 $WXY$ 間的交角為 $30^\\circ$。 三角形 $WXY$ 與三角形 $XYZ$ 間的交角是否超過 $45^\\circ$？ 試解釋你的答案。<span class="marks">(4分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 用正弦公式。<br>(b) 求高及側面傾角，比較。`,
         solution: `(a) 由正弦公式 $\\dfrac{6}{\\sin 70^\\circ} = \\dfrac{5}{\\sin \\angle WXY}$，解得 $\\angle WXY \\approx 54.2^\\circ$。 <br><br> (b) 經計算交角約 $48^\\circ > 45^\\circ$，故是。`
     },
