@@ -81,7 +81,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Trigonometry (2D)", "Coordinate Geometry"],
         difficulty: 2,
-        content: `在某極坐標系中，$O$ 為極點。 點 $P$、點 $Q$ 及點 $R$ 的極坐標分別為 $(11,59^{\\circ})$、$(60,149^{\\circ})$ 及 $(144,239^{\\circ})$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $\\angle POQ$。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$P$、$O$ 與 $R$ 是否共線？ 試解釋你的答案。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">求 $\\Delta PQR$ 的周界。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `<div style="color: red;">在某極坐標系中，$O$ 為極點。 點 $P$、點 $Q$ 及點 $R$ 的極坐標分別為 $(11,59^{\\circ})$、$(60,149^{\\circ})$ 及 $(144,239^{\\circ})$。</div><div class="q-line" style="color: red;"><span class="q-label">(a)</span><div class="q-text-content" style="color: red;">求 $\\angle POQ$。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line" style="color: red;"><span class="q-label">(b)</span><div class="q-text-content" style="color: red;">$P$、$O$ 與 $R$ 是否共線？ 試解釋你的答案。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line" style="color: red;"><span class="q-label">(c)</span><div class="q-text-content" style="color: red;">求 $\\Delta PQR$ 的周界。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 兩點的極角相減；(b) 檢查 $P$ 與 $R$ 的極角相差是否為 $180^{\\circ}$；(c) 利用共線與垂直關係，在直角三角形中應用畢氏定理求邊長。`,
         solution: `(a) $\\angle POQ = 149^{\\circ} - 59^{\\circ} = 90^{\\circ}$。<br>(b) $\\angle POR = 239^{\\circ} - 59^{\\circ} = 180^{\\circ}$，故 $P$、$O$、$R$ 三點共線。<br>(c) 由上可知 $PR = PO + OR = 11 + 144 = 155$。由於 $\\angle POQ = 90^{\\circ}$，故 $OQ \\perp PR$。由畢氏定理：$PQ = \\sqrt{11^2 + 60^2} = 61$，$QR = \\sqrt{60^2 + 144^2} = 156$。$\\Delta PQR$ 的周界 $= 61 + 156 + 155 = 372$。`
     },
@@ -93,7 +93,9 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Plane Geometry", "Areas and Volumes"],
         difficulty: 3,
-        content: `圖中，$E$ 為 $AC$ 與 $BD$ 的交點。 已知 $\\angle ACB=\\angle ADB=90^{\\circ}$ 及 $AD=BC$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明 $\\Delta ABC\\cong\\Delta BAD$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">若 $AD=12\\text{ cm}$ 及 $DE=9\\text{ cm}$，求五邊形 $ABCED$ 的面積。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `圖中，$E$ 為 $AC$ 與 $BD$ 的交點。 已知 $\\angle ACB=\\angle ADB=90^{\\circ}$ 及 $AD=BC$。
+        <img src="img/2024dsep1q08.jpg" class="q-img" alt="題目附圖" style="max-width: 65%;">
+        <div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明 $\\Delta ABC\\cong\\Delta BAD$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">若 $AD=12\\text{ cm}$ 及 $DE=9\\text{ cm}$，求五邊形 $ABCED$ 的面積。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 利用 R.H.S.（斜邊、直角邊）證明全等；(b) 由全等推出對應邊相等，進而利用畢氏定理求出直角三角形的其餘邊長，最後將圖形分割成兩個三角形求面積和。`,
         solution: `(a) $AB = BA$ (公共邊)，$\\angle ACB = \\angle ADB = 90^{\\circ}$ (已知)，$BC = AD$ (已知)，故 $\\Delta ABC \\cong \\Delta BAD$ (R.H.S.)。<br>(b) 由全等知 $AC = BD$ 且 $\\angle EAB = \\angle EBA \\Rightarrow EA = EB$，因此 $EC = ED = 9\\text{ cm}$。在直角 $\\Delta ADE$ 中，$AE = \\sqrt{12^2 + 9^2} = 15\\text{ cm}$，得 $AC = 15 + 9 = 24\\text{ cm}$。五邊形面積 $= S_{\\Delta ABC} + S_{\\Delta ADE} = \\dfrac{1}{2}(24)(12) + \\dfrac{1}{2}(12)(9) = 144 + 54 = 198\\text{ cm}^2$。`
     },
@@ -105,7 +107,37 @@ questions.push(
         domain: ["Data Handling"],
         topic: ["Probability", "Measures of Central Tendency"],
         difficulty: 2,
-        content: `下表顯示某群主婦擁有鑰匙的數目的分佈。<div style="overflow-x: auto; width: 100%; margin-bottom: 8px;"><table class="q-table" style="width: 100%; min-width: 300px;"><tr><th>鑰匙的數目</th><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td></tr><tr><th>主婦人數</th><td>10</td><td>9</td><td>4</td><td>3</td><td>4</td><td>$k$</td></tr></table></div>若從該群中隨機選出一名主婦，則她擁有多於 $6$ 條鑰匙的概率為 $\\dfrac{5}{18}$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $k$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出該分佈的平均值、眾數及中位數。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `下表顯示某群主婦擁有鑰匙的數目的分佈。
+        <table class="q-table" style="margin-left: auto; margin-right: auto; min-width: 300px; border-collapse: collapse; table-layout: auto;">
+    <colgroup>
+      <col style="width: auto;">
+      <col style="width: 2em;">
+      <col style="width: 2em;">
+      <col style="width: 2em;">
+      <col style="width: 2em;">
+      <col style="width: 2em;">
+      <col style="width: 2em;">
+    </colgroup>
+    <tr>
+      <th style="border: 1px solid #000; text-align: center; padding: 6px 10px;">鑰匙的數目</th>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">3</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">4</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">5</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">6</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">7</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">8</td>      
+    </tr>
+    <tr>
+      <th style="border: 1px solid #000; text-align: center; padding: 6px 10px;">主婦人數</th>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">10</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">9</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">4</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">3</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">4</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">$k$</td>
+    </tr>
+  </table>
+若從該群中隨機選出一名主婦，則她擁有多於 $6$ 條鑰匙的概率為 $\\dfrac{5}{18}$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $k$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出該分佈的平均值、眾數及中位數。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 多於 6 條代表 7 條或 8 條，概率為 $\\dfrac{4+k}{\\text{總人數}}$，藉此建立方程求 $k$；(b) 將 $k$ 代回後依常規統計公式計算。`,
         solution: `(a) 總人數 $= 10+9+4+3+4+k = 30+k$。依題意 $\\dfrac{4+k}{30+k} = \\dfrac{5}{18} \\Rightarrow 72+18k = 150+5k \\Rightarrow 13k = 78 \\Rightarrow k = 6$。<br>(b) 總人數 $= 36$。平均值 $= \\dfrac{3(10)+4(9)+5(4)+6(3)+7(4)+8(6)}{36} = \\dfrac{180}{36} = 5$；眾數 $= 3$（頻數最高為10）；中位數：第18和19項數據均為 $4$，故中位數 $= 4$。`
     },
@@ -213,7 +245,9 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Trigonometry (3D)"],
         difficulty: 4,
-        content: `<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">$PQRS$ 為四邊形金屬薄片，其中 $PQ=12\\text{ cm}$ 、 $PS=10\\text{ cm}$ 、 $QR=13\\text{ cm}$ 、 $\\angle QPS=82^{\\circ}$ 及 $\\angle QRS=65^{\\circ}$。 求</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">$QS$ 的長度，</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">$\\angle RQS$。<br><span class="marks">(4分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">現將 (a) 中所描述的金屬薄片 $PQRS$ 沿 $QS$ 摺起（見圖）。 已知平面 $PQS$ 與平面 $QRS$ 間的交角為 $80^{\\circ}$。</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求由 $R$ 至平面 $PQS$ 的最短距離。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">設 $X$ 為平面 $QRS$ 上的任意點。 某人宣稱 $P$ 與 $X$ 間的距離超過 $8\\text{ cm}$。 該宣稱是否正確？ 試解釋你的答案。<br><span class="marks">(4分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">$PQRS$ 為四邊形金屬薄片，其中 $PQ=12\\text{ cm}$ 、 $PS=10\\text{ cm}$ 、 $QR=13\\text{ cm}$ 、 $\\angle QPS=82^{\\circ}$ 及 $\\angle QRS=65^{\\circ}$。 求</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">$QS$ 的長度，</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">$\\angle RQS$。<br><span class="marks">(4分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">現將 (a) 中所描述的金屬薄片 $PQRS$ 沿 $QS$ 摺起（見圖）。 已知平面 $PQS$ 與平面 $QRS$ 間的交角為 $80^{\\circ}$。</div></div>
+        <img src="img/2024dsep1q18b.jpg" class="q-img" alt="題目附圖" style="max-width: 60%;">
+        <div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求由 $R$ 至平面 $PQS$ 的最短距離。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">設 $X$ 為平面 $QRS$ 上的任意點。 某人宣稱 $P$ 與 $X$ 間的距離超過 $8\\text{ cm}$。 該宣稱是否正確？ 試解釋你的答案。<br><span class="marks">(4分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a)(i) 在 $\\Delta PQS$ 中使用餘弦定理；(a)(ii) 在 $\\Delta QRS$ 中使用正弦定理；(b)(i) 利用三面角或投影關係，最短距離為 $R$ 到棱 $QS$ 的垂線長度乘以 $\\sin 80^{\\circ}$。`,
         solution: `(a)(i) 由餘弦定理，$QS = \\sqrt{12^2+10^2-2(12)(10)\\cos 82^{\\circ}} \\approx 14.5\\text{ cm}$。<br>(ii) 利用正弦定理求出 $\\angle RQS$。<br>(b)(i) 作垂線並利用摺起角 $80^{\\circ}$ 的直角三角形關係，求出最短距離（即垂線高）。<br>(ii) 透過空間坐標法或最值幾何分析，找出 $P$ 到平面的最短距離是否大於 $8\\text{ cm}$ 來驗證宣稱。`
     },
