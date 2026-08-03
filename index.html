@@ -54,7 +54,7 @@
 
         .filter-container.minimized .filter-body { display: none; }
         
-        /* 搜尋與排序欄位組合 */
+        /* 搜尋欄位 */
         .search-sort-row {
             display: flex;
             gap: 8px;
@@ -80,6 +80,8 @@
             cursor: pointer;
             outline: none;
             transition: all 0.2s;
+            flex: 1; /* 各佔一半寬度 */
+            box-sizing: border-box;
         }
 
         .sort-select:hover, .sort-select:focus {
@@ -217,17 +219,9 @@
         </div>
         
         <div class="filter-body">
-            <!-- 搜尋框與排序選單同行 -->
+            <!-- 搜尋框獨立單行 -->
             <div class="search-sort-row">
                 <input type="text" id="keyword" placeholder="搜尋關鍵字、題目編號..." onkeydown="if(event.key === 'Enter') applyFilter(false)">
-                <select id="sortBy" class="sort-select" onchange="applyFilter(true)">
-                    <option value="type">📄 按卷別 (卷一 ➔ 卷二)</option>
-                    <option value="year-desc">📅 按年份 (新 ➔ 舊)</option>
-                    <option value="year-asc">📅 按年份 (舊 ➔ 新)</option>
-                    <option value="diff-asc">🔥 按難度 (低 ➔ 高)</option>
-                    <option value="diff-desc">🔥 按難度 (高 ➔ 低)</option>
-                    <option value="time-desc">⏱️ 按加入錯題時間 (新 ➔ 舊)</option>
-                </select>
             </div>
 
             <!-- 清單形式篩選區塊 -->
@@ -407,7 +401,16 @@
 
             </div>
 
+            <!-- 排序下拉選單與套用按鈕放置於同一行，各佔一半 -->
             <div class="btn-group-action">
+                <select id="sortBy" class="sort-select" onchange="applyFilter(true)">
+                    <option value="type">📄 按卷別 (卷一 ➔ 卷二)</option>
+                    <option value="year-desc">📅 按年份 (新 ➔ 舊)</option>
+                    <option value="year-asc">📅 按年份 (舊 ➔ 新)</option>
+                    <option value="diff-asc">🔥 按難度 (低 ➔ 高)</option>
+                    <option value="diff-desc">🔥 按難度 (高 ➔ 低)</option>
+                    <option value="time-desc">⏱️ 按加入錯題時間 (新 ➔ 舊)</option>
+                </select>
                 <button class="btn btn-apply" onclick="applyFilter(false)">🔍 套用篩選條件</button>
             </div>
         </div>
