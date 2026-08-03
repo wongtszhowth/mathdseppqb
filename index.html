@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>0803-1520 DSE 數學題目庫</title>
+    <title>0803-1530 DSE 數學題目庫</title>
     <script>
         window.MathJax = {
             tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }, 
@@ -17,23 +17,39 @@
         
         /* 篩選器容器 */
         .filter-container {
-    position: sticky;
-    top: 10px;
-    z-index: 1000;
-    background: rgba(253, 245, 255, 0.7);
-    padding: 16px 16px;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(51,2,64,0.3);
-    backdrop-filter: blur(3px);
-    margin-bottom: 10px;
+            position: sticky;
+            top: 10px;
+            z-index: 1000;
+            background: rgba(253, 245, 255, 0.7);
+            padding: 16px 16px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(51,2,64,0.3);
+            backdrop-filter: blur(3px);
+            margin-bottom: 10px;
 
-    /* 🎯 關鍵改進：限制篩選器最大高度與啟用獨立滾動條 */
-    max-height: 80vh;            /* 不超過螢幕高度的 80% */
-    overflow-y: auto;             /* 內容過長時出現篩選器自身的滾動條 */
-    overscroll-behavior: contain;/* 捲動到篩選器頂端/底端時，不會帶動背後題目的捲動 */
-}
-        .filter-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
-        .filter-body { transition: all 0.3s ease; }
+            /* 🎯 關鍵改進：限制篩選器最大高度與啟用獨立滾動條 */
+            max-height: 80vh;            /* 不超過螢幕高度的 80% */
+            overflow-y: auto;             /* 內容過長時出現篩選器自身的滾動條 */
+            overscroll-behavior: contain;/* 捲動到篩選器頂端/底端時，不會帶動背後題目的捲動 */
+        }
+
+        /* 🎯 2. 隱藏篩選器時，縮減容器上下內襯與去除邊距 */
+        .filter-container.minimized {
+            padding: 8px 16px;
+        }
+
+        .filter-header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            margin-bottom: 0; 
+        }
+
+        .filter-body { 
+            transition: all 0.3s ease; 
+            margin-top: 10px; 
+        }
+
         .filter-container.minimized .filter-body { display: none; }
         
         /* 清單式架構與精簡行距 */
@@ -130,8 +146,10 @@
         input[type="text"] { width: 100%; padding: 8px 12px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 14px; box-sizing: border-box; margin-bottom: 8px; }
         .btn-group-action { display: flex; gap: 8px; margin-top: 12px; }
         .btn { padding: 6px 14px; border: none; border-radius: 8px; font-size: 13px; cursor: pointer; font-weight: 500; transition: background 0.2s; }
-        .btn-toggle { background: #475569; color: white; }
-        .btn-reset { background: #e2e8f0; color: #334155; }
+        
+        /* 🎯 1. 縮小「顯示/隱藏篩選器」與「重設所有條件」按鈕尺寸 */
+        .btn-toggle { background: #475569; color: white; padding: 4px 10px; font-size: 12px; }
+        .btn-reset { background: #e2e8f0; color: #334155; padding: 4px 10px; font-size: 12px; }
         
         .btn-apply { background: #7c3aed; color: white; font-weight: bold; padding: 9px 18px; font-size: 14.5px; flex: 1; border-radius: 8px; }
         .btn-apply:hover { background: #6d28d9; }
