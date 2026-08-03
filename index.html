@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>0803-1508 DSE 數學題目庫</title>
+    <title>0803-1515 DSE 數學題目庫</title>
     <script>
         window.MathJax = {
             tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }, 
@@ -20,11 +20,11 @@
     position: sticky;
     top: 10px;
     z-index: 1000;
-    background: rgba(240, 240, 240, 0.8);
+    background: rgba(248, 222, 255, 0.7);
     padding: 16px 16px;
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 20px rgba(51,2,64,0.3);
+    backdrop-filter: blur(3px);
     margin-bottom: 10px;
 
     /* 🎯 關鍵改進：限制篩選器最大高度與啟用獨立滾動條 */
@@ -50,7 +50,7 @@
             padding: 3px 8px !important; 
             border: 1px solid #cbd5e1; 
             border-radius: 8px; 
-            font-size: 12.5px; 
+            font-size: 12px; 
             cursor: pointer; 
             background: #fff; 
             user-select: none; 
@@ -181,18 +181,18 @@
         </div>
         
         <div class="filter-body">
-            <input type="text" id="keyword" placeholder="搜尋關鍵字、題號... (按 Enter 或點擊下方套用)" onkeydown="if(event.key === 'Enter') applyFilter()">
+            <input type="text" id="keyword" placeholder="搜尋關鍵字、題目編號..." onkeydown="if(event.key === 'Enter') applyFilter()">
 
             <!-- 清單形式篩選區塊 -->
             <div class="filter-list">
                 
                 <!-- 1. 卷別 -->
                 <div class="filter-item">
-                    <div class="filter-title">卷別：</div>
+                    <div class="filter-title">卷別</div>
                     <div class="filter-item-row">
                         <div class="filter-sub-group" id="p1Group">
-                            <button class="chip" data-group="type" data-value="P1" onclick="toggleChip(this)">卷一 (長題目)</button>
-                            <span class="filter-divider-text">&gt;</span>
+                            <button class="chip" data-group="type" data-value="P1" onclick="toggleChip(this)">卷一</button>
+                            <span class="filter-divider-text">-</span>
                             <button class="chip" data-group="section" data-value="A1" onclick="toggleChip(this)">甲部(1)</button>
                             <button class="chip" data-group="section" data-value="A2" onclick="toggleChip(this)">甲部(2)</button>
                             <button class="chip" data-group="section" data-value="B" onclick="toggleChip(this)">乙部</button>
@@ -200,8 +200,8 @@
                     </div>
                     <div class="filter-item-row" style="margin-top: 2px;">
                         <div class="filter-sub-group" id="p2Group">
-                            <button class="chip" data-group="type" data-value="P2" onclick="toggleChip(this)">卷二 (MC)</button>
-                            <span class="filter-divider-text">&gt;</span>
+                            <button class="chip" data-group="type" data-value="P2" onclick="toggleChip(this)">卷二</button>
+                            <span class="filter-divider-text">-</span>
                             <button class="chip" data-group="section" data-value="MC_A" onclick="toggleChip(this)">甲部</button>
                             <button class="chip" data-group="section" data-value="MC_B" onclick="toggleChip(this)">乙部</button>
                         </div>
@@ -210,7 +210,7 @@
 
                 <!-- 2. 年份 (.chip-year) -->
                 <div class="filter-item">
-                    <div class="filter-title">年份：</div>
+                    <div class="filter-title">年份</div>
                     <div class="chip-group" id="yearGroup">
                         <button class="chip chip-year" data-group="year" data-value="2025" onclick="toggleChip(this)">2025</button>
                         <button class="chip chip-year" data-group="year" data-value="2024" onclick="toggleChip(this)">2024</button>
@@ -231,7 +231,7 @@
 
                 <!-- 3. 級別與難度 -->
                 <div class="filter-item">
-                    <div class="filter-title">級別與難度：</div>
+                    <div class="filter-title">級別與難度</div>
                     <div class="chip-group">
                         <button class="chip" data-group="level" data-value="Junior" onclick="toggleChip(this)">初中</button>
                         <button class="chip" data-group="level" data-value="Senior" onclick="toggleChip(this)">高中</button>
@@ -246,7 +246,7 @@
 
                 <!-- 4. 範疇與課題 (課題與全選按鈕套用專屬範疇顏色系) -->
                 <div class="filter-item">
-                    <div class="filter-title">範疇與課題：</div>
+                    <div class="filter-title">範疇與課題</div>
                     
                     <div style="display: flex; flex-direction: column; gap: 6px;" id="topicGroupContainer">
                         
