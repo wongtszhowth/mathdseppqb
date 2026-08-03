@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>0803-1130 DSE 數學題目庫</title>
+    <title>0803-1330 DSE 數學題目庫</title>
     <script>
         window.MathJax = {
             tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }, 
@@ -14,56 +14,79 @@
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding: 20px; font-size: 11pt; margin: 0; background: #f8f9fa; color: #333; }
         h1 { font-size: 1.5rem; text-align: center; margin: 10px 0; }
-        .filter-container { position: sticky; top: 10px; z-index: 1000; background: rgba(255, 255, 255, 0.98); padding: 15px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); backdrop-filter: blur(8px); margin-bottom: 25px; }
-        .filter-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+        
+        /* 篩選器容器 */
+        .filter-container { position: sticky; top: 10px; z-index: 1000; background: rgba(255, 255, 255, 0.98); padding: 18px 22px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); backdrop-filter: blur(8px); margin-bottom: 25px; }
+        .filter-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
         .filter-body { transition: all 0.3s ease; }
         .filter-container.minimized .filter-body { display: none; }
-        .filter-row { margin-bottom: 12px; display: flex; flex-direction: column; gap: 5px; }
-        .filter-label { font-size: 14px; font-weight: bold; color: #555; margin-top: 5px; }
-        .chip-group { display: flex; flex-wrap: wrap; gap: 8px; }
-        .chip { padding: 6px 14px; border: 1px solid #ddd; border-radius: 20px; font-size: 13px; cursor: pointer; background: #fff; user-select: none; transition: all 0.2s; }
-        .chip-base.active { background: #007aff; color: white; border-color: #007aff; }
         
-        /* 三大範疇色彩 */
-        .chip-algebra { background: #eef2ff; color: #35495e; border-color: #dee2e6; }
-        .chip-algebra.active { background: #3b82f6; color: white; border-color: #2563eb; }
-        .chip-geometry { background: #f0fdf4; color: #2d3748; border-color: #dee2e6; }
-        .chip-geometry.active { background: #10b981; color: white; border-color: #059669; }
-        .chip-data { background: #fff7ed; color: #4a5568; border-color: #dee2e6; }
-        .chip-data.active { background: #f97316; color: white; border-color: #ea580c; }
+        /* 清單式架構與行距 */
+        .filter-list { display: flex; flex-direction: column; gap: 16px; margin-top: 10px; }
+        .filter-item { display: flex; flex-direction: column; gap: 8px; }
+        .filter-item-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+        .filter-title { font-size: 14px; font-weight: bold; color: #475569; min-width: 120px; }
+        .filter-sub-group { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+        .filter-divider-text { color: #94a3b8; font-weight: bold; margin: 0 4px; }
+        
+        /* Chip 標籤樣式 */
+        .chip-group { display: flex; flex-wrap: wrap; gap: 6px; }
+        .chip { padding: 5px 12px; border: 1px solid #cbd5e1; border-radius: 16px; font-size: 13px; cursor: pointer; background: #fff; user-select: none; transition: all 0.2s; color: #334155; }
+        .chip:hover { border-color: #94a3b8; background: #f1f5f9; }
+        .chip.active { background: #2563eb; color: white; border-color: #2563eb; }
 
-        input[type="text"] { width: 100%; padding: 10px 14px; border: 1px solid #ddd; border-radius: 8px; font-size: 15px; box-sizing: border-box; margin-bottom: 15px; }
+        /* 卷一、卷二特別色標籤 */
+        .chip-p1.active { background: #0284c7; border-color: #0284c7; }
+        .chip-p2.active { background: #7c3aed; border-color: #7c3aed; }
+        .chip-diff.active { background: #d97706; border-color: #d97706; }
+
+        /* 可展開/摺疊 Accordion 範疇區塊 */
+        .domain-accordion { border: 1px solid #e2e8f0; border-radius: 8px; background: #fafafa; overflow: hidden; }
+        .domain-header { padding: 10px 14px; font-weight: bold; font-size: 14px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; transition: background 0.2s; }
+        .domain-header:hover { background: #f1f5f9; }
+        .domain-header .arrow { transition: transform 0.3s ease; font-size: 12px; color: #64748b; }
+        .domain-accordion.open .domain-header .arrow { transform: rotate(180deg); }
         
-        /* 按鈕樣式加強 */
+        /* 三大範疇主題色彩標頭 */
+        .domain-algebra .domain-header { background: #eef2ff; color: #1e40af; }
+        .domain-geometry .domain-header { background: #f0fdf4; color: #166534; }
+        .domain-data .domain-header { background: #fff7ed; color: #9a3412; }
+
+        .domain-body { display: none; padding: 12px 16px; background: #fff; border-top: 1px solid #e2e8f0; }
+        .domain-accordion.open .domain-body { display: block; }
+        
+        /* 課題分組分隔線 */
+        .topic-group-block { display: flex; flex-wrap: wrap; gap: 6px; }
+        .topic-divider { width: 100%; height: 1px; background-color: #f1f5f9; margin: 6px 0; }
+
+        /* 搜尋輸入框與按鈕 */
+        input[type="text"] { width: 100%; padding: 10px 14px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 14px; box-sizing: border-box; margin-bottom: 10px; }
         .btn-group-action { display: flex; gap: 10px; margin-top: 15px; }
         .btn { padding: 8px 16px; border: none; border-radius: 8px; font-size: 14px; cursor: pointer; font-weight: 500; transition: background 0.2s; }
-        .btn-toggle { background: #4a5568; color: white; }
-        .btn-reset { background: #e0e0e0; color: #333; }
+        .btn-toggle { background: #475569; color: white; }
+        .btn-reset { background: #e2e8f0; color: #334155; }
         .btn-apply { background: #2563eb; color: white; font-weight: bold; padding: 10px 20px; font-size: 15px; flex: 1; }
         .btn-apply:hover { background: #1d4ed8; }
 
-        /* Loading 載入動畫提示 */
+        /* Loading 動畫 */
         .loading-box { text-align: center; padding: 40px 20px; color: #4b5563; }
         .spinner { display: inline-block; width: 30px; height: 30px; border: 3px solid rgba(59, 130, 246, 0.3); border-radius: 50%; border-top-color: #2563eb; animation: spin 0.8s ease-in-out infinite; margin-bottom: 12px; }
         @keyframes spin { to { transform: rotate(360deg); } }
         
+        /* 題目卡片 */
         #list { max-width: 800px; margin: 0 auto; padding-bottom: 50px; }
-        .question-card { background: #fff; border: 1px solid #e1e4e8; padding: 22px; margin: 15px 0; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+        .question-card { background: #fff; border: 1px solid #e2e8f0; padding: 22px; margin: 15px 0; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+        .card-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #f1f5f9; padding-bottom: 8px; margin-bottom: 12px; }
+        .q-id { font-family: SFMono-Regular, Consolas, Menlo, monospace; font-size: 14px; color: #64748b; font-weight: 600; }
         
-        /* 卡片頂部佈局 */
-        .card-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #f0f0f0; padding-bottom: 8px; margin-bottom: 12px; }
-        .q-id { font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace; font-size: 14px; color: #666; font-weight: 600; margin: 0; }
-        
-        /* 難度標籤 */
-        .diff-badge { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 12px; font-weight: bold; padding: 3px 10px; border-radius: 6px; }
+        .diff-badge { font-size: 12px; font-weight: bold; padding: 3px 10px; border-radius: 6px; }
         .diff-lv1 { background: #e0f2fe; color: #0369a1; }
         .diff-lv2 { background: #fef3c7; color: #b45309; }
         .diff-lv3 { background: #fee2e2; color: #b91c1c; }
 
-        .question-content, .detail-content { font-family: Times, "Times New Roman", "PMingLiU", "新細明體", serif; font-size: normal; letter-spacing: 5%; line-height: 1.7; margin: 15px 0; white-space: pre-wrap; }
+        .question-content, .detail-content { font-family: Times, "Times New Roman", "PMingLiU", "新細明體", serif; font-size: 11pt; line-height: 1.7; margin: 15px 0; white-space: pre-wrap; }
         .q-img { display: block; max-width: 100%; height: auto; margin: 15px auto; }
 
-        /* 排版樣式 */
         .q-line { display: flex; align-items: flex-start; width: 100%; box-sizing: border-box; margin-top: 5px; margin-bottom: 3px; }
         .q-line.q-level-2 { margin-left: 40px; width: calc(100% - 40px); }
         .q-label { flex-shrink: 0; width: 40px; }
@@ -73,7 +96,7 @@
         .marks { float: right; padding-left: 10px; font-weight: normal; letter-spacing: 0.1em; }
         .q-clearfix { clear: both; }
 
-        details { margin-top: 10px; background: #f1f5f9; border-radius: 8px; overflow: hidden; }
+        details { margin-top: 10px; background: #f8fafc; border-radius: 8px; overflow: hidden; }
         summary { padding: 12px; font-weight: bold; color: #475569; cursor: pointer; }
         .detail-content { padding: 15px; background: #fff; }
     </style>
@@ -89,85 +112,208 @@
         </div>
         
         <div class="filter-body">
-            <!-- 💡 Enter 鍵也可以觸發套用搜尋 -->
-            <input type="text" id="keyword" placeholder="搜尋關鍵字、題號或輸入空白鍵顯示全部... (按下 Enter 或點擊套用)" onkeydown="if(event.key === 'Enter') applyFilter()">
+            <input type="text" id="keyword" placeholder="搜尋關鍵字、題號... (按 Enter 或點擊下方套用)" onkeydown="if(event.key === 'Enter') applyFilter()">
 
-            <div class="filter-row">
-                <span class="filter-label">基本資訊:</span>
-                <div class="chip-group" id="baseGroup">
-                    <button class="chip chip-base" data-group="level" data-value="Junior" onclick="toggleChip(this)">初中</button>
-                    <button class="chip chip-base" data-group="level" data-value="Senior" onclick="toggleChip(this)">高中</button>
-                    <span style="border-left:1px solid #ccc; margin:0 5px;"></span>
-                    <button class="chip chip-base" data-group="type" data-value="P1" onclick="toggleChip(this)">卷一 (長題目)</button>
-                    <button class="chip chip-base" data-group="type" data-value="P2" onclick="toggleChip(this)">卷二 (MC)</button>
-                    <span style="border-left:1px solid #ccc; margin:0 5px;"></span>
-                    <button class="chip chip-base" data-group="year" data-value="2025" onclick="toggleChip(this)">2025</button>
-                    <button class="chip chip-base" data-group="year" data-value="2024" onclick="toggleChip(this)">2024</button>
-                    <button class="chip chip-base" data-group="year" data-value="2023" onclick="toggleChip(this)">2023</button>
-                    <button class="chip chip-base" data-group="year" data-value="2022" onclick="toggleChip(this)">2022</button>
-                    <button class="chip chip-base" data-group="year" data-value="2021" onclick="toggleChip(this)">2021</button>
-                    <button class="chip chip-base" data-group="year" data-value="2020" onclick="toggleChip(this)">2020</button>
-                    <button class="chip chip-base" data-group="year" data-value="2019" onclick="toggleChip(this)">2019</button>
-                    <button class="chip chip-base" data-group="year" data-value="2018" onclick="toggleChip(this)">2018</button>
+            <!-- 清單形式篩選區塊 -->
+            <div class="filter-list">
+                
+                <!-- 1. 初中 / 高中 -->
+                <div class="filter-item">
+                    <div class="chip-group" id="levelGroup">
+                        <button class="chip" data-group="level" data-value="Junior" onclick="toggleChip(this)">初中</button>
+                        <button class="chip" data-group="level" data-value="Senior" onclick="toggleChip(this)">高中</button>
+                    </div>
                 </div>
+
+                <!-- 2. 卷一 & 卷二 (分部選單) -->
+                <div class="filter-item">
+                    <div class="filter-item-row">
+                        <!-- 卷一組 -->
+                        <div class="filter-sub-group" id="p1Group">
+                            <button class="chip chip-p1" data-group="type" data-value="P1" onclick="toggleChip(this)">卷一 (長題目)</button>
+                            <span class="filter-divider-text">&gt;</span>
+                            <button class="chip chip-p1" data-group="section" data-value="A1" onclick="toggleChip(this)">甲部(1)</button>
+                            <button class="chip chip-p1" data-group="section" data-value="A2" onclick="toggleChip(this)">甲部(2)</button>
+                            <button class="chip chip-p1" data-group="section" data-value="B" onclick="toggleChip(this)">乙部</button>
+                        </div>
+                    </div>
+                    <div class="filter-item-row" style="margin-top: 4px;">
+                        <!-- 卷二組 -->
+                        <div class="filter-sub-group" id="p2Group">
+                            <button class="chip chip-p2" data-group="type" data-value="P2" onclick="toggleChip(this)">卷二 (MC)</button>
+                            <span class="filter-divider-text">&gt;</span>
+                            <button class="chip chip-p2" data-group="section" data-value="MC_A" onclick="toggleChip(this)">甲部</button>
+                            <button class="chip chip-p2" data-group="section" data-value="MC_B" onclick="toggleChip(this)">乙部</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. 年份選單 (2025 - 2012) -->
+                <div class="filter-item">
+                    <div class="chip-group" id="yearGroup">
+                        <button class="chip" data-group="year" data-value="2025" onclick="toggleChip(this)">2025</button>
+                        <button class="chip" data-group="year" data-value="2024" onclick="toggleChip(this)">2024</button>
+                        <button class="chip" data-group="year" data-value="2023" onclick="toggleChip(this)">2023</button>
+                        <button class="chip" data-group="year" data-value="2022" onclick="toggleChip(this)">2022</button>
+                        <button class="chip" data-group="year" data-value="2021" onclick="toggleChip(this)">2021</button>
+                        <button class="chip" data-group="year" data-value="2020" onclick="toggleChip(this)">2020</button>
+                        <button class="chip" data-group="year" data-value="2019" onclick="toggleChip(this)">2019</button>
+                        <button class="chip" data-group="year" data-value="2018" onclick="toggleChip(this)">2018</button>
+                        <button class="chip" data-group="year" data-value="2017" onclick="toggleChip(this)">2017</button>
+                        <button class="chip" data-group="year" data-value="2016" onclick="toggleChip(this)">2016</button>
+                        <button class="chip" data-group="year" data-value="2015" onclick="toggleChip(this)">2015</button>
+                        <button class="chip" data-group="year" data-value="2014" onclick="toggleChip(this)">2014</button>
+                        <button class="chip" data-group="year" data-value="2013" onclick="toggleChip(this)">2013</button>
+                        <button class="chip" data-group="year" data-value="2012" onclick="toggleChip(this)">2012</button>
+                    </div>
+                </div>
+
+                <!-- 4. 難度選單 -->
+                <div class="filter-item">
+                    <div class="chip-group" id="diffGroup">
+                        <button class="chip chip-diff" data-group="diff" data-value="1" onclick="toggleChip(this)">Lv.2</button>
+                        <button class="chip chip-diff" data-group="diff" data-value="2" onclick="toggleChip(this)">Lv.3-4</button>
+                        <button class="chip chip-diff" data-group="diff" data-value="3" onclick="toggleChip(this)">Lv.5+</button>
+                    </div>
+                </div>
+
+                <!-- 5. 範疇與課題 (折疊選單 Accordion) -->
+                <div class="filter-item">
+                    <div class="filter-title" style="margin-bottom: 4px;">範疇與課題：</div>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 8px;" id="topicGroupContainer">
+                        
+                        <!-- 範疇 1: 數與代數 -->
+                        <div class="domain-accordion domain-algebra" id="accordionAlgebra">
+                            <div class="domain-header" onclick="toggleAccordion('accordionAlgebra')">
+                                <span>數與代數 Number and Algebra</span>
+                                <span class="arrow">▼</span>
+                            </div>
+                            <div class="domain-body">
+                                <div class="topic-group-block">
+                                    <button class="chip" data-value="Laws of Indices" onclick="toggleChip(this)">指數律 Laws of Indices</button>
+                                    <button class="chip" data-value="Factorization" onclick="toggleChip(this)">因式分解 Factorization</button>
+                                    <button class="chip" data-value="Change of Subject" onclick="toggleChip(this)">主項變換 Change of Subject</button>
+                                    <button class="chip" data-value="Algebraic Expressions" onclick="toggleChip(this)">代數式 Algebraic Expressions</button>
+                                    <button class="chip" data-value="Algebraic Fractions and Fractional Equations" onclick="toggleChip(this)">代數分式及分式方程 Algebraic Fractions</button>
+                                    <button class="chip" data-value="Identities" onclick="toggleChip(this)">恆等式 Identities</button>
+                                    <button class="chip" data-value="Base Conversion" onclick="toggleChip(this)">進制轉換 Base Conversion</button>
+                                    
+                                    <div class="topic-divider"></div>
+                                    
+                                    <button class="chip" data-value="Approximation and Errors" onclick="toggleChip(this)">近似與誤差 Approximation and Errors</button>
+                                    <button class="chip" data-value="Estimation" onclick="toggleChip(this)">估算 Estimation</button>
+                                    <button class="chip" data-value="Complex Numbers" onclick="toggleChip(this)">複數 Complex Numbers</button>
+                                    
+                                    <div class="topic-divider"></div>
+
+                                    <button class="chip" data-value="Percentages" onclick="toggleChip(this)">百分法 Percentages</button>
+                                    <button class="chip" data-value="Rates, Ratios and Proportions" onclick="toggleChip(this)">率、比及比例 Rates, Ratios and Proportions</button>
+
+                                    <div class="topic-divider"></div>
+
+                                    <button class="chip" data-value="Linear Equations in Two Unknowns" onclick="toggleChip(this)">二元一次方程 Linear Equations in Two Unknowns</button>
+                                    <button class="chip" data-value="Quadratic Equations in One Unknown" onclick="toggleChip(this)">一元二次方程 Quadratic Equations</button>
+
+                                    <div class="topic-divider"></div>
+
+                                    <button class="chip" data-value="Linear Inequalities and Compound Inequalities" onclick="toggleChip(this)">一元一次不等式及複合不等式 Linear Inequalities</button>
+                                    <button class="chip" data-value="Quadratic Inequalities in One Unknown" onclick="toggleChip(this)">一元二次不等式 Quadratic Inequalities</button>
+                                    <button class="chip" data-value="Linear Inequalities in Two Unknowns" onclick="toggleChip(this)">二元一次不等式 Linear Inequalities in Two Unknowns</button>
+                                    <button class="chip" data-value="Linear Programming" onclick="toggleChip(this)">線性規劃 Linear Programming</button>
+
+                                    <div class="topic-divider"></div>
+
+                                    <button class="chip" data-value="Sequences" onclick="toggleChip(this)">數列 Sequences</button>
+                                    <button class="chip" data-value="Variations" onclick="toggleChip(this)">變分 Variations</button>
+
+                                    <div class="topic-divider"></div>
+
+                                    <button class="chip" data-value="Polynomials" onclick="toggleChip(this)">多項式 Polynomials</button>
+                                    <button class="chip" data-value="Remainder Theorem and Factor Theorem" onclick="toggleChip(this)">餘式定理及因式定理 Remainder/Factor Theorem</button>
+                                    <button class="chip" data-value="H.C.F. and L.C.M." onclick="toggleChip(this)">最大公因式及最小公倍式 H.C.F. and L.C.M.</button>
+
+                                    <div class="topic-divider"></div>
+
+                                    <button class="chip" data-value="Functions and Graphs" onclick="toggleChip(this)">函數及其圖像 Functions and Graphs</button>
+                                    <button class="chip" data-value="Exponential Functions and Logarithm Functions" onclick="toggleChip(this)">指數函數與對數函數 Exponential/Logarithm</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 範疇 2: 度量、圖形與空間 -->
+                        <div class="domain-accordion domain-geometry" id="accordionGeometry">
+                            <div class="domain-header" onclick="toggleAccordion('accordionGeometry')">
+                                <span>度量、圖形與空間 Measures, Shape and Space</span>
+                                <span class="arrow">▼</span>
+                            </div>
+                            <div class="domain-body">
+                                <div class="topic-group-block">
+                                    <button class="chip" data-value="Perimeters and Areas" onclick="toggleChip(this)">周界及面積 Perimeters and Areas</button>
+                                    <button class="chip" data-value="Mensuration" onclick="toggleChip(this)">求積法 Mensuration</button>
+
+                                    <div class="topic-divider"></div>
+
+                                    <button class="chip" data-value="Geometry (Triangles)" onclick="toggleChip(this)">幾何 (三角形) Geometry (Triangles)</button>
+                                    <button class="chip" data-value="Geometry (Polygons)" onclick="toggleChip(this)">幾何 (多邊形) Geometry (Polygons)</button>
+                                    <button class="chip" data-value="Geometry (Circles)" onclick="toggleChip(this)">幾何 (圓形) Geometry (Circles)</button>
+                                    <button class="chip" data-value="Four Centres of a Triangle" onclick="toggleChip(this)">三角形的四心 Four Centres of a Triangle</button>
+
+                                    <div class="topic-divider"></div>
+
+                                    <button class="chip" data-value="Pythagoras Theorem" onclick="toggleChip(this)">畢氏定理 Pythagoras Theorem</button>
+
+                                    <div class="topic-divider"></div>
+
+                                    <button class="chip" data-value="Equations of Straight Lines" onclick="toggleChip(this)">直線方程 Equations of Straight Lines</button>
+                                    <button class="chip" data-value="Equations of Circles" onclick="toggleChip(this)">圓方程 Equations of Circles</button>
+                                    <button class="chip" data-value="Coordinate Geometry" onclick="toggleChip(this)">坐標幾何 Coordinate Geometry</button>
+                                    <button class="chip" data-value="Intersection of Straight Line and Circle" onclick="toggleChip(this)">直線與圓的相交 Intersection of Line and Circle</button>
+
+                                    <div class="topic-divider"></div>
+
+                                    <button class="chip" data-value="Trigonometric Ratios" onclick="toggleChip(this)">三角比 Trigonometric Ratios</button>
+                                    <button class="chip" data-value="Trigonometry (2D)" onclick="toggleChip(this)">三角學 (2D) Trigonometry (2D)</button>
+                                    <button class="chip" data-value="Trigonometry (3D)" onclick="toggleChip(this)">三角學 (3D) Trigonometry (3D)</button>
+
+                                    <div class="topic-divider"></div>
+
+                                    <button class="chip" data-value="Loci" onclick="toggleChip(this)">軌跡 Loci</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 範疇 3: 數據處理 -->
+                        <div class="domain-accordion domain-data" id="accordionData">
+                            <div class="domain-header" onclick="toggleAccordion('accordionData')">
+                                <span>數據處理 Data Handling</span>
+                                <span class="arrow">▼</span>
+                            </div>
+                            <div class="domain-body">
+                                <div class="topic-group-block">
+                                    <button class="chip" data-value="Statistical Graphs" onclick="toggleChip(this)">統計圖表 Statistical Graphs</button>
+
+                                    <div class="topic-divider"></div>
+
+                                    <button class="chip" data-value="Measures of Central Tendency" onclick="toggleChip(this)">集中趨勢的量度 Central Tendency</button>
+                                    <button class="chip" data-value="Measures of Dispersion" onclick="toggleChip(this)">離差的量度 Dispersion</button>
+                                    <button class="chip" data-value="Standard Score" onclick="toggleChip(this)">標準分 Standard Score</button>
+                                    <button class="chip" data-value="Change of Data" onclick="toggleChip(this)">數據的改變 Change of Data</button>
+
+                                    <div class="topic-divider"></div>
+
+                                    <button class="chip" data-value="Permutations and Combinations" onclick="toggleChip(this)">排列與組合 Permutations &amp; Combinations</button>
+                                    <button class="chip" data-value="Probability" onclick="toggleChip(this)">概率 Probability</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
 
-            <div class="filter-row">
-                <span class="filter-label">數學範疇:</span>
-                <div class="chip-group" id="domainGroup">
-                    <button class="chip chip-algebra" data-value="Algebra" onclick="toggleChip(this)">數與代數</button>
-                    <button class="chip chip-geometry" data-value="Geometry" onclick="toggleChip(this)">度量、圖形與空間</button>
-                    <button class="chip chip-data" data-value="Data Handling" onclick="toggleChip(this)">數據處理</button>
-                </div>
-            </div>
-
-            <div class="filter-row">
-                <span class="filter-label">數學課題:</span>
-                <div class="chip-group" id="topicGroup">
-                    <button class="chip chip-algebra" data-value="Approximation and Errors" onclick="toggleChip(this)">近似與誤差</button>
-                    <button class="chip chip-algebra" data-value="Estimation" onclick="toggleChip(this)">估算</button>
-                    <button class="chip chip-algebra" data-value="Complex Numbers" onclick="toggleChip(this)">複數</button>
-                    <button class="chip chip-algebra" data-value="Rates, Ratios and Proportions" onclick="toggleChip(this)">率、比及比例</button>
-                    <button class="chip chip-algebra" data-value="Percentages" onclick="toggleChip(this)">百分法</button>
-                    <button class="chip chip-algebra" data-value="Algebraic Expressions" onclick="toggleChip(this)">代數式</button>
-                    <button class="chip chip-algebra" data-value="Laws of Indices" onclick="toggleChip(this)">指數律</button>
-                    <button class="chip chip-algebra" data-value="Factorization" onclick="toggleChip(this)">因式分解</button>
-                    <button class="chip chip-algebra" data-value="Change of Subject" onclick="toggleChip(this)">主項變換</button>
-                    <button class="chip chip-algebra" data-value="Algebraic Fractions and Fractional Equations" onclick="toggleChip(this)">代數分式及分式方程</button>
-                    <button class="chip chip-algebra" data-value="Linear Equations in Two Unknowns" onclick="toggleChip(this)">二元一次方程</button>
-                    <button class="chip chip-algebra" data-value="Quadratic Equations in One Unknown" onclick="toggleChip(this)">一元二次方程</button>
-                    <button class="chip chip-algebra" data-value="Polynomials" onclick="toggleChip(this)">多項式</button>
-                    <button class="chip chip-algebra" data-value="H.C.F. and L.C.M." onclick="toggleChip(this)">最大公因式及最小公倍式</button>
-                    <button class="chip chip-algebra" data-value="Functions and Graphs" onclick="toggleChip(this)">函數及其圖像</button>
-                    <button class="chip chip-algebra" data-value="Exponential Functions and Logarithm Functions" onclick="toggleChip(this)">指數函數與對數函數</button>
-                    <button class="chip chip-algebra" data-value="Linear Inequalities and Compound Inequalities" onclick="toggleChip(this)">一元一次不等式及複合不等式</button>
-                    <button class="chip chip-algebra" data-value="Quadratic Inequalities in One Unknown" onclick="toggleChip(this)">一元二次不等式</button>
-                    <button class="chip chip-algebra" data-value="Linear Inequalities in Two Unknowns" onclick="toggleChip(this)">二元一次不等式</button>
-                    <button class="chip chip-algebra" data-value="Sequences" onclick="toggleChip(this)">數列</button>
-                    <button class="chip chip-algebra" data-value="Variations" onclick="toggleChip(this)">變分</button>
-
-                    <button class="chip chip-geometry" data-value="Areas and Volumes" onclick="toggleChip(this)">面積及體積</button>
-                    <button class="chip chip-geometry" data-value="Plane Geometry" onclick="toggleChip(this)">平面幾何</button>
-                    <button class="chip chip-geometry" data-value="Four Centres of a Triangle" onclick="toggleChip(this)">三角形的四心</button>
-                    <button class="chip chip-geometry" data-value="Basic Properties of Circles" onclick="toggleChip(this)">圓的基本性質</button>
-                    <button class="chip chip-geometry" data-value="Tangents of Circles" onclick="toggleChip(this)">圓的切線</button>
-                    <button class="chip chip-geometry" data-value="Trigonometric Ratios" onclick="toggleChip(this)">三角比</button>
-                    <button class="chip chip-geometry" data-value="Trigonometry (2D)" onclick="toggleChip(this)">三角學 (2D)</button>
-                    <button class="chip chip-geometry" data-value="Trigonometry (3D)" onclick="toggleChip(this)">三角學 (3D)</button>
-                    <button class="chip chip-geometry" data-value="Coordinate Geometry" onclick="toggleChip(this)">坐標幾何</button>
-                    <button class="chip chip-geometry" data-value="Equations of Straight Lines" onclick="toggleChip(this)">直線方程</button>
-                    <button class="chip chip-geometry" data-value="Equations of Circles" onclick="toggleChip(this)">圓方程</button>
-                    <button class="chip chip-geometry" data-value="Loci" onclick="toggleChip(this)">軌跡</button>
-
-                    <button class="chip chip-data" data-value="Statistical Graphs" onclick="toggleChip(this)">統計圖表</button>
-                    <button class="chip chip-data" data-value="Measures of Central Tendency" onclick="toggleChip(this)">集中趨勢的量度</button>
-                    <button class="chip chip-data" data-value="Measures of Dispersion" onclick="toggleChip(this)">離差的量度</button>
-                    <button class="chip chip-data" data-value="Permutationsand Combinations" onclick="toggleChip(this)">排列與組合</button>
-                    <button class="chip chip-data" data-value="Probability" onclick="toggleChip(this)">概率</button>
-                </div>
-            </div>
-
-            <!-- 🎯 底部新增「套用篩選條件」按鈕 -->
+            <!-- 動作按鈕 -->
             <div class="btn-group-action">
                 <button class="btn btn-apply" onclick="applyFilter()">🔍 套用篩選條件</button>
             </div>
@@ -176,6 +322,7 @@
 
     <div id="list"></div>
 
+    <!-- JavaScript 題目庫載入 -->
     <script src="data.js"></script>
     <script src="2025dsep2.js"></script>
     <script src="2024dsep1.js"></script>
@@ -192,17 +339,26 @@
     <script src="2018dsep2.js"></script>
     
     <script>
-        // 💡 點擊按鈕時只切換樣式，不再立刻執行 filterData()
+        // 切換 Chip 選擇狀態
         function toggleChip(button) {
             button.classList.toggle('active');
         }
 
-        function getBaseSelectedValues(groupName) {
-            return Array.from(document.querySelectorAll(`#baseGroup .chip.active[data-group="${groupName}"]`)).map(chip => chip.getAttribute('data-value'));
+        // 切換 Accordion 展開/摺疊
+        function toggleAccordion(elementId) {
+            const accordion = document.getElementById(elementId);
+            accordion.classList.toggle('open');
         }
 
-        function getSelectedValues(groupId) {
-            return Array.from(document.querySelectorAll(`#${groupId} .chip.active`)).map(chip => chip.getAttribute('data-value'));
+        // 取得指定的 Chip 選擇值
+        function getSelectedGroupValues(groupAttr, groupValue) {
+            return Array.from(document.querySelectorAll(`.chip.active[data-${groupAttr}="${groupValue}"]`))
+                        .map(chip => chip.getAttribute('data-value'));
+        }
+
+        function getAllActiveTopicValues() {
+            return Array.from(document.querySelectorAll('#topicGroupContainer .chip.active'))
+                        .map(chip => chip.getAttribute('data-value'));
         }
 
         function getDifficultyBadge(diff) {
@@ -212,30 +368,32 @@
             return '';
         }
 
-        // 🎯 新增觸發函式：先顯示 Loading 動畫，再非同步執行篩選
+        // 套用篩選與 Loading 畫面控制
         function applyFilter() {
             const list = document.getElementById('list');
-            // 顯示圓形轉圈與提示
             list.innerHTML = `
                 <div class="loading-box">
                     <div class="spinner"></div>
                     <div>正在搜尋與排版題目，請稍候...</div>
                 </div>
             `;
-            
-            // 延遲 50 毫秒執行，確保瀏覽器有空檔先繪製出 Loading 動畫
             setTimeout(filterData, 50);
         }
 
         async function filterData() {
             const keyword = document.getElementById('keyword').value.toLowerCase();
-            const selectedLevels = getBaseSelectedValues('level');
-            const selectedYears = getBaseSelectedValues('year');
-            const selectedTypes = getBaseSelectedValues('type');
-            const selectedDomains = getSelectedValues('domainGroup');
-            const selectedTopics = getSelectedValues('topicGroup');
+            const selectedLevels = getSelectedGroupValues('group', 'level');
+            const selectedTypes = getSelectedGroupValues('group', 'type');
+            const selectedSections = getSelectedGroupValues('group', 'section');
+            const selectedYears = getSelectedGroupValues('group', 'year');
+            const selectedDiffs = getSelectedGroupValues('group', 'diff');
+            const selectedTopics = getAllActiveTopicValues();
 
-            if (keyword === "" && selectedLevels.length === 0 && selectedYears.length === 0 && selectedTypes.length === 0 && selectedDomains.length === 0 && selectedTopics.length === 0) {
+            const isNoCondition = keyword === "" && selectedLevels.length === 0 && selectedTypes.length === 0 && 
+                                  selectedSections.length === 0 && selectedYears.length === 0 && 
+                                  selectedDiffs.length === 0 && selectedTopics.length === 0;
+
+            if (isNoCondition) {
                 document.getElementById('list').innerHTML = `<p style="text-align:center; color:#777; margin-top:50px; font-size:15px;">💡 請選擇上方篩選條件並點擊「套用篩選條件」，或輸入關鍵字開始練習。</p>`;
                 return;
             }
@@ -245,11 +403,13 @@
             const filtered = questions.filter(q => {
                 const matchKeyword = q.content.toLowerCase().includes(keyword) || q.id.toLowerCase().includes(keyword);
                 const matchLevel = selectedLevels.length === 0 || (Array.isArray(q.level) ? q.level.some(l => selectedLevels.includes(l)) : selectedLevels.includes(q.level));
-                const matchYear = selectedYears.length === 0 || selectedYears.includes(q.year.toString());
                 const matchType = selectedTypes.length === 0 || selectedTypes.includes(q.type);
-                const matchDomain = selectedDomains.length === 0 || (Array.isArray(q.domain) ? q.domain.some(d => selectedDomains.includes(d)) : selectedDomains.includes(q.domain));
+                const matchSection = selectedSections.length === 0 || (q.section && selectedSections.includes(q.section));
+                const matchYear = selectedYears.length === 0 || selectedYears.includes(q.year.toString());
+                const matchDiff = selectedDiffs.length === 0 || selectedDiffs.includes(q.difficulty.toString());
                 const matchTopic = selectedTopics.length === 0 || (Array.isArray(q.topic) ? q.topic.some(t => selectedTopics.includes(t)) : selectedTopics.includes(q.topic));
-                return matchKeyword && matchLevel && matchYear && matchType && matchDomain && matchTopic;
+                
+                return matchKeyword && matchLevel && matchType && matchSection && matchYear && matchDiff && matchTopic;
             });
 
             const list = document.getElementById('list');
@@ -266,37 +426,39 @@
                     </div>
                     <div class="question-content">${q.content}</div>
                     <details>
-                        <summary>💡</summary>
+                        <summary>💡 提示</summary>
                         <div class="detail-content">${q.hint}</div>
                     </details>
                     <details>
-                        <summary>📝</summary>
+                        <summary>📝 完整解答</summary>
                         <div class="detail-content">${q.solution}</div>
                     </details>
                 </div>
             `).join('');
 
-            // MathJax 渲染
+            // 執行 MathJax 排版
             if (window.MathJax && MathJax.typesetPromise) {
                 await MathJax.typesetPromise();
             }
         }
 
+        // 重設所有條件
         function resetFilters() {
             document.getElementById('keyword').value = "";
             document.querySelectorAll('.chip.active').forEach(chip => chip.classList.remove('active'));
             applyFilter();
         }
 
+        // 展開/收合篩選器面板
         function toggleFilter() {
             const container = document.getElementById('filterContainer');
             const btn = document.getElementById('toggleBtn');
             if (container.classList.contains('minimized')) {
                 container.classList.remove('minimized');
-                btn.innerText = "顯示篩選器";
+                btn.innerText = "隱藏篩選器";
             } else {
                 container.classList.add('minimized');
-                btn.innerText = "隱藏篩選器";
+                btn.innerText = "顯示篩選器";
             }
         }
 
