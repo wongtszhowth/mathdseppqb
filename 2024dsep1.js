@@ -93,9 +93,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Plane Geometry", "Areas and Volumes"],
         difficulty: 3,
-        content: `圖中，$E$ 為 $AC$ 與 $BD$ 的交點。 已知 $\\angle ACB=\\angle ADB=90^{\\circ}$ 及 $AD=BC$。
-        <img src="img/2024dsep1q08.jpg" class="q-img" alt="題目附圖" style="max-width: 65%;">
-        <div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明 $\\Delta ABC\\cong\\Delta BAD$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">若 $AD=12\\text{ cm}$ 及 $DE=9\\text{ cm}$，求五邊形 $ABCED$ 的面積。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `圖中，$E$ 為 $AC$ 與 $BD$ 的交點。 已知 $\\angle ACB=\\angle ADB=90^{\\circ}$ 及 $AD=BC$。<br><img src="img/2024dsep1q08.jpg" class="q-img" alt="題目附圖" style="max-width: 65%;"><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明 $\\Delta ABC\\cong\\Delta BAD$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">若 $AD=12\\text{ cm}$ 及 $DE=9\\text{ cm}$，求五邊形 $ABCED$ 的面積。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 利用 R.H.S.（斜邊、直角邊）證明全等；(b) 由全等推出對應邊相等，進而利用畢氏定理求出直角三角形的其餘邊長，最後將圖形分割成兩個三角形求面積和。`,
         solution: `(a) $AB = BA$ (公共邊)，$\\angle ACB = \\angle ADB = 90^{\\circ}$ (已知)，$BC = AD$ (已知)，故 $\\Delta ABC \\cong \\Delta BAD$ (R.H.S.)。<br>(b) 由全等知 $AC = BD$ 且 $\\angle EAB = \\angle EBA \\Rightarrow EA = EB$，因此 $EC = ED = 9\\text{ cm}$。在直角 $\\Delta ADE$ 中，$AE = \\sqrt{12^2 + 9^2} = 15\\text{ cm}$，得 $AC = 15 + 9 = 24\\text{ cm}$。五邊形面積 $= S_{\\Delta ABC} + S_{\\Delta ADE} = \\dfrac{1}{2}(24)(12) + \\dfrac{1}{2}(12)(9) = 144 + 54 = 198\\text{ cm}^2$。`
     },
