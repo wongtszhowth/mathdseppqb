@@ -185,7 +185,38 @@ questions.push(
         domain: ["Data Handling"],
         topic: ["Statistical Graphs", "Measures of Dispersion"],
         difficulty: 1,
-        content: `下面的幹葉圖顯示一些運動員在訓練前的體重（以 $\\text{kg}$ 為單位）的分佈：<pre style="white-space: pre-wrap; word-break: break-all;">幹(十位) | 葉(個位)\n4        | 5 6 7 8 9\n5        | 0 3 4 5 6 7 8\n6        | 2 4 w\n7        | w</pre>上述分佈的分佈域與四分位數間距之差為 $25\\text{ kg}$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出上述分佈的分佈域。 由此，求 $w$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">下面的框線圖顯示該些運動員在訓練後的體重（以 kg 為單位）的分佈。</div></div><img src="img/2025dsep1q12b.jpg" class="q-img" alt="題目附圖" style="max-width: 70%; height: auto;"><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求因訓練而引致該分佈的上四分位數的改變。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">該些運動員在訓練後的體重的分佈的離差是否較訓練前的小？ 試解釋你的答案。</div></div><span class="marks">(4分)</span><div class="q-clearfix"></div>`,
+        content: `下面的幹葉圖顯示一些運動員在訓練前的體重（以 $\\text{kg}$ 為單位）的分佈：
+        <table class="q-table" style="border-collapse: collapse; table-layout: auto;">
+    <colgroup>
+      <col style="width: 7em;">
+      <col style="width: auto;">
+    </colgroup>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 6px 3px;"><u>幹（十位）</u></td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 6px 3px;"><u>葉（個位）</u></td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 6px 3px;">4</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 6px 3px;">5\t6\t8</td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 6px 3px;">5</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 6px 3px;">$w$\t$w$\t6\t7</td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 6px 3px;">6</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 6px 3px;">3\t4\t5\t6\t9\t9</td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 6px 3px;">7</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 6px 3px;">0\t2</td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 6px 3px;">8</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 6px 3px;">7</td>
+    </tr>
+  </table>
+        上述分佈的分佈域與四分位數間距之差為 $25\\text{ kg}$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出上述分佈的分佈域。 由此，求 $w$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">下面的框線圖顯示該些運動員在訓練後的體重（以 kg 為單位）的分佈。</div></div><img src="img/2025dsep1q12b.jpg" class="q-img" alt="題目附圖" style="max-width: 70%; height: auto;"><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求因訓練而引致該分佈的上四分位數的改變。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">該些運動員在訓練後的體重的分佈的離差是否較訓練前的小？ 試解釋你的答案。</div></div><span class="marks">(4分)</span><div class="q-clearfix"></div>`,
         hint: `分佈域 $=$ 最大值 $-$ 最小值。四分位數間距 $= Q_3 - Q_1$。依據二者之差建立關於 $w$ 的方程。`,
         solution: `(a) 分佈域 $= 42\\text{ kg}$<br>四分位數間距 $= 42-25 = 17\\text{ kg}$<br>上四分位數 $= 69\\text{ kg}$<br>下四分位數 $= 69-17 = 52\\text{ kg}$<br>由此可得 $w=2$。<br><br>(b) (i) 上四分位數的變化 $= 64-69 = -5\\text{ kg}$<br>因此，上四分位數減少了 $5\\text{ kg}$。<br><br>(ii) 訓練前該分佈的分佈域 $= 42\\text{ kg}$<br>訓練後該分佈的分佈域 $= 67-46 = 21\\text{ kg}$<br>由於訓練後的分佈域小於訓練前，因此運動員體重的分佈較訓練前更凝聚。<br>【或】<br>訓練前該分佈的四分位數間距 $= 17\\text{ kg}$<br>訓練後該分佈的四分位數間距 $= 64-54 = 10\\text{ kg}$<br>由於訓練後的四分位數間距小於訓練前，開得運動員體重的分佈較訓練前更凝聚。`
     },
