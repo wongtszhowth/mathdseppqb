@@ -696,14 +696,12 @@ D.\t$8$。
         domain: ["Algebra"],
         topic: ["Linear Programming"],
         difficulty: 2,
-        content: `考慮以下的不等式組：<br>
-\t$\\begin{cases}
+        content: `考慮以下的不等式組：<br>\t$\\begin{cases}
 x-21 \\le 0 \\\\[1.2ex]
 x-y-35 \\le 0 \\\\[1.2ex]
 x+5y-91 \\le 0 \\\\[1.2ex]
 3x+2y \\ge 0
-\\end{cases}$<br>
-設 $D$ 為表示以上的不等式組的解之區域。 若 $(x, y)$ 為 $D$ 中的一點，則 $5x+6y+234$ 的最小值為
+\\end{cases}$<br>設 $D$ 為表示以上的不等式組的解之區域。 若 $(x, y)$ 為 $D$ 中的一點，則 $5x+6y+234$ 的最小值為
 <div class="q-mcopt">
 A.\t$45$。 <br>
 B.\t$150$。 <br>
