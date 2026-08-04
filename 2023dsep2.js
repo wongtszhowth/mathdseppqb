@@ -719,14 +719,12 @@ D.\t$945$
         domain: ["Algebra"],
         topic: ["Linear Programming"],
         difficulty: 3,
-        content: `考慮以下的不等式組：
-$$
-\\begin{cases}
-x+3 \\ge 0 \\\\
-2x+3y-12 \\le 0 \\\\
+        content: `考慮以下的不等式組：<br>
+\t$\\begin{cases}
+x+3 \\ge 0 \\\\[1.2ex]
+2x+3y-12 \\le 0 \\\\[1.2ex]
 5x-3y+12 \\le 0
-\\end{cases}
-$$
+\\end{cases}$<br>
 設 $D$ 為表示以上的不等式組的解之區域。 求 $\\beta$ 值的範圍使得 $\\beta x+6y$ 的最大值為 $24$，其中 $(x, y)$ 為 $D$ 中的一點。
 <div class="q-mcopt">
 A.\t$\\beta \\le -10$<br>
