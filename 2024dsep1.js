@@ -126,7 +126,7 @@ questions.push(
       <col style="width: 2em;">
     </colgroup>
     <tr>
-      <th style="border: 1px solid #000; text-align: center; padding: 3px 10px;">鑰匙的數目</th>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">鑰匙的數目</td>
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">3</td>
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">4</td>
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">5</td>
@@ -135,7 +135,7 @@ questions.push(
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">8</td>      
     </tr>
     <tr>
-      <th style="border: 1px solid #000; text-align: center; padding: 3px 10px;">主婦人數</th>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">主婦人數</td>
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">10</td>
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">9</td>
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">4</td>
