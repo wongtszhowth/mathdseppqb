@@ -105,8 +105,7 @@ questions.push(
         topic: ["Plane Geometry"],
         difficulty: 2,
         content: `圖中，$ST$ 與 $UV$ 相交於點 $W$ 。 已知 $SU//VT$ 及 $W$ 為 $ST$ 的中點。
-<img src="img/2025dsep1q08.jpg" class="q-img" alt="題目附圖" style="max-width: 40%;">
-<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明 $\\Delta SUW \\cong \\Delta TVW$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">設 $X$ 為 $TW$ 上的一點使得 $\\Delta SUW \\sim \\Delta VXW$。 若 $SU = 57\\text{ cm}$、 $SW = 63\\text{ cm}$ 及 $WX = 7\\text{ cm}$，求 $\\Delta TVX$ 的周界。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
+<img src="img/2025dsep1q08.jpg" class="q-img" alt="題目附圖" style="max-width: 40%;"><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明 $\\Delta SUW \\cong \\Delta TVW$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">設 $X$ 為 $TW$ 上的一點使得 $\\Delta SUW \\sim \\Delta VXW$。 若 $SU = 57\\text{ cm}$、 $SW = 63\\text{ cm}$ 及 $WX = 7\\text{ cm}$，求 $\\Delta TVX$ 的周界。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 利用平行線的內錯角 (A.A.S. 或 A.S.A.) 證明全等；(b) 運用相似三角形的對應邊成比例求出未知邊長。`,
         solution: `(a) $\\angle SWU = \\angle TWV$ （對頂角）<br>$SW = TW$ （已知）<br>$\\angle USW = \\angle VTW$ （內錯角， $SU \\parallel VT$）<br>$\\triangle SUW \\cong \\triangle TVW$ （ASA）<br><br>(b) 注意 $\\triangle SUW \\sim \\triangle VXW$。<br>$$\\frac{SU}{VX} = \\frac{UW}{XW} = \\frac{SW}{VW}$$<br>由 (a) 可得 $UW = VW$。<br>因此，<br>$$\\frac{57}{VX} = \\frac{VW}{7} = \\frac{63}{VW}$$<br>解得 $VW = 21\\text{ cm}$ 且 $VX = 19\\text{ cm}$。<br><br>$\\triangle TVX$ 的周界 $\\begin{aligned} &= TV + VX + TX \\\\ &= 57 + 19 + (63 - 7) \\\\ &= 132\\text{ cm} \\end{aligned}$`
     },
@@ -130,20 +129,20 @@ questions.push(
       <col style="width: 3em;">
     </colgroup>
     <tr>
-      <th style="border: 1px solid #000; text-align: center; padding: 6px 10px;">原子筆的數目</th>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">5</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">6</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">7</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">8</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">9</td>
+      <th style="border: 1px solid #000; text-align: center; padding: 3px 10px;">原子筆的數目</th>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">5</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">6</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">7</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">8</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">9</td>
     </tr>
     <tr>
-      <th style="border: 1px solid #000; text-align: center; padding: 6px 10px;">學生人數</th>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">9</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">13</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">2</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">$s$</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">11</td>
+      <th style="border: 1px solid #000; text-align: center; padding: 3px 10px;">學生人數</th>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">9</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">13</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">2</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$s$</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">11</td>
     </tr>
   </table>
 該分佈的中位數為 $7$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $s$ 的最小可取值。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出 $s$ 的最大可取值。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">求該分佈的最大可取標準差。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
@@ -186,9 +185,9 @@ questions.push(
         topic: ["Statistical Graphs", "Measures of Dispersion"],
         difficulty: 1,
         content: `下面的幹葉圖顯示一些運動員在訓練前的體重（以 $\\text{kg}$ 為單位）的分佈：
-        <table class="q-table" style="border-collapse: collapse; table-layout: auto;">
+        <table class="q-table" style="border-collapse: collapse; table-layout: auto;" align="center">
     <colgroup>
-      <col style="width: 7em;">
+      <col style="width: auto;">
       <col style="width: auto;">
     </colgroup>
     <tr>
@@ -216,7 +215,7 @@ questions.push(
       <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">7</td>
     </tr>
   </table>
-上述分佈的分佈域與四分位數間距之差為 $25\\text{ kg}$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出上述分佈的分佈域。 由此，求 $w$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">下面的框線圖顯示該些運動員在訓練後的體重（以 kg 為單位）的分佈。</div></div><img src="img/2025dsep1q12b.jpg" class="q-img" alt="題目附圖" style="max-width: 70%; height: auto;"><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求因訓練而引致該分佈的上四分位數的改變。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">該些運動員在訓練後的體重的分佈的離差是否較訓練前的小？ 試解釋你的答案。</div></div><span class="marks">(4分)</span><div class="q-clearfix"></div>`,
+上述分佈的分佈域與四分位數間距之差為 $25\\text{ kg}$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出上述分佈的分佈域。 由此，求 $w$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">下面的框線圖顯示該些運動員在訓練後的體重（以 kg 為單位）的分佈。</div></div><img src="img/2025dsep1q12b.jpg" class="q-img" alt="題目附圖" style="max-width: 60%;"><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求因訓練而引致該分佈的上四分位數的改變。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">該些運動員在訓練後的體重的分佈的離差是否較訓練前的小？ 試解釋你的答案。</div></div><span class="marks">(4分)</span><div class="q-clearfix"></div>`,
         hint: `分佈域 $=$ 最大值 $-$ 最小值。四分位數間距 $= Q_3 - Q_1$。依據二者之差建立關於 $w$ 的方程。`,
         solution: `(a) 分佈域 $= 42\\text{ kg}$<br>四分位數間距 $= 42-25 = 17\\text{ kg}$<br>上四分位數 $= 69\\text{ kg}$<br>下四分位數 $= 69-17 = 52\\text{ kg}$<br>由此可得 $w=2$。<br><br>(b) (i) 上四分位數的變化 $= 64-69 = -5\\text{ kg}$<br>因此，上四分位數減少了 $5\\text{ kg}$。<br><br>(ii) 訓練前該分佈的分佈域 $= 42\\text{ kg}$<br>訓練後該分佈的分佈域 $= 67-46 = 21\\text{ kg}$<br>由於訓練後的分佈域小於訓練前，因此運動員體重的分佈較訓練前更凝聚。<br>【或】<br>訓練前該分佈的四分位數間距 $= 17\\text{ kg}$<br>訓練後該分佈的四分位數間距 $= 64-54 = 10\\text{ kg}$<br>由於訓練後的四分位數間距小於訓練前，開得運動員體重的分佈較訓練前更凝聚。`
     },
@@ -268,7 +267,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Exponential Functions and Logarithm Functions"],
         difficulty: 3,
-        content: `已知 $\\begin{cases}\\log_{3}x+\\log_{3}y=9\\\\ \\log_{x}81-\\log_{y}9=1\\end{cases}$ ，其中 $0 < x < y$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">設 $u = \\log_{3}y$。 證明 $u^2-3u-18=0$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求 $x$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `已知 $\\begin{cases}\\log_{3}x+\\log_{3}y=9 \\[1.1ex] \\\\ \\log_{x}81-\\log_{y}9=1\\end{cases}$ ，其中 $0 < x < y$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">設 $u = \\log_{3}y$。 證明 $u^2-3u-18=0$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求 $x$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 由第一式得 $\\log_{3}x = 9 - u$。利用換底公式將第二式的底數轉為 $3$，即 $\\log_x 81 = \\dfrac{4}{\\log_3 x}$ 及 $\\log_y 9 = \\dfrac{2}{u}$。`,
         solution: `(a) 注意 $\\log_{3}x = 9-u$。<br>由於 $\\log_{x}81 - \\log_{y}9 = 1$，可得：<br>$$\\frac{\\log_{3}81}{\\log_{3}x} - \\frac{\\log_{3}9}{\\log_{3}y} = 1$$<br>因此， $\\frac{4}{\\log_{3}x} - \\frac{2}{\\log_{3}y} = 1$。<br>代入得 $\\frac{4}{9-u} - \\frac{2}{u} = 1$。<br>展開得 $4u - 2(9-u) = u(9-u)$。<br>整理解得 $u^{2}-3u-18 = 0$。<br><br>(b) 由 (a) 可得 $u=6$ 或 $u=-3$。<br>對應的解為：<br>$$\\begin{cases}x=27\\\\ y=729\\end{cases} \\quad \\text{或} \\quad \\begin{cases}x=531441\\\\ y=\\frac{1}{27}\\end{cases}$$<br>由於已知 $x<y$，因此 $x=27$。`
     },
