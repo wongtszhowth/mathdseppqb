@@ -705,14 +705,12 @@ D.\tI、II 及 III
         domain: ["Algebra"],
         topic: ["Linear Programming"],
         difficulty: 2,
-        content: `考慮以下的不等式組：
-$$
-\\begin{cases}
-0 \\le x \\le 2 \\\\
-2x + y + 3 \\ge 0 \\\\
+        content: `考慮以下的不等式組：<br>
+\t$\\begin{cases}
+0 \\le x \\le 2 \\\\[1.2ex]
+2x + y + 3 \\ge 0 \\\\[1.2ex]
 x + y + 1 \\le 0
-\\end{cases}
-$$
+\\end{cases}$<br>
 設 $D$ 為表示以上的不等式組的解之區域。 求常數 $k$ 使得 $4x+3y+k$ 的最小值為 $24$，其中 $(x, y)$ 為 $D$ 中的一點。 
 <div class="q-mcopt">
 A.\t$25$<br>
