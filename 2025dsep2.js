@@ -745,14 +745,12 @@ D.	$i$。
         domain: ["Algebra"],
         topic: ["Linear Programming"],
         difficulty: 3,
-        content: `考慮以下的不等式組：
-$$
-\\begin{cases}
-x \\le 11 \\\\
-4x + 5y - 19 \\ge 0 \\\\
+        content: `考慮以下的不等式組：<br>
+\t$\\begin{cases}
+x \\le 11 \\\\[1.2ex]
+4x + 5y - 19 \\ge 0 \\\\[1.2ex]
 7x - 6y + 11 \\le 0
-\\end{cases}
-$$
+\\end{cases}$<br>
 設 $D$ 為表示以上的不等式組的解之區域。 若 $(x, y)$ 為 $D$ 中的一點，則 $8x - 6y + 11$ 的最大值為
 <div class="q-mcopt">
 A.	$1$。 <br>
