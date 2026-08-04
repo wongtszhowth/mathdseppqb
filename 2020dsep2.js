@@ -144,8 +144,8 @@ D.\t$2$。
         topic: ["Equations of Straight Lines"],
         difficulty: 2,
         content: `圖中，直線 $L_1$ 及直線 $L_2$ 的方程分別為 $x+ay+b=0$ 及 $bx+y+c=0$。 下列何者正確？
-<div class="q-mcms">
-I.\t$a<0$
+<div class="q-mcms"><img src="img/2020dsep2q08.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
+I.\t$c<0$
 II.\t$ab<1$
 III.\t$ac \\lt b$
 </div>
@@ -154,7 +154,7 @@ A.\t只有 I 及 II<br>
 B.\t只有 I 及 III<br>
 C.\t只有 II 及 III<br>
 D.\tI、II 及 III
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `由圖像判斷斜率及截距。`,
         solution: `A (33%)`
     },
@@ -224,8 +224,8 @@ D.\t$729$。
         domain: ["Algebra"],
         topic: ["Sequences"],
         difficulty: 1,
-        content: `圖中，第 $1$ 個圖案包含 $3$ 粒點子。 對任意正整數 $n$，第 $(n+1)$ 個圖案是由第 $n$ 個圖案加上 $(2n+1)$ 粒點子所組成。 求第 $7$ 個圖案的點子數目。 
-<div class="q-mcopt">
+        content: `圖中，第 $1$ 個圖案包含 $3$ 粒點子。 對任意正整數 $n$，第 $(n+1)$ 個圖案是由第 $n$ 個圖案加上 $(2n+1)$ 粒點子所組成。 求第 $7$ 個圖案的點子數目。
+        <img src="img/2020dsep2q12.jpg" class="q-img" alt="題目附圖" style="max-width: 80%;"><div class="q-mcopt">
 A.\t$15$<br>
 B.\t$27$<br>
 C.\t$38$<br>
@@ -263,12 +263,12 @@ D.\t$x>5$。
         topic: ["Approximation and Errors"],
         difficulty: 2,
         content: `圖中，$PQRST$ 為五邊形，其中所有的量度均準確至最接近的 cm。 設 $A\\text{ cm}^2$ 為該五邊形的實際面積。 求 $A$ 值的範圍。 
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2020dsep2q14.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$27.83 \\le A < 31.83$<br>
 B.\t$44.75 \\le A < 60.75$<br>
 C.\t$46.75 \\le A < 63.25$<br>
 D.\t$48.25 \\le A < 64.75$
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `考慮各邊長誤差範圍後計算面積上下限。`,
         solution: `B (41%)`
     },
@@ -320,12 +320,12 @@ D.\t$735\\text{ cm}^3$。
         topic: ["Geometry (Polygons)"],
         difficulty: 2,
         content: `圖中，$P$ 及 $Q$ 均為 $OR$ 上的點而 $U$ 及 $T$ 均為 $OS$ 上的點使得 $OP = PQ = QR$ 且 $PU // QT // RS$。 梯形 $PQTU$ 的面積與梯形 $QRST$ 的面積之比為
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2020dsep2q17.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$1:2$。<br>
 B.\t$2:3$。<br>
 C.\t$3:5$。<br>
 D.\t$4:9$。
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用相似及面積比與底的平方關係。`,
         solution: `C (48%)`
     },
@@ -339,12 +339,12 @@ D.\t$4:9$。
         topic: ["Geometry (Polygons)"],
         difficulty: 2,
         content: `圖中，$ABCD$ 為一平行四邊形。 設 $E$ 為 $AD$ 上的一點使得 $AE:ED = 2:5$。 延長 $CB$ 至點 $F$ 使得 $BF = DE$。 將 $AB$ 與 $EF$ 的交點記為 $G$。 已知 $BD$ 與 $CG$ 相交於點 $H$。 若 $\\Delta AEG$ 的面積為 $48\\text{ cm}^2$，則 $\\Delta CDH$ 的面積為
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2020dsep2q18.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 65%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$98\\text{ cm}^2$。 <br>
 B.\t$343\\text{ cm}^2$。 <br>
 C.\t$420\\text{ cm}^2$。 <br>
 D.\t$588\\text{ cm}^2$。 
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用面積比與底或高的比例。`,
         solution: `B (43%)`
     },
@@ -358,7 +358,7 @@ D.\t$588\\text{ cm}^2$。
         topic: ["Geometry (Polygons)"],
         difficulty: 2,
         content: `根據圖中所示，下列何者必為正確？
-<div class="q-mcms">
+<div class="q-mcms"><img src="img/2020dsep2q19.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 I.\t$u-v+w=0^\\circ$
 II.\t$u+v-w=180^\\circ$
 III.\t$u+v+w=450^\\circ$
@@ -368,7 +368,7 @@ A.\t只有 I<br>
 B.\t只有 II<br>
 C.\t只有 I 及 III<br>
 D.\t只有 II 及 III
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用直線上的角及三角形內角和。`,
         solution: `B (56%)`
     },
@@ -382,12 +382,12 @@ D.\t只有 II 及 III
         topic: ["Geometry (Triangles)"],
         difficulty: 2,
         content: `圖中，$ABC$ 為一等邊三角形及 $CDE$ 為一等腰三角形且 $CD=CE$。 若 $\\angle DCE = 78^\\circ$ 及 $\\angle ADC = \\angle CAD = 40^\\circ$，則 $\\angle CBE =$
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2020dsep2q20.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 55%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$14^\\circ$。<br>
 B.\t$19^\\circ$。<br>
 C.\t$24^\\circ$。<br>
 D.\t$29^\\circ$。
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用等邊及等腰三角形性質。`,
         solution: `D (70%)`
     },
@@ -401,12 +401,12 @@ D.\t$29^\\circ$。
         topic: ["Pythagoras Theorem"],
         difficulty: 2,
         content: `圖中，$ABCD$ 為一長方形。 設 $E$ 為 $AD$ 上的一點使得 $BE = 8\\text{ cm}$ 及 $CE = 15\\text{ cm}$。 若 $BC = 17\\text{ cm}$，求長方形 $ABCD$ 的面積。 
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2020dsep2q21.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$60\\text{ cm}^2$<br>
 B.\t$68\\text{ cm}^2$<br>
 C.\t$120\\text{ cm}^2$<br>
 D.\t$136\\text{ cm}^2$
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `用畢氏定理求 $AE$ 及 $DE$。`,
         solution: `C (62%)`
     },
@@ -420,12 +420,12 @@ D.\t$136\\text{ cm}^2$
         topic: ["Geometry (Circles)"],
         difficulty: 2,
         content: `圖中，$ABCDE$ 為一圓。 若 $AB = 10\\text{ cm}$ 、 $BC = 5\\text{ cm}$ 、 $\\angle ABC = 90^\\circ$ 及 $\\angle CED = 40^\\circ$，求 $CD$ 準確至最接近的 cm。 
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2020dsep2q22.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$5\\text{ cm}$<br>
 B.\t$6\\text{ cm}$<br>
 C.\t$7\\text{ cm}$<br>
 D.\t$8\\text{ cm}$
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用圓周角及正弦定律。`,
         solution: `C (37%)`
     },
@@ -457,8 +457,7 @@ D.\t$87\\text{ km}$
         domain: ["Geometry"],
         topic: ["Coordinate Geometry"],
         difficulty: 2,
-        content: `點 $P$ 向左平移 $4$ 單位至點 $Q$。 若 $Q$ 對 $y$ 軸的反射影像的坐標為 $(5, -1)$，則 $P$ 的極坐標為
-<div class="q-mcopt">
+        content: `<div style="color: red;">點 $P$ 向左平移 $4$ 單位至點 $Q$。 若 $Q$ 對 $y$ 軸的反射影像的坐標為 $(5, -1)$，則 $P$ 的極坐標為</div><div class="q-mcopt" style="color: red;">
 A.\t$(1, 45^\\circ)$。<br>
 B.\t$(1, 225^\\circ)$。<br>
 C.\t$(\\sqrt{2}, 45^\\circ)$。<br>
@@ -558,12 +557,12 @@ D.\t$\\dfrac{3}{8}$
         topic: ["Statistical Graphs", "Measures of Dispersion"],
         difficulty: 2,
         content: `下面的棒形圖顯示某些學生擁有原子筆的數目的分佈。 求該分佈的四分位數間距。 
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2020dsep2q29zh.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$1$<br>
 B.\t$2$<br>
 C.\t$4$<br>
 D.\t$6$
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `由棒形圖求 $Q_1$ 及 $Q_3$。`,
         solution: `A (69%)`
     },
@@ -577,7 +576,7 @@ D.\t$6$
         topic: ["Measures of Central Tendency", "Measures of Dispersion"],
         difficulty: 2,
         content: `考慮以下整數：
-$3$ $3$ $8$ $8$ $8$ $10$ $12$ $m$ $n$
+$3$　$3$　$8$　$8$　$8$　$10$　$12$　$m$　$n$
 設 $x$、$y$ 及 $z$ 分別為以上整數的中位數、平均值及眾數。 若以上整數的分佈域為 $9$，則下列何者必為正確？
 <div class="q-mcms">
 I.\t$x=8$
@@ -602,8 +601,7 @@ D.\t只有 II 及 III
         domain: ["Algebra"],
         topic: ["Base Conversion"],
         difficulty: 2,
-        content: `$\\text{B00000000000030}_{16} =$
-<div class="q-mcopt">
+        content: `<div style="color: red;">$\\text{B00000000000030}_{16} =$</div><div class="q-mcopt" style="color: red;">
 A.\t$10 \\times 2^{60} + 48$。<br>
 B.\t$11 \\times 2^{60} + 48$。<br>
 C.\t$10 \\times 2^{64} + 768$。<br>
@@ -641,7 +639,7 @@ D.\t$\\log_{\\pi}11$。
         topic: ["Exponential Functions and Logarithm Functions"],
         difficulty: 2,
         content: `圖中所示為在同一直角坐標系上 $y=a^x$ 的圖像及 $y=b^x$ 的圖像，其中 $a$ 及 $b$ 均為正常數。 若 $y=a^x$ 的圖像為 $y=b^x$ 的圖像對 $y$ 軸的反射影像，則下列何者正確？
-<div class="q-mcms">
+<div class="q-mcms"><img src="img/2020dsep2q33.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 I.\t$a<1$
 II.\t$b>1$
 III.\t$ab=1$
@@ -651,7 +649,7 @@ A.\t只有 I 及 II<br>
 B.\t只有 I 及 III<br>
 C.\t只有 II 及 III<br>
 D.\tI、II 及 III
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `反射後 $a=1/b$。`,
         solution: `D (40%)`
     },
@@ -665,12 +663,12 @@ D.\tI、II 及 III
         topic: ["Functions and Graphs"],
         difficulty: 2,
         content: `圖中的圖像顯示 $x^3$ 與 $\\sqrt{y}$ 之間的線性關係。 若 $x=2$，則 $y=$
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2020dsep2q34.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 65%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$3$。<br>
 B.\t$8$。<br>
 C.\t$9$。<br>
 D.\t$33$。
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `由圖像讀取斜率及截距。`,
         solution: `C (48%)`
     },
@@ -754,12 +752,12 @@ D.\t$10$。
         topic: ["Trigonometry (3D)"],
         difficulty: 3,
         content: `圖中，$ABCDEF$ 為一直立三角柱體。 $P$ 為 $AE$ 上的一點。 若 $AB = AC = 12\\text{ cm}$ 、 $AP = 9\\text{ cm}$ 、 $EP = 5\\text{ cm}$ 及 $BD = 2k\\text{ cm}$，求 $\\Delta BDP$ 的面積。 
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2020dsep2q38.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 40%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$\\sqrt{(k^2-1)(196-k^2)}\\text{ cm}^2$<br>
 B.\t$\\sqrt{(k^2-1)(196+k^2)}\\text{ cm}^2$<br>
 C.\t$\\sqrt{(k^2+1)(196-k^2)}\\text{ cm}^2$<br>
 D.\t$\\sqrt{(k^2+1)(196+k^2)}\\text{ cm}^2$
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `用向量或餘弦定理求三角形面積。`,
         solution: `A (29%)`
     },
@@ -773,12 +771,12 @@ D.\t$\\sqrt{(k^2+1)(196+k^2)}\\text{ cm}^2$
         topic: ["Geometry (Circles)"],
         difficulty: 3,
         content: `圖中，$ABC$ 及 $CDE$ 均為圓使得 $ADC$ 為一直線。 $PQ$ 為該兩圓在 $C$ 的公切線。 $AB$ 為圓 $CDE$ 在 $E$ 的切線。 若 $\\angle ADE = 100^\\circ$ 及 $\\angle BCQ = 35^\\circ$，則 $\\angle ABC =$
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2020dsep2q39.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 40%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$55^\\circ$。<br>
 B.\t$65^\\circ$。<br>
 C.\t$70^\\circ$。<br>
 D.\t$80^\\circ$。
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用切線與弦的夾角及圓周角。`,
         solution: `A (28%)`
     },
