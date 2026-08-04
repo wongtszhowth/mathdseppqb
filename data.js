@@ -192,28 +192,28 @@ questions.push(
       <col style="width: auto;">
     </colgroup>
     <tr>
-      <td style="border-right: 1px solid black; text-align: right; padding: 6px 3px;"><u>幹（十位）</u></td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 6px 3px;"><u>葉（個位）</u></td>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;"><u>幹（十位）</u></td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;"><u>葉（個位）</u></td>
     </tr>
     <tr>
-      <td style="border-right: 1px solid black; text-align: right; padding: 6px 3px;">4</td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 6px 3px;">5\t6\t8</td>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">4</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">5\t6\t8</td>
     </tr>
     <tr>
-      <td style="border-right: 1px solid black; text-align: right; padding: 6px 3px;">5</td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 6px 3px;">$w$\t$w$\t6\t7</td>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">5</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">$w$\t$w$\t6\t7</td>
     </tr>
     <tr>
-      <td style="border-right: 1px solid black; text-align: right; padding: 6px 3px;">6</td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 6px 3px;">3\t4\t5\t6\t9\t9</td>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">6</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">3\t4\t5\t6\t9\t9</td>
     </tr>
     <tr>
-      <td style="border-right: 1px solid black; text-align: right; padding: 6px 3px;">7</td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 6px 3px;">0\t2</td>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">7</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">0\t2</td>
     </tr>
     <tr>
-      <td style="border-right: 1px solid black; text-align: right; padding: 6px 3px;">8</td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 6px 3px;">7</td>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">8</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">7</td>
     </tr>
   </table>
         上述分佈的分佈域與四分位數間距之差為 $25\\text{ kg}$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出上述分佈的分佈域。 由此，求 $w$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">下面的框線圖顯示該些運動員在訓練後的體重（以 kg 為單位）的分佈。</div></div><img src="img/2025dsep1q12b.jpg" class="q-img" alt="題目附圖" style="max-width: 70%; height: auto;"><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求因訓練而引致該分佈的上四分位數的改變。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">該些運動員在訓練後的體重的分佈的離差是否較訓練前的小？ 試解釋你的答案。</div></div><span class="marks">(4分)</span><div class="q-clearfix"></div>`,
