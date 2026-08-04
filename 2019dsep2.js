@@ -262,8 +262,7 @@ D.\t增加 $76\\%$。
         domain: ["Algebra"],
         topic: ["Sequences"],
         difficulty: 1,
-        content: `圖中，第 $1$ 個圖案包含 $6$ 粒點子。 對任意正整數 $n$，第 $(n+1)$ 個圖案是由第 $n$ 個圖案加上 $4$ 粒點子所組成。 求第 $9$ 個圖案的點子數目。
-        <img src="img/2019dsep2q14.jpg" class="q-img" alt="題目附圖" style="max-width: 90%;"><div class="q-mcopt">
+        content: `圖中，第 $1$ 個圖案包含 $6$ 粒點子。 對任意正整數 $n$，第 $(n+1)$ 個圖案是由第 $n$ 個圖案加上 $4$ 粒點子所組成。 求第 $9$ 個圖案的點子數目。<img src="img/2019dsep2q14.jpg" class="q-img" alt="題目附圖" style="max-width: 90%;"><div class="q-mcopt">
 A.\t$30$<br>
 B.\t$34$<br>
 C.\t$38$<br>
@@ -791,7 +790,7 @@ A.\t$52^\\circ$<br>
 B.\t$56^\\circ$<br>
 C.\t$60^\\circ$<br>
 D.\t$68^\\circ$
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用切線與弦的夾角及圓周角。`,
         solution: `B (48%)`
     },
