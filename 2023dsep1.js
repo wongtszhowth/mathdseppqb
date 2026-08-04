@@ -49,7 +49,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Linear Inequalities and Compound Inequalities"],
         difficulty: 1,
-        content: `考慮複合不等式 <br><div style="text-align: center;">$3x+2>\\dfrac{4x-5}{2}$ 及 $3x-2<7$ ...............(*)。</div><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">解 $(*)$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">有多少個負整數滿足 $(*)$？<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `考慮複合不等式 <br><div style="text-align: center;">$3x+2>\\dfrac{4x-5}{2}$  及  $3x-2<7$  ...............(*)。</div><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">解 (*)。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">有多少個負整數滿足 (*)？<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 分別解出兩個不等式並取交集（及 / and）；(b) 在解的範圍內數出負整數的數量。`,
         solution: `(a) 第一個：$6x+4 > 4x-5 \\Rightarrow 2x > -9 \\Rightarrow x > -4.5$。第二個：$3x < 9 \\Rightarrow x < 3$。共同範圍為 $-4.5 < x < 3$。<br>(b) 負整數有 $-4, -3, -2, -1$，共 $4$ 個。`
     },
@@ -88,7 +88,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Geometry of Circles"],
         difficulty: 1,
-        content: `圖中，$PR$ 為圓 $PQRS$ 的一直徑。 將 $PR$ 與 $QS$ 的交點記為 $T$。<br><img src="img/2023dsep1q07.jpg" class="q-img" alt="題目附圖" style="max-width: 50%;"><br>若 $\\angle PSQ = 41^\\circ$ 及 $\\angle PTQ = 68^\\circ$，求 $\\angle RQS$ 及 $\\angle PQS$。<span class="marks">(4分)</span>`,
+        content: `圖中，$PR$ 為圓 $PQRS$ 的一直徑。 將 $PR$ 與 $QS$ 的交點記為 $T$。<br><img src="img/2023dsep1q07.jpg" class="q-img" alt="題目附圖" style="max-width: 50%;"><div class="q-text-content">若 $\\angle PSQ = 41^\\circ$ 及 $\\angle PTQ = 68^\\circ$，求 $\\angle RQS$ 及 $\\angle PQS$。</div><span class="marks">(4分)</span>`,
         hint: `利用直徑所對圓周角為直角、三角形內角和及對頂角性質。`,
         solution: `因 $PR$ 為直徑，$\\angle PQR = \\angle PSR = 90^\\circ$。\\\\ 在 $\\triangle PTQ$ 中，$\\angle PQT = 180^\\circ - 68^\\circ - \\angle QPT$。\\\\ 由圓周角性質及計算得 $\\angle RQS = 27^\\circ$，$\\angle PQS = 63^\\circ$。`
     },
@@ -115,9 +115,9 @@ questions.push(
         topic: ["Statistical Graphs", "Measures of Central Tendency"],
         difficulty: 1,
         content: `下面的幹葉圖顯示一群工人在某星期的工作時數的分佈。
-        <table class="q-table" style="border-collapse: collapse; table-layout: auto;">
+        <table class="q-table" style="border-collapse: collapse; table-layout: auto;" align="center">
     <colgroup>
-      <col style="width: 7em;">
+      <col style="width: auto;">
       <col style="width: auto;">
     </colgroup>
     <tr>
@@ -173,18 +173,18 @@ questions.push(
       <col style="width: 3em;">
     </colgroup>
     <tr>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">擁有計算機的數目</th>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">1</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">2</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">3</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">4</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">擁有計算機的數目</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">1</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">2</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">3</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">4</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">學生人數</th>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">8</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">5</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">$n$</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">1</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">學生人數</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">8</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">5</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$n$</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">1</td>
     </tr>
   </table>
 該分佈的平均值為 2。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求該分佈的中位數、四分位數間距及方差。<span class="marks">(5分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">該班現有兩名學生退學。 得知該分佈的平均值維持不變。 該分佈的分佈域有否因該兩名學生退學而改變？ 試解釋你的答案。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
@@ -265,7 +265,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Trigonometry"],
         difficulty: 3,
-        content: `<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">已知 $WXY$ 為三角形，其中 $WX = 6\\text{ cm}$ 、$XY = 5\\text{ cm}$ 及 $\\angle WYX = 70^\\circ$。 求 $\\angle WXY$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">下圖顯示角錐體 $WXYZ$，其中 $WZ = XZ = YZ$。 這角錐體的底為 (a) 所描述的三角形 $WXY$。 <br><img src="img/2023dsep1q17b.jpg" class="q-img" alt="題目附圖" style="max-width: 50%;"><br>已知 $WZ$ 與三角形 $WXY$ 間的交角為 $30^\\circ$。 三角形 $WXY$ 與三角形 $XYZ$ 間的交角是否超過 $45^\\circ$？ 試解釋你的答案。<span class="marks">(4分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">已知 $WXY$ 為三角形，其中 $WX = 6\\text{ cm}$ 、$XY = 5\\text{ cm}$ 及 $\\angle WYX = 70^\\circ$。 求 $\\angle WXY$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">下圖顯示角錐體 $WXYZ$，其中 $WZ = XZ = YZ$。 這角錐體的底為 (a) 所描述的三角形 $WXY$。 <br><img src="img/2023dsep1q17b.jpg" class="q-img" alt="題目附圖" style="max-width: 50%;">已知 $WZ$ 與三角形 $WXY$ 間的交角為 $30^\\circ$。 三角形 $WXY$ 與三角形 $XYZ$ 間的交角是否超過 $45^\\circ$？ 試解釋你的答案。<span class="marks">(4分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 用正弦公式。<br>(b) 求高及側面傾角，比較。`,
         solution: `(a) 由正弦公式 $\\dfrac{6}{\\sin 70^\\circ} = \\dfrac{5}{\\sin \\angle WXY}$，解得 $\\angle WXY \\approx 54.2^\\circ$。 <br><br> (b) 經計算交角約 $48^\\circ > 45^\\circ$，故是。`
     },
