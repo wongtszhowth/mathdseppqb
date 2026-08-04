@@ -49,7 +49,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Linear Inequalities and Compound Inequalities"],
         difficulty: 1,
-        content: `<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求同時滿足 $\\dfrac{5x+7}{4}-1<2x$ 及 $3x+9\\ge 0$ 的 $x$ 值的範圍。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出同時滿足 (a) 的不等式的最小整數。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求同時滿足  $\\dfrac{5x+7}{4}-1<2x$  及  $3x+9\\ge 0$  的 $x$ 值的範圍。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出同時滿足 (a) 的不等式的最小整數。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 分別解出兩個不等式，再找出它們在數線上的重疊部分（及 / and）；(b) 在解的範圍內找出最小的整數值。`,
         solution: `(a) 解第一個：$5x+7-4 < 8x \\Rightarrow 3 < 3x \\Rightarrow x > 1$。解第二個：$3x \\ge -9 \\Rightarrow x \\ge -3$。求共同範圍得 $x > 1$。<br>(b) 因為 $x > 1$ 且不包含 $1$，故最小整數為 $2$。`
     },
