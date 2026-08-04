@@ -193,7 +193,34 @@ questions.push(
         domain: ["Data Handling"],
         topic: ["Measures of Central Tendency and Dispersion"],
         difficulty: 1,
-        content: `下面的幹葉圖顯示某足球隊球員的年齡的分佈。<br><table class="q-table"><tr><th>幹（十位）</th><th>葉（個位）</th></tr><tr><td>1</td><td>7 8 9</td></tr><tr><td>2</td><td>0 $a$ $a$ 8 8 9</td></tr><tr><td>3</td><td>$b$ $b$ 5 5 6 6 6 6 7 8</td></tr><tr><td>4</td><td>3</td></tr></table><br>該分佈的四分位數間距及中位數分別為 14 及 31。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $a$ 及 $b$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">某球員現退出該足球隊。</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">該分佈的眾數有否因該球員退出而改變？ 試解釋你的答案。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">若該分佈的分佈域減小，求該分佈的最大可取標準差。</div></div><div class="q-text-content"><span class="marks">(4分)</span></div><div class="q-clearfix"></div>`,
+        content: `下面的幹葉圖顯示某足球隊球員的年齡的分佈。
+        <table class="q-table" style="border-collapse: collapse; table-layout: auto;">
+    <colgroup>
+      <col style="width: 7em;">
+      <col style="width: auto;">
+    </colgroup>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 6px 3px;"><u>幹（十位）</u></td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 6px 3px;"><u>葉（個位）</u></td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 6px 3px;">1</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 6px 3px;">7\t8\t9</td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 6px 3px;">2</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 6px 3px;">0\t$a$\t$a$\t8\t8\t9</td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 6px 3px;">3</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 6px 3px;">$b$\t$b$\t5\t5\t6\t6\t6\t6\t7\t8</td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 6px 3px;">4</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 6px 3px;">3</td>
+    </tr>    
+  </table>
+        該分佈的四分位數間距及中位數分別為 14 及 31。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $a$ 及 $b$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">某球員現退出該足球隊。</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">該分佈的眾數有否因該球員退出而改變？ 試解釋你的答案。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">若該分佈的分佈域減小，求該分佈的最大可取標準差。</div></div><div class="q-text-content"><span class="marks">(4分)</span></div><div class="q-clearfix"></div>`,
         hint: `(a) 總人數為 20，中位數為第 10 及 11 項的平均 $=31$，故 $b=1$；再利用 IQR $=14$ 求 $a$。<br>(b) (i) 比較退出前後眾數出現次數。<br>(ii) 分佈域減小意味著最大或最小數據被移除，計算可能的最大標準差。`,
         solution: `(a) 數據共 20 個。中位數為第 10 及 11 項的平均 $=31$，故第 10、11 項皆為 31，即 $b=1$。\\\\ $Q_1$ 為第 5、6 項平均，$Q_3$ 為第 15、16 項平均。\\\\ 當 $a=2$ 時，$Q_1=22$，$Q_3=36$，IQR $=14$，符合。\\\\ 故 $a=2$，$b=1$。 <br><br> (b) (i) 原眾數為 36（出現 4 次）。若退出的是 36 以外的球員，眾數仍為 36；若退出 36，則眾數可能改變。但題目未指定，通常解釋為「不一定改變」或視情況。<br>(ii) 分佈域減小表示移除最大值 43 或最小值 17。移除 43 後數據更集中於較小值，標準差較小；移除 17 後可保持較大離散，最大可取標準差約為原標準差的相應計算值（精確值依完整計算）。`
     },
