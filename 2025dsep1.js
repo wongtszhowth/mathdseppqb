@@ -265,7 +265,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Exponential Functions and Logarithm Functions"],
         difficulty: 3,
-        content: `已知 $\\begin{cases}\\log_{3}x+\\log_{3}y=9 \\[1.1ex] \\\\ \\log_{x}81-\\log_{y}9=1\\end{cases}$ ，其中 $0 < x < y$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">設 $u = \\log_{3}y$。 證明 $u^2-3u-18=0$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求 $x$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `已知 $\\begin{cases}\\log_{3}x+\\log_{3}y=9\\\\ \\log_{x}81-\\log_{y}9=1\\end{cases}$ ，其中 $0 < x < y$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">設 $u = \\log_{3}y$。 證明 $u^2-3u-18=0$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求 $x$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 由第一式得 $\\log_{3}x = 9 - u$。利用換底公式將第二式的底數轉為 $3$，即 $\\log_x 81 = \\dfrac{4}{\\log_3 x}$ 及 $\\log_y 9 = \\dfrac{2}{u}$。`,
         solution: `(a) 注意 $\\log_{3}x = 9-u$。<br>由於 $\\log_{x}81 - \\log_{y}9 = 1$，可得：<br>$$\\frac{\\log_{3}81}{\\log_{3}x} - \\frac{\\log_{3}9}{\\log_{3}y} = 1$$<br>因此， $\\frac{4}{\\log_{3}x} - \\frac{2}{\\log_{3}y} = 1$。<br>代入得 $\\frac{4}{9-u} - \\frac{2}{u} = 1$。<br>展開得 $4u - 2(9-u) = u(9-u)$。<br>整理解得 $u^{2}-3u-18 = 0$。<br><br>(b) 由 (a) 可得 $u=6$ 或 $u=-3$。<br>對應的解為：<br>$$\\begin{cases}x=27\\\\ y=729\\end{cases} \\quad \\text{或} \\quad \\begin{cases}x=531441\\\\ y=\\frac{1}{27}\\end{cases}$$<br>由於已知 $x<y$，因此 $x=27$。`
     },
