@@ -10,7 +10,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Laws of Indices"],
         difficulty: 1,
-        content: `化簡 $\\dfrac{(mn^{-2})^5}{m^{-4}}$ ，並以正指數表示答案。<span class="marks">(3分)</span>`,
+        content: `化簡 $\\dfrac{(mn^{-2})^5}{m^{-4}}$ ，並以正指數表示答案。<span class="marks">(3分)</span><div class="q-clearfix"></div>`,
         hint: `先利用指數定律 $(x^m)^n = x^{mn}$ 展開分子，再利用 $x^m \\div x^n = x^{m-n}$ 化簡，最後把負指數項移到分母。`,
         solution: `$\\dfrac{(mn^{-2})^5}{m^{-4}} = \\dfrac{m^5 n^{-10}}{m^{-4}} = m^{5-(-4)} n^{-10} = m^9 n^{-10} = \\dfrac{m^9}{n^{10}}$`
     },
@@ -22,7 +22,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Factorization"],
         difficulty: 1,
-        content: `因式分解<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">$\\alpha^2 + \\alpha - 6$ ，<span class="marks">(1分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$\\alpha^4 + \\alpha^3 - 6\\alpha^2$ 。<span class="marks">(2分)</span></div></div>`,
+        content: `因式分解<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">$\\alpha^2 + \\alpha - 6$ ，<span class="marks">(1分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$\\alpha^4 + \\alpha^3 - 6\\alpha^2$ 。<span class="marks">(2分)</span></div></div><div class="q-clearfix"></div>`,
         hint: `(a) 尋找兩個數，其積為 $-6$、和為 $1$。<br>(b) 先提取公因式 $a^2$，再利用 (a) 的結果。`,
         solution: `(a) $a^2 + a - 6 = (a + 3)(a - 2)$ <br><br> (b) $a^4 + a^3 - 6a^2 = a^2(a^2 + a - 6) = a^2(a + 3)(a - 2)$`
     },
@@ -34,7 +34,7 @@ questions.push(
         domain: ["Number and Cardinality"],
         topic: ["Approximation"],
         difficulty: 1,
-        content: `<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">將 $534.7698$ 上捨入至最接近的百位。<span class="marks">(1分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">將 $534.7698$ 下捨入至二位小數。<span class="marks">(1分)</span></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">將 $534.7698$ 捨入至二位有效數字。<span class="marks">(1分)</span></div></div>`,
+        content: `<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">將 $534.7698$ 上捨入至最接近的百位。<span class="marks">(1分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">將 $534.7698$ 下捨入至二位小數。<span class="marks">(1分)</span></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">將 $534.7698$ 捨入至二位有效數字。<span class="marks">(1分)</span></div></div><div class="q-clearfix"></div>`,
         hint: `(a) 上捨入（ceiling）到百位：看十位是否大於 $0$。<br>(b) 下捨入（floor）到二位小數：直接截斷。<br>(c) 有效數字從首位非零開始計算。`,
         solution: `(a) $600$ <br><br> (b) $534.76$ <br><br> (c) $530$`
     },
@@ -46,7 +46,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Ratio and Proportion"],
         difficulty: 1,
-        content: `設 $a$、$b$ 及 $c$ 均為非零的數使得 $\\dfrac{a}{b} = \\dfrac{6}{7}$ 及 $3a = 4c$。 求 $\\dfrac{b+2c}{a+2b}$。<span class="marks">(3分)</span>`,
+        content: `設 $a$、$b$ 及 $c$ 均為非零的數使得 $\\dfrac{a}{b} = \\dfrac{6}{7}$ 及 $3a = 4c$。 求 $\\dfrac{b+2c}{a+2b}$。<span class="marks">(3分)</span><div class="q-clearfix"></div>`,
         hint: `設 $a = 6k$、$b = 7k$，代入 $3a = 4c$ 求出 $c$，再代入所求分式。`,
         solution: `設 $a = 6k$、$b = 7k$。\\\\ 由 $3a = 4c$ 得 $3(6k) = 4c \\Rightarrow c = \\dfrac{9}{2}k$。\\\\ $\\dfrac{b+2c}{a+2b} = \\dfrac{7k + 2(\\dfrac{9}{2}k)}{6k + 2(7k)} = \\dfrac{7k + 9k}{6k + 14k} = \\dfrac{16k}{20k} = \\dfrac{4}{5}$`
     },
@@ -58,7 +58,7 @@ questions.push(
         domain: ["Number and Cardinality"],
         topic: ["Percentages"],
         difficulty: 2,
-        content: `在某招聘活動中，男申請者的人數較女申請者的人數多 $28\\%$。 男申請者的人數與女申請者的人數之差為 $91$。 求在該招聘活動中男申請者的人數。<span class="marks">(4分)</span>`,
+        content: `在某招聘活動中，男申請者的人數較女申請者的人數多 $28\\%$。 男申請者的人數與女申請者的人數之差為 $91$。 求在該招聘活動中男申請者的人數。<span class="marks">(4分)</span><div class="q-clearfix"></div>`,
         hint: `設女申請者人數為 $F$，則男申請者人數為 $1.28F$。利用兩者之差列出方程求解。`,
         solution: `設女申請者人數為 $F$，則男申請者人數為 $1.28F$。\\\\ $1.28F - F = 91 \\Rightarrow 0.28F = 91 \\Rightarrow F = 325$。\\\\ 男申請者人數 $= 1.28 \\times 325 = 416$。\\\\ 答：男申請者的人數為 $416$。`
     },
@@ -70,7 +70,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Inequalities"],
         difficulty: 2,
-        content: `考慮複合不等式<br><div style="text-align: center;">$3 - x > \\dfrac{7 - x}{2}$  或  $5 + x > 4$ ............ (*) 。</div><br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">解 (*)。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出滿足 (*) 的最大負整數。<span class="marks">(1分)</span></div></div>`,
+        content: `考慮複合不等式<br><div style="text-align: center;">$3 - x > \\dfrac{7 - x}{2}$  或  $5 + x > 4$  ...............(*) 。</div><br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">解 (*)。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出滿足 (*) 的最大負整數。<span class="marks">(1分)</span></div></div><div class="q-clearfix"></div>`,
         hint: `(a) 分別解兩個不等式，再取聯集。<br>(b) 在解集中找出最大的負整數。`,
         solution: `(a) 解第一個不等式： $3 - x > \\dfrac{7 - x}{2} \\Rightarrow 6 - 2x > 7 - x \\Rightarrow -x > 1 \\Rightarrow x < -1$。\\\\ 解第二個不等式： $5 + x > 4 \\Rightarrow x > -1$。\\\\ 因此 (*) 的解為 $x < -1$ 或 $x > -1$（即 $x \\neq -1$）。 <br><br> (b) 滿足 (*) 的負整數中最大者為 $-2$。`
     },
@@ -82,7 +82,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Quadratic Equations"],
         difficulty: 2,
-        content: `設 $\\mathrm{p}(x) = 4x^2 + 12x + c$，其中 $c$ 為一常數。 方程 $\\mathrm{p}(x) = 0$ 有等根。 求<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">$c$，<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$y = \\mathrm{p}(x) - 169$ 的圖像的 $x$ 截距。<span class="marks">(3分)</span></div></div>`,
+        content: `設 $\\mathrm{p}(x) = 4x^2 + 12x + c$，其中 $c$ 為一常數。 方程 $\\mathrm{p}(x) = 0$ 有等根。 求<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">$c$，<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$y = \\mathrm{p}(x) - 169$ 的圖像的 $x$ 截距。<span class="marks">(3分)</span></div></div><div class="q-clearfix"></div>`,
         hint: `(a) 利用判別式 $\\Delta = 0$ 求 $c$。<br>(b) 將 $c$ 代入後令 $y = 0$ 解二次方程。`,
         solution: `(a) $\\Delta = 12^2 - 4(4)c = 0 \\Rightarrow 144 - 16c = 0 \\Rightarrow c = 9$。 <br><br> (b) $y = 4x^2 + 12x + 9 - 169 = 4x^2 + 12x - 160 = 4(x^2 + 3x - 40) = 4(x + 8)(x - 5)$。\\\\ 令 $y = 0$ 得 $x = -8$ 或 $x = 5$。\\\\ 故 $x$ 截距為 $-8$ 及 $5$。`
     },
@@ -94,9 +94,9 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Plane Geometry"],
         difficulty: 3,
-        content: `圖 1 中，$B$ 及 $D$ 分別為 $AC$ 及 $AE$ 上的點。 $BE$ 與 $CD$ 相交於點 $F$。 已知 $AB = BE$ 、 $BD \\mathbin{\/\/} CE$ 、 $\\angle CAE = 30^\\circ$ 及 $\\angle ADB = 42^\\circ$。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $\\angle BEC$。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">設 $\\angle BDC = \\theta$。 以 $\\theta$ 表 $\\angle CFE$。<span class="marks">(2分)</span></div></div>`,
+        content: `圖中，$B$ 及 $D$ 分別為 $AC$ 及 $AE$ 上的點。 $BE$ 與 $CD$ 相交於點 $F$。 已知 $AB = BE$ 、 $BD \\mathbin{\/\/} CE$ 、 $\\angle CAE = 30^\\circ$ 及 $\\angle ADB = 42^\\circ$。<br><img src="img/2020dsep1q08.jpg" class="q-img" alt="題目附圖" style="max-width: 85%;"><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $\\angle BEC$。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">設 $\\angle BDC = \\theta$。 以 $\\theta$ 表 $\\angle CFE$。<span class="marks">(2分)</span></div></div><div class="q-clearfix"></div>`,
         hint: `(a) 利用 $AB = BE$ 得等腰三角形，再配合平行線性質及三角形內角和。<br>(b) 利用三角形外角等於不相鄰兩內角之和，或以 $\\theta$ 表示相關角。`,
-        solution: `(a) 在 $\\triangle ABD$ 中，$\\angle BAD = 30^\\circ$（已知），$\\angle ADB = 42^\\circ$，故 $\\angle ABD = 180^\\circ - 30^\\circ - 42^\\circ = 108^\\circ$。\\\\ 因 $AB = BE$，故 $\\triangle ABE$ 為等腰三角形，$\\angle BAE = \\angle BEA$。\\\\ 又 $\\angle BAE = 30^\\circ$，故 $\\angle BEA = 30^\\circ$，從而 $\\angle ABE = 120^\\circ$。\\\\ 因 $BD \\parallel CE$，故 $\\angle BCE = \\angle ABD = 108^\\circ$（同位角）。\\\\ 在 $\\triangle BEC$ 中，$\\angle BEC = 180^\\circ - 108^\\circ - 30^\\circ = 42^\\circ$。 <br><br> (b) 在 $\\triangle BDC$ 中，$\\angle BDC = \\theta$，故 $\\angle BCD = 180^\\circ - 108^\\circ - \\theta = 72^\\circ - \\theta$。\\\\ 在 $\\triangle CFE$ 中，$\\angle CFE = 180^\\circ - \\angle BCE - \\angle CEF$。\\\\ 因 $BD \\parallel CE$，可得 $\\angle CFE = 108^\\circ - \\theta$。`
+        solution: `(a) 在 $\\Delta ABD$ 中，$\\angle BAD = 30^\\circ$（已知），$\\angle ADB = 42^\\circ$，故 $\\angle ABD = 180^\\circ - 30^\\circ - 42^\\circ = 108^\\circ$。\\\\ 因 $AB = BE$，故 $\\Delta ABE$ 為等腰三角形，$\\angle BAE = \\angle BEA$。\\\\ 又 $\\angle BAE = 30^\\circ$，故 $\\angle BEA = 30^\\circ$，從而 $\\angle ABE = 120^\\circ$。\\\\ 因 $BD \\parallel CE$，故 $\\angle BCE = \\angle ABD = 108^\\circ$（同位角）。\\\\ 在 $\\Delta BEC$ 中，$\\angle BEC = 180^\\circ - 108^\\circ - 30^\\circ = 42^\\circ$。 <br><br> (b) 在 $\\Delta BDC$ 中，$\\angle BDC = \\theta$，故 $\\angle BCD = 180^\\circ - 108^\\circ - \\theta = 72^\\circ - \\theta$。\\\\ 在 $\\Delta CFE$ 中，$\\angle CFE = 180^\\circ - \\angle BCE - \\angle CEF$。\\\\ 因 $BD \\parallel CE$，可得 $\\angle CFE = 108^\\circ - \\theta$。`
     },
     {
         id: "2020-DSE-MATH-CP1-Q09",
@@ -106,7 +106,31 @@ questions.push(
         domain: ["Data Handling"],
         topic: ["Statistics"],
         difficulty: 2,
-        content: `下表顯示某班學生所修科目的數目的分佈。<br><table class="q-table"><tr><th>所修科目的數目</th><th>4</th><th>5</th><th>6</th><th>7</th></tr><tr><th>學生人數</th><td>8</td><td>12</td><td>16</td><td>4</td></tr></table><br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出上述分佈的平均值、中位數及標準差。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">現有一新生加入該班。 該新生所修科目的數目為 5。 求加入這學生而引致該分佈的中位數的改變。<span class="marks">(2分)</span></div></div>`,
+        content: `下表顯示某班學生所修科目的數目的分佈。<table class="q-table" style="margin-top: 12px; margin-bottom: 12px; margin-left: auto; margin-right: auto; min-width: 300px; border-collapse: collapse; table-layout: auto;">
+    <colgroup>
+      <col style="width: auto;">
+      <col style="width: 2.5em;">
+      <col style="width: 2.5em;">
+      <col style="width: 2.5em;">
+      <col style="width: 2.5em;">
+    </colgroup>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">所修科目的數目</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">4</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">5</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">6</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">7</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">學生人數</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">8</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">12</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">16</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">4</td>
+    </tr>
+  </table>
+        
+        <br><table class="q-table"><tr><th>所修科目的數目</th><th>4</th><th>5</th><th>6</th><th>7</th></tr><tr><th>學生人數</th><td>8</td><td>12</td><td>16</td><td>4</td></tr></table><br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出上述分佈的平均值、中位數及標準差。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">現有一新生加入該班。 該新生所修科目的數目為 5。 求加入這學生而引致該分佈的中位數的改變。<span class="marks">(2分)</span></div></div><div class="q-clearfix"></div>`,
         hint: `(a) 平均值用加權平均；中位數取第 20 及 21 項的平均；標準差用公式計算。<br>(b) 加入後總人數變為 41，重新找出中位數。`,
         solution: `(a) 總人數 $= 8+12+16+4 = 40$。\\\\ 平均值 $= \\dfrac{4\\times8 + 5\\times12 + 6\\times16 + 7\\times4}{40} = \\dfrac{32+60+96+28}{40} = 5.4$。\\\\ 中位數為第 20 及 21 項的平均，兩者皆為 6，故中位數 $= 6$。\\\\ 標準差 $= \\sqrt{\\dfrac{8(4-5.4)^2 + 12(5-5.4)^2 + 16(6-5.4)^2 + 4(7-5.4)^2}{40}} = \\sqrt{0.84} \\approx 0.917$。 <br><br> (b) 加入後總人數 $= 41$，中位數為第 21 項，仍為 6。\\\\ 中位數沒有改變（改變量為 0）。`
     },
@@ -118,7 +142,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Variations"],
         difficulty: 3,
-        content: `一個高度為 $h$ cm 的 $X$ 牌紀念品的價錢為 $\\$P$。 $P$ 的一部分為常數，而另一部分隨 $h^3$ 正變。 當 $h=3$ 時，$P=59$； 且當 $h=7$ 時，$P=691$。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求一個高度為 4 cm 的 $X$ 牌紀念品的價錢。<span class="marks">(4分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">某人宣稱一個高度為 5 cm 的 $X$ 牌紀念品的價錢高於兩個高度均為 4 cm 的 $X$ 牌紀念品的總價錢。 該宣稱是否正確？ 試解釋你的答案。<span class="marks">(2分)</span></div></div>`,
+        content: `一個高度為 $h\\text{ cm}$ 的 $X$ 牌紀念品的價錢為 $\\$P$。 $P$ 的一部分為常數，而另一部分隨 $h^3$ 正變。 當 $h=3$ 時，$P=59$； 且當 $h=7$ 時，$P=691$。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求一個高度為 $4\\text{ cm}$ 的 $X$ 牌紀念品的價錢。<span class="marks">(4分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">某人宣稱一個高度為 5 cm 的 $X$ 牌紀念品的價錢高於兩個高度均為 $4\\text{ cm}$ 的 $X$ 牌紀念品的總價錢。 該宣稱是否正確？ 試解釋你的答案。<span class="marks">(2分)</span></div></div><div class="q-clearfix"></div>`,
         hint: `(a) 設 $P = A + B h^3$，代入兩組已知值求 $A$、$B$。<br>(b) 計算 $h=5$ 的價錢與 $2 \\times (h=4$ 的價錢) 比較。`,
         solution: `(a) 設 $P = A + B h^3$。\\\\ 當 $h=3$：$A + 27B = 59$ (1)\\\\ 當 $h=7$：$A + 343B = 691$ (2)\\\\ (2)-(1)：$316B = 632 \\Rightarrow B = 2$，代入得 $A = 5$。\\\\ 故 $P = 5 + 2h^3$。\\\\ 當 $h=4$：$P = 5 + 2(64) = 133$。\\\\ 答：價錢為 $\$133$。 <br><br> (b) 當 $h=5$：$P = 5 + 2(125) = 255$。\\\\ 兩個高度 4 cm 的總價錢 $= 2 \\times 133 = 266$。\\\\ 因 $255 < 266$，故該宣稱不正確。`
     },
@@ -130,7 +154,38 @@ questions.push(
         domain: ["Data Handling"],
         topic: ["Measures of Central Tendency and Dispersion"],
         difficulty: 3,
-        content: `下面的幹葉圖顯示某袋子內的信件的重量（以克為單位）的分佈。<br><table class="q-table"><tr><th>幹 (十位)</th><th>葉 (個位)</th></tr><tr><td>1</td><td>1 2 3 3</td></tr><tr><td>2</td><td>3 3 4 5 6 9 9</td></tr><tr><td>3</td><td>1 6 7 8 8 8</td></tr><tr><td>4</td><td>2</td></tr><tr><td>5</td><td>0 $w$</td></tr></table><br>已知上述分佈的分佈域為其四分位數間距的三倍。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $w$。<span class="marks">(4分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">若從該袋子中隨機抽取一信件，求所抽取的信件的重量不少於該分佈的眾數的概率。<span class="marks">(2分)</span></div></div>`,
+        content: `下面的幹葉圖顯示某袋子內的信件的重量（以克為單位）的分佈。
+        <table class="q-table" style="border-collapse: collapse; table-layout: auto;" align="center">
+    <colgroup>
+      <col style="width: auto;">
+      <col style="width: auto;">
+    </colgroup>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;"><u>幹（十位）</u></td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;"><u>葉（個位）</u></td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">1</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px; white-space: nowrap;">1\t2\t3\t3</td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">2</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px; white-space: nowrap;">3\t3\t4\t5\t6\t9\t9</td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">3</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px; white-space: nowrap;">1\t6\t7\t8\t8\t8</td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">4</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px; white-space: nowrap;">2</td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">5</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px; white-space: nowrap;">0\t$w$</td>
+    </tr>
+  </table>
+已知上述分佈的分佈域為其四分位數間距的三倍。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $w$。<span class="marks">(4分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">若從該袋子中隨機抽取一信件，求所抽取的信件的重量不少於該分佈的眾數的概率。<span class="marks">(2分)</span></div></div><div class="q-clearfix"></div>`,
         hint: `(a) 先數出總數據個數，找出 $Q_1$、$Q_3$ 及極差，利用「極差 = 3 × 四分位數間距」求 $w$。<br>(b) 找出眾數，再計算不少於眾數的數據個數除以總數。`,
         solution: `(a) 數據共有 $4+7+6+1+2 = 20$ 個。\\\\ 分佈域 $= 50+w - 11 = 39 + w$。\\\\ $Q_1$ 為第 5 及 6 項的平均 $= \\dfrac{23+23}{2} = 23$。\\\\ $Q_3$ 為第 15 及 16 項的平均 $= \\dfrac{38+38}{2} = 38$。\\\\ 四分位數間距 $= 38 - 23 = 15$。\\\\ $39 + w = 3 \\times 15 = 45 \\Rightarrow w = 6$。 <br><br> (b) 眾數為 38（出現三次）。\\\\ 不少於 38 的數據有：38, 38, 38, 42, 50, 56 共 6 個。\\\\ 概率 $= \\dfrac{6}{20} = \\dfrac{3}{10}$。`
     },
@@ -142,7 +197,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Mensuration"],
         difficulty: 3,
-        content: `一實心直立圓錐體的高及底半徑分別為 36&nbspcm 及 15&nbspcm。 將該圓錐體以兩平行於其底的平面分成三部分。 該三部分的高相等。 以 $\\pi$ 表<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">該圓錐體的中間部分的體積，<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">該圓錐體的中間部分的曲面面積。<span class="marks">(3分)</span></div></div>`,
+        content: `一實心直立圓錐體的高及底半徑分別為 36&nbspcm 及 15&nbspcm。 將該圓錐體以兩平行於其底的平面分成三部分。 該三部分的高相等。 以 $\\pi$ 表<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">該圓錐體的中間部分的體積，<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">該圓錐體的中間部分的曲面面積。<span class="marks">(3分)</span></div></div><div class="q-clearfix"></div>`,
         hint: `(a) 利用相似比求各截面半徑，再用大圓錐減去小圓錐求中間部分體積。<br>(b) 中間部分曲面面積 = 大圓錐側面積 − 小圓錐側面積。`,
         solution: `(a) 三部分高各為 12 cm。\\\\ 由頂點起，高度 12 cm 的小圓錐底半徑 $= 15 \\times \\dfrac{12}{36} = 5$ cm。\\\\ 高度 24 cm 的中圓錐底半徑 $= 15 \\times \\dfrac{24}{36} = 10$ cm。\\\\ 中間部分體積 $= \\dfrac{1}{3}\\pi(10)^2(24) - \\dfrac{1}{3}\\pi(5)^2(12) = 800\\pi - 100\\pi = 700\\pi$ cm$^3$。 <br><br> (b) 大圓錐斜高 $= \\sqrt{15^2 + 36^2} = 39$ cm。\\\\ 高度 24 cm 的中圓錐斜高 $= 39 \\times \\dfrac{24}{36} = 26$ cm。\\\\ 高度 12 cm 的小圓錐斜高 $= 39 \\times \\dfrac{12}{36} = 13$ cm。\\\\ 中間部分曲面面積 $= \\pi \\times 10 \\times 26 - \\pi \\times 5 \\times 13 = 260\\pi - 65\\pi = 195\\pi$ cm$^2$。`
     },
@@ -154,7 +209,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Polynomials"],
         difficulty: 4,
-        content: `三次多項式 $\\mathrm{f}(x)$ 可被 $x-1$ 整除。 當 $\\mathrm{f}(x)$ 除以 $x^2-1$ 時，餘式為 $kx+8$，其中 $k$ 為一常數。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $k$。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">已知 $x+3$ 為 $\\mathrm{f}(x)$ 的因式。 當 $\\mathrm{f}(x)$ 除以 $x$ 時，餘數為 24。 某人宣稱方程 $\\mathrm{f}(x)=0$ 所有的根均為整數。 該宣稱是否正確？ 試解釋你的答案。<span class="marks">(5分)</span></div></div>`,
+        content: `三次多項式 $\\mathrm{f}(x)$ 可被 $x-1$ 整除。 當 $\\mathrm{f}(x)$ 除以 $x^2-1$ 時，餘式為 $kx+8$，其中 $k$ 為一常數。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $k$。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">已知 $x+3$ 為 $\\mathrm{f}(x)$ 的因式。 當 $\\mathrm{f}(x)$ 除以 $x$ 時，餘數為 24。 某人宣稱方程 $\\mathrm{f}(x)=0$ 所有的根均為整數。 該宣稱是否正確？ 試解釋你的答案。<span class="marks">(5分)</span></div></div><div class="q-clearfix"></div>`,
         hint: `(a) 利用餘式定理及 $f(1)=0$ 求 $k$。<br>(b) 寫出 $f(x)$ 的完整形式，再因式分解並檢查根。`,
         solution: `(a) 因 $x-1$ 整除 $f(x)$，故 $f(1)=0$。\\\\ 又 $f(x) = (x^2-1)q(x) + kx + 8$，代入 $x=1$：$0 = k(1) + 8 \\Rightarrow k = -8$。 <br><br> (b) 由 (a) 得 $f(x) = (x^2-1)q(x) - 8x + 8$。\\\\ 因 $x+3$ 為因式，$f(-3)=0$。\\\\ 又 $f(0)=24$。\\\\ 設 $f(x) = (x-1)(x+3)(ax+b)$。\\\\ 由 $f(0)=24$：$ (-1)(3)b = 24 \\Rightarrow b = -8$。\\\\ 故 $f(x) = (x-1)(x+3)(ax-8)$。\\\\ 展開並與已知條件比較可得 $a=1$，即 $f(x)=(x-1)(x+3)(x-8)$。\\\\ 根為 $1$、$-3$、$8$，均為整數，故該宣稱正確。`
     },
@@ -166,7 +221,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Coordinate Geometry", "Equations of Circles", "Loci"],
         difficulty: 4,
-        content: `點 $A$ 及點 $B$ 的坐標分別為 $(-10, 0)$ 及 $(30, 0)$。 圓 $C$ 通過 $A$ 及 $B$。 將 $C$ 的圓心記為 $G$。 已知 $G$ 的 $y$ 坐標為 $-15$。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $C$ 的方程。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">直線 $L$ 通過 $B$ 及 $G$。 另一直線 $\\ell$ 平行於 $L$。 設 $P$ 為直角坐標平面上的一動點使得由 $P$ 至 $L$ 的垂直距離等於由 $P$ 至 $\\ell$ 的垂直距離。 將 $P$ 的軌跡記為 $\\Gamma$。 已知 $\\Gamma$ 通過 $A$。<br>(i) 描述 $\\Gamma$ 與 $L$ 之間的幾何關係。<br>(ii) 求 $\\Gamma$ 的方程。<br>(iii) 假定 $\\Gamma$ 與 $C$ 相交於另一點 $H$。 某人宣稱 $\\angle GAH < 70^\\circ$。 你是否同意？ 試解釋你的答案。<span class="marks">(6分)</span></div></div>`,
+        content: `點 $A$ 及點 $B$ 的坐標分別為 $(-10, 0)$ 及 $(30, 0)$。 圓 $C$ 通過 $A$ 及 $B$。 將 $C$ 的圓心記為 $G$。 已知 $G$ 的 $y$ 坐標為 $-15$。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $C$ 的方程。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">直線 $L$ 通過 $B$ 及 $G$。 另一直線 $\\mathit{\\ell}$ 平行於 $L$。 設 $P$ 為直角坐標平面上的一動點使得由 $P$ 至 $L$ 的垂直距離等於由 $P$ 至 $\\mathit{\\ell}$ 的垂直距離。 將 $P$ 的軌跡記為 $\\mathit{\\Gamma}$。 已知 $\\mathit{\\Gamma}$ 通過 $A$。<br>(i) 描述 $\\mathit{\\Gamma}$ 與 $L$ 之間的幾何關係。<br>(ii) 求 $\\mathit{\\Gamma}$ 的方程。<br>(iii) 假定 $\\mathit{\\Gamma}$ 與 $C$ 相交於另一點 $H$。 某人宣稱 $\\angle GAH < 70^\\circ$。 你是否同意？ 試解釋你的答案。<span class="marks">(6分)</span></div></div><div class="q-clearfix"></div>`,
         hint: `(a) 設圓心為 $(h,-15)$，利用 GA = GB 或距離公式求 $h$。<br>(b) $\\Gamma$ 是 L 與 $\\ell$ 的角平分線；因通過 A 且平行性質，可求出方程。`,
         solution: `(a) 設 G 為 $(h,-15)$。因 GA = GB，\\\\ $(h+10)^2 + (-15-0)^2 = (h-30)^2 + (-15-0)^2$\\\\ $(h+10)^2 = (h-30)^2$\\\\ $h+10 = \\pm (h-30)$\\\\ 取正：$h+10 = h-30$（不可能）；取負：$h+10 = -h + 30 \\Rightarrow 2h = 20 \\Rightarrow h = 10$。\\\\ 半徑 $^2 = (10+10)^2 + 15^2 = 400 + 225 = 625$。\\\\ 故 C 的方程為 $(x-10)^2 + (y+15)^2 = 625$。 <br><br> (b) (i) $\\Gamma$ 是 L 的一條平行線（或 L 與 $\\ell$ 的角平分線之一，且與 L 平行）。\\\\ (ii) L 的斜率 $= \\dfrac{-15-0}{10-30} = \\dfrac{3}{4}$。\\\\ 因 $\\Gamma$ 通過 A 且平行於 L，斜率同為 $\\dfrac{3}{4}$。\\\\ 方程：$y - 0 = \\dfrac{3}{4}(x + 10) \\Rightarrow 3x - 4y + 30 = 0$。\\\\ (iii) 聯立 $\\Gamma$ 與 C 求 H，再計算 $\\angle GAH$。\\\\ 經計算可得 $\\angle GAH \\approx 73.74^\\circ > 70^\\circ$，故不同意該宣稱。`
     },
@@ -178,7 +233,7 @@ questions.push(
         domain: ["Data Handling"],
         topic: ["Permutation and Combination", "Probability"],
         difficulty: 3,
-        content: `某箱子內有 3 隻藍色碟、7 隻綠色碟及 9 隻紫色碟。 若從該箱子中隨機同時抽出 4 隻碟，求<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">抽出 4 隻相同顏色的碟的概率；<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">抽出至少 2 隻不同顏色的碟的概率。<span class="marks">(2分)</span></div></div>`,
+        content: `某箱子內有 3 隻藍色碟、7 隻綠色碟及 9 隻紫色碟。 若從該箱子中隨機同時抽出 4 隻碟，求<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">抽出 4 隻相同顏色的碟的概率；<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">抽出至少 2 隻不同顏色的碟的概率。<span class="marks">(2分)</span></div></div><div class="q-clearfix"></div>`,
         hint: `(a) 計算「全藍」「全綠」「全紫」的組合數總和，再除以總抽法。<br>(b) 用 1 減去「全同色」的概率。`,
         solution: `(a) 總抽法 $= C_{19}^4 = 3876$。\\\\ 全藍：$C_3^4 = 0$（不可能）。\\\\ 全綠：$C_7^4 = 35$。\\\\ 全紫：$C_9^4 = 126$。\\\\ 所求概率 $= \\dfrac{35+126}{3876} = \\dfrac{161}{3876} = \\dfrac{23}{554}$。 <br><br> (b) 「至少 2 隻不同顏色」即「不是全同色」，概率 $= 1 - \\dfrac{161}{3876} = \\dfrac{3715}{3876}$。`
     },
@@ -190,7 +245,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Sequences"],
         difficulty: 3,
-        content: `某等比數列的第 3 項及第 6 項分別為 144 及 486。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求該數列的第 1 項。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求 $n$ 的最小值使得該數列的首 $n$ 項之和大於 $8 \\times 10^{18}$。<span class="marks">(3分)</span></div></div>`,
+        content: `某等比數列的第 3 項及第 6 項分別為 144 及 486。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求該數列的第 1 項。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求 $n$ 的最小值使得該數列的首 $n$ 項之和大於 $8 \\times 10^{18}$。<span class="marks">(3分)</span></div></div><div class="q-clearfix"></div>`,
         hint: `(a) 利用 $T_3 = ar^2$、$T_6 = ar^5$ 求公比 $r$ 及首項 $a$。<br>(b) 使用等比數列求和公式，解不等式求最小 $n$。`,
         solution: `(a) $ar^2 = 144$、$ar^5 = 486$。\\\\ $\\dfrac{ar^5}{ar^2} = r^3 = \\dfrac{486}{144} = \\dfrac{27}{8} \\Rightarrow r = \\dfrac{3}{2}$。\\\\ $a(\\dfrac{9}{4}) = 144 \\Rightarrow a = 64$。\\\\ 故第 1 項為 64。 <br><br> (b) 首 $n$ 項和 $S_n = 64 \\dfrac{(\\frac{3}{2})^n - 1}{\\frac{3}{2}-1} = 128\\left[(\\frac{3}{2})^n - 1\\right]$。\\\\ $128\\left[(\\frac{3}{2})^n - 1\\right] > 8 \\times 10^{18}$\\\\ $(\\frac{3}{2})^n > \\dfrac{8 \\times 10^{18}}{128} + 1 = 6.25 \\times 10^{16} + 1$\\\\ $n \\log 1.5 > \\log(6.25 \\times 10^{16})$\\\\ $n > \\dfrac{\\log(6.25 \\times 10^{16})}{\\log 1.5} \\approx 92.3$。\\\\ 故最小 $n = 93$。`
     },
@@ -202,7 +257,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Quadratic Functions"],
         difficulty: 4,
-        content: `設 $\\mathrm{g}(x) = x^2 - 2kx + 2k^2 + 4$，其中 $k$ 為一實常數。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">利用配方法，以 $k$ 表 $y = \\mathrm{g}(x)$ 的圖像的頂點的坐標。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">在同一直角坐標系中，設 $D$ 及 $E$ 分別為 $y = \\mathrm{g}(x+2)$ 的圖像的頂點及 $y = -\\mathrm{g}(x-2)$ 的圖像的頂點。 這直角坐標系中是否有一點 $F$ 使得 $\\triangle DEF$ 的外心的坐標為 $(0, 3)$？ 試解釋你的答案。<span class="marks">(4分)</span></div></div>`,
+        content: `設 $\\mathrm{g}(x) = x^2 - 2kx + 2k^2 + 4$，其中 $k$ 為一實常數。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">利用配方法，以 $k$ 表 $y = \\mathrm{g}(x)$ 的圖像的頂點的坐標。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">在同一直角坐標系中，設 $D$ 及 $E$ 分別為 $y = \\mathrm{g}(x+2)$ 的圖像的頂點及 $y = -\\mathrm{g}(x-2)$ 的圖像的頂點。 這直角坐標系中是否有一點 $F$ 使得 $\\Delta DEF$ 的外心的坐標為 $(0, 3)$？ 試解釋你的答案。<span class="marks">(4分)</span></div></div><div class="q-clearfix"></div>`,
         hint: `(a) 配方 $g(x) = (x-k)^2 + k^2 + 4$。<br>(b) 求出 D、E 坐標，再假設外心為 (0,3)，檢查是否存在 F 使 DE 的垂直平分線通過 (0,3)。`,
         solution: `(a) $g(x) = (x - k)^2 - k^2 + 2k^2 + 4 = (x - k)^2 + k^2 + 4$。\\\\ 頂點為 $(k, k^2 + 4)$。 <br><br> (b) $y = g(x+2)$ 的頂點 D：將 $x$ 換成 $x+2$，頂點為 $(k-2, k^2 + 4)$。\\\\ $y = -g(x-2)$ 的頂點 E：$-[(x-2-k)^2 + k^2 + 4]$，頂點為 $(k+2, -(k^2 + 4))$。\\\\ DE 的中點為 $(k, 0)$，斜率為 $\\dfrac{-(k^2+4)-(k^2+4)}{(k+2)-(k-2)} = \\dfrac{-2(k^2+4)}{4} = -\\dfrac{k^2+4}{2}$。\\\\ DE 的垂直平分線斜率為 $\\dfrac{2}{k^2+4}$，通過 $(k,0)$。\\\\ 若外心為 (0,3)，則該點必須在垂直平分線上：\\\\ $3 - 0 = \\dfrac{2}{k^2+4}(0 - k) \\Rightarrow 3 = -\\dfrac{2k}{k^2+4}$。\\\\ $3(k^2 + 4) = -2k \\Rightarrow 3k^2 + 2k + 12 = 0$。\\\\ $\\Delta = 4 - 144 < 0$，無實數 $k$，故不存在這樣的點 F。`
     },
@@ -214,9 +269,9 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Geometry of Circles"],
         difficulty: 4,
-        content: `圖 2 中，$U$、$V$ 及 $W$ 均為某圓上的點。 將該圓記為 $C$。 $TU$ 為 $C$ 在 $U$ 的切線使得 $TVW$ 為一直線。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明 $\\triangle UTV \\sim \\triangle WTU$。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">已知 $VW$ 為 $C$ 的一直徑。 假定 $TU = 780 \\text{cm}$ 及 $TV = 325 \\text{cm}$。<br>(i) 以 $\\pi$ 表 $C$ 的圓周。<br>(ii) 某人宣稱 $\\triangle UVW$ 的周界超過 35\nbspm。 你是否同意？ 試解釋你的答案。<span class="marks">(5分)</span></div></div>`,
+        content: `圖中，$U$、$V$ 及 $W$ 均為某圓上的點。 將該圓記為 $C$。 $TU$ 為 $C$ 在 $U$ 的切線使得 $TVW$ 為一直線。<br><img src="img/2020dsep1q18.jpg" class="q-img" alt="題目附圖" style="max-width: 65%;"><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明 $\\Delta UTV \\sim \\Delta WTU$。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">已知 $VW$ 為 $C$ 的一直徑。 假定 $TU = 780\\text{ cm}$ 及 $TV = 325\\text{ cm}$。</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">以 $\\pi$ 表 $C$ 的圓周。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">某人宣稱 $\\Delta UVW$ 的周界超過 $35\\text{ m}$。 你是否同意？ 試解釋你的答案。</div></div><div class="q-text-content"><span class="marks">(5分)</span></div><div class="q-clearfix"></div>`,
         hint: `(a) 利用切線與弦定理（切線垂直半徑或角度相等）證明 AA 相似。<br>(b) 利用相似比求半徑，再計算周界比較。`,
-        solution: `(a) $\\because$ TU 為切線，TVW 為割線\\\\ $\\therefore \\angle TUV = \\angle TWU$（切線弦定理）\\\\ 又 $\\angle UT V = \\angle WTU$（公共角）\\\\ $\\therefore \\triangle UTV \\sim \\triangle WTU$（AA）。 <br><br> (b) (i) 由相似得 $\\dfrac{TU}{TW} = \\dfrac{TV}{TU}$\\\\ $TW = \\dfrac{TU^2}{TV} = \\dfrac{780^2}{325} = 1872$ cm。\\\\ $VW = TW - TV = 1872 - 325 = 1547$ cm（直徑）。\\\\ 半徑 $= \\dfrac{1547}{2}$ cm。\\\\ 圓周 $= 1547\\pi$ cm。\\\\ (ii) 在直角三角形 UVW 中（直徑對直角），$UV = \\sqrt{UW^2 - VW^2}$ 等，但由相似及計算可得周界約 34. something m < 35 m，故不同意該宣稱。`
+        solution: `(a) $\\because$ TU 為切線，TVW 為割線\\\\ $\\therefore \\angle TUV = \\angle TWU$（切線弦定理）\\\\ 又 $\\angle UT V = \\angle WTU$（公共角）\\\\ $\\therefore \\Delta UTV \\sim \\Delta WTU$（AA）。 <br><br> (b) (i) 由相似得 $\\dfrac{TU}{TW} = \\dfrac{TV}{TU}$\\\\ $TW = \\dfrac{TU^2}{TV} = \\dfrac{780^2}{325} = 1872$ cm。\\\\ $VW = TW - TV = 1872 - 325 = 1547$ cm（直徑）。\\\\ 半徑 $= \\dfrac{1547}{2}$ cm。\\\\ 圓周 $= 1547\\pi$ cm。\\\\ (ii) 在直角三角形 UVW 中（直徑對直角），$UV = \\sqrt{UW^2 - VW^2}$ 等，但由相似及計算可得周界約 34. something m < 35 m，故不同意該宣稱。`
     },
     {
         id: "2020-DSE-MATH-CP1-Q19",
@@ -226,8 +281,8 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Trigonometry"],
         difficulty: 5,
-        content: `$PQRS$ 為四邊形紙卡，其中 $PQ = 60 \\text{cm}$、$PS = 40 \\text{cm}$、$\\angle PQR = 30^\\circ$、$\\angle PRQ = 55^\\circ$ 及 $\\angle QPS = 120^\\circ$。 把該紙卡懸掛且 $QR$ 位於水平地面上，如圖 3 所示。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $RS$ 的長度。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求該紙卡的面積。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">已知該紙卡與水平地面間的交角為 $32^\\circ$。<br>(i) 求由 $P$ 至水平地面的最短距離。<br>(ii) 某學生宣稱 $RS$ 與水平地面間的交角至多為 $20^\\circ$。 該宣稱是否正確？ 試解釋你的答案。<span class="marks">(7分)</span></div></div>`,
-        hint: `(a) 先在 $\\triangle PQR$ 用正弦公式求 PR，再在 $\\triangle PRS$ 用餘弦公式求 RS。<br>(b) 面積 = $\\triangle PQR$ 面積 + $\\triangle PRS$ 面積。<br>(c) 最短距離為高度 $\\times \\sin 32^\\circ$；再用三維三角比較 RS 的傾角。`,
-        solution: `(a) 在 $\\triangle PQR$ 中，$\\angle PQR = 30^\\circ$、$\\angle PRQ = 55^\\circ$，故 $\\angle QPR = 95^\\circ$。\\\\ 由正弦公式： $\\dfrac{PR}{\\sin 30^\\circ} = \\dfrac{60}{\\sin 55^\\circ}$\\\\ $PR = \\dfrac{60 \\sin 30^\\circ}{\\sin 55^\\circ} \\approx 36.62$ cm。\\\\ 在 $\\triangle PRS$ 中，$PS = 40$、$PR \\approx 36.62$、$\\angle QPS = 120^\\circ$。\\\\ 由餘弦公式： $RS^2 = 40^2 + 36.62^2 - 2\\times40\\times36.62\\times\\cos 120^\\circ$\\\\ $RS \\approx 66.3$ cm。 <br><br> (b) 面積 $= \\dfrac{1}{2}\\times60\\times PR\\times\\sin 95^\\circ + \\dfrac{1}{2}\\times40\\times PR\\times\\sin 120^\\circ \\approx 1540$ cm$^2$（精確值依計算）。 <br><br> (c) (i) 由 P 至 QR 的垂直距離為 $\\triangle PQR$ 的高，再乘以 $\\sin 32^\\circ$。\\\\ 最短距離 $\\approx 19.3$ cm。\\\\ (ii) 經計算 RS 與地面的交角約為 $18.7^\\circ < 20^\\circ$，故該宣稱正確。`
+        content: `$PQRS$ 為四邊形紙卡，其中 $PQ = 60\\text{ cm}$、$PS = 40\\text{ cm}$、$\\angle PQR = 30^\\circ$、$\\angle PRQ = 55^\\circ$ 及 $\\angle QPS = 120^\\circ$。 把該紙卡懸掛且 $QR$ 位於水平地面上，如圖所示。<br><img src="img/2020dsep1q19.jpg" class="q-img" alt="題目附圖" style="max-width: 90%;"><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $RS$ 的長度。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求該紙卡的面積。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">已知該紙卡與水平地面間的交角為 $32^\\circ$。</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求由 $P$ 至水平地面的最短距離。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">某學生宣稱 $RS$ 與水平地面間的交角至多為 $20^\\circ$。 該宣稱是否正確？ 試解釋你的答案。</div></div><div class="q-text-content"><span class="marks">(7分)</span></div>`,
+        hint: `(a) 先在 $\\Delta PQR$ 用正弦公式求 PR，再在 $\\Delta PRS$ 用餘弦公式求 RS。<br>(b) 面積 = $\\Delta PQR$ 面積 + $\\Delta PRS$ 面積。<br>(c) 最短距離為高度 $\\times \\sin 32^\\circ$；再用三維三角比較 RS 的傾角。<div class="q-clearfix"></div>`,
+        solution: `(a) 在 $\\Delta PQR$ 中，$\\angle PQR = 30^\\circ$、$\\angle PRQ = 55^\\circ$，故 $\\angle QPR = 95^\\circ$。\\\\ 由正弦公式： $\\dfrac{PR}{\\sin 30^\\circ} = \\dfrac{60}{\\sin 55^\\circ}$\\\\ $PR = \\dfrac{60 \\sin 30^\\circ}{\\sin 55^\\circ} \\approx 36.62$ cm。\\\\ 在 $\\Delta PRS$ 中，$PS = 40$、$PR \\approx 36.62$、$\\angle QPS = 120^\\circ$。\\\\ 由餘弦公式： $RS^2 = 40^2 + 36.62^2 - 2\\times40\\times36.62\\times\\cos 120^\\circ$\\\\ $RS \\approx 66.3$ cm。 <br><br> (b) 面積 $= \\dfrac{1}{2}\\times60\\times PR\\times\\sin 95^\\circ + \\dfrac{1}{2}\\times40\\times PR\\times\\sin 120^\\circ \\approx 1540$ cm$^2$（精確值依計算）。 <br><br> (c) (i) 由 P 至 QR 的垂直距離為 $\\Delta PQR$ 的高，再乘以 $\\sin 32^\\circ$。\\\\ 最短距離 $\\approx 19.3$ cm。\\\\ (ii) 經計算 RS 與地面的交角約為 $18.7^\\circ < 20^\\circ$，故該宣稱正確。`
     }
 );
