@@ -163,8 +163,7 @@ questions.push(
         domain: ["Data Handling"],
         topic: ["Measures of Central Tendency and Dispersion"],
         difficulty: 1,
-        content: `下表顯示某班學生擁有計算機的數目的分佈。
-        <table class="q-table" style="margin-left: auto; margin-right: auto; min-width: 300px; border-collapse: collapse; table-layout: auto;">
+        content: `下表顯示某班學生擁有計算機的數目的分佈。<table class="q-table" style="margin-left: auto; margin-top: 12px; margin-bottom: 12px; margin-right: auto; min-width: 300px; border-collapse: collapse; table-layout: auto;">
     <colgroup>
       <col style="width: auto;">
       <col style="width: 3em;">
@@ -186,8 +185,7 @@ questions.push(
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$n$</td>
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">1</td>
     </tr>
-  </table>
-該分佈的平均值為 2。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求該分佈的中位數、四分位數間距及方差。<span class="marks">(5分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">該班現有兩名學生退學。 得知該分佈的平均值維持不變。 該分佈的分佈域有否因該兩名學生退學而改變？ 試解釋你的答案。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
+  </table>該分佈的平均值為 2。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求該分佈的中位數、四分位數間距及方差。<span class="marks">(5分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">該班現有兩名學生退學。 得知該分佈的平均值維持不變。 該分佈的分佈域有否因該兩名學生退學而改變？ 試解釋你的答案。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 先由平均值求 $n$，再求中位數、IQR 及方差。<br>(b) 平均值不變意味著退出學生的平均擁有數仍為 2，討論是否影響最大/最小值。`,
         solution: `(a) 總人數 $= 8+5+n+1 = 14+n$。\\\\ 平均值 $= \\dfrac{1\\times8 + 2\\times5 + 3n + 4\\times1}{14+n} = 2 \\Rightarrow 8+10+3n+4 = 2(14+n) \\Rightarrow 22+3n = 28+2n \\Rightarrow n=6$。\\\\ 總人數 $=20$。中位數為第 10、11 項平均 $=2$。\\\\ $Q_1$ 為第 5、6 項平均 $=1$，$Q_3$ 為第 15、16 項平均 $=3$，IQR $=2$。\\\\ 方差 $= \\dfrac{8(1-2)^2 + 5(2-2)^2 + 6(3-2)^2 + 1(4-2)^2}{20} = \\dfrac{8+0+6+4}{20} = 0.9$。 <br><br> (b) 退出兩名學生後平均值仍為 2，表示退出者平均擁有 2 部。若退出的不是擁有 1 或 4 的學生，分佈域不變；若退出擁有 4 的，則分佈域可能減小。因此分佈域不一定改變。`
     },
