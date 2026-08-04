@@ -262,8 +262,8 @@ D.\t增加 $76\\%$。
         domain: ["Algebra"],
         topic: ["Sequences"],
         difficulty: 1,
-        content: `圖中，第 $1$ 個圖案包含 $6$ 粒點子。 對任意正整數 $n$，第 $(n+1)$ 個圖案是由第 $n$ 個圖案加上 $4$ 粒點子所組成。 求第 $9$ 個圖案的點子數目。 
-<div class="q-mcopt">
+        content: `圖中，第 $1$ 個圖案包含 $6$ 粒點子。 對任意正整數 $n$，第 $(n+1)$ 個圖案是由第 $n$ 個圖案加上 $4$ 粒點子所組成。 求第 $9$ 個圖案的點子數目。
+        <img src="img/2019dsep2q14.jpg" class="q-img" alt="題目附圖" style="max-width: 90%;"><div class="q-mcopt">
 A.\t$30$<br>
 B.\t$34$<br>
 C.\t$38$<br>
@@ -301,12 +301,12 @@ D.\t$864\\text{ cm}^2$。
         topic: ["Geometry (Polygons)"],
         difficulty: 3,
         content: `圖中，$ABCD$ 為一平行四邊形及 $AEFG$ 為一正方形。 已知 $BE:EF:FG = 2:7:3$。 $BD$ 分別與 $AE$ 及 $FG$ 相交於點 $X$ 及點 $Y$。 若 $\\Delta ABX$ 的面積為 $24\\text{ cm}^2$，則四邊形 $CDYF$ 的面積為
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2019dsep2q16.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 65%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$54\\text{ cm}^2$。 <br>
 B.\t$77\\text{ cm}^2$。 <br>
 C.\t$81\\text{ cm}^2$。 <br>
 D.\t$87\\text{ cm}^2$。 
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用面積比與底的比例關係。`,
         solution: `D (25%)`
     },
@@ -320,12 +320,12 @@ D.\t$87\\text{ cm}^2$。
         topic: ["Geometry (Triangles)"],
         difficulty: 2,
         content: `圖中，$ABC$ 及 $ADE$ 均為直線。 已知 $AB = BD$ 及 $BC = CD$。 若 $\\angle CDE = 66^\\circ$，則 $\\angle ACD =$
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2019dsep2q17.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 65%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$28^\\circ$。 <br>
 B.\t$33^\\circ$。 <br>
 C.\t$36^\\circ$。 <br>
 D.\t$38^\\circ$。 
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用等腰三角形及外角性質。`,
         solution: `A (58%)`
     },
@@ -339,12 +339,12 @@ D.\t$38^\\circ$。
         topic: ["Geometry (Triangles)"],
         difficulty: 3,
         content: `圖中，$ABC$ 為一等腰三角形且 $AB = AC$。 $D$ 及 $E$ 均為 $AB$ 上的點使得 $AD = DE = 2EB$，而 $F$ 為 $AC$ 上的一點使得 $DF//EC$。 若 $\\angle ADF = 90^\\circ$ 及 $CE = 60\\text{ cm}$，則 $EF =$
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2019dsep2q18.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 40%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$40\\text{ cm}$。 <br>
 B.\t$45\\text{ cm}$。 <br>
 C.\t$48\\text{ cm}$。 <br>
 D.\t$50\\text{ cm}$。 
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用相似三角形及比例。`,
         solution: `D (25%)`
     },
@@ -358,12 +358,12 @@ D.\t$50\\text{ cm}$。
         topic: ["Mensuration"],
         difficulty: 1,
         content: `圖中，$ABCD$ 為一梯形且 $AB//DC$ 及 $\\angle ABD = 90^\\circ$。 若 $AB = 18\\text{ cm}$、$BC = 26\\text{ cm}$ 及 $AD = 30\\text{ cm}$，求梯形 $ABCD$ 的面積。 
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2019dsep2q19.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$336\\text{ cm}^2$<br>
 B.\t$400\\text{ cm}^2$<br>
 C.\t$504\\text{ cm}^2$<br>
 D.\t$552\\text{ cm}^2$
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `用畢氏定理求高後計算面積。`,
         solution: `A (85%)`
     },
@@ -377,12 +377,12 @@ D.\t$552\\text{ cm}^2$
         topic: ["Geometry (Polygons)"],
         difficulty: 2,
         content: `圖中，$ABCD$ 為一菱形。 $ABE$ 及 $BCF$ 均為直線使得 $BE = EF$。 若 $\\angle BEF = 56^\\circ$，則 $\\angle BDC =$
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2019dsep2q20.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 65%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$48^\\circ$。 <br>
 B.\t$56^\\circ$。 <br>
 C.\t$59^\\circ$。 <br>
 D.\t$62^\\circ$。 
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用菱形及等腰三角形性質。`,
         solution: `C (50%)`
     },
@@ -396,12 +396,12 @@ D.\t$62^\\circ$。
         topic: ["Geometry (Circles)"],
         difficulty: 2,
         content: `圖中，$O$ 為半圓 $ABCD$ 的圓心。 若 $AC = BD$ 及 $\\angle COD = 48^\\circ$，則 $\\angle ABD =$
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2019dsep2q21.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 60%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$31^\\circ$。 <br>
 B.\t$33^\\circ$。 <br>
 C.\t$42^\\circ$。 <br>
 D.\t$48^\\circ$。 
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用圓心角及等弦對等角。`,
         solution: `B (53%)`
     },
@@ -415,12 +415,12 @@ D.\t$48^\\circ$。
         topic: ["Trigonometry (2D)"],
         difficulty: 2,
         content: `圖中，$ABCD$ 為一長方形。 $E$ 為 $AD$ 上的一點。 求 $\\dfrac{CE}{AC}$。 
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2019dsep2q22.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$\\dfrac{\\sin \\alpha}{\\sin \\beta}$<br>
 B.\t$\\dfrac{\\cos \\alpha}{\\cos \\beta}$<br>
 C.\t$\\sin \\alpha \\sin \\beta$<br>
 D.\t$\\cos \\alpha \\cos \\beta$
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `在直角三角形中表達比值。`,
         solution: `B (59%)`
     },
@@ -434,7 +434,7 @@ D.\t$\\cos \\alpha \\cos \\beta$
         topic: ["Equations of Straight Lines"],
         difficulty: 2,
         content: `圖中，直線 $L$ 的方程為 $ax+by+15=0$。 下列何者正確？
-<div class="q-mcms">
+<div class="q-mcms"><img src="img/2019dsep2q23.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 I.\t$a > b$
 II.\t$a > -3$
 III.\t$b > -5$
@@ -444,7 +444,7 @@ A.\t只有 I 及 II<br>
 B.\t只有 I 及 III<br>
 C.\t只有 II 及 III<br>
 D.\tI、II 及 III
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `由截距判斷 $a$、$b$ 的範圍。`,
         solution: `A (31%)`
     },
@@ -581,9 +581,32 @@ D.\tI、II 及 III
         domain: ["Data Handling"],
         topic: ["Measures of Central Tendency"],
         difficulty: 1,
-        content: `下表顯示某些學生在一年內所獲優點的數目的分佈。 
-<div style="overflow-x: auto; width: 100%; margin-bottom: 8px;"><table class="q-table" style="width: 100%; min-width: 300px;"><tr><td>所獲優點的數目</td><td>$6$</td><td>$7$</td><td>$8$</td><td>$9$</td><td>$10$</td></tr><tr><td>學生人數</td><td>$32$</td><td>$36$</td><td>$28$</td><td>$18$</td><td>$2$</td></tr></table></div>
-下列何者正確？
+        content: `下表顯示某些學生在一年內所獲優點的數目的分佈。<table class="q-table" style="margin-top: 12px; margin-bottom: 12px; margin-left: auto; margin-right: auto; min-width: 300px; border-collapse: collapse; table-layout: auto;">
+    <colgroup>
+      <col style="width: auto;">
+      <col style="width: 3em;">
+      <col style="width: 3em;">
+      <col style="width: 3em;">
+      <col style="width: 3em;">
+      <col style="width: 3em;">
+    </colgroup>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">所獲優點的數目</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">6</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">7</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">8</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">9</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">10</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">學生人數</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">32</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">36</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">28</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">18</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">2</td>
+    </tr>
+  </table>下列何者正確？
 <div class="q-mcopt">
 A.\t該分佈的眾數為 $36$。 <br>
 B.\t該分佈的中位數為 $8$。 <br>
@@ -744,12 +767,12 @@ D.\t$248$
         topic: ["Mensuration"],
         difficulty: 2,
         content: `圖中，$O$ 為扇形 $OABC$ 的圓心。 已知 $\\Delta OAB$ 為一等邊三角形，$AC$ 與 $OB$ 相交於點 $D$。 若 $OA=12\\text{ cm}$ 及 $\\angle AOC=90^\\circ$，求陰影區域 $BCD$ 的面積準確至最接近的 $\\text{ cm}^2$。 
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2019dsep2q38.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 40%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$11\\text{ cm}^2$<br>
 B.\t$16\\text{ cm}^2$<br>
 C.\t$26\\text{ cm}^2$<br>
 D.\t$38\\text{ cm}^2$
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `計算扇形與三角形面積差。`,
         solution: `A (34%)`
     },
@@ -763,7 +786,7 @@ D.\t$38\\text{ cm}^2$
         topic: ["Geometry (Circles)"],
         difficulty: 2,
         content: `圖中，$TA$ 為圓 $ABCDE$ 在點 $A$ 的切線。 若 $\\angle BAD=64^\\circ$、$\\angle EAT=38^\\circ$ 及 $\\angle DCE=22^\\circ$，則 $\\angle ADB=$
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2019dsep2q39.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$52^\\circ$<br>
 B.\t$56^\\circ$<br>
 C.\t$60^\\circ$<br>
@@ -782,12 +805,12 @@ D.\t$68^\\circ$
         topic: ["Trigonometry (3D)"],
         difficulty: 2,
         content: `圖中所示為四面體 $PQRS$，其底 $QRS$ 在水平地面上。 已知 $Q$ 鉛垂於 $P$ 之下。 若 $\\angle PRQ = 47^\\circ$、$\\angle PSQ = 53^\\circ$ 及 $\\angle RQS = 120^\\circ$，求 $\\angle RPS$ 準確至最接近的度。 
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2019dsep2q40.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$52^\\circ$<br>
 B.\t$60^\\circ$<br>
 C.\t$68^\\circ$<br>
 D.\t$76^\\circ$
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `用餘弦定理求各邊後再求角。`,
         solution: `C (37%)`
     },
