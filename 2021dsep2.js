@@ -551,8 +551,8 @@ D.\t$s+4t+31=0$
       <col style="width: auto;">
     </colgroup>
     <tr>
-      <td style="border-right: 1px solid black; text-align: right; padding: 6px 10px;">幹（十位）</td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 6px 10px;">葉（個位）</td>
+      <td style="border-right: 1px solid black; text-align: right; padding: 6px 10px;"><u>幹（十位）</u></td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 6px 10px;"><u>葉（個位）</u></td>
     </tr>
     <tr>
       <td style="border-right: 1px solid black; text-align: right; padding: 6px 10px;">5</td>
