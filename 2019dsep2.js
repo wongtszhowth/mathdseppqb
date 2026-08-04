@@ -700,14 +700,12 @@ D.\t$\\dfrac{a^2+4a+2}{a^2+1}$。
         domain: ["Algebra"],
         topic: ["Linear Programming"],
         difficulty: 2,
-        content: `考慮以下的不等式組：
-$$
-\\begin{cases}
-x+2y \\le 20 \\\\
-7x-6y \\le 20 \\\\
+        content: `考慮以下的不等式組：<br>
+\t$\\begin{cases}
+x+2y \\le 20 \\\\[1.2ex]
+7x-6y \\le 20 \\\\[1.2ex]
 13x+6y \\ge 20
-\\end{cases}
-$$
+\\end{cases}$<br>
 設 $R$ 為表示以上的不等式組的解之區域。 若 $(x, y)$ 為 $R$ 中的一點，則 $7x+8y+9$ 的最大值為
 <div class="q-mcopt">
 A.\t$15$。 <br>
