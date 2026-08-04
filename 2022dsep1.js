@@ -107,7 +107,60 @@ questions.push(
         domain: ["Data Handling"],
         topic: ["Statistical Charts"],
         difficulty: 2,
-        content: `下面的頻數分佈表及累積頻數分佈表顯示一群學生完成一次 3 km 賽跑所需時間的分佈。<br>| 所需時間 (分鐘) | 10-14 | 15-19 | 20-24 | 25-29 |<br>| :--- | :---: | :---: | :---: | :---: |<br>| 頻數 | $a$ | 9 | $b$ | 3 |<br><br>| 所需時間少於 (分鐘) | 14.5 | 19.5 | 24.5 | 29.5 |<br>| :--- | :---: | :---: | :---: | :---: |<br>| 累積頻數 | 3 | $x$ | $y$ | 20 |<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出 $x$ 的值。<span class="marks">(1分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求該分佈的平均值。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">求從該群中隨機選出的一名學生完成該 3 km 賽跑所需時間少於 19.5 分鐘的概率。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `下面的頻數分佈表及累積頻數分佈表顯示一群學生完成一次 3 km 賽跑所需時間的分佈。
+        <table class="q-table" style="float: left; margin-left: auto; margin-right: auto; min-width: 300px; border-collapse: collapse; table-layout: auto;">
+    <colgroup>
+      <col style="width: auto;">
+      <col style="width: 4em;">
+    </colgroup>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">所需時間（分鐘）</th>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">頻數</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">10 – 14</th>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">$a$</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">15 – 19</th>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">9</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">20 – 24</th>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">$b$</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">25 – 29</th>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">3</td>
+    </tr>    
+  </table>
+  <table class="q-table" style="float: right; margin-left: auto; margin-right: auto; min-width: 300px; border-collapse: collapse; table-layout: auto;">
+    <colgroup>
+      <col style="width: auto;">
+      <col style="width: 6em;">
+    </colgroup>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">所需時間少於（分鐘）</th>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">累積頻數</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">14.5</th>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">3</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">19.5</th>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">$x$</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">24.5</th>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">$y$</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">29.5</th>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">20</td>
+    </tr>    
+  </table>
+        <br>| 所需時間 (分鐘) | 10-14 | 15-19 | 20-24 | 25-29 |<br>| :--- | :---: | :---: | :---: | :---: |<br>| 頻數 | $a$ | 9 | $b$ | 3 |<br><br>| 所需時間少於 (分鐘) | 14.5 | 19.5 | 24.5 | 29.5 |<br>| :--- | :---: | :---: | :---: | :---: |<br>| 累積頻數 | 3 | $x$ | $y$ | 20 |<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出 $x$ 的值。<span class="marks">(1分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求該分佈的平均值。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">求從該群中隨機選出的一名學生完成該 3 km 賽跑所需時間少於 19.5 分鐘的概率。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 由表格對比可知，第一個組別的累積頻數為 3，故 $a = 3$。 $x$ 為前兩組頻數之和 ($a + 9$)。<br>(b) 總人數為 20，利用總數建立方程求出 $b$，再利用各組別的中點值（12, 17, 22, 27）計算加權平均數。<br>(c) 「少於 19.5 分鐘」的學生人數即為對應組別的累積頻數 $x$。概率為 $x / 20$。`,
         solution: `(a) 由累積頻數定義可知， $a = 3$。<br>所以 $x = a + 9 = 3 + 9 = 12$。<br><br>(b) 已知最高累積頻數（總人數）為 20，所以：<br>3 + 9 + b + 3 = 20 $\\Rightarrow 15 + b = 20 \\Rightarrow b = 5$。<br>各組別的組中點分別為： 12、 17、 22、 27。<br>平均值 $= \\dfrac{12(3) + 17(9) + 22(5) + 27(3)}{20} = \\dfrac{36 + 153 + 110 + 81}{20} = \\dfrac{380}{20} = 19 \\text{ 分鐘}$。<br><br>(c) 所需時間少於 19.5 分鐘的學生人數為 $x = 12$ 人。<br>所求的概率 $= \\dfrac{12}{20} = \\dfrac{3}{5}$ （或 $0.6$）。`
     },
