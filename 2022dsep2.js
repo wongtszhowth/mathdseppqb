@@ -268,6 +268,7 @@ D.\tI、II 及 III
         topic: ["Sequences"],
         difficulty: 1,
         content: `圖中，第 $1$ 個圖案包含 $8$ 粒點子。 對任意正整數 $n$，第 $(n+1)$ 個圖案是由第 $n$ 個圖案加上 $(2n+6)$ 粒點子所組成。 求第 $7$ 個圖案的點子數目。
+<img src="img/2022dsep2q14.jpg" class="q-img" alt="題目附圖" style="max-width: 95%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 <div class="q-mcopt">
 A.\t$52$<br>
 B.\t$68$<br>
@@ -325,12 +326,12 @@ D.\t$67$ cm$^2$
         topic: ["Geometry (Polygons)"],
         difficulty: 2,
         content: `圖中，$M$ 及 $N$ 分別為 $PQ$ 及 $QR$ 上的點使得 $PM:MQ = 5:6$ 及 $QN:NR = 3:4$。 若四邊形 $MNRP$ 的面積為 $59$ cm$^2$，則 $\\Delta MNQ$ 的面積為
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2022dsep2q17.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$17$ cm$^2$。<br>
 B.\t$18$ cm$^2$。<br>
 C.\t$19$ cm$^2$。<br>
 D.\t$20$ cm$^2$。
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用面積比與底的比例關係。`,
         solution: `B (37%)`
     },
@@ -344,12 +345,12 @@ D.\t$20$ cm$^2$。
         topic: ["Trigonometry (2D)"],
         difficulty: 2,
         content: `圖中，長方形 $ABCD$ 的周界為 $170$ cm。 已知 $EBF$ 為一直線及 $\\angle AEB = \\angle BFC = 90^\\circ$。 若 $AE = 24$ cm 及 $BC = 34$ cm，則 $EF =$
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2022dsep2q18.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$45$ cm。<br>
 B.\t$51$ cm。<br>
 C.\t$61$ cm。<br>
 D.\t$75$ cm。
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `先求 $AB$ 及 $BE$、$CF$，再用畢氏定理。`,
         solution: `C (70%)`
     },
@@ -363,12 +364,12 @@ D.\t$75$ cm。
         topic: ["Geometry (Triangles)"],
         difficulty: 2,
         content: `圖中，$ABC$ 為一等邊三角形。 設 $D$ 及 $E$ 分別為 $AC$ 及 $BC$ 上的點使得 $AD = CE$。 若 $\\angle CBD = 38^\\circ$，則 $\\angle AEB =$
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2022dsep2q19.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 45%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$73^\\circ$。<br>
 B.\t$75^\\circ$。<br>
 C.\t$78^\\circ$。<br>
 D.\t$82^\\circ$。
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用等邊三角形及等腰三角形性質。`,
         solution: `D (67%)`
     },
@@ -382,7 +383,7 @@ D.\t$82^\\circ$。
         topic: ["Geometry (Polygons)"],
         difficulty: 2,
         content: `圖中所示為一平行四邊形。 下列何者必為正確？
-<div class="q-mcms">
+<div class="q-mcms"><img src="img/2022dsep2q20.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 45%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 I.\t$a+b=180^\\circ$
 II.\t$b+c=360^\\circ$
 III.\t$c+d=540^\\circ$
@@ -392,7 +393,7 @@ A.\t只有 I 及 II<br>
 B.\t只有 I 及 III<br>
 C.\t只有 II 及 III<br>
 D.\tI、II 及 III
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用平行四邊形對角相等及鄰角互補。`,
         solution: `B (69%)`
     },
@@ -406,12 +407,12 @@ D.\tI、II 及 III
         topic: ["Geometry (Circles)"],
         difficulty: 1,
         content: `圖中，$O$ 為圓 $ABC$ 的圓心。 若 $\\angle ABO = 36^\\circ$ 及 $\\angle BOC = 164^\\circ$，則 $\\angle ACO =$
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2022dsep2q21.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 45%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$41^\\circ$。<br>
 B.\t$46^\\circ$。<br>
 C.\t$52^\\circ$。<br>
 D.\t$64^\\circ$。
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用等腰三角形及圓心角性質。`,
         solution: `B (70%)`
     },
@@ -425,12 +426,12 @@ D.\t$64^\\circ$。
         topic: ["Geometry (Circles)"],
         difficulty: 2,
         content: `圖中，$ABC$ 為一直角三角形且 $\\angle ABC = 90^\\circ$。 設 $D$ 及 $E$ 分別為 $AC$ 及 $BC$ 上的點使得 $ABED$ 為一圓內接四邊形。 若 $AB = 660$ cm 、 $AD = 572$ cm 及 $BE = 275$ cm，則 $CD =$
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2022dsep2q22.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 65%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$429$ cm。<br>
 B.\t$715$ cm。<br>
 C.\t$728$ cm。<br>
 D.\t$845$ cm。
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用圓內接四邊形及相似三角形或畢氏定理。`,
         solution: `C (41%)`
     },
@@ -463,7 +464,7 @@ D.\t$\\dfrac{1}{\\cos\\theta}$。
         topic: ["Equations of Straight Lines"],
         difficulty: 2,
         content: `圖中所示為直線 $mx+ny=3$ 的圖像。 下列何者正確？
-<div class="q-mcms">
+<div class="q-mcms"><img src="img/2022dsep2q24.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 55%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 I.\t$m<0$
 II.\t$n>3$
 III.\t$m+n=0$
@@ -473,7 +474,7 @@ A.\t只有 I 及 II<br>
 B.\t只有 I 及 III<br>
 C.\t只有 II 及 III<br>
 D.\tI、II 及 III
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `由截距判斷 $m$、$n$ 的符號及大小。`,
         solution: `A (47%)`
     },
@@ -486,8 +487,7 @@ D.\tI、II 及 III
         domain: ["Geometry"],
         topic: ["Coordinate Geometry"],
         difficulty: 2,
-        content: `點 $Q$ 的直角坐標為 $(4\\sqrt{3}, -4)$。 若 $Q$ 繞原點順時針方向旋轉 $90^\\circ$，則它的像的極坐標為
-<div class="q-mcopt">
+        content: `<div style="color: red;">點 $Q$ 的直角坐標為 $(4\\sqrt{3}, -4)$。 若 $Q$ 繞原點順時針方向旋轉 $90^\\circ$，則它的像的極坐標為</div><div class="q-mcopt" style="color: red;">
 A.\t$(8, 60^\\circ)$。<br>
 B.\t$(8, 120^\\circ)$。<br>
 C.\t$(8, 210^\\circ)$。<br>
@@ -581,9 +581,7 @@ D.\t$60$ kg。
         domain: ["Data Handling"],
         topic: ["Measures of Central Tendency", "Measures of Dispersion"],
         difficulty: 3,
-        content: `考慮以下正整數：
-$2$ $5$ $6$ $6$ $x$ $x$ $x$ $y$
-若以上正整數的平均值及中位數均為 $6$，則下列何者必為正確？
+        content: `考慮以下正整數：<div style="text-align: center;">$2$　　$5$　　$6$　　$6$　　$x$　　$x$　　$x$　　$y$</div>若以上正整數的平均值及中位數均為 $6$，則下列何者必為正確？
 <div class="q-mcms">
 I.\t以上正整數的眾數為 $6$。
 II.\t以上正整數的最小可取分佈域為 $6$。
@@ -669,8 +667,7 @@ D.\t$6$  或  $14$。
         domain: ["Algebra"],
         topic: ["Base Conversion"],
         difficulty: 2,
-        content: `$\\text{12B00CD000000E}_{16} =$
-<div class="q-mcopt">
+        content: `<div style="color: red;">$\\text{12B00CD000000E}_{16} =$</div><div class="q-mcopt" style="color: red;">
 A.\t$299 \\times 4^{22} + 205 \\times 4^{14} + 14$。<br>
 B.\t$300 \\times 4^{22} + 222 \\times 4^{14} + 15$。<br>
 C.\t$299 \\times 4^{22} + 205 \\times 4^{16} + 14$。<br>
@@ -754,12 +751,12 @@ D.\t$\\dfrac{81}{4}$
         topic: ["Geometry (Circles)"],
         difficulty: 2,
         content: `圖中，$ABCD$ 為一圓。 $PA$ 及 $QB$ 分別為該圓在 $A$ 及 $B$ 的切線。 若 $\\angle ADC=79^\\circ$ 、 $\\angle CBQ=39^\\circ$ 及 $\\angle DAP=42^\\circ$，則 $\\angle BCD=$
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2022dsep2q38.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 55%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$76^\\circ$。<br>
 B.\t$79^\\circ$。<br>
 C.\t$81^\\circ$。<br>
 D.\t$82^\\circ$。
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用切線與弦的夾角及圓內接四邊形性質。`,
         solution: `D (48%)`
     },
@@ -792,12 +789,12 @@ D.\t$5$
         topic: ["Trigonometry (3D)"],
         difficulty: 3,
         content: `圖中，$ABCDEFGH$ 為一正方體。 設 $\\alpha$ 為 $\\Delta AFG$ 與 $\\Delta AFH$ 間的交角，而 $\\beta$ 為 $\\Delta AFH$ 與 $\\Delta FGH$ 間的交角。 下列何者正確？
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2022dsep2q40.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 40%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$\\alpha<60^\\circ<\\beta$<br>
 B.\t$\\alpha<\\beta<60^\\circ$<br>
 C.\t$60^\\circ<\\alpha<\\beta$<br>
 D.\t$60^\\circ<\\beta<\\alpha$
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `設邊長為 $1$，用餘弦定理求兩面角。`,
         solution: `A (29%)`
     },
