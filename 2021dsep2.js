@@ -551,24 +551,24 @@ D.\t$s+4t+31=0$
       <col style="width: auto;">
     </colgroup>
     <tr>
-      <td style="border-right: 1px solid black; text-align: right; padding: 6px 10px;"><u>幹（十位）</u></td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 6px 10px;"><u>葉（個位）</u></td>
+      <td style="border-right: 1px solid black; text-align: right; padding: 6px 3px;"><u>幹（十位）</u></td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 6px 3px;"><u>葉（個位）</u></td>
     </tr>
     <tr>
-      <td style="border-right: 1px solid black; text-align: right; padding: 6px 10px;">5</td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 6px 10px;">3\t6\t7</td>
+      <td style="border-right: 1px solid black; text-align: right; padding: 6px 3px;">5</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 6px 3px;">3\t6\t7</td>
     </tr>
     <tr>
-      <td style="border-right: 1px solid black; text-align: right; padding: 6px 10px;">6</td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 6px 10px;">1\t2\t2\t2\t6\t8</td>
+      <td style="border-right: 1px solid black; text-align: right; padding: 6px 3px;">6</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 6px 3px;">1\t2\t2\t2\t6\t8</td>
     </tr>
     <tr>
-      <td style="border-right: 1px solid black; text-align: right; padding: 6px 10px;">7</td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 6px 10px;">2\t3\t4\t5\t7\t7\t9\t9</td>
+      <td style="border-right: 1px solid black; text-align: right; padding: 6px 3px;">7</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 6px 3px;">2\t3\t4\t5\t7\t7\t9\t9</td>
     </tr>
     <tr>
-      <td style="border-right: 1px solid black; text-align: right; padding: 6px 10px;">8</td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 6px 10px;">3\t4\t5\t6\t6\t7\t8</td>
+      <td style="border-right: 1px solid black; text-align: right; padding: 6px 3px;">8</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 6px 3px;">3\t4\t5\t6\t6\t7\t8</td>
     </tr>
   </table>
 若從該群中隨機選出一名工人，求所選出的工人的體重不少於該分佈的下四分位數的概率。 
