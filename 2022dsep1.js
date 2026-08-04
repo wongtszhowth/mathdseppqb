@@ -76,7 +76,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Inequalities"],
         difficulty: 1,
-        content: `考慮複合不等式<br>$-2(3x+2) > x+10$  或  $2x \\le -8$  ...............(*)。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">解 (*)。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出滿足 (*) 的最大整數。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `考慮複合不等式<br><div style="text-align: center;">$-2(3x+2) > x+10$  或  $2x \\le -8$  ...............(*)。</div><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">解 (*)。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出滿足 (*) 的最大整數。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 分別解兩個不等式，然後取聯集。<br>(b) 在解集中找出最大的整數。`,
         solution: `(a) 解第一個不等式： $-2(3x+2) > x+10 \\Rightarrow -6x-4 > x+10 \\Rightarrow -7x > 14 \\Rightarrow x < -2$。\\\\ 解第二個不等式： $2x \\le -8 \\Rightarrow x \\le -4$。\\\\ 因此 (*) 的解為 $x < -2$。 <br><br> (b) 滿足 (*) 的最大整數為 $-3$。`
     },
@@ -102,8 +102,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Plane Geometry"],
         difficulty: 2,
-        content: `圖中，$A$ 是位於四邊形 $BCDE$ 以內的一點使得 $AC // ED$ 及 $AD /// BC$。 已知 $\\angle ABC = \\angle AED$ 及 $AB = AE$。
-        <img src="img/2022dsep1q08.jpg" class="q-img" alt="題目附圖" style="max-width: 70%;">        <div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明 $\\Delta ABC \\cong \\Delta AED$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">若 $\\angle ABC = 39^\\circ$ 及 $\\angle DAE = 87^\\circ$，求 $\\angle ACD$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `圖中，$A$ 是位於四邊形 $BCDE$ 以內的一點使得 $AC // ED$ 及 $AD /// BC$。 已知 $\\angle ABC = \\angle AED$ 及 $AB = AE$。<br><img src="img/2022dsep1q08.jpg" class="q-img" alt="題目附圖" style="max-width: 70%;"><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明 $\\Delta ABC \\cong \\Delta AED$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">若 $\\angle ABC = 39^\\circ$ 及 $\\angle DAE = 87^\\circ$，求 $\\angle ACD$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 利用平行線性質證明對應角相等，再配合 $AB=AE$ 及已知角相等，用 AAS 或 ASA 證明全等。<br>(b) 由全等得對應角相等，再在 $\\triangle ACD$ 中求所需角。`,
         solution: `(a) $\\because AC \\parallel ED$ 及 $AD \\parallel BC$\\\\ $\\therefore \\angle BAC = \\angle DAE$（內錯角）\\\\ $\\angle ABC = \\angle AED$（已知）\\\\ $AB = AE$（已知）\\\\ $\\therefore \\triangle ABC \\cong \\triangle AED$（AAS）。 <br><br> (b) 由全等得 $\\angle BAC = \\angle DAE = 87^\\circ$。\\\\ 在 $\\triangle ABC$ 中，$\\angle ACB = 180^\\circ - 39^\\circ - 87^\\circ = 54^\\circ$。\\\\ 因 $AD \\parallel BC$，故 $\\angle CAD = \\angle ACB = 54^\\circ$（內錯角）。\\\\ 在 $\\triangle ACD$ 中，$\\angle ACD = 180^\\circ - 87^\\circ - 54^\\circ = 39^\\circ$。`
     },
@@ -116,58 +115,57 @@ questions.push(
         domain: ["Data Handling"],
         topic: ["Statistical Charts"],
         difficulty: 1,
-        content: `下面的頻數分佈表及累積頻數分佈表顯示一群學生完成一次 3 km 賽跑所需時間的分佈。
-<div class="q-text-content"><table class="q-table" style="float: left; margin-left: 3em; margin-right: auto; border-collapse: collapse; table-layout: auto;">
+        content: `下面的頻數分佈表及累積頻數分佈表顯示一群學生完成一次 3 km 賽跑所需時間的分佈。        
+<div class="q-text-content"><table class="q-table" style="float: left; margin-top: 8px; margin-bottom: 8px; margin-left: 3em; margin-right: auto; border-collapse: collapse; table-layout: auto;">
     <colgroup>
       <col style="width: 12em;">
       <col style="width: 4em;">
     </colgroup>
     <tr>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">所需時間（分鐘）</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">頻數</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">所需時間（分鐘）</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">頻數</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">10 – 14</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">$a$</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">10 – 14</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$a$</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">15 – 19</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">9</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">15 – 19</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">9</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">20 – 24</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">$b$</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">20 – 24</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$b$</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">25 – 29</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">3</td>
-    </tr></table><table class="q-table" style="float: right; margin-left: auto; margin-right: 3em; border-collapse: collapse; table-layout: auto;">
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">25 – 29</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">3</td>
+    </tr></table><table class="q-table" style="float: right; margin-top: 8px; margin-bottom: 8px; margin-left: auto; margin-right: 3em; border-collapse: collapse; table-layout: auto;">
     <colgroup>
       <col style="width: 12em;">
       <col style="width: 6em;">
     </colgroup>
     <tr>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">所需時間少於（分鐘）</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">累積頻數</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">所需時間少於（分鐘）</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">累積頻數</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">14.5</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">3</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">14.5</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">3</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">19.5</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">$x$</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">19.5</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$x$</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">24.5</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">$y$</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">24.5</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$y$</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">29.5</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">20</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">29.5</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">20</td>
     </tr></table></div>
-    <br>
-  <div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出 $x$ 的值。<span class="marks">(1分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求該分佈的平均值。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">求從該群中隨機選出的一名學生完成該 3 km 賽跑所需時間少於 19.5 分鐘的概率。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
+    <div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出 $x$ 的值。<span class="marks">(1分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求該分佈的平均值。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">求從該群中隨機選出的一名學生完成該 3 km 賽跑所需時間少於 19.5 分鐘的概率。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 由表格對比可知，第一個組別的累積頻數為 3，故 $a = 3$。 $x$ 為前兩組頻數之和 ($a + 9$)。<br>(b) 總人數為 20，利用總數建立方程求出 $b$，再利用各組別的中點值（12, 17, 22, 27）計算加權平均數。<br>(c) 「少於 19.5 分鐘」的學生人數即為對應組別的累積頻數 $x$。概率為 $x / 20$。`,
         solution: `(a) 由累積頻數定義可知， $a = 3$。<br>所以 $x = a + 9 = 3 + 9 = 12$。<br><br>(b) 已知最高累積頻數（總人數）為 20，所以：<br>3 + 9 + b + 3 = 20 $\\Rightarrow 15 + b = 20 \\Rightarrow b = 5$。<br>各組別的組中點分別為： 12、 17、 22、 27。<br>平均值 $= \\dfrac{12(3) + 17(9) + 22(5) + 27(3)}{20} = \\dfrac{36 + 153 + 110 + 81}{20} = \\dfrac{380}{20} = 19 \\text{ 分鐘}$。<br><br>(c) 所需時間少於 19.5 分鐘的學生人數為 $x = 12$ 人。<br>所求的概率 $= \\dfrac{12}{20} = \\dfrac{3}{5}$ （或 $0.6$）。`
     },
@@ -194,9 +192,9 @@ questions.push(
         topic: ["Measures of Central Tendency and Dispersion"],
         difficulty: 1,
         content: `下面的幹葉圖顯示某足球隊球員的年齡的分佈。
-        <table class="q-table" style="border-collapse: collapse; table-layout: auto;">
+        <table class="q-table" style="border-collapse: collapse; table-layout: auto;" align="center">
     <colgroup>
-      <col style="width: 7em;">
+      <col style="width: auto;">
       <col style="width: auto;">
     </colgroup>
     <tr>
@@ -311,9 +309,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Trigonometry"],
         difficulty: 3,
-        content: `圖 2 中，把三角形紙卡 $PQR$ 懸掛使得 $PQ$ 位於水平地面上。 已知 $PQ = 30\\text{ cm}$ 、 $PR=25\\text{ cm}$ 及 $\\angle QPR=95^\\circ$。
-        <img src="img/2022dsep1q18.jpg" class="q-img" alt="題目附圖" style="max-width: 95%;">
-        <div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">$QR$ 的長度，</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">$\\angle PQR$。</div></div><div class="q-text-content"><span class="marks">(4分)</span></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">設 $M$ 為 $QR$ 的中點。 某工匠得知 $PR$ 與水平地面間的交角為 $70^\\circ$。 該工匠宣稱 $PM$ 與水平地面間的交角超過 $40^\\circ$。 該宣稱是否正確？ 試解釋你的答案。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `圖 2 中，把三角形紙卡 $PQR$ 懸掛使得 $PQ$ 位於水平地面上。 已知 $PQ = 30\\text{ cm}$ 、 $PR=25\\text{ cm}$ 及 $\\angle QPR=95^\\circ$。<br><img src="img/2022dsep1q18.jpg" class="q-img" alt="題目附圖" style="max-width: 95%;"><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">$QR$ 的長度，</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">$\\angle PQR$。</div></div><div class="q-text-content"><span class="marks">(4分)</span></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">設 $M$ 為 $QR$ 的中點。 某工匠得知 $PR$ 與水平地面間的交角為 $70^\\circ$。 該工匠宣稱 $PM$ 與水平地面間的交角超過 $40^\\circ$。 該宣稱是否正確？ 試解釋你的答案。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a)(i) 在 $\\triangle PQR$ 中已知兩邊及其夾角，直接利用餘弦定理求 $QR$。<br>(a)(ii) 利用正弦定理 $\\dfrac{\\sin\\angle PQR}{PR} = \\dfrac{\\sin\\angle QPR}{QR}$ 求解該角。<br>(b) 自 $R$ 作垂線 $RH$ 垂直於地面，則 $\\angle RPH = 70^{\\circ}$ 為 $PR$ 與地面的交角。利用直角 $\\triangle RPH$ 算出空間高度 $RH$。自 $M$ 作垂線 $MK \\perp \\text{地面}$，因為 $M$ 為 $QR$ 中點，由中點定理知 $MK = \\dfrac{1}{2}RH$。在 $\\triangle PQR$ 中利用餘弦定理求出中線 $PM$ 的長度，最後在直角 $\\triangle PKM$ 中求出 $\\sin\\angle MPK = \\dfrac{MK}{PM}$，算出交角並與 $40^{\\circ}$ 比較。`,
         solution: `(a)(i) 在 $\\triangle PQR$ 中，由餘弦定理：<br>$QR^2 = PQ^2 + PR^2 - 2(PQ)(PR)\\cos\\angle QPR$<br>$QR^2 = 30^2 + 25^2 - 2(30)(25)\\cos 95^{\\circ}$<br>$QR^2 = 900 + 625 - 1500(-0.087156) = 1525 + 130.734 = 1655.734$<br>$QR \\approx 40.691\\text{ cm}$（或 $40.7\\text{ cm}$）。<br><br>(a)(ii) 由正弦定理：<br>$\\dfrac{\\sin\\angle PQR}{PR} = \\dfrac{\\sin\\angle QPR}{QR}$<br>$\\dfrac{\\sin\\angle PQR}{25} = \\dfrac{\\sin 95^{\\circ}}{40.691} \\approx \\dfrac{0.99619}{40.691} \\approx 0.024482$<br>$\\sin\\angle PQR \\approx 25 \\times 0.024482 \\approx 0.61205$<br>$\\angle PQR \\approx 37.74^{\\circ}$（或 $37.7^{\\circ}$）。<br><br>(b) 設 $R$ 在水平地面上的投影點為 $H$，則 $RH \\perp \\text{地面}$。 $PR$ 與地面的交角為 $\\angle RPH = 70^{\\circ}$。<br>在直角 $\\triangle RPH$ 中， $RH = PR \\sin 70^{\\circ} = 25 \\sin 70^{\\circ} \\approx 23.4923\\text{ cm}$。<br>設 $M$ 在水平地面上的投影點為 $K$，則 $MK \\perp \\text{地面}$ 且 $MK // RH$。<br>因為 $M$ 是 $QR$ 的中點，根據三角形中點定理， $MK = \\dfrac{1}{2} RH \\approx \\dfrac{23.4923}{2} \\approx 11.7462\\text{ cm}$。<br>接著在 $\\triangle PQR$ 中求中線 $PM$ 的長度。利用餘弦定理於 $\\triangle PQM$ 中，其中 $QM = \\dfrac{1}{2} QR \\approx 20.3455\\text{ cm}$：<br>$PM^2 = PQ^2 + QM^2 - 2(PQ)(QM)\\cos\\angle PQR$<br>$PM^2 = 30^2 + (20.3455)^2 - 2(30)(20.3455)\\cos 37.738^{\\circ}$<br>$PM^2 = 900 + 413.94 - 1220.73(0.79084) = 1313.94 - 965.40 = 348.54$<br>$PM \\approx \\sqrt{348.54} \\approx 18.669\\text{ cm}$。<br>設 $PM$ 與水平地面間的交角為 $\\theta$，則在直角 $\\triangle PKM$ 中：<br>$\\sin\\theta = \\dfrac{MK}{PM} \\approx \\dfrac{11.7462}{18.669} \\approx 0.62918$<br>$\\theta = \\sin^{-1}(0.62918) \\approx 38.99^{\\circ}$。<br>因為 $38.99^{\\circ} \\le 40^{\\circ}$（沒有超過 $40^{\\circ}$），所以該工匠的宣稱不正確。`
     },
