@@ -116,7 +116,7 @@ questions.push(
         topic: ["Statistical Charts"],
         difficulty: 1,
         content: `下面的頻數分佈表及累積頻數分佈表顯示一群學生完成一次 3 km 賽跑所需時間的分佈。        
-<div class="q-text-content"><table class="q-table" style="float: left; margin-top: 8px; margin-bottom: 8px; margin-left: 3em; margin-right: auto; border-collapse: collapse; table-layout: auto;">
+<div class="q-text-content"><table class="q-table" style="float: left; margin-top: 12px; margin-bottom: 12px; margin-left: 3em; margin-right: auto; border-collapse: collapse; table-layout: auto;">
     <colgroup>
       <col style="width: 12em;">
       <col style="width: 4em;">
@@ -140,7 +140,7 @@ questions.push(
     <tr>
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">25 – 29</td>
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">3</td>
-    </tr></table><table class="q-table" style="float: right; margin-top: 8px; margin-bottom: 8px; margin-left: auto; margin-right: 3em; border-collapse: collapse; table-layout: auto;">
+    </tr></table><table class="q-table" style="float: right; margin-top: 12px; margin-bottom: 12px; margin-left: auto; margin-right: 3em; border-collapse: collapse; table-layout: auto;">
     <colgroup>
       <col style="width: 12em;">
       <col style="width: 6em;">
