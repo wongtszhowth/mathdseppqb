@@ -121,23 +121,23 @@ questions.push(
       <col style="width: auto;">
     </colgroup>
     <tr>
-      <td style="border-right: 1px solid black; text-align: right; padding: 6px 3px;"><u>幹（十位）</u></td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 6px 3px;"><u>葉（個位）</u></td>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;"><u>幹（十位）</u></td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;"><u>葉（個位）</u></td>
     </tr>
     <tr>
-      <td style="border-right: 1px solid black; text-align: right; padding: 6px 3px;">2</td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 6px 3px;">$a$\t5\t5\t6\t6\t8\t8</td>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">2</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">$a$\t5\t5\t6\t6\t8\t8</td>
     </tr>
     <tr>
-      <td style="border-right: 1px solid black; text-align: right; padding: 6px 3px;">3</td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 6px 3px;">3\t3\t3\t4\t5\t5\t9\t9</td>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">3</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">3\t3\t3\t4\t5\t5\t9\t9</td>
     </tr>
     <tr>
-      <td style="border-right: 1px solid black; text-align: right; padding: 6px 3px;">4</td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 6px 3px;">0\t1\t4\t4\t5\t6\t7\t7\t9</td>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">4</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">0\t1\t4\t4\t5\t6\t7\t7\t9</td>
     </tr>    
   </table>
-        <div class="q-line">該分佈的分佈域為 $27$。</div><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求該分佈的平均值及眾數。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">若從該群中隨機選出一名工人，求所選出的工人在該星期的工作時數超過該分佈的眾數的概率。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
+該分佈的分佈域為 $27$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求該分佈的平均值及眾數。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">若從該群中隨機選出一名工人，求所選出的工人在該星期的工作時數超過該分佈的眾數的概率。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 分佈域為 最大值 $-$ 最小值，即 $(50+b) - (20+a) = 27$，結合幹葉圖排序可確定 $a$ 和 $b$ 唯一的整數解，進而求出平均值和眾數；(b) 數出時數大於眾數的人數，除以總人數。`,
         solution: `(a) 由圖知最小可能葉為 $a$，最大為 $b$。$(50+b) - (20+a) = 27 \\Rightarrow b - a = -3$。因 $a \\le 5$，經檢驗唯有 $a=3, b=0$ 符合排序。帶入數據算得：總人數 $= 16$，平均值 $= 36.5$，眾數 $= 28$ 與 $33$ 雙眾數（或依題目特定單眾數修正，這裡若 $a=3$ 則 $28$ 有兩個，$33$ 有兩個）。<br>(b) 統計超過眾數的數據個數後計算概率。`
     },
