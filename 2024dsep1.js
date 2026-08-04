@@ -170,7 +170,30 @@ questions.push(
         domain: ["Data Handling"],
         topic: ["Statistical Graphs", "Measures of Dispersion"],
         difficulty: 1,
-        content: `下面的幹葉圖顯示一群研究員在某月內用於閱讀期刊的時數的分佈：<pre style="white-space: pre-wrap; word-break: break-all;">幹(十位) | 葉(個位)\n2        | 0 1\n3        | 0 2 3 3 4 4 7 9\n4        | a a 8 8 9 9 b</pre>該分佈的平均值為 $30$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $a$ 及 $b$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出該分佈的最小可取分佈域。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">求該分佈的最大可取四分位數間距。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `下面的幹葉圖顯示一群研究員在某月內用於閱讀期刊的時數的分佈：
+        <table class="q-table" style="border-collapse: collapse; table-layout: auto;">
+    <colgroup>
+      <col style="width: 7em;">
+      <col style="width: auto;">
+    </colgroup>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 6px 3px;"><u>幹（十位）</u></td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 6px 3px;"><u>葉（個位）</u></td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 6px 3px;">2</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 6px 3px;">0\t0\t1\t$a$\t$a$\t$a$\t8\t8\t9\t9</td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 6px 3px;">3</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 6px 3px;">0\t0\t2\t3\t4\t4\t7\t9</td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 6px 3px;">4</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 6px 3px;">0\t$b$</td>
+    </tr>
+</table>
+        該分佈的平均值為 $30$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $a$ 及 $b$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出該分佈的最小可取分佈域。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">求該分佈的最大可取四分位數間距。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 根據葉的常規排序可知 $0 \\le a \\le 8$ 且 $9 \\le b \\le 9 \\Rightarrow b=9$（或利用平均值方程聯立求解）；(b) 分佈域 $=$ 最大值 $-$ 最小值；(c) 四分位數間距 $= Q_3 - Q_1$，調整未知數的位置使差值達到最大。`,
         solution: `(a) 經統計總人數與利用平均值 $= 30$ 的方程計算，配合幹葉圖中葉必須由小到大排列的特性，解得 $a = 2, b = 1$。<br>(b) 最小可取分佈域即當最大值儘量小、最小值儘量大時的差值。<br>(c) 通過對可能排序的分析，找出讓 $Q_3$ 與 $Q_1$ 相差最大時的特殊界限。`
     },
