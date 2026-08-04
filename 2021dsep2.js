@@ -623,8 +623,7 @@ D.\t$x^3y^2z^2$。
         domain: ["Algebra"],
         topic: ["Base Conversion"],
         difficulty: 2,
-        content: `$14 \\times 16^{15} + 17 \\times 16^{14} + 16^2 + 17 =$
-<div class="q-mcopt">
+        content: `<div style="color: red;">$14 \\times 16^{15} + 17 \\times 16^{14} + 16^2 + 17 =$</div><div class="q-mcopt" style="color: red;">
 A.\t$\\mathrm{E}10100000000021_{16}$。 <br>
 B.\t$\\mathrm{F}10000000000111_{16}$。 <br>
 C.\t$\\mathrm{E}110000000000021_{16}$。 <br>
