@@ -704,14 +704,12 @@ D.\t$25$。
         domain: ["Algebra"],
         topic: ["Linear Programming"],
         difficulty: 2,
-        content: `考慮以下的不等式組：
-$$
-\\begin{cases}
-2x + y \\ge 8 \\\\
-2x + 3y \\ge 16 \\\\
+        content: `考慮以下的不等式組：<br>
+\t$\\begin{cases}
+2x + y \\ge 8 \\\\[1.2ex]
+2x + 3y \\ge 16 \\\\[1.2ex]
 4x + 3y \\le 22
-\\end{cases}
-$$
+\\end{cases}$<br>
 設 $R$ 為表示以上的不等式組的解之區域。 若 $(x, y)$ 為 $R$ 中的一點，則 $7x + 6y$ 的最小值為
 <div class="q-mcopt">
 A.\t$32$。<br>
