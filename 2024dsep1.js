@@ -118,12 +118,12 @@ questions.push(
         <table class="q-table" style="margin-left: auto; margin-right: auto; min-width: 300px; border-collapse: collapse; table-layout: auto;">
     <colgroup>
       <col style="width: auto;">
-      <col style="width: 2em;">
-      <col style="width: 2em;">
-      <col style="width: 2em;">
-      <col style="width: 2em;">
-      <col style="width: 2em;">
-      <col style="width: 2em;">
+      <col style="width: 2.5em;">
+      <col style="width: 2.5em;">
+      <col style="width: 2.5em;">
+      <col style="width: 2.5em;">
+      <col style="width: 2.5em;">
+      <col style="width: 2.5em;">
     </colgroup>
     <tr>
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">鑰匙的數目</td>
