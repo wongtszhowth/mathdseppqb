@@ -137,9 +137,7 @@ questions.push(
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">16</td>
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">4</td>
     </tr>
-  </table>
-        
-        <br><table class="q-table"><tr><th>所修科目的數目</th><th>4</th><th>5</th><th>6</th><th>7</th></tr><tr><th>學生人數</th><td>8</td><td>12</td><td>16</td><td>4</td></tr></table><br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出上述分佈的平均值、中位數及標準差。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">現有一新生加入該班。 該新生所修科目的數目為 5。 求加入這學生而引致該分佈的中位數的改變。<span class="marks">(2分)</span></div></div><div class="q-clearfix"></div>`,
+  </table><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出上述分佈的平均值、中位數及標準差。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">現有一新生加入該班。 該新生所修科目的數目為 5。 求加入這學生而引致該分佈的中位數的改變。<span class="marks">(2分)</span></div></div><div class="q-clearfix"></div>`,
         hint: `(a) 平均值用加權平均；中位數取第 20 及 21 項的平均；標準差用公式計算。<br>(b) 加入後總人數變為 41，重新找出中位數。`,
         solution: `(a) 總人數 $= 8+12+16+4 = 40$。\\\\ 平均值 $= \\dfrac{4\\times8 + 5\\times12 + 6\\times16 + 7\\times4}{40} = \\dfrac{32+60+96+28}{40} = 5.4$。\\\\ 中位數為第 20 及 21 項的平均，兩者皆為 6，故中位數 $= 6$。\\\\ 標準差 $= \\sqrt{\\dfrac{8(4-5.4)^2 + 12(5-5.4)^2 + 16(6-5.4)^2 + 4(7-5.4)^2}{40}} = \\sqrt{0.84} \\approx 0.917$。 <br><br> (b) 加入後總人數 $= 41$，中位數為第 21 項，仍為 6。\\\\ 中位數沒有改變（改變量為 0）。`
     },
@@ -177,15 +175,15 @@ questions.push(
     </tr>
     <tr>
       <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">1</td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px; white-space: nowrap;">1\t2\t3\t3</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px; white-space: nowrap;">1　2　3　3</td>
     </tr>
     <tr>
       <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">2</td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px; white-space: nowrap;">3\t3\t4\t5\t6\t9\t9</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px; white-space: nowrap;">3　3　4　5　6　9　9</td>
     </tr>
     <tr>
       <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">3</td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px; white-space: nowrap;">1\t6\t7\t8\t8\t8</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px; white-space: nowrap;">1　6　7　8　8　8</td>
     </tr>
     <tr>
       <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">4</td>
@@ -193,7 +191,7 @@ questions.push(
     </tr>
     <tr>
       <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">5</td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px; white-space: nowrap;">0\t$w$</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px; white-space: nowrap;">0　$w$</td>
     </tr>
   </table>
 已知上述分佈的分佈域為其四分位數間距的三倍。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $w$。<span class="marks">(4分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">若從該袋子中隨機抽取一信件，求所抽取的信件的重量不少於該分佈的眾數的概率。<span class="marks">(2分)</span></div></div><div class="q-clearfix"></div>`,
