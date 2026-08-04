@@ -268,7 +268,7 @@ D.\tI、II 及 III
         topic: ["Sequences"],
         difficulty: 1,
         content: `圖中，第 $1$ 個圖案包含 $8$ 粒點子。 對任意正整數 $n$，第 $(n+1)$ 個圖案是由第 $n$ 個圖案加上 $(2n+6)$ 粒點子所組成。 求第 $7$ 個圖案的點子數目。
-<img src="img/2022dsep2q14.jpg" class="q-img" alt="題目附圖" style="max-width: 95%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
+<img src="img/2022dsep2q14.jpg" class="q-img" alt="題目附圖" style="max-width: 95%;">
 <div class="q-mcopt">
 A.\t$52$<br>
 B.\t$68$<br>
