@@ -720,7 +720,7 @@ D.\tI、II 及 III
         topic: ["Linear Programming"],
         difficulty: 2,
         content: `考慮以下的不等式組：<br>
-$\\begin{cases}
+\t$\\begin{cases}
 x - 2y \\le 1 \\\\[1.2ex]
 x + 4y \\le 13 \\\\[1.2ex]
 2x - y \\ge -1
