@@ -119,8 +119,7 @@ questions.push(
         difficulty: 1,
         content: `下面的棒形圖顯示一群學生在某年內的閱書數目的分佈。
         <img src="img/2021dsep1q09zh.jpg" class="q-img" alt="題目附圖" style="max-width: 75%;">
-        若從該群中隨機選出一名學生，則所選出的學生在該年內閱書少於 26 本的概率為 $\\dfrac{7}{10}$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $k$。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出該分佈的分佈域、四分位數間距及標準差。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>
-        <br>| 閱書數目 | 23 | 24 | 25 | 26 | 27 | 28 |<br>| :--- | :---: | :---: | :---: | :---: | :---: | :---: |<br>| 學生人數 | 12 | $k$ | 16 | 9 | 11 | 4 |`,
+        若從該群中隨機選出一名學生，則所選出的學生在該年內閱書少於 26 本的概率為 $\\dfrac{7}{10}$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $k$。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出該分佈的分佈域、四分位數間距及標準差。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 「少於 26 本」包含 23、24、25 本。利用其總人數除以全體總人數等於 $\\dfrac{7}{10}$ 建立方程求解 $k$。<br>(b) 求出 $k$ 後可得總人數與完整數據分佈，進而找出最大與最小值之差（分佈域）、第 3 四分位數與第 1 四分位數之差（IQR）及標準差（可利用計算機功能）。`,
         solution: `(a) 閱書少於 26 本的學生人數 $= 12 + k + 16 = 28 + k$<br>全體學生總人數 $= 12 + k + 16 + 9 + 11 + 4 = 52 + k$<br>根據題意：<br>$\\dfrac{28 + k}{52 + k} = \\dfrac{7}{10}$<br>$10(28 + k) = 7(52 + k)$<br>$280 + 10k = 364 + 7k$<br>$3k = 84 \\Rightarrow k = 28$<br><br>(b) 當 $k=28$ 時，學生總人數為 $52 + 28 = 80$ 人。<br>分佈域 $= 28 - 23 = 5$<br>第 20 項與第 21 項對應 24 本 $\\Rightarrow Q_1 = 24$<br>第 60 項與第 61 項對應 26 本與 27 本的均值 $\\Rightarrow Q_3 = \\dfrac{26+27}{2} = 26.5$<br>四分位數間距 (IQR) $= 26.5 - 24 = 2.5$<br>標準差 $\\approx 1.43$ （或 $\\sqrt{2.0475}$）。`
     },
