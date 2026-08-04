@@ -545,7 +545,32 @@ D.\t$s+4t+31=0$
         topic: ["Probability"],
         difficulty: 2,
         content: `下面的幹葉圖顯示一群工人的體重（以 kg 為單位）的分佈。 
-<div style="overflow-x: auto; width: 100%; margin-bottom: 8px;"><table class="q-table" style="width: 100%; min-width: 300px;"><tr><td>幹（十位）</td><td>葉（個位）</td></tr><tr><td>$5$</td><td>$3$ $6$ $7$</td></tr><tr><td>$6$</td><td>$1$ $2$ $2$ $2$ $6$ $8$</td></tr><tr><td>$7$</td><td>$2$ $3$ $4$ $5$ $7$ $7$ $9$ $9$</td></tr><tr><td>$8$</td><td>$3$ $4$ $5$ $6$ $7$ $8$</td></tr></table></div>
+<table class="q-table" style="margin-left: 6em; margin-right: auto; border-collapse: collapse; table-layout: auto;">
+    <colgroup>
+      <col style="width: 7em;">
+      <col style="width: auto;">
+    </colgroup>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 6px 10px;">幹（十位）</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 6px 10px;">葉（個位）</td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 6px 10px;">5</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 6px 10px;">3\t6\t7</td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 6px 10px;">6</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 6px 10px;">1\t2\t2\t2\t6\t8</td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 6px 10px;">7</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 6px 10px;">2\t3\t4\t5\t7\t7\t9\t9</td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 6px 10px;">8</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 6px 10px;">3\t4\t5\t6\t6\t7\t8</td>
+    </tr>
+  </table>
 若從該群中隨機選出一名工人，求所選出的工人的體重不少於該分佈的下四分位數的概率。 
 <div class="q-mcopt">
 A.\t$\\dfrac{1}{4}$<br>
