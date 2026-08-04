@@ -129,7 +129,7 @@ questions.push(
       <col style="width: 3em;">
     </colgroup>
     <tr>
-      <th style="border: 1px solid #000; text-align: center; padding: 3px 10px;">原子筆的數目</th>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">原子筆的數目</td>
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">5</td>
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">6</td>
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">7</td>
@@ -137,7 +137,7 @@ questions.push(
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">9</td>
     </tr>
     <tr>
-      <th style="border: 1px solid #000; text-align: center; padding: 3px 10px;">學生人數</th>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">學生人數</td>
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">9</td>
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">13</td>
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">2</td>
