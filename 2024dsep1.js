@@ -114,8 +114,7 @@ questions.push(
         domain: ["Data Handling"],
         topic: ["Probability", "Measures of Central Tendency"],
         difficulty: 1,
-        content: `下表顯示某群主婦擁有鑰匙的數目的分佈。
-        <table class="q-table" style="margin-left: auto; margin-right: auto; min-width: 300px; border-collapse: collapse; table-layout: auto;">
+        content: `下表顯示某群主婦擁有鑰匙的數目的分佈。<table class="q-table" style="margin-top: 12px; margin-bottom: 12px; margin-left: auto; margin-right: auto; min-width: 300px; border-collapse: collapse; table-layout: auto;">
     <colgroup>
       <col style="width: auto;">
       <col style="width: 2.5em;">
@@ -143,8 +142,7 @@ questions.push(
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">4</td>
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$k$</td>
     </tr>
-  </table>
-若從該群中隨機選出一名主婦，則她擁有多於 $6$ 條鑰匙的概率為 $\\dfrac{5}{18}$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $k$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出該分佈的平均值、眾數及中位數。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
+  </table>若從該群中隨機選出一名主婦，則她擁有多於 $6$ 條鑰匙的概率為 $\\dfrac{5}{18}$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $k$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出該分佈的平均值、眾數及中位數。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 多於 6 條代表 7 條或 8 條，概率為 $\\dfrac{4+k}{\\text{總人數}}$，藉此建立方程求 $k$；(b) 將 $k$ 代回後依常規統計公式計算。`,
         solution: `(a) 總人數 $= 10+9+4+3+4+k = 30+k$。依題意 $\\dfrac{4+k}{30+k} = \\dfrac{5}{18} \\Rightarrow 72+18k = 150+5k \\Rightarrow 13k = 78 \\Rightarrow k = 6$。<br>(b) 總人數 $= 36$。平均值 $= \\dfrac{3(10)+4(9)+5(4)+6(3)+7(4)+8(6)}{36} = \\dfrac{180}{36} = 5$；眾數 $= 3$（頻數最高為10）；中位數：第18和19項數據均為 $4$，故中位數 $= 4$。`
     },
