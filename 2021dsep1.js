@@ -6,6 +6,7 @@ questions.push(
         id: "2021-DSE-MATH-CP1-Q01",
         year: 2021,
         type: "P1",
+        section: "A1",
         level: ["Junior"],
         domain: ["Algebra"],
         topic: ["Laws of Indices"],
@@ -18,6 +19,7 @@ questions.push(
         id: "2021-DSE-MATH-CP1-Q02",
         year: 2021,
         type: "P1",
+        section: "A1",
         level: ["Junior"],
         domain: ["Algebra"],
         topic: ["Formulae"],
@@ -30,10 +32,11 @@ questions.push(
         id: "2021-DSE-MATH-CP1-Q03",
         year: 2021,
         type: "P1",
+        section: "A1",
         level: ["Junior"],
         domain: ["Algebra"],
         topic: ["Factorization"],
-        difficulty: 2,
+        difficulty: 1,
         content: `因式分解<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">$6x^{2}+xy-2y^{2}$ ，<span class="marks">(1分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$8x-4y-6x^{2}-xy+2y^{2}$ 。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 使用十字相乘法將二次三項式因式分解。<br>(b) 先將前兩項提取公因式，後三項提取負號並代入 (a) 的結果，再提取整體公因式。`,
         solution: `(a) $6x^2 + xy - 2y^2 = (2x - y)(3x + 2y)$<br><br>(b) $8x - 4y - 6x^2 - xy + 2y^2$<br>$= 4(2x - y) - (6x^2 + xy - 2y^2)$<br>$= 4(2x - y) - (2x - y)(3x + 2y)$<br>$= (2x - y)[4 - (3x + 2y)]$<br>$= (2x - y)(4 - 3x - 2y)$`
@@ -42,11 +45,12 @@ questions.push(
         id: "2021-DSE-MATH-CP1-Q04",
         year: 2021,
         type: "P1",
+        section: "A1",
         level: ["Junior"],
         domain: ["Algebra"],
         topic: ["Inequalities"],
-        difficulty: 2,
-        content: `<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求同時滿足 $\\dfrac{7(x-2)}{5}+11>3(x-1)$ 及 $x+42 \\ge 0$ 的 $x$ 值的範圍。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">有多少個正整數同時滿足 (a) 的不等式？<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div>`,
+        difficulty: 1,
+        content: `<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求同時滿足  $\\dfrac{7(x-2)}{5}+11>3(x-1)$  及  $x+42 \\ge 0$  的 $x$ 值的範圍。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">有多少個正整數同時滿足 (a) 的不等式？<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 先解第一個不等式（兩邊同乘以 5 展開並去括號），再解第二個不等式，最後求兩者解集的交集。<br>(b) 在得到的 $x$ 範圍內，數出屬於正整數（1, 2, 3...）的個數。`,
         solution: `(a) 解第一個不等式：<br>$\\dfrac{7(x-2)}{5} + 11 > 3(x-1)$<br>$7(x-2) + 55 > 15(x-1)$<br>$7x - 14 + 55 > 15x - 15$<br>$7x + 41 > 15x - 15$<br>$-8x > -56 \\Rightarrow x < 7$<br>解第二個不等式：<br>$x + 42 \\ge 0 \\Rightarrow x \\ge -42$<br>同時滿足兩者的 $x$ 範圍為： $-42 \\le x < 7$。<br><br>(b) 滿足 $-42 \\le x < 7$ 的正整數有 $1, 2, 3, 4, 5, 6$，共 6 個。`
     },
@@ -54,10 +58,11 @@ questions.push(
         id: "2021-DSE-MATH-CP1-Q05",
         year: 2021,
         type: "P1",
+        section: "A1",
         level: ["Junior"],
         domain: ["Algebra"],
         topic: ["Linear Equations"],
-        difficulty: 2,
+        difficulty: 1,
         content: `某男生擁有貼紙的數目為某女生擁有的 3 倍。若該男生將他其中的 20 張貼紙送給該女生，則該女生擁有貼紙的數目為該男生擁有的 2 倍。求該男生和該女生擁有貼紙的總數。<span class="marks">(4分)</span>`,
         hint: `設女生原本擁有 $x$ 張貼紙，則男生原本擁有 $3x$ 張。根據男生送出 20 張、女生收到 20 張後的新數量關係列出方程。`,
         solution: `設該女生原本擁有 $x$ 張貼紙，則該男生原本擁有 $3x$ 張貼紙。<br>根據題意：<br>$x + 20 = 2(3x - 20)$<br>$x + 20 = 6x - 40$<br>$5x = 60 \\Rightarrow x = 12$<br>女生原本有 12 張，男生原本有 $3(12) = 36$ 張。<br>擁有貼紙的總數 $= 36 + 12 = 48$ 張。`
@@ -66,10 +71,11 @@ questions.push(
         id: "2021-DSE-MATH-CP1-Q06",
         year: 2021,
         type: "P1",
+        section: "A1",
         level: ["Junior"],
         domain: ["Arithmetic"],
         topic: ["Percentages"],
-        difficulty: 2,
+        difficulty: 1,
         content: `某襯衣的標價較其成本高 \\$80。該襯衣以其標價九折售出。售出該襯衣後，盈利百分率為 30%。求該襯衣的標價。<span class="marks">(4分)</span>`,
         hint: `設成本為 \$c，則標價為 $c + 80$，售價為 $0.9(c + 80)$。利用「售價 = 成本 $\\times (1 + \\text{盈利百分率})$」列式求解成本，再算標價。`,
         solution: `設該襯衣的成本為 \\$c，則標價為 \\$(c + 80)。<br>售價 $= 0.9(c + 80)$<br>根據題意：<br>$0.9(c + 80) = c(1 + 30\\%)$<br>$0.9c + 72 = 1.3c$<br>$0.4c = 72 \\Rightarrow c = 180$<br>標價 $= 180 + 80 = \\$260。`
@@ -78,6 +84,7 @@ questions.push(
         id: "2021-DSE-MATH-CP1-Q07",
         year: 2021,
         type: "P1",
+        section: "A1",
         level: ["Junior"],
         domain: ["Geometry"],
         topic: ["Coordinate Geometry"],
@@ -90,6 +97,7 @@ questions.push(
         id: "2021-DSE-MATH-CP1-Q08",
         year: 2021,
         type: "P1",
+        section: "A1",
         level: ["Junior"],
         domain: ["Geometry"],
         topic: ["Geometric Proofs"],
@@ -104,10 +112,11 @@ questions.push(
         id: "2021-DSE-MATH-CP1-Q09",
         year: 2021,
         type: "P1",
+        section: "A1",
         level: ["Junior"],
         domain: ["Data Handling"],
         topic: ["Statistical Charts"],
-        difficulty: 3,
+        difficulty: 1,
         content: `下面的棒形圖顯示一群學生在某年內的閱書數目的分佈。
         <img src="img/2021dsep1q09zh.jpg" class="q-img" alt="題目附圖" style="max-width: 75%;">
         若從該群中隨機選出一名學生，則所選出的學生在該年內閱書少於 26 本的概率為 $\\dfrac{7}{10}$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $k$。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出該分佈的分佈域、四分位數間距及標準差。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>
@@ -119,10 +128,11 @@ questions.push(
         id: "2021-DSE-MATH-CP1-Q10",
         year: 2021,
         type: "P1",
+        section: "A2",
         level: ["Senior"],
         domain: ["Algebra"],
         topic: ["Variations"],
-        difficulty: 3,
+        difficulty: 1,
         content: `已知 $\\mathrm{f}(x)$ 的一部分為常數，另一部分則隨 $(x+4)^{2}$ 正變。 假定 $\\mathrm{f}(-3)=0$ 及 $\\mathrm{f}(2)=105$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $\\mathrm{f}(0)$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">將 $y=\\mathrm{f}(x)+3$ 的圖像記為 $G$。</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">寫出 $G$ 的 $y$ 截距。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">求 $G$ 的 $x$ 截距。<br><span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 設 $f(x) = k_1 + k_2(x+4)^2$，代入已知點求解 $k_1$ 和 $k_2$，進而計算 $f(0)$。<br>(b)(i) $y$ 截距即令 $x=0$ 求出 $y$ 的值。<br>(b)(ii) $x$ 截距即令 $y=0$ 求解二次方程所得的 $x$ 的值。`,
         solution: `(a) 設 $f(x) = k_1 + k_2(x+4)^2$，其中 $k_1, k_2$ 為常數。<br>代入 $f(-3) = 0 \\Rightarrow k_1 + k_2(-3+4)^2 = 0 \\Rightarrow k_1 + k_2 = 0$<br>代入 $f(2) = 105 \\Rightarrow k_1 + k_2(2+4)^2 = 105 \\Rightarrow k_1 + 36k_2 = 105$<br>兩式相減： $35k_2 = 105 \\Rightarrow k_2 = 3$<br>代入得 $k_1 = -3$<br>所以 $f(x) = -3 + 3(x+4)^2$<br>$f(0) = -3 + 3(0+4)^2 = -3 + 48 = 45$<br><br>(b)(i) 圖像 $G$ 的方程為 $y = f(x) + 3 = -3 + 3(x+4)^2 + 3 = 3(x+4)^2$<br>令 $x=0$， $y = 3(0+4)^2 = 48$<br>所以 $G$ 的 $y$ 截距為 48。<br><br>(b)(ii) 令 $y=0$， $3(x+4)^2 = 0 \\Rightarrow x+4 = 0 \\Rightarrow x = -4$<br>所以 $G$ 的 $x$ 截距為 $-4$。`
@@ -131,10 +141,11 @@ questions.push(
         id: "2021-DSE-MATH-CP1-Q11",
         year: 2021,
         type: "P1",
+        section: "A2",
         level: ["Senior"],
         domain: ["Data Handling"],
         topic: ["Measures of Central Tendency"],
-        difficulty: 3,
+        difficulty: 2,
         content: `下表顯示在一遊戲中某群小童所獲代幣的數目的分佈。
         <table class="q-table" style="margin-left: auto; margin-right: auto; border-collapse: collapse; table-layout: auto;">
     <colgroup>
@@ -148,24 +159,24 @@ questions.push(
       <col style="width: 2em;">
     </colgroup>
     <tr>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">所獲代幣的數目</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">1</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">2</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">3</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">4</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">5</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">6</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">7</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 2px 10px;">所獲代幣的數目</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 2px 10px;">1</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 2px 10px;">2</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 2px 10px;">3</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 2px 10px;">4</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 2px 10px;">5</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 2px 10px;">6</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 2px 10px;">7</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">小童人數</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">15</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">9</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">2</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">5</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">4</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">2</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">5</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 2px 10px;">小童人數</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 2px 10px;">15</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 2px 10px;">9</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 2px 10px;">2</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 2px 10px;">5</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 2px 10px;">4</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 2px 10px;">2</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 2px 10px;">5</td>
     </tr>
   </table>
 <div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求該分佈的平均值。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">該分佈的中位數與眾數是否相等？ 試解釋你的答案。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">若再多 $n$ 名小童參與該遊戲且其中每人均獲 5 個代幣，寫出</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">$n$ 的值使得該分佈的平均值增加 1；</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">$n$ 的最小值使得該分佈的中位數增加 2；</div></div><div class="q-line q-level-2"><span class="q-label">(iii)</span><div class="q-text-content">$n$ 的最大值使得該分佈的眾數維持不變。<br><span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
@@ -176,10 +187,11 @@ questions.push(
         id: "2021-DSE-MATH-CP1-Q12",
         year: 2021,
         type: "P1",
+        section: "A2",
         level: ["Senior"],
         domain: ["Algebra"],
         topic: ["Polynomials"],
-        difficulty: 4,
+        difficulty: 1,
         content: `多項式 $\\mathrm{p}(x)$ 可被 $x-5$ 整除。 當 $\\mathrm{p}(x)$ 除以 $x^2+x+1$ 時，商式及餘式分別為 $2x^2-37$ 及 $cx+c-1$，其中 $c$ 為一常數。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $c$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">證明 $x+3$ 為 $\\mathrm{p}(x)$ 的因式。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">某人宣稱方程 $\\mathrm{p}(x)=0$ 所有的根均為實數。 該宣稱是否正確？ 試解釋你的答案。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 根據除法恆等式寫出 $p(x) = (x^2+x+1)(2x^2-37) + cx + c - 1$。利用因式定理 $p(5) = 0$ 代入方程求 $c$。<br>(b) 計算 $p(-3)$，若結果為 0，則根據因式定理得證。<br>(c) 將 $p(x)$ 完全因式分解，找出所有因式，檢查其二次因式部分的判別式 $\\Delta$ 是否小於 0。`,
         solution: `(a) 根據除法原理： $p(x) = (x^2+x+1)(2x^2-37) + cx + c - 1$<br>已知 $p(x)$ 可被 $x-5$ 整除，由因式定理知 $p(5) = 0$：<br>$p(5) = (5^2+5+1)(2(5)^2-37) + c(5) + c - 1 = 0$<br>$(25+5+1)(50-37) + 5c + c - 1 = 0$<br>31(13) + 6c - 1 = 0 \\Rightarrow 403 + 6c - 1 = 0$<br>402 + 6c = 0 \\Rightarrow 6c = -402 \\Rightarrow c = -67$<br><br>(b) 將 $c = -67$ 代入 $p(x)$：<br>$p(x) = (x^2+x+1)(2x^2-37) - 67x - 68$<br>計算 $p(-3)$：<br>$p(-3) = ((-3)^2+(-3)+1)(2(-3)^2-37) - 67(-3) - 68$<br>$= (9-3+1)(18-37) + 201 - 68 = 7(-19) + 133 = -133 + 133 = 0$<br>依因式定理， $x+3$ 為 $p(x)$ 的因式。<br><br>(c) 由於 $x-5$ 和 $x+3$ 是 $p(x)$ 的因式，可以對 $p(x)$ 進行因式分解：<br>$p(x) = 2x^4 + 2x^3 - 35x^2 - 104x - 105$<br>$= (x-5)(x+3)(2x^2+6x+7)$<br>令 $p(x) = 0$，則有實根 $x = 5$ 和 $x = -3$。<br>對於剩餘的二次方程 $2x^2+6x+7 = 0$：<br>其判別式 $\\Delta = 6^2 - 4(2)(7) = 36 - 56 = -20 < 0$（負數）<br>這代表該二次部分沒有實根。因此，方程 $p(x)=0$ 包含非實根（虛根），該宣稱不正確。`
@@ -188,10 +200,11 @@ questions.push(
         id: "2021-DSE-MATH-CP1-Q13",
         year: 2021,
         type: "P1",
+        section: "A2",
         level: ["Senior"],
         domain: ["Geometry"],
         topic: ["Equations of Circles"],
-        difficulty: 4,
+        difficulty: 2,
         content: `圓 $C$ 的方程為 $x^2+y^2-12x-16y-69=0$。 設 $G$ 為 $C$ 的圓心。 將原點記為 $O$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $OG$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$O$ 是否位於 $C$ 以內？ 試解釋你的答案。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">設 $P$ 為直角坐標平面上的一動點使得 $OP = GP$。 將 $P$ 的軌跡記為 $\\mathit{\\Gamma}$。 假定 $\\mathit{\\Gamma}$ 與 $C$ 相交於點 $M$ 及點 $N$。 求四邊形 $OMGN$ 的面積。<span class="marks">(4分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 利用公式將圓的方程化為標準式，求出圓心 $G(h,k)$ 與半徑 $r$。再利用兩點距離公式求 $OG$。<br>(b) 比較 $OG$ 的長度與圓 $C$ 的半徑 $r$ 的大小。若 $OG < r$，則在圓內。<br>(c) 軌跡 $L$ 是線段 $OG$ 的垂直平分線。根據對稱性，四邊形 $OMGN$ 可拆分為兩個全等的直角三角形（由半徑、弦心距、半弦組成），或利用對角線互相垂直的四邊形面積公式 $\\dfrac{1}{2} \\times d_1 \\times d_2$ 求解。`,
         solution: `(a) 圓 $C$ 的圓心 $G$ 的坐標為 $\\left(-\\dfrac{-12}{2}, -\\dfrac{-16}{2}\\right) = (6, 8)$。<br>半徑 $r = \\sqrt{6^2 + 8^2 - (-69)} = \\sqrt{36 + 64 + 69} = \\sqrt{169} = 13$。<br>$OG = \\sqrt{6^2 + 8^2} = 10$。<br><br>(b) 因為 $OG = 10 < 13$ （即距離小於半徑），所以點 $O$ 位於圓 $C$ 以內。<br><br>(c) 因為 $OP = GP$，所以軌跡 $L$ 是線段 $OG$ 的垂直平分線。 $L$ 與 $OG$ 相交於點 $K$（$OG$ 的中點）。<br>$OK = KG = \\dfrac{1}{2} OG = 5$<br>由於 $M$ 和 $N$ 是 $L$ 與圓 $C$ 的交點， $GM = GN = r = 13$，且 $GK \\perp MN$。<br>在直角 $\\triangle GKM$ 中，由畢氏定理：<br>$MK = \\sqrt{GM^2 - KG^2} = \\sqrt{13^2 - 5^2} = 12$<br>根據對稱性， $MN = 2 \\times MK = 24$。<br>因為四邊形 $OMGN$ 的對角線 $OG$ 與 $MN$ 互相垂直，<br>其面積 $= \\dfrac{1}{2} \\times OG \\times MN = \\dfrac{1}{2} \\times 10 \\times 24 = 120$。`
@@ -200,10 +213,11 @@ questions.push(
         id: "2021-DSE-MATH-CP1-Q14",
         year: 2021,
         type: "P1",
+        section: "A2",
         level: ["Senior"],
         domain: ["Geometry"],
         topic: ["Mensuration"],
-        difficulty: 4,
+        difficulty: 2,
         content: `實心直立圓柱體 $X$ 的底半徑與實心直立圓錐體 $Y$ 的底半徑相等。 $X$ 及 $Y$ 的高分別為 $20\\text{ cm}$ 及 $24\\text{ cm}$。 實心直立圓錐體 $Z$ 的體積等於 $X$ 的體積與 $Y$ 的體積之和。 $Z$ 的底半徑等於 $X$ 的底直徑。 某工匠得知 $Y$ 的體積為 $800\\pi\\text{ cm}^3$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $Y$ 的底半徑。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$Y$ 與 $Z$ 是否相似？ 試解釋你的答案。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">該工匠宣稱 $X$ 的曲面面積與 $Y$ 的曲面面積之和大於 $Z$ 的曲面面積。 你是否同意？ 試解釋你的答案。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 利用圓錐體體積公式 $V = \\dfrac{1}{3}\\pi r^2 h$ 帶入已知體積與高求解半徑。<br>(b) 計算出圓錐體 $Z$ 的體積，進而依據其底半徑（等於 $X$ 的直徑，即 $2r_Y$）求出 $Z$ 的高度。檢查其底半徑之比是否等於高度之比。<br>(c) 分別計算出 $X$ 的曲面面積 ($2\\pi r h$)、 $Y$ 的曲面面積 ($\\pi r l$) 和 $Z$ 的曲面面積 ($\\pi r_Z l_Z$)，相加後進行數值大小比較。`,
         solution: `(a) 設 $Y$ 的底半徑為 $r$。已知其高 $h_Y = 24$。<br>$\\dfrac{1}{3}\\pi r^2 (24) = 800\\pi \\Rightarrow 8\\pi r^2 = 800\\pi \\Rightarrow r^2 = 100 \\Rightarrow r = 10\\text{ cm}$。<br>因此， $Y$ 的底半徑為 $10\\text{ cm}$。<br><br>(b) 依據題意， $X$ 的底半徑也是 $10\\text{ cm}$，高 $h_X = 20$。<br>$X$ 的體積 $= \\pi (10)^2 (20) = 2000\\pi\\text{ cm}^3$<br>$Z$ 的體積 $= V_X + V_Y = 2000\\pi + 800\\pi = 2800\\pi\\text{ cm}^3$<br>$Z$ 的底半徑 $r_Z = X \\text{ 的底直徑} = 2 \\times 10 = 20\\text{ cm}$。<br>設 $Z$ 的高為 $h_Z$：<br>$\\dfrac{1}{3}\\pi (20)^2 h_Z = 2800\\pi \\Rightarrow \\dfrac{400}{3} h_Z = 2800 \\Rightarrow h_Z = 21\\text{ cm}$。<br>比較兩圓錐體的尺寸比例：<br>底半徑之比 $\\dfrac{r_Z}{r_Y} = \\dfrac{20}{10} = 2$<br>高度之比 $\\dfrac{h_Z}{h_Y} = \\dfrac{21}{24} = \\dfrac{7}{8}$<br>因為半徑比不等於高度比（$2 \\neq \\dfrac{7}{8}$），所以 $Y$ 與 $Z$ 並不相似。<br><br>(c) $X$ 的曲面面積 $= 2\\pi r_X h_X = 2\\pi (10)(20) = 400\\pi\\text{ cm}^2$<br>$Y$ 的斜高 $l_Y = \\sqrt{10^2 + 24^2} = 26\\text{ cm}$<br>$Y$ 的曲面面積 $= \\pi r_Y l_Y = \\pi (10)(26) = 260\\pi\\text{ cm}^2$<br>$X$ 與 $Y$ 的曲面面積之和 $= 400\\pi + 260\\pi = 660\\pi\\text{ cm}^2$<br>$Z$ 的斜高 $l_Z = \\sqrt{20^2 + 21^2} = 29\\text{ cm}$<br>$Z$ 的曲面面積 $= \\pi r_Z l_Z = \\pi (20)(29) = 580\\pi\\text{ cm}^2$<br>因為 $660\\pi > 580\\pi$，即之和大於 $Z$ 的曲面面積，所以同意該宣稱。`
@@ -212,10 +226,11 @@ questions.push(
         id: "2021-DSE-MATH-CP1-Q15",
         year: 2021,
         type: "P1",
+        section: "B",
         level: ["Senior"],
         domain: ["Data Handling"],
         topic: ["Permutations and Combinations"],
-        difficulty: 3,
+        difficulty: 1,
         content: `7 名教師與 3 名學生隨機排成一隊。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">可排成多少不同的隊？<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求沒有學生在該隊中相鄰而排的概率。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 總人數為 10 人，全排列的方法數為 $10!$。<br>(b) 「學生互不相鄰」可使用插空法。先將 7 名教師排好（$7!$），然後在教師產生的 8 個空隙中選出 3 個安排 3名學生（$P_{3}^{8}$）。所求概率為該排列數除以總排列數。`,
         solution: `(a) 可排成不同的隊數 $= 10! = 3628800$。<br><br>(b) 沒有學生相鄰而排（即學生互不相鄰）的排列方法：<br>先排列 7 名教師： $7!$<br>在產生的 8 個空位中插入 3 名學生： $P_{3}^{8}$<br>所求的概率 $= \\dfrac{7! \\times P_{3}^{8}}{10!} = \\dfrac{7! \\times 8 \\times 7 \\times 6}{10 \\times 9 \\times 8 \\times 7!}= \\dfrac{8 \\times 7 \\times 6}{10 \\times 9 \\times 8} = \\dfrac{42}{90} = \\dfrac{7}{15}$。`
@@ -224,10 +239,11 @@ questions.push(
         id: "2021-DSE-MATH-CP1-Q16",
         year: 2021,
         type: "P1",
+        section: "B",
         level: ["Senior"],
         domain: ["Algebra"],
         topic: ["Linear Programming"],
-        difficulty: 4,
+        difficulty: 3,
         content: `直線 $L_1$ 與直線 $L_2$ 互相垂直。 $L_1$ 的 $y$ 截距為 3。 已知 $L_1$ 與 $L_2$ 相交於點 $(2, 6)$。 設 $R$ 為 $L_1$ 、 $L_2$ 與 $x$ 軸圍成的區域（包括邊界在內）。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">已知 $R$ 表示某不等式組的解。 求該不等式組。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求 $8x-5y$ 的最小值，其中 $(x, y)$ 為 $R$ 中的一點。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 先利用兩點式或點斜式求出直線 $L_1$ 的方程（已知 $(0,3)$ 及 $(2,6)$）。再利用垂直直線斜率關係 $m_1 \\cdot m_2 = -1$ 找出 $L_2$ 的斜率，結合交點 $(2,6)$ 求出 $L_2$ 的方程。最後根據區域 $R$ 判別不等式的符號。<br>(b) 找出區域 $R$ 的所有頂點（$L_1$ 與 $x$ 軸交點、 $L_2$ 與 $x$ 軸交點、 $L_1$ 與 $L_2$ 的交點），分別代入目標函數 $P = 8x-5y$ 中，找出最小值。`,
         solution: `(a) 直線 $L_1$ 通過 $(0, 3)$ 和 $(2, 6)$，其斜率 $m_1 = \\dfrac{6 - 3}{2 - 0} = \\dfrac{3}{2}$。<br>所以 $L_1$ 的方程為： $y = \\dfrac{3}{2}x + 3 \\Rightarrow 3x - 2y + 6 = 0$。<br>因為 $L_2 \\perp L_1$，所以 $L_2$ 的斜率 $m_2 = -\\dfrac{1}{m_1} = -\\dfrac{2}{3}$。<br>$L_2$ 通過 $(2, 6)$，其方程為： $y - 6 = -\\dfrac{2}{3}(x - 2) \\Rightarrow 2x + 3y - 22 = 0$。<br>區域 $R$ 被 $L_1$, $L_2$ 和 $x$ 軸 ($y=0$) 圍成，位於 $x$ 軸上方， $L_1$ 的右下方， $L_2$ 的左下方。<br>測試點 $(2, 5)$ 位於區域內：<br>$3(2) - 2(5) + 6 = 2 \\ge 0$<br>$2(2) + 3(5) - 22 = -3 \\le 0$<br>故該不等式組為：<br>$\\begin{cases} 3x - 2y + 6 \\ge 0 \\\\ 2x + 3y - 22 \\le 0 \\\\ y \\ge 0 \\end{cases}$<br><br>(b) 求解頂點：<br>$L_1$ 與 $x$ 軸的交點：令 $y=0 \\Rightarrow 3x + 6 = 0 \\Rightarrow x = -2$，即 $(-2, 0)$。<br>$L_2$ 與 $x$ 軸的交點：令 $y=0 \\Rightarrow 2x - 22 = 0 \\Rightarrow x = 11$，即 $(11, 0)$。<br>兩線交點已給出，為 $(2, 6)$。<br>將三個頂點代入 $P = 8x - 5y$ 進行計算：<br>在 $(-2, 0)$ 處， $P = 8(-2) - 5(0) = -16$<br>在 $(11, 0)$ 處， $P = 8(11) - 5(0) = 88$<br>在 $(2, 6)$ 處， $P = 8(2) - 5(6) = 16 - 30 = -14$<br>因此， $8x-5y$ 的最小值為 $-16$。`
@@ -236,10 +252,11 @@ questions.push(
         id: "2021-DSE-MATH-CP1-Q17",
         year: 2021,
         type: "P1",
+        section: "B",
         level: ["Senior"],
         domain: ["Algebra"],
         topic: ["Arithmetic Sequences"],
-        difficulty: 4,
+        difficulty: 2,
         content: `設 $\\mathrm{A}(n)$ 為一等差數列的第 $n$ 項。 已知 $\\mathrm{A}(5)=26$ 及 $\\mathrm{A}(12)=61$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $\\mathrm{A}(1)$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">假定對任意正整數 $n$， $\\log_{2}\\mathrm{G}(n)=\\mathrm{A}(n)$。 求 $k$ 的最大值使得 $\\log_{8}(\\mathrm{G}(1)\\mathrm{G}(2)\\mathrm{G}(3)\\cdots \\mathrm{G}(k))<999$。<span class="marks">(5分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 利用等差數列通項公式 $A(n) = a_1 + (n-1)d$ 列聯立方程求出首項 $A(1)$ 與公差 $d$。<br>(b) 將對數不等式化簡：由性質可知 $G(n) = 2^{A(n)}$。利用對數換底公式與性質將 $\\log_{8}(\\prod G(i))$ 化為以 2 為底的式子，展開成關於 $A(n)$ 的等差數列求和公式，最後解關於 $k$ 的二次不等式。`,
         solution: `(a) 設等差數列的首項為 $a$，公差為 $d$。<br>$A(5) = a + 4d = 26$<br>$A(12) = a + 11d = 61$<br>兩式相減： $7d = 35 \\Rightarrow d = 5$<br>代入求得： $a = 6$<br>所以 $A(1) = 6$。<br><br>(b) 由已知 $\\log_2 G(n) = A(n)$，且 $\\log_8 x = \\dfrac{\\log_2 x}{\\log_2 8} = \\dfrac{1}{3}\\log_2 x$。<br>$\\log_8 (G(1)G(2)\\cdots G(k)) = \\dfrac{1}{3}\\log_2(G(1)G(2)\\cdots G(k))$<br>$= \\dfrac{1}{3} [\\log_2 G(1) + \\log_2 G(2) + \\cdots + \\log_2 G(k)]$<br>$= \\dfrac{1}{3} [A(1) + A(2) + \\cdots + A(k)] = \\dfrac{1}{3} S_k$<br>其中 $S_k$ 為等差數列的前 $k$ 項和：<br>$S_k = \\dfrac{k}{2}[2(6) + (k-1)5] = \\dfrac{k}{2}(5k + 7)$<br>代入不等式：<br>$\\dfrac{1}{3} \\cdot \\dfrac{k}{2}(5k + 7) < 999$<br>$\\dfrac{k(5k+7)}{6} < 999 \\Rightarrow 5k^2 + 7k < 5994 \\Rightarrow 5k^2 + 7k - 5994 < 0$<br>利用二次方程求根公式求解 $5k^2 + 7k - 5994 = 0$：<br>$k = \\dfrac{-7 \\pm \\sqrt{7^2 - 4(5)(-5994)}}{2(5)} = \\dfrac{-7 \\pm \\sqrt{49 + 119880}}{10} = \\dfrac{-7 \\pm \\sqrt{119929}}{10} \\approx \\dfrac{-7 \\pm 346.31}{10}$<br>正根為 $k \\approx 33.93$<br>因此，滿足不等式的整數 $k$ 的範圍為 $k \\le 33$。<br>故 $k$ 的最大值為 33。`
@@ -248,10 +265,11 @@ questions.push(
         id: "2021-DSE-MATH-CP1-Q18",
         year: 2021,
         type: "P1",
+        section: "B",
         level: ["Senior"],
         domain: ["Geometry"],
         topic: ["Trigonometry"],
-        difficulty: 5,
+        difficulty: 3,
         content: `<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">金屬薄片 $ABCD$ 的形狀為一梯形，其中 $AD // BC$。 已知 $AB = 45\\text{ cm}$ 、 $\\angle ADC=70^\\circ$ 及 $\\angle BAD=50^\\circ$。 求 $CD$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">現給定 (a) 中所描述的金屬片 $ABCD$。 設 $E$ 為 $AD$ 上的一點使得 $BE$ 垂直於 $AD$。 將該金屬片沿 $BE$ 摺起使得 $AE$ 垂直於平面 $BCDE$。 將三塊三角形金屬薄片放置在這已摺起的金屬片成一角錐體（見圖 2）。 得知 $BC=40\\text{ cm}$。</div></div>
         <img src="img/2021dsep1q18b.jpg" class="q-img" alt="題目附圖" style="max-width: 60%;">
         <div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求 $\\angle CAD$。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">平面 $ACD$ 與平面 $BCDE$ 間的交角是否超過 $30^\\circ$？ 試解釋你的答案。<br><span class="marks">(5分)</span><div class="q-clearfix"></div></div></div>`,
@@ -262,10 +280,11 @@ questions.push(
         id: "2021-DSE-MATH-CP1-Q19",
         year: 2021,
         type: "P1",
+        section: "B",
         level: ["Senior"],
         domain: ["Geometry"],
         topic: ["Equations of Circles"],
-        difficulty: 5,
+        difficulty: 3,
         content: `設 $\\mathrm{f}(x) = x^2-12kx-14x+36k^2+89k+53$，其中 $k$ 為一正常數。 在同一直角坐標系中，將 $y=\\mathrm{f}(x)$ 的圖像的頂點及 $y=\\mathrm{f}(14-x)$ 的圖像的頂點分別記為 $Q$ 及 $R$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">利用配方法，以 $k$ 表 $Q$ 的坐標。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出 $R$ 的坐標，答案以 $k$ 表示。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">點 $S$ 的坐標為 $(7, 4-3k)$。 將 $\\triangle QRS$ 的內切圓記為 $C$。</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">以 $k$ 表通過 $Q$ 及 $S$ 的直線的方程。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">以 $k$ 表 $C$ 的方程。</div></div><div class="q-line q-level-2"><span class="q-label">(iii)</span><div class="q-text-content">假定 $QS$ 為 $C$ 在點 $T$ 的切線。 設 $U$ 為 $C$ 的圓心。已知點 $V$ 的坐標為 $(-29, -14)$。 $STUV$ 有沒有可能為一長方形？ 試解釋你的答案。<br><span class="marks">(9分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 將 $f(x)$ 按 $x$ 的項重組為 $x^2 - 2(6k+7)x + \\cdots$，再進行配平方求出頂點式。<br>(b) $f(14-x)$ 是將圖像沿 $x=7$ 進行反射對稱變換，利用中點公式求出新的頂點 $R$。<br>(c)(i) 利用兩點式求直線 $QS$ 的方程。<br>(c)(ii) 藉由 $\\triangle QRS$ 的對稱性（$S$ 點與 $Q, R$ 形成等腰三角形），求出內心 $V$ 的坐標與內切圓半徑，寫出圓方程。<br>(c)(iii) 若 $STUV$ 為長方形，由於 $VT \\perp QS$（切線性質）， $ST$ 必須垂直於 $VT$，且 $UV \\perp ST$。<br>計算各點間斜率或向量，驗證垂直與長度條件在 $k>0$ 時是否成立。`,
         solution: `(a) $f(x) = x^2 - 2(6k+7)x + (36k^2 + 89k + 53)$<br>$= [x - (6k+7)]^2 - (6k+7)^2 + 36k^2 + 89k + 53$<br>$= [x - (6k+7)]^2 - (36k^2 + 84k + 49) + 36k^2 + 89k + 53$<br>$= [x - (6k+7)]^2 + 5k + 4$<br>因此，頂點 $Q$ 的坐標為 $(6k+7, 5k+4)$。<br><br>(b) 因為 $y=f(14-x)$ 的圖像是由 $y=f(x)$ 繞直線 $x=7$ 反射而成，<br>其頂點 $R$ 的 $y$ 座標不變， $x$ 座標滿足 $\\dfrac{x_Q + x_R}{2} = 7 \\Rightarrow x_R = 14 - (6k+7) = 7 - 6k$。<br>故 $R$ 的坐標為 $(7-6k, 5k+4)$。<br><br>(c)(i) 直線 $QS$ 的斜率 $m = \\dfrac{(5k+4) - (4-3k)}{(6k+7) - 7} = \\dfrac{8k}{6k} = \\dfrac{4}{3}$。<br>方程為： $y - (4-3k) = \\dfrac{4}{3}(x - 7) \\Rightarrow 4x - 3y - 9k - 16 = 0$。<br><br>(c)(ii) 由於 $Q$ 和 $R$ 關於 $x=7$ 對稱，且 $S$ 點的 $x$ 坐標為 7， $\\triangle QRS$ 為等腰三角形。<br>內心 $V$ 必然位於其對稱軸 $x=7$ 上。利用點到直線的垂直距離等於內切圓半徑，<br>可求出內心 $V$ 坐標為 $(7, 2k+4)$，半徑 $r = 3k$。<br>內切圓 $C$ 的方程為： $(x-7)^2 + (y-(2k+4))^2 = 9k^2$。<br><br>(c)(iii) 若 $STUV$ 為長方形，由於 $VT \\perp QS$（切線性質）， $ST$ 必須垂直於 $VT$，且 $UV \\perp ST$。<br>經求出切點 $T$ 的坐標並計算線段 $ST, TU, UV, VS$ 之間的幾何與斜率關係，<br>發現在 $k = 5$ 時，各項垂直與長度條件皆符合，且此時 $k>0$ 成立。<br>因此， $STUV$ 有可能為一長方形。`
