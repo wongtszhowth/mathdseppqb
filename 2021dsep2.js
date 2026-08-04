@@ -545,7 +545,7 @@ D.\t$s+4t+31=0$
         topic: ["Probability"],
         difficulty: 2,
         content: `下面的幹葉圖顯示一群工人的體重（以 kg 為單位）的分佈。 
-<table class="q-table" style="margin-left: 6em; margin-right: auto; border-collapse: collapse; table-layout: auto;">
+<table class="q-table" style="border-collapse: collapse; table-layout: auto;">
     <colgroup>
       <col style="width: 7em;">
       <col style="width: auto;">
