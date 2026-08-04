@@ -29,7 +29,7 @@ D.\t$(\\alpha - \\beta)(\\alpha + \\beta - 1)$。
         domain: ["Algebra"],
         topic: ["Laws of Indices"],
         difficulty: 1,
-        content: `$\\dfrac{8^{12n+3}}{(27^{n+1})^2} =$
+        content: `$\\dfrac{81^{2n+3}}{(27^{n+1})^2} =$
 <div class="q-mcopt">
 A.\t$3$。<br>
 B.\t$3^{2n+6}$。<br>
