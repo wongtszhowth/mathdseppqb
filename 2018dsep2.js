@@ -462,8 +462,7 @@ D.\t$8$。
         domain: ["Geometry"],
         topic: ["Coordinate Geometry"],
         difficulty: 2,
-        content: `點 $C$、點 $D$ 及點 $E$ 的極坐標分別為 $(16, 127^\\circ)$、$(12, 217^\\circ)$ 及 $(5, 307^\\circ)$。 求 $\\Delta CDE$ 的周界。 
-<div class="q-mcopt">
+        content: `<div style="color: red;">點 $C$、點 $D$ 及點 $E$ 的極坐標分別為 $(16, 127^\\circ)$、$(12, 217^\\circ)$ 及 $(5, 307^\\circ)$。 求 $\\Delta CDE$ 的周界。</div><div class="q-mcopt" style="color: red;">
 A.\t$54$<br>
 B.\t$78$<br>
 C.\t$126$<br>
@@ -576,8 +575,41 @@ D.\t$176$。
         domain: ["Data Handling"],
         topic: ["Statistical Graphs", "Measures of Dispersion"],
         difficulty: 2,
-        content: `下面的幹葉圖顯示 $20$ 名學生在一年內閱書數目的分佈。 
-<div style="overflow-x: auto; width: 100%; margin-bottom: 8px;"><table class="q-table" style="width: 100%; min-width: 300px;"><tr><td>幹（十位）</td><td>葉（個位）</td></tr><tr><td>$2$</td><td>$1$ $2$ $2$ $8$</td></tr><tr><td>$3$</td><td>$a$ $a$</td></tr><tr><td>$4$</td><td>$0$ $2$ $4$ $5$ $5$ $7$ $8$</td></tr><tr><td>$5$</td><td>$3$</td></tr><tr><td>$6$</td><td>$b$ $b$ $9$ $9$</td></tr><tr><td>$7$</td><td>$0$ $8$</td></tr></table></div>
+        content: `下面的幹葉圖顯示 $20$ 名學生在一年內閱書數目的分佈。
+        <table class="q-table" style="border-collapse: collapse; table-layout: auto;" align="center">
+    <colgroup>
+      <col style="width: auto;">
+      <col style="width: auto;">
+    </colgroup>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;"><u>幹（十位）</u></td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;"><u>葉（個位）</u></td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">2</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">1    2    2    8</td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">3</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">$a$    $a$</td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">4</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">0    2    4    5    5    7    8</td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">5</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">3</td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">6</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">$b$    $b$    9    9</td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">7</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">0    8</td>
+    </tr>
+      </table>
 若上述分佈的四分位數間距至多為 $25$，則下列何者必為正確？
 <div class="q-mcms">
 I.\t$5 \\le a \\le 9$
