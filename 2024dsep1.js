@@ -126,22 +126,22 @@ questions.push(
       <col style="width: 2em;">
     </colgroup>
     <tr>
-      <th style="border: 1px solid #000; text-align: center; padding: 6px 10px;">鑰匙的數目</th>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">3</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">4</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">5</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">6</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">7</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">8</td>      
+      <th style="border: 1px solid #000; text-align: center; padding: 3px 10px;">鑰匙的數目</th>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">3</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">4</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">5</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">6</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">7</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">8</td>      
     </tr>
     <tr>
-      <th style="border: 1px solid #000; text-align: center; padding: 6px 10px;">主婦人數</th>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">10</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">9</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">4</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">3</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">4</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">$k$</td>
+      <th style="border: 1px solid #000; text-align: center; padding: 3px 10px;">主婦人數</th>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">10</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">9</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">4</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">3</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">4</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$k$</td>
     </tr>
   </table>
 若從該群中隨機選出一名主婦，則她擁有多於 $6$ 條鑰匙的概率為 $\\dfrac{5}{18}$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $k$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出該分佈的平均值、眾數及中位數。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
@@ -171,9 +171,9 @@ questions.push(
         topic: ["Statistical Graphs", "Measures of Dispersion"],
         difficulty: 1,
         content: `下面的幹葉圖顯示一群研究員在某月內用於閱讀期刊的時數的分佈：
-        <table class="q-table" style="border-collapse: collapse; table-layout: auto;">
+        <table class="q-table" style="border-collapse: collapse; table-layout: auto;" align="center">
     <colgroup>
-      <col style="width: 7em;">
+      <col style="width: auto;">
       <col style="width: auto;">
     </colgroup>
     <tr>
@@ -284,7 +284,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Trigonometry (3D)"],
         difficulty: 3,
-        content: `<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">$PQRS$ 為四邊形金屬薄片，其中 $PQ=12\\text{ cm}$ 、 $PS=10\\text{ cm}$ 、 $QR=13\\text{ cm}$ 、 $\\angle QPS=82^{\\circ}$ 及 $\\angle QRS=65^{\\circ}$。 求</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">$QS$ 的長度，</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">$\\angle RQS$。<br><span class="marks">(4分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">現將 (a) 中所描述的金屬薄片 $PQRS$ 沿 $QS$ 摺起（見圖）。 已知平面 $PQS$ 與平面 $QRS$ 間的交角為 $80^{\\circ}$。</div></div><br><img src="img/2024dsep1q18b.jpg" class="q-img" alt="題目附圖" style="max-width: 60%;"><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求由 $R$ 至平面 $PQS$ 的最短距離。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">設 $X$ 為平面 $QRS$ 上的任意點。 某人宣稱 $P$ 與 $X$ 間的距離超過 $8\\text{ cm}$。 該宣稱是否正確？ 試解釋你的答案。<br><span class="marks">(4分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">$PQRS$ 為四邊形金屬薄片，其中 $PQ=12\\text{ cm}$ 、 $PS=10\\text{ cm}$ 、 $QR=13\\text{ cm}$ 、 $\\angle QPS=82^{\\circ}$ 及 $\\angle QRS=65^{\\circ}$。 求</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">$QS$ 的長度，</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">$\\angle RQS$。<br><span class="marks">(4分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">現將 (a) 中所描述的金屬薄片 $PQRS$ 沿 $QS$ 摺起（見圖）。 已知平面 $PQS$ 與平面 $QRS$ 間的交角為 $80^{\\circ}$。</div></div><img src="img/2024dsep1q18b.jpg" class="q-img" alt="題目附圖" style="max-width: 60%;"><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求由 $R$ 至平面 $PQS$ 的最短距離。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">設 $X$ 為平面 $QRS$ 上的任意點。 某人宣稱 $P$ 與 $X$ 間的距離超過 $8\\text{ cm}$。 該宣稱是否正確？ 試解釋你的答案。<br><span class="marks">(4分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a)(i) 在 $\\Delta PQS$ 中使用餘弦定理；(a)(ii) 在 $\\Delta QRS$ 中使用正弦定理；(b)(i) 利用三面角或投影關係，最短距離為 $R$ 到棱 $QS$ 的垂線長度乘以 $\\sin 80^{\\circ}$。`,
         solution: `(a)(i) 由餘弦定理，$QS = \\sqrt{12^2+10^2-2(12)(10)\\cos 82^{\\circ}} \\approx 14.5\\text{ cm}$。<br>(ii) 利用正弦定理求出 $\\angle RQS$。<br>(b)(i) 作垂線並利用摺起角 $80^{\\circ}$ 的直角三角形關係，求出最短距離（即垂線高）。<br>(ii) 透過空間坐標法或最值幾何分析，找出 $P$ 到平面的最短距離是否大於 $8\\text{ cm}$ 來驗證宣稱。`
     },
