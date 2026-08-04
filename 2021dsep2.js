@@ -238,7 +238,8 @@ D.\t$\\dfrac{w^2}{xy^2}$
         domain: ["Algebra"],
         topic: ["Sequences"],
         difficulty: 1,
-        content: `圖中，第 $1$ 個圖案包含 $3$ 粒點子。 對任意正整數 $n$，第 $(n+1)$ 個圖案是由第 $n$ 個圖案加上 $(2n+3)$ 粒點子所組成。 求第 $8$ 個圖案的點子數目。 
+        content: `圖中，第 $1$ 個圖案包含 $3$ 粒點子。 對任意正整數 $n$，第 $(n+1)$ 個圖案是由第 $n$ 個圖案加上 $(2n+3)$ 粒點子所組成。 求第 $8$ 個圖案的點子數目。
+        <img src="img/2021dsep2q13.jpg" class="q-img" alt="題目附圖" style="max-width: 90%;">
 <div class="q-mcopt">
 A.\t$63$<br>
 B.\t$75$<br>
@@ -344,12 +345,12 @@ D.\tI、II 及 III
         topic: ["Geometry (Triangles)"],
         difficulty: 1,
         content: `圖中，$AB = BC$ 及 $AB // CD$。 設 $E$ 為 $AD$ 與 $BC$ 的交點。 若 $\\angle ADC = 28^\\circ$ 及 $\\angle AEB = 94^\\circ$，則 $\\angle CAD =$
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2021dsep2q18.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$30^\\circ$。 <br>
 B.\t$33^\\circ$。 <br>
 C.\t$36^\\circ$。 <br>
 D.\t$39^\\circ$。 
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用等腰三角形及平行線性質。`,
         solution: `B (72%)`
     },
@@ -363,7 +364,7 @@ D.\t$39^\\circ$。
         topic: ["Geometry (Polygons)"],
         difficulty: 2,
         content: `圖中，$ABCD$ 為一長方形。 設 $E$ 為 $AC$ 上的一點使得 $BE$ 垂直於 $AC$。 延長 $BE$ 至點 $F$ 使得 $CF = AD$。 將 $BF$ 與 $CD$ 的交點記為 $G$。 下列何者正確？
-<div class="q-mcms">
+<div class="q-mcms"><img src="img/2021dsep2q19.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 I.\t$\\angle DAB = \\angle DGF$
 II.\t$\\Delta BCE \\sim \\Delta CGE$
 III.\t$\\Delta BCE \\cong \\Delta FCE$
@@ -373,7 +374,7 @@ A.\t只有 I 及 II<br>
 B.\t只有 I 及 III<br>
 C.\t只有 II 及 III<br>
 D.\tI、II 及 III
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用直角及相似／全等條件。`,
         solution: `D (35%)`
     },
@@ -387,12 +388,12 @@ D.\tI、II 及 III
         topic: ["Geometry (Polygons)"],
         difficulty: 2,
         content: `圖中，$ABCD$ 為一正方形。 設 $E$ 及 $F$ 分別為 $AB$ 及 $BC$ 上的點使得 $AE = 3BE$ 且 $\\angle DEF = 90^\\circ$。 若 $\\Delta DEF$ 的面積為 $25$ cm$^2$，則 $\\Delta CDF$ 的面積為
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2021dsep2q20.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 40%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$48$ cm$^2$。 <br>
 B.\t$50$ cm$^2$。 <br>
 C.\t$52$ cm$^2$。 <br>
 D.\t$75$ cm$^2$。 
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `設邊長後用面積及畢氏定理。`,
         solution: `C (34%)`
     },
@@ -430,12 +431,12 @@ D.\tI、II 及 III
         topic: ["Geometry (Circles)"],
         difficulty: 2,
         content: `圖中，$ABCDE$ 為一圓。 若 $AC = BD$、$\\angle AED = 96^\\circ$ 及 $\\angle BDC = 14^\\circ$，則 $\\angle CAD =$
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2021dsep2q22.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$41^\\circ$。 <br>
 B.\t$44^\\circ$。 <br>
 C.\t$49^\\circ$。 <br>
 D.\t$55^\\circ$。 
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用圓周角及等弦對等角。`,
         solution: `A (57%)`
     },
@@ -468,12 +469,12 @@ D.\t$7$
         topic: ["Trigonometry (2D)"],
         difficulty: 2,
         content: `圖中，$\\dfrac{AB}{CD} =$
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2021dsep2q24.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$\\cos\\theta \\sin\\phi$<br>
 B.\t$\\sin\\theta \\cos\\phi$<br>
 C.\t$\\tan\\theta \\cos\\phi$<br>
 D.\t$\\tan\\theta \\sin\\phi$
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `在直角三角形中表達各邊。`,
         solution: `D (64%)`
     },
@@ -564,7 +565,8 @@ D.\t$\\dfrac{5}{6}$
         domain: ["Data Handling"],
         topic: ["Statistical Graphs", "Measures of Dispersion"],
         difficulty: 1,
-        content: `下面的框線圖顯示一群研究員的年歲的分佈。 求該分佈的四分位數間距。 
+        content: `下面的框線圖顯示一群研究員的年歲的分佈。 求該分佈的四分位數間距。
+        <img src="img/2021dsep2q29zh.jpg" class="q-img" alt="題目附圖" style="max-width: 60%;">
 <div class="q-mcopt">
 A.\t$5$<br>
 B.\t$10$<br>
@@ -660,12 +662,12 @@ D.\t$c^a:1$
         topic: ["Exponential Functions and Logarithm Functions"],
         difficulty: 2,
         content: `圖中的圖像顯示 $\\log_5 x$ 與 $\\log_5 y$ 之間的線性關係。 下列何者必為正確？
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2021dsep2q34.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$x^2 = 625$<br>
 B.\t$x^2 y = 625$<br>
 C.\t$\\dfrac{y^2}{x} = 625$<br>
 D.\t$\\dfrac{y}{x^2} = 625$
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `由圖像讀取斜率及截距後換底。`,
         solution: `C (46%)`
     },
@@ -746,12 +748,12 @@ D.\t$k \\le -4$ 或 $k \\ge 8$
         topic: ["Coordinate Geometry"],
         difficulty: 2,
         content: `圖中所示為長方形 $ABCD$，其中 $AB=960$ cm 及 $BC=597$ cm。 設 $E$、$F$ 及 $G$ 分別為 $AB$、$BC$ 及 $CD$ 上的點使得 $AE=638$ cm、$BF=280$ cm 及 $CG=480$ cm。 將 $AF$ 與 $EG$ 的交點記為 $H$。 求 $DH$ 準確至最接近的 cm。 
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2021dsep2q38.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 60%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$728$ cm<br>
 B.\t$729$ cm<br>
 C.\t$741$ cm<br>
 D.\t$742$ cm
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `用坐標幾何求交點後計算距離。`,
         solution: `B (34%)`
     },
@@ -765,12 +767,12 @@ D.\t$742$ cm
         topic: ["Geometry (Circles)"],
         difficulty: 2,
         content: `圖中，$AC$ 為圓 $ABCD$ 的一直徑。 $EF$ 為該圓在 $D$ 的切線使得 $AB // EC$。 若 $\\angle CDF=49^\\circ$ 及 $\\angle CED=31^\\circ$，則 $\\angle ACB=$
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2021dsep2q39.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$49^\\circ$。 <br>
 B.\t$57^\\circ$。 <br>
 C.\t$59^\\circ$。 <br>
 D.\t$67^\\circ$。 
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用切線與弦的夾角及直徑性質。`,
         solution: `D (37%)`
     },
