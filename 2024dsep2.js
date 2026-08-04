@@ -719,14 +719,12 @@ D.\tI、II 及 III
         domain: ["Algebra"],
         topic: ["Linear Programming"],
         difficulty: 2,
-        content: `考慮以下的不等式組：
-$$
-\\begin{cases}
-x - 2y \\le 1 \\\\
-x + 4y \\le 13 \\\\
+        content: `考慮以下的不等式組：<br>
+$\\begin{cases}
+x - 2y \\le 1 \\\\[1.2ex]
+x + 4y \\le 13 \\\\[1.2ex]
 2x - y \\ge -1
-\\end{cases}
-$$
+\\end{cases}$<br>
 設 $R$ 為表示以上的不等式組的解之區域。 求常數 $c$ 使得 $5x - 2y + c$ 的最小值為 $22$，其中 $(x, y)$ 為 $R$ 中的一點。
 <div class="q-mcopt">
 A.\t$1$<br>
