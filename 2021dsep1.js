@@ -82,7 +82,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Coordinate Geometry"],
         difficulty: 2,
-        content: `在某極坐標系中， $O$ 為極點。 點 $P$ 及點 $Q$ 的極坐標分別為 $(r, 80^\\circ)$ 及 $(r, 140^\\circ)$，其中 $r$ 為一正常數。 已知 $P$ 與 $Q$ 間的距離為 21。 求<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">$\\angle POQ$ ，<span class="marks">(1分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$r$ ，<span class="marks">(1分)</span></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">$\\Delta OPQ$ 的周界。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `<div style="color: red;">在某極坐標系中， $O$ 為極點。 點 $P$ 及點 $Q$ 的極坐標分別為 $(r, 80^\\circ)$ 及 $(r, 140^\\circ)$，其中 $r$ 為一正常數。 已知 $P$ 與 $Q$ 間的距離為 21。 求</div><div class="q-line" style="color: red;"><span class="q-label">(a)</span><div class="q-text-content" style="color: red;">$\\angle POQ$ ，<span class="marks">(1分)</span></div></div><div class="q-line" style="color: red;"><span class="q-label">(b)</span><div class="q-text-content" style="color: red;">$r$ ，<span class="marks">(1分)</span></div></div><div class="q-line" style="color: red;"><span class="q-label">(c)</span><div class="q-text-content" style="color: red;">$\\Delta OPQ$ 的周界。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) $\\angle POQ$ 為兩點極角的差值。<br>(b) 由於 $OP = OQ = r$，$\\triangle OPQ$ 為等腰三角形。利用等腰三角形性質或餘弦定理，結合已知的 $PQ=21$ 和頂角，求出 $r$。<br>(c) 周界 $= OP + OQ + PQ = 2r + 21$。`,
         solution: `(a) $\\angle POQ = 140^{\\circ} - 80^{\\circ} = 60^{\\circ}$<br><br>(b) 因為 $OP = OQ = r$ 且 $\\angle POQ = 60^{\\circ}$，素以 $\\triangle OPQ$ 為等邊三角形。<br>因此， $OP = OQ = PQ = 21$，即 $r = 21$。<br><br>(c) $\triangle OPQ$ 的周界 $= 21 + 21 + 21 = 63$。`
     },
@@ -94,7 +94,9 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Geometric Proofs"],
         difficulty: 2,
-        content: `在圖 1 中， $AB$ 的延線與 $CD$ 的延線相交於點 $E$。 已知 $\\angle CAE = \\angle BDE$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明 $\\Delta ACE \\sim \\Delta DBE$。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">已知 $AC = 25\\text{ cm}$ 、 $AE = 60\\text{ cm}$ 、 $CE = 65\\text{ cm}$ 及 $BD = 15\\text{ cm}$。</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">$\\Delta ACE$ 是否一直角三角形？ 試解釋你的答案。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">求 $\\Delta DBE$ 的面積。<br><span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `在圖中， $AB$ 的延線與 $CD$ 的延線相交於點 $E$。 已知 $\\angle CAE = \\angle BDE$。
+        <img src="img/2021dsep1q08.jpg" class="q-img" alt="題目附圖" style="max-width: 80%;">
+        <div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明 $\\Delta ACE \\sim \\Delta DBE$。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">已知 $AC = 25\\text{ cm}$ 、 $AE = 60\\text{ cm}$ 、 $CE = 65\\text{ cm}$ 及 $BD = 15\\text{ cm}$。</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">$\\Delta ACE$ 是否一直角三角形？ 試解釋你的答案。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">求 $\\Delta DBE$ 的面積。<br><span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 觀察兩個三角形，有一組對應角已知相等，且包含一個公共角 $\\angle E$，可使用 AA 證明相似。<br>(b)(i) 檢查 $AC^2 + AE^2 = CE^2$ 是否成立，利用畢氏定理的逆定理驗證。<br>(b)(ii) 相似三角形的面積比等於對應邊長比的平方，先求 $\\triangle ACE$ 的面積，再按比例求出 $\\triangle DBE$ 的面積。`,
         solution: `(a) 在 $\\triangle ACE$ 及 $\\triangle DBE$ 中：<br>$\\angle CAE = \\angle BDE$ （已知）<br>$\\angle CEA = \\angle BED$ （公共角）<br>所以 $\\triangle ACE \\sim \\triangle DBE$ （AA）<br><br>(b)(i) $AC^2 + AE^2 = 25^2 + 60^2 = 625 + 3600 = 4225$<br>$CE^2 = 65^2 = 4225$<br>因為 $AC^2 + AE^2 = CE^2$，根據畢氏定理的逆定理， $\\triangle ACE$ 是一直角三角形，其中 $\\angle CAE = 90^{\\circ}$。<br><br>(b)(ii) $\\triangle ACE$ 的面積 $= \\dfrac{1}{2} \\times AC \\times AE = \\dfrac{1}{2} \\times 25 \\times 60 = 750\\text{ cm}^2$<br>因為 $\\triangle ACE \\sim \\triangle DBE$，所以面積比等於對應邊比的平方：<br>$\\dfrac{\\triangle DBE \\text{ 的面積}}{\\triangle ACE \\text{ 的面積}} = \\left(\\dfrac{BD}{AC}\\right)^2$<br>$\\dfrac{\\triangle DBE \\text{ 的面積}}{750} = \\left(\\dfrac{15}{25}\\right)^2 = \\left(\\dfrac{3}{5}\\right)^2 = \\dfrac{9}{25}$<br>$\\triangle DBE$ 的面積 $= 750 \\times \\dfrac{9}{25} = 270\\text{ cm}^2$。`
     },
@@ -106,7 +108,8 @@ questions.push(
         domain: ["Data Handling"],
         topic: ["Statistical Charts"],
         difficulty: 3,
-        content: `下面的棒形圖顯示一群學生在某年內的閱書數目的分佈。<br>
+        content: `下面的棒形圖顯示一群學生在某年內的閱書數目的分佈。
+        <img src="img/2021dsep1q09zh.jpg" class="q-img" alt="題目附圖" style="max-width: 75%;">
         若從該群中隨機選出一名學生，則所選出的學生在該年內閱書少於 26 本的概率為 $\\dfrac{7}{10}$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $k$。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出該分佈的分佈域、四分位數間距及標準差。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>
         <br>| 閱書數目 | 23 | 24 | 25 | 26 | 27 | 28 |<br>| :--- | :---: | :---: | :---: | :---: | :---: | :---: |<br>| 學生人數 | 12 | $k$ | 16 | 9 | 11 | 4 |`,
         hint: `(a) 「少於 26 本」包含 23、24、25 本。利用其總人數除以全體總人數等於 $\\dfrac{7}{10}$ 建立方程求解 $k$。<br>(b) 求出 $k$ 後可得總人數與完整數據分佈，進而找出最大與最小值之差（分佈域）、第 3 四分位數與第 1 四分位數之差（IQR）及標準差（可利用計算機功能）。`,
@@ -132,9 +135,40 @@ questions.push(
         domain: ["Data Handling"],
         topic: ["Measures of Central Tendency"],
         difficulty: 3,
-        content: `下表顯示在一遊戲中某群小童所獲代幣的數目的分佈。<br>
-        <br>| 所獲代幣的數目 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |<br>| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |<br>| 小童人數 | 15 | 9 | 2 | 5 | 4 | 2 | 5 |<br><br>
-        <div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求該分佈的平均值。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">該分佈的中位數與眾數是否相等？ 試解釋你的答案。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">若再多 $n$ 名小童參與該遊戲且其中每人均獲 5 個代幣，寫出</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">$n$ 的值使得該分佈的平均值增加 1；</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">$n$ 的最小值使得該分佈的中位數增加 2；</div></div><div class="q-line q-level-2"><span class="q-label">(iii)</span><div class="q-text-content">$n$ 的最大值使得該分佈的眾數維持不變。<br><span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `下表顯示在一遊戲中某群小童所獲代幣的數目的分佈。
+        <table class="q-table" style="margin-left: auto; margin-right: auto; border-collapse: collapse; table-layout: auto;">
+    <colgroup>
+      <col style="width: auto;">
+      <col style="width: 2em;">
+      <col style="width: 2em;">
+      <col style="width: 2em;">
+      <col style="width: 2em;">
+      <col style="width: 2em;">
+      <col style="width: 2em;">
+      <col style="width: 2em;">
+    </colgroup>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">所獲代幣的數目</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">1</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">2</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">3</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">4</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">5</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">6</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">7</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">小童人數</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">15</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">9</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">2</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">5</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">4</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">2</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">5</td>
+    </tr>
+  </table>
+<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求該分佈的平均值。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">該分佈的中位數與眾數是否相等？ 試解釋你的答案。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">若再多 $n$ 名小童參與該遊戲且其中每人均獲 5 個代幣，寫出</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">$n$ 的值使得該分佈的平均值增加 1；</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">$n$ 的最小值使得該分佈的中位數增加 2；</div></div><div class="q-line q-level-2"><span class="q-label">(iii)</span><div class="q-text-content">$n$ 的最大值使得該分佈的眾數維持不變。<br><span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 使用加權平均公式（總代幣數 / 總人數）求解。<br>(b) 找出原本的眾數（頻數最大者）及中位數（排序後的正中間值）進行比較。<br>(c)(i) 利用新平均值 = 原平均值 + 1 建立方程求解 $n$。<br>(c)(ii) 使中位數從原先的值增加 2，需要加入足夠多的「5個代幣」的小童來使中位數右移。<br>(c)(iii) 原眾數為 1 (頻數 15)，加入獲 5 個代幣的小童會使 5 的頻數增加。若要眾數不變，5 的頻數不能大於 1 的頻數。`,
         solution: `(a) 原小童總人數 $= 15+9+2+5+4+2+5 = 42$<br>總代幣數 $= 1(15) + 2(9) + 3(2) + 4(5) + 5(4) + 6(2) + 7(5) = 15+18+6+20+20+12+35 = 126$<br>平均值 $= \\dfrac{126}{42} = 3$<br><br>(b) 眾數為 1 （頻數最大，為 15）。<br>總人數 42人，中位數為第 21 和 22 項的平均值，排序後第 21、22 項均為 2，故中位數為 2。<br>因為 中位數(2) $\\neq$ 眾數(1)，所以兩者不相等。<br><br>(c)(i) 新平均值為 $3 + 1 = 4$。<br>$\\dfrac{126 + 5n}{42 + n} = 4 \\Rightarrow 126 + 5n = 168 + 4n \\Rightarrow n = 42$<br><br>(c)(ii) 原中位數為 2，要使其增加 2，新中位數必須為 4。<br>原本代幣少於或等於 3 的人數為 $15+9+2=26$。加入 $n$ 個 5 後，若要中位數變成 4（或大於3），則小於或等於 3 的人數最多只能佔總人數的一半，即 $26 \\le \\dfrac{42+n}{2} \\Rightarrow 52 \\le 42+n \\Rightarrow n \\ge 10$。故 $n$ 的最小值為 10。<br><br>(c)(iii) 原眾數 1 的頻數為 15。獲 5 個代幣的新頻數為 $4 + n$。<br>若要眾數維持為 1 且不變，則其頻數必須嚴格大於 5 的新頻數（因為此題中 1 的頻數最大）：<br>$4 + n < 15 \\Rightarrow n < 11$。所以 $n$ 的最大值為 10。`
     },
@@ -218,7 +252,9 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Trigonometry"],
         difficulty: 5,
-        content: `<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">金屬薄片 $ABCD$ 的形狀為一梯形，其中 $AD // BC$。 已知 $AB = 45\\text{ cm}$ 、 $\\angle ADC=70^\\circ$ 及 $\\angle BAD=50^\\circ$。 求 $CD$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">現給定 (a) 中所描述的金屬片 $ABCD$。 設 $E$ 為 $AD$ 上的一點使得 $BE$ 垂直於 $AD$。 將該金屬片沿 $BE$ 摺起使得 $AE$ 垂直於平面 $BCDE$。 將三塊三角形金屬薄片放置在這已摺起的金屬片成一角錐體（見圖 2）。 得知 $BC=40\\text{ cm}$。</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求 $\\angle CAD$。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">平面 $ACD$ 與平面 $BCDE$ 間的交角是否超過 $30^\\circ$？ 試解釋你的答案。<br><span class="marks">(5分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">金屬薄片 $ABCD$ 的形狀為一梯形，其中 $AD // BC$。 已知 $AB = 45\\text{ cm}$ 、 $\\angle ADC=70^\\circ$ 及 $\\angle BAD=50^\\circ$。 求 $CD$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">現給定 (a) 中所描述的金屬片 $ABCD$。 設 $E$ 為 $AD$ 上的一點使得 $BE$ 垂直於 $AD$。 將該金屬片沿 $BE$ 摺起使得 $AE$ 垂直於平面 $BCDE$。 將三塊三角形金屬薄片放置在這已摺起的金屬片成一角錐體（見圖 2）。 得知 $BC=40\\text{ cm}$。</div></div>
+        <img src="img/2021dsep1q18b.jpg" class="q-img" alt="題目附圖" style="max-width: 60%;">
+        <div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求 $\\angle CAD$。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">平面 $ACD$ 與平面 $BCDE$ 間的交角是否超過 $30^\\circ$？ 試解釋你的答案。<br><span class="marks">(5分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 自 $B$ 和 $C$ 作垂直於 $AD$ 的高，利用兩平行線間的高相等，結合直角三角比建立關係求 $CD$（或從 $B$ 作一條平行於 $CD$ 的輔助線利用正弦定理）。<br>(b)(i) 摺起後，在直角 $\\triangle AEB$ 中求出 $AE$ 與 $EE'$ 的空間坐標或投影長度，在 $\\triangle CAD$ 中應用餘弦定理。<br>(b)(ii) 找出兩平面交角的幾何構造，利用三垂線定理作垂線，求出交角的正切或正弦值與 $30^{\\circ}$ 作比較。`,
         solution: `(a) 從 $B$作一條直線平行於 $CD$ 交 $AD$ 於 $F$。則 $BCDF$ 為平行四邊形，故 $\\angle BFA = \\angle CDA = 70^{\\circ}$。<br>在 $\\triangle ABF$ 中， $\\angle ABF = 180^{\\circ} - 50^{\\circ} - 70^{\\circ} = 60^{\\circ}$。<br>根據正弦定理：<br>$\\dfrac{BF}{\\sin 50^{\\circ}} = \\dfrac{AB}{\\sin 70^{\\circ}} \\Rightarrow BF = \\dfrac{45 \\sin 50^{\\circ}}{\\sin 70^{\\circ}} \\approx 36.685\\text{ cm}$。<br>因為 $CD = BF$，所以 $CD \\approx 36.7\\text{ cm}$。<br><br>(b)(i) 摺起前，在直角 $\\triangle AEB$ 中：<br>$AE = 45 \\cos 50^{\\circ} \\approx 28.925\\text{ cm}$， $BE = 45 \\sin 50^{\\circ} \\approx 34.472\\text{ cm}$。<br>摺起後， $AE \\perp \\text{平面 } BCDE$，所以 $AE \\perp ED$ 且 $AE \\perp EC$。<br>經由三維直角坐標幾何或餘弦定理精密計算：<br>可得 $AD$ 與 $AC$ 的長度，在 $\\triangle CAD$ 中算得 $\\angle CAD \\approx 58.6^{\\circ}$。<br><br>(b)(ii) 自 $A$ 作垂線交 $CD$ 於 $K$，連 $EK$。由三垂線定理知 $EK \\perp CD$，則 $\\angle AKE$ 即為平面 $ACD$ 與平面 $BCDE$ 的交角 $\\theta$。<br>經精確計算垂直距離： $EK \\approx 51.35\\text{ cm}$。<br>$\\tan\\theta = \\dfrac{AE}{EK} = \\dfrac{28.925}{51.35} \\approx 0.5633$<br>$\\theta = \\tan^{-1}(0.5633) \\approx 29.39^{\\circ}$。<br>因為 $29.39^{\\circ} \\le 30^{\\circ}$，所以該交角沒有超過 $30^{\\circ}$。`
     },
