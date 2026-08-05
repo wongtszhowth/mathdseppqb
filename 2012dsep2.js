@@ -538,7 +538,7 @@ D.\t$\\dfrac{19}{100}$
         topic: ["Probability", "Statistical Graphs"],
         difficulty: 2,
         content: `下面的幹葉圖顯示一群文娛中心的會員的年歲的分佈。
-        <table class="q-table" style="border-collapse: collapse; table-layout: auto; width: auto;" align="center">
+        <table class="q-table" style="border-collapse: collapse; table-layout: auto; width: auto; white-space: pre;" align="center">
     <colgroup>
       <col style="width: auto;">
       <col style="width: auto;">
