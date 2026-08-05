@@ -598,8 +598,7 @@ D.\t$y$ 隨 $x^{-3}$ 正變。
   </table>
 下列哪一個框線圖可表示他們時薪的分佈？
 <div class="q-mcopt">
-<img src="img/2013dsep2q29A.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 40%;">\t\t<img src="img/2013dsep2q29B.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 40%;"><br>
-<img src="img/2013dsep2q29C.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 40%;">\t\t<img src="img/2013dsep2q29D.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 40%;">
+<img src="img/2013dsep2q29A.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 40%;"><br><img src="img/2013dsep2q29B.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 40%;"><br><img src="img/2013dsep2q29C.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 40%;"><br><img src="img/2013dsep2q29D.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 40%;">
 </div>`,
         hint: `由幹葉圖求四分位數。 `,
         solution: `D (57%)`
