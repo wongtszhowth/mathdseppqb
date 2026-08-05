@@ -268,8 +268,7 @@ D.\tI、II 及 III
         topic: ["Sequences"],
         difficulty: 1,
         content: `圖中，第 $1$ 個圖案包含 $8$ 粒點子。 對任意正整數 $n$，第 $(n+1)$ 個圖案是由第 $n$ 個圖案加上 $(2n+6)$ 粒點子所組成。 求第 $7$ 個圖案的點子數目。
-<img src="img/2022dsep2q14.jpg" class="q-img" alt="題目附圖" style="max-width: 95%;">
-<div class="q-mcopt">
+<img src="img/2022dsep2q14.jpg" class="q-img" alt="題目附圖" style="max-width: 95%;"><div class="q-mcopt">
 A.\t$52$<br>
 B.\t$68$<br>
 C.\t$86$<br>
@@ -306,12 +305,12 @@ D.\t$2:5$。
         domain: ["Geometry"],
         topic: ["Mensuration"],
         difficulty: 2,
-        content: `某圓的直徑為 $10$ cm。 一長度為 $8$ cm 的弦把該圓分成一優弓形及一劣弓形。 求該優弓形的面積準確至最接近的 cm$^2$。
+        content: `某圓的直徑為 $10\\text{ cm}$。 一長度為 $8\\text{ cm}$ 的弦把該圓分成一優弓形及一劣弓形。 求該優弓形的面積準確至最接近的 $\\text{ cm}^2$。
 <div class="q-mcopt">
-A.\t$11$ cm$^2$<br>
-B.\t$23$ cm$^2$<br>
-C.\t$55$ cm$^2$<br>
-D.\t$67$ cm$^2$
+A.\t$11\\text{ cm}^2$<br>
+B.\t$23\\text{ cm}^2$<br>
+C.\t$55\\text{ cm}^2$<br>
+D.\t$67\\text{ cm}^2$
 </div>`,
         hint: `先求圓心角及扇形面積，再減三角形。`,
         solution: `D (33%)`
@@ -325,12 +324,12 @@ D.\t$67$ cm$^2$
         domain: ["Geometry"],
         topic: ["Geometry (Polygons)"],
         difficulty: 2,
-        content: `圖中，$M$ 及 $N$ 分別為 $PQ$ 及 $QR$ 上的點使得 $PM:MQ = 5:6$ 及 $QN:NR = 3:4$。 若四邊形 $MNRP$ 的面積為 $59$ cm$^2$，則 $\\Delta MNQ$ 的面積為
+        content: `圖中，$M$ 及 $N$ 分別為 $PQ$ 及 $QR$ 上的點使得 $PM:MQ = 5:6$ 及 $QN:NR = 3:4$。 若四邊形 $MNRP$ 的面積為 $59\\text{ cm}^2$，則 $\\Delta MNQ$ 的面積為
 <div class="q-mcopt"><img src="img/2022dsep2q17.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
-A.\t$17$ cm$^2$。<br>
-B.\t$18$ cm$^2$。<br>
-C.\t$19$ cm$^2$。<br>
-D.\t$20$ cm$^2$。
+A.\t$17\\text{ cm}^2$。<br>
+B.\t$18\\text{ cm}^2$。<br>
+C.\t$19\\text{ cm}^2$。<br>
+D.\t$20\\text{ cm}^2$。
 </div><div style="clear: both;"></div>`,
         hint: `利用面積比與底的比例關係。`,
         solution: `B (37%)`
@@ -344,12 +343,12 @@ D.\t$20$ cm$^2$。
         domain: ["Geometry"],
         topic: ["Trigonometry (2D)"],
         difficulty: 2,
-        content: `圖中，長方形 $ABCD$ 的周界為 $170$ cm。 已知 $EBF$ 為一直線及 $\\angle AEB = \\angle BFC = 90^\\circ$。 若 $AE = 24$ cm 及 $BC = 34$ cm，則 $EF =$
+        content: `圖中，長方形 $ABCD$ 的周界為 $170\\text{ cm}$。 已知 $EBF$ 為一直線及 $\\angle AEB = \\angle BFC = 90^\\circ$。 若 $AE = 24\\text{ cm}$ 及 $BC = 34\\text{ cm}$，則 $EF =$
 <div class="q-mcopt"><img src="img/2022dsep2q18.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
-A.\t$45$ cm。<br>
-B.\t$51$ cm。<br>
-C.\t$61$ cm。<br>
-D.\t$75$ cm。
+A.\t$45\\text{ cm}$。<br>
+B.\t$51\\text{ cm}$。<br>
+C.\t$61\\text{ cm}$。<br>
+D.\t$75\\text{ cm}$。
 </div><div style="clear: both;"></div>`,
         hint: `先求 $AB$ 及 $BE$、$CF$，再用畢氏定理。`,
         solution: `C (70%)`
@@ -425,12 +424,12 @@ D.\t$64^\\circ$。
         domain: ["Geometry"],
         topic: ["Geometry (Circles)"],
         difficulty: 2,
-        content: `圖中，$ABC$ 為一直角三角形且 $\\angle ABC = 90^\\circ$。 設 $D$ 及 $E$ 分別為 $AC$ 及 $BC$ 上的點使得 $ABED$ 為一圓內接四邊形。 若 $AB = 660$ cm 、 $AD = 572$ cm 及 $BE = 275$ cm，則 $CD =$
+        content: `圖中，$ABC$ 為一直角三角形且 $\\angle ABC = 90^\\circ$。 設 $D$ 及 $E$ 分別為 $AC$ 及 $BC$ 上的點使得 $ABED$ 為一圓內接四邊形。 若 $AB = 660\\text{ cm}$ 、 $AD = 572\\text{ cm}$ 及 $BE = 275\\text{ cm}$，則 $CD =$
 <div class="q-mcopt"><img src="img/2022dsep2q22.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 65%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
-A.\t$429$ cm。<br>
-B.\t$715$ cm。<br>
-C.\t$728$ cm。<br>
-D.\t$845$ cm。
+A.\t$429\\text{ cm}$。<br>
+B.\t$715\\text{ cm}$。<br>
+C.\t$728\\text{ cm}$。<br>
+D.\t$845\\text{ cm}$。
 </div><div style="clear: both;"></div>`,
         hint: `利用圓內接四邊形及相似三角形或畢氏定理。`,
         solution: `C (41%)`
@@ -564,10 +563,10 @@ D.\t$\\dfrac{1}{10}$
         difficulty: 1,
         content: `$60$ 名男演員和 $40$ 名女演員的平均體重為 $57$ kg。 若男演員的平均體重為 $63$ kg，則女演員的平均體重為
 <div class="q-mcopt">
-A.\t$48$ kg。<br>
-B.\t$50$ kg。<br>
-C.\t$53$ kg。<br>
-D.\t$60$ kg。
+A.\t$48\\text{ kg}$。<br>
+B.\t$50\\text{ kg}$。<br>
+C.\t$53\\text{ kg}$。<br>
+D.\t$60\\text{ kg}$。
 </div>`,
         hint: `用加權平均列方程。`,
         solution: `A (79%)`
@@ -603,7 +602,7 @@ D.\t只有 II 及 III
         section: "MC_B",
         level: ["Senior"],
         domain: ["Algebra"],
-        topic: ["Laws of Indices"],
+        topic: ["Laws of Indices", "Exponential Functions and Logarithm Functions"],
         difficulty: 2,
         content: `下列何者最小？
 <div class="q-mcopt">
@@ -729,7 +728,7 @@ D.\t$43$。
         domain: ["Algebra"],
         topic: ["Sequences"],
         difficulty: 2,
-        content: `設 $a_n$ 為一等比數列的第 $n$ 項。 已知 $a_1=8p^2$ 、 $a_2=1$ 及 $a_3=27p$，其中 $p$ 為一實數。 求 $a_4$。
+        content: `設 $a_n$ 為一等比數列的第 $n$ 項。 已知  $a_1=8p^2$ 、 $a_2=1$  及  $a_3=27p$ ，其中 $p$ 為一實數。 求 $a_4$。
 <div class="q-mcopt">
 A.\t$\\dfrac{1}{6}$<br>
 B.\t$\\dfrac{2}{9}$<br>
@@ -803,7 +802,7 @@ D.\t$60^\\circ<\\beta<\\alpha$
         section: "MC_B",
         level: ["Senior"],
         domain: ["Geometry"],
-        topic: ["Coordinate Geometry"],
+        topic: ["Coordinate Geometry", "Equations of Straight Lines"],
         difficulty: 3,
         content: `設 $O$ 為原點。 點 $A$ 及點 $B$ 的坐標分別為 $(a,0)$ 及 $(0,b)$，其中 $a$ 及 $b$ 均為正數。 若 $\\Delta OAB$ 的外心在直線 $4x+16y=17a$ 上，則 $a:b=$
 <div class="q-mcopt">
