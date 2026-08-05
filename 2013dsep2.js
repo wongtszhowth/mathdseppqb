@@ -130,7 +130,7 @@ A.\t$x = 2$。 <br>
 B.\t$x = 3$。 <br>
 C.\t$x = 5$。 <br>
 D.\t$y = 8$。 
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `對稱軸為 $x = -b/(2a)$。 `,
         solution: `B (59%)`
     },
@@ -268,7 +268,7 @@ A.\t只有 I 及 II<br>
 B.\t只有 I 及 III<br>
 C.\t只有 II 及 III<br>
 D.\tI、II 及 III
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `由圖像判斷斜率及截距。 `,
         solution: `D (21%)`
     },
@@ -287,7 +287,7 @@ A.\t$2$。 <br>
 B.\t$4$。 <br>
 C.\t$8$。 <br>
 D.\t$16$。 
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `觀察陰影後的對稱軸。 `,
         solution: `B (71%)`
     },
@@ -306,7 +306,7 @@ A.\t$0.23\\text{ cm}^2$<br>
 B.\t$0.52\\text{ cm}^2$<br>
 C.\t$0.64\\text{ cm}^2$<br>
 D.\t$1.07\\text{ cm}^2$
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `用扇形面積減三角形面積。 `,
         solution: `B (33%)`
     },
@@ -325,7 +325,7 @@ A.\t$30\\pi\\text{ cm}^2$<br>
 B.\t$33\\pi\\text{ cm}^2$<br>
 C.\t$48\\pi\\text{ cm}^2$<br>
 D.\t$51\\pi\\text{ cm}^2$
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `計算圓錐側面 + 半球曲面。 `,
         solution: `B (56%)`
     },
@@ -344,7 +344,7 @@ A.\t$216\\text{ cm}^2$。 <br>
 B.\t$264\\text{ cm}^2$。 <br>
 C.\t$280\\text{ cm}^2$。 <br>
 D.\t$320\\text{ cm}^2$。 
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用相似及面積比。 `,
         solution: `C (37%)`
     },
@@ -363,7 +363,7 @@ A.\t$53^\\circ$。 <br>
 B.\t$57^\\circ$。 <br>
 C.\t$69^\\circ$。 <br>
 D.\t$74^\\circ$。 
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用等腰及平行線性質。 `,
         solution: `C (56%)`
     },
@@ -382,7 +382,7 @@ A.\tN$24^\\circ$W。 <br>
 B.\tN$27^\\circ$W。 <br>
 C.\tS$24^\\circ$E。 <br>
 D.\tS$27^\\circ$E。 
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用等腰三角形及方位角。 `,
         solution: `D (58%)`
     },
@@ -772,7 +772,7 @@ A.\t只有 I 及 II<br>
 B.\t只有 I 及 III<br>
 C.\t只有 II 及 III<br>
 D.\tI、II 及 III
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `由圖像判斷 $h$、$k$ 的符號。 `,
         solution: `A (29%)`
     },
@@ -810,7 +810,7 @@ A.\t$26^\\circ$。 <br>
 B.\t$28^\\circ$。 <br>
 C.\t$31^\\circ$。 <br>
 D.\t$34^\\circ$。 
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用切線與弦的夾角及圓心角。 `,
         solution: `D (39%)`
     },
