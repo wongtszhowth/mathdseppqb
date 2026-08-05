@@ -296,12 +296,12 @@ D.\t$144\\pi\\text{ cm}^3$。
         domain: ["Geometry"],
         topic: ["Geometry (Polygons)"],
         difficulty: 2,
-        content: `圖中，$ABCD$ 及 $BEDF$ 均為平行四邊形。 $E$ 為 $BC$ 上的一點使得 $BE:EC = 2:3$。 $AC$ 分別與 $BF$ 及 $DE$ 相交於 $G$ 及 $H$。 若 $\\Delta ABG$ 的面積為 $135$ cm$^2$，則四邊形 $DFGH$ 的面積為
+        content: `圖中，$ABCD$ 及 $BEDF$ 均為平行四邊形。 $E$ 為 $BC$ 上的一點使得 $BE:EC = 2:3$。 $AC$ 分別與 $BF$ 及 $DE$ 相交於 $G$ 及 $H$。 若 $\\Delta ABG$ 的面積為 $135\\text{ cm}^2$，則四邊形 $DFGH$ 的面積為
 <div class="q-mcopt">
-A.\t$60$ cm$^2$。 <br>
-B.\t$81$ cm$^2$。 <br>
-C.\t$90$ cm$^2$。 <br>
-D.\t$144$ cm$^2$。 
+A.\t$60\\text{ cm}^2$。 <br>
+B.\t$81\\text{ cm}^2$。 <br>
+C.\t$90\\text{ cm}^2$。 <br>
+D.\t$144\\text{ cm}^2$。 
 </div>`,
         hint: `利用面積比與底的比例關係。 `,
         solution: `D (32%)`
@@ -315,12 +315,12 @@ D.\t$144$ cm$^2$。
         domain: ["Geometry"],
         topic: ["Geometry (Triangles)"],
         difficulty: 2,
-        content: `圖中，$ABC$ 為一等邊三角形，其邊長為 $16$ cm。 $D$ 及 $E$ 分別為 $AB$ 及 $BC$ 上的點使得 $AD = 4$ cm 及 $\\angle CDE = 60^\\circ$。 求 $CE$。 
+        content: `圖中，$ABC$ 為一等邊三角形，其邊長為 $16\\text{ cm}$。 $D$ 及 $E$ 分別為 $AB$ 及 $BC$ 上的點使得 $AD = 4\\text{ cm}$ 及 $\\angle CDE = 60^\\circ$。 求 $CE$。 
 <div class="q-mcopt">
-A.\t$9$ cm<br>
-B.\t$10$ cm<br>
-C.\t$12$ cm<br>
-D.\t$13$ cm
+A.\t$9\\text{ cm}$<br>
+B.\t$10\\text{ cm}$<br>
+C.\t$12\\text{ cm}$<br>
+D.\t$13\\text{ cm}$
 </div>`,
         hint: `利用等邊三角形及等角性質。 `,
         solution: `D (36%)`
@@ -336,10 +336,10 @@ D.\t$13$ cm
         difficulty: 2,
         content: `圖中，$AB = BC$ 及 $D$ 為 $AE$ 上的一點使得 $AC = AD$。 若 $AE//BC$，則 $\\angle ABC =$
 <div class="q-mcopt">
-A.\t$44^\\circ$。 <br>
-B.\t$56^\\circ$。 <br>
-C.\t$62^\\circ$。 <br>
-D.\t$68^\\circ$。 
+A.\t$44^\\circ$。<br>
+B.\t$56^\\circ$。<br>
+C.\t$62^\\circ$。<br>
+D.\t$68^\\circ$。
 </div>`,
         hint: `利用等腰三角形及平行線性質。 `,
         solution: `A (45%)`
@@ -351,14 +351,14 @@ D.\t$68^\\circ$。
         section: "MC_A",
         level: ["Junior"],
         domain: ["Geometry"],
-        topic: ["Coordinate Geometry"],
+        topic: ["Pythagoras Theorem"],
         difficulty: 2,
         content: `圖中，連接 $A$ 與 $H$ 的線段的長度為
 <div class="q-mcopt">
-A.\t$6$。 <br>
-B.\t$8$。 <br>
-C.\t$9$。 <br>
-D.\t$10$。 
+A.\t$6$。<br>
+B.\t$8$。<br>
+C.\t$9$。<br>
+D.\t$10$。
 </div>`,
         hint: `用坐標距離公式計算。 `,
         solution: `D (68%)`
@@ -374,8 +374,8 @@ D.\t$10$。
         difficulty: 3,
         content: `$ABCD$ 為一平行四邊形。 設 $E$ 為 $AD$ 的中點。 若 $\\angle ABE = \\angle CBD = \\angle DBE$，則下列何者正確？
 <div class="q-mcms">
-I.\t$AB = BD$<br>
-II.\t$\\angle ABC = 135^\\circ$<br>
+I.\t$AB = BD$
+II.\t$\\angle ABC = 135^\\circ$
 III.\t$\\Delta ABE \\cong \\Delta DBE$
 </div>
 <div class="q-mcopt">
@@ -436,9 +436,9 @@ D.\t$57^\\circ$
         difficulty: 2,
         content: `圖中，直線 $L_1$ 及直線 $L_2$ 的方程分別為 $x+my=n$ 及 $x+py=q$。 下列何者正確？
 <div class="q-mcms">
-I.\t$m < p$<br>
-II.\t$n > q$<br>
-III.\t$n+m < p+q$
+I.\t$m \\lt p$
+II.\t$n \\gt q$
+III.\t$n+m \\lt p+q$
 </div>
 <div class="q-mcopt">
 A.\t只有 I 及 II<br>
@@ -460,10 +460,10 @@ D.\tI、II 及 III
         difficulty: 2,
         content: `直線 $L$ 垂直於直線 $9x-5y+45=0$。 若 $L$ 的 $x$ 截距為 $-3$，則 $L$ 的方程為
 <div class="q-mcopt">
-A.\t$5x+9y+15=0$。 <br>
-B.\t$5x+9y+27=0$。 <br>
-C.\t$9x-5y+15=0$。 <br>
-D.\t$9x-5y+27=0$。 
+A.\t$5x+9y+15=0$。<br>
+B.\t$5x+9y+27=0$。<br>
+C.\t$9x-5y+15=0$。<br>
+D.\t$9x-5y+27=0$。
 </div>`,
         hint: `兩直線垂直時斜率乘積為 $-1$。 `,
         solution: `A (59%)`
@@ -477,12 +477,11 @@ D.\t$9x-5y+27=0$。
         domain: ["Geometry"],
         topic: ["Coordinate Geometry"],
         difficulty: 2,
-        content: `點 $P$、點 $Q$ 及點 $R$ 的極坐標分別為 $(3,160^\\circ)$、$(4,280^\\circ)$ 及 $(6,340^\\circ)$。 由 $Q$ 至 $PR$ 的垂直距離為
-<div class="q-mcopt">
-A.\t$2$。 <br>
-B.\t$3$。 <br>
-C.\t$2\\sqrt{3}$。 <br>
-D.\t$3\\sqrt{3}$。 
+        content: `<div style="color: red;">點 $P$、點 $Q$ 及點 $R$ 的極坐標分別為 $(3,160^\\circ)$、$(4,280^\\circ)$ 及 $(6,340^\\circ)$。 由 $Q$ 至 $PR$ 的垂直距離為</div><div class="q-mcopt" style="color: red;">
+A.\t$2$。<br>
+B.\t$3$。<br>
+C.\t$2\\sqrt{3}$。<br>
+D.\t$3\\sqrt{3}$。
 </div>`,
         hint: `轉直角坐標後用點到直線距離公式。 `,
         solution: `C (57%)`
@@ -498,8 +497,8 @@ D.\t$3\\sqrt{3}$。
         difficulty: 2,
         content: `圓 $C_1$ 及圓 $C_2$ 的方程分別為 $x^2+y^2+8x-4y-5=0$ 及 $2x^2+2y^2+8x-4y-5=0$。 設 $G_1$ 及 $G_2$ 分別為 $C_1$ 及 $C_2$ 的圓心。 將原點記為 $O$。 下列何者正確？
 <div class="q-mcms">
-I.\t$G_1$、$G_2$ 與 $O$ 共線。 <br>
-II.\t$C_1$ 與 $C_2$ 的半徑相等。 <br>
+I.\t$G_1$ 、 $G_2$ 與 $O$ 共線。
+II.\t$C_1$ 與 $C_2$ 的半徑相等。
 III.\t$O$ 與 $G_1$ 及 $G_2$ 等距。 
 </div>
 <div class="q-mcopt">
@@ -518,7 +517,7 @@ D.\t只有 II 及 III
         section: "MC_A",
         level: ["Junior"],
         domain: ["Geometry"],
-        topic: ["Loci", "Equations of Circles"],
+        topic: ["Loci", "Equations of Straight Lines", "Equations of Circles"],
         difficulty: 2,
         content: `已知 $A$ 及 $B$ 為圓 $x^2+y^2-6x-4y-87=0$ 上的兩相異點。 設 $P$ 為直角坐標平面上的一動點使得 $AP=BP$。 $P$ 的軌跡的方程為 $x+2y+k=0$，其中 $k$ 為一常數。 求 $k$。 
 <div class="q-mcopt">
@@ -577,12 +576,10 @@ D.\t$40$
         domain: ["Data Handling"],
         topic: ["Measures of Central Tendency", "Measures of Dispersion"],
         difficulty: 2,
-        content: `考慮以下正整數：
-$$2 \\quad 3 \\quad 4 \\quad 6 \\quad 7 \\quad 9 \\quad 10 \\quad m \\quad n$$
-設 $a$、$b$ 及 $c$ 分別為以上正整數的眾數、中位數及分佈域。 若以上正整數的平均值為 $5$，則下列何者必為正確？
+        content: `考慮以下正整數：<div style="text-align: center;">2　3　4　6　7　9　10　$m$　$n$</div>設 $a$、$b$ 及 $c$ 分別為以上正整數的眾數、中位數及分佈域。 若以上正整數的平均值為 $5$，則下列何者必為正確？
 <div class="q-mcms">
-I.\t$a=2$<br>
-II.\t$b=4$<br>
+I.\t$a=2$
+II.\t$b=4$
 III.\t$c=8$
 </div>
 <div class="q-mcopt">
