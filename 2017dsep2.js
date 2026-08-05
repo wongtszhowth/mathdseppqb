@@ -88,10 +88,10 @@ D.\t$0.010266$（準確至六位小數）。
         difficulty: 1,
         content: `$6-x<2x-3$  或  $7-3x>1$  的解為
 <div class="q-mcopt">
-A.\t$x<2$。 <br>
-B.\t$x>3$。 <br>
-C.\t$2<x<3$。 <br>
-D.\t$x<2$ 或 $x>3$。 
+A.\t$x \\lt 2$。 <br>
+B.\t$x \\gt 3$。 <br>
+C.\t$2 \\lt x \\lt 3$。 <br>
+D.\t$x \\lt 2$ 或 $x \\gt 3$。 
 </div>`,
         hint: `分別解兩個不等式再取聯集。 `,
         solution: `D (87%)`
@@ -239,8 +239,7 @@ D.\t47。
         topic: ["Sequences"],
         difficulty: 1,
         content: `圖中，第 $1$ 個圖案包含 $1$ 粒點子。 對任意正整數 $n$，第 $(n+1)$ 個圖案是由第 $n$ 個圖案加上 $(2n+2)$ 粒點子所組成。 求第 $7$ 個圖案的點子數目。 
-<img src="img/2017dsep2q13.jpg" class="q-img" alt="題目附圖" style="max-width: 85%;">
-<div class="q-mcopt">
+<img src="img/2017dsep2q13.jpg" class="q-img" alt="題目附圖" style="max-width: 85%;"><div class="q-mcopt">
 A.\t$41$<br>
 B.\t$55$<br>
 C.\t$71$<br>
@@ -558,8 +557,7 @@ D.\t$\\dfrac{7}{25}$
         topic: ["Statistical Graphs", "Measures of Dispersion"],
         difficulty: 1,
         content: `下面的框線圖顯示一班學生在某星期的上網時數的分佈。 求該分佈的下四分位數。
-        <img src="img/2017dsep2q29zh.jpg" class="q-img" alt="題目附圖" style="max-width: 60%;">
-<div class="q-mcopt">
+        <img src="img/2017dsep2q29zh.jpg" class="q-img" alt="題目附圖" style="max-width: 60%;"><div class="q-mcopt">
 A.\t$5$<br>
 B.\t$15$<br>
 C.\t$25$<br>
@@ -601,11 +599,10 @@ D.\t只有 II 及 III
         domain: ["Algebra"],
         topic: ["Functions and Graphs"],
         difficulty: 2,
-        content: `<img src="img/2017dsep2q31.jpg" class="q-img" alt="題目附圖" style="max-width: 33%;">
-上圖所示為 $y=\\mathrm{f}(x)$ 的圖像。 若 $\\mathrm{g}(x)=\\mathrm{f}\\left(\\dfrac{x}{2}\\right)$，則下列何者可表示 $y=\\mathrm{g}(x)$ 的圖像？
+        content: `<img src="img/2017dsep2q31.jpg" class="q-img" alt="題目附圖" style="max-width: 33%;"><br>上圖所示為 $y=\\mathrm{f}(x)$ 的圖像。 若 $\\mathrm{g}(x)=\\mathrm{f}\\left(\\dfrac{x}{2}\\right)$，則下列何者可表示 $y=\\mathrm{g}(x)$ 的圖像？
 <div class="q-mcopt">
-<img src="img/2017dsep2q31A.jpg" class="q-img" alt="題目附圖" style="max-width: 35%;">\t<img src="img/2017dsep2q31B.jpg" class="q-img" alt="題目附圖" style="max-width: 35%;"><br>
-<img src="img/2017dsep2q31C.jpg" class="q-img" alt="題目附圖" style="max-width: 35%;">\t<img src="img/2017dsep2q31D.jpg" class="q-img" alt="題目附圖" style="max-width: 35%;">
+<img src="img/2017dsep2q31A.jpg" class="q-img" alt="題目附圖" style="display: inline-block; max-width: 35%;">\t<img src="img/2017dsep2q31B.jpg" class="q-img" alt="題目附圖" style="display: inline-block; max-width: 35%;"><br>
+<img src="img/2017dsep2q31C.jpg" class="q-img" alt="題目附圖" style="display: inline-block; max-width: 35%;">\t<img src="img/2017dsep2q31D.jpg" class="q-img" alt="題目附圖" style="display: inline-block; max-width: 35%;">
 </div>`,
         hint: `沿 $x$ 方向伸展 2 倍。 `,
         solution: `D (41%)`
@@ -698,7 +695,7 @@ D.\t$2$。
 <div class="q-mcms">
 I.\t$\\pi^{30}$ ,  $\\pi^{45}$ ,  $\\pi^{60}$
 II.\t$30\\pi$ ,  $45\\pi$ ,  $60\\pi$
-III.\t$\\pi - 30$ ,  $\\pi - 45 ,  $\\pi - 60$
+III.\t$\\pi - 30$ ,  $\\pi - 45$ ,  $\\pi - 60$
 </div>
 <div class="q-mcopt">
 A.\t只有 I 及 II<br>
