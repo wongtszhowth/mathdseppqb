@@ -600,9 +600,9 @@ D.\t只有 II 及 III
         topic: ["Functions and Graphs"],
         difficulty: 2,
         content: `<img src="img/2017dsep2q31.jpg" class="q-img" alt="題目附圖" style="max-width: 33%;"><br>上圖所示為 $y=\\mathrm{f}(x)$ 的圖像。 若 $\\mathrm{g}(x)=\\mathrm{f}\\left(\\dfrac{x}{2}\\right)$，則下列何者可表示 $y=\\mathrm{g}(x)$ 的圖像？
-<div class="q-mcopt">
-<img src="img/2017dsep2q31A.jpg" class="q-img" alt="題目附圖" style="display: inline-block; max-width: 35%;">\t<img src="img/2017dsep2q31B.jpg" class="q-img" alt="題目附圖" style="display: inline-block; max-width: 35%;"><br>
-<img src="img/2017dsep2q31C.jpg" class="q-img" alt="題目附圖" style="display: inline-block; max-width: 35%;">\t<img src="img/2017dsep2q31D.jpg" class="q-img" alt="題目附圖" style="display: inline-block; max-width: 35%;">
+<div class="q-mcopt" style="vertical-align: top;">
+<img src="img/2017dsep2q31A.jpg" class="q-img" alt="題目附圖" style="display: inline-block; max-width: 35%;">\t\t\t<img src="img/2017dsep2q31B.jpg" class="q-img" alt="題目附圖" style="display: inline-block; max-width: 35%;"><br>
+<img src="img/2017dsep2q31C.jpg" class="q-img" alt="題目附圖" style="display: inline-block; max-width: 35%;">\t\t\t<img src="img/2017dsep2q31D.jpg" class="q-img" alt="題目附圖" style="display: inline-block; max-width: 35%;">
 </div>`,
         hint: `沿 $x$ 方向伸展 2 倍。 `,
         solution: `D (41%)`
