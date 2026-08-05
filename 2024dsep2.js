@@ -295,12 +295,12 @@ D.\t$72^\\circ$。
         domain: ["Geometry"],
         topic: ["Mensuration"],
         difficulty: 2,
-        content: `一直立圓柱體的高與一直立圓錐體的高之比為 $32:15$，而該圓柱體的體積與該圓錐體的體積之比為 $10:9$。 若該圓柱體的底半徑為 $25$ cm，則該圓錐體的底半徑為
+        content: `一直立圓柱體的高與一直立圓錐體的高之比為 $32:15$，而該圓柱體的體積與該圓錐體的體積之比為 $10:9$。 若該圓柱體的底半徑為 $25\\text{ cm}$，則該圓錐體的底半徑為
 <div class="q-mcopt">
-A.\t$20$ cm。<br>
-B.\t$24$ cm。<br>
-C.\t$48$ cm。<br>
-D.\t$60$ cm。
+A.\t$20\\text{ cm}$。<br>
+B.\t$24\\text{ cm}$。<br>
+C.\t$48\\text{ cm}$。<br>
+D.\t$60\\text{ cm}$。
 </div>`,
         hint: `利用體積比及高之比求半徑比。`,
         solution: `D (54%)`
@@ -314,12 +314,12 @@ D.\t$60$ cm。
         domain: ["Geometry"],
         topic: ["Geometry (Polygons)"],
         difficulty: 2,
-        content: `圖中，$ABCD$ 為一正方形。 設 $M$ 為 $BC$ 的中點。 $E$ 為 $AD$ 上的一點使得 $AE:ED = 3:1$。 $F$ 為 $BC$ 的延線上的一點使得 $EF//AM$。 $CD$ 與 $EF$ 相交於點 $G$ 而 $AM$ 與 $BG$ 相交於點 $H$。 若 $\\triangle BMH$ 的面積為 $4$ cm$^2$，則梯形 $AEGH$ 的面積為
+        content: `圖中，$ABCD$ 為一正方形。 設 $M$ 為 $BC$ 的中點。 $E$ 為 $AD$ 上的一點使得 $AE:ED = 3:1$。 $F$ 為 $BC$ 的延線上的一點使得 $EF//AM$。 $CD$ 與 $EF$ 相交於點 $G$ 而 $AM$ 與 $BG$ 相交於點 $H$。 若 $\\triangle BMH$ 的面積為 $4\\text{ cm}^2$，則梯形 $AEGH$ 的面積為
 <div class="q-mcopt"><img src="img/2024dsep2q17.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px;">
-A.\t$12$ cm$^2$。<br>
-B.\t$33$ cm$^2$。<br>
-C.\t$39$ cm$^2$。<br>
-D.\t$45$ cm$^2$。
+A.\t$12\\text{ cm}^2$。<br>
+B.\t$33\\text{ cm}^2$。<br>
+C.\t$39\\text{ cm}^2$。<br>
+D.\t$45\\text{ cm}^2$。
 </div><div style="clear: both;"></div>`,
         hint: `利用相似三角形或面積比關係。`,
         solution: `C (35%)`
@@ -333,12 +333,12 @@ D.\t$45$ cm$^2$。
         domain: ["Geometry"],
         topic: ["Trigonometry (2D)"],
         difficulty: 1,
-        content: `圖中，$ABC$ 為一直線。 已知 $AD = 37$ cm 、 $BC = 5$ cm 、 $BD = 12$ cm 、 $CD = 13$ cm 及 $CE = 9$ cm。 若 $\\angle ACE = 90^\\circ$，求四邊形 $ADCE$ 的周界。
+        content: `圖中，$ABC$ 為一直線。 已知 $AD = 37\\text{ cm}$ 、 $BC = 5\\text{ cm}$ 、 $BD = 12\\text{ cm}$ 、 $CD = 13\\text{ cm}$ 及 $CE = 9\\text{ cm}$。 若 $\\angle ACE = 90^\\circ$，求四邊形 $ADCE$ 的周界。
 <div class="q-mcopt"><img src="img/2024dsep2q18.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px;">
-A.\t$76$ cm<br>
-B.\t$90$ cm<br>
-C.\t$100$ cm<br>
-D.\t$180$ cm
+A.\t$76\\text{ cm}$<br>
+B.\t$90\\text{ cm}$<br>
+C.\t$100\\text{ cm}$<br>
+D.\t$180\\text{ cm}$
 </div><div style="clear: both;"></div>`,
         hint: `先用畢氏定理求 $AC$ 及 $AE$。`,
         solution: `C (82%)`
