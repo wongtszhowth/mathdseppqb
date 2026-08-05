@@ -203,15 +203,15 @@ questions.push(
     </tr>
     <tr>
       <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">1</td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">7\t8\t9</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">7　8　9</td>
     </tr>
     <tr>
       <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">2</td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">0\t$a$\t$a$\t8\t8\t9</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">0　$a$　$a$　8　8　9</td>
     </tr>
     <tr>
       <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">3</td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">$b$\t$b$\t5\t5\t6\t6\t6\t6\t7\t8</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">$b$　$b$　5　5　6　6　6　6　7　8</td>
     </tr>
     <tr>
       <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">4</td>
