@@ -518,7 +518,7 @@ D.\tI、II 及 III
         domain: ["Data Handling"],
         topic: ["Probability"],
         difficulty: 2,
-        content: `$9\\bigstar\\blacklozenge$ 為三位數，其中 $\\bigstar$ 及 $\\blacklozenge$ 均為 $0$ 至 $9$（包括 $0$ 及 $9$）內的整數。 求該三位數可被 $5$ 整除的概率。 
+        content: `9★◆ 為三位數，其中 ★ 及 ◆ 均為 $0$ 至 $9$（包括 $0$ 及 $9$）內的整數。 求該三位數可被 $5$ 整除的概率。 
 <div class="q-mcopt">
 A.\t$\\dfrac{1}{5}$<br>
 B.\t$\\dfrac{7}{33}$<br>
@@ -538,7 +538,7 @@ D.\t$\\dfrac{19}{100}$
         topic: ["Probability", "Statistical Graphs"],
         difficulty: 2,
         content: `下面的幹葉圖顯示一群文娛中心的會員的年歲的分佈。
-<table class="q-table" style="border-collapse: collapse; table-layout: auto;" align="center">
+        <table class="q-table" style="border-collapse: collapse; table-layout: auto;" align="center">
     <colgroup>
       <col style="width: auto;">
       <col style="width: auto;">
@@ -775,7 +775,7 @@ D.\tI、II 及 III
         content: `下列何者可表示在同一直角坐標系上 $y=\\mathrm{f}(x)$ 的圖像及 $y=\\mathrm{f}(x-2)+1$ 的圖像？
 <div class="q-mcopt">
 <img src="img/2012dsep2q38A.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 35%;">\t\t\t<img src="img/2012dsep2q38B.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 35%;"><br>
-<img src="img/2012dsep2q38C.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 35%;">\t\t<img src="img/2012dsep2q38D.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 35%;">
+<img src="img/2012dsep2q38C.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 40%;">\t\t<img src="img/2012dsep2q38D.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 35%;">
 </div>`,
         hint: `水平右移 2 單位，垂直上移 1 單位。 `,
         solution: `C (63%)`
@@ -905,8 +905,8 @@ D.\t$\\dfrac{3}{20}$
         difficulty: 2,
         content: `設 $m_1$、$r_1$ 及 $v_1$ 分別為某組數 $\\{x_1, x_2, x_3, \\dots, x_{100}\\}$ 的平均值、分佈域及方差。 若 $m_2$、$r_2$ 及 $v_2$ 分別為 $\\{x_1, x_2, x_3, \\dots, x_{100}, m_1\\}$ 這組數的平均值、分佈域及方差，則下列何者必為正確？
 <div class="q-mcms">
-I.\t$m_1 = m_2$<br>
-II.\t$r_1 = r_2$<br>
+I.\t$m_1 = m_2$
+II.\t$r_1 = r_2$
 III.\t$v_1 = v_2$
 </div>
 <div class="q-mcopt">
