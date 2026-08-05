@@ -18,7 +18,7 @@ C.\t$\\dfrac{5b^2+13b}{4-b}$。<br>
 D.\t$\\dfrac{5b^2+13b}{4+b}$。
 </div>`,
         hint: `交叉相乘後整理含 $a$ 的項。`,
-        solution: `C (78%)<p><iframe src="https://www.youtube.com/embed/oOzYNlK8iSo?autoplay=0&rel=0" title="解題影片" style="max-width: 100%; max-height: 40vh; aspect-ratio: 17/10;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
+        solution: `C (78%)`
     },
     {
         id: "2023-DSE-MATH-CP2-Q02",
