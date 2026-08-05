@@ -294,7 +294,7 @@ D.\t$288\\text{ cm}^2$。
         domain: ["Geometry"],
         topic: ["Mensuration"],
         difficulty: 1,
-        content: `圖中，扇形 $OAB$ 及扇形 $OCD$ 的圓心均為 $O$。 若 $\\wideparen{AB} = 12\\pi\\text{ cm}$ 、 $\\wideparen{CD} = 16\\pi\\text{ cm}$  及  $OA = 30\\text{ cm}$，則 $AC =$
+        content: `圖中，扇形 $OAB$ 及扇形 $OCD$ 的圓心均為 $O$。 若 $\\overparen{AB} = 12\\pi\\text{ cm}$ 、 $\\overparen{CD} = 16\\pi\\text{ cm}$  及  $OA = 30\\text{ cm}$，則 $AC =$
 <div class="q-mcopt"><img src="img/2012dsep2q16.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 40%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$5\\text{ cm}$。 <br>
 B.\t$10\\text{ cm}$。 <br>
