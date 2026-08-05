@@ -169,7 +169,7 @@ questions.push(
         topic: ["Statistical Graphs", "Measures of Dispersion"],
         difficulty: 1,
         content: `下面的幹葉圖顯示一群研究員在某月內用於閱讀期刊的時數的分佈：
-        <table class="q-table" style="border-collapse: collapse; table-layout: auto; white-space: nowrap;" align="center">
+        <table class="q-table" style="border-collapse: collapse; table-layout: auto; width: auto; white-space: pre;" align="center">
     <colgroup>
       <col style="width: auto;">
       <col style="width: auto;">
