@@ -543,7 +543,7 @@ D.\t$8$。
         domain: ["Data Handling"],
         topic: ["Statistical Graphs"],
         difficulty: 1,
-        content: `下面的散點圖顯示 $x$ 與 $y$ 之間的關係。 下列何者可表示 $x$ 與 $y$ 之間的關係？<img src="img/2013dsep2q28.jpg" class="q-img" alt="題目附圖" style="max-width: 50%;"><div class="q-mcopt">
+        content: `下面的散點圖顯示 $x$ 與 $y$ 之間的關係。 下列何者可表示 $x$ 與 $y$ 之間的關係？<img src="img/2013dsep2q28.jpg" class="q-img" alt="題目附圖" style="max-width: 40%;"><div class="q-mcopt">
 A.\t當 $x$ 增加時，$y$ 增加。 <br>
 B.\t當 $x$ 增加時，$y$ 減少。 <br>
 C.\t$y$ 隨 $x^2$ 反變。 <br>
@@ -613,9 +613,7 @@ D.\t$y$ 隨 $x^{-3}$ 正變。
         domain: ["Data Handling"],
         topic: ["Statistical Graphs"],
         difficulty: 2,
-        content: `下面的圓形圖顯示 $X$ 文具店及 $Y$ 文具店在某月從銷售文具所得的盈利的分佈。 下列何者必為正確？
-<img src="img/2013dsep2q30zh_1.jpg" class="q-img" alt="題目附圖" style="display: inline-block; max-width: 40%;">\t\t<img src="img/2013dsep2q30zh_2.jpg" class="q-img" alt="題目附圖" style="display: inline-block; max-width: 40%;">
-<div class="q-mcopt">
+        content: `下面的圓形圖顯示 $X$ 文具店及 $Y$ 文具店在某月從銷售文具所得的盈利的分佈。 下列何者必為正確？<div style="text-align: center;"><img src="img/2013dsep2q30zh_1.jpg" class="q-img" alt="題目附圖" style="display: inline-block; max-width: 35%;">\t\t<img src="img/2013dsep2q30zh_2.jpg" class="q-img" alt="題目附圖" style="display: inline-block; max-width: 35%;"></div><div class="q-mcopt">
 A.\t在該月，$X$ 文具店從銷售鉛筆所得的盈利與 $Y$ 文具店相同。 <br>
 B.\t在該月，$X$ 文具店從銷售原子筆和筆記簿所得的總盈利少於該店從銷售間尺和鉛筆所得的總盈利。 <br>
 C.\t$k=14$<br>
@@ -652,10 +650,10 @@ D.\t$(a-2)(a+2)^4(a^2-2a+4)$。
         domain: ["Algebra"],
         topic: ["Exponential Functions and Logarithm Functions"],
         difficulty: 2,
-        content: `<img src="img/2013dsep2q32.jpg" class="q-img" alt="題目附圖" style="max-width: 50%;">上圖所示為 $y=ab^x$ 的圖像，其中 $a$ 及 $b$ 均為常數。 下列哪一個圖像可表示 $x$ 與 $\\log_7 y$ 之間的關係？
+        content: `<img src="img/2013dsep2q32.jpg" class="q-img" alt="題目附圖" style="max-width: 40%;">上圖所示為 $y=ab^x$ 的圖像，其中 $a$ 及 $b$ 均為常數。 下列哪一個圖像可表示 $x$ 與 $\\log_7 y$ 之間的關係？
 <div class="q-mcopt">
-<img src="img/2013dsep2q32A.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 35%;">\t\t<img src="img/2013dsep2q32B.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 35%;"><br>
-<img src="img/2013dsep2q32C.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 35%;">\t\t<img src="img/2013dsep2q32D.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 35%;">
+<img src="img/2013dsep2q32A.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 30%;">\t\t<img src="img/2013dsep2q32B.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 30%;"><br>
+<img src="img/2013dsep2q32C.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 30%;">\t\t<img src="img/2013dsep2q32D.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 30%;">
 </div>`,
         hint: `$\\log_7 y$ 與 $x$ 成線性關係。 `,
         solution: `B (40%)`
