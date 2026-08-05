@@ -238,9 +238,7 @@ D.\t$\\dfrac{w^2}{xy^2}$
         domain: ["Algebra"],
         topic: ["Sequences"],
         difficulty: 1,
-        content: `圖中，第 $1$ 個圖案包含 $3$ 粒點子。 對任意正整數 $n$，第 $(n+1)$ 個圖案是由第 $n$ 個圖案加上 $(2n+3)$ 粒點子所組成。 求第 $8$ 個圖案的點子數目。
-        <img src="img/2021dsep2q13.jpg" class="q-img" alt="題目附圖" style="max-width: 90%;">
-<div class="q-mcopt">
+        content: `圖中，第 $1$ 個圖案包含 $3$ 粒點子。 對任意正整數 $n$，第 $(n+1)$ 個圖案是由第 $n$ 個圖案加上 $(2n+3)$ 粒點子所組成。 求第 $8$ 個圖案的點子數目。<img src="img/2021dsep2q13.jpg" class="q-img" alt="題目附圖" style="max-width: 85%;"><div class="q-mcopt">
 A.\t$63$<br>
 B.\t$75$<br>
 C.\t$80$<br>
@@ -282,12 +280,12 @@ D.\t只有 II 及 III
         domain: ["Geometry"],
         topic: ["Mensuration"],
         difficulty: 2,
-        content: `某實心直立角柱體的底為一正 $6$ 邊形，其邊長為 $8$ cm。 若該角柱體的體積為 $288$ cm$^3$，求該角柱體的總表面面積準確至最接近的 cm$^2$。 
+        content: `某實心直立角柱體的底為一正 $6$ 邊形，其邊長為 $8\\text{ cm}$。 若該角柱體的體積為 $288\\text{ cm}^3$，求該角柱體的總表面面積準確至最接近的 $\\text{cm}^2$。 
 <div class="q-mcopt">
-A.\t$166$ cm$^2$<br>
-B.\t$249$ cm$^2$<br>
-C.\t$416$ cm$^2$<br>
-D.\t$748$ cm$^2$
+A.\t$166\\text{ cm}^2$<br>
+B.\t$249\\text{ cm}^2$<br>
+C.\t$416\\text{ cm}^2$<br>
+D.\t$748\\text{ cm}^2$
 </div>`,
         hint: `先求高，再計算底面積及側面積。`,
         solution: `C (43%)`
@@ -301,12 +299,12 @@ D.\t$748$ cm$^2$
         domain: ["Geometry"],
         topic: ["Mensuration"],
         difficulty: 2,
-        content: `某兩實心半球體的總表面面積之和為 $351\\pi$ cm$^2$。 若較小的半球體的半徑與較大的半球體的半徑之比為 $2:3$，則該兩半球體的體積之差為
+        content: `某兩實心半球體的總表面面積之和為 $351\\pi\\text{ cm}^2$。 若較小的半球體的半徑與較大的半球體的半徑之比為 $2:3$，則該兩半球體的體積之差為
 <div class="q-mcopt">
-A.\t$342\\pi$ cm$^3$。 <br>
-B.\t$630\\pi$ cm$^3$。 <br>
-C.\t$684\\pi$ cm$^3$。 <br>
-D.\t$1260\\pi$ cm$^3$。 
+A.\t$342\\pi\\text{ cm}^3$。 <br>
+B.\t$630\\pi\\text{ cm}^3$。 <br>
+C.\t$684\\pi\\text{ cm}^3$。 <br>
+D.\t$1260\\pi\\text{ cm}^3$。 
 </div>`,
         hint: `設半徑後由總表面積求實際半徑。`,
         solution: `A (34%)`
@@ -320,11 +318,11 @@ D.\t$1260\\pi$ cm$^3$。
         domain: ["Geometry"],
         topic: ["Mensuration"],
         difficulty: 2,
-        content: `扇形 $OAB$ 的面積為 $\\pi$ cm$^2$，其中 $O$ 為扇形 $OAB$ 的圓心。 若 $\\angle AOB = 90^\\circ$，則下列何者正確？
+        content: `扇形 $OAB$ 的面積為 $\\pi\\text{ cm}^2$，其中 $O$ 為扇形 $OAB$ 的圓心。 若 $\\angle AOB = 90^\\circ$，則下列何者正確？
 <div class="q-mcms">
-I.\t扇形 $OAB$ 的半徑為 $2$ cm。
-II.\t扇形 $OAB$ 的周界為 $\\pi$ cm。
-III.\t通過 $O$、$A$ 及 $B$ 的圓的面積為 $2\\pi$ cm$^2$。 
+I.\t扇形 $OAB$ 的半徑為 $2\\text{ cm}$。
+II.\t扇形 $OAB$ 的周界為 $\\pi\\text{ cm}$。
+III.\t通過 $O$、$A$ 及 $B$ 的圓的面積為 $2\\pi\\text{ cm}^2$。 
 </div>
 <div class="q-mcopt">
 A.\t只有 I 及 II<br>
@@ -485,7 +483,7 @@ D.\t$\\tan\\theta \\sin\\phi$
         section: "MC_A",
         level: ["Junior"],
         domain: ["Geometry"],
-        topic: ["Loci"],
+        topic: ["Loci", "Equations of Straight Lines", "Equations of Circles"],
         difficulty: 2,
         content: `點 $M$ 及點 $N$ 的坐標分別為 $(5,7)$ 及 $(6,8)$。 設 $P$ 為直角坐標平面上的一動點使得 $PM = MN$。 求 $P$ 的軌跡的方程。 
 <div class="q-mcopt">
@@ -504,7 +502,7 @@ D.\t$x^2+y^2-12x-16y+98=0$
         section: "MC_A",
         level: ["Junior"],
         domain: ["Geometry"],
-        topic: ["Coordinate Geometry"],
+        topic: ["Coordinate Geometry", "Equations of Straight Lines"],
         difficulty: 2,
         content: `點 $A$、點 $B$ 及點 $C$ 的坐標分別為 $(3,3)$、$(5,8)$ 及 $(9,2)$。 設 $P$ 為一點使得 $AP$ 為 $\\Delta ABC$ 的中線。 求通過 $A$ 及 $P$ 的直線的方程。 
 <div class="q-mcopt">
@@ -523,7 +521,7 @@ D.\t$3x+2y-15=0$
         section: "MC_A",
         level: ["Junior"],
         domain: ["Geometry"],
-        topic: ["Equations of Circles"],
+        topic: ["Equations of Circles", "Equations of Straight Lines"],
         difficulty: 2,
         content: `直線 $L$ 的斜率為 $4$。 已知 $L$ 與圓 $x^2+y^2-18x-20y+96=0$ 相交於點 $P$ 及點 $Q$。 若 $PQ$ 的中點的坐標為 $(s,t)$，則下列何者必為正確？
 <div class="q-mcopt">
@@ -544,8 +542,8 @@ D.\t$s+4t+31=0$
         domain: ["Data Handling"],
         topic: ["Probability"],
         difficulty: 2,
-        content: `下面的幹葉圖顯示一群工人的體重（以 kg 為單位）的分佈。 
-<table class="q-table" style="border-collapse: collapse; table-layout: auto;">
+        content: `下面的幹葉圖顯示一群工人的體重（以 kg 為單位）的分佈。
+        <table class="q-table" style="border-collapse: collapse; table-layout: auto;" align="center">
     <colgroup>
       <col style="width: 7em;">
       <col style="width: auto;">
@@ -590,9 +588,7 @@ D.\t$\\dfrac{5}{6}$
         domain: ["Data Handling"],
         topic: ["Statistical Graphs", "Measures of Dispersion"],
         difficulty: 1,
-        content: `下面的框線圖顯示一群研究員的年歲的分佈。 求該分佈的四分位數間距。
-        <img src="img/2021dsep2q29zh.jpg" class="q-img" alt="題目附圖" style="max-width: 60%;">
-<div class="q-mcopt">
+        content: `下面的框線圖顯示一群研究員的年歲的分佈。 求該分佈的四分位數間距。<img src="img/2021dsep2q29zh.jpg" class="q-img" alt="題目附圖" style="max-width: 55%;"><div class="q-mcopt">
 A.\t$5$<br>
 B.\t$10$<br>
 C.\t$20$<br>
@@ -771,12 +767,12 @@ D.\t$k \\le -4$ 或 $k \\ge 8$
         domain: ["Geometry"],
         topic: ["Coordinate Geometry"],
         difficulty: 2,
-        content: `圖中所示為長方形 $ABCD$，其中 $AB=960$ cm 及 $BC=597$ cm。 設 $E$、$F$ 及 $G$ 分別為 $AB$、$BC$ 及 $CD$ 上的點使得 $AE=638$ cm、$BF=280$ cm 及 $CG=480$ cm。 將 $AF$ 與 $EG$ 的交點記為 $H$。 求 $DH$ 準確至最接近的 cm。 
+        content: `圖中所示為長方形 $ABCD$，其中 $AB=960$ cm 及 $BC=597$ cm。 設 $E$、$F$ 及 $G$ 分別為 $AB$、$BC$ 及 $CD$ 上的點使得 $AE=638\\text{ cm}$、$BF=280\\text{ cm}$ 及 $CG=480\\text{ cm}$。 將 $AF$ 與 $EG$ 的交點記為 $H$。 求 $DH$ 準確至最接近的 cm。 
 <div class="q-mcopt"><img src="img/2021dsep2q38.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 60%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
-A.\t$728$ cm<br>
-B.\t$729$ cm<br>
-C.\t$741$ cm<br>
-D.\t$742$ cm
+A.\t$728\\text{ cm}$<br>
+B.\t$729\\text{ cm}$<br>
+C.\t$741\\text{ cm}$<br>
+D.\t$742\\text{ cm}$
 </div><div style="clear: both;"></div>`,
         hint: `用坐標幾何求交點後計算距離。`,
         solution: `B (34%)`
@@ -904,7 +900,7 @@ D.\t$80$ 分。
         domain: ["Data Handling"],
         topic: ["Change of Data"],
         difficulty: 2,
-        content: `已知 $T(n)$ 為一等差數列的第 $n$ 項。 設 $x_1$、$y_1$ 及 $z_1$ 分別為 $\\{T(1), T(2), T(3), \\dots, T(49)\\}$ 這組數的中位數、分佈域及方差，而 $x_2$、$y_2$ 及 $z_2$ 分別為 $\\{T(51), T(52), T(53), \\dots, T(99)\\}$ 這組數的中位數、分佈域及方差。 下列何者必為正確？
+        content: `已知 $\\mathrm{T}(n)$ 為一等差數列的第 $n$ 項。 設 $x_1$、$y_1$ 及 $z_1$ 分別為 $\\{\\mathrm{T}(1), \\mathrm{T}(2), \\mathrm{T}(3), \\dots, \\mathrm{T}(49)\\}$ 這組數的中位數、分佈域及方差，而 $x_2$、$y_2$ 及 $z_2$ 分別為 $\\{\\mathrm{T}(51), \\mathrm{T}(52), \\mathrm{T}(53), \\dots, \\mathrm{T}(99)\\}$ 這組數的中位數、分佈域及方差。 下列何者必為正確？
 <div class="q-mcms">
 I.\t$x_1 < x_2$
 II.\t$y_1 = y_2$
