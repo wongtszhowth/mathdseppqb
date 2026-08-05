@@ -869,7 +869,7 @@ D.\t$780\\,045$
         topic: ["Statistical Graphs", "Standard Score", "Measures of Dispersion"],
         difficulty: 2,
         content: `下面的幹葉圖顯示某群學生在一測驗中得分（以分為單位）的分佈。 <u>佩玲</u>在該測驗中獲最高得分。
-        <table class="q-table" style="border-collapse: collapse; table-layout: auto;" align="center">
+        <table class="q-table" style="border-collapse: collapse; table-layout: auto; width: auto; white-space: pre;" align="center">
     <colgroup>
       <col style="width: auto;">
       <col style="width: auto;">
