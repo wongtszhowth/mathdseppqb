@@ -256,8 +256,7 @@ D.\t$\\$39/\\text{kg}$
         domain: ["Algebra"],
         topic: ["Sequences"],
         difficulty: 1,
-        content: `圖中，第 $1$ 個圖案包含 $9$ 粒點子。 對任意正整數 $n$，第 $(n+1)$ 個圖案是由第 $n$ 個圖案加上 $5$ 粒點子所組成。 求第 $7$ 個圖案的點子數目。
-        <img src="img/2016dsep2q14.jpg" class="q-img" alt="題目附圖" style="max-width: 80%;"><div class="q-mcopt">
+        content: `圖中，第 $1$ 個圖案包含 $9$ 粒點子。 對任意正整數 $n$，第 $(n+1)$ 個圖案是由第 $n$ 個圖案加上 $5$ 粒點子所組成。 求第 $7$ 個圖案的點子數目。<img src="img/2016dsep2q14.jpg" class="q-img" alt="題目附圖" style="max-width: 80%;"><div class="q-mcopt">
 A.\t$29$<br>
 B.\t$34$<br>
 C.\t$39$<br>
