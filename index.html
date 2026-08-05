@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>0805-1845 DSE 數學題目庫</title>
+    <title>0805-2215 DSE 數學題目庫</title>
     <script>
         window.MathJax = {
             tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }, 
@@ -293,7 +293,7 @@
         <div class="filter-body">
             <!-- 搜尋欄位 -->
             <div class="search-sort-row">
-                <input type="text" id="keyword" placeholder="搜尋關鍵字、題目編號..." onkeydown="if(event.key === 'Enter') applyFilter(false)">
+                <input type="text" id="keyword" placeholder="搜尋關鍵字、題目編號..." onkeydown="if(event.key === 'Enter') applyFilter(false, false)">
             </div>
 
             <!-- 清單形式篩選區塊 -->
@@ -496,7 +496,7 @@
             <div class="modal-header">
                 <span id="modalTitle">📝 錯題筆記</span>
             </div>
-            <textarea class="modal-textarea" id="modalNoteText" placeholder="請輸入錯題筆記（支援多行文字，如：錯解原因、概念漏洞）..."></textarea>
+            <textarea class="modal-textarea" id="modalNoteText" placeholder="你可以輸入錯題筆記（如：錯解原因、概念漏洞）"></textarea>
             <div class="modal-actions">
                 <button class="btn btn-modal-cancel" onclick="closeMistakeModal()">取消</button>
                 <button class="btn btn-modal-save" onclick="saveMistakeModal()">儲存筆記</button>
@@ -657,14 +657,16 @@
             return '';
         }
 
-        function applyFilter(keepScroll = false) {
+        function applyFilter(keepScroll = false, minimize = true) {
             const currentScroll = keepScroll ? window.scrollY : 0;
 
-            const container = document.getElementById('filterContainer');
-            const btn = document.getElementById('toggleBtn');
-            if (!container.classList.contains('minimized')) {
-                container.classList.add('minimized');
-                btn.innerText = "顯示篩選器";
+            if (minimize) {
+                const container = document.getElementById('filterContainer');
+                const btn = document.getElementById('toggleBtn');
+                if (!container.classList.contains('minimized')) {
+                    container.classList.add('minimized');
+                    btn.innerText = "顯示篩選器";
+                }
             }
 
             const list = document.getElementById('list');
@@ -827,7 +829,7 @@
 
         // 初始化錯題數量與頁面
         updateMistakeBadge();
-        applyFilter(false);
+        applyFilter(false, false);
     </script>
 </body>
 </html>
