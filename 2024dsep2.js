@@ -126,10 +126,10 @@ D.\t$6:4:3$。
         difficulty: 2,
         content: `設 $m$ 為一常數。 解方程 $x^2-3x=(m-1)^2-3(m-1)$。
 <div class="q-mcopt">
-A.\t$x=m-1$ 或 $x=m-4$<br>
-B.\t$x=m-1$ 或 $x=4-m$<br>
-C.\t$x=1-m$ 或 $x=m-4$<br>
-D.\t$x=1-m$ 或 $x=4-m$
+A.\t$x=m-1$  或  $x=m-4$<br>
+B.\t$x=m-1$  或  $x=4-m$<br>
+C.\t$x=1-m$  或  $x=m-4$<br>
+D.\t$x=1-m$  或  $x=4-m$
 </div>`,
         hint: `移項後因式分解。`,
         solution: `B (46%)`
@@ -276,7 +276,7 @@ D.\t該圖像通過點 $(-6, -7)$。
         domain: ["Geometry"],
         topic: ["Mensuration"],
         difficulty: 2,
-        content: `若某扇形的弧長及面積分別為 $8\\pi$ cm 及 $80\\pi$ cm$^2$，則該扇形的角為
+        content: `若某扇形的弧長及面積分別為 $8\\pi\\text{ cm}$ 及 $80\\pi\\text{ cm}^2$，則該扇形的角為
 <div class="q-mcopt">
 A.\t$36^\\circ$。<br>
 B.\t$45^\\circ$。<br>
@@ -558,8 +558,7 @@ D.\t$\\dfrac{8}{15}$
         topic: ["Statistical Graphs", "Measures of Dispersion"],
         difficulty: 1,
         content: `下面的框線圖顯示一群小童在某遊戲中所獲代幣的數目的分佈。 若該分佈的分佈域為其四分位數間距的三倍，求 $m$。
-<img src="img/2024dsep2q29zh.jpg" class="q-img" alt="題目附圖" style="max-width: 95%; margin-left: 15px; margin-bottom: 5px;">
-<div class="q-mcopt">
+<img src="img/2024dsep2q29zh.jpg" class="q-img" alt="題目附圖" style="max-width: 80%; margin-left: 15px; margin-bottom: 5px;"><div class="q-mcopt">
 A.\t$248$<br>
 B.\t$275$<br>
 C.\t$336$<br>
@@ -601,7 +600,7 @@ D.\tI、II 及 III
         domain: ["Algebra"],
         topic: ["H.C.F. and L.C.M."],
         difficulty: 1,
-        content: `$u^2v^3w$、$u^3vw^2$ 及 $u^2v^3w^4$ 的 H.C.F. 為
+        content: `$u^2v^3w$ 、 $u^3vw^2$  及  $u^2v^3w^4$  的 H.C.F. 為
 <div class="q-mcopt">
 A.\t$uvw$。<br>
 B.\t$u^2vw$。<br>
@@ -638,7 +637,7 @@ D.\t$192 \\times 16^{12} + 205$。
         domain: ["Algebra"],
         topic: ["Exponential Functions and Logarithm Functions"],
         difficulty: 2,
-        content: `若 $x = \\log_2 y - 2$ 及 $(\\log_2 y)^2 = 5 \\log_2 y + x - 7$，則 $y =$
+        content: `若  $x = \\log_2 y - 2$  及  $(\\log_2 y)^2 = 5 \\log_2 y + x - 7$ ，則 $y =$
 <div class="q-mcopt">
 A.\t$1$。<br>
 B.\t$8$。<br>
@@ -658,7 +657,7 @@ D.\t$3$  或  $8$。
         topic: ["Functions and Graphs"],
         difficulty: 2,
         content: `圖中的圖像顯示 $y^3$ 與 $\\sqrt{x}$ 之間的線性關係。 若 $x=36$，則 $y=$
-<div class="q-mcopt"><img src="img/2024dsep2q34.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px;">
+<div class="q-mcopt"><img src="img/2024dsep2q34.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 45%; margin-left: 15px; margin-bottom: 5px;">
 A.\t$-64$。<br>
 B.\t$-16$。<br>
 C.\t$-8$。<br>
@@ -887,7 +886,7 @@ D.\t只有 II 及 III
         domain: ["Data Handling"],
         topic: ["Change of Data"],
         difficulty: 2,
-        content: `若七個數 $x_1$、$x_2$、$x_3$、$x_4$、$x_5$、$x_6$ 及 $x_7$ 的方差為 $16$，則 $9x_1 - 5$ 、 $9x_2 - 5$ 、 $9x_3 - 5$ 、 $9x_4 - 5$ 、 $9x_5 - 5$ 、 $9x_6 - 5$ 及 $9x_7 - 5$ 這七個數的標準差為
+        content: `若七個數 $x_1$、$x_2$、$x_3$、$x_4$、$x_5$、$x_6$ 及 $x_7$ 的方差為 $16$，則  $9x_1 - 5$ 、 $9x_2 - 5$ 、 $9x_3 - 5$ 、 $9x_4 - 5$ 、 $9x_5 - 5$ 、 $9x_6 - 5$  及  $9x_7 - 5$  這七個數的標準差為
 <div class="q-mcopt">
 A.\t$31$。<br>
 B.\t$36$。<br>
