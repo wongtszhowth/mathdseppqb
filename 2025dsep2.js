@@ -18,7 +18,7 @@ C.	$3^{11} x^{13}$。 <br>
 D.	$3^{14} x^{13}$。 
 </div>`,
         hint: `先化簡指數，注意 $27=3^3$。`,
-        solution: `C (88%)`
+        solution: `C (88%)<p><iframe src="https://www.youtube.com/embed/xnhY90__B5Q?autoplay=0&rel=0" title="解題影片" style="max-width: 100%; max-height: 40vh; aspect-ratio: 17/10;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2025-DSE-MATH-CP2-Q02",
