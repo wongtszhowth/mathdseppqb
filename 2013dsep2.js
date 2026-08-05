@@ -562,7 +562,7 @@ D.\t$y$ 隨 $x^{-3}$ 正變。
         topic: ["Statistical Graphs", "Measures of Dispersion"],
         difficulty: 2,
         content: `下面的幹葉圖顯示某些工人的時薪（以元為單位）的分佈。
-        <table class="q-table" style="border-collapse: collapse; table-layout: auto;" align="center">
+        <table class="q-table" style="border-collapse: collapse; table-layout: auto; width: auto; white-space: pre;" align="center">
     <colgroup>
       <col style="width: auto;">
       <col style="width: auto;">
