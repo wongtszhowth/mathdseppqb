@@ -281,10 +281,10 @@ D.	只有 II 及 III
         domain: ["Geometry"],
         topic: ["Mensuration"],
         difficulty: 3,
-        content: `扇形 $OMN$ 的周界為 $12\\pi$ cm，其中 $O$ 為扇形 $OMN$ 的圓心。 若扇形 $OMN$ 的半徑為 $3\\pi$ cm，則下列何者正確？
+        content: `扇形 $OMN$ 的周界為 $12\\pi\\text{ cm}$，其中 $O$ 為扇形 $OMN$ 的圓心。 若扇形 $OMN$ 的半徑為 $3\\pi\\text{ cm}$，則下列何者正確？
 <div class="q-mcms">
-I.	扇形 $OMN$ 的面積為 $9\\pi^2$ cm$^2$。 
-II.	$\\Delta OMN$ 的周界少於 $35$ cm。 
+I.	扇形 $OMN$ 的面積為 $9\\pi^2\\text{ cm}^2$。 
+II.	$\\Delta OMN$ 的周界少於 $35\\text{ cm}$。 
 III.	扇形 $OMN$ 的角大於 $100^\\circ$。 
 </div>
 <div class="q-mcopt">
@@ -305,12 +305,12 @@ D.	I、II 及 III
         domain: ["Geometry"],
         topic: ["Mensuration"],
         difficulty: 2,
-        content: `一實心直立圓柱體的高及總表面面積分別為 $35$ cm 及 $492\\pi$ cm$^2$。 若一實心球體的半徑等於該圓柱體的底半徑，則該球體的體積為
+        content: `一實心直立圓柱體的高及總表面面積分別為 $35\\text{ cm}$ 及 $492\\pi\\text{ cm}^2$。 若一實心球體的半徑等於該圓柱體的底半徑，則該球體的體積為
 <div class="q-mcopt">
-A.	$144\\pi$ cm$^3$。 <br>
-B.	$288\\pi$ cm$^3$。 <br>
-C.	$576\\pi$ cm$^3$。 <br>
-D.	$864\\pi$ cm$^3$。 
+A.	$144\\pi\\text{ cm}^3$。 <br>
+B.	$288\\pi\\text{ cm}^3$。 <br>
+C.	$576\\pi\\text{ cm}^3$。 <br>
+D.	$864\\pi\\text{ cm}^3$。 
 </div>`,
         hint: `用總表面積公式求半徑。`,
         solution: `B (65%)`
@@ -324,12 +324,12 @@ D.	$864\\pi$ cm$^3$。
         domain: ["Geometry"],
         topic: ["Geometry (Polygons)"],
         difficulty: 2,
-        content: `圖中，$ABCD$ 為一平行四邊形。 設 $E$ 、 $F$ 及 $G$ 分別為 $AB$ 、 $AD$ 及 $CD$ 上的點使得 $BE = 3AE$ 、 $2DF = 3AF$ 及 $DG = 2CG$。 已知 $BC$ 的延線與 $EG$ 的延線相交於點 $H$。 若 $\\Delta CGH$ 的面積為 $16$ cm$^2$，則四邊形 $DFBG$ 的面積為
+        content: `圖中，$ABCD$ 為一平行四邊形。 設 $E$ 、 $F$ 及 $G$ 分別為 $AB$ 、 $AD$ 及 $CD$ 上的點使得 $BE = 3AE$ 、 $2DF = 3AF$ 及 $DG = 2CG$。 已知 $BC$ 的延線與 $EG$ 的延線相交於點 $H$。 若 $\\Delta CGH$ 的面積為 $16\\text{ cm}^2$，則四邊形 $DFBG$ 的面積為
 <div class="q-mcopt"><img src="img/2025dsep2q17.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px;">
-A.	$46$ cm$^2$。 <br>
-B.	$49$ cm$^2$。 <br>
-C.	$105$ cm$^2$。 <br>
-D.	$115$ cm$^2$。 
+A.	$46\\text{ cm}^2$。 <br>
+B.	$49\\text{ cm}^2$。 <br>
+C.	$105\\text{ cm}^2$。 <br>
+D.	$115\\text{ cm}^2$。 
 </div><div style="clear: both;"></div>`,
         hint: `利用面積比與高度或底的比例關係。`,
         solution: `B (39%)`
@@ -343,12 +343,12 @@ D.	$115$ cm$^2$。
         domain: ["Geometry"],
         topic: ["Geometry (Triangles)"],
         difficulty: 2,
-        content: `圖中所示為三角形 $WXY$。 設 $Z$ 為 $WY$ 上的一點使得 $WY:XY = XY:YZ$。 若 $WX=65$ cm 、 $WZ=25$ cm 及 $XZ=60$ cm，則 $XY =$
+        content: `圖中所示為三角形 $WXY$。 設 $Z$ 為 $WY$ 上的一點使得 $WY:XY = XY:YZ$。 若 $WX=65\\text{ cm}$ 、 $WZ=25\\text{ cm}$ 及 $XZ=60\\text{ cm}$，則 $XY =$
 <div class="q-mcopt"><img src="img/2025dsep2q18.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 40%; margin-left: 15px; margin-bottom: 5px;">
-A.	$131$ cm。<br>
-B.	$144$ cm。<br>
-C.	$156$ cm。<br>
-D.	$169$ cm。
+A.	$131\\text{ cm}$。<br>
+B.	$144\\text{ cm}$。<br>
+C.	$156\\text{ cm}$。<br>
+D.	$169\\text{ cm}$。
 </div><div style="clear: both;"></div>`,
         hint: `考慮相似三角形 $\\Delta WXY \\sim \\Delta XZY$。`,
         solution: `C (43%)`
@@ -386,12 +386,12 @@ D.	I、II 及 III
         domain: ["Geometry"],
         topic: ["Trigonometry (2D)"],
         difficulty: 2,
-        content: `已知 $PQRS$ 為一梯形且 $PQ//SR$。 若 $PS = 41$ cm 、 $RS = 53$ cm 、 $\\angle PSR = 120^\\circ$ 及 $\\angle QRS = 150^\\circ$，則 $PQ =$
+        content: `已知 $PQRS$ 為一梯形且 $PQ//SR$。 若 $PS = 41\\text{ cm}$ 、 $RS = 53\\text{ cm}$ 、 $\\angle PSR = 120^\\circ$ 及 $\\angle QRS = 150^\\circ$，則 $PQ =$
 <div class="q-mcopt">
-A.	$82$ cm。 <br>
-B.	$100$ cm。 <br>
-C.	$106$ cm。 <br>
-D.	$135$ cm。 
+A.	$82\\text{ cm}$。 <br>
+B.	$100\\text{ cm}$。 <br>
+C.	$106\\text{ cm}$。 <br>
+D.	$135\\text{ cm}$。 
 </div>`,
         hint: `作高並用餘弦定理或分割梯形。`,
         solution: `D (38%)`
@@ -405,12 +405,12 @@ D.	$135$ cm。
         domain: ["Geometry"],
         topic: ["Mensuration"],
         difficulty: 2,
-        content: `圖中，$ABCD$ 為一長方形。 已知 $AE = 20$ cm 及 $\\angle AED = 90^\\circ$。 若 $\\Delta ADE$ 的面積為 $150$ cm$^2$，則由 $E$ 至 $CD$ 的垂直距離為
+        content: `圖中，$ABCD$ 為一長方形。 已知 $AE = 20\\text{ cm}$ 及 $\\angle AED = 90^\\circ$。 若 $\\Delta ADE$ 的面積為 $150\\text{ cm}^2$，則由 $E$ 至 $CD$ 的垂直距離為
 <div class="q-mcopt"><img src="img/2025dsep2q21.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 45%; margin-left: 15px; margin-bottom: 5px;">
-A.	$8$ cm。 <br>
-B.	$9$ cm。 <br>
-C.	$12$ cm。 <br>
-D.	$15$ cm。 
+A.	$8\\text{ cm}$。 <br>
+B.	$9\\text{ cm}$。 <br>
+C.	$12\\text{ cm}$。 <br>
+D.	$15\\text{ cm}$。 
 </div><div style="clear: both;"></div>`,
         hint: `先求 $AD$ 及 $DE$，再求垂直距離。`,
         solution: `B (58%)`
