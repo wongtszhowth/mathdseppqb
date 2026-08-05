@@ -305,7 +305,7 @@ A.\t$43\\text{ cm}$。 <br>
 B.\t$54\\text{ cm}$。 <br>
 C.\t$55\\text{ cm}$。 <br>
 D.\t$60\\text{ cm}$。 
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `檢查是否直角後用畢氏定理。 `,
         solution: `D (80%)`
     },
@@ -324,7 +324,7 @@ A.\t$48^\\circ$。 <br>
 B.\t$57^\\circ$。 <br>
 C.\t$62^\\circ$。 <br>
 D.\t$66^\\circ$。 
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用平行四邊形及等腰三角形性質。 `,
         solution: `A (55%)`
     },
@@ -343,7 +343,7 @@ A.\t$216\\text{ cm}^3$<br>
 B.\t$240\\text{ cm}^3$<br>
 C.\t$300\\text{ cm}^3$<br>
 D.\t$328\\text{ cm}^3$
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `底面積乘高。 `,
         solution: `C (79%)`
     },
@@ -367,7 +367,7 @@ A.\t只有 I<br>
 B.\t只有 II<br>
 C.\t只有 I 及 III<br>
 D.\t只有 II 及 III
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `由面積差求圓心角。 `,
         solution: `A (59%)`
     },
@@ -386,7 +386,7 @@ A.\t$1:2$<br>
 B.\t$2:3$<br>
 C.\t$3:5$<br>
 D.\t$4:9$
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用相似及面積比與邊長平方。 `,
         solution: `C (51%)`
     },
@@ -405,7 +405,7 @@ A.\t$AB \\cos a + BC \\cos c$。<br>
 B.\t$AB \\cos a + BC \\sin c$。<br>
 C.\t$AB \\sin a + BC \\cos c$。<br>
 D.\t$AB \\sin a + BC \\sin c$。
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `在直角三角形中表達各段。 `,
         solution: `B (57%)`
     },
@@ -424,7 +424,7 @@ A.\t$59^\\circ$。<br>
 B.\t$62^\\circ$。<br>
 C.\t$78^\\circ$。<br>
 D.\t$87^\\circ$。
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用菱形及圓心角性質。 `,
         solution: `D (54%)`
     },
@@ -443,7 +443,7 @@ A.\t$2$。<br>
 B.\t$4$。<br>
 C.\t$6$。<br>
 D.\t$8$。
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `觀察圖形的對稱軸。 `,
         solution: `A (82%)`
     },
@@ -556,9 +556,26 @@ D.\t$\\dfrac{23}{24}$
         domain: ["Data Handling"],
         topic: ["Probability"],
         difficulty: 2,
-        content: `某袋子內有 $1$ 個紅球、$3$ 個黃球及 $6$ 個白球。 在一幸運抽獎中，從該袋子內隨機抽出一個球，並將根據下表獲得若干個代幣：
-<div style="overflow-x: auto; width: 100%; margin-bottom: 8px;"><table class="q-table" style="width: 100%; min-width: 300px;"><tr><td>所抽出的球的顏色</td><td>紅</td><td>黃</td><td>白</td></tr><tr><td>所獲代幣的數目</td><td>$90$</td><td>$20$</td><td>$10$</td></tr></table></div>
-求在該幸運抽獎中所獲代幣的數目的期望值。 
+        content: `某袋子內有 $1$ 個紅球、$3$ 個黃球及 $6$ 個白球。 在一幸運抽獎中，從該袋子內隨機抽出一個球，並將根據下表獲得若干個代幣：<table class="q-table" style="margin-top: 12px; margin-bottom: 12px; margin-left: auto; margin-right: auto; min-width: 300px; border-collapse: collapse; table-layout: auto;">
+    <colgroup>
+      <col style="width: auto;">
+      <col style="width: 4em;">
+      <col style="width: 4em;">
+      <col style="width: 4em;">
+    </colgroup>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">所抽出的球的顏色</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">紅</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">黃</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">白</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">所獲代幣的數目</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">90</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">20</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">10</td>
+    </tr>
+  </table>求在該幸運抽獎中所獲代幣的數目的期望值。 
 <div class="q-mcopt">
 A.\t$10$<br>
 B.\t$21$<br>
@@ -577,9 +594,7 @@ D.\t$61$
         domain: ["Data Handling"],
         topic: ["Measures of Central Tendency"],
         difficulty: 1,
-        content: `考慮以下數據：
-$$32 \\quad 68 \\quad 79 \\quad 86 \\quad 88 \\quad 98 \\quad 98 \\quad a \\quad b \\quad c$$
-若以上數據的平均值及眾數分別為 $77$ 及 $68$，則以上數據的中位數為
+        content: `考慮以下數據：<div style="text-align: center;">32　68　79　86　88　98　98　$a$　$b$　$c$</div>若以上數據的平均值及眾數分別為 $77$ 及 $68$，則以上數據的中位數為
 <div class="q-mcopt">
 A.\t$76$。 <br>
 B.\t$82$。 <br>
@@ -623,7 +638,7 @@ A.\t$-2$。 <br>
 B.\t$\\dfrac{1}{81}$。 <br>
 C.\t$\\dfrac{1}{2}$。 <br>
 D.\t$3$。 
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `由斜率求 $b$。 `,
         solution: `D (40%)`
     },
@@ -685,7 +700,7 @@ A.\t$P$<br>
 B.\t$Q$<br>
 C.\t$R$<br>
 D.\t$S$
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `目標函數在頂點達極值。 `,
         solution: `D (47%)`
     },
@@ -728,7 +743,7 @@ A.\t$a = -2$  及  $b = 90$。 <br>
 B.\t$a = -2$  及  $b = 360$。 <br>
 C.\t$a = 2$  及  $b = 90$。 <br>
 D.\t$a = 2$  及  $b = 360$。 
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `由振幅及週期判斷。 `,
         solution: `A (46%)`
     },
@@ -766,7 +781,7 @@ A.\t$\\dfrac{33}{65}$<br>
 B.\t$\\dfrac{56}{65}$<br>
 C.\t$\\dfrac{13}{5\\sqrt{181}}$<br>
 D.\t$\\dfrac{58}{13\\sqrt{181}}$
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `用向量或坐標求夾角。 `,
         solution: `A (35%)`
     },
@@ -785,7 +800,7 @@ A.\t$22^\\circ$。 <br>
 B.\t$28^\\circ$。 <br>
 C.\t$32^\\circ$。 <br>
 D.\t$34^\\circ$。 
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用切線與弦的夾角及直徑性質。 `,
         solution: `D (38%)`
     },
@@ -855,7 +870,37 @@ D.\t$780\\,045$
         domain: ["Data Handling"],
         topic: ["Statistical Graphs", "Standard Score", "Measures of Dispersion"],
         difficulty: 2,
-        content: `下面的幹葉圖顯示某群學生在一測驗中得分（以分為單位）的分佈。 <u>佩玲</u>在該測驗中獲最高得分。 
+        content: `下面的幹葉圖顯示某群學生在一測驗中得分（以分為單位）的分佈。 <u>佩玲</u>在該測驗中獲最高得分。
+        <table class="q-table" style="border-collapse: collapse; table-layout: auto;" align="center">
+    <colgroup>
+      <col style="width: auto;">
+      <col style="width: auto;">
+    </colgroup>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;"><u>幹（十位）</u></td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;"><u>葉（個位）</u></td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">4</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">5	6	7	8</td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">5</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">5	5	6	8</td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">6</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">3	5	5	6	9	9</td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">7</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">0	0	1</td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">8</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">0	2	5</td>
+    </tr>
+  </table>
 <div style="overflow-x: auto; width: 100%; margin-bottom: 8px;"><table class="q-table" style="width: 100%; min-width: 300px;"><tr><td>幹（十位）</td><td>葉（個位）</td></tr><tr><td>$4$</td><td>$5$ $6$ $7$ $8$</td></tr><tr><td>$5$</td><td>$5$ $5$ $6$ $8$</td></tr><tr><td>$6$</td><td>$3$ $5$ $5$ $6$ $9$ $9$</td></tr><tr><td>$7$</td><td>$0$ $0$ $1$</td></tr><tr><td>$8$</td><td>$0$ $2$ $5$</td></tr></table></div>
 下列何者正確？
 <div class="q-mcms">
