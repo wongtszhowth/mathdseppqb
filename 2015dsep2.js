@@ -433,8 +433,7 @@ D.\t只有 II 及 III
         domain: ["Geometry"],
         topic: ["Coordinate Geometry"],
         difficulty: 2,
-        content: `點 $A$ 的直角坐標為 $(\\sqrt{3}, -1)$。 若 $A$ 對 $y$ 軸作反射，則它的像的極坐標為
-<div class="q-mcopt">
+        content: `<div style="color: red;">點 $A$ 的直角坐標為 $(\\sqrt{3}, -1)$。 若 $A$ 對 $y$ 軸作反射，則它的像的極坐標為</div><div class="q-mcopt" style="color: red;">
 A.\t$(1, 210^\\circ)$。 <br>
 B.\t$(1, 240^\\circ)$。 <br>
 C.\t$(2, 210^\\circ)$。 <br>
