@@ -601,14 +601,13 @@ D.\t只有 II 及 III
         domain: ["Algebra"],
         topic: ["Functions and Graphs"],
         difficulty: 2,
-        content: `上圖所示為 $y=\\mathrm{f}(x)$ 的圖像。 若 $\\mathrm{g}(x)=\\mathrm{f}\\left(\\dfrac{x}{2}\\right)$，則下列何者可表示 $y=\\mathrm{g}(x)$ 的圖像？
+        content: `<img src="img/2017dsep2q31.jpg" class="q-img" alt="題目附圖" style="max-width: 33%;">
+上圖所示為 $y=\\mathrm{f}(x)$ 的圖像。 若 $\\mathrm{g}(x)=\\mathrm{f}\\left(\\dfrac{x}{2}\\right)$，則下列何者可表示 $y=\\mathrm{g}(x)$ 的圖像？
 <div class="q-mcopt">
-A.\t（圖像 A）<br>
-B.\t（圖像 B）<br>
-C.\t（圖像 C）<br>
-D.\t（圖像 D）
+<img src="img/2017dsep2q31A.jpg" class="q-img" alt="題目附圖" style="max-width: 35%;">\t<img src="img/2017dsep2q31B.jpg" class="q-img" alt="題目附圖" style="max-width: 35%;"><br>
+<img src="img/2017dsep2q31C.jpg" class="q-img" alt="題目附圖" style="max-width: 35%;">\t<img src="img/2017dsep2q31D.jpg" class="q-img" alt="題目附圖" style="max-width: 35%;">
 </div>`,
-        hint: `$x$ 方向伸展 2 倍。 `,
+        hint: `沿 $x$ 方向伸展 2 倍。 `,
         solution: `D (41%)`
     },
     {
@@ -620,8 +619,7 @@ D.\t（圖像 D）
         domain: ["Algebra"],
         topic: ["Base Conversion"],
         difficulty: 2,
-        content: `$8^3 + 8^{19} =$
-<div class="q-mcopt">
+        content: `<div style="color: red;">$8^3 + 8^{19} =$</div><div class="q-mcopt" style="color: red;">
 A.\t$100000000000010_{16}$<br>
 B.\t$200000000000020_{16}$<br>
 C.\t$100000000000100_{16}$<br>
@@ -640,7 +638,7 @@ D.\t$200000000000200_{16}$
         topic: ["Functions and Graphs"],
         difficulty: 2,
         content: `圖中的圖像顯示 $x$ 與 $\\sqrt{y}$ 之間的線性關係。 下列何者必為正確？
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2017dsep2q33.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 35%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$y = x^2 - 4x + 8$<br>
 B.\t$y = x^2 + 4x + 8$<br>
 C.\t$y = 4x^2 - 32x + 64$<br>
@@ -658,12 +656,12 @@ D.\t$y = 4x^2 + 32x + 64$
         domain: ["Algebra"],
         topic: ["Exponential Functions and Logarithm Functions"],
         difficulty: 2,
-        content: `若 $\\begin{cases} \\log_9 y = x - 3 \\\\ 2(\\log_9 y)^2 = 4 - x \\end{cases}$，則 $y=$
+        content: `若 $\\begin{cases} \\log_9 y = x - 3 \\\\[1.2ex] 2(\\log_9 y)^2 = 4 - x \\end{cases}$，則 $y=$
 <div class="q-mcopt">
-A.\t$-1$ 或 $\\dfrac{1}{2}$。 <br>
-B.\t$1$ 或 $\\dfrac{1}{3}$。 <br>
-C.\t$2$ 或 $\\dfrac{7}{2}$。 <br>
-D.\t$3$ 或 $\\dfrac{1}{9}$。 
+A.\t$-1$  或  $\\dfrac{1}{2}$。<br>
+B.\t$1$  或  $\\dfrac{1}{3}$。<br>
+C.\t$2$  或  $\\dfrac{7}{2}$。<br>
+D.\t$3$  或  $\\dfrac{1}{9}$。
 </div>`,
         hint: `設 $t=\\log_9 y$ 後解聯立方程。 `,
         solution: `D (41%)`
@@ -698,9 +696,9 @@ D.\t$2$。
         difficulty: 2,
         content: `下列何者為等差數列？
 <div class="q-mcms">
-I.\t$\\pi^{30},\\ \\pi^{45},\\ \\pi^{60}$<br>
-II.\t$30\\pi,\\ 45\\pi,\\ 60\\pi$<br>
-III.\t$\\pi - 30,\\ \\pi - 45,\\ \\pi - 60$
+I.\t$\\pi^{30}$ ,  $\\pi^{45}$ ,  $\\pi^{60}$
+II.\t$30\\pi$ ,  $45\\pi$ ,  $60\\pi$
+III.\t$\\pi - 30$ ,  $\\pi - 45 ,  $\\pi - 60$
 </div>
 <div class="q-mcopt">
 A.\t只有 I 及 II<br>
@@ -720,20 +718,18 @@ D.\tI、II 及 III
         domain: ["Algebra"],
         topic: ["Linear Programming"],
         difficulty: 2,
-        content: `考慮以下的不等式組：
-$$
-\\begin{cases}
-y \\le 9 \\\\
-x - y - 9 \\le 0 \\\\
+        content: `考慮以下的不等式組：<br>
+\t$\\begin{cases}
+y \\le 9 \\\\[1.2ex]
+x - y - 9 \\le 0 \\\\[1.2ex]
 x + y - 9 \\ge 0
-\\end{cases}
-$$
+\\end{cases}$<br>
 設 $R$ 為表示以上的不等式組的解之區域。 若 $(x, y)$ 為 $R$ 中的一點，則 $x-2y+43$ 的最大值為
 <div class="q-mcopt">
-A.\t$25$。 <br>
-B.\t$43$。 <br>
-C.\t$52$。 <br>
-D.\t$61$。 
+A.\t$25$。<br>
+B.\t$43$。<br>
+C.\t$52$。<br>
+D.\t$61$。
 </div>`,
         hint: `找出可行域頂點並代入目標函數。 `,
         solution: `C (45%)`
@@ -747,13 +743,13 @@ D.\t$61$。
         domain: ["Geometry"],
         topic: ["Coordinate Geometry"],
         difficulty: 2,
-        content: `圖中，$ABCD$ 為一長方形。 若 $E$ 為 $AC$ 上的一點使得 $AE = 30$ cm，則 $DE =$
-<div class="q-mcopt">
-A.\t$3\\sqrt{65}$ cm<br>
-B.\t$5\\sqrt{29}$ cm<br>
-C.\t$\\sqrt{641}$ cm<br>
-D.\t$\\sqrt{697}$ cm
-</div>`,
+        content: `圖中，$ABCD$ 為一長方形。 若 $E$ 為 $AC$ 上的一點使得 $AE = 30\\text{ cm}$，則 $DE =$
+<div class="q-mcopt"><img src="img/2017dsep2q38.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
+A.\t$3\\sqrt{65}\\text{ cm}$<br>
+B.\t$5\\sqrt{29}\\text{ cm}$<br>
+C.\t$\\sqrt{641}\\text{ cm}$<br>
+D.\t$\\sqrt{697}\\text{ cm}$
+</div><div style="clear: both;"></div>`,
         hint: `用坐標或相似三角形求長度。 `,
         solution: `A (49%)`
     },
@@ -766,13 +762,13 @@ D.\t$\\sqrt{697}$ cm
         domain: ["Geometry"],
         topic: ["Trigonometry (3D)"],
         difficulty: 2,
-        content: `圖中，$AD$ 為立於水平地面 $BCD$ 上的鉛垂柱。 若 $AB = 25$ m、$AD = 15$ m、$BC = 29$ m 及 $CD = 21$ m，求 $AB$ 與平面 $ACD$ 間的交角準確至最接近的度。 
-<div class="q-mcopt">
+        content: `圖中，$AD$ 為立於水平地面 $BCD$ 上的鉛垂柱。 若 $AB = 25\\text{ m}$ 、 $AD = 15\\text{ m}$ 、 $BC = 29\\text{ m}$ 及 $CD = 21\\text{ m}$，求 $AB$ 與平面 $ACD$ 間的交角準確至最接近的度。 
+<div class="q-mcopt"><img src="img/2017dsep2q39.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 60%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$53^\\circ$<br>
 B.\t$54^\\circ$<br>
 C.\t$69^\\circ$<br>
 D.\t$70^\\circ$
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `用餘弦定理及投影求交角。 `,
         solution: `A (34%)`
     },
@@ -786,12 +782,12 @@ D.\t$70^\\circ$
         topic: ["Geometry (Circles)"],
         difficulty: 2,
         content: `圖中，$O$ 為圓 $ABC$ 的圓心。 $DE$ 為圓在 $A$ 的切線。 若 $\\angle BAD = 68^\\circ$ 及 $\\angle BCO = 26^\\circ$，則 $\\angle ABC =$
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2017dsep2q40.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$42^\\circ$。 <br>
 B.\t$48^\\circ$。 <br>
 C.\t$54^\\circ$。 <br>
 D.\t$64^\\circ$。 
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用切線與弦的夾角及圓心角。 `,
         solution: `B (61%)`
     },
@@ -806,10 +802,10 @@ D.\t$64^\\circ$。
         difficulty: 3,
         content: `設 $O$ 為原點。 點 $P$ 及點 $Q$ 的坐標分別為 $(p, 0)$ 及 $(0, q)$，其中 $p$ 及 $q$ 均為正數。 若 $\\Delta OPQ$ 的內心在直線 $3x + 4y = 3p$ 上，則 $p:q =$
 <div class="q-mcopt">
-A.\t$2:3$。 <br>
-B.\t$4:3$。 <br>
-C.\t$4:9$。 <br>
-D.\t$7:24$。 
+A.\t$2:3$。<br>
+B.\t$4:3$。<br>
+C.\t$4:9$。<br>
+D.\t$7:24$。
 </div>`,
         hint: `利用內心坐標公式及邊長權重。 `,
         solution: `D (21%)`
@@ -825,10 +821,10 @@ D.\t$7:24$。
         difficulty: 1,
         content: `某委員會有 $13$ 名學生及 $6$ 名教師。 若從該委員會中選出 $5$ 名學生及 $4$ 名教師組成一隊，則可組成多少不同的隊？
 <div class="q-mcopt">
-A.\t$4290$<br>
-B.\t$19305$<br>
-C.\t$92378$<br>
-D.\t$55598400$
+A.\t$4\\,290$<br>
+B.\t$19\\,305$<br>
+C.\t$92\\,378$<br>
+D.\t$55\\,598\\,400$
 </div>`,
         hint: `分別計算學生及教師的組合後相乘。 `,
         solution: `B (70%)`
@@ -863,10 +859,10 @@ D.\t$0.9919$
         difficulty: 1,
         content: `志誠在某數學考試的標準分為 $-2$。 若志誠在該數學考試的得分為 $33$ 分且該數學考試的得分的平均值為 $45$ 分，則該數學考試的得分的標準差為
 <div class="q-mcopt">
-A.\t$3$ 分。 <br>
-B.\t$6$ 分。 <br>
-C.\t$12$ 分。 <br>
-D.\t$36$ 分。 
+A.\t$3$ 分。<br>
+B.\t$6$ 分。<br>
+C.\t$12$ 分。<br>
+D.\t$36$ 分。
 </div>`,
         hint: `標準分 $= ($得分 $-$ 平均$)/$標準差。 `,
         solution: `B (78%)`
@@ -882,8 +878,8 @@ D.\t$36$ 分。
         difficulty: 2,
         content: `設 $m_1$、$r_1$ 及 $v_1$ 分別為某組數 $\\{x_1, x_2, x_3, x_4, x_5, x_6, x_7\\}$ 的眾數、四分位數間距及方差，而 $m_2$、$r_2$ 及 $v_2$ 分別為 $\\{8x_1, 8x_2, 8x_3, 8x_4, 8x_5, 8x_6, 8x_7\\}$ 這組數的眾數、四分位數間距及方差。 下列何者必為正確？
 <div class="q-mcms">
-I.\t$m_2 = 8m_1$<br>
-II.\t$r_2 = 8r_1$<br>
+I.\t$m_2 = 8m_1$
+II.\t$r_2 = 8r_1$
 III.\t$v_2 = 8v_1$
 </div>
 <div class="q-mcopt">
