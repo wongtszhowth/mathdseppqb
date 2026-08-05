@@ -297,12 +297,12 @@ D.\t$144\\pi\\text{ cm}^3$。
         topic: ["Geometry (Polygons)"],
         difficulty: 2,
         content: `圖中，$ABCD$ 及 $BEDF$ 均為平行四邊形。 $E$ 為 $BC$ 上的一點使得 $BE:EC = 2:3$。 $AC$ 分別與 $BF$ 及 $DE$ 相交於 $G$ 及 $H$。 若 $\\Delta ABG$ 的面積為 $135\\text{ cm}^2$，則四邊形 $DFGH$ 的面積為
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2017dsep2q16.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 55%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$60\\text{ cm}^2$。 <br>
 B.\t$81\\text{ cm}^2$。 <br>
 C.\t$90\\text{ cm}^2$。 <br>
 D.\t$144\\text{ cm}^2$。 
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用面積比與底的比例關係。 `,
         solution: `D (32%)`
     },
@@ -316,12 +316,12 @@ D.\t$144\\text{ cm}^2$。
         topic: ["Geometry (Triangles)"],
         difficulty: 2,
         content: `圖中，$ABC$ 為一等邊三角形，其邊長為 $16\\text{ cm}$。 $D$ 及 $E$ 分別為 $AB$ 及 $BC$ 上的點使得 $AD = 4\\text{ cm}$ 及 $\\angle CDE = 60^\\circ$。 求 $CE$。 
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2017dsep2q17.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 45%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$9\\text{ cm}$<br>
 B.\t$10\\text{ cm}$<br>
 C.\t$12\\text{ cm}$<br>
 D.\t$13\\text{ cm}$
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用等邊三角形及等角性質。 `,
         solution: `D (36%)`
     },
@@ -335,12 +335,12 @@ D.\t$13\\text{ cm}$
         topic: ["Geometry (Triangles)"],
         difficulty: 2,
         content: `圖中，$AB = BC$ 及 $D$ 為 $AE$ 上的一點使得 $AC = AD$。 若 $AE//BC$，則 $\\angle ABC =$
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2017dsep2q18.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$44^\\circ$。<br>
 B.\t$56^\\circ$。<br>
 C.\t$62^\\circ$。<br>
 D.\t$68^\\circ$。
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用等腰三角形及平行線性質。 `,
         solution: `A (45%)`
     },
@@ -354,12 +354,12 @@ D.\t$68^\\circ$。
         topic: ["Pythagoras Theorem"],
         difficulty: 2,
         content: `圖中，連接 $A$ 與 $H$ 的線段的長度為
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2017dsep2q19.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 40%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$6$。<br>
 B.\t$8$。<br>
 C.\t$9$。<br>
 D.\t$10$。
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `用坐標距離公式計算。 `,
         solution: `D (68%)`
     },
@@ -397,12 +397,12 @@ D.\tI、II 及 III
         topic: ["Geometry (Circles)"],
         difficulty: 2,
         content: `圖中，$AD$ 為圓 $ABCDE$ 的一直徑。 若 $BC = CD$ 及 $\\angle ABC = 110^\\circ$，則 $\\angle BED =$
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2017dsep2q21.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 45%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$20^\\circ$。 <br>
 B.\t$35^\\circ$。 <br>
 C.\t$40^\\circ$。 <br>
 D.\t$55^\\circ$。 
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `利用直徑及等弦對等角。 `,
         solution: `C (59%)`
     },
@@ -416,12 +416,12 @@ D.\t$55^\\circ$。
         topic: ["Trigonometry (2D)"],
         difficulty: 2,
         content: `圖中，$ABCD$ 為一長方形。 若 $E$ 為 $CD$ 上的一點使得 $\\angle CBE = 40^\\circ$，求 $\\angle AED$ 準確至最接近的度。 
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2017dsep2q22.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 60%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$33^\\circ$<br>
 B.\t$43^\\circ$<br>
 C.\t$47^\\circ$<br>
 D.\t$57^\\circ$
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `在直角三角形中用三角函數。 `,
         solution: `D (58%)`
     },
@@ -435,7 +435,7 @@ D.\t$57^\\circ$
         topic: ["Equations of Straight Lines"],
         difficulty: 2,
         content: `圖中，直線 $L_1$ 及直線 $L_2$ 的方程分別為 $x+my=n$ 及 $x+py=q$。 下列何者正確？
-<div class="q-mcms">
+<div class="q-mcms"><img src="img/2017dsep2q23.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 45%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 I.\t$m \\lt p$
 II.\t$n \\gt q$
 III.\t$n+m \\lt p+q$
@@ -445,7 +445,7 @@ A.\t只有 I 及 II<br>
 B.\t只有 I 及 III<br>
 C.\t只有 II 及 III<br>
 D.\tI、II 及 III
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `由圖像判斷斜率及截距。 `,
         solution: `A (30%)`
     },
@@ -539,12 +539,12 @@ D.\t$8$
         topic: ["Probability", "Statistical Graphs"],
         difficulty: 1,
         content: `下面的棒形圖顯示某群小童在一遊戲中所獲代幣的數目的分佈。 若從該群中隨機選出一名小童，求所選出的小童在該遊戲中獲得少於 $5$ 個代幣的概率。 
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2017dsep2q28zh.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 55%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$\\dfrac{2}{3}$<br>
 B.\t$\\dfrac{2}{5}$<br>
 C.\t$\\dfrac{5}{12}$<br>
 D.\t$\\dfrac{7}{25}$
-</div>`,
+</div><div style="clear: both;"></div>`,
         hint: `由棒形圖讀取人數後計算概率。 `,
         solution: `C (84%)`
     },
@@ -557,7 +557,8 @@ D.\t$\\dfrac{7}{25}$
         domain: ["Data Handling"],
         topic: ["Statistical Graphs", "Measures of Dispersion"],
         difficulty: 1,
-        content: `下面的框線圖顯示一班學生在某星期的上網時數的分佈。 求該分佈的下四分位數。 
+        content: `下面的框線圖顯示一班學生在某星期的上網時數的分佈。 求該分佈的下四分位數。
+        <img src="img/2017dsep2q29zh.jpg" class="q-img" alt="題目附圖" style="max-width: 60%;">
 <div class="q-mcopt">
 A.\t$5$<br>
 B.\t$15$<br>
