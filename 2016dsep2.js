@@ -237,7 +237,7 @@ D.\t減少 $50\\%$。
         domain: ["Algebra"],
         topic: ["Rates, Ratios and Proportions"],
         difficulty: 1,
-        content: `$X$ 牌麵粉的成本為 $\\$42/\\text{kg}$。 若 $3\\text{kg}$ 的 $X$ 牌麵粉與 $2\\text{kg}$ 的 $Y$ 牌麵粉混合使得混合後的麵粉的成本為 $\\$36/\\text{kg}$，求 $Y$ 牌麵粉的成本。 
+        content: `$X$ 牌麵粉的成本為 $\\$42/\\text{kg}$。 若 $3\\text{ kg}$ 的 $X$ 牌麵粉與 $2\\text{ kg}$ 的 $Y$ 牌麵粉混合使得混合後的麵粉的成本為 $\\$36/\\text{kg}$，求 $Y$ 牌麵粉的成本。 
 <div class="q-mcopt">
 A.\t$\\$27/\\text{kg}$<br>
 B.\t$\\$30/\\text{kg}$<br>
@@ -358,9 +358,9 @@ D.\t$328\\text{ cm}^3$
         difficulty: 2,
         content: `圖中，扇形 $OAB$ 及扇形 $OCD$ 的圓心均為 $O$，其中 $OA = 33\\text{ cm}$ 及 $OC = 39\\text{ cm}$。 陰影區域 $ABDC$ 的面積為 $72\\pi\\text{ cm}^2$。 下列何者正確？
 <div class="q-mcms"><img src="img/2016dsep2q19.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 30%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
-I.\t扇形 $OAB$ 的角為 $60^\\circ$。 <br>
-II.\t扇形 $OAB$ 的面積為 $11\\pi\\text{ cm}^2$。 <br>
-III.\t扇形 $OCD$ 的周界為 $13\\pi\\text{ cm}$。 
+I.\t扇形 $OAB$ 的角為 $60^\\circ$。
+II.\t扇形 $OAB$ 的面積為 $11\\pi\\text{ cm}^2$。
+III.\t扇形 $OCD$ 的周界為 $13\\pi\\text{ cm}$。
 </div>
 <div class="q-mcopt">
 A.\t只有 I<br>
@@ -651,8 +651,7 @@ D.\t$3$。
         domain: ["Algebra"],
         topic: ["Base Conversion"],
         difficulty: 2,
-        content: `$BC000DE000000_{16} =$
-<div class="q-mcopt">
+        content: `<div style="color: red;">$\\text{BC000DE000000}_{16} =$</div><div class="q-mcopt" style="color: red;">
 A.\t$188 \\times 16^{11} + 222 \\times 16^{6}$。 <br>
 B.\t$205 \\times 16^{11} + 239 \\times 16^{6}$。 <br>
 C.\t$188 \\times 16^{12} + 222 \\times 16^{7}$。 <br>
@@ -901,7 +900,6 @@ D.\t$780\\,045$
       <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">0	2	5</td>
     </tr>
   </table>
-<div style="overflow-x: auto; width: 100%; margin-bottom: 8px;"><table class="q-table" style="width: 100%; min-width: 300px;"><tr><td>幹（十位）</td><td>葉（個位）</td></tr><tr><td>$4$</td><td>$5$ $6$ $7$ $8$</td></tr><tr><td>$5$</td><td>$5$ $5$ $6$ $8$</td></tr><tr><td>$6$</td><td>$3$ $5$ $5$ $6$ $9$ $9$</td></tr><tr><td>$7$</td><td>$0$ $0$ $1$</td></tr><tr><td>$8$</td><td>$0$ $2$ $5$</td></tr></table></div>
 下列何者正確？
 <div class="q-mcms">
 I.\t該分佈的上四分位數為 $55$ 分。
