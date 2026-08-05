@@ -561,9 +561,7 @@ D.\t$\\dfrac{9}{20}$
         domain: ["Data Handling"],
         topic: ["Statistical Graphs", "Measures of Dispersion"],
         difficulty: 1,
-        content: `下面的框線圖顯示在某年一些工程師的培訓時數的分佈。 求該分佈的上四分位數。
-<img src="img/2023dsep2q29zh.jpg" class="q-img" alt="題目附圖" style="max-width: 60%; margin-left: 15px; margin-bottom: 5px;">
-<div class="q-mcopt">
+        content: `下面的框線圖顯示在某年一些工程師的培訓時數的分佈。 求該分佈的上四分位數。<img src="img/2023dsep2q29zh.jpg" class="q-img" alt="題目附圖" style="max-width: 55%;"><div class="q-mcopt">
 A.\t$20$<br>
 B.\t$40$<br>
 C.\t$60$<br>
@@ -619,7 +617,7 @@ D.\t$11 \\times 2^{14} + 11 \\times 2^8 + 11$。
         domain: ["Algebra"],
         topic: ["H.C.F. and L.C.M."],
         difficulty: 2,
-        content: `$a^4b^2c$ 、 $a^3b^4c$ 及 $a^2b^5c^2$ 的 L.C.M. 為
+        content: `$a^4b^2c$ 、 $a^3b^4c$  及  $a^2b^5c^2$  的 L.C.M. 為
 <div class="q-mcopt">
 A.\t$a^2b^2c$。<br>
 B.\t$a^2b^2c^2$。<br>
@@ -859,24 +857,24 @@ D.\t$0.8464$
         topic: ["Standard Score"],
         difficulty: 2,
         content: `下表顯示三名學生在某考試的得分（以分為單位）及其對應的標準分。
-        <table class="q-table" style="margin-left: auto; margin-right: auto; min-width: 300px; border-collapse: collapse; table-layout: auto;">
+        <table class="q-table" style="margin-left: auto; margin-right: auto; border-collapse: collapse; table-layout: auto;">
     <colgroup>
       <col style="width: auto;">
-      <col style="width: 3em;">
-      <col style="width: 3em;">
-      <col style="width: 3em;">
+      <col style="width: 4em;">
+      <col style="width: 4em;">
+      <col style="width: 4em;">
     </colgroup>
     <tr>
-      <th style="border: 1px solid #000; text-align: center; padding: 6px 10px;">得分（分）</th>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">$46$</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">$x$</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">$86$</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">得分（分）</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$46$</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$x$</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$86$</td>
     </tr>
     <tr>
-      <th style="border: 1px solid #000; text-align: center; padding: 6px 10px;">標準分</th>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">$-3$</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">$1$</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">$2$</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">標準分</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$-3$</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$1$</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$2$</td>
     </tr>
   </table>
 求 $x$。
