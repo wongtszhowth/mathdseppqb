@@ -576,7 +576,7 @@ D.\t$\\$135$
         topic: ["Statistical Graphs", "Measures of Dispersion"],
         difficulty: 2,
         content: `下面的幹葉圖顯示某巴士內乘客的年歲的分佈。
-		<table class="q-table" style="border-collapse: collapse; table-layout: auto;" align="center">
+		<table class="q-table" style="border-collapse: collapse; table-layout: auto; width: auto; white-space: pre;" align="center">
     <colgroup>
       <col style="width: auto;">
       <col style="width: auto;">
