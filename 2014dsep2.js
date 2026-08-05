@@ -647,8 +647,8 @@ D.\t$12x^7y^9z^2$。
         difficulty: 2,
         content: `圖中所示為在同一直角坐標系上 $y=b^x$ 的圖像及 $y=c^x$ 的圖像，其中 $b$ 及 $c$ 均為正常數。 若一水平線 $L$ 分別與 $y$ 軸、$y=b^x$ 的圖像及 $y=c^x$ 的圖像相交於 $A$、$B$ 及 $C$，則下列何者正確？
 <div class="q-mcms"><img src="img/2014dsep2q32.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
-I.\t$b\\ltc$
-II.\t$bc\\gt1$
+I.\t$b \\lt c$
+II.\t$bc \\gt 1$
 III.\t$\\dfrac{AB}{AC} = \\log_b c$
 </div>
 <div class="q-mcopt">
