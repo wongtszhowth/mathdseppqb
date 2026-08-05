@@ -221,10 +221,10 @@ D.\t$\\$832$
         difficulty: 2,
         content: `某地圖的比例尺為 $1:50~000$。 若一機場的實際面積為 $10$ km$^2$，則這機場在該地圖上的面積為
 <div class="q-mcopt">
-A.\t$2$ cm$^2$。<br>
-B.\t$4$ cm$^2$。<br>
-C.\t$20$ cm$^2$。<br>
-D.\t$40$ cm$^2$。
+A.\t$2\\text{ cm}^2$。<br>
+B.\t$4\\text{ cm}^2$。<br>
+C.\t$20\\text{ cm}^2$。<br>
+D.\t$40\\text{ cm}^2$。
 </div>`,
         hint: `面積比為長度比的平方。`,
         solution: `D (38%)`
@@ -276,12 +276,12 @@ D.\t$14$。
         domain: ["Geometry"],
         topic: ["Mensuration"],
         difficulty: 2,
-        content: `某實心正方體的邊長為 $60$ cm。 一實心直立圓柱體的體積等於該正方體的體積，而該圓柱體的曲面面積等於該正方體的總表面面積。 求該圓柱體的底半徑。
+        content: `某實心正方體的邊長為 $60\\text{ cm}$。 一實心直立圓柱體的體積等於該正方體的體積，而該圓柱體的曲面面積等於該正方體的總表面面積。 求該圓柱體的底半徑。
 <div class="q-mcopt">
-A.\t$20$ cm<br>
-B.\t$30$ cm<br>
-C.\t$76$ cm<br>
-D.\t$172$ cm
+A.\t$20\\text{ cm}$<br>
+B.\t$30\\text{ cm}$<br>
+C.\t$76\\text{ cm}$<br>
+D.\t$172\\text{ cm}$
 </div>`,
         hint: `設半徑及高，列聯立方程。`,
         solution: `A (50%)`
@@ -295,12 +295,12 @@ D.\t$172$ cm
         domain: ["Geometry"],
         topic: ["Mensuration"],
         difficulty: 3,
-        content: `圖中，$AC$ 為圓 $ABCD$ 的一直徑而 $BD$ 及 $EF$ 均為圓 $BEDF$ 的直徑。 已知 $C$ 及 $E$ 均在 $AF$ 上。 設 $G$ 為 $AF$ 與 $BD$ 的交點。 若 $AG=30$ cm 及 $CG=10$ cm，求陰影區域的面積準確至最接近的 cm$^2$。
+        content: `圖中，$AC$ 為圓 $ABCD$ 的一直徑而 $BD$ 及 $EF$ 均為圓 $BEDF$ 的直徑。 已知 $C$ 及 $E$ 均在 $AF$ 上。 設 $G$ 為 $AF$ 與 $BD$ 的交點。 若 $AG=30\\text{ cm}$ 及 $CG=10\\text{ cm}$，求陰影區域的面積準確至最接近的 $\\text{cm}^2$。
 <div class="q-mcopt"><img src="img/2023dsep2q16.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px;">
-A.\t$209$ cm$^2$<br>
-B.\t$367$ cm$^2$<br>
-C.\t$383$ cm$^2$<br>
-D.\t$540$ cm$^2$
+A.\t$209\\text{ cm}^2$<br>
+B.\t$367\\text{ cm}^2$<br>
+C.\t$383\\text{ cm}^2$<br>
+D.\t$540\\text{ cm}^2$
 </div><div style="clear: both;"></div>`,
         hint: `先求各圓半徑，再計算扇形或弓形面積。`,
         solution: `D (27%)`
@@ -314,12 +314,12 @@ D.\t$540$ cm$^2$
         domain: ["Geometry"],
         topic: ["Geometry (Polygons)"],
         difficulty: 2,
-        content: `圖中，$PQRS$ 為一平行四邊形。 設 $X$ 為 $PQ$ 上的一點。 將 $PR$ 與 $SX$ 的交點記為 $Y$。 若 $\\Delta PXY$ 的面積及四邊形 $QRYX$ 的面積分別為 $32$ cm$^2$ 及 $58$ cm$^2$，則 $\\Delta RSY$ 的面積為
+        content: `圖中，$PQRS$ 為一平行四邊形。 設 $X$ 為 $PQ$ 上的一點。 將 $PR$ 與 $SX$ 的交點記為 $Y$。 若 $\\Delta PXY$ 的面積及四邊形 $QRYX$ 的面積分別為 $32\\text{ cm}^2$ 及 $58\\text{ cm}^2$，則 $\\Delta RSY$ 的面積為
 <div class="q-mcopt"><img src="img/2023dsep2q17.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 60%; margin-left: 15px; margin-bottom: 5px;">
-A.\t$40$ cm$^2$。<br>
-B.\t$50$ cm$^2$。<br>
-C.\t$58$ cm$^2$。<br>
-D.\t$72$ cm$^2$。
+A.\t$40\\text{ cm}^2$。<br>
+B.\t$50\\text{ cm}^2$。<br>
+C.\t$58\\text{ cm}^2$。<br>
+D.\t$72\\text{ cm}^2$。
 </div><div style="clear: both;"></div>`,
         hint: `利用面積比與底或高的比例關係。`,
         solution: `B (43%)`
