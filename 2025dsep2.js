@@ -424,7 +424,7 @@ D.	$15\\text{ cm}$。
         domain: ["Geometry"],
         topic: ["Geometry (Circles)"],
         difficulty: 2,
-        content: `圖中，$RSTUV$ 為一圓。 已知 $RT//VU$ 及 $RT$ 為 $\\triangle SRU$ 的角平分線。 若 $\\angle RTS = \\angle URV = 33^\\circ$，則 $\\angle RUT =$
+        content: `圖中，$RSTUV$ 為一圓。 已知 $RT//VU$ 及 $RT$ 為 $\\angle SRU$ 的角平分線。 若 $\\angle RTS = \\angle URV = 33^\\circ$，則 $\\angle RUT =$
 <div class="q-mcopt"><img src="img/2025dsep2q22.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px;">
 A.	$36^\\circ$。 <br>
 B.	$49^\\circ$。 <br>
