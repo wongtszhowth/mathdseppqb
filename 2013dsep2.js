@@ -561,8 +561,41 @@ D.\t$y$ 隨 $x^{-3}$ 正變。
         domain: ["Data Handling"],
         topic: ["Statistical Graphs", "Measures of Dispersion"],
         difficulty: 2,
-        content: `下面的幹葉圖顯示某些工人的時薪（以元為單位）的分佈。 
-<div style="overflow-x: auto; width: 100%; margin-bottom: 8px;"><table class="q-table" style="width: 100%; min-width: 300px;"><tr><td>幹（十位）</td><td>葉（個位）</td></tr><tr><td>$4$</td><td>$0$ $2$ $2$ $2$ $4$ $4$ $4$ $7$</td></tr><tr><td>$5$</td><td>$0$ $0$ $1$ $2$ $2$ $6$ $8$ $9$</td></tr><tr><td>$6$</td><td>$3$ $3$ $5$ $7$</td></tr><tr><td>$7$</td><td>$0$</td></tr><tr><td>$8$</td><td>$2$ $6$</td></tr><tr><td>$9$</td><td>$5$</td></tr></table></div>
+        content: `下面的幹葉圖顯示某些工人的時薪（以元為單位）的分佈。
+        <table class="q-table" style="border-collapse: collapse; table-layout: auto;" align="center">
+    <colgroup>
+      <col style="width: auto;">
+      <col style="width: auto;">
+    </colgroup>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;"><u>幹（十位）</u></td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;"><u>葉（個位）</u></td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">4</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">0	2	2	2	4	4	4	7</td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">5</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">0	0	1	2	2	6	8	9</td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">6</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">3	5	5	7</td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">7</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">0</td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">8</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">2	6</td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">9</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">5</td>
+    </tr>
+  </table>
 下列哪一個框線圖可表示他們時薪的分佈？
 <div class="q-mcopt">
 <img src="img/2013dsep2q29A.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 40%;">\t\t<img src="img/2013dsep2q29B.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 40%;"><br>
