@@ -357,7 +357,7 @@ D.\t$320\\text{ cm}^2$。
         domain: ["Geometry"],
         topic: ["Geometry (Circles)"],
         difficulty: 2,
-        content: `圖中，$ABCD$ 為一圓。 $AC$ 與 $BD$ 相交於 $E$。 若 $AB = AD$ 及 $AD \\parallel BC$，則 $\\angle BAE =$
+        content: `圖中，$ABCD$ 為一圓。 $AC$ 與 $BD$ 相交於 $E$。 若 $AB = AD$ 及 $AD//BC$，則 $\\angle BAE =$
 <div class="q-mcopt"><img src="img/2013dsep2q19.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 45%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$53^\\circ$。 <br>
 B.\t$57^\\circ$。 <br>
@@ -440,8 +440,8 @@ D.\t$15:17$
         difficulty: 2,
         content: `若 $0^\\circ < x < 90^\\circ$，則下列何者必為正確？
 <div class="q-mcms">
-I.\t$\\tan x \\tan(90^\\circ - x) = 1$<br>
-II.\t$\\sin x - \\sin(90^\\circ - x) \\lt 0$<br>
+I.\t$\\tan x \\tan(90^\\circ - x) = 1$
+II.\t$\\sin x - \\sin(90^\\circ - x) \\lt 0$
 III.\t$\\cos x + \\cos(90^\\circ - x) \\gt 0$
 </div>
 <div class="q-mcopt">
@@ -772,9 +772,9 @@ D.\t$30$。
         difficulty: 2,
         content: `某數列的第 $n$ 項為 $2n-19$。 下列何者正確？
 <div class="q-mcms">
-I.\t$25$ 為該數列的其中一項。 <br>
-II.\t該數列有 $10$ 個負值項。 <br>
-III.\t該數列的首 $n$ 項之和為 $n^2-18n$。 
+I.\t$25$ 為該數列的其中一項。
+II.\t該數列有 $10$ 個負值項。
+III.\t該數列的首 $n$ 項之和為 $n^2-18n$。
 </div>
 <div class="q-mcopt">
 A.\t只有 I<br>
