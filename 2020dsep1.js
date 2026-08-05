@@ -164,7 +164,7 @@ questions.push(
         topic: ["Measures of Central Tendency and Dispersion"],
         difficulty: 1,
         content: `下面的幹葉圖顯示某袋子內的信件的重量（以克為單位）的分佈。
-        <table class="q-table" style="border-collapse: collapse; table-layout: auto;" align="center">
+        <table class="q-table" style="border-collapse: collapse; table-layout: auto; width: auto; white-space: pre;" align="center">
     <colgroup>
       <col style="width: auto;">
       <col style="width: auto;">
