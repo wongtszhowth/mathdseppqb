@@ -575,8 +575,33 @@ D.\t$\\$135$
         domain: ["Data Handling"],
         topic: ["Statistical Graphs", "Measures of Dispersion"],
         difficulty: 2,
-        content: `下面的幹葉圖顯示某巴士內乘客的年歲的分佈。 
-<div style="overflow-x: auto; width: 100%; margin-bottom: 8px;"><table class="q-table" style="width: 100%; min-width: 300px;"><tr><td>幹（十位）</td><td>葉（個位）</td></tr><tr><td>$1$</td><td>$h$ $4$ $6$</td></tr><tr><td>$2$</td><td>$3$ $3$ $3$ $4$ $6$ $7$ $7$</td></tr><tr><td>$3$</td><td>$1$ $2$ $2$ $2$ $6$ $8$</td></tr><tr><td>$4$</td><td>$0$ $k$</td></tr></table></div>
+        content: `下面的幹葉圖顯示某巴士內乘客的年歲的分佈。
+		<table class="q-table" style="border-collapse: collapse; table-layout: auto;" align="center">
+    <colgroup>
+      <col style="width: auto;">
+      <col style="width: auto;">
+    </colgroup>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;"><u>幹（十位）</u></td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;"><u>葉（個位）</u></td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">1</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">$h$	4	6</td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">2</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">3	3	3	4	6	7	7</td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">3</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">1	2	2	2	6	8</td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">4</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">0	$k$</td>
+    </tr>
+  </table>
 若上述分佈的分佈域至少為 $33$，則下列何者必為正確？
 <div class="q-mcms">
 I.\t$0 \\le h \\le 3$
