@@ -856,7 +856,7 @@ D.\t$0.8464$
         domain: ["Data Handling"],
         topic: ["Standard Score"],
         difficulty: 2,
-        content: `下表顯示三名學生在某考試的得分（以分為單位）及其對應的標準分。<table class="q-table" style="margin-left: auto; margin-right: auto; border-collapse: collapse; table-layout: auto;">
+        content: `下表顯示三名學生在某考試的得分（以分為單位）及其對應的標準分。<table class="q-table" style="margin-top: 12px; margin-bottom: 12px; margin-left: auto; margin-right: auto; border-collapse: collapse; table-layout: auto;">
     <colgroup>
       <col style="width: auto;">
       <col style="width: 4em;">
