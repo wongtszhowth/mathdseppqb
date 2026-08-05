@@ -258,7 +258,7 @@ D.	$243$。
         topic: ["Equations of Straight Lines"],
         difficulty: 2,
         content: `圖中，直線 $L$ 的方程為 $px + qy = 7$。 下列何者正確？
-<div class="q-mcms"><img src="img/2025dsep2q14.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
+<div class="q-mcms"><img src="img/2025dsep2q14.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 40%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 I.	$p > 7$
 II.	$q > 7$
 III.	$q > p$
@@ -406,7 +406,7 @@ D.	$135$ cm。
         topic: ["Mensuration"],
         difficulty: 2,
         content: `圖中，$ABCD$ 為一長方形。 已知 $AE = 20$ cm 及 $\\angle AED = 90^\\circ$。 若 $\\Delta ADE$ 的面積為 $150$ cm$^2$，則由 $E$ 至 $CD$ 的垂直距離為
-<div class="q-mcopt"><img src="img/2025dsep2q21.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px;">
+<div class="q-mcopt"><img src="img/2025dsep2q21.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 45%; margin-left: 15px; margin-bottom: 5px;">
 A.	$8$ cm。 <br>
 B.	$9$ cm。 <br>
 C.	$12$ cm。 <br>
@@ -425,7 +425,7 @@ D.	$15$ cm。
         topic: ["Geometry (Circles)"],
         difficulty: 2,
         content: `圖中，$RSTUV$ 為一圓。 已知 $RT//VU$ 及 $RT$ 為 $\\triangle SRU$ 的角平分線。 若 $\\angle RTS = \\angle URV = 33^\\circ$，則 $\\angle RUT =$
-<div class="q-mcopt"><img src="img/2025dsep2q22.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 55%; margin-left: 15px; margin-bottom: 5px;">
+<div class="q-mcopt"><img src="img/2025dsep2q22.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px;">
 A.	$36^\\circ$。 <br>
 B.	$49^\\circ$。 <br>
 C.	$65^\\circ$。 <br>
@@ -548,18 +548,18 @@ D.	$x^2+y^2+14x-10y-119=0$。
       <col style="width: 3em;">
     </colgroup>
     <tr>
-      <th style="border: 1px solid #000; text-align: center; padding: 6px 10px;">所抽出的數字</th>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">2</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">3</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">4</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">5</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">所抽出的數字</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">2</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">3</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">4</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">5</td>
     </tr>
     <tr>
-      <th style="border: 1px solid #000; text-align: center; padding: 6px 10px;">所獲代幣的數目</th>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">10</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">15</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">25</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 6px 10px;">50</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">所獲代幣的數目</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">10</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">15</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">25</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">50</td>
     </tr>
   </table>
 求在該遊戲中所獲代幣的數目的期望值。 
@@ -600,28 +600,7 @@ D.	$4$
         domain: ["Data Handling"],
         topic: ["Measures of Central Tendency", "Measures of Dispersion"],
         difficulty: 2,
-        content: `考慮以下數據：
-<table class="q-table" style="margin-left: auto; margin-right: auto; min-width: 300px; border-collapse: collapse; table-layout: auto;">
-    <colgroup>
-      <col style="width: 3em;">
-      <col style="width: 3em;">
-      <col style="width: 3em;">
-      <col style="width: 3em;">
-      <col style="width: 3em;">
-      <col style="width: 3em;">
-    </colgroup>
-    <tr>
-      <td style="border: 0px; text-align: center; padding: 0px 0px;">$\\alpha$</th>
-      <td style="border: 0px; text-align: center; padding: 0px 0px;">$\\beta$</td>
-      <td style="border: 0px; text-align: center; padding: 0px 0px;">$-4$</td>
-      <td style="border: 0px; text-align: center; padding: 0px 0px;">$-3$</td>
-      <td style="border: 0px; text-align: center; padding: 0px 0px;">$1$</td>
-      <td style="border: 0px; text-align: center; padding: 0px 0px;">$1$</td>
-      <td style="border: 0px; text-align: center; padding: 0px 0px;">$1$</td>
-      <td style="border: 0px; text-align: center; padding: 0px 0px;">$4$</td>
-    </tr>
-  </table>
-$\\alpha$　　$\\beta$　　$-4$　　$-3$　　$1$　　$1$　　$1$　　$4$
+        content: `考慮以下數據：<div style="text-align: center;">$3x+2>$\\alpha$　　$\\beta$　　$-4$　　$-3$　　$1$　　$1$　　$1$　　$4$</div>
 將以上數據的眾數及中位數分別記為 $s$ 及 $t$。 若以上數據的平均值及分佈域分別為 $0$ 及 $10$，則下列何者正確？
 <div class="q-mcms">
 I.	$s = 1$
@@ -664,7 +643,7 @@ D.	$2^{53} + 2^{52} + 2^{51} + 2^{50} + 2^{49}$。
         domain: ["Algebra"],
         topic: ["H.C.F. and L.C.M."],
         difficulty: 2,
-        content: `$p^2 - 4q^2$ 、 $p^3 - 8q^3$ 及 $(p+2q)(p^2 - 4q^2)$ 的 L.C.M. 為
+        content: `$p^2 - 4q^2$ 、 $p^3 - 8q^3$  及  $(p+2q)(p^2 - 4q^2)$  的 L.C.M. 為
 <div class="q-mcopt">
 A.	$p-2q$。 <br>
 B.	$p^2 - 4q^2$。 <br>
