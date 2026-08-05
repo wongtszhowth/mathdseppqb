@@ -557,8 +557,7 @@ D.\t$\\dfrac{8}{15}$
         domain: ["Data Handling"],
         topic: ["Statistical Graphs", "Measures of Dispersion"],
         difficulty: 1,
-        content: `下面的框線圖顯示一群小童在某遊戲中所獲代幣的數目的分佈。 若該分佈的分佈域為其四分位數間距的三倍，求 $m$。
-<img src="img/2024dsep2q29zh.jpg" class="q-img" alt="題目附圖" style="max-width: 80%; margin-left: 15px; margin-bottom: 5px;"><div class="q-mcopt">
+        content: `下面的框線圖顯示一群小童在某遊戲中所獲代幣的數目的分佈。 若該分佈的分佈域為其四分位數間距的三倍，求 $m$。<img src="img/2024dsep2q29zh.jpg" class="q-img" alt="題目附圖" style="max-width: 75%;"><div class="q-mcopt">
 A.\t$248$<br>
 B.\t$275$<br>
 C.\t$336$<br>
