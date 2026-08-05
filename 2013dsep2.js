@@ -377,7 +377,7 @@ D.\t$74^\\circ$。
         topic: ["Trigonometry (2D)"],
         difficulty: 2,
         content: `圖中，由 $O$ 測 $P$ 的方位為 S$86^\\circ$E，且由 $O$ 測 $Q$ 的方位為 N$32^\\circ$E。 若 $P$ 及 $Q$ 與 $O$ 等距，則由 $Q$ 測 $P$ 的方位為
-<div class="q-mcopt"><img src="img/2013dsep2q20.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 45%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
+<div class="q-mcopt"><img src="img/2013dsep2q20zh.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 45%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\tN$24^\\circ$W。 <br>
 B.\tN$27^\\circ$W。 <br>
 C.\tS$24^\\circ$E。 <br>
