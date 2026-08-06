@@ -462,8 +462,7 @@ D.	$\\tan \\angle ADC = \\dfrac{BC}{CD}$
         domain: ["Geometry"],
         topic: ["Coordinate Geometry"],
         difficulty: 3,
-        content: `點 $X$、點 $Y$ 及點 $Z$ 的極坐標分別為 $(1, 20^\\circ)$、$(2, 80^\\circ)$ 及 $(r, \\theta)$，其中 $20^\\circ < \\theta < 80^\\circ$。 若 $\\Delta XYZ$ 為一等邊三角形，求 $r$。 
-<div class="q-mcopt">
+        content: `<div style="color: red;">點 $X$、點 $Y$ 及點 $Z$ 的極坐標分別為 $(1, 20^\\circ)$、$(2, 80^\\circ)$ 及 $(r, \\theta)$，其中 $20^\\circ < \\theta < 80^\\circ$。 若 $\\Delta XYZ$ 為一等邊三角形，求 $r$。</div><div class="q-mcopt" style="color: red;">
 A.	$\\sqrt{3}$<br>
 B.	$\\sqrt{5}$<br>
 C.	$\\sqrt{7}$<br>
