@@ -105,7 +105,7 @@ D.\t$17$。
         domain: ["Algebra"],
         topic: ["Linear Inequalities and Compound Inequalities"],
         difficulty: 1,
-        content: `$x-3<-5$  或  $\\dfrac{6-x}{4}<2$ 的解為
+        content: `$x-3<-5$  或  $\\dfrac{6-x}{4}<2$  的解為
 <div class="q-mcopt">
 A.\t$x<-2$。<br>
 B.\t$x>-2$。<br>
@@ -219,7 +219,7 @@ D.\t$\\$832$
         domain: ["Geometry"],
         topic: ["Mensuration"],
         difficulty: 2,
-        content: `某地圖的比例尺為 $1:50~000$。 若一機場的實際面積為 $10$ km$^2$，則這機場在該地圖上的面積為
+        content: `某地圖的比例尺為 $1:50\\,000$。 若一機場的實際面積為 $10$ km$^2$，則這機場在該地圖上的面積為
 <div class="q-mcopt">
 A.\t$2\\text{ cm}^2$。<br>
 B.\t$4\\text{ cm}^2$。<br>
@@ -579,12 +579,12 @@ D.\t$70$
         domain: ["Data Handling"],
         topic: ["Measures of Central Tendency"],
         difficulty: 1,
-        content: `某公司有 $14$ 名全職僱員及 $56$ 名兼職僱員。 該些全職僱員的平均薪金為 $\\$31~530$，而該些兼職僱員的平均薪金為 $\\$21~525$。 求該公司這些僱員的平均薪金。
+        content: `某公司有 $14$ 名全職僱員及 $56$ 名兼職僱員。 該些全職僱員的平均薪金為 $\\$31\\,530$，而該些兼職僱員的平均薪金為 $\\$21\\,525$。 求該公司這些僱員的平均薪金。
 <div class="q-mcopt">
-A.\t$\\$23~526$<br>
-B.\t$\\$25~527$<br>
-C.\t$\\$27~528$<br>
-D.\t$\\$29~529$
+A.\t$\\$23\\,526$<br>
+B.\t$\\$25\\,527$<br>
+C.\t$\\$27\\,528$<br>
+D.\t$\\$29\\,529$
 </div>`,
         hint: `用加權平均計算。`,
         solution: `A (84%)<p><iframe src="https://www.youtube.com/embed/nkwFB3YQhVM?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
@@ -820,10 +820,10 @@ D.\t$7k$。
         difficulty: 2,
         content: `某群有 $15$ 名教師。 若從該群中選出 $5$ 名教師組成一個有 $1$ 名主席及 $4$ 名委員的委員會，則可組成多少個不同的委員會？
 <div class="q-mcopt">
-A.\t$3~003$<br>
-B.\t$15~015$<br>
-C.\t$20~475$<br>
-D.\t$360~360$
+A.\t$3\\,003$<br>
+B.\t$15\\,015$<br>
+C.\t$20\\,475$<br>
+D.\t$360\\,360$
 </div>`,
         hint: `先選 5 人再從中選主席。`,
         solution: `B (44%)<p><iframe src="https://www.youtube.com/embed/pSDBYb1mWmM?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
