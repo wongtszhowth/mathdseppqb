@@ -18,7 +18,7 @@ C.\t$(m+n)(3m-2n-1)$。 <br>
 D.\t$(m+n)(3m+2n-1)$。 
 </div>`,
         hint: `分組後因式分解。 `,
-        solution: `A (89%)`
+        solution: `A (89%)<p><iframe src="https://www.youtube.com/embed/m54oHm6JjxA?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q02",
@@ -37,7 +37,7 @@ C.\t$\\dfrac{1}{3^{222}}$。 <br>
 D.\t$\\dfrac{1}{3^{666}}$。 
 </div>`,
         hint: `先化成相同底數再簡化指數。 `,
-        solution: `D (72%)`
+        solution: `D (72%)<p><iframe src="https://www.youtube.com/embed/GCK5kooimcU?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q03",
@@ -56,7 +56,7 @@ C.\t$\\dfrac{5b}{6}$。 <br>
 D.\t$\\dfrac{6b}{5}$。 
 </div>`,
         hint: `通分後整理含 $a$ 的項。 `,
-        solution: `A (73%)`
+        solution: `A (73%)<p><iframe src="https://www.youtube.com/embed/b3ZZOl3w244?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q04",
@@ -75,7 +75,7 @@ C.\t$0.01026$（準確至五位小數）。 <br>
 D.\t$0.010266$（準確至六位小數）。 
 </div>`,
         hint: `計算數值後判斷準確度。 `,
-        solution: `D (91%)`
+        solution: `D (91%)<p><iframe src="https://www.youtube.com/embed/_u9e33SHSLc?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q05",
@@ -94,7 +94,7 @@ C.\t$2 \\lt x \\lt 3$。 <br>
 D.\t$x \\lt 2$ 或 $x \\gt 3$。 
 </div>`,
         hint: `分別解兩個不等式再取聯集。 `,
-        solution: `D (87%)`
+        solution: `D (87%)<p><iframe src="https://www.youtube.com/embed/GRVVUDWJIok?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q06",
@@ -113,7 +113,7 @@ C.\t$16$。 <br>
 D.\t$2k$。 
 </div>`,
         hint: `直接代入並簡化。 `,
-        solution: `A (73%)`
+        solution: `A (73%)<p><iframe src="https://www.youtube.com/embed/bCD7r3TMsV4?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q07",
@@ -132,7 +132,7 @@ C.\t$15$<br>
 D.\t$26$
 </div>`,
         hint: `用因式定理求 $c$，再用餘式定理。 `,
-        solution: `B (76%)`
+        solution: `B (76%)<p><iframe src="https://www.youtube.com/embed/PM5LGl5EkE0?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q08",
@@ -151,7 +151,7 @@ C.\t$4$。 <br>
 D.\t$16$。 
 </div>`,
         hint: `展開兩邊並比較係數。 `,
-        solution: `A (62%)`
+        solution: `A (62%)<p><iframe src="https://www.youtube.com/embed/yU0i1lNR7l0?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q09",
@@ -170,7 +170,7 @@ C.\t$p > 0$  及  $q < 0$<br>
 D.\t$p > 0$  及  $q > 0$
 </div><div style="clear: both;"></div>`,
         hint: `觀察開口方向及頂點位置。 `,
-        solution: `C (44%)`
+        solution: `C (44%)<p><iframe src="https://www.youtube.com/embed/CocFo8Mfflg?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q10",
@@ -189,7 +189,7 @@ C.\t$\\$437$<br>
 D.\t$\\$440$
 </div>`,
         hint: `半年利率為 $2.5\\%$，共 $8$ 期。 `,
-        solution: `C (76%)`
+        solution: `C (76%)<p><iframe src="https://www.youtube.com/embed/KDAFF0JB40Q?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q11",
@@ -208,7 +208,7 @@ C.\t$3.2 \\times 10^5\\text{ m}^2$。 <br>
 D.\t$1 \\times 10^6\\text{ m}^2$。 
 </div>`,
         hint: `面積比為長度比的平方。 `,
-        solution: `B (56%)`
+        solution: `B (56%)<p><iframe src="https://www.youtube.com/embed/XKMoqI_fhyI?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q12",
@@ -227,7 +227,7 @@ C.\t23。<br>
 D.\t47。
 </div>`,
         hint: `設 $y = k x^2 + c$ 後求常數。 `,
-        solution: `C (84%)`
+        solution: `C (84%)<p><iframe src="https://www.youtube.com/embed/-p4leK14uRM?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q13",
@@ -246,7 +246,7 @@ C.\t$71$<br>
 D.\t$161$
 </div>`,
         hint: `寫出通項或累加計算。 `,
-        solution: `B (86%)`
+        solution: `B (86%)<p><iframe src="https://www.youtube.com/embed/CKkbsTHRiTs?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q14",
@@ -265,7 +265,7 @@ C.\t$54\\text{ cm}$。 <br>
 D.\t$84\\text{ cm}$。 
 </div><div style="clear: both;"></div>`,
         hint: `由面積差求 $AD$、$DC$，再用畢氏定理。 `,
-        solution: `B (71%)`
+        solution: `B (71%)<p><iframe src="https://www.youtube.com/embed/Hf0MGuVEjO8?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q15",
@@ -284,7 +284,7 @@ C.\t$81\\pi\\text{ cm}^3$。 <br>
 D.\t$144\\pi\\text{ cm}^3$。 
 </div>`,
         hint: `設半徑及高後代入體積公式。 `,
-        solution: `C (52%)`
+        solution: `C (52%)<p><iframe src="https://www.youtube.com/embed/ecrLf86A_3c?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q16",
@@ -303,7 +303,7 @@ C.\t$90\\text{ cm}^2$。 <br>
 D.\t$144\\text{ cm}^2$。 
 </div><div style="clear: both;"></div>`,
         hint: `利用面積比與底的比例關係。 `,
-        solution: `D (32%)`
+        solution: `D (32%)<p><iframe src="https://www.youtube.com/embed/U_VO4TOgoVg?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q17",
@@ -322,7 +322,7 @@ C.\t$12\\text{ cm}$<br>
 D.\t$13\\text{ cm}$
 </div><div style="clear: both;"></div>`,
         hint: `利用等邊三角形及等角性質。 `,
-        solution: `D (36%)`
+        solution: `D (36%)<p><iframe src="https://www.youtube.com/embed/7SQOBC7S--8?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q18",
@@ -341,7 +341,7 @@ C.\t$62^\\circ$。<br>
 D.\t$68^\\circ$。
 </div><div style="clear: both;"></div>`,
         hint: `利用等腰三角形及平行線性質。 `,
-        solution: `A (45%)`
+        solution: `A (45%)<p><iframe src="https://www.youtube.com/embed/_ORK7_QHUx4?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q19",
@@ -360,7 +360,7 @@ C.\t$9$。<br>
 D.\t$10$。
 </div><div style="clear: both;"></div>`,
         hint: `用坐標距離公式計算。 `,
-        solution: `D (68%)`
+        solution: `D (68%)<p><iframe src="https://www.youtube.com/embed/wTKZnJLOk_E?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q20",
@@ -384,7 +384,7 @@ C.\t只有 II 及 III<br>
 D.\tI、II 及 III
 </div>`,
         hint: `利用等角及中點性質。 `,
-        solution: `D (15%)`
+        solution: `D (15%)<p><iframe src="https://www.youtube.com/embed/WCvz1IyPGeQ?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q21",
@@ -403,7 +403,7 @@ C.\t$40^\\circ$。 <br>
 D.\t$55^\\circ$。 
 </div><div style="clear: both;"></div>`,
         hint: `利用直徑及等弦對等角。 `,
-        solution: `C (59%)`
+        solution: `C (59%)<p><iframe src="https://www.youtube.com/embed/tIUlnjfANgU?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q22",
@@ -422,7 +422,7 @@ C.\t$47^\\circ$<br>
 D.\t$57^\\circ$
 </div><div style="clear: both;"></div>`,
         hint: `在直角三角形中用三角函數。 `,
-        solution: `D (58%)`
+        solution: `D (58%)<p><iframe src="https://www.youtube.com/embed/x06c3M9qXO0?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q23",
@@ -446,7 +446,7 @@ C.\t只有 II 及 III<br>
 D.\tI、II 及 III
 </div><div style="clear: both;"></div>`,
         hint: `由圖像判斷斜率及截距。 `,
-        solution: `A (30%)`
+        solution: `A (30%)<p><iframe src="https://www.youtube.com/embed/KZMk4W9Vj54?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q24",
@@ -465,7 +465,7 @@ C.\t$9x-5y+15=0$。<br>
 D.\t$9x-5y+27=0$。
 </div>`,
         hint: `兩直線垂直時斜率乘積為 $-1$。 `,
-        solution: `A (59%)`
+        solution: `A (59%)<p><iframe src="https://www.youtube.com/embed/3yStLDAs-8I?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q25",
@@ -483,7 +483,7 @@ C.\t$2\\sqrt{3}$。<br>
 D.\t$3\\sqrt{3}$。
 </div>`,
         hint: `轉直角坐標後用點到直線距離公式。 `,
-        solution: `C (57%)`
+        solution: `C (57%)<p><iframe src="https://www.youtube.com/embed/fQMBfg4swto?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q26",
@@ -507,7 +507,7 @@ C.\t只有 I 及 III<br>
 D.\t只有 II 及 III
 </div>`,
         hint: `先求兩圓圓心及半徑。 `,
-        solution: `A (53%)`
+        solution: `A (53%)<p><iframe src="https://www.youtube.com/embed/C4RVHQfc8dw?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q27",
@@ -526,7 +526,7 @@ C.\t$7$<br>
 D.\t$8$
 </div>`,
         hint: `$AP=BP$ 表示 $AB$ 的垂直平分線。 `,
-        solution: `B (38%)`
+        solution: `B (38%)<p><iframe src="https://www.youtube.com/embed/P2GBbm0feKg?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q28",
@@ -545,7 +545,7 @@ C.\t$\\dfrac{5}{12}$<br>
 D.\t$\\dfrac{7}{25}$
 </div><div style="clear: both;"></div>`,
         hint: `由棒形圖讀取人數後計算概率。 `,
-        solution: `C (84%)`
+        solution: `C (84%)<p><iframe src="https://www.youtube.com/embed/eqKY-oKfbdo?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q29",
@@ -564,7 +564,7 @@ C.\t$25$<br>
 D.\t$40$
 </div>`,
         hint: `從框線圖直接讀取 $Q_1$。 `,
-        solution: `B (76%)`
+        solution: `B (76%)<p><iframe src="https://www.youtube.com/embed/FVQFK1gvcfM?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q30",
@@ -575,7 +575,7 @@ D.\t$40$
         domain: ["Data Handling"],
         topic: ["Measures of Central Tendency", "Measures of Dispersion"],
         difficulty: 2,
-        content: `考慮以下正整數：<div style="text-align: center;">2　3　4　6　7　9　10　$m$　$n$</div>設 $a$、$b$ 及 $c$ 分別為以上正整數的眾數、中位數及分佈域。 若以上正整數的平均值為 $5$，則下列何者必為正確？
+        content: `考慮以下正整數：<div style="text-align: center;">2 3 4 6 7 9 10 $m$ $n$</div>設 $a$、$b$ 及 $c$ 分別為以上正整數的眾數、中位數及分佈域。 若以上正整數的平均值為 $5$，則下列何者必為正確？
 <div class="q-mcms">
 I.\t$a=2$
 II.\t$b=4$
@@ -588,7 +588,7 @@ C.\t只有 I 及 III<br>
 D.\t只有 II 及 III
 </div>`,
         hint: `由平均值求 $m+n$，再判斷中位數。 `,
-        solution: `B (51%)`
+        solution: `B (51%)<p><iframe src="https://www.youtube.com/embed/zlA3N0TJnfg?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q31",
@@ -605,7 +605,7 @@ D.\t只有 II 及 III
 <img src="img/2017dsep2q31C.jpg" class="q-img" alt="題目附圖" style="display: inline-block; max-width: 35%;">\t\t\t<img src="img/2017dsep2q31D.jpg" class="q-img" alt="題目附圖" style="display: inline-block; max-width: 35%;">
 </div>`,
         hint: `沿 $x$ 方向伸展 2 倍。 `,
-        solution: `D (41%)`
+        solution: `D (41%)<p><iframe src="https://www.youtube.com/embed/-Za8ZfuM1LM?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q32",
@@ -623,7 +623,7 @@ C.\t$100000000000100_{16}$<br>
 D.\t$200000000000200_{16}$
 </div>`,
         hint: `轉成十六進制表示。 `,
-        solution: `D (50%)`
+        solution: `D (50%)<p><iframe src="https://www.youtube.com/embed/BL3UStZU-sY?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q33",
@@ -642,7 +642,7 @@ C.\t$y = 4x^2 - 32x + 64$<br>
 D.\t$y = 4x^2 + 32x + 64$
 </div>`,
         hint: `由圖像讀取斜率及截距後平方。 `,
-        solution: `C (53%)`
+        solution: `C (53%)<p><iframe src="https://www.youtube.com/embed/6Yce8ZjS6q4?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q34",
@@ -661,7 +661,7 @@ C.\t$2$  或  $\\dfrac{7}{2}$。<br>
 D.\t$3$  或  $\\dfrac{1}{9}$。
 </div>`,
         hint: `設 $t=\\log_9 y$ 後解聯立方程。 `,
-        solution: `D (41%)`
+        solution: `D (41%)<p><iframe src="https://www.youtube.com/embed/5PUGiX2yQl0?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q35",
@@ -680,7 +680,7 @@ C.\t$1$。 <br>
 D.\t$2$。 
 </div>`,
         hint: `化簡分式後令虛部為零。 `,
-        solution: `B (45%)`
+        solution: `B (45%)<p><iframe src="https://www.youtube.com/embed/9GQprWdMYp4?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q36",
@@ -704,7 +704,7 @@ C.\t只有 II 及 III<br>
 D.\tI、II 及 III
 </div>`,
         hint: `檢查公差是否為常數。 `,
-        solution: `C (66%)`
+        solution: `C (66%)<p><iframe src="https://www.youtube.com/embed/sv4M-Jd21Dk?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q37",
@@ -729,7 +729,7 @@ C.\t$52$。<br>
 D.\t$61$。
 </div>`,
         hint: `找出可行域頂點並代入目標函數。 `,
-        solution: `C (45%)`
+        solution: `C (45%)<p><iframe src="https://www.youtube.com/embed/1D2obzAiWQ?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q38",
@@ -748,7 +748,7 @@ C.\t$\\sqrt{641}\\text{ cm}$<br>
 D.\t$\\sqrt{697}\\text{ cm}$
 </div><div style="clear: both;"></div>`,
         hint: `用坐標或相似三角形求長度。 `,
-        solution: `A (49%)`
+        solution: `A (49%)<p><iframe src="https://www.youtube.com/embed/UuyIBz888sI?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q39",
@@ -767,7 +767,7 @@ C.\t$69^\\circ$<br>
 D.\t$70^\\circ$
 </div><div style="clear: both;"></div>`,
         hint: `用餘弦定理及投影求交角。 `,
-        solution: `A (34%)`
+        solution: `A (34%)<p><iframe src="https://www.youtube.com/embed/yUOIVc1_3Vk?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q40",
@@ -786,7 +786,7 @@ C.\t$54^\\circ$。 <br>
 D.\t$64^\\circ$。 
 </div><div style="clear: both;"></div>`,
         hint: `利用切線與弦的夾角及圓心角。 `,
-        solution: `B (61%)`
+        solution: `B (61%)<p><iframe src="https://www.youtube.com/embed/UaZLGWSc35Y?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q41",
@@ -805,7 +805,7 @@ C.\t$4:9$。<br>
 D.\t$7:24$。
 </div>`,
         hint: `利用內心坐標公式及邊長權重。 `,
-        solution: `D (21%)`
+        solution: `D (21%)<p><iframe src="https://www.youtube.com/embed/-CkmEmW1qRg?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q42",
@@ -824,7 +824,7 @@ C.\t$92\\,378$<br>
 D.\t$55\\,598\\,400$
 </div>`,
         hint: `分別計算學生及教師的組合後相乘。 `,
-        solution: `B (70%)`
+        solution: `B (70%)<p><iframe src="https://www.youtube.com/embed/dS7nXppXIY0?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q43",
@@ -843,7 +843,7 @@ C.\t$0.7599$<br>
 D.\t$0.9919$
 </div>`,
         hint: `1 減全部 4 次均中的概率。 `,
-        solution: `C (59%)`
+        solution: `C (59%)<p><iframe src="https://www.youtube.com/embed/OP8eIVRkbQw?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q44",
@@ -862,7 +862,7 @@ C.\t$12$ 分。<br>
 D.\t$36$ 分。
 </div>`,
         hint: `標準分 $= ($得分 $-$ 平均$)/$標準差。 `,
-        solution: `B (78%)`
+        solution: `B (78%)<p><iframe src="https://www.youtube.com/embed/MCsV0tPVrls?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2017-DSE-MATH-CP2-Q45",
@@ -886,6 +886,6 @@ C.\t只有 II 及 III<br>
 D.\tI、II 及 III
 </div>`,
         hint: `線性變換對眾數、四分位距、方差的影響。 `,
-        solution: `A (48%)`
+        solution: `A (48%)<p><iframe src="https://www.youtube.com/embed/ZB5HXXkFQfE?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     }
 );
