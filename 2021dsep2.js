@@ -181,7 +181,7 @@ D.\t$55$。
         domain: ["Algebra"],
         topic: ["Linear Inequalities and Compound Inequalities"],
         difficulty: 2,
-        content: `$9x+8 \\le 4(x-3)$ 或 $6-7x > 20$ 的解為
+        content: `$9x+8 \\le 4(x-3)$  或  $6-7x > 20$  的解為
 <div class="q-mcopt">
 A.\t$x \\le -4$。 <br>
 B.\t$x \\ge -4$。 <br>
@@ -752,8 +752,8 @@ D.\t只有 II 及 III
 <div class="q-mcopt">
 A.\t$-8 \\le k \\le 4$<br>
 B.\t$-4 \\le k \\le 8$<br>
-C.\t$k \\le -8$ 或 $k \\ge 4$<br>
-D.\t$k \\le -4$ 或 $k \\ge 8$
+C.\t$k \\le -8$  或  $k \\ge 4$<br>
+D.\t$k \\le -4$  或  $k \\ge 8$
 </div>`,
         hint: `判別式 $\\le 0$ 且二次項係數為正。`,
         solution: `B (27%)<p><iframe src="https://www.youtube.com/embed/SEfLVE1vN-U?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
