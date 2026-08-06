@@ -561,7 +561,7 @@ D.\t$\\dfrac{1}{10}$
         domain: ["Data Handling"],
         topic: ["Measures of Central Tendency"],
         difficulty: 1,
-        content: `$60$ 名男演員和 $40$ 名女演員的平均體重為 $57$ kg。 若男演員的平均體重為 $63$ kg，則女演員的平均體重為
+        content: `$60$ 名男演員和 $40$ 名女演員的平均體重為 $57\\text{ kg}$。 若男演員的平均體重為 $63\\text{ kg}$，則女演員的平均體重為
 <div class="q-mcopt">
 A.\t$48\\text{ kg}$。<br>
 B.\t$50\\text{ kg}$。<br>
