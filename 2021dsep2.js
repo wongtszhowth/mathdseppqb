@@ -385,12 +385,12 @@ D.\tI、II 及 III
         domain: ["Geometry"],
         topic: ["Geometry (Polygons)"],
         difficulty: 2,
-        content: `圖中，$ABCD$ 為一正方形。 設 $E$ 及 $F$ 分別為 $AB$ 及 $BC$ 上的點使得 $AE = 3BE$ 且 $\\angle DEF = 90^\\circ$。 若 $\\Delta DEF$ 的面積為 $25$ cm$^2$，則 $\\Delta CDF$ 的面積為
+        content: `圖中，$ABCD$ 為一正方形。 設 $E$ 及 $F$ 分別為 $AB$ 及 $BC$ 上的點使得 $AE = 3BE$ 且 $\\angle DEF = 90^\\circ$。 若 $\\Delta DEF$ 的面積為 $25\\text{ cm}^2$，則 $\\Delta CDF$ 的面積為
 <div class="q-mcopt"><img src="img/2021dsep2q20.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 40%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
-A.\t$48$ cm$^2$。 <br>
-B.\t$50$ cm$^2$。 <br>
-C.\t$52$ cm$^2$。 <br>
-D.\t$75$ cm$^2$。 
+A.\t$48\\text{ cm}^2$。 <br>
+B.\t$50\\text{ cm}^2$。 <br>
+C.\t$52\\text{ cm}^2$。 <br>
+D.\t$75\\text{ cm}^2$。 
 </div><div style="clear: both;"></div>`,
         hint: `設邊長後用面積及畢氏定理。`,
         solution: `C (34%)<p><iframe src="https://www.youtube.com/embed/ryDeDLwxBfY?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
@@ -767,7 +767,7 @@ D.\t$k \\le -4$ 或 $k \\ge 8$
         domain: ["Geometry"],
         topic: ["Coordinate Geometry"],
         difficulty: 2,
-        content: `圖中所示為長方形 $ABCD$，其中 $AB=960$ cm 及 $BC=597$ cm。 設 $E$、$F$ 及 $G$ 分別為 $AB$、$BC$ 及 $CD$ 上的點使得 $AE=638\\text{ cm}$、$BF=280\\text{ cm}$ 及 $CG=480\\text{ cm}$。 將 $AF$ 與 $EG$ 的交點記為 $H$。 求 $DH$ 準確至最接近的 cm。 
+        content: `圖中所示為長方形 $ABCD$，其中 $AB=960\\text{ cm}$ 及 $BC=597\\text{ cm}$。 設 $E$、$F$ 及 $G$ 分別為 $AB$、$BC$ 及 $CD$ 上的點使得 $AE=638\\text{ cm}$、$BF=280\\text{ cm}$ 及 $CG=480\\text{ cm}$。 將 $AF$ 與 $EG$ 的交點記為 $H$。 求 $DH$ 準確至最接近的 cm。 
 <div class="q-mcopt"><img src="img/2021dsep2q38.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 60%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$728\\text{ cm}$<br>
 B.\t$729\\text{ cm}$<br>
