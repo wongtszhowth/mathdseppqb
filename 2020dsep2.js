@@ -575,9 +575,7 @@ D.\t$6$
         domain: ["Data Handling"],
         topic: ["Measures of Central Tendency", "Measures of Dispersion"],
         difficulty: 2,
-        content: `考慮以下整數：
-$3$　$3$　$8$　$8$　$8$　$10$　$12$　$m$　$n$
-設 $x$、$y$ 及 $z$ 分別為以上整數的中位數、平均值及眾數。 若以上整數的分佈域為 $9$，則下列何者必為正確？
+        content: `考慮以下整數：<div style="text-align: center;">$3$　$3$　$8$　$8$　$8$　$10$　$12$　$m$　$n$</div>設 $x$、$y$ 及 $z$ 分別為以上整數的中位數、平均值及眾數。 若以上整數的分佈域為 $9$，則下列何者必為正確？
 <div class="q-mcms">
 I.\t$x=8$
 II.\t$y=8$
