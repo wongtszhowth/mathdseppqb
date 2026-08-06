@@ -91,7 +91,7 @@ D.\t$0.010266$（準確至六位小數）。
 A.\t$x \\lt 2$。 <br>
 B.\t$x \\gt 3$。 <br>
 C.\t$2 \\lt x \\lt 3$。 <br>
-D.\t$x \\lt 2$ 或 $x \\gt 3$。 
+D.\t$x \\lt 2$  或  $x \\gt 3$。 
 </div>`,
         hint: `分別解兩個不等式再取聯集。 `,
         solution: `D (87%)<p><iframe src="https://www.youtube.com/embed/GRVVUDWJIok?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
