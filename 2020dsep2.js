@@ -18,7 +18,7 @@ C.\t$\\dfrac{54}{x^9}$。<br>
 D.\t$\\dfrac{2}{3x^9}$。
 </div>`,
         hint: `先處理負指數再簡化。`,
-        solution: `C (77%)`
+        solution: `C (77%)<p><iframe src="https://www.youtube.com/embed/nIbFzCl5gD8?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q02",
@@ -37,7 +37,7 @@ C.\t$\\dfrac{a^2+2a}{2-a}$。<br>
 D.\t$\\dfrac{a^2-a}{2-a}$。
 </div>`,
         hint: `展開後整理含 $b$ 的項。`,
-        solution: `C (85%)`
+        solution: `C (85%)<p><iframe src="https://www.youtube.com/embed/oCmw0V28awI?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q03",
@@ -56,7 +56,7 @@ C.\t$\\dfrac{14k-21}{16k^2-9}$。<br>
 D.\t$\\dfrac{14k+9}{16k^2-9}$。
 </div>`,
         hint: `通分後合併分子。`,
-        solution: `A (89%)`
+        solution: `A (89%)<p><iframe src="https://www.youtube.com/embed/IZkkHBFO9No?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q04",
@@ -75,7 +75,7 @@ C.\t$(3a-2b)(2a+5b)$。<br>
 D.\t$(3a-2b)(6a+5b)$。
 </div>`,
         hint: `展開後重新因式分解。`,
-        solution: `A (85%)`
+        solution: `A (85%)<p><iframe src="https://www.youtube.com/embed/dqN0hFqFxHg?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q05",
@@ -94,7 +94,7 @@ C.\t$6\\beta^2-2$。<br>
 D.\t$6\\beta^2-2\\beta$。
 </div>`,
         hint: `直接代入並簡化。`,
-        solution: `B (63%)`
+        solution: `B (63%)<p><iframe src="https://www.youtube.com/embed/i4VlqATHErE?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q06",
@@ -113,7 +113,7 @@ C.\t$3$。<br>
 D.\t$48$。
 </div>`,
         hint: `用因式定理求 $a$，再代入。`,
-        solution: `D (75%)`
+        solution: `D (75%)<p><iframe src="https://www.youtube.com/embed/RE7l8a_N2Is?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q07",
@@ -132,7 +132,7 @@ C.\t$-4$。<br>
 D.\t$2$。
 </div>`,
         hint: `展開兩邊並比較係數。`,
-        solution: `C (80%)`
+        solution: `C (80%)<p><iframe src="https://www.youtube.com/embed/jq2Enbw11qg?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q08",
@@ -156,7 +156,7 @@ C.\t只有 II 及 III<br>
 D.\tI、II 及 III
 </div><div style="clear: both;"></div>`,
         hint: `由圖像判斷斜率及截距。`,
-        solution: `A (33%)`
+        solution: `A (33%)<p><iframe src="https://www.youtube.com/embed/KoOtLql_KWA?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q09",
@@ -175,7 +175,7 @@ C.\t$75$<br>
 D.\t$80$
 </div>`,
         hint: `設售價後列方程求解。`,
-        solution: `A (46%)`
+        solution: `A (46%)<p><iframe src="https://www.youtube.com/embed/zOqFYaJREqo?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q10",
@@ -194,7 +194,7 @@ C.\t$1:62\\,500$。<br>
 D.\t$1:25\\,000\\,000$。
 </div>`,
         hint: `面積比為長度比的平方。`,
-        solution: `B (32%)`
+        solution: `B (32%)<p><iframe src="https://www.youtube.com/embed/LApjQHX4OWs?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q11",
@@ -213,7 +213,7 @@ C.\t$384$。<br>
 D.\t$729$。
 </div>`,
         hint: `寫出 $w = k u^3 \\sqrt{v}$ 並求 $k$。`,
-        solution: `A (68%)`
+        solution: `A (68%)<p><iframe src="https://www.youtube.com/embed/EOY0nSk3cZs?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q12",
@@ -232,7 +232,7 @@ C.\t$38$<br>
 D.\t$51$
 </div>`,
         hint: `寫出通項或累加計算。`,
-        solution: `D (83%)`
+        solution: `D (83%)<p><iframe src="https://www.youtube.com/embed/O4TXCp06Fu8?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q13",
@@ -251,7 +251,7 @@ C.\t$x<5$。<br>
 D.\t$x>5$。
 </div>`,
         hint: `分別解兩個不等式再取交集。`,
-        solution: `D (79%)`
+        solution: `D (79%)<p><iframe src="https://www.youtube.com/embed/acfTfeFp4mc?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q14",
@@ -270,7 +270,7 @@ C.\t$46.75 \\le A < 63.25$<br>
 D.\t$48.25 \\le A < 64.75$
 </div><div style="clear: both;"></div>`,
         hint: `考慮各邊長誤差範圍後計算面積上下限。`,
-        solution: `B (41%)`
+        solution: `B (41%)<p><iframe src="https://www.youtube.com/embed/E6LgQem5M8E?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q15",
@@ -289,7 +289,7 @@ C.\t$67$<br>
 D.\t$150$
 </div>`,
         hint: `弧長 $= r\\theta$，列比例方程。`,
-        solution: `D (41%)`
+        solution: `D (41%)<p><iframe src="https://www.youtube.com/embed/VRKpYSrnEmg?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q16",
@@ -308,7 +308,7 @@ C.\t$490\\text{ cm}^3$。<br>
 D.\t$735\\text{ cm}^3$。
 </div>`,
         hint: `由圓柱體積求 $a^2b$，再代入圓錐公式。`,
-        solution: `B (39%)`
+        solution: `B (39%)<p><iframe src="https://www.youtube.com/embed/U9YxpzD4mFU?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q17",
@@ -327,7 +327,7 @@ C.\t$3:5$。<br>
 D.\t$4:9$。
 </div><div style="clear: both;"></div>`,
         hint: `利用相似及面積比與底的平方關係。`,
-        solution: `C (48%)`
+        solution: `C (48%)<p><iframe src="https://www.youtube.com/embed/wwlxlDdsSow?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q18",
@@ -346,7 +346,7 @@ C.\t$420\\text{ cm}^2$。 <br>
 D.\t$588\\text{ cm}^2$。 
 </div><div style="clear: both;"></div>`,
         hint: `利用面積比與底或高的比例。`,
-        solution: `B (43%)`
+        solution: `B (43%)<p><iframe src="https://www.youtube.com/embed/v_QxBQN3biw?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q19",
@@ -370,7 +370,7 @@ C.\t只有 I 及 III<br>
 D.\t只有 II 及 III
 </div><div style="clear: both;"></div>`,
         hint: `利用直線上的角及三角形內角和。`,
-        solution: `B (56%)`
+        solution: `B (56%)<p><iframe src="https://www.youtube.com/embed/tLcB8uKjTnI?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q20",
@@ -389,7 +389,7 @@ C.\t$24^\\circ$。<br>
 D.\t$29^\\circ$。
 </div><div style="clear: both;"></div>`,
         hint: `利用等邊及等腰三角形性質。`,
-        solution: `D (70%)`
+        solution: `D (70%)<p><iframe src="https://www.youtube.com/embed/QCTo1p5iGfo?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q21",
@@ -408,7 +408,7 @@ C.\t$120\\text{ cm}^2$<br>
 D.\t$136\\text{ cm}^2$
 </div><div style="clear: both;"></div>`,
         hint: `用畢氏定理求 $AE$ 及 $DE$。`,
-        solution: `C (62%)`
+        solution: `C (62%)<p><iframe src="https://www.youtube.com/embed/-lNJB7bM808?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q22",
@@ -427,7 +427,7 @@ C.\t$7\\text{ cm}$<br>
 D.\t$8\\text{ cm}$
 </div><div style="clear: both;"></div>`,
         hint: `利用圓周角及正弦定律。`,
-        solution: `C (37%)`
+        solution: `C (37%)<p><iframe src="https://www.youtube.com/embed/bykIcJiY-qs?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q23",
@@ -446,7 +446,7 @@ C.\t$43\\text{ km}$<br>
 D.\t$87\\text{ km}$
 </div>`,
         hint: `畫出方位角後用正弦求最短距離。`,
-        solution: `B (47%)`
+        solution: `B (47%)<p><iframe src="https://www.youtube.com/embed/81k3Oscl6GQ?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q24",
@@ -464,7 +464,7 @@ C.\t$(\\sqrt{2}, 45^\\circ)$。<br>
 D.\t$(\\sqrt{2}, 225^\\circ)$。
 </div>`,
         hint: `先求 $Q$ 再求 $P$，最後轉極坐標。`,
-        solution: `D (53%)`
+        solution: `D (53%)<p><iframe src="https://www.youtube.com/embed/5bxLbZz7D7Q?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q25",
@@ -483,7 +483,7 @@ C.\t四邊形。<br>
 D.\t正六邊形。
 </div>`,
         hint: `定點定距離的軌跡是圓。`,
-        solution: `A (70%)`
+        solution: `A (70%)<p><iframe src="https://www.youtube.com/embed/rEE4x2q0taY?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q26",
@@ -502,7 +502,7 @@ C.\t$2$<br>
 D.\t$3$
 </div>`,
         hint: `兩直線垂直時斜率乘積為 $-1$。`,
-        solution: `D (52%)`
+        solution: `D (52%)<p><iframe src="https://www.youtube.com/embed/y2KkLUukVv4?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q27",
@@ -526,7 +526,7 @@ C.\t只有 I 及 III<br>
 D.\t只有 II 及 III
 </div>`,
         hint: `先求兩圓圓心及半徑。`,
-        solution: `C (50%)`
+        solution: `C (50%)<p><iframe src="https://www.youtube.com/embed/zxPsV9zPdac?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q28",
@@ -545,7 +545,7 @@ C.\t$\\dfrac{2}{3}$<br>
 D.\t$\\dfrac{3}{8}$
 </div>`,
         hint: `列出所有可能組合後計算。`,
-        solution: `B (54%)`
+        solution: `B (54%)<p><iframe src="https://www.youtube.com/embed/olwW_UCROfY?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q29",
@@ -564,7 +564,7 @@ C.\t$4$<br>
 D.\t$6$
 </div><div style="clear: both;"></div>`,
         hint: `由棒形圖求 $Q_1$ 及 $Q_3$。`,
-        solution: `A (69%)`
+        solution: `A (69%)<p><iframe src="https://www.youtube.com/embed/TkSpucZ3vYQ?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q30",
@@ -590,7 +590,7 @@ C.\t只有 I 及 III<br>
 D.\t只有 II 及 III
 </div>`,
         hint: `由分佈域及中位數求 $m$、$n$ 的可能值。`,
-        solution: `A (49%)`
+        solution: `A (49%)<p><iframe src="https://www.youtube.com/embed/k0C2L7ytHT8?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q31",
@@ -608,7 +608,7 @@ C.\t$10 \\times 2^{64} + 768$。<br>
 D.\t$11 \\times 2^{64} + 768$。
 </div>`,
         hint: `將十六進制轉成二進制或十進制。`,
-        solution: `B (68%)`
+        solution: `B (68%)<p><iframe src="https://www.youtube.com/embed/rfqGO2oWpQM?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q32",
@@ -627,7 +627,7 @@ C.\t$\\log_{\\pi}10$。<br>
 D.\t$\\log_{\\pi}11$。
 </div>`,
         hint: `設 $t=\\log_{\\pi}x$ 後解二次方程。`,
-        solution: `B (40%)`
+        solution: `B (40%)<p><iframe src="https://www.youtube.com/embed/c0HupBZI4qo?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q33",
@@ -651,7 +651,7 @@ C.\t只有 II 及 III<br>
 D.\tI、II 及 III
 </div><div style="clear: both;"></div>`,
         hint: `反射後 $a=1/b$。`,
-        solution: `D (40%)`
+        solution: `D (40%)<p><iframe src="https://www.youtube.com/embed/zXZeAVn2NQ8?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q34",
@@ -670,7 +670,7 @@ C.\t$9$。<br>
 D.\t$33$。
 </div><div style="clear: both;"></div>`,
         hint: `由圖像讀取斜率及截距。`,
-        solution: `C (48%)`
+        solution: `C (48%)<p><iframe src="https://www.youtube.com/embed/DhGhBfhAfmo?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q35",
@@ -694,7 +694,7 @@ C.\t只有 II 及 III<br>
 D.\tI、II 及 III
 </div>`,
         hint: `檢查公差是否為常數。`,
-        solution: `D (33%)`
+        solution: `D (33%)<p><iframe src="https://www.youtube.com/embed/9A4KMTLUr20?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q36",
@@ -719,7 +719,7 @@ C.\t$37$<br>
 D.\t$53$
 </div>`,
         hint: `找出可行域頂點並代入目標函數。`,
-        solution: `C (34%)`
+        solution: `C (34%)<p><iframe src="https://www.youtube.com/embed/S0O6aLjgFms?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q37",
@@ -738,7 +738,7 @@ C.\t$3$。<br>
 D.\t$10$。
 </div>`,
         hint: `分別化簡 $z_1$、$z_2$ 後比較虛部。`,
-        solution: `C (42%)`
+        solution: `C (42%)<p><iframe src="https://www.youtube.com/embed/Tb9KfzKGxPM?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q38",
@@ -757,7 +757,7 @@ C.\t$\\sqrt{(k^2+1)(196-k^2)}\\text{ cm}^2$<br>
 D.\t$\\sqrt{(k^2+1)(196+k^2)}\\text{ cm}^2$
 </div><div style="clear: both;"></div>`,
         hint: `用向量或餘弦定理求三角形面積。`,
-        solution: `A (29%)`
+        solution: `A (29%)<p><iframe src="https://www.youtube.com/embed/NoKKB8yPIhc?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q39",
@@ -776,7 +776,7 @@ C.\t$70^\\circ$。<br>
 D.\t$80^\\circ$。
 </div><div style="clear: both;"></div>`,
         hint: `利用切線與弦的夾角及圓周角。`,
-        solution: `A (28%)`
+        solution: `A (28%)<p><iframe src="https://www.youtube.com/embed/PrfguORpewI?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q40",
@@ -795,7 +795,7 @@ C.\t$45$。<br>
 D.\t$51$。
 </div>`,
         hint: `利用內心坐標公式及邊長權重。`,
-        solution: `D (23%)`
+        solution: `D (23%)<p><iframe src="https://www.youtube.com/embed/Udm3mz0VnAE?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q41",
@@ -814,7 +814,7 @@ C.\t$c \\le -56$  或  $c \\ge 8$<br>
 D.\t$c \\le -8$  或  $c \\ge 56$
 </div>`,
         hint: `將直線代入圓方程後令判別式 $\\ge 0$。`,
-        solution: `D (33%)`
+        solution: `D (33%)<p><iframe src="https://www.youtube.com/embed/st_YZE_Q9Sc?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q42",
@@ -833,7 +833,7 @@ C.\t$213\\,444$<br>
 D.\t$39\\,916\\,800$
 </div>`,
         hint: `先排女生再插入男生。`,
-        solution: `A (61%)`
+        solution: `A (61%)<p><iframe src="https://www.youtube.com/embed/G1zDPDaFLM4?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q43",
@@ -852,7 +852,7 @@ C.\t$\\dfrac{61}{143}$<br>
 D.\t$\\dfrac{82}{143}$
 </div>`,
         hint: `分情況計算中文書數目 $\\le 3$ 的組合。`,
-        solution: `B (56%)`
+        solution: `B (56%)<p><iframe src="https://www.youtube.com/embed/41oOKdVAtgs?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q44",
@@ -871,7 +871,7 @@ C.\t$25$ 分。<br>
 D.\t$36$ 分。
 </div>`,
         hint: `標準分差 $=$ 得分差 $/$ 標準差。`,
-        solution: `A (44%)`
+        solution: `A (44%)<p><iframe src="https://www.youtube.com/embed/3bzaOD3uo48?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
         id: "2020-DSE-MATH-CP2-Q45",
@@ -890,6 +890,6 @@ C.\t$25$。<br>
 D.\t$20a+25$。
 </div>`,
         hint: `平移不影響方差，計算離差平方平均。`,
-        solution: `C (50%)`
+        solution: `C (50%)<p><iframe src="https://www.youtube.com/embed/RGRu6vDHBiQ?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     }
 );
