@@ -1,0 +1,115 @@
+Inequalities
+<br><div style="text-align: center;">$3x+2>\\dfrac{4x-5}{2}$  及  $3x-2<7$  ...............(*)。</div>
+
+===
+
+
+IMG Single line
+<img src="img/2012dsep2q.jpg" class="q-img" alt="題目附圖" style="max-width: 90%;">
+
+===
+
+IMG Float (MC)
+<img src="img/2012dsep2q.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
+
+<div style="clear: both;"></div>
+
+===
+
+
+Out-syl
+<div style="color: red;"> </div>
+
+
+===
+
+
+幹葉圖
+<div style="overflow-x: visible;">
+<table class="q-table" style="border-collapse: collapse; table-layout: auto; width: auto; white-space: pre;" align="center">
+    <colgroup>
+      <col style="width: auto;">
+      <col style="width: auto;">
+    </colgroup>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;"><u>幹（十位）</u></td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;"><u>葉（個位）</u></td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">4</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">	</td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">5</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;"></td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">6</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;"></td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">7</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;"></td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">8</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;"></td>
+    </tr>
+    <tr>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">9</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;"></td>
+    </tr>
+  </table>
+</div>
+
+
+===
+
+Table
+
+<table class="q-table" style="margin-top: 12px; margin-bottom: 12px; margin-left: auto; margin-right: auto; min-width: 300px; border-collapse: collapse; table-layout: auto;">
+    <colgroup>
+      <col style="width: auto;">
+      <col style="width: 3em;">
+      <col style="width: 3em;">
+      <col style="width: 3em;">
+      <col style="width: 3em;">
+      <col style="width: 3em;">
+    </colgroup>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">原子筆的數目</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">5</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">6</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">7</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">8</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">9</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">學生人數</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">9</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">13</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">2</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$s$</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">11</td>
+    </tr>
+  </table>
+
+
+===
+
+不等式組：<br>
+\t$\\begin{cases}
+x-21 \\le 0 \\\\[1.2ex]
+x-y-35 \\le 0 \\\\[1.2ex]
+x+5y-91 \\le 0 \\\\[1.2ex]
+3x+2y \\ge 0
+\\end{cases}$<br>
+設 $D$ 為表示
+
+===
+
+4 Images MC
+<div class="q-mcopt">
+<img src="img/2017dsep2q31A.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 35%;">\t\t\t<img src="img/2017dsep2q31B.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 35%;"><br>
+<img src="img/2017dsep2q31C.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 35%;">\t\t\t<img src="img/2017dsep2q31D.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 35%;">
+</div>
