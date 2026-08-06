@@ -224,7 +224,7 @@ D.\t$\\$113\\,609$
         domain: ["Algebra"],
         topic: ["Rates, Ratios and Proportions"],
         difficulty: 2,
-        content: `$A$ 牌及 $B$ 牌茶葉的成本分別為 $\\$140\\text{/kg}$ 及 $\\$315\\text{/kg}$。 若 $x$ kg 的 $A$ 牌茶葉與 $y$ kg 的 $B$ 牌茶葉混合使得混合後的茶葉的成本為 $\\$210\\text{/kg}$，則 $x:y=$
+        content: `$A$ 牌及 $B$ 牌茶葉的成本分別為 $\\$140/\\text{kg}$ 及 $\\$315/\\text{kg}$。 若 $x$ kg 的 $A$ 牌茶葉與 $y$ kg 的 $B$ 牌茶葉混合使得混合後的茶葉的成本為 $\\$210/\\text{kg}$，則 $x:y=$
 <div class="q-mcopt">
 A.\t$2:3$。 <br>
 B.\t$3:2$。 <br>
