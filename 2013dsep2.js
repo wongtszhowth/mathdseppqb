@@ -858,7 +858,7 @@ D.\t$34^\\circ$。
 A.\t$-8 < k < 22$<br>
 B.\t$-8 \\le k \\le 22$<br>
 C.\t$k < -22$  或  $k > 8$<br>
-D.\t$k \\le -22$ 或 $k \\ge 8$
+D.\t$k \\le -22$  或  $k \\ge 8$
 </div>`,
         hint: `將直線代入圓方程後令判別式 $\\ge 0$。 `,
         solution: `B (37%)<p><iframe src="https://www.youtube.com/embed/1QPH36a4sDY?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
