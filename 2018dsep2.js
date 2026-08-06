@@ -262,7 +262,7 @@ D.\t$x \\ge 2$。
         domain: ["Algebra"],
         topic: ["Approximation and Errors"],
         difficulty: 2,
-        content: `圖中，$ABCDEFGH$ 為八邊形，其中所有的量度均準確至最接近的 cm。 設 $x$ cm$^2$ 為該八邊形的實際面積。 求 $x$ 值的範圍。 
+        content: `圖中，$ABCDEFGH$ 為八邊形，其中所有的量度均準確至最接近的 cm。 設 $x\\text{ cm}^2$ 為該八邊形的實際面積。 求 $x$ 值的範圍。 
 <div class="q-mcopt"><img src="img/2018dsep2q14.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$13 < x < 23$<br>
 B.\t$13 < x < 27$<br>
@@ -283,10 +283,10 @@ D.\t$17 < x < 27$
         difficulty: 1,
         content: `圖中，實心直立三角柱體的體積為
 <div class="q-mcopt"><img src="img/2018dsep2q15.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 55%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
-A.\t$544$ cm$^3$。 <br>
-B.\t$600$ cm$^3$。 <br>
-C.\t$660$ cm$^3$。 <br>
-D.\t$720$ cm$^3$。 
+A.\t$544\\text{ cm}^3$。 <br>
+B.\t$600\\text{ cm}^3$。 <br>
+C.\t$660\\text{ cm}^3$。 <br>
+D.\t$720\\text{ cm}^3$。 
 </div><div style="clear: both;"></div>`,
         hint: `底面積乘高。`,
         solution: `D (83%)<p><iframe src="https://www.youtube.com/embed/aQBSYScgtQA?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
@@ -300,12 +300,12 @@ D.\t$720$ cm$^3$。
         domain: ["Geometry"],
         topic: ["Geometry (Polygons)"],
         difficulty: 2,
-        content: `圖中，$ABCD$ 為一平行四邊形。 $E$ 為 $BC$ 上的一點使得 $BE:EC = 5:3$。 $AE$ 與 $BD$ 相交於點 $F$。 若 $\\Delta ABF$ 的面積為 $120$ cm$^2$，則四邊形 $CDFE$ 的面積為
+        content: `圖中，$ABCD$ 為一平行四邊形。 $E$ 為 $BC$ 上的一點使得 $BE:EC = 5:3$。 $AE$ 與 $BD$ 相交於點 $F$。 若 $\\Delta ABF$ 的面積為 $120\\text{ cm}^2$，則四邊形 $CDFE$ 的面積為
 <div class="q-mcopt"><img src="img/2018dsep2q16.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
-A.\t$237$ cm$^2$。 <br>
-B.\t$307$ cm$^2$。 <br>
-C.\t$312$ cm$^2$。 <br>
-D.\t$429$ cm$^2$。 
+A.\t$237\\text{ cm}^2$。 <br>
+B.\t$307\\text{ cm}^2$。 <br>
+C.\t$312\\text{ cm}^2$。 <br>
+D.\t$429\\text{ cm}^2$。 
 </div><div style="clear: both;"></div>`,
         hint: `利用面積比與底的比例關係。`,
         solution: `A (39%)<p><iframe src="https://www.youtube.com/embed/MX0MKFwOfpM?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
@@ -319,12 +319,12 @@ D.\t$429$ cm$^2$。
         domain: ["Geometry"],
         topic: ["Mensuration"],
         difficulty: 3,
-        content: `圖中，$O$ 為扇形 $OABCD$ 的圓心。 $AD$ 與 $OC$ 互相垂直且相交於點 $E$。 $F$ 為 $AD$ 上的一點使得 $BF$ 垂直於 $AD$。 若 $AF = 9$ cm、$DF = 39$ cm 及 $OE = 18$ cm，則扇形 $OBC$ 的面積為
+        content: `圖中，$O$ 為扇形 $OABCD$ 的圓心。 $AD$ 與 $OC$ 互相垂直且相交於點 $E$。 $F$ 為 $AD$ 上的一點使得 $BF$ 垂直於 $AD$。 若 $AF = 9\\text{ cm}$、$DF = 39\\text{ cm}$ 及 $OE = 18\\text{ cm}$，則扇形 $OBC$ 的面積為
 <div class="q-mcopt"><img src="img/2018dsep2q17.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
-A.\t$48\\pi$ cm$^2$。 <br>
-B.\t$75\\pi$ cm$^2$。 <br>
-C.\t$96\\pi$ cm$^2$。 <br>
-D.\t$150\\pi$ cm$^2$。 
+A.\t$48\\pi\\text{ cm}^2$。 <br>
+B.\t$75\\pi\\text{ cm}^2$。 <br>
+C.\t$96\\pi\\text{ cm}^2$。 <br>
+D.\t$150\\pi\\text{ cm}^2$。 
 </div><div style="clear: both;"></div>`,
         hint: `先求半徑及圓心角。`,
         solution: `B (28%)<p><iframe src="https://www.youtube.com/embed/czU-VfOartA?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
@@ -381,12 +381,12 @@ D.\tI、II 及 III
         domain: ["Geometry"],
         topic: ["Geometry (Polygons)"],
         difficulty: 2,
-        content: `圖中，$ABCD$ 為一正方形。 $E$ 為 $AB$ 的延線上的一點使得 $BE = 4$ cm。 $BC$ 與 $DE$ 相交於點 $F$。 若 $EF = 5$ cm，則 $DF =$
+        content: `圖中，$ABCD$ 為一正方形。 $E$ 為 $AB$ 的延線上的一點使得 $BE = 4\\text{ cm}$。 $BC$ 與 $DE$ 相交於點 $F$。 若 $EF = 5\\text{ cm}$，則 $DF =$
 <div class="q-mcopt"><img src="img/2018dsep2q20.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
-A.\t$12$ cm。 <br>
-B.\t$15$ cm。 <br>
-C.\t$16$ cm。 <br>
-D.\t$20$ cm。 
+A.\t$12\\text{ cm}$。 <br>
+B.\t$15\\text{ cm}$。 <br>
+C.\t$16\\text{ cm}$。 <br>
+D.\t$20\\text{ cm}$。 
 </div><div style="clear: both;"></div>`,
         hint: `用相似三角形或畢氏定理。`,
         solution: `B (48%)<p><iframe src="https://www.youtube.com/embed/Ljq_wRm96iM?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
@@ -841,7 +841,7 @@ D.\t$25$
         domain: ["Geometry"],
         topic: ["Trigonometry (3D)"],
         difficulty: 2,
-        content: `圖中，$ABCDEFGH$ 為一長方體。 設 $X$ 為 $DE$ 上的一點使得 $DX=9$ cm 及 $EX=4$ cm。 將 $BX$ 與平面 $ABGF$ 間的交角記為 $\\theta$。 求 $\\cos\\theta$。 
+        content: `圖中，$ABCDEFGH$ 為一長方體。 設 $X$ 為 $DE$ 上的一點使得 $DX=9\\text{ cm}$ 及 $EX=4\\text{ cm}$。 將 $BX$ 與平面 $ABGF$ 間的交角記為 $\\theta$。 求 $\\cos\\theta$。 
 <div class="q-mcopt"><img src="img/2018dsep2q41.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 45%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$\\dfrac{3}{5}$<br>
 B.\t$\\dfrac{4}{5}$<br>
