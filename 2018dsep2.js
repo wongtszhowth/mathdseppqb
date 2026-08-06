@@ -360,7 +360,7 @@ D.\t$84^\\circ$。
         content: `圖中，$ABCDE$ 為一正五邊形。 $AD$ 與 $CE$ 相交於點 $F$。 下列何者正確？
 <div class="q-mcms"><img src="img/2018dsep2q19.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 45%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 I.\t$CD = CF$
-II.\t$\\Delta ABF \\equiv \\Delta CBF$
+II.\t$\\Delta ABF \\cong \\Delta CBF$
 III.\t$\\angle AFB + \\angle EAF = 90^\\circ$
 </div>
 <div class="q-mcopt">
