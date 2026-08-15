@@ -194,7 +194,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Loci", "Equations of Circles"],
         difficulty: 2,
-        content: `點 $A$ 及點 $B$ 的坐標分別為 $(5, 7)$ 及 $(13, 1)$。 設 $P$ 為直角坐標平面上的一動點使得 $P$ 與 $A$ 及 $B$ 等距。 將 $P$ 的軌跡記為 $\\Gamma$。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $\\Gamma$ 的方程。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$\\Gamma$ 與 $x$ 軸及 $y$ 軸分別相交於 $H$ 及 $K$。 將原點記為 $O$。 設 $C$ 為通過 $O$、$H$ 及 $K$ 的圓。 某人宣稱 $C$ 的圓周超過 $30$。 該宣稱是否正確？ 試解釋你的答案。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `點 $A$ 及點 $B$ 的坐標分別為 $(5, 7)$ 及 $(13, 1)$。 設 $P$ 為直角坐標平面上的一動點使得 $P$ 與 $A$ 及 $B$ 等距。 將 $P$ 的軌跡記為 $\\mathit{\\Gamma}$。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $\\mathit{\\Gamma}$ 的方程。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$\\mathit{\\Gamma}$ 與 $x$ 軸及 $y$ 軸分別相交於 $H$ 及 $K$。 將原點記為 $O$。 設 $C$ 為通過 $O$、$H$ 及 $K$ 的圓。 某人宣稱 $C$ 的圓周超過 $30$。 該宣稱是否正確？ 試解釋你的答案。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 垂直平分線方程。 <br>(b) 求截距後求圓半徑比較。 `,
         solution: ``
     },
@@ -206,8 +206,8 @@ questions.push(
         level: ["Senior"],
         domain: ["Geometry"],
         topic: ["Mensuration"],
-        difficulty: 3,
-        content: `某倒置直立圓錐形的容器載有一些牛奶。 將該容器鉛垂放置。 該容器內牛奶的深度為 $12$ cm。 文俊隨後將 $444\\pi$ cm$^3$ 的牛奶倒入該容器內，而牛奶沒有溢出。 他現知該容器內牛奶的深度為 $16$ cm。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">以 $\\pi$ 表該容器內牛奶的最終體積。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">文俊宣稱該容器被浸濕的曲面的最終面積至少為 $800$ cm$^2$。 你是否同意？ 試解釋你的答案。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
+        difficulty: 2,
+        content: `某倒置直立圓錐形的容器載有一些牛奶。 將該容器鉛垂放置。 該容器內牛奶的深度為 $12\\text{ cm}$。 <u>文俊</u>隨後將 $444\\pi\\text{ cm}^3$ 的牛奶倒入該容器內，而牛奶沒有溢出。 他現知該容器內牛奶的深度為 $16\\text{ cm}$。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">以 $\\pi$ 表該容器內牛奶的最終體積。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content"><u>文俊</u>宣稱該容器被浸濕的曲面的最終面積至少為 $800\\text{ cm}^2$。 你是否同意？ 試解釋你的答案。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 用相似比求最終體積。 <br>(b) 求斜高後計算曲面面積比較。 `,
         solution: ``
     },
@@ -219,8 +219,8 @@ questions.push(
         level: ["Senior"],
         domain: ["Data Handling"],
         topic: ["Measures of Central Tendency", "Measures of Dispersion"],
-        difficulty: 3,
-        content: `下面的棒型圖顯示一群小童的年歲的分佈，其中 $a > 11$ 及 $4 < b < 10$。 該群小童的年歲的中位數為 $7.5$。 <br>（棒型圖：年歲 6 有 11 人，7 有 $a$ 人，8 有 11 人，9 有 $b$ 人，10 有 4 人）<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $a$ 及 $b$。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">現再有四名小童加入該群。 得知該四名小童的年歲全不相同且該群小童的年歲的分佈域維持不變。 求<br><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">該群小童的年歲的最大可取中位數，</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">該群小童的年歲的最小可取平均值。 <br><span class="marks">(4分)</span><div class="q-clearfix"></div></div></div></div></div>`,
+        difficulty: 2,
+        content: `下面的棒型圖顯示一群小童的年歲的分佈，其中 $a > 11$ 及 $4 < b < 10$。 該群小童的年歲的中位數為 $7.5$。<img src="img/2016dsep1q12zh.jpg" class="q-img" alt="題目附圖" style="max-width: 70%;"><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $a$ 及 $b$。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">現再有四名小童加入該群。 得知該四名小童的年歲全不相同且該群小童的年歲的分佈域維持不變。 求</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">該群小童的年歲的最大可取中位數，</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">該群小童的年歲的最小可取平均值。 <br><span class="marks">(4分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 由中位數位置求 $a$、$b$。 <br>(b) 考慮加入後中位數與平均值的極值。 `,
         solution: ``
     },
@@ -232,8 +232,8 @@ questions.push(
         level: ["Senior"],
         domain: ["Geometry"],
         topic: ["Geometry (Triangles)"],
-        difficulty: 3,
-        content: `圖1中，$ABC$ 為三角形。 $D$、$E$ 及 $M$ 均為 $BC$ 上的點使得 $BD=CE$、$\\angle ADC=\\angle AEB$ 及 $DM=EM$。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明 $\\Delta ACD \\cong \\Delta ABE$。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">假定 $AD = 15$ cm、$BD = 7$ cm 及 $DE = 18$ cm。 <br><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求 $AM$。 </div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">$\\Delta ABE$ 是否一直角三角形？ 試解釋你的答案。 <br><span class="marks">(5分)</span><div class="q-clearfix"></div></div></div></div></div>`,
+        difficulty: 2,
+        content: `圖中，$ABC$ 為三角形。 $D$、$E$ 及 $M$ 均為 $BC$ 上的點使得 $BD=CE$、$\\angle ADC=\\angle AEB$ 及 $DM=EM$。 <img src="img/2016dsep1q13.jpg" class="q-img" alt="題目附圖" style="max-width: 60%;"><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明 $\\Delta ACD \\cong \\Delta ABE$。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">假定 $AD = 15\\text{ cm}$ 、 $BD = 7\\text{ cm}$ 及 $DE = 18\\text{ cm}$。</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求 $AM$。 </div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">$\\Delta ABE$ 是否一直角三角形？ 試解釋你的答案。 <br><span class="marks">(5分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 利用等長及角相等證明全等。 <br>(b) 用全等及畢氏定理檢查。 `,
         solution: ``
     },
@@ -245,8 +245,8 @@ questions.push(
         level: ["Senior"],
         domain: ["Algebra"],
         topic: ["Polynomials", "Remainder Theorem and Factor Theorem"],
-        difficulty: 3,
-        content: `設 $p(x) = 6x^4 + 7x^3 + ax^2 + bx + c$，其中 $a$、$b$ 及 $c$ 均為常數。 當 $p(x)$ 除以 $x+2$ 時及當 $p(x)$ 除以 $x-2$ 時，所得的兩餘數相等。 已知 $p(x) = (lx^2 + 5x + 8)(2x^2 + mx + n)$，其中 $l$、$m$ 及 $n$ 均為常數。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $l$、$m$ 及 $n$。 <span class="marks">(5分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">方程 $p(x) = 0$ 有多少個實根？ 試解釋你的答案。 <span class="marks">(5分)</span><div class="q-clearfix"></div></div></div>`,
+        difficulty: 2,
+        content: `設 $\\mathrm{p}(x) = 6x^4 + 7x^3 + ax^2 + bx + c$，其中 $a$、$b$ 及 $c$ 均為常數。 當 $\\mathrm{p}(x)$ 除以 $x+2$ 時及當 $\\mathrm{p}(x)$ 除以 $x-2$ 時，所得的兩餘數相等。 已知 $\\mathrm{p}(x) \\equiv (lx^2 + 5x + 8)(2x^2 + mx + n)$，其中 $l$、$m$ 及 $n$ 均為常數。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $l$、$m$ 及 $n$。 <span class="marks">(5分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">方程 $\\mathrm{p}(x) = 0$ 有多少個實根？ 試解釋你的答案。 <span class="marks">(5分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 利用餘數相等及比較係數求參數。 <br>(b) 因式分解後判斷實根數目。 `,
         solution: ``
     },
@@ -258,7 +258,7 @@ questions.push(
         level: ["Senior"],
         domain: ["Data Handling"],
         topic: ["Permutations and Combinations", "Probability"],
-        difficulty: 2,
+        difficulty: 1,
         content: `若 $4$ 名男生與 $5$ 名女生隨機排成一隊，求沒有男生在該隊中相鄰而排的概率。 <span class="marks">(3分)</span>`,
         hint: `先排女生再插入男生位置。 `,
         solution: ``
@@ -272,7 +272,7 @@ questions.push(
         domain: ["Data Handling"],
         topic: ["Standard Score", "Measures of Dispersion"],
         difficulty: 2,
-        content: `某測驗中，一班學生得分的分佈的平均值為 $61$ 分。 偉健及小麗的標準分分別為 $-2.6$ 及 $1.4$。 偉健得 $22$ 分。 某學生宣稱該分佈的分佈域至多為 $59$ 分。 該宣稱是否正確？ 試解釋你的答案。 <span class="marks">(3分)</span>`,
+        content: `某測驗中，一班學生得分的分佈的平均值為 $61$ 分。 <u>偉健</u>及<u>小麗</u>的標準分分別為 $-2.6$ 及 $1.4$。 <u>偉健</u>得 $22$ 分。 某學生宣稱該分佈的分佈域至多為 $59$ 分。 該宣稱是否正確？ 試解釋你的答案。 <span class="marks">(3分)</span>`,
         hint: `由標準分求標準差，再估計分佈域。 `,
         solution: ``
     },
@@ -297,8 +297,8 @@ questions.push(
         level: ["Senior"],
         domain: ["Algebra"],
         topic: ["Functions and Graphs"],
-        difficulty: 2,
-        content: `設 $f(x) = -\\dfrac{1}{3}x^2 + 12x - 121$。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">利用配方法，求 $y = f(x)$ 的圖像的頂點的坐標。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">藉將 $y = f(x)$ 的圖像垂直平移得出 $y = g(x)$ 的圖像。 若 $y = g(x)$ 的圖像與 $x$ 軸相切，求 $g(x)$。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">在一變換下，$f(x)$ 變為 $-\\dfrac{1}{3}x^2 - 12x - 121$。 描述該變換的幾何意義。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
+        difficulty: 3,
+        content: `設 $\\mathrm{f}(x) = -\\dfrac{1}{3}x^2 + 12x - 121$。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">利用配方法，求 $y = \\mathrm{f}(x)$ 的圖像的頂點的坐標。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">藉將 $y = \\mathrm{f}(x)$ 的圖像垂直平移得出 $y = \\mathrm{g}(x)$ 的圖像。 若 $y = \\mathrm{g}(x)$ 的圖像與 $x$ 軸相切，求 $\\mathrm{g}(x)$。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">在一變換下，$\\mathrm{f}(x)$ 變為 $-\\dfrac{1}{3}x^2 - 12x - 121$。 描述該變換的幾何意義。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 配方求頂點。 <br>(b) 垂直平移使判別式為 0。 <br>(c) 對 $y$ 軸反射。 `,
         solution: ``
     },
@@ -311,7 +311,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Trigonometry (2D)", "Trigonometry (3D)"],
         difficulty: 3,
-        content: `圖 2 顯示一幾何模型 $ABCD$，其形狀為四面體。 已知 $\\angle BAD = 86^\\circ$、$\\angle CBD = 43^\\circ$、$AB = 10$ cm、$AC = 6$ cm、$BC = 8$ cm 及 $BD = 15$ cm。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $\\angle ABD$ 及 $CD$。 <span class="marks">(4分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">某工匠宣稱 $AB$ 與面 $BCD$ 間的交角為 $\\angle ABC$。 你是否同意？ 試解釋你的答案。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `圖中顯示一幾何模型 $ABCD$，其形狀為四面體。 已知 $\\angle BAD = 86^\\circ$、$\\angle CBD = 43^\\circ$、$AB = 10\\text{ cm}$ 、 $AC = 6\\text{ cm}$ 、 $BC = 8\\text{ cm}$ 及 $BD = 15\\text{ cm}$。<img src="img/2016dsep1q19.jpg" class="q-img" alt="題目附圖" style="max-width: 55%;"><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $\\angle ABD$ 及 $CD$。 <span class="marks">(4分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">某工匠宣稱 $AB$ 與面 $BCD$ 間的交角為 $\\angle ABC$。 你是否同意？ 試解釋你的答案。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 用餘弦公式及正弦公式。 <br>(b) 檢查 $AB$ 是否垂直於交線。 `,
         solution: ``
     },
@@ -324,7 +324,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Geometry (Triangles)", "Equations of Circles", "Coordinate Geometry"],
         difficulty: 3,
-        content: `$\\Delta OPQ$ 為一鈍角三角形。 將 $\\Delta OPQ$ 的內心及外心分別記為 $I$ 及 $J$。 已知 $P$、$I$ 與 $J$ 共線。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明 $OP = PQ$。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">引入一直角坐標系使得 $O$ 及 $Q$ 的坐標分別為 $(0, 0)$ 及 $(40, 30)$，而 $P$ 的 $y$ 坐標為 $19$。 設 $C$ 為通過 $O$、$P$ 及 $Q$ 的圓。 <br><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求 $C$ 的方程。 </div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">設 $L_1$ 及 $L_2$ 為 $C$ 的兩切線使得每一切線的斜率均為 $\\dfrac{3}{4}$ 且 $L_1$ 的 $y$ 截距較 $L_2$ 大。 $L_1$ 分別與 $x$ 軸及 $y$ 軸相交於 $S$ 及 $T$，而 $L_2$ 分別與 $x$ 軸及 $y$ 軸相交於 $U$ 及 $V$。 某人宣稱梯形 $STUV$ 的面積超過 $17000$。 該宣稱是否正確？ 試解釋你的答案。 <br><span class="marks">(9分)</span><div class="q-clearfix"></div></div></div></div></div>`,
+        content: `$\\Delta OPQ$ 為一鈍角三角形。 將 $\\Delta OPQ$ 的內心及外心分別記為 $I$ 及 $J$。 已知 $P$、$I$ 與 $J$ 共線。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明 $OP = PQ$。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">引入一直角坐標系使得 $O$ 及 $Q$ 的坐標分別為 $(0, 0)$ 及 $(40, 30)$，而 $P$ 的 $y$ 坐標為 $19$。 設 $C$ 為通過 $O$、$P$ 及 $Q$ 的圓。</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求 $C$ 的方程。 </div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">設 $L_1$ 及 $L_2$ 為 $C$ 的兩切線使得每一切線的斜率均為 $\\dfrac{3}{4}$ 且 $L_1$ 的 $y$ 截距較 $L_2$ 大。 $L_1$ 分別與 $x$ 軸及 $y$ 軸相交於 $S$ 及 $T$，而 $L_2$ 分別與 $x$ 軸及 $y$ 軸相交於 $U$ 及 $V$。 某人宣稱梯形 $STUV$ 的面積超過 $17\\,000$。 該宣稱是否正確？ 試解釋你的答案。 <br><span class="marks">(9分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 利用內心外心性質。 <br>(b) 求圓方程後求切線及梯形面積。 `,
         solution: ``
     }
