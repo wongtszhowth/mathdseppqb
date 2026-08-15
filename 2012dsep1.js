@@ -139,15 +139,15 @@ questions.push(
     </tr>
     <tr>
       <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">1</td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">0　0　1　1　2　3　4　5　5　6　6　7　7</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">0 0 1 1 2 3 4 5 5 6 6 7 7</td>
     </tr>
     <tr>
       <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">2</td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">0　0　0　5　8</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">0 0 0 5 8</td>
     </tr>
     <tr>
       <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">3</td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">4　6</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">4 6</td>
     </tr>    
   </table><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求該二十份問卷記錄得的時數的平均值及中位數。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content"><u>志誠</u>再收到四份問卷。 他得知這四份問卷記錄得的時數的平均值為 $18$。 現知這四份問卷其中兩份記錄得的時數為 $19$ 及 $20$。</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">寫出該二十四份問卷記錄得的時數的平均值。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">該二十四份問卷記錄得的時數的中位數與 (a) 所求得的中位數有沒有可能相同？ 試解釋你的答案。<br><span class="marks">(4分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 計算總和及中位位置。 <br>(b) 求新平均值；分析中位數可能變化。 `,
