@@ -580,7 +580,7 @@ D.\t$60\\text{ kg}$。
         domain: ["Data Handling"],
         topic: ["Measures of Central Tendency", "Measures of Dispersion"],
         difficulty: 3,
-        content: `考慮以下正整數：<div style="text-align: center;">$2$　　$5$　　$6$　　$6$　　$x$　　$x$　　$x$　　$y$</div>若以上正整數的平均值及中位數均為 $6$，則下列何者必為正確？
+        content: `考慮以下正整數：<div style="text-align: center;">$2$　$5$　$6$　$6$　$x$　$x$　$x$　$y$</div>若以上正整數的平均值及中位數均為 $6$，則下列何者必為正確？
 <div class="q-mcms">
 I.\t以上正整數的眾數為 $6$。
 II.\t以上正整數的最小可取分佈域為 $6$。
