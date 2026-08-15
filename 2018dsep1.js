@@ -76,7 +76,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Linear Inequalities and Compound Inequalities"],
         difficulty: 1,
-        content: `<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求同時滿足 $\\dfrac{3-x}{2} > 2x+7$ 及 $x+8 \\ge 0$ 的 $x$ 值的範圍。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出同時滿足 (a) 的不等式的最大整數。 <span class="marks">(1分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求同時滿足  $\\dfrac{3-x}{2} > 2x+7$  及  $x+8 \\ge 0$  的 $x$ 值的範圍。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出同時滿足 (a) 的不等式的最大整數。 <span class="marks">(1分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 分別解兩個不等式後取交集。 <br>(b) 從範圍中取最大整數。 `,
         solution: ``
     },
@@ -89,7 +89,7 @@ questions.push(
         domain: ["Number and Cardinality"],
         topic: ["Percentages"],
         difficulty: 1,
-        content: `某花瓶的標價較其成本高 $30\\%$。 該花瓶以其標價六折售出並虧蝕 $\$88$。 求該花瓶的標價。 <span class="marks">(5分)</span>`,
+        content: `某花瓶的標價較其成本高 $30\\%$。 該花瓶以其標價六折售出並虧蝕 $\\$88$。 求該花瓶的標價。 <span class="marks">(5分)</span>`,
         hint: `設成本為 $x$，列出標價與售價關係後求解。 `,
         solution: ``
     },
