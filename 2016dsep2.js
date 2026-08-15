@@ -593,7 +593,7 @@ D.\t$61$
         domain: ["Data Handling"],
         topic: ["Measures of Central Tendency"],
         difficulty: 1,
-        content: `考慮以下數據：<div style="text-align: center;">32 68 79 86 88 98 98 $a$ $b$ $c$</div>若以上數據的平均值及眾數分別為 $77$ 及 $68$，則以上數據的中位數為
+        content: `考慮以下數據：<div style="text-align: center;">32　68　79　86　88　98　98　$a$　$b$　$c$</div>若以上數據的平均值及眾數分別為 $77$ 及 $68$，則以上數據的中位數為
 <div class="q-mcopt">
 A.\t$76$。 <br>
 B.\t$82$。 <br>
