@@ -115,8 +115,7 @@ questions.push(
         domain: ["Data Handling"],
         topic: ["Statistical Graphs", "Probability"],
         difficulty: 1,
-        content: `下面的頻數分佈表及累積頻數分佈表均顯示某花園內植物的高度的分佈。
-        <div class="q-text-content"><table class="q-table" style="float: left; margin-top: 12px; margin-bottom: 12px; margin-left: 3em; margin-right: auto; border-collapse: collapse; table-layout: auto;">
+        content: `下面的頻數分佈表及累積頻數分佈表均顯示某花園內植物的高度的分佈。<div class="q-text-content"><table class="q-table" style="float: left; margin-top: 12px; margin-bottom: 12px; margin-left: 3em; margin-right: auto; border-collapse: collapse; table-layout: auto;">
     <colgroup>
       <col style="width: 12em;">
       <col style="width: 4em;">
