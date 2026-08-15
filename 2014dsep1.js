@@ -290,7 +290,7 @@ questions.push(
     </tr>
 </table>這回合的參與者採納下列兩個選項中的一個。<table class="q-table" style="margin-top: 12px; margin-bottom: 12px; margin-left: auto; margin-right: auto; width: 100%; border-collapse: collapse; table-layout: auto;">
     <colgroup>
-      <col style="width: 6em;">
+      <col style="width: 5em;">
       <col style="width: auto;">
     </colgroup>
     <tr>
