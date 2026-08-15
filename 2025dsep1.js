@@ -28,7 +28,10 @@ questions.push(
         difficulty: 1,
         content: `化簡 $\\dfrac{1}{3d-4} - \\dfrac{2}{6d+5}$。<span class="marks">(3分)</span>`,
         hint: `通分母後通分化簡分子。`,
-        solution: `$\\begin{aligned} &\\frac{1}{3d-4} - \\frac{2}{6d+5} \\\\=& \\frac{(6d+5)-2(3d-4)}{(3d-4)(6d+5)} \\\\=& \\frac{6d+5-6d+8}{(3d-4)(6d+5)} \\\\=& \\frac{13}{(3d-4)(6d+5)} \\end{aligned}$`
+        solution: `$\\frac{1}{3d-4} - \\frac{2}{6d+5}$
+		$\\colorbox{lightgray}{=\\frac{(6d+5)-2(3d-4)}{(3d-4)(6d+5)}}$ <span class="marks">1M</span>
+		$\\colorbox{lightgray}{=\\frac{6d+5-6d+8}{(3d-4)(6d+5)}}$ <span class="marks">1M</span>
+		=\\frac{13}{(3d-4)(6d+5)}$ <span class="marks">1A</span>`
     },
     {
         id: "2025-DSE-MATH-CP1-Q03",
