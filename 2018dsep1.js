@@ -102,9 +102,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Geometry (Circles)"],
         difficulty: 2,
-        content: `圖中，$ABCDE$ 為一圓。 已知 $AB // ED$。 $AD$ 與 $BE$ 相交於點 $F$。
-        <img src="img/2018dsep1q08.jpg" class="q-img" alt="題目附圖" style="max-width: 50%;">
-以 $\\theta$ 表 $x$ 及 $y$。 <span class="marks">(5分)</span>`,
+        content: `圖中，$ABCDE$ 為一圓。 已知 $AB // ED$。 $AD$ 與 $BE$ 相交於點 $F$。<img src="img/2018dsep1q08.jpg" class="q-img" alt="題目附圖" style="max-width: 50%;">以 $\\theta$ 表 $x$ 及 $y$。 <span class="marks">(5分)</span>`,
         hint: `利用平行線性質、圓周角及對頂角。 `,
         solution: ``
     },
@@ -130,9 +128,7 @@ questions.push(
         domain: ["Data Handling"],
         topic: ["Measures of Dispersion"],
         difficulty: 1,
-        content: `下面的框線圖顯示某公司 $X$ 組文員的年歲的分佈。 已知這分佈的分佈域及四分位數間距分別為 $43$ 及 $21$。
-        <img src="img/2018dsep1q10zh.jpg" class="q-img" alt="題目附圖" style="max-width: 75%;">
-<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $a$ 及 $b$。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">該公司 $Y$ 組有五名文員且其中三名的年歲均為 $38$。 已知 $Y$ 組文員的年歲的分佈域為 $20$。 $X$ 組與 $Y$ 組現合併為一部門。 公司經理宣稱該部門文員的年歲的分佈域與 $X$ 組文員的年歲的分佈域必為相同。 你是否同意？ 試解釋你的答案。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `下面的框線圖顯示某公司 $X$ 組文員的年歲的分佈。 已知這分佈的分佈域及四分位數間距分別為 $43$ 及 $21$。<img src="img/2018dsep1q10zh.jpg" class="q-img" alt="題目附圖" style="max-width: 65%;"><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $a$ 及 $b$。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">該公司 $Y$ 組有五名文員且其中三名的年歲均為 $38$。 已知 $Y$ 組文員的年歲的分佈域為 $20$。 $X$ 組與 $Y$ 組現合併為一部門。 公司經理宣稱該部門文員的年歲的分佈域與 $X$ 組文員的年歲的分佈域必為相同。 你是否同意？ 試解釋你的答案。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 由分佈域及 IQR 求 $a$、$b$。 <br>(b) 考慮合併後最大/最小值可能改變。 `,
         solution: ``
     },
@@ -196,9 +192,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Geometry (Triangles)", "Pythagoras Theorem"],
         difficulty: 2,
-        content: `圖中，$ABCD$ 為一梯形，且 $\\angle ABC = 90^\\circ$ 及 $AB // DC$。 $E$ 為 $BC$ 上的一點使得 $\\angle AED = 90^\\circ$。
-        <img src="img/2018dsep1q13.jpg" class="q-img" alt="題目附圖" style="max-width: 60%;">
-<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明 $\\Delta ABE \\sim \\Delta ECD$。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">已知 $AB = 15\\text{ cm}$ 、 $AE = 25\\text{ cm}$ 及 $CE = 36\\text{ cm}$。</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求 $CD$ 的長度。 </div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">求 $\\Delta ADE$ 的面積。 </div></div><div class="q-line q-level-2"><span class="q-label">(iii)</span><div class="q-text-content">$AD$ 上是否有一點 $F$ 使得 $E$ 與 $F$ 間的距離少於 $23\\text{ cm}$？ 試解釋你的答案。 <br><span class="marks">(6分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `圖中，$ABCD$ 為一梯形，且 $\\angle ABC = 90^\\circ$ 及 $AB // DC$。 $E$ 為 $BC$ 上的一點使得 $\\angle AED = 90^\\circ$。<img src="img/2018dsep1q13.jpg" class="q-img" alt="題目附圖" style="max-width: 60%;"><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明 $\\Delta ABE \\sim \\Delta ECD$。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">已知 $AB = 15\\text{ cm}$ 、 $AE = 25\\text{ cm}$ 及 $CE = 36\\text{ cm}$。</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求 $CD$ 的長度。 </div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">求 $\\Delta ADE$ 的面積。 </div></div><div class="q-line q-level-2"><span class="q-label">(iii)</span><div class="q-text-content">$AD$ 上是否有一點 $F$ 使得 $E$ 與 $F$ 間的距離少於 $23\\text{ cm}$？ 試解釋你的答案。 <br><span class="marks">(6分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 利用平行線及直角證明 AA 相似。 <br>(b) 用相似比及畢氏定理計算。 `,
         solution: ``
     },
@@ -250,13 +244,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Trigonometry (2D)", "Trigonometry (3D)"],
         difficulty: 3,
-        content: `<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">圖 (a) 中，$ABCD$ 為一紙卡，其形狀為平行四邊形。 已知 $AB = 60\\text{ cm}$ 、 $\\angle ABD = 20^\\circ$ 及 $\\angle BAD = 120^\\circ$。
-        <img src="img/2018dsep1q17a.jpg" class="q-img" alt="題目附圖" style="max-width: 65%;">
-        <div style="text-align: center;">圖 (a)</div>
-求 $AD$ 的長度。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">將圖 (a) 中的紙卡沿 $BD$ 摺起，使得 $A$ 與 $C$ 間的距離為 $40\\text{ cm}$（見圖 (b)）。
-<img src="img/2018dsep1q17b.jpg" class="q-img" alt="題目附圖" style="max-width: 65%;">
-        <div style="text-align: center;">圖 (b)</div></div></div>
-        <div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求 $\\angle ABC$。 </div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">求平面 $ABD$ 與平面 $BCD$ 間的交角。 <br><span class="marks">(5分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">圖 (a) 中，$ABCD$ 為一紙卡，其形狀為平行四邊形。 已知 $AB = 60\\text{ cm}$ 、 $\\angle ABD = 20^\\circ$ 及 $\\angle BAD = 120^\\circ$。<img src="img/2018dsep1q17a.jpg" class="q-img" alt="題目附圖" style="max-width: 65%;"><div style="text-align: center;">圖 (a)</div>求 $AD$ 的長度。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">將圖 (a) 中的紙卡沿 $BD$ 摺起，使得 $A$ 與 $C$ 間的距離為 $40\\text{ cm}$（見圖 (b)）。<img src="img/2018dsep1q17b.jpg" class="q-img" alt="題目附圖" style="max-width: 65%;"><div style="text-align: center;">圖 (b)</div></div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求 $\\angle ABC$。 </div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">求平面 $ABD$ 與平面 $BCD$ 間的交角。 <br><span class="marks">(5分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 用正弦公式。 <br>(b) 用餘弦公式求角，再求二面角。 `,
         solution: ``
     },
