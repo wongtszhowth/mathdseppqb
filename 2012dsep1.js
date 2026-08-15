@@ -50,8 +50,8 @@ questions.push(
         domain: ["Number and Cardinality"],
         topic: ["Percentages"],
         difficulty: 1,
-        content: `佩玲的日薪較志偉高 $20\\%$，而志偉的日薪較蓮儀低 $20\\%$。 已知志偉的日薪為 $\$480$。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求佩玲的日薪。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">誰的日薪最高？ 試解釋你的答案。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
-        hint: `(a) 志偉日薪 $\\times 1.2$。 <br>(b) 比較三人日薪。 `,
+        content: `<u>佩玲</u>的日薪較<u>志偉</u>高 $20\\%$，而<u>志偉</u>的日薪較<u>潔儀</u>低 $20\\%$。 已知<u>志偉</u>的日薪為 $\\$480$。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求<u>佩玲</u>的日薪。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">誰的日薪最高？ 試解釋你的答案。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
+        hint: `(a) <u>志偉</u>日薪 $\\times 1.2$。 <br>(b) 比較三人日薪。 `,
         solution: ``
     },
     {
@@ -75,8 +75,8 @@ questions.push(
         level: ["Junior"],
         domain: ["Algebra"],
         topic: ["Linear Inequalities and Compound Inequalities"],
-        difficulty: 2,
-        content: `<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求同時滿足 $\\dfrac{4x+6}{7} > 2(x-3)$ 及 $2x-10 \\le 0$ 的 $x$ 值的範圍。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">有多少個正整數同時滿足 (a) 的不等式？ <span class="marks">(1分)</span><div class="q-clearfix"></div></div></div>`,
+        difficulty: 1,
+        content: `<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求同時滿足  $\\dfrac{4x+6}{7} > 2(x-3)$  及  $2x-10 \\le 0$  的 $x$ 值的範圍。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">有多少個正整數同時滿足 (a) 的不等式？ <span class="marks">(1分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 分別解兩個不等式後取交集。 <br>(b) 從範圍中數正整數。 `,
         solution: ``
     },
@@ -88,8 +88,8 @@ questions.push(
         level: ["Junior"],
         domain: ["Data Handling"],
         topic: ["Measures of Dispersion"],
-        difficulty: 2,
-        content: `下面的框線圖顯示某田徑學會的一大群學生完成 $100$ m 賽跑的所需時間的分佈：<br>（框線圖：$a$、$12.1$、$13.2$、$b$、$18.1$）<br>該分佈的四分位數間距及分佈域分別為 $3.2$ s 及 $6.8$ s。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $a$ 及 $b$。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">該些學生參與某訓練課程。 現知在訓練後，該些學生完成 $100$ m 賽跑的最長所需時間較訓練前少 $2.9$ s。 教練宣稱在訓練後，至少 $25\\%$ 的學生完成 $100$ m 賽跑的所需時間有改善。 你是否同意？ 試解釋你的答案。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
+        difficulty: 1,
+        content: `下面的框線圖顯示某田徑學會的一大群學生完成 $100\\text{ m}$ 賽跑的所需時間的分佈：<img src="img/2012dsep1q07zh.jpg" class="q-img" alt="題目附圖" style="max-width: 70%;">該分佈的四分位數間距及分佈域分別為 $3.2\\text{ s}$ 及 $6.8\\text{ s}$。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $a$ 及 $b$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">該些學生參與某訓練課程。 現知在訓練後，該些學生完成 $100\\text{ m}$ 賽跑的最長所需時間較訓練前少 $2.9\\text{ s}$。 教練宣稱在訓練後，至少 $25\\%$ 的學生完成 $100\\text{ m}$ 賽跑的所需時間有改善。 你是否同意？ 試解釋你的答案。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 用 IQR 及 range 求 $a$、$b$。 <br>(b) 分析上四分位數變化。 `,
         solution: ``
     },
@@ -102,7 +102,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Geometry (Circles)", "Geometry (Triangles)"],
         difficulty: 2,
-        content: `圖 1 中，$AB$、$BC$、$CD$ 及 $AD$ 均為圓的弦。 $AC$ 與 $BD$ 相交於 $E$。 已知 $BE = 8$ cm、$CE = 20$ cm 及 $DE = 15$ cm。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出在圖 1 中的一對相似三角形，並求 $AE$。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">假定 $AB = 10$ cm。 $AC$ 與 $BD$ 是否互相垂直？ 試解釋你的答案。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `圖中，$AB$、$BC$、$CD$ 及 $AD$ 均為圓的弦。 $AC$ 與 $BD$ 相交於 $E$。 已知 $BE = 8\\text{ cm}$ 、 $CE = 20\\text{ cm}$ 及 $DE = 15\\text{ cm}$。<img src="img/2012dsep1q08.jpg" class="q-img" alt="題目附圖" style="max-width: 50%;"><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出在圖中的一對相似三角形，並求 $AE$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">假定 $AB = 10\\text{ cm}$。 $AC$ 與 $BD$ 是否互相垂直？ 試解釋你的答案。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 利用相交弦定理及相似三角形。 <br>(b) 用畢氏定理檢查。 `,
         solution: ``
     },
@@ -115,7 +115,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Mensuration"],
         difficulty: 2,
-        content: `圖 2 中，實心直立角柱體 $ABCDEFGH$ 的體積為 $1020$ cm$^3$。 該角柱體的底 $ABCD$ 為一梯形，其中 $AD$ 平行於 $BC$。 已知 $\\angle BAD = 90^\\circ$、$AB = 12$ cm、$BC = 6$ cm 及 $DE = 10$ cm。 <br>求<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">$AD$ 的長度，<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">角柱體 $ABCDEFGH$ 的總表面面積。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `圖中，實心直立角柱體 $ABCDEFGH$ 的體積為 $1\\,020\\text{ cm}^3$。 該角柱體的底 $ABCD$ 為一梯形，其中 $AD$ 平行於 $BC$。 已知 $\\angle BAD = 90^\\circ$ 、 $AB = 12\\text{ cm}$ 、 $BC = 6\\text{ cm}$ 及 $DE = 10\\text{ cm}$。<img src="img/2012dsep1q09.jpg" class="q-img" alt="題目附圖" style="max-width: 55%;">求<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">$AD$ 的長度，<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">角柱體 $ABCDEFGH$ 的總表面面積。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 用體積公式求 $AD$。 <br>(b) 計算各面面積總和。 `,
         solution: ``
     },
