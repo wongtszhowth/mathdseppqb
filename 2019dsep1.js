@@ -102,9 +102,7 @@ questions.push(
         domain: ["Data Handling"],
         topic: ["Statistics"],
         difficulty: 1,
-        content: `下面的圓形圖顯示一群女生擁有指環的數目的分佈。
-        <img src="img/2019dsep1q08zh.jpg" class="q-img" alt="題目附圖" style="max-width: 50%;">
-        <div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出該分佈的眾數。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求該分佈的平均值。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">若從該群中隨機選出一名女生，求所選出的女生擁有多於 $3$ 枚指環的概率。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `下面的圓形圖顯示一群女生擁有指環的數目的分佈。<img src="img/2019dsep1q08zh.jpg" class="q-img" alt="題目附圖" style="max-width: 50%;"><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出該分佈的眾數。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求該分佈的平均值。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">若從該群中隨機選出一名女生，求所選出的女生擁有多於 $3$ 枚指環的概率。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 最大扇形對應的數目。 <br>(b) 先由角度求各部分比例及總人數，再計算加權平均。 <br>(c) 多於 3 的比例。`,
         solution: ``
     },
@@ -196,9 +194,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Geometry of Circles"],
         difficulty: 2,
-        content: `圖中，$O$ 為圓 $ABCDE$ 的圓心。 $AC$ 為該圓的一直徑。 $BD$ 與 $OC$ 相交於點 $F$。 已知 $\\angle AED = 115^\\circ$。
-        <img src="img/2019dsep1q13.jpg" class="q-img" alt="題目附圖" style="max-width: 60%;">
-        <div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $\\angle CBF$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">假定 $BC // OD$ 及 $OB = 18\\text{ cm}$。 扇形 $OBC$ 的周界是否少於 $60\\text{ cm}$？ 試解釋你的答案。<span class="marks">(5分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `圖中，$O$ 為圓 $ABCDE$ 的圓心。 $AC$ 為該圓的一直徑。 $BD$ 與 $OC$ 相交於點 $F$。 已知 $\\angle AED = 115^\\circ$。<img src="img/2019dsep1q13.jpg" class="q-img" alt="題目附圖" style="max-width: 60%;"><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $\\angle CBF$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">假定 $BC // OD$ 及 $OB = 18\\text{ cm}$。 扇形 $OBC$ 的周界是否少於 $60\\text{ cm}$？ 試解釋你的答案。<span class="marks">(5分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 利用圓周角、圓心角及三角形性質。 <br>(b) 求扇形角度後計算弧長與半徑和。`,
         solution: ``
     },
@@ -211,9 +207,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Plane Geometry"],
         difficulty: 3,
-        content: `圖中，$ABCD$ 為一正方形。 已知 $E$ 為 $AD$ 上的一點。 $BD$ 與 $CE$ 相交於點 $F$。 設 $G$ 為一點使得 $BG // EC$ 及 $CG // DB$。
-        <img src="img/2019dsep1q14.jpg" class="q-img" alt="題目附圖" style="max-width: 60%;">
-<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">$\\Delta BCG \\cong \\Delta CBF$，</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">$\\Delta BCF \\sim \\Delta DEF$。 <br><span class="marks">(4分)</span></div></div><div class="q-clearfix"></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">假定 $\\angle BCF = \\angle BGC$。</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">設 $BC = \\ell$。 以 $\\ell$ 表 $DF$。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">某人宣稱 $AE \\gt DF$。 你是否同意？ 試解釋你的答案。 <br><span class="marks">(4分)</span></div></div><div class="q-clearfix"></div>`,
+        content: `圖中，$ABCD$ 為一正方形。 已知 $E$ 為 $AD$ 上的一點。 $BD$ 與 $CE$ 相交於點 $F$。 設 $G$ 為一點使得 $BG // EC$ 及 $CG // DB$。<img src="img/2019dsep1q14.jpg" class="q-img" alt="題目附圖" style="max-width: 60%;"><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">$\\Delta BCG \\cong \\Delta CBF$，</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">$\\Delta BCF \\sim \\Delta DEF$。 <br><span class="marks">(4分)</span></div></div><div class="q-clearfix"></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">假定 $\\angle BCF = \\angle BGC$。</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">設 $BC = \\ell$。 以 $\\ell$ 表 $DF$。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">某人宣稱 $AE \\gt DF$。 你是否同意？ 試解釋你的答案。 <br><span class="marks">(4分)</span></div></div><div class="q-clearfix"></div>`,
         hint: `(a) 利用平行線及正方形性質證明全等與相似。 <br>(b) 設邊長後用相似比求長度比較。 `,
         solution: ``
     },
@@ -265,9 +259,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Trigonometry"],
         difficulty: 3,
-        content: `圖中顯示四面體 $ABCD$。 設 $P$ 為 $AD$ 上的一點使得 $BP$ 垂直於 $AD$。 某工匠得知 $AC = AD = CD = 13\\text{ cm}$ 、 $BC = 8\\text{ cm}$ 、 $BD = 12\\text{ cm}$ 及 $\\angle ABD = 72^\\circ$。
-        <img src="img/2019dsep1q18.jpg" class="q-img" alt="題目附圖" style="max-width: 90%;">
-        <div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">$\\angle BAD$，</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">$CP$。<br><span class="marks">(5分)</span></div></div><div class="q-clearfix"></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">該工匠宣稱 $\\angle BPC$ 為面 $ABD$ 與面 $ACD$ 間的交角。 該宣稱是否正確？ 試解釋你的答案。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `圖中顯示四面體 $ABCD$。 設 $P$ 為 $AD$ 上的一點使得 $BP$ 垂直於 $AD$。 某工匠得知 $AC = AD = CD = 13\\text{ cm}$ 、 $BC = 8\\text{ cm}$ 、 $BD = 12\\text{ cm}$ 及 $\\angle ABD = 72^\\circ$。<img src="img/2019dsep1q18.jpg" class="q-img" alt="題目附圖" style="max-width: 90%;"><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">$\\angle BAD$，</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">$CP$。<br><span class="marks">(5分)</span></div></div><div class="q-clearfix"></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">該工匠宣稱 $\\angle BPC$ 為面 $ABD$ 與面 $ACD$ 間的交角。 該宣稱是否正確？ 試解釋你的答案。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 用餘弦公式及正弦公式求角與長度。 <br>(b) 檢查 $BP$ 是否垂直於交線 $AD$。 `,
         solution: ``
     },
