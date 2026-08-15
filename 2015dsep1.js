@@ -180,8 +180,7 @@ questions.push(
       <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">7</td>
       <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">8　9</td>
     </tr>    
-  </table>
-  <div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求上述分佈的平均值、中位數及分佈域。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">現再有兩名學生加入該學會。 得知體重的分佈的平均值及分佈域均增加 $1\\text{ kg}$。 求這兩名學生各人的體重。 <span class="marks">(4分)</span><div class="q-clearfix"></div></div></div>`,
+  </table><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求上述分佈的平均值、中位數及分佈域。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">現再有兩名學生加入該學會。 得知體重的分佈的平均值及分佈域均增加 $1\\text{ kg}$。 求這兩名學生各人的體重。 <span class="marks">(4分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 計算所有數據的平均、中位及全距。 <br>(b) 由平均值及分佈域變化求新數據。 `,
         solution: ``
     },
@@ -222,7 +221,7 @@ questions.push(
         difficulty: 1,
         content: `下表顯示一大群學生在數學考試及科學考試的得分的平均值及標準差：<table class="q-table" style="margin-top: 12px; margin-bottom: 12px; margin-left: auto; margin-right: auto; min-width: 300px; border-collapse: collapse; table-layout: auto;">
     <colgroup>
-      <col style="width: 8em;">
+      <col style="width: 7em;">
       <col style="width: 8em;">
       <col style="width: 8em;">
     </colgroup>
