@@ -50,7 +50,7 @@ questions.push(
         domain: ["Number and Cardinality"],
         topic: ["Linear Equations in Two Unknowns"],
         difficulty: 1,
-        content: `某劇院只有兩類門票：正價票及特惠票。 正價票及特惠票的票價分別為 $\$126$ 及 $\$78$。 在某日，售出正價票的數目為售出特惠票的數目之 $5$ 倍，且售出門票所得的總金額為 $\$50\\,976$。 求在該日售出門票的總數。 <span class="marks">(4分)</span>`,
+        content: `某劇院只有兩類門票：正價票及特惠票。 正價票及特惠票的票價分別為 $\\$126$ 及 $\\$78$。 在某日，售出正價票的數目為售出特惠票的數目之 $5$ 倍，且售出門票所得的總金額為 $\\$50\\,976$。 求在該日售出門票的總數。 <span class="marks">(4分)</span>`,
         hint: `設特惠票數目為 $x$，正價票為 $5x$，列出方程求解。 `,
         solution: ``
     },
@@ -89,7 +89,7 @@ questions.push(
         domain: ["Data Handling"],
         topic: ["Statistical Graphs", "Probability"],
         difficulty: 1,
-        content: `下面的圓形圖顯示某校學生出生季節的分佈。<img src="img/2017dsep1q07zh.jpg" class="q-img" alt="題目附圖" style="max-width: 50%;"><div style="text-align: center;">該校學生出生季節的分佈</div>若從該校中隨機選出一名學生，則所選出的學生在春季出生的概率為 $\\dfrac{1}{9}$。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $x$。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">該校有 $180$ 名學生在冬季出生。 求該校學生的人數。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `下面的圓形圖顯示某校學生出生季節的分佈。<img src="img/2017dsep1q07zh.jpg" class="q-img" alt="題目附圖" style="max-width: 50%;"><div style="text-align: center;">該校學生出生季節的分佈</div><p>若從該校中隨機選出一名學生，則所選出的學生在春季出生的概率為 $\\dfrac{1}{9}$。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $x$。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">該校有 $180$ 名學生在冬季出生。 求該校學生的人數。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 由概率求春季角度。 <br>(b) 由冬季人數及角度比例求總人數。 `,
         solution: ``
     },
