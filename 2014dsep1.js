@@ -113,7 +113,16 @@ questions.push(
         difficulty: 1,
         content: `設 $\\mathrm{f}(x) = 4x^3 - 5x^2 - 18x + c$，其中 $c$ 為一常數。 當 $\\mathrm{f}(x)$ 除以 $x-2$ 時，餘數為 $-33$。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">$x+1$ 是否 $\\mathrm{f}(x)$ 的因式？ 試解釋你的答案。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">某人宣稱方程 $\\mathrm{f}(x)=0$ 所有的根均為有理數。 你是否同意？ 試解釋你的答案。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 先求 $c$，再用因式定理檢查。 <br>(b) 因式分解後檢查根。 `,
-        solution: ``
+        solution: `<span class="q-label">(a)</span>$\\mathrm{f}(-1) = 0$，$\\therefore$ 是。
+		<details style="margin: 8px 0;">
+			<summary style="cursor: pointer; user-select: none;">🎬 觀看解題影片</summary>
+			<iframe src="https://www.youtube.com/embed/iKSs2hTrAwE?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9; margin-top: 8px;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+		</details>
+		<span class="q-label">(b)</span>$x=-1$ 、 $x=3$ 或 $x=\\dfrac{-3}{4}$，$\\therefore$ 同意。
+		<details style="margin: 8px 0;">
+			<summary style="cursor: pointer; user-select: none;">🎬 觀看解題影片</summary>
+			<iframe src="https://www.youtube.com/embed/N4mtLL7jx_8?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9; margin-top: 8px;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+		</details>`
     },
     {
         id: "2014-DSE-MATH-CP1-Q08",
