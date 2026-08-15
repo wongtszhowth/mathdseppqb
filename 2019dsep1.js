@@ -4,7 +4,7 @@
 questions.push(
     {
         id: "2019-DSE-MATH-CP1-Q01",
-        year: 2019,
+        year: "2019",
         type: "P1",
         level: ["Junior"],
         domain: ["Algebra"],
@@ -16,7 +16,7 @@ questions.push(
     },
     {
         id: "2019-DSE-MATH-CP1-Q02",
-        year: 2019,
+        year: "2019",
         type: "P1",
         level: ["Junior"],
         domain: ["Algebra"],
@@ -28,7 +28,7 @@ questions.push(
     },
     {
         id: "2019-DSE-MATH-CP1-Q03",
-        year: 2019,
+        year: "2019",
         type: "P1",
         level: ["Junior"],
         domain: ["Geometry"],
@@ -40,7 +40,7 @@ questions.push(
     },
     {
         id: "2019-DSE-MATH-CP1-Q04",
-        year: 2019,
+        year: "2019",
         type: "P1",
         level: ["Junior"],
         domain: ["Algebra"],
@@ -52,7 +52,7 @@ questions.push(
     },
     {
         id: "2019-DSE-MATH-CP1-Q05",
-        year: 2019,
+        year: "2019",
         type: "P1",
         level: ["Junior"],
         domain: ["Number and Cardinality"],
@@ -64,7 +64,7 @@ questions.push(
     },
     {
         id: "2019-DSE-MATH-CP1-Q06",
-        year: 2019,
+        year: "2019",
         type: "P1",
         level: ["Junior"],
         domain: ["Algebra"],
@@ -76,7 +76,7 @@ questions.push(
     },
     {
         id: "2019-DSE-MATH-CP1-Q07",
-        year: 2019,
+        year: "2019",
         type: "P1",
         level: ["Junior"],
         domain: ["Number and Cardinality"],
@@ -88,7 +88,7 @@ questions.push(
     },
     {
         id: "2019-DSE-MATH-CP1-Q08",
-        year: 2019,
+        year: "2019",
         type: "P1",
         level: ["Junior"],
         domain: ["Data Handling"],
@@ -100,7 +100,7 @@ questions.push(
     },
     {
         id: "2019-DSE-MATH-CP1-Q09",
-        year: 2019,
+        year: "2019",
         type: "P1",
         level: ["Junior"],
         domain: ["Geometry"],
@@ -112,7 +112,7 @@ questions.push(
     },
     {
         id: "2019-DSE-MATH-CP1-Q10",
-        year: 2019,
+        year: "2019",
         type: "P1",
         level: ["Senior"],
         domain: ["Algebra"],
@@ -124,7 +124,7 @@ questions.push(
     },
     {
         id: "2019-DSE-MATH-CP1-Q11",
-        year: 2019,
+        year: "2019",
         type: "P1",
         level: ["Senior"],
         domain: ["Algebra"],
@@ -136,7 +136,7 @@ questions.push(
     },
     {
         id: "2019-DSE-MATH-CP1-Q12",
-        year: 2019,
+        year: "2019",
         type: "P1",
         level: ["Senior"],
         domain: ["Data Handling"],
@@ -148,7 +148,7 @@ questions.push(
     },
     {
         id: "2019-DSE-MATH-CP1-Q13",
-        year: 2019,
+        year: "2019",
         type: "P1",
         level: ["Senior"],
         domain: ["Geometry"],
@@ -160,7 +160,7 @@ questions.push(
     },
     {
         id: "2019-DSE-MATH-CP1-Q14",
-        year: 2019,
+        year: "2019",
         type: "P1",
         level: ["Senior"],
         domain: ["Geometry"],
@@ -172,7 +172,7 @@ questions.push(
     },
     {
         id: "2019-DSE-MATH-CP1-Q15",
-        year: 2019,
+        year: "2019",
         type: "P1",
         level: ["Senior"],
         domain: ["Data Handling"],
@@ -184,7 +184,7 @@ questions.push(
     },
     {
         id: "2019-DSE-MATH-CP1-Q16",
-        year: 2019,
+        year: "2019",
         type: "P1",
         level: ["Senior"],
         domain: ["Algebra"],
@@ -196,7 +196,7 @@ questions.push(
     },
     {
         id: "2019-DSE-MATH-CP1-Q17",
-        year: 2019,
+        year: "2019",
         type: "P1",
         level: ["Senior"],
         domain: ["Geometry"],
@@ -208,7 +208,7 @@ questions.push(
     },
     {
         id: "2019-DSE-MATH-CP1-Q18",
-        year: 2019,
+        year: "2019",
         type: "P1",
         level: ["Senior"],
         domain: ["Geometry"],
@@ -220,7 +220,7 @@ questions.push(
     },
     {
         id: "2019-DSE-MATH-CP1-Q19",
-        year: 2019,
+        year: "2019",
         type: "P1",
         level: ["Senior"],
         domain: ["Algebra"],
