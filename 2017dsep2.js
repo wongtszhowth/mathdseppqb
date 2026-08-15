@@ -575,7 +575,7 @@ D.\t$40$
         domain: ["Data Handling"],
         topic: ["Measures of Central Tendency", "Measures of Dispersion"],
         difficulty: 2,
-        content: `考慮以下正整數：<div style="text-align: center;">2 3 4 6 7 9 10 $m$ $n$</div>設 $a$、$b$ 及 $c$ 分別為以上正整數的眾數、中位數及分佈域。 若以上正整數的平均值為 $5$，則下列何者必為正確？
+        content: `考慮以下正整數：<div style="text-align: center;">2　3　4　6　7　9　10　$m$　$n$</div>設 $a$、$b$ 及 $c$ 分別為以上正整數的眾數、中位數及分佈域。 若以上正整數的平均值為 $5$，則下列何者必為正確？
 <div class="q-mcms">
 I.\t$a=2$
 II.\t$b=4$
