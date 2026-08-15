@@ -76,7 +76,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Linear Inequalities and Compound Inequalities"],
         difficulty: 2,
-        content: `考慮複合不等式<br>$$x+6 < 6(x+11) \\text{ 或 } x \\le -5 \\quad \\dots\\dots\\dots (*)$$<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">解 $(*)$。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出滿足 $(*)$ 的最大負整數。 <span class="marks">(1分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `考慮複合不等式<div style="text-align: center;">$x+6 < 6(x+11)$  或  $x \\le -5$  ...............(*)</div><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">解 (*)。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出滿足 (*) 的最大負整數。 <span class="marks">(1分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 分別解兩個不等式後取聯集。 <br>(b) 從範圍中取最大負整數。 `,
         solution: ``
     },
@@ -88,8 +88,8 @@ questions.push(
         level: ["Junior"],
         domain: ["Geometry"],
         topic: ["Trigonometry (2D)", "Perimeters and Areas"],
-        difficulty: 2,
-        content: `在某極坐標系中，$O$ 為極點。 點 $A$ 及點 $B$ 的極坐標分別為 $(12, 75^\\circ)$ 及 $(12, 135^\\circ)$。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $\\angle AOB$。 <span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求 $\\triangle AOB$ 的周界。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">寫出 $\\triangle AOB$ 的旋轉對稱的折式數目。 <span class="marks">(1分)</span><div class="q-clearfix"></div></div></div>`,
+        difficulty: 1,
+        content: `<div style="color: red;">在某極坐標系中，$O$ 為極點。 點 $A$ 及點 $B$ 的極坐標分別為 $(12, 75^\\circ)$ 及 $(12, 135^\\circ)$。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $\\angle AOB$。 <span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求 $\\Delta AOB$ 的周界。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">寫出 $\\Delta AOB$ 的旋轉對稱的折式數目。 <span class="marks">(1分)</span><div class="q-clearfix"></div></div></div></div>`,
         hint: `(a) 極角差。 <br>(b) 用餘弦公式求 $AB$ 後加兩半徑。 <br>(c) 等腰三角形的旋轉對稱。 `,
         solution: ``
     },
@@ -101,8 +101,8 @@ questions.push(
         level: ["Junior"],
         domain: ["Algebra"],
         topic: ["Variations"],
-        difficulty: 2,
-        content: `已知 $f(x)$ 為兩部分之和，一部分隨 $x$ 正變，而另一部分隨 $x^2$ 正變。 假定 $f(3)=48$ 及 $f(9)=198$。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $f(x)$。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">解方程 $f(x)=90$。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
+        difficulty: 1,
+        content: `已知 $\\mathrm{f}(x)$ 為兩部分之和，一部分隨 $x$ 正變，而另一部分隨 $x^2$ 正變。 假定 $\\mathrm{f}(3)=48$ 及 $\\mathrm{f}(9)=198$。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $\\mathrm{f}(x)$。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">解方程 $\\mathrm{f}(x)=90$。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 設 $f(x)=Ax + Bx^2$，代入求係數。 <br>(b) 解二次方程。 `,
         solution: ``
     },
@@ -114,7 +114,7 @@ questions.push(
         level: ["Junior"],
         domain: ["Data Handling"],
         topic: ["Statistical Graphs", "Probability"],
-        difficulty: 2,
+        difficulty: 1,
         content: `下面的頻數分佈表及累積頻數分佈表均顯示某花園內植物的高度的分佈。 <br><table class="q-table"><tr><th>高度 (m)</th><th>頻數</th></tr><tr><td>0.1 – 0.3</td><td>$a$</td></tr><tr><td>0.4 – 0.6</td><td>4</td></tr><tr><td>0.7 – 0.9</td><td>6</td></tr><tr><td>1.0 – 1.2</td><td>$c$</td></tr><tr><td>1.3 – 1.5</td><td>15</td></tr><tr><td>1.6 – 1.8</td><td>3</td></tr></table><br><table class="q-table"><tr><th>高度少於 (m)</th><th>累積頻數</th></tr><tr><td>0.35</td><td>2</td></tr><tr><td>0.65</td><td>$x$</td></tr><tr><td>0.95</td><td>13</td></tr><tr><td>1.25</td><td>$y$</td></tr><tr><td>1.55</td><td>37</td></tr><tr><td>1.85</td><td>$z$</td></tr></table><br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $x$、$y$ 及 $z$。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">若從該花園中隨機選取一植物，求所選取的植物的高度少於 $1.25$ m 但不少於 $0.65$ m 的概率。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 由累積頻數關係求未知數。 <br>(b) 計算對應頻數比例。 `,
         solution: ``
@@ -128,7 +128,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Loci", "Equations of Circles"],
         difficulty: 2,
-        content: `點 $A$ 及點 $B$ 的坐標分別為 $(5, 7)$ 及 $(13, 1)$。 設 $P$ 為直角坐標平面上的一動點使得 $P$ 與 $A$ 及 $B$ 等距。 將 $P$ 的軌跡記為 $\\Gamma$。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $\\Gamma$ 的方程。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$\\Gamma$ 與 $x$ 軸及 $y$ 軸分別相交於 $H$ 及 $K$。 將原點記為 $O$。 設 $C$ 為通過 $O$、$H$ 及 $K$ 的圓。 某人宣稱 $C$ 的圓周超過 $30$。 該宣稱是否正確？試解釋你的答案。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `點 $A$ 及點 $B$ 的坐標分別為 $(5, 7)$ 及 $(13, 1)$。 設 $P$ 為直角坐標平面上的一動點使得 $P$ 與 $A$ 及 $B$ 等距。 將 $P$ 的軌跡記為 $\\Gamma$。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $\\Gamma$ 的方程。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$\\Gamma$ 與 $x$ 軸及 $y$ 軸分別相交於 $H$ 及 $K$。 將原點記為 $O$。 設 $C$ 為通過 $O$、$H$ 及 $K$ 的圓。 某人宣稱 $C$ 的圓周超過 $30$。 該宣稱是否正確？ 試解釋你的答案。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 垂直平分線方程。 <br>(b) 求截距後求圓半徑比較。 `,
         solution: ``
     },
@@ -141,7 +141,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Mensuration"],
         difficulty: 3,
-        content: `某倒置直立圓錐形的容器載有一些牛奶。 將該容器鉛垂放置。 該容器內牛奶的深度為 $12$ cm。 文俊隨後將 $444\\pi$ cm$^3$ 的牛奶倒入該容器內，而牛奶沒有溢出。 他現知該容器內牛奶的深度為 $16$ cm。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">以 $\\pi$ 表該容器內牛奶的最終體積。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">文俊宣稱該容器被浸濕的曲面的最終面積至少為 $800$ cm$^2$。 你是否同意？試解釋你的答案。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `某倒置直立圓錐形的容器載有一些牛奶。 將該容器鉛垂放置。 該容器內牛奶的深度為 $12$ cm。 文俊隨後將 $444\\pi$ cm$^3$ 的牛奶倒入該容器內，而牛奶沒有溢出。 他現知該容器內牛奶的深度為 $16$ cm。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">以 $\\pi$ 表該容器內牛奶的最終體積。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">文俊宣稱該容器被浸濕的曲面的最終面積至少為 $800$ cm$^2$。 你是否同意？ 試解釋你的答案。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 用相似比求最終體積。 <br>(b) 求斜高後計算曲面面積比較。 `,
         solution: ``
     },
@@ -167,7 +167,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Geometry (Triangles)"],
         difficulty: 3,
-        content: `圖1中，$ABC$ 為三角形。 $D$、$E$ 及 $M$ 均為 $BC$ 上的點使得 $BD=CE$、$\\angle ADC=\\angle AEB$ 及 $DM=EM$。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明 $\\triangle ACD \\cong \\triangle ABE$。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">假定 $AD = 15$ cm、$BD = 7$ cm 及 $DE = 18$ cm。 <br><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求 $AM$。 </div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">$\\triangle ABE$ 是否一直角三角形？試解釋你的答案。 <br><span class="marks">(5分)</span><div class="q-clearfix"></div></div></div></div></div>`,
+        content: `圖1中，$ABC$ 為三角形。 $D$、$E$ 及 $M$ 均為 $BC$ 上的點使得 $BD=CE$、$\\angle ADC=\\angle AEB$ 及 $DM=EM$。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明 $\\Delta ACD \\cong \\Delta ABE$。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">假定 $AD = 15$ cm、$BD = 7$ cm 及 $DE = 18$ cm。 <br><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求 $AM$。 </div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">$\\Delta ABE$ 是否一直角三角形？ 試解釋你的答案。 <br><span class="marks">(5分)</span><div class="q-clearfix"></div></div></div></div></div>`,
         hint: `(a) 利用等長及角相等證明全等。 <br>(b) 用全等及畢氏定理檢查。 `,
         solution: ``
     },
@@ -180,7 +180,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Polynomials", "Remainder Theorem and Factor Theorem"],
         difficulty: 3,
-        content: `設 $p(x) = 6x^4 + 7x^3 + ax^2 + bx + c$，其中 $a$、$b$ 及 $c$ 均為常數。 當 $p(x)$ 除以 $x+2$ 時及當 $p(x)$ 除以 $x-2$ 時，所得的兩餘數相等。 已知 $p(x) = (lx^2 + 5x + 8)(2x^2 + mx + n)$，其中 $l$、$m$ 及 $n$ 均為常數。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $l$、$m$ 及 $n$。 <span class="marks">(5分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">方程 $p(x) = 0$ 有多少個實根？試解釋你的答案。 <span class="marks">(5分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `設 $p(x) = 6x^4 + 7x^3 + ax^2 + bx + c$，其中 $a$、$b$ 及 $c$ 均為常數。 當 $p(x)$ 除以 $x+2$ 時及當 $p(x)$ 除以 $x-2$ 時，所得的兩餘數相等。 已知 $p(x) = (lx^2 + 5x + 8)(2x^2 + mx + n)$，其中 $l$、$m$ 及 $n$ 均為常數。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $l$、$m$ 及 $n$。 <span class="marks">(5分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">方程 $p(x) = 0$ 有多少個實根？ 試解釋你的答案。 <span class="marks">(5分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 利用餘數相等及比較係數求參數。 <br>(b) 因式分解後判斷實根數目。 `,
         solution: ``
     },
@@ -206,7 +206,7 @@ questions.push(
         domain: ["Data Handling"],
         topic: ["Standard Score", "Measures of Dispersion"],
         difficulty: 2,
-        content: `某測驗中，一班學生得分的分佈的平均值為 $61$ 分。 偉健及小麗的標準分分別為 $-2.6$ 及 $1.4$。 偉健得 $22$ 分。 某學生宣稱該分佈的分佈域至多為 $59$ 分。 該宣稱是否正確？試解釋你的答案。 <span class="marks">(3分)</span>`,
+        content: `某測驗中，一班學生得分的分佈的平均值為 $61$ 分。 偉健及小麗的標準分分別為 $-2.6$ 及 $1.4$。 偉健得 $22$ 分。 某學生宣稱該分佈的分佈域至多為 $59$ 分。 該宣稱是否正確？ 試解釋你的答案。 <span class="marks">(3分)</span>`,
         hint: `由標準分求標準差，再估計分佈域。 `,
         solution: ``
     },
@@ -245,7 +245,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Trigonometry (2D)", "Trigonometry (3D)"],
         difficulty: 3,
-        content: `圖 2 顯示一幾何模型 $ABCD$，其形狀為四面體。 已知 $\\angle BAD = 86^\\circ$、$\\angle CBD = 43^\\circ$、$AB = 10$ cm、$AC = 6$ cm、$BC = 8$ cm 及 $BD = 15$ cm。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $\\angle ABD$ 及 $CD$。 <span class="marks">(4分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">某工匠宣稱 $AB$ 與面 $BCD$ 間的交角為 $\\angle ABC$。 你是否同意？試解釋你的答案。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `圖 2 顯示一幾何模型 $ABCD$，其形狀為四面體。 已知 $\\angle BAD = 86^\\circ$、$\\angle CBD = 43^\\circ$、$AB = 10$ cm、$AC = 6$ cm、$BC = 8$ cm 及 $BD = 15$ cm。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $\\angle ABD$ 及 $CD$。 <span class="marks">(4分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">某工匠宣稱 $AB$ 與面 $BCD$ 間的交角為 $\\angle ABC$。 你是否同意？ 試解釋你的答案。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 用餘弦公式及正弦公式。 <br>(b) 檢查 $AB$ 是否垂直於交線。 `,
         solution: ``
     },
@@ -258,7 +258,7 @@ questions.push(
         domain: ["Geometry"],
         topic: ["Geometry (Triangles)", "Equations of Circles", "Coordinate Geometry"],
         difficulty: 3,
-        content: `$\\triangle OPQ$ 為一鈍角三角形。 將 $\\triangle OPQ$ 的內心及外心分別記為 $I$ 及 $J$。 已知 $P$、$I$ 與 $J$ 共線。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明 $OP = PQ$。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">引入一直角坐標系使得 $O$ 及 $Q$ 的坐標分別為 $(0, 0)$ 及 $(40, 30)$，而 $P$ 的 $y$ 坐標為 $19$。 設 $C$ 為通過 $O$、$P$ 及 $Q$ 的圓。 <br><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求 $C$ 的方程。 </div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">設 $L_1$ 及 $L_2$ 為 $C$ 的兩切線使得每一切線的斜率均為 $\\dfrac{3}{4}$ 且 $L_1$ 的 $y$ 截距較 $L_2$ 大。 $L_1$ 分別與 $x$ 軸及 $y$ 軸相交於 $S$ 及 $T$，而 $L_2$ 分別與 $x$ 軸及 $y$ 軸相交於 $U$ 及 $V$。 某人宣稱梯形 $STUV$ 的面積超過 $17000$。 該宣稱是否正確？試解釋你的答案。 <br><span class="marks">(9分)</span><div class="q-clearfix"></div></div></div></div></div>`,
+        content: `$\\Delta OPQ$ 為一鈍角三角形。 將 $\\Delta OPQ$ 的內心及外心分別記為 $I$ 及 $J$。 已知 $P$、$I$ 與 $J$ 共線。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明 $OP = PQ$。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">引入一直角坐標系使得 $O$ 及 $Q$ 的坐標分別為 $(0, 0)$ 及 $(40, 30)$，而 $P$ 的 $y$ 坐標為 $19$。 設 $C$ 為通過 $O$、$P$ 及 $Q$ 的圓。 <br><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求 $C$ 的方程。 </div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">設 $L_1$ 及 $L_2$ 為 $C$ 的兩切線使得每一切線的斜率均為 $\\dfrac{3}{4}$ 且 $L_1$ 的 $y$ 截距較 $L_2$ 大。 $L_1$ 分別與 $x$ 軸及 $y$ 軸相交於 $S$ 及 $T$，而 $L_2$ 分別與 $x$ 軸及 $y$ 軸相交於 $U$ 及 $V$。 某人宣稱梯形 $STUV$ 的面積超過 $17000$。 該宣稱是否正確？ 試解釋你的答案。 <br><span class="marks">(9分)</span><div class="q-clearfix"></div></div></div></div></div>`,
         hint: `(a) 利用內心外心性質。 <br>(b) 求圓方程後求切線及梯形面積。 `,
         solution: ``
     }
