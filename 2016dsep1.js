@@ -117,7 +117,7 @@ questions.push(
         difficulty: 1,
         content: `下面的頻數分佈表及累積頻數分佈表均顯示某花園內植物的高度的分佈。<div class="q-text-content"><table class="q-table" style="float: left; margin-top: 12px; margin-bottom: 12px; margin-left: 3em; margin-right: auto; border-collapse: collapse; table-layout: auto;">
     <colgroup>
-      <col style="width: 12em;">
+      <col style="width: 8em;">
       <col style="width: 4em;">
     </colgroup>
     <tr>
@@ -149,7 +149,7 @@ questions.push(
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">3</td>
     </tr></table><table class="q-table" style="float: right; margin-top: 12px; margin-bottom: 12px; margin-left: auto; margin-right: 3em; border-collapse: collapse; table-layout: auto;">
     <colgroup>
-      <col style="width: 12em;">
+      <col style="width: 10em;">
       <col style="width: 6em;">
     </colgroup>
     <tr>
