@@ -215,8 +215,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Exponential Functions and Logarithm Functions"],
         difficulty: 3,
-        content: `圖中的圖像顯示 $\\log_4 x$ 與 $\\log_8 y$ 之間的線性關係。 該圖像的斜率及在水平軸上的截距分別為 $\\dfrac{-1}{3}$ 及 $3$。 將 $x$ 與 $y$ 之間的關係表為 $y = Ax^k$ 的形式，其中 $A$ 及 $k$ 均為常數。 <span class="marks">(3分)</span>
-        <img src="img/2014dsep1q15.jpg" class="q-img" alt="題目附圖" style="max-width: 55%;">`,
+        content: `圖中的圖像顯示 $\\log_4 x$ 與 $\\log_8 y$ 之間的線性關係。 該圖像的斜率及在水平軸上的截距分別為 $\\dfrac{-1}{3}$ 及 $3$。 將 $x$ 與 $y$ 之間的關係表為 $y = Ax^k$ 的形式，其中 $A$ 及 $k$ 均為常數。 <span class="marks">(3分)</span><img src="img/2014dsep1q15.jpg" class="q-img" alt="題目附圖" style="max-width: 55%;">`,
         hint: `寫出直線方程後換底或化簡。 `,
         solution: ``
     },
@@ -229,8 +228,7 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Sequences"],
         difficulty: 2,
-        content: `圖中，第 $1$ 個圖案包含 $3$ 粒點子。 對任意正整數 $n$，第 $(n+1)$ 個圖案是由第 $n$ 個圖案加上 $2$ 粒點子所組成。 求 $m$ 的最小值使得首 $m$ 個圖案的點子總數超過 $6\\,888$。 <span class="marks">(4分)</span>
-        <img src="img/2014dsep1q16.jpg" class="q-img" alt="題目附圖" style="max-width: 65%;">`,
+        content: `圖中，第 $1$ 個圖案包含 $3$ 粒點子。 對任意正整數 $n$，第 $(n+1)$ 個圖案是由第 $n$ 個圖案加上 $2$ 粒點子所組成。 求 $m$ 的最小值使得首 $m$ 個圖案的點子總數超過 $6\\,888$。 <span class="marks">(4分)</span><img src="img/2014dsep1q16.jpg" class="q-img" alt="題目附圖" style="max-width: 65%;">`,
         hint: `寫出通項後求和，解不等式。 `,
         solution: ``
     },
@@ -271,24 +269,24 @@ questions.push(
         difficulty: 3,
         content: `<u><u>佩玲</u></u>及<u>志偉</u>參與一含兩回合的遊戲。 在第一回合，<u>佩玲</u>及<u>志偉</u>輪流投擲一枚勻稱骰子。 首位擲得點數「3」的參與者勝出第一回合。 <u>佩玲</u>及<u>志偉</u>參與第一回合，直至其中一人勝出為止。 <u>佩玲</u>首先投擲骰子。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求<u>佩玲</u>勝出該遊戲第一回合的概率。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">在該遊戲的第二回合，球被逐一投入某部由八個管子並列所組成的裝置內（見圖）。 當球被投入該裝置時，它會隨機跌進其中一管子內。 每個管子最多可容納三個球。<table class="q-table" style="margin-top: 12px; margin-bottom: 12px; margin-left: auto; margin-right: auto; border-collapse: collapse; table-layout: auto;">
     <colgroup>
-      <col style="width: 3em; height: 100px; border-top: none;">
-      <col style="width: 3em; height: 100px; border-top: none;">
-	  <col style="width: 3em; height: 100px; border-top: none;">
-	  <col style="width: 3em; height: 100px; border-top: none;">
-      <col style="width: 3em; height: 100px; border-top: none;">
-      <col style="width: 3em; height: 100px; border-top: none;">
-      <col style="width: 3em; height: 100px; border-top: none;">
-      <col style="width: 3em; height: 100px; border-top: none;">
+      <col style="width: 3em; border-top: none;">
+      <col style="width: 3em; border-top: none;">
+	  <col style="width: 3em; border-top: none;">
+	  <col style="width: 3em; border-top: none;">
+      <col style="width: 3em; border-top: none;">
+      <col style="width: 3em; border-top: none;">
+      <col style="width: 3em; border-top: none;">
+      <col style="width: 3em; border-top: none;">
     </colgroup>
     <tr>
-      <td style="border-left: 1px solid #000; border-right: 1px solid #000; border-bottom: 1px solid #000; border-top: none;"></td>
-	  <td style="border-left: 1px solid #000; border-right: 1px solid #000; border-bottom: 1px solid #000; border-top: none;"></td>
-	  <td style="border-left: 1px solid #000; border-right: 1px solid #000; border-bottom: 1px solid #000; border-top: none;"></td>
-	  <td style="border-left: 1px solid #000; border-right: 1px solid #000; border-bottom: 1px solid #000; border-top: none;"></td>
-	  <td style="border-left: 1px solid #000; border-right: 1px solid #000; border-bottom: 1px solid #000; border-top: none;"></td>
-	  <td style="border-left: 1px solid #000; border-right: 1px solid #000; border-bottom: 1px solid #000; border-top: none;"></td>
-	  <td style="border-left: 1px solid #000; border-right: 1px solid #000; border-bottom: 1px solid #000; border-top: none;"></td>
-	  <td style="border-left: 1px solid #000; border-right: 1px solid #000; border-bottom: 1px solid #000; border-top: none;"></td>
+      <td style="height: 100px; border-left: 1px solid #000; border-right: 1px solid #000; border-bottom: 1px solid #000; border-top: none;"></td>
+	  <td style="height: 100px; border-left: 1px solid #000; border-right: 1px solid #000; border-bottom: 1px solid #000; border-top: none;"></td>
+	  <td style="height: 100px; border-left: 1px solid #000; border-right: 1px solid #000; border-bottom: 1px solid #000; border-top: none;"></td>
+	  <td style="height: 100px; border-left: 1px solid #000; border-right: 1px solid #000; border-bottom: 1px solid #000; border-top: none;"></td>
+	  <td style="height: 100px; border-left: 1px solid #000; border-right: 1px solid #000; border-bottom: 1px solid #000; border-top: none;"></td>
+	  <td style="height: 100px; border-left: 1px solid #000; border-right: 1px solid #000; border-bottom: 1px solid #000; border-top: none;"></td>
+	  <td style="height: 100px; border-left: 1px solid #000; border-right: 1px solid #000; border-bottom: 1px solid #000; border-top: none;"></td>
+	  <td style="height: 100px; border-left: 1px solid #000; border-right: 1px solid #000; border-bottom: 1px solid #000; border-top: none;"></td>
     </tr>
 </table>這回合的參與者採納下列兩個選項中的一個。<table class="q-table" style="margin-top: 12px; margin-bottom: 12px; margin-left: auto; margin-right: auto; width: 100%; border-collapse: collapse; table-layout: auto;">
     <colgroup>
@@ -296,12 +294,12 @@ questions.push(
       <col style="width: auto;">
     </colgroup>
     <tr>
-      <td style="border: 0px; text-align: left; padding: 3px 0px;">選項 1：</td>
-      <td style="border: 0px; text-align: left; padding: 3px 0px;">將兩個球逐一投入該裝置內。 若該兩個球跌進同一管子內，則該參與者獲 $10$ 個代幣； 若該兩個球跌進兩個相鄰的管子內，則該參與者獲 $5$ 個代幣； 否則，該參與者不獲代幣。</td>
+      <td style="border: 0px; text-align: left; vertical-align: top; padding: 3px 0px;">選項 1：</td>
+      <td style="border: 0px; text-align: left; vertical-align: top; padding: 3px 0px;">將兩個球逐一投入該裝置內。 若該兩個球跌進同一管子內，則該參與者獲 $10$ 個代幣； 若該兩個球跌進兩個相鄰的管子內，則該參與者獲 $5$ 個代幣； 否則，該參與者不獲代幣。</td>
     </tr>
     <tr>
-      <td style="border: 0px; text-align: left; padding: 3px 0px;">選項 2：</td>
-      <td style="border: 0px; text-align: left; padding: 3px 0px;">將三個球逐一投入該裝置內。 若該三個球跌進同一管子內，則該參與者獲 $50$ 個代幣； 若該三個球跌進三個相鄰的管子內，則該參與者獲 $10$ 個代幣； 若該三個球跌進兩個相鄰的管子內，則該參與者獲 $5$ 個代幣； 否則，該參與者不獲代幣。</td>
+      <td style="border: 0px; text-align: left; vertical-align: top; padding: 3px 0px;">選項 2：</td>
+      <td style="border: 0px; text-align: left; vertical-align: top; padding: 3px 0px;">將三個球逐一投入該裝置內。 若該三個球跌進同一管子內，則該參與者獲 $50$ 個代幣； 若該三個球跌進三個相鄰的管子內，則該參與者獲 $10$ 個代幣； 若該三個球跌進兩個相鄰的管子內，則該參與者獲 $5$ 個代幣； 否則，該參與者不獲代幣。</td>
     </tr>
   </table></div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">若第二回合的參與者採納選項 1，求所獲代幣的數目的期望值。 </div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">第二回合的參與者應採納哪一選項才使所獲代幣的數目的期望值達至最大？ 試解釋你的答案。 </div></div><div class="q-line q-level-2"><span class="q-label">(iii)</span><div class="q-text-content">只有第一回合的勝方參與第二回合。 已知第二回合的參與者採納能使所獲代幣的數目的期望值達至最大的選項。 <u>志偉</u>宣稱<u>佩玲</u>在該遊戲中不獲代幣的概率超過 $0.9$。 該宣稱是否正確？ 試解釋你的答案。 <br><span class="marks">(10分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 無限幾何級數求概率。 <br>(b) 計算各選項期望值後比較，再結合第一回合概率。 `,
