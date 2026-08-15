@@ -4,7 +4,7 @@
 questions.push(
     {
         id: "2015-DSE-MATH-CP1-Q01",
-        year: "2015",
+        year: 2015,
         type: "P1",
         section: "A1",
         level: ["Junior"],
@@ -17,7 +17,7 @@ questions.push(
     },
     {
         id: "2015-DSE-MATH-CP1-Q02",
-        year: "2015",
+        year: 2015,
         type: "P1",
         section: "A1",
         level: ["Junior"],
@@ -30,7 +30,7 @@ questions.push(
     },
     {
         id: "2015-DSE-MATH-CP1-Q03",
-        year: "2015",
+        year: 2015,
         type: "P1",
         section: "A1",
         level: ["Junior"],
@@ -43,7 +43,7 @@ questions.push(
     },
     {
         id: "2015-DSE-MATH-CP1-Q04",
-        year: "2015",
+        year: 2015,
         type: "P1",
         section: "A1",
         level: ["Junior"],
@@ -56,7 +56,7 @@ questions.push(
     },
     {
         id: "2015-DSE-MATH-CP1-Q05",
-        year: "2015",
+        year: 2015,
         type: "P1",
         section: "A1",
         level: ["Junior"],
@@ -69,7 +69,7 @@ questions.push(
     },
     {
         id: "2015-DSE-MATH-CP1-Q06",
-        year: "2015",
+        year: 2015,
         type: "P1",
         section: "A1",
         level: ["Junior"],
@@ -82,7 +82,7 @@ questions.push(
     },
     {
         id: "2015-DSE-MATH-CP1-Q07",
-        year: "2015",
+        year: 2015,
         type: "P1",
         section: "A1",
         level: ["Junior"],
@@ -95,7 +95,7 @@ questions.push(
     },
     {
         id: "2015-DSE-MATH-CP1-Q08",
-        year: "2015",
+        year: 2015,
         type: "P1",
         section: "A1",
         level: ["Junior"],
@@ -108,7 +108,7 @@ questions.push(
     },
     {
         id: "2015-DSE-MATH-CP1-Q09",
-        year: "2015",
+        year: 2015,
         type: "P1",
         section: "A1",
         level: ["Junior"],
@@ -121,20 +121,20 @@ questions.push(
     },
     {
         id: "2015-DSE-MATH-CP1-Q10",
-        year: "2015",
+        year: 2015,
         type: "P1",
         section: "A2",
         level: ["Senior"],
         domain: ["Algebra"],
         topic: ["Variations"],
         difficulty: 1,
-        content: `當<u>素姍</u>在某月售出 $n$ 個手袋時，她該月的收入是 $\\$S$。 已知 $S$ 為兩部分之和，一部分為常數，而另一部分隨 $n$ 正變。 當 $n=10$ 時，$S=10\\,600$； 當 $n=6$ 時，$S=9\\,000$。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">當<u>素姍</u>在某月售出 $20$ 個手袋時，求她該月的收入。<span class="marks">(4分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">當<u>素姍</u>在某月售出若干個手袋時，她該月的收入有沒有可能是 $\$18\\,000$？ 試解釋你的答案。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `當<u>素姍</u>在某月售出 $n$ 個手袋時，她該月的收入是 $\\$S$。 已知 $S$ 為兩部分之和，一部分為常數，而另一部分隨 $n$ 正變。 當 $n=10$ 時，$S=10\\,600$； 當 $n=6$ 時，$S=9\\,000$。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">當<u>素姍</u>在某月售出 $20$ 個手袋時，求她該月的收入。<span class="marks">(4分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">當<u>素姍</u>在某月售出若干個手袋時，她該月的收入有沒有可能是 $\\$18\\,000$？ 試解釋你的答案。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 設 $S = A + Bn$，代入求係數。 <br>(b) 檢查 $n$ 是否為正整數。 `,
         solution: ``
     },
     {
         id: "2015-DSE-MATH-CP1-Q11",
-        year: "2015",
+        year: 2015,
         type: "P1",
         section: "A2",
         level: ["Senior"],
@@ -147,7 +147,7 @@ questions.push(
     },
     {
         id: "2015-DSE-MATH-CP1-Q12",
-        year: "2015",
+        year: 2015,
         type: "P1",
         section: "A2",
         level: ["Senior"],
@@ -187,7 +187,7 @@ questions.push(
     },
     {
         id: "2015-DSE-MATH-CP1-Q13",
-        year: "2015",
+        year: 2015,
         type: "P1",
         section: "A2",
         level: ["Senior"],
@@ -200,7 +200,7 @@ questions.push(
     },
     {
         id: "2015-DSE-MATH-CP1-Q14",
-        year: "2015",
+        year: 2015,
         type: "P1",
         section: "A2",
         level: ["Senior"],
@@ -213,7 +213,7 @@ questions.push(
     },
     {
         id: "2015-DSE-MATH-CP1-Q15",
-        year: "2015",
+        year: 2015,
         type: "P1",
         section: "B",
         level: ["Senior"],
@@ -247,7 +247,7 @@ questions.push(
     },
     {
         id: "2015-DSE-MATH-CP1-Q16",
-        year: "2015",
+        year: 2015,
         type: "P1",
         section: "B",
         level: ["Senior"],
@@ -260,7 +260,7 @@ questions.push(
     },
     {
         id: "2015-DSE-MATH-CP1-Q17",
-        year: "2015",
+        year: 2015,
         type: "P1",
         section: "B",
         level: ["Senior"],
@@ -273,7 +273,7 @@ questions.push(
     },
     {
         id: "2015-DSE-MATH-CP1-Q18",
-        year: "2015",
+        year: 2015,
         type: "P1",
         section: "B",
         level: ["Senior"],
@@ -286,7 +286,7 @@ questions.push(
     },
     {
         id: "2015-DSE-MATH-CP1-Q19",
-        year: "2015",
+        year: 2015,
         type: "P1",
         section: "B",
         level: ["Senior"],
