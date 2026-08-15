@@ -116,12 +116,12 @@ questions.push(
         solution: `<span class="q-label">(a)</span>$\\mathrm{f}(-1) = 0$，$\\therefore$ 是。
 		<details style="margin: 8px 0;">
 			<summary style="cursor: pointer; user-select: none;">🎬 觀看解題影片</summary>
-			<iframe src="https://www.youtube.com/embed/iKSs2hTrAwE?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9; margin-top: 8px;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+			<iframe src="https://www.youtube.com/embed/iKSs2hTrAwE?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 4/3; margin-top: 8px;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
 		</details>
 		<span class="q-label">(b)</span>$x=-1$ 、 $x=3$ 或 $x=\\dfrac{-3}{4}$，$\\therefore$ 同意。
 		<details style="margin: 8px 0;">
 			<summary style="cursor: pointer; user-select: none;">🎬 觀看解題影片</summary>
-			<iframe src="https://www.youtube.com/embed/N4mtLL7jx_8?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9; margin-top: 8px;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+			<iframe src="https://www.youtube.com/embed/N4mtLL7jx_8?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 4/3; margin-top: 8px;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
 		</details>`
     },
     {
