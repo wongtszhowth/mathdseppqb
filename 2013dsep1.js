@@ -275,19 +275,21 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Sequences"],
         difficulty: 3,
-        content: `現對某城市公共房屋的發展進行研究。 已知第 $1$ 年年終時所有公屋單位的總樓面面積為 $9 \\times 10^6\\text{ m}^2$，並且在隨後各年裏，每年所落成的公屋單位的總樓面面積均為前一年年終時全部公屋單位的總樓面面積之 $r\\%$，其中 $r$ 為一常數，而每年所拆卸的公屋單位的總樓面面積均為 $3 \\times 10^5\\text{ m}^2$。 現知第 $3$ 年年終時所有公屋單位的總樓面面積為 $1.026 \\times 10^7\\text{ m}^2$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content"><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">以 $r$ 表第 $2$ 年年終時所有公屋單位的總樓面面積。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">求 $r$。<br><span class="marks">(4分)</span></div></div><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content"><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">以 $n$ 表第 $n$ 年年終時所有公屋單位的總樓面面積。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">哪一年年終時所有公屋單位的總樓面面積會首次超過 $4 \\times 10^7\\text{ m}^2$？<br><span class="marks">(5分)</span><div class="q-clearfix"></div></div></div></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">現假設第 $n$ 年年終時所需公屋單位的總樓面面積為 $(a(1.21)^n + b)\\text{ m}^2$，其中 $a$ 及 $b$ 均為常數。 某些研究結果顯示下列資料：<table class="q-table" style="margin-top: 12px; margin-bottom: 12px; margin-left: auto; margin-right: auto; min-width: 300px; border-collapse: collapse; table-layout: auto;">
+        content: `現對某城市公共房屋的發展進行研究。 已知第 $1$ 年年終時所有公屋單位的總樓面面積為 $9 \\times 10^6\\text{ m}^2$，並且在隨後各年裏，每年所落成的公屋單位的總樓面面積均為前一年年終時全部公屋單位的總樓面面積之 $r\\%$，其中 $r$ 為一常數，而每年所拆卸的公屋單位的總樓面面積均為 $3 \\times 10^5\\text{ m}^2$。 現知第 $3$ 年年終時所有公屋單位的總樓面面積為 $1.026 \\times 10^7\\text{ m}^2$。<div class="q-line"><span class="q-label">(a)</span><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">以 $r$ 表第 $2$ 年年終時所有公屋單位的總樓面面積。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">求 $r$。<br><span class="marks">(4分)</span></div></div><div class="q-clearfix"></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">以 $n$ 表第 $n$ 年年終時所有公屋單位的總樓面面積。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">哪一年年終時所有公屋單位的總樓面面積會首次超過 $4 \\times 10^7\\text{ m}^2$？<br><span class="marks">(5分)</span><div class="q-clearfix"></div></div></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">現假設第 $n$ 年年終時所需公屋單位的總樓面面積為 $(a(1.21)^n + b)\\text{ m}^2$，其中 $a$ 及 $b$ 均為常數。 某些研究結果顯示下列資料：<table class="q-table" style="margin-top: 12px; margin-bottom: 12px; margin-left: auto; margin-right: auto; min-width: 300px; border-collapse: collapse; table-layout: auto;">
     <colgroup>
-      <col style="width: auto;">
+      <col style="width: 2em;">
       <col style="width: auto;">
     </colgroup>
     <tr>
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$n$</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">第 $n$ 年年終時所需公屋單位的總樓面面積（$\\text{ m}^2$）</td>
+    </tr>
+	<tr>
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">1</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">2</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$1 \\times 10^7$</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">第 $n$ 年年終時所需公屋單位的總樓面面積（$\\text{ m}^2$）</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$1 \\times 10^7$</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">2</td>
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$1.063 \\times 10^7$</td>
     </tr>
   </table>一研究助理宣稱基於上述假設，某年年終時所有公屋單位的總樓面面積會大於所需公屋單位的總樓面面積。 該宣稱是否正確？ 試解釋你的答案。 <span class="marks">(4分)</span><div class="q-clearfix"></div></div></div>`,
