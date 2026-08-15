@@ -115,7 +115,73 @@ questions.push(
         domain: ["Data Handling"],
         topic: ["Statistical Graphs", "Probability"],
         difficulty: 1,
-        content: `下面的頻數分佈表及累積頻數分佈表均顯示某花園內植物的高度的分佈。 <br><table class="q-table"><tr><th>高度 (m)</th><th>頻數</th></tr><tr><td>0.1 – 0.3</td><td>$a$</td></tr><tr><td>0.4 – 0.6</td><td>4</td></tr><tr><td>0.7 – 0.9</td><td>6</td></tr><tr><td>1.0 – 1.2</td><td>$c$</td></tr><tr><td>1.3 – 1.5</td><td>15</td></tr><tr><td>1.6 – 1.8</td><td>3</td></tr></table><br><table class="q-table"><tr><th>高度少於 (m)</th><th>累積頻數</th></tr><tr><td>0.35</td><td>2</td></tr><tr><td>0.65</td><td>$x$</td></tr><tr><td>0.95</td><td>13</td></tr><tr><td>1.25</td><td>$y$</td></tr><tr><td>1.55</td><td>37</td></tr><tr><td>1.85</td><td>$z$</td></tr></table><br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $x$、$y$ 及 $z$。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">若從該花園中隨機選取一植物，求所選取的植物的高度少於 $1.25$ m 但不少於 $0.65$ m 的概率。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
+        content: `下面的頻數分佈表及累積頻數分佈表均顯示某花園內植物的高度的分佈。
+        <div class="q-text-content"><table class="q-table" style="float: left; margin-top: 12px; margin-bottom: 12px; margin-left: 3em; margin-right: auto; border-collapse: collapse; table-layout: auto;">
+    <colgroup>
+      <col style="width: 12em;">
+      <col style="width: 4em;">
+    </colgroup>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">高度 (m)</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">頻數</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">0.1 – 0.3</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$a$</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">0.4 – 0.6</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">4</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">0.7 – 0.9</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$b$</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">1.0 – 1.2</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$c$</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">1.3 – 1.5</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">15</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">1.6 – 1.8</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">3</td>
+    </tr></table><table class="q-table" style="float: right; margin-top: 12px; margin-bottom: 12px; margin-left: auto; margin-right: 3em; border-collapse: collapse; table-layout: auto;">
+    <colgroup>
+      <col style="width: 12em;">
+      <col style="width: 6em;">
+    </colgroup>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">高度少於 (m)</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">累積頻數</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">0.35</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">2</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">0.65</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$x$</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">0.95</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">13</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">1.25</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$y$</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">1.55</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">37</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">1.85</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$z$</td>
+    </tr></table></div>
+    <div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $x$、$y$ 及 $z$。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">若從該花園中隨機選取一植物，求所選取的植物的高度少於 $1.25\\text{ m}$ 但不少於 $0.65\\text{ m}$ 的概率。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 由累積頻數關係求未知數。 <br>(b) 計算對應頻數比例。 `,
         solution: ``
     },
