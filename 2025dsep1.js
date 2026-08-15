@@ -57,7 +57,11 @@ questions.push(
         difficulty: 2,
         content: `點 $A$ 的坐標為 $(4,-2)$ 。 $A$ 繞原點順時針方向旋轉 $90^{\\circ}$ 至 $B$ 。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出 $B$ 的坐標。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">假定 $B$ 向上平移 $k$ 單位至點 $C$ 。 若 $A$ 、 $O$ 與 $C$ 共線，求 $k$ 。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `旋轉公式：$(x, y)$ 繞原點順時針旋轉 $90^{\\circ}$ 變為 $(y, -x)$。共線代表斜率相等，即 $m_{OA} = m_{OC}$。`,
-        solution: `(a) $(-2,-4)$<br>(b) $C$ 的坐標為 $(-2,t-4)$。<br>$\\begin{aligned} \\frac{t-4}{-2} &= \\frac{-2}{4} \\\\ t-4 &= 1 \\\\ t &= 5 \\end{aligned}$`
+        solution: `<span class="q-label">(a)</span><div class="q-text-content">$(-2,-4)$<span class="marks">1A</span></div>
+		<span class="q-label">(b)</span><div class="q-text-content">$C$ 的坐標為 $(-2,t-4)$。
+		$\\frac{t-4}{-2} = \\frac{-2}{4}$ <span class="marks">1M</span>
+		$t-4 = 1$
+		$t = 5$ <span class="marks">1A</span>`
     },
     {
         id: "2025-DSE-MATH-CP1-Q05",
