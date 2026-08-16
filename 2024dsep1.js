@@ -144,7 +144,7 @@ questions.push(
     </tr>
   </table>若從該群中隨機選出一名主婦，則她擁有多於 $6$ 條鑰匙的概率為 $\\dfrac{5}{18}$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $k$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出該分佈的平均值、眾數及中位數。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 多於 6 條代表 7 條或 8 條，概率為 $\\dfrac{4+k}{\\text{總人數}}$，藉此建立方程求 $k$；(b) 將 $k$ 代回後依常規統計公式計算。`,
-        solution: `(a) 總人數 $= 10+9+4+3+4+k = 30+k$。依題意 $\\dfrac{4+k}{30+k} = \\dfrac{5}{18} \\Rightarrow 72+18k = 150+5k \\Rightarrow 13k = 78 \\Rightarrow k = 6$。<br>(b) 總人數 $= 36$。平均值 $= \\dfrac{3(10)+4(9)+5(4)+6(3)+7(4)+8(6)}{36} = \\dfrac{180}{36} = 5$；眾數 $= 3$（頻數最高為10）；中位數：第18和19項數據均為 $4$，故中位數 $= 4$。`
+        solution: `<div class="ms-container"><div class="ms-row"><div class="ms-num1">(a)</div><div class="ms-content ms-from-l2">$\\dfrac{4+k}{10+9+4+3+4+k}=\\dfrac{5}{18}$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l2">$k=6$</div><div class="ms-mark">1A</div></div><p><div class="ms-row"><div class="ms-num1">(b)</div><div class="ms-content ms-from-l2">平均值 $=5$</div><div class="ms-mark">1A</div></div><div class="ms-row"><div class="ms-content ms-from-l2">眾數 $=3$</div><div class="ms-mark">1A</div></div><div class="ms-row"><div class="ms-content ms-from-l2">中位數 $=4$</div><div class="ms-mark">1A</div></div></div>`
     },
     {
         id: "2024-DSE-MATH-CP1-Q10",
