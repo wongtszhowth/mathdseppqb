@@ -25,7 +25,7 @@ questions.push(
         difficulty: 1,
         content: `令 $x$ 成為公式 $\\dfrac{Ax+C}{B}=3x$ 的主項。<span class="marks">(3分)</span>`,
         hint: `兩邊同乘以 $B$ 消除分母，將所有含有 $x$ 的項移到等號同一邊，抽公因式後即可單獨導出 $x$。`,
-        solution: `$Ax+C = 3Bx \\Rightarrow C = 3Bx - Ax \\Rightarrow C = x(3B-A) \\Rightarrow x = \\dfrac{C}{3B-A}$`
+        solution: `<div class="ms-container"><div class="ms-row"><div class="ms-content ms-from-l1">$\\dfrac{Ax+C}{B}=3x$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l1">$Ax+C=3Bx$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$Ax-3Bx=-C$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$x=\\dfrac{C}{3B-A}$</div><div class="ms-mark">1A</div></div><br>另解：<br><div class="ms-row"><div class="ms-content ms-from-l1">$\\dfrac{Ax+C}{B}=3x$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l1">$\\dfrac{Ax}{B}+\\dfrac{C}{B}=3x$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$\\dfrac{Ax}{B}-3x=\\dfrac{-C}{B}$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$x=\\dfrac{C}{3B-A}$</div><div class="ms-mark">1A</div></div></div>`
     },
     {
         id: "2024-DSE-MATH-CP1-Q03",
@@ -38,7 +38,7 @@ questions.push(
         difficulty: 1,
         content: `因式分解<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">$6r^{2}-13rs-28s^{2}$ ，<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$4r-14s+6r^{2}-13rs-28s^{2}$ 。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 使用十字相乘法；(b) 利用 (a) 的結果，將前兩項提取公因式後進行整體分組分解。`,
-        solution: `(a) $(2r-7s)(3r+4s)$<br>(b) $2(2r-7s) + (2r-7s)(3r+4s) = (2r-7s)(2+3r+4s)$`
+        solution: `<div class="ms-container"><div class="ms-row"><div class="ms-num1">(a)</div><div class="ms-content ms-from-l2">$6r^2-13rs-28s^2$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l2">$=(2r-7s)(3r+4s)$</div><div class="ms-mark">1A</div></div><div class="ms-row"><div class="ms-num1">(b)</div><div class="ms-content ms-from-l2">$4r-14s+6r^2-13rs-28s^2$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l2">$=4r-14s+(2r-7s)(3r+4s)$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l2">$=2(2r-7s)+(2r-7s)(3r+4s)$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l2">$=(2r-7s)(2+3r+4s)$</div><div class="ms-mark">1A</div></div></div>`
     },
     {
         id: "2024-DSE-MATH-CP1-Q04",
