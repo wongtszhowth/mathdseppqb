@@ -232,62 +232,21 @@ questions.push(
         difficulty: 2,
         content: `設 $\\mathrm{F}(x)=(6x^2+x+p)(qx^2+rx-10)$，其中 $p$ 、 $q$ 及 $r$ 均為常數。 $\\mathrm{F}(x)$ 的常數項為 $40$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出 $p$ 的值。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">當 $\\mathrm{F}(x)$ 除以 $x+1$ 時，餘數為 $-12$。 已知 $x-2$ 為 $\\mathrm{F}(x)$ 的因式。</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求 $q$ 及 $r$。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">方程 $\\mathrm{F}(x)=0$ 有多少個無理根？ 試解釋你的答案。<br><span class="marks">(7分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 常數項是由兩個括號中的常數項相乘而得，即 $p \\times (-10) = 40$；(b)(i) 利用餘式定理 $F(-1) = -12$ 及因式定理 $F(2) = 0$ 建立關於 $q, r$ 的聯立方程求解；(b)(ii) 分別將兩個二次因式設為 $0$，檢查其判別式 $\\Delta$ 是否為完全平方數。`,
-        solution: `<div class="ms-container">
-  <div class="ms-row">
-    <div class="ms-num1">(a)</div>
-    <div class="ms-content ms-from-l2">$-4$</div>
-    <div class="ms-mark">1A</div>
-  </div>
-  <br>
-  <div class="ms-row">
-    <div class="ms-num1">(b)</div>
-    <div class="ms-num2">(i)</div>
-    <div class="ms-content ms-from-l3">藉 (a)，可得 $\\mathrm{F}(x)=(6x^2+x-4)(qx^2+rx-10)$。</div>
-    <div class="ms-mark"></div>
-  </div>
-  <div class="ms-row">
-    <div class="ms-content ms-from-l3">留意 $\\mathrm{F}(-1)=-12$ 及 $\\mathrm{F}(2)=0$。</div>
-    <div class="ms-mark">1M+1M</div>
-  </div>
-  <div class="ms-row">
-    <div class="ms-content ms-from-l3">由此，可得 $(6(-1)^2+(-1)-4)(q(-1)^2+r(-1)-10)=-12$<br>
-      及 $(6(2)^2+(2)-4)(q(2)^2+r(2)-10)=0$。<br>
-      故此，可得 $q-r=-2$ 及 $2q+r=5$。
-    </div>
-    <div class="ms-mark"></div>
-  </div>
-  <div class="ms-row">
-    <div class="ms-content ms-from-l3">求解後，可得 $q=1$ 及 $r=3$。</div>
-    <div class="ms-mark">1A</div>
-  </div>
-  <br>
-  <div class="ms-row">
-    <div class="ms-num2">(ii)</div>
-    <div class="ms-content">$\\mathrm{F}(x)=0$<br>
-      $(6x^2+x-4)(x^2+3x-10)=0$
-    </div>
-    <div class="ms-mark"></div>
-  </div>
-  <div class="ms-row">
-    <div class="ms-content ms-from-l3">$(6x^2+x-4)(x-2)(x+5)=0$</div>
-    <div class="ms-mark">1M</div>
-  </div>
-  <div class="ms-row">
-    <div class="ms-content ms-from-l3">$6x^2+x-4=0$ 、 $x-2=0$ 或 $x+5=0$</div>
-    <div class="ms-mark">1M</div>
-  </div>
-  <div class="ms-row">
-    <div class="ms-content ms-from-l3">$x=\\dfrac{-1\\pm\\sqrt{97}}{12}$ 、 $x=2$ 或 $x=-5$</div>
-    <div class="ms-mark">1M</div>
-  </div>
-  <div class="ms-row">
-    <div class="ms-content ms-from-l3">留意 $\\dfrac{-1-\\sqrt{97}}{12}$ 及 $\\dfrac{-1+\\sqrt{97}}{12}$ 均為無理數。<br>
-      再者留意 $2$ 及 $-5$ 均不是無理數。<br>
-      因此，方程 $\\mathrm{F}(x)=0$ 有 2 個無理根。
-    </div>
-    <div class="ms-mark">1A</div>
-  </div>
-</div>`
+        solution: `<div class="ms-container"><div class="ms-row"><div class="ms-num1">(a)</div><div class="ms-content ms-from-l2">$-4$</div><div class="ms-mark">1A</div></div>
+  <div class="ms-row"><div class="ms-num1">(b)</div><div class="ms-num2">(i)</div><div class="ms-content ms-from-l3">藉 (a)，可得 $\\mathrm{F}(x)=(6x^2+x-4)(qx^2+rx-10)$。</div><div class="ms-mark"></div></div>
+  <div class="ms-row"><div class="ms-content ms-from-l3">留意 $\\mathrm{F}(-1)=-12$ 及 $\\mathrm{F}(2)=0$。</div><div class="ms-mark">1M+1M</div></div>
+  <div class="ms-row"><div class="ms-content ms-from-l3">由此，可得 $(6(-1)^2+(-1)-4)(q(-1)^2+r(-1)-10)=-12$
+及 $(6(2)^2+(2)-4)(q(2)^2+r(2)-10)=0$。
+故此，可得 $q-r=-2$ 及 $2q+r=5$。</div><div class="ms-mark"></div></div>
+  <div class="ms-row"><div class="ms-content ms-from-l3">求解後，可得 $q=1$ 及 $r=3$。</div><div class="ms-mark">1A</div></div>
+  <div class="ms-row"><div class="ms-num2">(ii)</div><div class="ms-content">$\\mathrm{F}(x)=0$
+  $(6x^2+x-4)(x^2+3x-10)=0$</div><div class="ms-mark"></div></div>
+  <div class="ms-row"><div class="ms-content ms-from-l3">$(6x^2+x-4)(x-2)(x+5)=0$</div><div class="ms-mark">1M</div></div>
+  <div class="ms-row"><div class="ms-content ms-from-l3">$6x^2+x-4=0$ 、 $x-2=0$ 或 $x+5=0$</div><div class="ms-mark">1M</div></div>
+  <div class="ms-row"><div class="ms-content ms-from-l3">$x=\\dfrac{-1\\pm\\sqrt{97}}{12}$ 、 $x=2$ 或 $x=-5$</div><div class="ms-mark">1M</div></div>
+  <div class="ms-row"><div class="ms-content ms-from-l3">留意 $\\dfrac{-1-\\sqrt{97}}{12}$ 及 $\\dfrac{-1+\\sqrt{97}}{12}$ 均為無理數。
+再者留意 $2$ 及 $-5$ 均不是無理數。
+因此，方程 $\\mathrm{F}(x)=0$ 有 2 個無理根。</div><div class="ms-mark">1A</div></div></div>`
     },
     {
         id: "2024-DSE-MATH-CP1-Q15",
