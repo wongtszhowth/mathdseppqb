@@ -250,7 +250,7 @@ $(6x^2+x-4)(x^2+3x-10)=0$</div><div class="ms-mark"></div></div><div class="ms-r
         difficulty: 3,
         content: `已知 $\\log_9 y$ 為 $\\log_3 x$ 的線性函數。 將該線性函數的圖像記為 $L$。 $L$ 的斜率為 4 及 $L$ 通過點 $(5,22)$。 以 $x$ 表 $y$。<span class="marks">(3分)</span>`,
         hint: `建立線性方程 $\\log_9 y = 4 \\log_3 x + c$，利用換底公式將 $\\log_9 y$ 轉化為以 $3$ 為底數的對數形式，求出 $c$ 後化簡除去對數符號。`,
-        solution: `依題意設 $\\log_9 y = 4 \\log_3 x + c$。代入點 $(5,22)$ 得 $22 = 4(5) + c \\Rightarrow c = 2$。故 $\\log_9 y = 4 \\log_3 x + 2$。利用換底公式：$\\dfrac{\\log_3 y}{2} = 4 \\log_3 x + 2 \\Rightarrow \\log_3 y = 8 \\log_3 x + 4 \\Rightarrow \\log_3 y = \\log_3(x^8) + \\log_3(3^4) \\Rightarrow y = 81x^8$`
+        solution: `<div class="ms-container"><div class="ms-row"><div class="ms-content ms-from-l1">$\\log_9 y-22=4(\\log_3 x-5)$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$\\log_9 y=\\log_3 x^4+2$ ......<sup>@</sup></div><div class="ms-mark">1M<sup>@</sup></div></div><div class="ms-row"><div class="ms-content ms-from-l1">$\\log_9 y=\\log_3 9x^4$ ......<sup>@</sup><br>$\\dfrac{\\log_3 y}{\\log_3 9}=\\log_3 9x^4$ ......<sup>@</sup><br>$\\log_3 y=2\\log_3 9x^4$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l1">$y=81x^8$</div><div class="ms-mark">1A</div></div></div>`
     },
     {
         id: "2024-DSE-MATH-CP1-Q16",
