@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>0815-2145 DSE 數學題目庫</title>
+    <title>0816-1800 DSE 數學題目庫</title>
     <script>
         window.MathJax = {
             tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }, 
@@ -276,6 +276,50 @@
         .btn-modal-cancel { background: #e2e8f0; color: #475569; }
         .btn-modal-save { background: #dc2626; color: white; }
         .btn-modal-save:hover { background: #b91c1c; }
+
+	/*Marking Scheme*/
+	.ms-container {
+      max-width: 800px;
+      margin: 20px auto;
+      font-family: "Times New Roman", "Microsoft JhengHei", serif;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* 5 欄網格結構 */
+    .ms-row {
+      display: grid;
+      grid-template-columns: 35px 35px 30px 1fr 80px;
+      align-items: start;
+      margin-bottom: 6px;
+    }
+
+    /* 各層編號 */
+    .ms-num1 { grid-column: 1; }
+    .ms-num2 { grid-column: 2; }
+    .ms-num3 { grid-column: 3; }
+
+    /* 內容區塊 */
+    .ms-content {
+      grid-column: 4;
+    }
+
+    /* 讓內容從「第二層」位置開始 (欄 2 至 4) */
+    .ms-content.ms-from-l2 {
+      grid-column: 2 / 5;
+    }
+
+    /* 讓內容從「第三層」位置開始 (欄 3 至 4) */
+    .ms-content.ms-from-l3 {
+      grid-column: 3 / 5;
+    }
+
+    /* 右側分數 (欄位內置中) */
+    .ms-mark {
+      grid-column: 5;
+      text-align: center;
+      white-space: nowrap;
+    }
     </style>
 </head>
 <body>
