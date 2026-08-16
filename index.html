@@ -302,7 +302,11 @@
     .ms-content {
       grid-column: 4;
     }
-    /* 讓內容從「第二層」位置開始 (欄 2 至 4) */
+    /* 讓內容從「第一層」位置開始 (欄 1 至 4) */
+    .ms-content.ms-from-l1 {
+      grid-column: 1 / 5;
+    }
+	/* 讓內容從「第二層」位置開始 (欄 2 至 4) */
     .ms-content.ms-from-l2 {
       grid-column: 2 / 5;
     }
