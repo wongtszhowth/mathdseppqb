@@ -12,7 +12,7 @@ questions.push(
         difficulty: 1,
         content: `化簡 $\\dfrac{2}{4h-7} - \\dfrac{3}{6h-5}$。<span class="marks">(3分)</span>`,
         hint: `先通分母，然後展開分子並小心合併同類項（注意負號的分配）。`,
-        solution: `原式 $= \\dfrac{4(h-5) - 6(h-7)}{(h-7)(h-5)} = \\dfrac{4h-20-6h+42}{(h-7)(h-5)} = \\dfrac{22-2h}{(h-7)(h-5)}$`
+        solution: `<div class="ms-container"><div class="ms-row"><div class="ms-content ms-from-l1">$\\dfrac{2}{4h-7}-\\dfrac{3}{6h-5}$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=\\dfrac{2(6h-5)-3(4h-7)}{(4h-7)(6h-5)}$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=\\dfrac{12h-10-12h+21}{(4h-7)(6h-5)}$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=\\dfrac{11}{(4h-7)(6h-5)}$</div><div class="ms-mark">1A</div></div></div>`
     },
     {
         id: "2024-DSE-MATH-CP1-Q02",
