@@ -26,7 +26,7 @@ questions.push(
         difficulty: 1,
         content: `化簡 $\\dfrac{(m^4 n^{-1})^3}{(m^{-2})^5}$，並以正指數表示答案。 <span class="marks">(3分)</span>`,
         hint: `先展開指數，再應用指數定律。 `,
-        solution: `<div class="ms-container"><div class="ms-row"><div class="ms-content ms-from-l1">$\\dfrac{(m^4 n^{-1})^3}{(m^{-2})^5}$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=\\dfrac{m^{12} n^{-3}}{m^{-10}}$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=\\dfrac{m^{12+10}}{n^3}$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=\\dfrac{m^{22}}{n^3}$</div><div class="ms-mark">1A</div></div></div>`
+        solution: `<div class="ms-container"><div class="ms-row"><div class="ms-content ms-from-l1">    $\\dfrac{(m^4 n^{-1})^3}{(m^{-2})^5}$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=\\dfrac{m^{12} n^{-3}}{m^{-10}}$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=\\dfrac{m^{12+10}}{n^3}$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=\\dfrac{m^{22}}{n^3}$</div><div class="ms-mark">1A</div></div></div>`
     },
     {
         id: "2017-DSE-MATH-CP1-Q03",
