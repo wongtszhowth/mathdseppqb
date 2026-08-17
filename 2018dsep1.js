@@ -24,9 +24,9 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Laws of Indices"],
         difficulty: 1,
-        content: `化簡 $\\dfrac{xy^7}{(x^2 y^3)^4}$，並以正指數表示答案。 <span class="marks">(3分)</span>`,
+        content: `化簡 $\\dfrac{xy^7}{(x^{-2} y^3)^4}$，並以正指數表示答案。 <span class="marks">(3分)</span>`,
         hint: `先展開分母的指數，再應用指數定律。 `,
-        solution: `<div class="ms-container"><div class="ms-row"><div class="ms-content ms-from-l1">$\\dfrac{x^7}{(x^2 y^3)^4}$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=\\dfrac{x^7}{x^8 y^{12}}$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=\\dfrac{x^{-1}}{y^{12}}$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=\\dfrac{1}{x y^{12}}$</div><div class="ms-mark">1A</div></div></div>`
+        solution: `<div class="ms-container"><div class="ms-row"><div class="ms-content ms-from-l1">$\\dfrac{x^7}{(x^{-2} y^3)^4}$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=\\dfrac{xy^7}{x^{-8} y^{12}}$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=\\dfrac{x^{1+8}}{y^{12-7}}$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=\\dfrac{x^9}{y^5}$</div><div class="ms-mark">1A</div></div></div>`
     },
     {
         id: "2018-DSE-MATH-CP1-Q03",
