@@ -22,7 +22,7 @@ questions.push(
         section: "A1",
         level: ["Junior"],
         domain: ["Algebra"],
-        topic: ["Formulae"],
+        topic: ["Change of Subject"],
         difficulty: 1,
         content: `令 $a$ 成為公式 $\\dfrac{4-3a}{b}=5$ 的主項。<span class="marks">(3分)</span>`,
         hint: `兩邊同乘以 $b$ 消除分母，然後將含有 $a$ 的項單獨移到等號一邊，再移項求解 $a$。`,
