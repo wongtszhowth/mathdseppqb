@@ -22,7 +22,7 @@ questions.push(
         section: "A1",
         level: ["Junior"],
         domain: ["Algebra"],
-        topic: ["Algebraic Expressions"],
+        topic: ["Algebraic Fractions and Fractional Equations"],
         difficulty: 1,
         content: `化簡 $\\dfrac{3}{7x-6} - \\dfrac{2}{5x-4}$。 <span class="marks">(3分)</span>`,
         hint: `通分後合併分子。 `,
