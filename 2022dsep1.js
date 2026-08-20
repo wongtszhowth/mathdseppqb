@@ -74,7 +74,7 @@ questions.push(
         section: "A1",
         level: ["Junior"],
         domain: ["Algebra"],
-        topic: ["Inequalities"],
+        topic: ["Linear Inequalities and Compound Inequalities"],
         difficulty: 1,
         content: `考慮複合不等式<br><div style="text-align: center;">$-2(3x+2) > x+10$  或  $2x \\le -8$  ...............(*)。</div><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">解 (*)。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出滿足 (*) 的最大整數。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 分別解兩個不等式，然後取聯集。<br>(b) 在解集中找出最大的整數。`,
@@ -100,7 +100,7 @@ questions.push(
         section: "A1",
         level: ["Junior"],
         domain: ["Geometry"],
-        topic: ["Plane Geometry"],
+        topic: ["Geometry (Triangles)"],
         difficulty: 2,
         content: `圖中，$A$ 是位於四邊形 $BCDE$ 以內的一點使得 $AC // ED$ 及 $AD /// BC$。 已知 $\\angle ABC = \\angle AED$ 及 $AB = AE$。<br><img src="img/2022dsep1q08.jpg" class="q-img" alt="題目附圖" style="max-width: 70%;"><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明 $\\Delta ABC \\cong \\Delta AED$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">若 $\\angle ABC = 39^\\circ$ 及 $\\angle DAE = 87^\\circ$，求 $\\angle ACD$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 利用平行線性質證明對應角相等，再配合 $AB=AE$ 及已知角相等，用 AAS 或 ASA 證明全等。<br>(b) 由全等得對應角相等，再在 $\\triangle ACD$ 中求所需角。`,
@@ -113,16 +113,16 @@ questions.push(
         section: "A1",
         level: ["Junior"],
         domain: ["Data Handling"],
-        topic: ["Statistical Charts"],
+        topic: ["Statistical Graphs", "Measures of Central Tendency", "Probability"],
         difficulty: 1,
         content: `下面的頻數分佈表及累積頻數分佈表顯示一群學生完成一次 3 km 賽跑所需時間的分佈。        
 <div class="q-text-content"><table class="q-table" style="float: left; margin-top: 12px; margin-bottom: 12px; margin-left: 3em; margin-right: auto; border-collapse: collapse; table-layout: auto;">
     <colgroup>
-      <col style="width: 12em;">
+      <col style="width: 11em;">
       <col style="width: 4em;">
     </colgroup>
     <tr>
-      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">所需時間（分鐘）</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">所需時間 (分鐘)</td>
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">頻數</td>
     </tr>
     <tr>
@@ -142,11 +142,11 @@ questions.push(
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">3</td>
     </tr></table><table class="q-table" style="float: right; margin-top: 12px; margin-bottom: 12px; margin-left: auto; margin-right: 3em; border-collapse: collapse; table-layout: auto;">
     <colgroup>
-      <col style="width: 12em;">
+      <col style="width: 13em;">
       <col style="width: 6em;">
     </colgroup>
     <tr>
-      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">所需時間少於（分鐘）</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">所需時間少於 (分鐘)</td>
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">累積頻數</td>
     </tr>
     <tr>
@@ -176,7 +176,7 @@ questions.push(
         section: "A2",
         level: ["Senior"],
         domain: ["Algebra"],
-        topic: ["Variations"],
+        topic: ["Variations", "Quadratic Equations in One Unknown"],
         difficulty: 1,
         content: `已知 $\\mathrm{f}(x)$ 的一部分隨 $x$ 正變，而另一部分則隨 $x$ 正變。 假定 $\\mathrm{f}(4)=96$ 及 $\\mathrm{f}(-5)=15$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $\\mathrm{f}(x)$。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出 $y=8\\mathrm{f}(x)$ 的圖像的 $x$ 截距。<span class="marks">(1分)</span></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">設 $k$ 為一實常數。 求 $k$ 值的範圍使得方程 $\\mathrm{f}(x)=k$ 有兩個相異的實根。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 根據題意設 $f(x) = Ax^2 + Bx$，代入 $f(4)=96$ 與 $f(-5)=15$ 組成聯立方程求解 $A$ 和 $B$。<br>(b) $x$ 截距即令 $y=0$ 的點。當 $8f(x)=0$ 時即為 $f(x)=0$，解二次方程即可。<br>(c) 方程 $Ax^2 + Bx - k = 0$ 有且只有一個實根，代表其判別式 $\\Delta = 0$。建立關於 $k$ 的一元一次方程求解。`,
@@ -189,7 +189,7 @@ questions.push(
         section: "A2",
         level: ["Senior"],
         domain: ["Data Handling"],
-        topic: ["Measures of Central Tendency and Dispersion"],
+        topic: ["Measures of Central Tendency", "Measures of Dispersion", "Change of Data"],
         difficulty: 1,
         content: `下面的幹葉圖顯示某足球隊球員的年齡的分佈。
         <table class="q-table" style="border-collapse: collapse; table-layout: auto; width: auto; white-space: pre;" align="center">
@@ -229,7 +229,7 @@ questions.push(
         section: "A2",
         level: ["Senior"],
         domain: ["Geometry"],
-        topic: ["Equations of Circles"],
+        topic: ["Equations of Circles", "Pythagoras Theorem"],
         difficulty: 2,
         content: `圓 $C$ 的方程為 $x^2 + y^2 - 154x - 128y + 224 = 0$。 將 $C$ 的圓心記為 $G$。 點 $H$ 的坐標為 $(65, 48)$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $G$ 與 $H$ 間的距離。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">設 $P$ 為 $C$ 上的一動點。 當 $\\Delta GHP$ 的面積最大時，</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">描述 $GH$ 與 $GP$ 之間的幾何關係；</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">求 $\\Delta GHP$ 的周界。</div></div><div class="q-text-content"><span class="marks">(4分)</span></div><div class="q-clearfix"></div>`,
         hint: `(a) 先求圓心 $G$ 坐標及半徑，再用距離公式。<br>(b) 面積最大時 $GP$ 垂直於 $GH$；周界為 $GH + 2r$。`,
@@ -255,7 +255,7 @@ questions.push(
         section: "A2",
         level: ["Senior"],
         domain: ["Algebra"],
-        topic: ["Polynomials"],
+        topic: ["Polynomials", "Quadratic Equations in One Unknown"],
         difficulty: 2,
         content: `設 $\\mathrm{p}(x)=2x^{3}+ax^{2}+bx-20$，其中 $a$ 及 $b$ 均為常數。 當 $\\mathrm{p}(x)$ 除以 $x^2-2x+3$ 時，餘式為 $x+13$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $a$ 及 $b$。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$x-5$ 是否 $\\mathrm{p}(x)$ 的因式？ 試解釋你的答案。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">某人宣稱方程 $\\mathrm{p}(x)=0$ 有兩個無理根。 你是否同意？ 試解釋你的答案。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 利用多項式長除法將 $p(x)$ 除以 $x^2-2x+3$，並將最後得到的餘式與 $x+13$ 的對應項係數進行比較，建立聯立方程求解 $a$ 與 $b$。<br>(b) 將 (a) 的答案代入 $p(x)$，計算 $p(5)$ 的值。若 $p(5)=0$，則 $x-5$ 是因式；否則不是。<br>(c) 利用因式定理將 $p(x)$ 寫成 $(x-5)(2x^2+mx+n)$ 的形式，再利用判別式 $\\Delta$ 及求根公式檢查剩餘二次方程的根是否為無理數。`,
@@ -268,7 +268,7 @@ questions.push(
         section: "B",
         level: ["Senior"],
         domain: ["Data Handling"],
-        topic: ["Probability"],
+        topic: ["Permutations and Combinations", "Probability"],
         difficulty: 1,
         content: `某班有 10 名男生及 12 名女生。 若從該班中隨機選出 4 名學生組成一個委員會，<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求該委員會有 2 名男生及 2 名女生的概率；<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求該委員會男生人數與女生人數不同的概率。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `全班總人數為 22 人，選出 4 人的總選法為 $C_{4}^{22}$。<br>(a) 從 10 名男生中選 2 人且從 12 名女生中選 2 人，方法數為 $C_{2}^{10} \\times C_{2}^{12}$。<br>(b) 男生與女生人數不同的餘事件為「男生與女生人數相同」（即各有 2 人），可直接利用 $1 - \\text{(a)的概率}$ 計算。`,
@@ -294,7 +294,7 @@ questions.push(
         section: "B",
         level: ["Senior"],
         domain: ["Algebra"],
-        topic: ["Arithmetic Sequences"],
+        topic: ["Quadratic Equations in One Unknown", "Sequences", "Quadratic Inequalities in One Unknown", "Exponential Functions and Logarithm Functions"],
         difficulty: 3,
         content: `設 $c$ 為一實常數。 方程 $x^2+cx-9=0$ 的根為 $\\alpha$ 及 $\\beta$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">以 $c$ 表 $\\alpha^2+\\beta^2$。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">某等差數列的第 1 項、第 2 項及第 3 項分別為 $c^2$ 、 $\\alpha^2+\\beta^2$ 及 $85$。 求 $n$ 的最小值使得該數列的首 $n$ 項之和大於 $2\\times 10^6$。<span class="marks">(4分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 由根與係數的關係可知 $\\alpha+\\beta = -c$ 且 $\\alpha\\beta = -9$。利用恆等式 $\\alpha^2+\\beta^2 = (\\alpha+\\beta)^2 - 2\\alpha\\beta$ 進行代換。<br>(b) 根據等差數列性質，第 2 項減第 1 項等於第 3 項減第 2 項，以此建立方程求出 $c^2$，進而求出首項 $a$ 和公差 $d$。最後列出首 $n$ 項和 $S_n > 2 \\times 10^7$ 的二次不等式求解 $n$。`,
@@ -307,10 +307,10 @@ questions.push(
         section: "B",
         level: ["Senior"],
         domain: ["Geometry"],
-        topic: ["Trigonometry"],
+        topic: ["Trigonometry (2D)", "Trigonometry (3D)"],
         difficulty: 3,
         content: `圖 2 中，把三角形紙卡 $PQR$ 懸掛使得 $PQ$ 位於水平地面上。 已知 $PQ = 30\\text{ cm}$ 、 $PR=25\\text{ cm}$ 及 $\\angle QPR=95^\\circ$。<br><img src="img/2022dsep1q18.jpg" class="q-img" alt="題目附圖" style="max-width: 95%;"><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">$QR$ 的長度，</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">$\\angle PQR$。</div></div><div class="q-text-content"><span class="marks">(4分)</span></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">設 $M$ 為 $QR$ 的中點。 某工匠得知 $PR$ 與水平地面間的交角為 $70^\\circ$。 該工匠宣稱 $PM$ 與水平地面間的交角超過 $40^\\circ$。 該宣稱是否正確？ 試解釋你的答案。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
-        hint: `(a)(i) 在 $\\triangle PQR$ 中已知兩邊及其夾角，直接利用餘弦定理求 $QR$。<br>(a)(ii) 利用正弦定理 $\\dfrac{\\sin\\angle PQR}{PR} = \\dfrac{\\sin\\angle QPR}{QR}$ 求解該角。<br>(b) 自 $R$ 作垂線 $RH$ 垂直於地面，則 $\\angle RPH = 70^{\\circ}$ 為 $PR$ 與地面的交角。利用直角 $\\triangle RPH$ 算出空間高度 $RH$。自 $M$ 作垂線 $MK \\perp \\text{地面}$，因為 $M$ 為 $QR$ 中點，由中點定理知 $MK = \\dfrac{1}{2}RH$。在 $\\triangle PQR$ 中利用餘弦定理求出中線 $PM$ 的長度，最後在直角 $\\triangle PKM$ 中求出 $\\sin\\angle MPK = \\dfrac{MK}{PM}$，算出交角並與 $40^{\\circ}$ 比較。`,
+        hint: `<a href="https://www.geogebra.org/m/vtjuwcph" target="_blank">Geogebra 動態模型</a><br>(a)(i) 在 $\\triangle PQR$ 中已知兩邊及其夾角，直接利用餘弦定理求 $QR$。<br>(a)(ii) 利用正弦定理 $\\dfrac{\\sin\\angle PQR}{PR} = \\dfrac{\\sin\\angle QPR}{QR}$ 求解該角。<br>(b) 自 $R$ 作垂線 $RH$ 垂直於地面，則 $\\angle RPH = 70^{\\circ}$ 為 $PR$ 與地面的交角。利用直角 $\\triangle RPH$ 算出空間高度 $RH$。自 $M$ 作垂線 $MK \\perp \\text{地面}$，因為 $M$ 為 $QR$ 中點，由中點定理知 $MK = \\dfrac{1}{2}RH$。在 $\\triangle PQR$ 中利用餘弦定理求出中線 $PM$ 的長度，最後在直角 $\\triangle PKM$ 中求出 $\\sin\\angle MPK = \\dfrac{MK}{PM}$，算出交角並與 $40^{\\circ}$ 比較。`,
         solution: `<div class="ms-container"><div class="ms-row"><div class="ms-num1">(a)</div><div class="ms-num2">(i)</div><div class="ms-content ms-from-l3">$QR^2=PQ^2+PR^2-2(PQ)(PR)\\cos\\angle PQR$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l3">$QR^2=30^2+25^2-2(30)(25)\\cos 95^\\circ$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l3">$QR\\approx 40.69070673$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l3">$QR\\approx 40.7\\text{ cm}$</div><div class="ms-mark">1A</div></div><div class="ms-row"><div class="ms-content ms-from-l3">因此，$QR$ 的長度為 $40.7\\text{ cm}$。</div><div class="ms-mark"></div></div><p><div class="ms-row"><div class="ms-num2">(ii)</div><div class="ms-content ms-from-l3">$\\dfrac{\\sin\\angle PQR}{PR}=\\dfrac{\\sin\\angle QPR}{QR}$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l3">$\\dfrac{\\sin\\angle PQR}{25}=\\dfrac{\\sin 95^\\circ}{40.69070673}$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l3">$\\angle PQR\\approx 37.73809375^\\circ$  或  $\\angle PQR\\approx 142.2619063^\\circ$ (捨去)</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l3">因此，可得 $\\angle PQR\\approx 37.7^\\circ$。</div><div class="ms-mark">1A</div></div><p><div class="ms-row"><div class="ms-num1">(b)</div><div class="ms-content ms-from-l2">$PM^2=PQ^2+QM^2-2(PQ)(QM)\\cos\\angle PQR$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l2">$PM^2\\approx 30^2+\\left(\\dfrac{40.69070673}{2}\\right)^2-2(30)\\left(\\dfrac{40.69070673}{2}\\right)\\cos 37.73809375^\\circ$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l2">$PM\\approx 18.66993831\\text{ cm}$</div><div class="ms-mark"></div></div><p><div class="ms-row"><div class="ms-content ms-from-l2">設 $D$ 及 $N$ 分別為 $R$ 及 $M$ 在水平地面上的投影。</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l2">    $MN$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l2">$=\\dfrac{1}{2}RD$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l2">$=\\dfrac{1}{2}PR\\sin 70^\\circ$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l2">$=\\dfrac{1}{2}(25)\\sin 70^\\circ$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l2">$\\approx 11.74615776\\text{ cm}$</div><div class="ms-mark"></div></div><p><div class="ms-row"><div class="ms-content ms-from-l2">留意 $PM$ 與水平地面間的夾角為 $\\angle MPN$。</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l2">$\\sin\\angle MPN=\\dfrac{MN}{PM}$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l2">$\\sin\\angle MPN\\approx\\dfrac{11.74615776}{18.66993831}$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l2">$\\angle MPN\\approx 38.98730493^\\circ$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l2">$\\angle MPN&lt;40^\\circ$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l2">因此，該宣稱不正確。</div><div class="ms-mark">1A</div></div></div>`
     },
     {
@@ -320,7 +320,7 @@ questions.push(
         section: "B",
         level: ["Senior"],
         domain: ["Geometry"],
-        topic: ["Equations of Circles"],
+        topic: ["Equations of Circles", "Four Centres of a Triangle"],
         difficulty: 3,
         content: `圓 $C$ 的圓心為點 $G(83, 112)$。 得知點 $A(158, 12)$ 位於 $C$ 以外。 $AP$ 及 $AQ$ 分別為 $C$ 在點 $P$ 及點 $Q$ 的切線。 已知 $C$ 通過點 $(23, 67)$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求通過 $A$ 及 $G$ 的直線的方程。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求 $AG$ 與 $PQ$ 的交點的坐標。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">求 $\\Delta APQ$ 的內切圓的方程。<span class="marks">(4分)</span></div></div><div class="q-line"><span class="q-label">(d)</span><div class="q-text-content">某人宣稱 $\\Delta APQ$ 的內切圓的面積與外接圓的面積之比為 $1:4$。 你是否同意？ 試解釋你的答案。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 已知兩點 $A(158, 12)$ 和 $G(83, 112)$，利用兩點式直接求出直線 $AG$ 的方程。<br>(b) 先利用圓心 $G$ 與圓上點 $(23, 67)$ 計算圓 $C$ 的半徑 $r$。依切線幾何性質， $AG \\perp PQ$，且交點 $K$ 滿足直角 $\\triangle APG$ 中的射影幾何關係 $GK \\cdot GA = r^2$。利用定比分點公式或向量求出 $K$ 點坐標。<br>(c) $\\triangle APQ$ 的內切圓圓心必位於對稱軸 $AG$ 上。利用切線長定理和角度關係，可發現切點 $K$ 實際上就是內切圓與 $PQ$ 的切點。利用幾何性質算得內切圓圓心 $I$ 坐標與半徑，寫出其圓方程。<br>(d) $\\triangle APQ$ 的外接圓即是以 $AG$ 為直徑的圓（因為 $\\angle APG = \\angle AQG = 90^{\\circ}$）。算出外接圓半徑 $R = \\dfrac{1}{2}AG$，並求出內切圓半徑 $r_in$ 與外接圓半徑 $R$ 的平方比，即可驗證面積比是否為 $1:4$。`,
