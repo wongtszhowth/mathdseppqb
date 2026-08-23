@@ -588,7 +588,7 @@
             let html = '';
             for(let y = 2025; y >= 2012; y--) {
                 const shortYear = `'${y.toString().slice(-2)}`;
-                html += `<button class="chip chip-year" style="font-family: SFMono-Regular, Consolas, Menlo, monospace; letter-spacing: -0.04em;" data-group="year" data-value="${y}" onclick="toggleChip(this)">${shortYear}</button>`;
+                html += `<button class="chip chip-year" style="font-family: SFMono-Regular, Consolas, Menlo, monospace; letter-spacing: -0.05em;" data-group="year" data-value="${y}" onclick="toggleChip(this)">${shortYear}</button>`;
             }
             container.innerHTML = html;
         }
