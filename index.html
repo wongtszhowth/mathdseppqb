@@ -958,14 +958,14 @@
                             <button class="btn-card is-done" onclick="addOrEditCompleted('${q.id}')">✏️ 筆記</button>
                             <button class="btn-card" onclick="removeCompleted('${q.id}')">取消完成</button>
                         ` : `
-                            <button class="btn-card" onclick="addOrEditCompleted('${q.id}')">☑️</button>
+                            <button class="btn-card" style="border: 1px solid #86efac;" onclick="addOrEditCompleted('${q.id}')">☑️</button>
                         `}
 
                         ${isSaved ? `
                             <button class="btn-card is-saved" onclick="addOrEditMistake('${q.id}')">✏️ 錯題筆記</button>
                             <button class="btn-card" onclick="removeMistake('${q.id}')">移除錯題</button>
                         ` : `
-                            <button class="btn-card" onclick="addOrEditMistake('${q.id}')">📌</button>
+                            <button class="btn-card" style="border: 1px solid #fca5a5;"  onclick="addOrEditMistake('${q.id}')">📌</button>
                         `}
                     </div>
                 </div>
