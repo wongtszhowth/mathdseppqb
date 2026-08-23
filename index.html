@@ -248,6 +248,7 @@
         .btn { padding: 3px 4px; border: none; border-radius: 8px; font-size: 9pt; cursor: pointer; font-weight: 500; transition: all 1s; white-space: nowrap; }
         .btn-toggle { background: #5e1e96; color: white; border: 1px solid #9621ff; font-weight: bold; }
         .btn-reset { background: #ffd6d6; color: #ab0000; height: 30px; border: 2px dashed #ab0000; }
+        .btn-cancel { background: #e2e8f0; color: #334155; }
         
         .btn-mistake-mode { background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; font-weight: bold; }
         .btn-mistake-mode.active { background: #dc2626; color: white; }
@@ -551,7 +552,7 @@
             <div class="modal-header">
                 <span id="modalTitle">📝 編輯</span>
             </div>
-            <textarea class="modal-textarea" id="modalTextarea" placeholder="輸入內容..."></textarea>
+            <textarea class="modal-textarea" id="modalTextarea" placeholder="內容..."></textarea>
             <div class="modal-actions" id="modalActions">
                 <!-- 動態按鈕生成區 -->
             </div>
@@ -687,7 +688,7 @@
             const existingNote = mistakes[qId] ? mistakes[qId].note : '';
 
             openModal(`📌 ${qId} 的錯題筆記`, existingNote, [
-                `<button class="btn btn-reset" onclick="closeModal()">取消</button>`,
+                `<button class="btn btn-cancel" onclick="closeModal()" style="width: 80px;">取消</button>`,
                 `<button class="btn btn-apply" onclick="saveNoteModal()">儲存</button>`
             ]);
         }
@@ -699,7 +700,7 @@
             const existingNote = completed[qId] ? completed[qId].note : '';
 
             openModal(`✅ ${qId} 完成紀錄`, existingNote, [
-                `<button class="btn btn-reset" onclick="closeModal()">取消</button>`,
+                `<button class="btn btn-cancel" onclick="closeModal()" style="width: 80px;">取消</button>`,
                 `<button class="btn btn-apply" onclick="saveNoteModal()">儲存</button>`
             ]);
         }
@@ -740,14 +741,14 @@
         function openTextExportModal() {
             const exportObj = {
                 version: "1.0",
-                exportTime: new Date().toISOString(),
+                exportTime: new Date().toLocaleString('sv-SE', { timeZone: 'Asia/Hong_Kong' }),
                 mistakes: getStorageData(STORAGE_MISTAKES),
                 completed: getStorageData(STORAGE_COMPLETED)
             };
             const jsonStr = JSON.stringify(exportObj, null, 2);
 
-            openModal('💾 匯出紀錄 (自行保存以下文字，再次匯入時可復原目前的學習紀錄)', jsonStr, [
-                `<button class="btn btn-reset" onclick="closeModal()" style="width: 80px;">關閉</button>`,
+            openModal('💾 匯出紀錄 (請自行保存以下文字，再次匯入時可復原目前的學習紀錄)', jsonStr, [
+                `<button class="btn btn-cancel" onclick="closeModal()" style="width: 80px;">關閉</button>`,
                 `<button class="btn btn-apply" onclick="copyExportText()">🗐 複製</button>`
             ]);
         }
@@ -765,11 +766,11 @@
         }
 
         function openTextImportModal() {
-            openModal('📥 匯入紀錄 (貼上之前匯出的學習紀錄)', '', [
-                `<button class="btn btn-reset" onclick="closeModal()" style="width: 80px;">取消</button>`,
+            openModal('📥 匯入紀錄 (請貼上之前匯出的學習紀錄)', '', [
+                `<button class="btn btn-cancel" onclick="closeModal()" style="width: 80px;">取消</button>`,
                 `<button class="btn btn-apply" onclick="applyTextImport()">確認匯入</button>`
             ]);
-            document.getElementById('modalTextarea').placeholder = "請貼上之前匯出的學習紀錄...";
+            document.getElementById('modalTextarea').placeholder = "內容...";
         }
 
         function applyTextImport() {
