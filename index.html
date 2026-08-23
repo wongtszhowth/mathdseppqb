@@ -247,7 +247,7 @@
         }
         .btn { padding: 3px 4px; border: none; border-radius: 8px; font-size: 9pt; cursor: pointer; font-weight: 500; transition: all 1s; white-space: nowrap; }
         .btn-toggle { background: #5e1e96; color: white; border: 1px solid #9621ff; font-weight: bold; }
-        .btn-reset { background: #e2e8f0; color: #334155; }
+        .btn-reset { background: #ffd6d6; color: #ab0000; height: 30px; border: 2px dashed #ab0000; }
         
         .btn-mistake-mode { background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; font-weight: bold; }
         .btn-mistake-mode.active { background: #dc2626; color: white; }
@@ -369,9 +369,9 @@
     <div class="filter-container" id="filterContainer">
         <div class="filter-header">
             <div class="filter-header-left">
-                <button class="btn btn-toggle" id="toggleBtn" onclick="toggleFilter()">👀篩選器</button>
-                <button class="btn btn-completed-mode" id="completedModeBtn" onclick="toggleCompletedMode()">✅已完成 (<span id="completedCount">0</span>)</button>
-                <button class="btn btn-mistake-mode" id="mistakeModeBtn" onclick="toggleMistakeMode()">📌錯題簿 (<span id="mistakeCount">0</span>)</button>
+                <button class="btn btn-toggle" id="toggleBtn" onclick="toggleFilter()">👀 篩選器</button>
+                <button class="btn btn-completed-mode" id="completedModeBtn" onclick="toggleCompletedMode()">✅ 已完成 (<span id="completedCount">0</span>)</button>
+                <button class="btn btn-mistake-mode" id="mistakeModeBtn" onclick="toggleMistakeMode()">📌 錯題簿 (<span id="mistakeCount">0</span>)</button>
                 <button class="btn btn-io" onclick="openTextExportModal()">💾</button>
                 <button class="btn btn-io" onclick="openTextImportModal()">📥</button>
             </div>
@@ -843,7 +843,7 @@
                 const container = document.getElementById('filterContainer');
                 if (!container.classList.contains('minimized')) {
                     container.classList.add('minimized');
-                    document.getElementById('toggleBtn').innerText = "🔍 顯示";
+                    document.getElementById('toggleBtn').innerText = "👀 篩選器";
                 }
             }
 
@@ -885,7 +885,7 @@
                 if (isMistakeOnlyMode && !mistakes[q.id]) return false;
                 if (isCompletedOnlyMode && !completed[q.id]) return false;
 
-                const matchKeyword = q.content.toLowerCase().includes(keyword) || q.id.toLowerCase().includes(keyword);
+                const matchKeyword = q.content.toLowerCase().includes(keyword) || q.id.toLowerCase().includes(keyword) || q.solution.toLowerCase().includes(keyword) || q.hint.toLowerCase().includes(keyword);
                 const matchLevel = selectedLevels.length === 0 || (Array.isArray(q.level) ? q.level.some(l => selectedLevels.includes(l)) : selectedLevels.includes(q.level));
                 const matchType = selectedTypes.length === 0 || selectedTypes.includes(q.type);
                 const matchSection = selectedSections.length === 0 || (q.section && selectedSections.includes(q.section));
@@ -1004,10 +1004,10 @@
             
             if (container.classList.contains('minimized')) {
                 container.classList.remove('minimized');
-                toggleBtn.innerText = "👀篩選器";
+                toggleBtn.innerText = "👀 篩選器";
             } else {
                 container.classList.add('minimized');
-                toggleBtn.innerText = "👀篩選器";
+                toggleBtn.innerText = "👀 篩選器";
             }
         }
 
