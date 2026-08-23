@@ -15,41 +15,50 @@
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding: 20px; font-size: 11pt; margin: 0; background: #f8f9fa; color: #333; }
         h1 { font-size: 1.5rem; text-align: center; margin: 10px 0; }
         
-        /* 篩選器容器 */
+        /* 篩選器容器 (Flex 佈局，支援底部 Sticky) */
         .filter-container {
             position: sticky;
             top: 10px;
             z-index: 1000;
             background: rgba(253, 245, 255, 0.7);
-            padding: 12px 12px;
-            border-radius: 12px;
+            padding: 6px 10px;
+            border-radius: 8px;
             box-shadow: 0 4px 20px rgba(51,2,64,0.3);
             backdrop-filter: blur(3px);
-            margin-bottom: 10px;
-            max-height: 80vh;
-            overflow-y: auto;
-            overscroll-behavior: contain;
-        }
-
-        .filter-container.minimized {
-            padding: 12px 12px;
+            margin: 5px auto 15px auto;
+            max-width: 798px;
+            max-height: 85dvh;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
         }
 
         .filter-header { 
             display: flex; 
             justify-content: space-between; 
             align-items: center; 
-            margin-bottom: 0; 
+            flex-shrink: 0;
         }
 
         .filter-header-left {
             display: flex;
             gap: 6px;
+            flex-wrap: wrap;
         }
 
         .filter-body { 
-            transition: all 0.3s ease; 
-            margin-top: 10px; 
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            margin-top: 10px;
+            flex: 1;
+        }
+
+        .filter-scroll-area {
+            overflow-y: auto;
+            overscroll-behavior: contain;
+            padding-right: 4px;
+            padding-bottom: 10px;
         }
 
         .filter-container.minimized .filter-body { display: none; }
@@ -58,51 +67,134 @@
         .search-sort-row {
             display: flex;
             gap: 8px;
-            margin-bottom: 8px;
+            margin-bottom: 12px;
         }
 
         input[type="text"] { 
             flex: 1; 
-            padding: 8px 12px; 
+            padding: 6px 8px; 
             border: 1px solid #cbd5e1; 
             border-radius: 8px; 
-            font-size: 14px; 
+            font-size: 11pt; 
             box-sizing: border-box; 
         }
 
         .sort-select {
-            padding: 8px 12px;
+            padding: 6px 10px;
             border: 1px solid #cbd5e1;
             border-radius: 8px;
-            font-size: 13.5px;
+            font-size: 10pt;
             background: #fff;
             color: #334155;
             cursor: pointer;
             outline: none;
             transition: all 0.2s;
-            flex: 1; /* 各佔一半寬度 */
+            flex: 1;
             box-sizing: border-box;
         }
 
-        .sort-select:hover, .sort-select:focus {
-            border-color: #8b5cf6;
+        /* 恢復三欄式排版：卷一、卷二、年份 */
+        .paper-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin-bottom: 10px;
         }
 
-        /* 清單式架構與精簡行距 */
-        .filter-list { display: flex; flex-direction: column; gap: 10px; margin-top: 8px; }
-        .filter-item { display: flex; flex-direction: column; gap: 4px; }
-        .filter-item-row { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
-        .filter-title { font-size: 13px; font-weight: bold; color: #64748b; margin-bottom: 2px; }
-        .filter-sub-group { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; }
-        .filter-divider-text { color: #cbd5e1; font-weight: bold; margin: 0 2px; font-size: 12px; }
-        
-        /* Chips 通用精簡 padding */
+        .paper-card {
+            border: 1px solid #cbd5e1;
+            border-radius: 2px;
+            background: #fff;
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .paper-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 6px;
+        }
+
+        .paper-title {
+            font-size: 10pt;
+            font-weight: bold;
+            color: #475569;
+        }
+
+        .paper-options {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        /* 滾動年份區域 */
+        .year-scroll-box {
+            overflow-y: auto;
+            padding-right: 2px;
+        }
+
+        /* 下拉式清單選單 (課題) */
+        .dropdown-select-container {
+            position: relative;
+            width: 100%;
+        }
+
+        .dropdown-btn {
+            width: 100%;
+            padding: 6px 10px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            background: #fff;
+            text-align: left;
+            font-size: 10pt;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 500;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: #fff;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+            max-height: 18em;
+            overflow-y: auto;
+            z-index: 200;
+            padding: 4px;
+            margin-top: 4px;
+        }
+
+        .dropdown-menu.show { display: block; }
+
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 10pt;
+            padding: 5px 6px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .checkbox-label:hover { background: #f1f5f9; }
+
+        /* Chips 通用樣式與年份按鈕 */
+        .filter-title { font-size: 10pt; font-weight: bold; color: #64748b; margin-bottom: 4px; margin-top: 8px; }
         .chip-group { display: flex; flex-wrap: wrap; gap: 4px; }
         .chip { 
-            padding: 3px 8px !important; 
+            padding: 2px 6px !important; 
             border: 1px solid #cbd5e1; 
-            border-radius: 8px; 
-            font-size: 12px; 
+            border-radius: 6px; 
+            font-size: 10pt; 
             cursor: pointer; 
             background: #fff; 
             user-select: none; 
@@ -116,69 +208,70 @@
         .chip:hover { border-color: #94a3b8; background: #f8fafc; }
         .chip.active { background: #8b5cf6; color: white; border-color: #7c3aed; font-weight: 500; }
 
-        .chip-year { min-width: 52px; text-align: center; }
-        .chip-diff { min-width: 68px; text-align: center; }
+        /* 年份 Chip 樣式 */
+        .chip-year.active { background: #0f766e; color: white; border-color: #0f766e; }
+
         .chip-diff[data-value="1"].active { background: #0284c7; border-color: #0369a1; color: white; }
         .chip-diff[data-value="2"].active { background: #d97706; border-color: #b45309; color: white; }
         .chip-diff[data-value="3"].active { background: #dc2626; border-color: #b91c1c; color: white; }
 
-        /* Accordion */
-        .domain-accordion { border: 1px solid #e2e8f0; border-radius: 8px; background: #fafafa; overflow: hidden; margin-top: 4px; }
-        .domain-header { padding: 8px 12px; font-weight: bold; font-size: 13.5px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; transition: background 0.2s; }
-        .domain-header:hover { background: #f1f5f9; }
-        .domain-header-left { display: flex; align-items: center; gap: 8px; }
-        .domain-header .arrow { transition: transform 0.3s ease; font-size: 11px; color: #64748b; margin-left: 6px; }
-        .domain-accordion.open .domain-header .arrow { transform: rotate(180deg); }
-        
-        .btn-select-all { font-size: 11px; padding: 2px 6px; border-radius: 4px; background: rgba(255,255,255,0.8); border: 1px solid rgba(0,0,0,0.15); color: #333; cursor: pointer; font-weight: normal; transition: all 0.2s; }
-        .btn-select-all:hover { background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-        
-        .domain-algebra .domain-header { background: #eef2ff; color: #1e40af; }
-        .domain-algebra .chip.active { background: #3b82f6; border-color: #1d4ed8; color: white; }
-        .domain-algebra .btn-select-all.active { background: #2563eb; color: white; border-color: #1d4ed8; font-weight: 500; }
+        /* 範疇色彩特色化 (數與代數: 藍, 度量圖形: 綠, 數據處理: 橙) */
+        .domain-algebra .dropdown-btn { border-color: #93c5fd; background: #eff6ff; color: #1e40af; }
+        .domain-algebra .btn-select-all { height: 33px; width: 80px; font-size: 9pt; border-radius: 8px; background: #dbeafe; border-color: #bfdbfe; color: #1e40af;}
+        .domain-algebra .checkbox-label:hover { background: #eff6ff; }
 
-        .domain-geometry .domain-header { background: #f0fdf4; color: #166534; }
-        .domain-geometry .chip.active { background: #10b981; border-color: #047857; color: white; }
-        .domain-geometry .btn-select-all.active { background: #059669; color: white; border-color: #047857; font-weight: 500; }
+        .domain-geo .dropdown-btn { border-color: #86efac; background: #f0fdf4; color: #166534; }
+        .domain-geo .btn-select-all { height: 33px; width: 80px; font-size: 9pt; border-radius: 8px; background: #dcfce7; border-color: #bbf7d0; color: #166534; }
+        .domain-geo .checkbox-label:hover { background: #f0fdf4; }
 
-        .domain-data .domain-header { background: #fff7ed; color: #9a3412; }
-        .domain-data .chip.active { background: #f97316; border-color: #c2410c; color: white; }
-        .domain-data .btn-select-all.active { background: #ea580c; color: white; border-color: #c2410c; font-weight: 500; }
+        .domain-data .dropdown-btn { border-color: #fde047; background: #fefce8; color: #854d0e; }
+        .domain-data .btn-select-all { height: 33px; width: 80px; font-size: 9pt; border-radius: 8px; background: #fef9c3; border-color: #fef08a; color: #854d0e; }
+        .domain-data .checkbox-label:hover { background: #fefce8; }
 
-        .domain-body { display: none; padding: 10px 12px; background: #fff; border-top: 1px solid #e2e8f0; }
-        .domain-accordion.open .domain-body { display: block; }
+        /* 按鈕樣式 */
+        .btn-group-action { 
+            display: flex; 
+            gap: 8px; 
+            padding-top: 10px; 
+            margin-top: 4px;
+            position: sticky;
+            bottom: 0;
+            background: rgba(253, 245, 255, 0.98);
+            z-index: 300;
+            border-top: 1px solid rgba(203, 213, 225, 0.5);
+            flex-shrink: 0;
+        }
+        .btn { padding: 4px 8px; border: none; border-radius: 8px; font-size: 9pt; cursor: pointer; font-weight: 500; transition: all 0.2s; }
+        .btn-toggle { background: #475569; color: white; }
+        .btn-reset { background: #e2e8f0; color: #334155; }
         
-        .topic-group-block { display: flex; flex-wrap: wrap; gap: 4px; }
-        .topic-divider { width: 100%; height: 1px; background-color: #f1f5f9; margin: 3px 0; }
-
-        .btn-group-action { display: flex; gap: 8px; margin-top: 12px; }
-        .btn { padding: 6px 14px; border: none; border-radius: 8px; font-size: 13px; cursor: pointer; font-weight: 500; transition: all 0.2s; }
+        .btn-mistake-mode { background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; font-weight: bold; }
+        .btn-mistake-mode.active { background: #dc2626; color: white; }
         
-        .btn-toggle { background: #475569; color: white; padding: 4px 10px; font-size: 12px; }
-        .btn-reset { background: #e2e8f0; color: #334155; padding: 4px 10px; font-size: 12px; }
-        
-        /* 錯題簿切換按鈕樣式 */
-        .btn-mistake-mode { background: #fee2e2; color: #991b1b; padding: 4px 10px; font-size: 12px; font-weight: bold; border: 1px solid #fca5a5; }
-        .btn-mistake-mode.active { background: #dc2626; color: white; border-color: #b91c1c; }
+        .btn-completed-mode { background: #dcfce7; color: #166534; border: 1px solid #86efac; font-weight: bold; }
+        .btn-completed-mode.active { background: #16a34a; color: white; }
 
-        .btn-apply { background: #7c3aed; color: white; font-weight: bold; padding: 9px 18px; font-size: 14.5px; flex: 1; border-radius: 8px; }
+        .btn-io { background: #e0f2fe; color: #0369a1; border: 1px solid #7dd3fc; font-weight: bold; }
+
+        .btn-apply { background: #7c3aed; color: white; font-weight: bold; padding: 8px 18px; font-size: 10pt; flex: 1; border-radius: 8px; }
         .btn-apply:hover { background: #6d28d9; }
 
-        .loading-box { text-align: center; padding: 40px 20px; color: #4b5563; }
-        .spinner { display: inline-block; width: 28px; height: 28px; border: 3px solid rgba(124, 58, 237, 0.2); border-radius: 50%; border-top-color: #7c3aed; animation: spin 0.8s ease-in-out infinite; margin-bottom: 10px; }
-        @keyframes spin { to { transform: rotate(360deg); } }
-        
+        .btn-select-all { font-size: 8pt; padding: 1px 4px; border-radius: 4px; background: #e2e8f0; border: 1px solid #cbd5e1; cursor: pointer; }
+
         /* 題目卡片 */
-        #list { max-width: 800px; margin: 0 auto; padding-bottom: 50px; }
-        .question-card { background: #fff; border: 1px solid #e2e8f0; padding: 20px; margin: 15px 0; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); position: relative; letter-spacing: 0.05em; }
-        .card-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #f1f5f9; padding-bottom: 8px; margin-bottom: 12px; letter-spacing: 0; }
-        .q-id { font-family: SFMono-Regular, Consolas, Menlo, monospace; font-size: 14px; color: #64748b; font-weight: 600; letter-spacing: 0; }
+        #list { max-width: 800px; margin: 0 auto; padding-bottom: 8px; }
+        .question-card { background: #fff; border: 1px solid #e2e8f0; padding: 18px; margin: 15px 0; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); position: relative; transition: border-color 0.3s ease; }
+        .question-card.is-completed { border: 1px solid #22c55e !important; box-shadow: 0 2px 8px rgba(34,197,94,0.4); }
+
+        .card-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #f1f5f9; padding-bottom: 8px; margin: 0 0 14px 0; }
+        .q-id { font-family: SFMono-Regular, Consolas, Menlo, monospace; font-size: 9pt; color: #64748b; font-weight: 600; }
         
-        .diff-badge { font-size: 12px; font-weight: bold; padding: 3px 10px; border-radius: 6px; letter-spacing: 0; }
+        .diff-badge { font-size: 9pt; font-weight: bold; padding: 2px 8px; border-radius: 6px; }
         .diff-lv1 { background: #e0f2fe; color: #0369a1; }
         .diff-lv2 { background: #fef3c7; color: #b45309; }
         .diff-lv3 { background: #fee2e2; color: #b91c1c; }
 
+        /* 題目內容 */
         .question-content, .detail-content { font-family: Times, "Times New Roman", "PMingLiU", "新細明體", serif; font-size: 11pt; line-height: 1.7; margin: 12px 0; white-space: pre-wrap; letter-spacing: 0.05em; }
         .q-img { display: block; max-width: 100%; height: auto; margin: 15px auto; }
 
@@ -196,132 +289,54 @@
         summary { padding: 3px 5px; font-weight: bold; color: #475569; cursor: pointer; }
         .detail-content { padding: 0px 5px; background: #ffffff; }
 
-        /* 錯題簿相關的卡片控制 UI */
-        .card-actions { display: flex; justify-content: flex-end; margin-top: 10px; gap: 8px; }
-        .btn-mistake { padding: 4px 10px; font-size: 12px; border-radius: 6px; border: 1px solid #cbd5e1; background: #f8fafc; cursor: pointer; transition: all 0.2s; color: #475569; }
-        .btn-mistake:hover { background: #f1f5f9; }
-        .btn-mistake.is-saved { background: #fef2f2; border-color: #fca5a5; color: #dc2626; font-weight: 500; }
-        
-        .mistake-note-box { margin-top: 10px; background: #fff5f5; border: 1px dashed #fca5a5; padding: 10px 12px; border-radius: 8px; font-size: 13px; color: #991b1b; }
-        .mistake-note-header { display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 4px; font-size: 12px; color: #b91c1c; }
-        .mistake-note-body { white-space: pre-wrap; line-height: 1.5; }
-
-        /* 多行文字輸入 Modal */
-        .modal-overlay {
-            position: fixed;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(0, 0, 0, 0.4);
-            backdrop-filter: blur(2px);
-            z-index: 2000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.2s ease;
-        }
-
-        .modal-overlay.active {
-            opacity: 1;
-            pointer-events: auto;
-        }
-
-        .modal-card {
-            background: #fff;
-            width: 90%;
-            max-width: 500px;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            padding: 20px;
-            box-sizing: border-box;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        .modal-header {
-            font-size: 16px;
-            font-weight: bold;
-            color: #1e293b;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .modal-textarea {
+        .ms-container {
             width: 100%;
-            min-height: 120px;
-            max-height: 300px;
-            padding: 10px;
-            border: 1px solid #cbd5e1;
-            border-radius: 8px;
-            font-size: 14px;
-            font-family: inherit;
-            resize: vertical;
-            box-sizing: border-box;
-            outline: none;
+            margin: 12px 0;
+            font-family: Times, "Times New Roman", "PMingLiU", "新細明體", serif;
+            font-size: 10pt;
+            letter-spacing: 0em;
+            white-space: pre-wrap;
         }
-
-        .modal-textarea:focus {
-            border-color: #8b5cf6;
-            box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.2);
+        .ms-row {
+            display: grid;
+            grid-template-columns: 25px 25px 25px 1fr 65px;
+            align-items: start;
+            line-height: 1.7;
+            padding: 1px 0px;
+            margin-bottom: 0px;
         }
+        .ms-num1 { grid-column: 1; }
+        .ms-num2 { grid-column: 2; }
+        .ms-num3 { grid-column: 3; }
+        .ms-content { grid-column: 4; }
+        .ms-content.ms-from-l1 { grid-column: 1 / 5; }
+        .ms-content.ms-from-l2 { grid-column: 2 / 5; }
+        .ms-content.ms-from-l3 { grid-column: 3 / 5; }
+        .ms-mark { grid-column: 5; text-align: center; white-space: nowrap; align-self: center; }
 
-        .modal-actions {
-            display: flex;
-            justify-content: flex-end;
-            gap: 8px;
-        }
+        /* 筆記與按鈕列 */
+        .card-actions { display: flex; justify-content: flex-end; margin-top: 10px; gap: 8px; }
+        .btn-card { padding: 4px 10px; font-size: 12px; border-radius: 6px; border: 1px solid #cbd5e1; background: #f8fafc; cursor: pointer; transition: all 0.2s; color: #475569; }
+        .btn-card:hover { background: #f1f5f9; }
+        .btn-card.is-saved { background: #fef2f2; border-color: #fca5a5; color: #dc2626; }
+        .btn-card.is-done { background: #f0fdf4; border-color: #86efac; color: #16a34a; }
 
-        .btn-modal-cancel { background: #e2e8f0; color: #475569; }
-        .btn-modal-save { background: #dc2626; color: white; }
-        .btn-modal-save:hover { background: #b91c1c; }
+        .note-box { margin-top: 10px; padding: 10px 12px; border-radius: 8px; font-size: 13px; }
+        .mistake-note-box { background: #fff5f5; border: 1px dashed #fca5a5; color: #991b1b; }
+        .completed-note-box { background: #f0fdf4; border: 1px dashed #86efac; color: #166534; margin-top: 6px; }
+        .note-header { display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 4px; font-size: 10pt; }
 
-	/*Marking Scheme*/
-	.ms-container {
-      width: 100%;
-      margin: 12px 0;
-      font-family: Times, "Times New Roman", "PMingLiU", "新細明體", serif;
-      font-size: 10pt;
-      letter-spacing: 0em;
-      white-space: pre-wrap;
-    }
-    /* 5 欄網格結構 */
-    .ms-row {
-      display: grid;
-      grid-template-columns: 25px 25px 25px 1fr 65px;
-      align-items: start;
-	  line-height: 1.7;
-	  padding: 1px 0px;
-      margin-bottom: 0px;
-    }
-    /* 各層編號 */
-    .ms-num1 { grid-column: 1; }
-    .ms-num2 { grid-column: 2; }
-    .ms-num3 { grid-column: 3; }
-    /* 內容區塊 */
-    .ms-content {
-      grid-column: 4;
-    }
-    /* 讓內容從「第一層」位置開始 (欄 1 至 4) */
-    .ms-content.ms-from-l1 {
-      grid-column: 1 / 5;
-    }
-	/* 讓內容從「第二層」位置開始 (欄 2 至 4) */
-    .ms-content.ms-from-l2 {
-      grid-column: 2 / 5;
-    }
-    /* 讓內容從「第三層」位置開始 (欄 3 至 4) */
-    .ms-content.ms-from-l3 {
-      grid-column: 3 / 5;
-    }
-    /* 右側分數 (欄位內置中) */
-    .ms-mark {
-      grid-column: 5;
-      text-align: center;
-      white-space: nowrap;
-	  align-self: center;
-    }
+        /* Modal */
+        .modal-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.4); backdrop-filter: blur(2px); z-index: 2000; display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: opacity 0.2s ease; }
+        .modal-overlay.active { opacity: 1; pointer-events: auto; }
+        .modal-card { background: #fff; width: 90%; max-width: 500px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); padding: 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px; }
+        .modal-header { font-size: 16px; font-weight: bold; color: #1e293b; }
+        .modal-textarea { width: 100%; min-height: 120px; max-height: 300px; padding: 10px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 12pt; font-family: inherit; resize: vertical; box-sizing: border-box; outline: none; }
+        .modal-actions { display: flex; justify-content: flex-end; gap: 8px; }
+
+        .loading-box { text-align: center; padding: 40px 20px; color: #4b5563; }
+        .spinner { display: inline-block; width: 28px; height: 28px; border: 3px solid rgba(124, 58, 237, 0.2); border-radius: 50%; border-top-color: #7c3aed; animation: spin 0.8s ease-in-out infinite; margin-bottom: 10px; }
+        @keyframes spin { to { transform: rotate(360deg); } }
     </style>
 </head>
 <body>
@@ -331,196 +346,170 @@
     <div class="filter-container" id="filterContainer">
         <div class="filter-header">
             <div class="filter-header-left">
-                <button class="btn btn-toggle" id="toggleBtn" onclick="toggleFilter()">隱藏篩選器</button>
-                <button class="btn btn-mistake-mode" id="mistakeModeBtn" onclick="toggleMistakeMode()">📌 打開錯題簿 (<span id="mistakeCount">0</span>)</button>
+                <button class="btn btn-toggle" id="toggleBtn" onclick="toggleFilter()">🔍 隱藏</button>
+                <button class="btn btn-completed-mode" id="completedModeBtn" onclick="toggleCompletedMode()">✅ 完成 (<span id="completedCount">0</span>)</button>
+                <button class="btn btn-mistake-mode" id="mistakeModeBtn" onclick="toggleMistakeMode()">📌 錯題 (<span id="mistakeCount">0</span>)</button>
+                <button class="btn btn-io" onclick="exportData()">📤 匯出</button>
+                <button class="btn btn-io" onclick="importData()">📥 匯入</button>
+                <input type="file" id="importFileInput" style="display:none" accept=".json" onchange="handleFileImport(event)">
             </div>
-            <div><button class="btn btn-reset" onclick="resetFilters()">重設所有條件</button></div>
+            <div id="resetBtnContainer"><button class="btn btn-reset" onclick="resetFilters()">重設條件</button></div>
         </div>
         
         <div class="filter-body">
-            <!-- 搜尋欄位 -->
-            <div class="search-sort-row">
-                <input type="text" id="keyword" placeholder="搜尋關鍵字、題目編號..." onkeydown="if(event.key === 'Enter') applyFilter(false, false)">
-            </div>
+            <!-- 內部滾動區域 -->
+            <div class="filter-scroll-area">
+                <!-- 搜尋欄位 -->
+                <div class="search-sort-row">
+                    <input type="text" id="keyword" placeholder="搜尋題目中的關鍵字..." onkeydown="if(event.key === 'Enter') applyFilter(false, false)">
+                </div>
 
-            <!-- 清單形式篩選區塊 -->
-            <div class="filter-list">
-                
-                <!-- 1. 卷別 -->
-                <div class="filter-item">
-                    <div class="filter-title">📄 卷別</div>
-                    <div class="filter-item-row">
-                        <div class="filter-sub-group" id="p1Group">
-                            <button class="chip" data-group="type" data-value="P1" onclick="toggleChip(this)">卷一</button>
-                            <span class="filter-divider-text">-</span>
-                            <button class="chip" data-group="section" data-value="A1" onclick="toggleChip(this)">甲部(1)</button>
-                            <button class="chip" data-group="section" data-value="A2" onclick="toggleChip(this)">甲部(2)</button>
-                            <button class="chip" data-group="section" data-value="B" onclick="toggleChip(this)">乙部</button>
+                <!-- 三欄式排版：卷一、卷二、年份 -->
+                <div class="paper-grid">
+                    <!-- 第一欄：卷一 -->
+                    <div class="paper-card">
+                        <div class="paper-header">
+                            <span class="paper-title">📄 卷一</span>
+                            <button class="btn-select-all" onclick="togglePaperSelectAll('P1', this)">全選</button>
+                        </div>
+                        <div class="paper-options">
+                            <label class="checkbox-label"><input type="checkbox" class="paper-cb" data-type="P1" data-section="A1" onchange="updateFilterCount()"> 甲部(1)</label>
+                            <label class="checkbox-label"><input type="checkbox" class="paper-cb" data-type="P1" data-section="A2" onchange="updateFilterCount()"> 甲部(2)</label>
+                            <label class="checkbox-label"><input type="checkbox" class="paper-cb" data-type="P1" data-section="B" onchange="updateFilterCount()"> 乙部</label>
                         </div>
                     </div>
-                    <div class="filter-item-row" style="margin-top: 2px;">
-                        <div class="filter-sub-group" id="p2Group">
-                            <button class="chip" data-group="type" data-value="P2" onclick="toggleChip(this)">卷二</button>
-                            <span class="filter-divider-text">-</span>
-                            <button class="chip" data-group="section" data-value="MC_A" onclick="toggleChip(this)">甲部</button>
-                            <button class="chip" data-group="section" data-value="MC_B" onclick="toggleChip(this)">乙部</button>
+
+                    <!-- 第二欄：卷二 -->
+                    <div class="paper-card">
+                        <div class="paper-header">
+                            <span class="paper-title">📄 卷二</span>
+                            <button class="btn-select-all" onclick="togglePaperSelectAll('P2', this)">全選</button>
+                        </div>
+                        <div class="paper-options">
+                            <label class="checkbox-label"><input type="checkbox" class="paper-cb" data-type="P2" data-section="MC_A" onchange="updateFilterCount()"> 甲部</label>
+                            <label class="checkbox-label"><input type="checkbox" class="paper-cb" data-type="P2" data-section="MC_B" onchange="updateFilterCount()"> 乙部</label>
+                        </div>
+                    </div>
+
+                    <!-- 第三欄：年份卡片 (與卷一卷二並排) -->
+                    <div class="paper-card">
+                        <div class="paper-header">
+                            <span class="paper-title">📅 年份</span>
+                        </div>
+                        <div class="year-scroll-box">
+                            <div class="chip-group" id="yearChipGroup">
+                                <!-- 由 JS 自動渲染 '25 至 '12 Chip 按鈕 -->
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- 2. 年份 (.chip-year) -->
-                <div class="filter-item">
-                    <div class="filter-title">📅 年份</div>
-                    <div class="chip-group" id="yearGroup">
-                        <button class="chip chip-year" data-group="year" data-value="2025" onclick="toggleChip(this)">2025</button>
-                        <button class="chip chip-year" data-group="year" data-value="2024" onclick="toggleChip(this)">2024</button>
-                        <button class="chip chip-year" data-group="year" data-value="2023" onclick="toggleChip(this)">2023</button>
-                        <button class="chip chip-year" data-group="year" data-value="2022" onclick="toggleChip(this)">2022</button>
-                        <button class="chip chip-year" data-group="year" data-value="2021" onclick="toggleChip(this)">2021</button>
-                        <button class="chip chip-year" data-group="year" data-value="2020" onclick="toggleChip(this)">2020</button>
-                        <button class="chip chip-year" data-group="year" data-value="2019" onclick="toggleChip(this)">2019</button>
-                        <button class="chip chip-year" data-group="year" data-value="2018" onclick="toggleChip(this)">2018</button>
-                        <button class="chip chip-year" data-group="year" data-value="2017" onclick="toggleChip(this)">2017</button>
-                        <button class="chip chip-year" data-group="year" data-value="2016" onclick="toggleChip(this)">2016</button>
-                        <button class="chip chip-year" data-group="year" data-value="2015" onclick="toggleChip(this)">2015</button>
-                        <button class="chip chip-year" data-group="year" data-value="2014" onclick="toggleChip(this)">2014</button>
-                        <button class="chip chip-year" data-group="year" data-value="2013" onclick="toggleChip(this)">2013</button>
-                        <button class="chip chip-year" data-group="year" data-value="2012" onclick="toggleChip(this)">2012</button>
-                    </div>
-                </div>
-
-                <!-- 3. 級別與難度 -->
-                <div class="filter-item">
+                <!-- 級別與難度 -->
+                <div>
                     <div class="filter-title">🔥 級別 | 難度</div>
                     <div class="chip-group">
                         <button class="chip" data-group="level" data-value="Junior" onclick="toggleChip(this)">初中</button>
                         <button class="chip" data-group="level" data-value="Senior" onclick="toggleChip(this)">高中</button>
-                        
-                        <span class="filter-divider-text" style="margin: 0 4px;">|</span>
-                        
+                        <span style="color:#cbd5e1; font-weight:bold; margin: 0 4px;">|</span>
                         <button class="chip chip-diff" data-group="diff" data-value="1" onclick="toggleChip(this)">Lv.2</button>
                         <button class="chip chip-diff" data-group="diff" data-value="2" onclick="toggleChip(this)">Lv.3-4</button>
                         <button class="chip chip-diff" data-group="diff" data-value="3" onclick="toggleChip(this)">Lv.5+</button>
                     </div>
                 </div>
 
-                <!-- 4. 範疇與課題 -->
-                <div class="filter-item">
+                <!-- 範疇與課題 (配色區分) -->
+                <div>
                     <div class="filter-title">🧩 範疇與課題</div>
-                    
-                    <div style="display: flex; flex-direction: column; gap: 6px;" id="topicGroupContainer">
-                        <!-- 範疇 1: 數與代數 (藍色系) -->
-                        <div class="domain-accordion domain-algebra" id="accordionAlgebra">
-                            <div class="domain-header" onclick="toggleAccordion('accordionAlgebra')">
-                                <div class="domain-header-left">
-                                    <span>數與代數</span>
-                                    <button class="btn-select-all" onclick="toggleDomainSelectAll(event, 'accordionAlgebra')">全選</button>
-                                </div>
-                                <span class="arrow">▼</span>
+                    <div style="display: flex; flex-direction: column; gap: 8px;">
+                        
+                        <!-- 數與代數 (藍色系) -->
+                        <div class="dropdown-select-container domain-algebra">
+                            <div style="display: flex; align-items: center; gap: 6px;">
+                                <button class="dropdown-btn" onclick="toggleDropdown('algebraDropdown')">
+                                    <span>數與代數 <span id="algebraCountLabel">(0/25)</span></span> ▾
+                                </button>
+                                <button class="btn-select-all" onclick="toggleDropdownSelectAll('algebraDropdown', this)">全選</button>
                             </div>
-                            <div class="domain-body">
-                                <div class="topic-group-block">
-                                    <button class="chip" data-value="Laws of Indices" onclick="toggleChip(this)">指數律</button>
-                                    <button class="chip" data-value="Factorization" onclick="toggleChip(this)">因式分解</button>
-                                    <button class="chip" data-value="Change of Subject" onclick="toggleChip(this)">主項變換</button>
-                                    <button class="chip" data-value="Algebraic Expressions" onclick="toggleChip(this)">代數式</button>
-                                    <button class="chip" data-value="Algebraic Fractions and Fractional Equations" onclick="toggleChip(this)">代數分式及分式方程</button>
-                                    <button class="chip" data-value="Identities" onclick="toggleChip(this)">恆等式</button>
-                                    <button class="chip" data-value="Base Conversion" onclick="toggleChip(this)">進制轉換</button>
-                                    <div class="topic-divider"></div>
-                                    <button class="chip" data-value="Approximation and Errors" onclick="toggleChip(this)">近似與誤差</button>
-                                    <button class="chip" data-value="Estimation" onclick="toggleChip(this)">估算</button>
-                                    <button class="chip" data-value="Complex Numbers" onclick="toggleChip(this)">複數</button>
-                                    <div class="topic-divider"></div>
-                                    <button class="chip" data-value="Percentages" onclick="toggleChip(this)">百分法</button>
-                                    <button class="chip" data-value="Rates, Ratios and Proportions" onclick="toggleChip(this)">率、比及比例</button>
-                                    <div class="topic-divider"></div>
-                                    <button class="chip" data-value="Linear Equations in Two Unknowns" onclick="toggleChip(this)">二元一次方程</button>
-                                    <button class="chip" data-value="Quadratic Equations in One Unknown" onclick="toggleChip(this)">一元二次方程</button>
-                                    <div class="topic-divider"></div>
-                                    <button class="chip" data-value="Linear Inequalities and Compound Inequalities" onclick="toggleChip(this)">一元一次不等式及複合不等式</button>
-                                    <button class="chip" data-value="Quadratic Inequalities in One Unknown" onclick="toggleChip(this)">一元二次不等式</button>
-                                    <button class="chip" data-value="Linear Inequalities in Two Unknowns" onclick="toggleChip(this)">二元一次不等式</button>
-                                    <button class="chip" data-value="Linear Programming" onclick="toggleChip(this)">線性規劃</button>
-                                    <div class="topic-divider"></div>
-                                    <button class="chip" data-value="Sequences" onclick="toggleChip(this)">數列</button>
-                                    <button class="chip" data-value="Variations" onclick="toggleChip(this)">變分</button>
-                                    <div class="topic-divider"></div>
-                                    <button class="chip" data-value="Polynomials" onclick="toggleChip(this)">多項式</button>
-                                    <button class="chip" data-value="Remainder Theorem and Factor Theorem" onclick="toggleChip(this)">餘式定理及因式定理</button>
-                                    <button class="chip" data-value="H.C.F. and L.C.M." onclick="toggleChip(this)">最大公因式及最小公倍式</button>
-                                    <div class="topic-divider"></div>
-                                    <button class="chip" data-value="Functions and Graphs" onclick="toggleChip(this)">函數及其圖像</button>
-                                    <button class="chip" data-value="Exponential Functions and Logarithm Functions" onclick="toggleChip(this)">指數函數與對數函數</button>
-                                </div>
+                            <div class="dropdown-menu" id="algebraDropdown">
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Laws of Indices" onchange="updateFilterCount()"> 指數律</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Factorization" onchange="updateFilterCount()"> 因式分解</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Change of Subject" onchange="updateFilterCount()"> 主項變換</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Algebraic Expressions" onchange="updateFilterCount()"> 代數式</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Algebraic Fractions and Fractional Equations" onchange="updateFilterCount()"> 代數分式及分式方程</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Identities" onchange="updateFilterCount()"> 恆等式</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Base Conversion" onchange="updateFilterCount()"> 進制轉換</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Approximation and Errors" onchange="updateFilterCount()"> 近似與誤差</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Estimation" onchange="updateFilterCount()"> 估算</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Complex Numbers" onchange="updateFilterCount()"> 複數</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Percentages" onchange="updateFilterCount()"> 百分法</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Rates, Ratios and Proportions" onchange="updateFilterCount()"> 率、比及比例</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Linear Equations in Two Unknowns" onchange="updateFilterCount()"> 二元一次方程</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Quadratic Equations in One Unknown" onchange="updateFilterCount()"> 一元二次方程</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Linear Inequalities and Compound Inequalities" onchange="updateFilterCount()"> 一元一次不等式及複合不等式</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Quadratic Inequalities in One Unknown" onchange="updateFilterCount()"> 一元二次不等式</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Linear Inequalities in Two Unknowns" onchange="updateFilterCount()"> 二元一次不等式</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Linear Programming" onchange="updateFilterCount()"> 線性規劃</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Sequences" onchange="updateFilterCount()"> 數列</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Variations" onchange="updateFilterCount()"> 變分</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Polynomials" onchange="updateFilterCount()"> 多項式</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Remainder Theorem and Factor Theorem" onchange="updateFilterCount()"> 餘式定理及因式定理</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="H.C.F. and L.C.M." onchange="updateFilterCount()"> 最大公因式及最小公倍式</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Functions and Graphs" onchange="updateFilterCount()"> 函數及其圖像</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Exponential Functions and Logarithm Functions" onchange="updateFilterCount()"> 指數函數與對數函數</label>
                             </div>
                         </div>
 
-                        <!-- 範疇 2: 度量、圖形與空間 (綠色系) -->
-                        <div class="domain-accordion domain-geometry" id="accordionGeometry">
-                            <div class="domain-header" onclick="toggleAccordion('accordionGeometry')">
-                                <div class="domain-header-left">
-                                    <span>度量、圖形與空間</span>
-                                    <button class="btn-select-all" onclick="toggleDomainSelectAll(event, 'accordionGeometry')">全選</button>
-                                </div>
-                                <span class="arrow">▼</span>
+                        <!-- 度量、圖形與空間 (綠色系) -->
+                        <div class="dropdown-select-container domain-geo">
+                            <div style="display: flex; align-items: center; gap: 6px;">
+                                <button class="dropdown-btn" onclick="toggleDropdown('geoDropdown')">
+                                    <span>度量、圖形與空間 <span id="geoCountLabel">(0/15)</span></span> ▾
+                                </button>
+                                <button class="btn-select-all" onclick="toggleDropdownSelectAll('geoDropdown', this)">全選</button>
                             </div>
-                            <div class="domain-body">
-                                <div class="topic-group-block">
-                                    <button class="chip" data-value="Perimeters and Areas" onclick="toggleChip(this)">周界及面積</button>
-                                    <button class="chip" data-value="Mensuration" onclick="toggleChip(this)">求積法</button>
-                                    <div class="topic-divider"></div>
-                                    <button class="chip" data-value="Geometry (Triangles)" onclick="toggleChip(this)">幾何 (三角形)</button>
-                                    <button class="chip" data-value="Geometry (Polygons)" onclick="toggleChip(this)">幾何 (多邊形)</button>
-                                    <button class="chip" data-value="Geometry (Circles)" onclick="toggleChip(this)">幾何 (圓形)</button>
-                                    <button class="chip" data-value="Four Centres of a Triangle" onclick="toggleChip(this)">三角形的四心</button>
-                                    <div class="topic-divider"></div>
-                                    <button class="chip" data-value="Pythagoras Theorem" onclick="toggleChip(this)">畢氏定理</button>
-                                    <div class="topic-divider"></div>
-                                    <button class="chip" data-value="Equations of Straight Lines" onclick="toggleChip(this)">直線方程</button>
-                                    <button class="chip" data-value="Equations of Circles" onclick="toggleChip(this)">圓方程</button>
-                                    <button class="chip" data-value="Coordinate Geometry" onclick="toggleChip(this)">坐標幾何</button>
-                                    <button class="chip" data-value="Intersection of Straight Line and Circle" onclick="toggleChip(this)">直線與圓的相交</button>
-                                    <div class="topic-divider"></div>
-                                    <button class="chip" data-value="Trigonometric Ratios" onclick="toggleChip(this)">三角比</button>
-                                    <button class="chip" data-value="Trigonometry (2D)" onclick="toggleChip(this)">三角學 (2D)</button>
-                                    <button class="chip" data-value="Trigonometry (3D)" onclick="toggleChip(this)">三角學 (3D)</button>
-                                    <div class="topic-divider"></div>
-                                    <button class="chip" data-value="Loci" onclick="toggleChip(this)">軌跡</button>
-                                </div>
+                            <div class="dropdown-menu" id="geoDropdown">
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Perimeters and Areas" onchange="updateFilterCount()"> 周界及面積</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Mensuration" onchange="updateFilterCount()"> 求積法</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Geometry (Triangles)" onchange="updateFilterCount()"> 幾何 (三角形)</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Geometry (Polygons)" onchange="updateFilterCount()"> 幾何 (多邊形)</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Geometry (Circles)" onchange="updateFilterCount()"> 幾何 (圓形)</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Four Centres of a Triangle" onchange="updateFilterCount()"> 三角形的四心</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Pythagoras Theorem" onchange="updateFilterCount()"> 畢氏定理</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Equations of Straight Lines" onchange="updateFilterCount()"> 直線方程</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Equations of Circles" onchange="updateFilterCount()"> 圓方程</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Coordinate Geometry" onchange="updateFilterCount()"> 坐標幾何</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Intersection of Straight Line and Circle" onchange="updateFilterCount()"> 直線與圓的相交</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Trigonometric Ratios" onchange="updateFilterCount()"> 三角比</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Trigonometry (2D)" onchange="updateFilterCount()"> 三角學 (2D)</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Trigonometry (3D)" onchange="updateFilterCount()"> 三角學 (3D)</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Loci" onchange="updateFilterCount()"> 軌跡</label>
                             </div>
                         </div>
 
-                        <!-- 範疇 3: 數據處理 (橙/琥珀色系) -->
-                        <div class="domain-accordion domain-data" id="accordionData">
-                            <div class="domain-header" onclick="toggleAccordion('accordionData')">
-                                <div class="domain-header-left">
-                                    <span>數據處理</span>
-                                    <button class="btn-select-all" onclick="toggleDomainSelectAll(event, 'accordionData')">全選</button>
-                                </div>
-                                <span class="arrow">▼</span>
+                        <!-- 數據處理 (橙/琥珀色系) -->
+                        <div class="dropdown-select-container domain-data">
+                            <div style="display: flex; align-items: center; gap: 6px;">
+                                <button class="dropdown-btn" onclick="toggleDropdown('dataDropdown')">
+                                    <span>數據處理 <span id="dataCountLabel">(0/7)</span></span> ▾
+                                </button>
+                                <button class="btn-select-all" onclick="toggleDropdownSelectAll('dataDropdown', this)">全選</button>
                             </div>
-                            <div class="domain-body">
-                                <div class="topic-group-block">
-                                    <button class="chip" data-value="Statistical Graphs" onclick="toggleChip(this)">統計圖表</button>
-                                    <div class="topic-divider"></div>
-                                    <button class="chip" data-value="Measures of Central Tendency" onclick="toggleChip(this)">集中趨勢的量度</button>
-                                    <button class="chip" data-value="Measures of Dispersion" onclick="toggleChip(this)">離差的量度</button>
-                                    <button class="chip" data-value="Standard Score" onclick="toggleChip(this)">標準分</button>
-                                    <button class="chip" data-value="Change of Data" onclick="toggleChip(this)">數據的改變</button>
-                                    <div class="topic-divider"></div>
-                                    <button class="chip" data-value="Permutations and Combinations" onclick="toggleChip(this)">排列與組合</button>
-                                    <button class="chip" data-value="Probability" onclick="toggleChip(this)">概率</button>
-                                </div>
+                            <div class="dropdown-menu" id="dataDropdown">
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Statistical Graphs" onchange="updateFilterCount()"> 統計圖表</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Measures of Central Tendency" onchange="updateFilterCount()"> 集中趨勢的量度</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Measures of Dispersion" onchange="updateFilterCount()"> 離差的量度</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Standard Score" onchange="updateFilterCount()"> 標準分</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Change of Data" onchange="updateFilterCount()"> 數據的改變</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Permutations and Combinations" onchange="updateFilterCount()"> 排列與組合</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Probability" onchange="updateFilterCount()"> 概率</label>
                             </div>
                         </div>
 
                     </div>
                 </div>
-
             </div>
 
-            <!-- 排序下拉選單與套用按鈕放置於同一行，各佔一半 -->
+            <!-- 永遠浮在底部的 排序與套用列 -->
             <div class="btn-group-action">
                 <select id="sortBy" class="sort-select">
                     <option value="type">📄 按卷別 (卷一 ➔ 卷二)</option>
@@ -528,7 +517,7 @@
                     <option value="year-asc">📅 按年份 (舊 ➔ 新)</option>
                     <option value="diff-asc">🔥 按難度 (低 ➔ 高)</option>
                     <option value="diff-desc">🔥 按難度 (高 ➔ 低)</option>
-                    <option value="time-desc">⏱️ 按加入錯題時間 (新 ➔ 舊)</option>
+                    <option value="time-desc">⏱️ 按紀錄時間 (新 ➔ 舊)</option>
                 </select>
                 <button class="btn btn-apply" onclick="applyFilter(false)">🔍 篩選</button>
             </div>
@@ -537,233 +526,342 @@
 
     <div id="list"></div>
 
-    <!-- 多行文字錯題筆記 Modal -->
-    <div class="modal-overlay" id="mistakeModal">
+    <!-- 多功能 Modal -->
+    <div class="modal-overlay" id="noteModal">
         <div class="modal-card">
             <div class="modal-header">
-                <span id="modalTitle">📝 錯題筆記</span>
+                <span id="modalTitle">📝 編輯筆記</span>
             </div>
-            <textarea class="modal-textarea" id="modalNoteText" placeholder="你可以輸入錯題筆記 (e.g. 錯解原因、概念漏洞)"></textarea>
+            <textarea class="modal-textarea" id="modalNoteText" placeholder="輸入筆記內容..."></textarea>
             <div class="modal-actions">
-                <button class="btn btn-modal-cancel" onclick="closeMistakeModal()">取消</button>
-                <button class="btn btn-modal-save" onclick="saveMistakeModal()">儲存筆記</button>
+                <button class="btn btn-reset" onclick="closeNoteModal()">取消</button>
+                <button class="btn btn-apply" id="modalSaveBtn" onclick="saveNoteModal()">儲存</button>
             </div>
         </div>
     </div>
 
-    <script src="2025dsep1.js"></script>
-    <script src="2025dsep2.js"></script>
-    <script src="2024dsep1.js"></script>
-    <script src="2024dsep2.js"></script>
-    <script src="2023dsep1.js"></script>
-    <script src="2023dsep2.js"></script>
-    <script src="2022dsep1.js"></script>
-    <script src="2022dsep2.js"></script>
-    <script src="2021dsep1.js"></script>
-    <script src="2021dsep2.js"></script>
-    <script src="2020dsep1.js"></script>
-    <script src="2020dsep2.js"></script>
-    <script src="2019dsep1.js"></script>
-    <script src="2019dsep2.js"></script>
-    <script src="2018dsep1.js"></script>
-    <script src="2018dsep2.js"></script>
-    <script src="2017dsep1.js"></script>
-    <script src="2017dsep2.js"></script>
-    <script src="2016dsep1.js"></script>
-    <script src="2016dsep2.js"></script>
-    <script src="2015dsep1.js"></script>
-    <script src="2015dsep2.js"></script>
-    <script src="2014dsep1.js"></script>
-    <script src="2014dsep2.js"></script>
-    <script src="2013dsep1.js"></script>
-    <script src="2013dsep2.js"></script>
-    <script src="2012dsep1.js"></script>
-    <script src="2012dsep2.js"></script>
+    <script src="2025dsep1.js"></script><script src="2025dsep2.js"></script>
+    <script src="2024dsep1.js"></script><script src="2024dsep2.js"></script>
+    <script src="2023dsep1.js"></script><script src="2023dsep2.js"></script>
+    <script src="2022dsep1.js"></script><script src="2022dsep2.js"></script>
+    <script src="2021dsep1.js"></script><script src="2021dsep2.js"></script>
+    <script src="2020dsep1.js"></script><script src="2020dsep2.js"></script>
+    <script src="2019dsep1.js"></script><script src="2019dsep2.js"></script>
+    <script src="2018dsep1.js"></script><script src="2018dsep2.js"></script>
+    <script src="2017dsep1.js"></script><script src="2017dsep2.js"></script>
+    <script src="2016dsep1.js"></script><script src="2016dsep2.js"></script>
+    <script src="2015dsep1.js"></script><script src="2015dsep2.js"></script>
+    <script src="2014dsep1.js"></script><script src="2014dsep2.js"></script>
+    <script src="2013dsep1.js"></script><script src="2013dsep2.js"></script>
+    <script src="2012dsep1.js"></script><script src="2012dsep2.js"></script>
     
     <script>
-        // LocalStorage 錯題簿管理
-        const STORAGE_KEY = 'dse_math_mistakes';
-        let isMistakeOnlyMode = false;
-        let currentTargetQId = null; // 目前編輯中的題目 ID
+        // LocalStorage Keys
+        const STORAGE_MISTAKES = 'dse_math_mistakes';
+        const STORAGE_COMPLETED = 'dse_math_completed';
 
-        function getMistakes() {
-            try {
-                return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
-            } catch (e) {
-                return {};
+        let isMistakeOnlyMode = false;
+        let isCompletedOnlyMode = false;
+        
+        let currentTargetQId = null;
+        let currentTargetType = null;
+
+        // 生成年份 Chip 按鈕 ('25 至 '12)
+        function initYearChips() {
+            const container = document.getElementById('yearChipGroup');
+            let html = '';
+            for(let y = 2025; y >= 2012; y--) {
+                const shortYear = `'${y.toString().slice(-2)}`;
+                html += `<button class="chip chip-year" data-group="year" data-value="${y}" onclick="toggleChip(this)">${shortYear}</button>`;
+            }
+            container.innerHTML = html;
+        }
+
+        // 讀寫 LocalStorage
+        function getStorageData(key) {
+            try { return JSON.parse(localStorage.getItem(key)) || {}; } 
+            catch (e) { return {}; }
+        }
+
+        function saveStorageData(key, data) {
+            localStorage.setItem(key, JSON.stringify(data));
+            updateBadges();
+        }
+
+        function updateBadges() {
+            const mistakes = getStorageData(STORAGE_MISTAKES);
+            const completed = getStorageData(STORAGE_COMPLETED);
+            document.getElementById('mistakeCount').innerText = Object.keys(mistakes).length;
+            document.getElementById('completedCount').innerText = Object.keys(completed).length;
+        }
+
+        // 動態更新計數器 (#/#)
+        function updateFilterCount() {
+            updateDomainCount('algebraDropdown', 'algebraCountLabel');
+            updateDomainCount('geoDropdown', 'geoCountLabel');
+            updateDomainCount('dataDropdown', 'dataCountLabel');
+        }
+
+        function updateDomainCount(dropdownId, labelId) {
+            const all = document.querySelectorAll(`#${dropdownId} .topic-cb`);
+            const checked = document.querySelectorAll(`#${dropdownId} .topic-cb:checked`);
+            document.getElementById(labelId).innerText = `(${checked.length}/${all.length})`;
+        }
+
+        function toggleDropdown(id) {
+            const target = document.getElementById(id);
+            const isShowing = target.classList.contains('show');
+            
+            // 先關閉所有下拉選單
+            document.querySelectorAll('.dropdown-menu').forEach(menu => menu.classList.remove('show'));
+
+            if (!isShowing) {
+                target.classList.add('show');
+                // 自動捲動讓選單可見
+                setTimeout(() => {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }, 50);
             }
         }
 
-        function saveMistakes(mistakes) {
-            localStorage.setItem(STORAGE_KEY, JSON.stringify(mistakes));
-            updateMistakeBadge();
+        // 點擊選單外部時關閉下拉選單
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropdown-btn') && !event.target.closest('.dropdown-btn')) {
+                const dropdowns = document.getElementsByClassName("dropdown-menu");
+                for (let i = 0; i < dropdowns.length; i++) {
+                    const openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show') && !event.target.closest('.dropdown-select-container')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
         }
 
-        function updateMistakeBadge() {
-            const mistakes = getMistakes();
-            const count = Object.keys(mistakes).length;
-            const countEl = document.getElementById('mistakeCount');
-            if (countEl) countEl.innerText = count;
+        function toggleDropdownSelectAll(dropdownId, btn) {
+            const checkboxes = document.querySelectorAll(`#${dropdownId} .topic-cb`);
+            const allChecked = Array.from(checkboxes).every(cb => cb.checked);
+            
+            checkboxes.forEach(cb => cb.checked = !allChecked);
+            btn.innerText = allChecked ? "全選" : "取消全選";
+            updateFilterCount();
         }
 
-        /* 打開多行文字 Modal 編輯筆記 */
+        function togglePaperSelectAll(paperType, btn) {
+            const checkboxes = document.querySelectorAll(`.paper-cb[data-type="${paperType}"]`);
+            const allChecked = Array.from(checkboxes).every(cb => cb.checked);
+
+            checkboxes.forEach(cb => cb.checked = !allChecked);
+            btn.innerText = allChecked ? "全選" : "取消全選";
+            updateFilterCount();
+        }
+
+        function toggleChip(button) {
+            button.classList.toggle('active');
+        }
+
+        // 完成與錯題 Modal 操作
+        function getFormattedNow() {
+            const now = new Date();
+            return `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')} ${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}`;
+        }
+
         function addOrEditMistake(qId) {
             currentTargetQId = qId;
-            const mistakes = getMistakes();
+            currentTargetType = 'mistake';
+            const mistakes = getStorageData(STORAGE_MISTAKES);
             const existingNote = mistakes[qId] ? mistakes[qId].note : '';
 
-            document.getElementById('modalTitle').innerText = `📝 ${qId} 的錯題筆記`;
+            document.getElementById('modalTitle').innerText = `📌 ${qId} 的錯題筆記`;
             document.getElementById('modalNoteText').value = existingNote;
-            document.getElementById('mistakeModal').classList.add('active');
-            
-            // 自動 focus 到輸入框
-            setTimeout(() => document.getElementById('modalNoteText').focus(), 100);
+            document.getElementById('noteModal').classList.add('active');
         }
 
-        function closeMistakeModal() {
-            document.getElementById('mistakeModal').classList.remove('active');
+        function addOrEditCompleted(qId) {
+            currentTargetQId = qId;
+            currentTargetType = 'completed';
+            const completed = getStorageData(STORAGE_COMPLETED);
+            const existingNote = completed[qId] ? completed[qId].note : '';
+
+            document.getElementById('modalTitle').innerText = `✅ ${qId} 完成紀錄`;
+            document.getElementById('modalNoteText').value = existingNote;
+            document.getElementById('noteModal').classList.add('active');
+        }
+
+        function closeNoteModal() {
+            document.getElementById('noteModal').classList.remove('active');
             currentTargetQId = null;
+            currentTargetType = null;
         }
 
-        function saveMistakeModal() {
-            if (!currentTargetQId) return;
-            
-            const note = document.getElementById('modalNoteText').value;
-            const mistakes = getMistakes();
-            const now = new Date();
-            const timeStr = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')} ${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}`;
+        function saveNoteModal() {
+            if (!currentTargetQId || !currentTargetType) return;
+            const note = document.getElementById('modalNoteText').value.trim();
+            const timeStr = getFormattedNow();
 
-            mistakes[currentTargetQId] = {
-                note: note.trim(),
-                time: timeStr
-            };
+            if (currentTargetType === 'mistake') {
+                const mistakes = getStorageData(STORAGE_MISTAKES);
+                mistakes[currentTargetQId] = { note: note, time: timeStr };
+                saveStorageData(STORAGE_MISTAKES, mistakes);
+            } else {
+                const completed = getStorageData(STORAGE_COMPLETED);
+                completed[currentTargetQId] = { note: note, time: timeStr };
+                saveStorageData(STORAGE_COMPLETED, completed);
+            }
 
-            saveMistakes(mistakes);
-            closeMistakeModal();
+            closeNoteModal();
             applyFilter(true);
         }
 
         function removeMistake(qId) {
-            if (confirm(`確定要將 ${qId} 從錯題簿中移除嗎？`)) {
-                const mistakes = getMistakes();
+            if (confirm(`確定從錯題簿移除 ${qId} 嗎？`)) {
+                const mistakes = getStorageData(STORAGE_MISTAKES);
                 delete mistakes[qId];
-                saveMistakes(mistakes);
+                saveStorageData(STORAGE_MISTAKES, mistakes);
+                applyFilter(true);
+            }
+        }
+
+        function removeCompleted(qId) {
+            if (confirm(`確定取消 ${qId} 的完成狀態嗎？`)) {
+                const completed = getStorageData(STORAGE_COMPLETED);
+                delete completed[qId];
+                saveStorageData(STORAGE_COMPLETED, completed);
                 applyFilter(true);
             }
         }
 
         function toggleMistakeMode() {
             isMistakeOnlyMode = !isMistakeOnlyMode;
-            const btn = document.getElementById('mistakeModeBtn');
-            if (isMistakeOnlyMode) {
-                btn.classList.add('active');
-                btn.innerHTML = `📌 合上錯題簿 (<span id="mistakeCount">0</span>)`;
-            } else {
-                btn.classList.remove('active');
-                btn.innerHTML = `📌 打開錯題簿 (<span id="mistakeCount">0</span>)`;
-            }
-            updateMistakeBadge();
+            if(isMistakeOnlyMode) isCompletedOnlyMode = false;
+            updateModeButtons();
             applyFilter(false);
         }
 
-        // 介面互動與篩選邏輯
-        function toggleChip(button) {
-            button.classList.toggle('active');
+        function toggleCompletedMode() {
+            isCompletedOnlyMode = !isCompletedOnlyMode;
+            if(isCompletedOnlyMode) isMistakeOnlyMode = false;
+            updateModeButtons();
+            applyFilter(false);
         }
 
-        function toggleAccordion(elementId) {
-            const accordion = document.getElementById(elementId);
-            accordion.classList.toggle('open');
-        }
-
-        function toggleDomainSelectAll(event, accordionId) {
-            event.stopPropagation();
-            const accordion = document.getElementById(accordionId);
-            const btn = event.target;
-            const chips = accordion.querySelectorAll('.domain-body .chip');
+        function updateModeButtons() {
+            const mBtn = document.getElementById('mistakeModeBtn');
+            const cBtn = document.getElementById('completedModeBtn');
             
-            const allActive = Array.from(chips).every(chip => chip.classList.contains('active'));
-            
-            if (allActive) {
-                chips.forEach(chip => chip.classList.remove('active'));
-                btn.innerText = "全選";
-                btn.classList.remove('active');
-            } else {
-                chips.forEach(chip => chip.classList.add('active'));
-                btn.innerText = "取消全選";
-                btn.classList.add('active');
-            }
+            if(isMistakeOnlyMode) mBtn.classList.add('active'); 
+            else mBtn.classList.remove('active');
+
+            if(isCompletedOnlyMode) cBtn.classList.add('active'); 
+            else cBtn.classList.remove('active');
         }
 
-        function getSelectedGroupValues(groupAttr, groupValue) {
-            return Array.from(document.querySelectorAll(`.chip.active[data-${groupAttr}="${groupValue}"]`))
-                        .map(chip => chip.getAttribute('data-value'));
+        // 匯出與匯入功能
+        function exportData() {
+            const now = new Date();
+            const yyyymmdd = `${now.getFullYear()}${String(now.getMonth()+1).padStart(2,'0')}${String(now.getDate()).padStart(2,'0')}`;
+            const defaultName = `user-${yyyymmdd}`;
+
+            const exportObj = {
+                version: "1.0",
+                exportTime: now.toISOString(),
+                mistakes: getStorageData(STORAGE_MISTAKES),
+                completed: getStorageData(STORAGE_COMPLETED)
+            };
+
+            const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(exportObj, null, 2));
+            const downloadAnchor = document.createElement('a');
+            downloadAnchor.setAttribute("href", dataStr);
+            downloadAnchor.setAttribute("download", `${defaultName}.json`);
+            document.body.appendChild(downloadAnchor);
+            downloadAnchor.click();
+            downloadAnchor.remove();
         }
 
-        function getAllActiveTopicValues() {
-            return Array.from(document.querySelectorAll('#topicGroupContainer .chip.active'))
-                        .map(chip => chip.getAttribute('data-value'));
+        function importData() {
+            document.getElementById('importFileInput').click();
         }
 
-        function getDifficultyBadge(diff) {
-            if (diff === 1) return `<span class="diff-badge diff-lv1">Lv.2</span>`;
-            if (diff === 2) return `<span class="diff-badge diff-lv2">Lv.3-4</span>`;
-            if (diff === 3) return `<span class="diff-badge diff-lv3">Lv.5+</span>`;
-            return '';
+        function handleFileImport(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    const data = JSON.parse(e.target.result);
+                    if (data.mistakes || data.completed) {
+                        if (confirm('匯入將會覆蓋目前紀錄，是否繼續？')) {
+                            saveStorageData(STORAGE_MISTAKES, data.mistakes || {});
+                            saveStorageData(STORAGE_COMPLETED, data.completed || {});
+                            alert('匯入成功！');
+                            applyFilter(true);
+                        }
+                    } else {
+                        alert('檔案格式不正確。');
+                    }
+                } catch (err) {
+                    alert('無法讀取 JSON 檔案。');
+                }
+            };
+            reader.readAsText(file);
+            event.target.value = '';
         }
 
+        // 篩選與渲染
         function applyFilter(keepScroll = false, minimize = true) {
             const currentScroll = keepScroll ? window.scrollY : 0;
 
             if (minimize) {
                 const container = document.getElementById('filterContainer');
-                const btn = document.getElementById('toggleBtn');
                 if (!container.classList.contains('minimized')) {
                     container.classList.add('minimized');
-                    btn.innerText = "顯示篩選器";
+                    document.getElementById('toggleBtn').innerText = "🔍 顯示";
+                    document.getElementById('resetBtnContainer').style.display = "none";
                 }
             }
 
             const list = document.getElementById('list');
-            list.innerHTML = `
-                <div class="loading-box">
-                    <div class="spinner"></div>
-                    <div>正在搜尋與排版題目，請稍候...</div>
-                </div>
-            `;
+            list.innerHTML = `<div class="loading-box"><div class="spinner"></div><div>載入中...</div></div>`;
             setTimeout(() => filterData(currentScroll), 50);
         }
 
         async function filterData(targetScrollY) {
             const keyword = document.getElementById('keyword').value.toLowerCase();
             const sortBy = document.getElementById('sortBy').value;
-            const selectedLevels = getSelectedGroupValues('group', 'level');
-            const selectedTypes = getSelectedGroupValues('group', 'type');
-            const selectedSections = getSelectedGroupValues('group', 'section');
-            const selectedYears = getSelectedGroupValues('group', 'year');
-            const selectedDiffs = getSelectedGroupValues('group', 'diff');
-            const selectedTopics = getAllActiveTopicValues();
 
-            const mistakes = getMistakes();
+            // 卷別勾選
+            const paperCBs = Array.from(document.querySelectorAll('.paper-cb:checked'));
+            const selectedTypes = [...new Set(paperCBs.map(cb => cb.getAttribute('data-type')))];
+            const selectedSections = paperCBs.map(cb => cb.getAttribute('data-section'));
 
-            // 防護機制：沒有選條件不載入
+            // 年份 (來自 Chip)
+            const selectedYears = Array.from(document.querySelectorAll('.chip.active[data-group="year"]')).map(c => c.getAttribute('data-value'));
+
+            // 課題
+            const selectedTopics = Array.from(document.querySelectorAll('.topic-cb:checked')).map(cb => cb.value);
+
+            // 級別與難度 Chips
+            const selectedLevels = Array.from(document.querySelectorAll('.chip.active[data-group="level"]')).map(c => c.getAttribute('data-value'));
+            const selectedDiffs = Array.from(document.querySelectorAll('.chip.active[data-group="diff"]')).map(c => c.getAttribute('data-value'));
+
+            const mistakes = getStorageData(STORAGE_MISTAKES);
+            const completed = getStorageData(STORAGE_COMPLETED);
+
             const isNoCondition = keyword === "" && selectedLevels.length === 0 && selectedTypes.length === 0 && 
-                                  selectedSections.length === 0 && selectedYears.length === 0 && 
-                                  selectedDiffs.length === 0 && selectedTopics.length === 0;
+                                  selectedYears.length === 0 && selectedDiffs.length === 0 && selectedTopics.length === 0;
 
             const list = document.getElementById('list');
 
-            if (!isMistakeOnlyMode && isNoCondition) {
-                list.innerHTML = `<p style="text-align:center; color:#777; margin-top:50px; font-size:15px;">請選擇篩選條件或輸入關鍵字，並點擊「🔍 篩選」。加油！</p>`;
+            if (!isMistakeOnlyMode && !isCompletedOnlyMode && isNoCondition) {
+                list.innerHTML = `<p style="text-align:center; color:#777; margin-top:50px;">請選擇篩選條件或輸入關鍵字，並點擊「🔍 篩選」。</p>`;
                 return;
             }
 
             if (typeof questions === 'undefined') return;
 
             let filtered = questions.filter(q => {
-                if (isMistakeOnlyMode && !mistakes[q.id]) {
-                    return false;
-                }
+                if (isMistakeOnlyMode && !mistakes[q.id]) return false;
+                if (isCompletedOnlyMode && !completed[q.id]) return false;
 
                 const matchKeyword = q.content.toLowerCase().includes(keyword) || q.id.toLowerCase().includes(keyword);
                 const matchLevel = selectedLevels.length === 0 || (Array.isArray(q.level) ? q.level.some(l => selectedLevels.includes(l)) : selectedLevels.includes(q.level));
@@ -776,41 +874,34 @@
                 return matchKeyword && matchLevel && matchType && matchSection && matchYear && matchDiff && matchTopic;
             });
 
-            // 🎯 排序邏輯處理
+            // 排序
             filtered.sort((a, b) => {
-                if (sortBy === 'year-desc') {
-                    return parseInt(b.year) - parseInt(a.year);
-                } else if (sortBy === 'year-asc') {
-                    return parseInt(a.year) - parseInt(b.year);
-                } else if (sortBy === 'type') {
-                    return a.type.localeCompare(b.type);
-                } else if (sortBy === 'diff-asc') {
-                    return (a.difficulty || 0) - (b.difficulty || 0);
-                } else if (sortBy === 'diff-desc') {
-                    return (b.difficulty || 0) - (a.difficulty || 0);
-                } else if (sortBy === 'time-desc') {
-                    const timeA = mistakes[a.id] ? mistakes[a.id].time : '';
-                    const timeB = mistakes[b.id] ? mistakes[b.id].time : '';
-                    return timeB.localeCompare(timeA);
+                if (sortBy === 'year-desc') return parseInt(b.year) - parseInt(a.year);
+                if (sortBy === 'year-asc') return parseInt(a.year) - parseInt(b.year);
+                if (sortBy === 'type') return a.type.localeCompare(b.type);
+                if (sortBy === 'diff-asc') return (a.difficulty || 0) - (b.difficulty || 0);
+                if (sortBy === 'diff-desc') return (b.difficulty || 0) - (a.difficulty || 0);
+                if (sortBy === 'time-desc') {
+                    const tA = (mistakes[a.id]?.time || completed[a.id]?.time || '');
+                    const tB = (mistakes[b.id]?.time || completed[b.id]?.time || '');
+                    return tB.localeCompare(tA);
                 }
                 return 0;
             });
 
             if(filtered.length === 0) {
-                if (isMistakeOnlyMode) {
-                    list.innerHTML = `<p style="text-align:center; color:#999; margin-top:50px;">目前錯題簿中沒有符合條件的題目。</p>`;
-                } else {
-                    list.innerHTML = `<p style="text-align:center; color:#999; margin-top:50px;">沒有符合條件的題目。</p>`;
-                }
+                list.innerHTML = `<p style="text-align:center; color:#999; margin-top:50px;">沒有符合條件的題目。</p>`;
                 return;
             }
 
             list.innerHTML = filtered.map(q => {
-                const mistakeInfo = mistakes[q.id];
-                const isSaved = !!mistakeInfo;
+                const mInfo = mistakes[q.id];
+                const cInfo = completed[q.id];
+                const isSaved = !!mInfo;
+                const isDone = !!cInfo;
 
                 return `
-                <div class="question-card">
+                <div class="question-card ${isDone ? 'is-completed' : ''}">
                     <div class="card-header">
                         <div class="q-id">${q.id}</div>
                         ${getDifficultyBadge(q.difficulty)}
@@ -826,24 +917,35 @@
                         <div class="detail-content">${q.solution}</div>
                     </details>
 
-                    <!-- 錯題筆記區塊 -->
+                    <!-- 筆記顯示 -->
                     ${isSaved ? `
-                        <div class="mistake-note-box">
-                            <div class="mistake-note-header">
-                                <span>📝 錯題筆記</span>
-                                <span>加入時間：${mistakeInfo.time}</span>
-                            </div>
-                            <div class="mistake-note-body">${mistakeInfo.note || '（未輸入筆記）'}</div>
+                        <div class="note-box mistake-note-box">
+                            <div class="note-header"><span>📝 錯題筆記</span><span>${mInfo.time}</span></div>
+                            <div>${mInfo.note || '（無筆記）'}</div>
                         </div>
                     ` : ''}
 
-                    <!-- 操作按鈕列 -->
+                    ${isDone ? `
+                        <div class="note-box completed-note-box">
+                            <div class="note-header"><span>✅ 完成紀錄</span><span>${cInfo.time}</span></div>
+                            <div>${cInfo.note || '（無筆記）'}</div>
+                        </div>
+                    ` : ''}
+
+                    <!-- 按鈕列 -->
                     <div class="card-actions">
-                        ${isSaved ? `
-                            <button class="btn-mistake is-saved" onclick="addOrEditMistake('${q.id}')">✏️ 編輯筆記</button>
-                            <button class="btn-mistake" onclick="removeMistake('${q.id}')">❌ 移除錯題</button>
+                        ${isDone ? `
+                            <button class="btn-card is-done" onclick="addOrEditCompleted('${q.id}')">✏️ 完成筆記</button>
+                            <button class="btn-card" onclick="removeCompleted('${q.id}')">取消完成</button>
                         ` : `
-                            <button class="btn-mistake" onclick="addOrEditMistake('${q.id}')">📌</button>
+                            <button class="btn-card" onclick="addOrEditCompleted('${q.id}')">✅ 完成</button>
+                        `}
+
+                        ${isSaved ? `
+                            <button class="btn-card is-saved" onclick="addOrEditMistake('${q.id}')">✏️ 錯題筆記</button>
+                            <button class="btn-card" onclick="removeMistake('${q.id}')">移除錯題</button>
+                        ` : `
+                            <button class="btn-card" onclick="addOrEditMistake('${q.id}')">📌 錯題</button>
                         `}
                     </div>
                 </div>
@@ -853,37 +955,51 @@
                 await MathJax.typesetPromise();
             }
 
-            // 自動滾動還原至原本瀏覽位置
             if (targetScrollY > 0) {
                 window.scrollTo({ top: targetScrollY, behavior: 'instant' });
             }
+        }
+
+        function getDifficultyBadge(diff) {
+            if (diff === 1) return `<span class="diff-badge diff-lv1">Lv.2</span>`;
+            if (diff === 2) return `<span class="diff-badge diff-lv2">Lv.3-4</span>`;
+            if (diff === 3) return `<span class="diff-badge diff-lv3">Lv.5+</span>`;
+            return '';
         }
 
         function resetFilters() {
             document.getElementById('keyword').value = "";
             document.getElementById('sortBy').value = "year-desc";
             document.querySelectorAll('.chip.active').forEach(chip => chip.classList.remove('active'));
-            document.querySelectorAll('.btn-select-all').forEach(btn => {
-                btn.innerText = "全選";
-                btn.classList.remove('active');
-            });
+            document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+            
+            // 重置全選按鈕文字
+            document.querySelectorAll('.btn-select-all').forEach(btn => btn.innerText = "全選");
+
+            updateFilterCount();
             applyFilter(false);
         }
 
         function toggleFilter() {
             const container = document.getElementById('filterContainer');
-            const btn = document.getElementById('toggleBtn');
+            const toggleBtn = document.getElementById('toggleBtn');
+            const resetContainer = document.getElementById('resetBtnContainer');
+            
             if (container.classList.contains('minimized')) {
                 container.classList.remove('minimized');
-                btn.innerText = "隱藏篩選器";
+                toggleBtn.innerText = "🔍 隱藏";
+                resetContainer.style.display = "inline-block";
             } else {
                 container.classList.add('minimized');
-                btn.innerText = "顯示篩選器";
+                toggleBtn.innerText = "🔍 顯示";
+                resetContainer.style.display = "none";
             }
         }
 
-        // 初始化錯題數量與頁面
-        updateMistakeBadge();
+        // 初始化
+        initYearChips();
+        updateBadges();
+        updateFilterCount();
         applyFilter(false, false);
     </script>
 </body>
