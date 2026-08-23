@@ -13,19 +13,19 @@
     <script src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding: 20px; font-size: 11pt; margin: 0; background: #f8f9fa; color: #333; }
-        h1 { font-size: 1.5rem; text-align: center; margin: 10px 0; }
+        h1 { font-size: 16pt; text-align: center; margin: 0px 0px 15px 0px; }
         
-        /* 篩選器容器 (Flex 佈局，支援底部 Sticky) */
+        /* 篩選器容器 */
         .filter-container {
             position: sticky;
             top: 10px;
             z-index: 1000;
             background: rgba(253, 245, 255, 0.7);
-            padding: 6px 10px;
+            padding: 8px;
             border-radius: 8px;
             box-shadow: 0 4px 20px rgba(51,2,64,0.3);
             backdrop-filter: blur(3px);
-            margin: 5px auto 15px auto;
+            margin: 5px auto 5px auto;
             max-width: 798px;
             max-height: 85dvh;
             display: flex;
@@ -50,7 +50,7 @@
             display: flex;
             flex-direction: column;
             overflow: hidden;
-            margin-top: 10px;
+            margin-top: 8px;
             flex: 1;
         }
 
@@ -58,21 +58,22 @@
             overflow-y: auto;
             overscroll-behavior: contain;
             padding-right: 4px;
-            padding-bottom: 10px;
+            padding-bottom: 8px;
         }
 
         .filter-container.minimized .filter-body { display: none; }
         
-        /* 搜尋欄位 */
+        /* 搜尋欄位 + 重設條件按鈕同列 */
         .search-sort-row {
             display: flex;
             gap: 8px;
             margin-bottom: 12px;
+            align-items: center;
         }
 
         input[type="text"] { 
             flex: 1; 
-            padding: 6px 8px; 
+            padding: 6px 10px; 
             border: 1px solid #cbd5e1; 
             border-radius: 8px; 
             font-size: 11pt; 
@@ -88,12 +89,12 @@
             color: #334155;
             cursor: pointer;
             outline: none;
-            transition: all 0.2s;
+            transition: all 0s;
             flex: 1;
             box-sizing: border-box;
         }
 
-        /* 恢復三欄式排版：卷一、卷二、年份 */
+        /* 三欄式排版：卷一、卷二、年份 */
         .paper-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -105,7 +106,7 @@
             border: 1px solid #cbd5e1;
             border-radius: 2px;
             background: #fff;
-            padding: 8px;
+            padding: 4px;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
@@ -115,25 +116,30 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 6px;
+            margin-bottom: 3px;
         }
 
-        .paper-title {
+        /* 可按壓的標題樣式 (兼具全選功能) */
+        .paper-title-btn {
             font-size: 10pt;
             font-weight: bold;
             color: #475569;
+            cursor: pointer;
+            user-select: none;
+            padding: 2px 4px;
+            border-radius: 4px;
+            transition: background 0s;
+            width: 100%;
+        }
+        .paper-title-btn:hover {
+            background: #64e8dd;
+            color: #1e293b;
         }
 
         .paper-options {
             display: flex;
             flex-direction: column;
-            gap: 2px;
-        }
-
-        /* 滾動年份區域 */
-        .year-scroll-box {
-            overflow-y: auto;
-            padding-right: 2px;
+            gap: 1px;
         }
 
         /* 下拉式清單選單 (課題) */
@@ -179,53 +185,51 @@
         .checkbox-label {
             display: flex;
             align-items: center;
-            gap: 6px;
+            gap: 4px;
             font-size: 10pt;
-            padding: 5px 6px;
+            padding: 2px 6px;
             cursor: pointer;
             border-radius: 4px;
         }
-        .checkbox-label:hover { background: #f1f5f9; }
+        .checkbox-label:hover { background: #aaf0ea; }
 
-        /* Chips 通用樣式與年份按鈕 */
-        .filter-title { font-size: 10pt; font-weight: bold; color: #64748b; margin-bottom: 4px; margin-top: 8px; }
+        /* Chips 通用樣式 */
+        .filter-title { font-size: 10pt; font-weight: bold; color: #475569; margin-bottom: 4px; margin-top: 12px; }
         .chip-group { display: flex; flex-wrap: wrap; gap: 4px; }
         .chip { 
-            padding: 2px 6px !important; 
+            padding: 1px 4px !important; 
             border: 1px solid #cbd5e1; 
             border-radius: 6px; 
             font-size: 10pt; 
             cursor: pointer; 
             background: #fff; 
             user-select: none; 
-            transition: all 0.2s; 
+            transition: all 0s; 
             color: #334155; 
             box-sizing: border-box;
             display: inline-flex;
             align-items: center;
             justify-content: center;
         }
-        .chip:hover { border-color: #94a3b8; background: #f8fafc; }
-        .chip.active { background: #8b5cf6; color: white; border-color: #7c3aed; font-weight: 500; }
-
-        /* 年份 Chip 樣式 */
+        .chip:hover { border-color: #94a3b8; background: #aaf0ea; }
+        .chip.active { background: #8b5cf6; color: white; border-color: #7c3aed; }
         .chip-year.active { background: #0f766e; color: white; border-color: #0f766e; }
 
         .chip-diff[data-value="1"].active { background: #0284c7; border-color: #0369a1; color: white; }
         .chip-diff[data-value="2"].active { background: #d97706; border-color: #b45309; color: white; }
         .chip-diff[data-value="3"].active { background: #dc2626; border-color: #b91c1c; color: white; }
 
-        /* 範疇色彩特色化 (數與代數: 藍, 度量圖形: 綠, 數據處理: 橙) */
+        /* 範疇色彩區分 */
         .domain-algebra .dropdown-btn { border-color: #93c5fd; background: #eff6ff; color: #1e40af; }
-        .domain-algebra .btn-select-all { height: 33px; width: 80px; font-size: 9pt; border-radius: 8px; background: #dbeafe; border-color: #bfdbfe; color: #1e40af;}
+        .domain-algebra .btn-select-all { background: #dbeafe; border-color: #bfdbfe; color: #1e40af; }
         .domain-algebra .checkbox-label:hover { background: #eff6ff; }
 
         .domain-geo .dropdown-btn { border-color: #86efac; background: #f0fdf4; color: #166534; }
-        .domain-geo .btn-select-all { height: 33px; width: 80px; font-size: 9pt; border-radius: 8px; background: #dcfce7; border-color: #bbf7d0; color: #166534; }
+        .domain-geo .btn-select-all { background: #dcfce7; border-color: #bbf7d0; color: #166534; }
         .domain-geo .checkbox-label:hover { background: #f0fdf4; }
 
         .domain-data .dropdown-btn { border-color: #fde047; background: #fefce8; color: #854d0e; }
-        .domain-data .btn-select-all { height: 33px; width: 80px; font-size: 9pt; border-radius: 8px; background: #fef9c3; border-color: #fef08a; color: #854d0e; }
+        .domain-data .btn-select-all { background: #fef9c3; border-color: #fef08a; color: #854d0e; }
         .domain-data .checkbox-label:hover { background: #fefce8; }
 
         /* 按鈕樣式 */
@@ -241,8 +245,8 @@
             border-top: 1px solid rgba(203, 213, 225, 0.5);
             flex-shrink: 0;
         }
-        .btn { padding: 4px 8px; border: none; border-radius: 8px; font-size: 9pt; cursor: pointer; font-weight: 500; transition: all 0.2s; }
-        .btn-toggle { background: #475569; color: white; }
+        .btn { padding: 3px 4px; border: none; border-radius: 8px; font-size: 9pt; cursor: pointer; font-weight: 500; transition: all 1s; white-space: nowrap; }
+        .btn-toggle { background: #5e1e96; color: white; border: 1px solid #9621ff; font-weight: bold; }
         .btn-reset { background: #e2e8f0; color: #334155; }
         
         .btn-mistake-mode { background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; font-weight: bold; }
@@ -251,12 +255,13 @@
         .btn-completed-mode { background: #dcfce7; color: #166534; border: 1px solid #86efac; font-weight: bold; }
         .btn-completed-mode.active { background: #16a34a; color: white; }
 
-        .btn-io { background: #e0f2fe; color: #0369a1; border: 1px solid #7dd3fc; font-weight: bold; }
+        .btn-io { background: #ffdfc7; color: #0369a1; border: 1px solid #ff882e; font-weight: bold; }
 
         .btn-apply { background: #7c3aed; color: white; font-weight: bold; padding: 8px 18px; font-size: 10pt; flex: 1; border-radius: 8px; }
         .btn-apply:hover { background: #6d28d9; }
 
-        .btn-select-all { font-size: 8pt; padding: 1px 4px; border-radius: 4px; background: #e2e8f0; border: 1px solid #cbd5e1; cursor: pointer; }
+        .btn-select-all { font-size: 8pt; padding: 1px 4px; border-radius: 4px; background: #e2e8f0; border: 1px solid #cbd5e1; cursor: pointer; width: 80px; height: 33px; }
+
 
         /* 題目卡片 */
         #list { max-width: 800px; margin: 0 auto; padding-bottom: 8px; }
@@ -289,49 +294,67 @@
         summary { padding: 3px 5px; font-weight: bold; color: #475569; cursor: pointer; }
         .detail-content { padding: 0px 5px; background: #ffffff; }
 
-        .ms-container {
-            width: 100%;
-            margin: 12px 0;
-            font-family: Times, "Times New Roman", "PMingLiU", "新細明體", serif;
-            font-size: 10pt;
-            letter-spacing: 0em;
-            white-space: pre-wrap;
-        }
-        .ms-row {
-            display: grid;
-            grid-template-columns: 25px 25px 25px 1fr 65px;
-            align-items: start;
-            line-height: 1.7;
-            padding: 1px 0px;
-            margin-bottom: 0px;
-        }
-        .ms-num1 { grid-column: 1; }
-        .ms-num2 { grid-column: 2; }
-        .ms-num3 { grid-column: 3; }
-        .ms-content { grid-column: 4; }
-        .ms-content.ms-from-l1 { grid-column: 1 / 5; }
-        .ms-content.ms-from-l2 { grid-column: 2 / 5; }
-        .ms-content.ms-from-l3 { grid-column: 3 / 5; }
-        .ms-mark { grid-column: 5; text-align: center; white-space: nowrap; align-self: center; }
+	.ms-container {
+      width: 100%;
+      margin: 12px 0;
+      font-family: Times, "Times New Roman", "PMingLiU", "新細明體", serif;
+      font-size: 10pt;
+      letter-spacing: 0em;
+      white-space: pre-wrap;
+    }
+    .ms-row {
+      display: grid;
+      grid-template-columns: 25px 25px 25px 1fr 65px;
+      align-items: start;
+	  line-height: 1.7;
+	  padding: 1px 0px;
+      margin-bottom: 0px;
+    }
+    /* 各層編號 */
+    .ms-num1 { grid-column: 1; }
+    .ms-num2 { grid-column: 2; }
+    .ms-num3 { grid-column: 3; }
+    /* 內容區塊 */
+    .ms-content {
+      grid-column: 4;
+    }
+    /* 讓內容從「第一層」位置開始 (欄 1 至 4) */
+    .ms-content.ms-from-l1 {
+      grid-column: 1 / 5;
+    }
+	/* 讓內容從「第二層」位置開始 (欄 2 至 4) */
+    .ms-content.ms-from-l2 {
+      grid-column: 2 / 5;
+    }
+    /* 讓內容從「第三層」位置開始 (欄 3 至 4) */
+    .ms-content.ms-from-l3 {
+      grid-column: 3 / 5;
+    }
+    /* 右側分數 (欄位內置中) */
+    .ms-mark {
+      grid-column: 5;
+      text-align: center;
+      white-space: nowrap;
+	  align-self: center;
+    }
 
-        /* 筆記與按鈕列 */
         .card-actions { display: flex; justify-content: flex-end; margin-top: 10px; gap: 8px; }
-        .btn-card { padding: 4px 10px; font-size: 12px; border-radius: 6px; border: 1px solid #cbd5e1; background: #f8fafc; cursor: pointer; transition: all 0.2s; color: #475569; }
+        .btn-card { padding: 4px 10px; font-size: 10pt; border-radius: 6px; border: 1px solid #cbd5e1; background: #f8fafc; cursor: pointer; transition: all 0.2s; color: #475569; }
         .btn-card:hover { background: #f1f5f9; }
         .btn-card.is-saved { background: #fef2f2; border-color: #fca5a5; color: #dc2626; }
         .btn-card.is-done { background: #f0fdf4; border-color: #86efac; color: #16a34a; }
 
-        .note-box { margin-top: 10px; padding: 10px 12px; border-radius: 8px; font-size: 13px; }
+        .note-box { margin-top: 10px; padding: 10px 12px; border-radius: 8px; font-size: 10pt; }
         .mistake-note-box { background: #fff5f5; border: 1px dashed #fca5a5; color: #991b1b; }
         .completed-note-box { background: #f0fdf4; border: 1px dashed #86efac; color: #166534; margin-top: 6px; }
         .note-header { display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 4px; font-size: 10pt; }
 
-        /* Modal */
-        .modal-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.4); backdrop-filter: blur(2px); z-index: 2000; display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: opacity 0.2s ease; }
+        /* Modal 彈出視窗 */
+        .modal-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.4); backdrop-filter: blur(0px); z-index: 2000; display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: opacity 0.3s ease; }
         .modal-overlay.active { opacity: 1; pointer-events: auto; }
         .modal-card { background: #fff; width: 90%; max-width: 500px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); padding: 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px; }
-        .modal-header { font-size: 16px; font-weight: bold; color: #1e293b; }
-        .modal-textarea { width: 100%; min-height: 120px; max-height: 300px; padding: 10px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 12pt; font-family: inherit; resize: vertical; box-sizing: border-box; outline: none; }
+        .modal-header { font-size: 14px; font-weight: bold; color: #1e293b; }
+        .modal-textarea { width: 100%; min-height: 100px; max-height: 300px; padding: 10px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 12pt; font-family: Times; resize: vertical; box-sizing: border-box; outline: none; }
         .modal-actions { display: flex; justify-content: flex-end; gap: 8px; }
 
         .loading-box { text-align: center; padding: 40px 20px; color: #4b5563; }
@@ -346,31 +369,28 @@
     <div class="filter-container" id="filterContainer">
         <div class="filter-header">
             <div class="filter-header-left">
-                <button class="btn btn-toggle" id="toggleBtn" onclick="toggleFilter()">🔍 隱藏</button>
-                <button class="btn btn-completed-mode" id="completedModeBtn" onclick="toggleCompletedMode()">✅ 完成 (<span id="completedCount">0</span>)</button>
-                <button class="btn btn-mistake-mode" id="mistakeModeBtn" onclick="toggleMistakeMode()">📌 錯題 (<span id="mistakeCount">0</span>)</button>
-                <button class="btn btn-io" onclick="exportData()">📤 匯出</button>
-                <button class="btn btn-io" onclick="importData()">📥 匯入</button>
-                <input type="file" id="importFileInput" style="display:none" accept=".json" onchange="handleFileImport(event)">
+                <button class="btn btn-toggle" id="toggleBtn" onclick="toggleFilter()">👀篩選器</button>
+                <button class="btn btn-completed-mode" id="completedModeBtn" onclick="toggleCompletedMode()">✅已完成 (<span id="completedCount">0</span>)</button>
+                <button class="btn btn-mistake-mode" id="mistakeModeBtn" onclick="toggleMistakeMode()">📌錯題簿 (<span id="mistakeCount">0</span>)</button>
+                <button class="btn btn-io" onclick="openTextExportModal()">💾</button>
+                <button class="btn btn-io" onclick="openTextImportModal()">📥</button>
             </div>
-            <div id="resetBtnContainer"><button class="btn btn-reset" onclick="resetFilters()">重設條件</button></div>
         </div>
         
         <div class="filter-body">
-            <!-- 內部滾動區域 -->
             <div class="filter-scroll-area">
-                <!-- 搜尋欄位 -->
+                <!-- 搜尋欄位與重設條件按鈕同列 -->
                 <div class="search-sort-row">
-                    <input type="text" id="keyword" placeholder="搜尋題目中的關鍵字..." onkeydown="if(event.key === 'Enter') applyFilter(false, false)">
+                    <input type="text" id="keyword" placeholder="搜尋題目關鍵字..." onkeydown="if(event.key === 'Enter') applyFilter(false, false)">
+                    <button class="btn btn-reset" onclick="resetFilters()">重設條件</button>
                 </div>
 
-                <!-- 三欄式排版：卷一、卷二、年份 -->
+                <!-- 三欄式排版：卷一、卷二、年份 (標題點擊可全選) -->
                 <div class="paper-grid">
                     <!-- 第一欄：卷一 -->
                     <div class="paper-card">
                         <div class="paper-header">
-                            <span class="paper-title">📄 卷一</span>
-                            <button class="btn-select-all" onclick="togglePaperSelectAll('P1', this)">全選</button>
+                            <span class="paper-title-btn" onclick="togglePaperSelectAll('P1')" title="點擊全選/取消全選">📄 卷一 🔄</span>
                         </div>
                         <div class="paper-options">
                             <label class="checkbox-label"><input type="checkbox" class="paper-cb" data-type="P1" data-section="A1" onchange="updateFilterCount()"> 甲部(1)</label>
@@ -382,8 +402,7 @@
                     <!-- 第二欄：卷二 -->
                     <div class="paper-card">
                         <div class="paper-header">
-                            <span class="paper-title">📄 卷二</span>
-                            <button class="btn-select-all" onclick="togglePaperSelectAll('P2', this)">全選</button>
+                            <span class="paper-title-btn" onclick="togglePaperSelectAll('P2')" title="點擊全選/取消全選">📄 卷二 🔄</span>
                         </div>
                         <div class="paper-options">
                             <label class="checkbox-label"><input type="checkbox" class="paper-cb" data-type="P2" data-section="MC_A" onchange="updateFilterCount()"> 甲部</label>
@@ -391,10 +410,10 @@
                         </div>
                     </div>
 
-                    <!-- 第三欄：年份卡片 (與卷一卷二並排) -->
+                    <!-- 第三欄：年份 (標題點擊可全選) -->
                     <div class="paper-card">
                         <div class="paper-header">
-                            <span class="paper-title">📅 年份</span>
+                            <span class="paper-title-btn" onclick="toggleYearSelectAll()" title="點擊全選/取消全選">📅 年份 🔄</span>
                         </div>
                         <div class="year-scroll-box">
                             <div class="chip-group" id="yearChipGroup">
@@ -408,21 +427,21 @@
                 <div>
                     <div class="filter-title">🔥 級別 | 難度</div>
                     <div class="chip-group">
-                        <button class="chip" data-group="level" data-value="Junior" onclick="toggleChip(this)">初中</button>
-                        <button class="chip" data-group="level" data-value="Senior" onclick="toggleChip(this)">高中</button>
+                        <button class="chip" data-group="level" data-value="Junior" onclick="toggleChip(this)" style="width: 55px;">初中</button>
+                        <button class="chip" data-group="level" data-value="Senior" onclick="toggleChip(this)" style="width: 55px;">高中</button>
                         <span style="color:#cbd5e1; font-weight:bold; margin: 0 4px;">|</span>
-                        <button class="chip chip-diff" data-group="diff" data-value="1" onclick="toggleChip(this)">Lv.2</button>
-                        <button class="chip chip-diff" data-group="diff" data-value="2" onclick="toggleChip(this)">Lv.3-4</button>
-                        <button class="chip chip-diff" data-group="diff" data-value="3" onclick="toggleChip(this)">Lv.5+</button>
+                        <button class="chip chip-diff" data-group="diff" data-value="1" onclick="toggleChip(this)" style="width: 55px;">Lv.2</button>
+                        <button class="chip chip-diff" data-group="diff" data-value="2" onclick="toggleChip(this)" style="width: 55px;">Lv.3-4</button>
+                        <button class="chip chip-diff" data-group="diff" data-value="3" onclick="toggleChip(this)" style="width: 55px;">Lv.5+</button>
                     </div>
                 </div>
 
-                <!-- 範疇與課題 (配色區分) -->
+                <!-- 範疇與課題 -->
                 <div>
                     <div class="filter-title">🧩 範疇與課題</div>
                     <div style="display: flex; flex-direction: column; gap: 8px;">
                         
-                        <!-- 數與代數 (藍色系) -->
+                        <!-- 數與代數 -->
                         <div class="dropdown-select-container domain-algebra">
                             <div style="display: flex; align-items: center; gap: 6px;">
                                 <button class="dropdown-btn" onclick="toggleDropdown('algebraDropdown')">
@@ -459,7 +478,7 @@
                             </div>
                         </div>
 
-                        <!-- 度量、圖形與空間 (綠色系) -->
+                        <!-- 度量、圖形與空間 -->
                         <div class="dropdown-select-container domain-geo">
                             <div style="display: flex; align-items: center; gap: 6px;">
                                 <button class="dropdown-btn" onclick="toggleDropdown('geoDropdown')">
@@ -486,7 +505,7 @@
                             </div>
                         </div>
 
-                        <!-- 數據處理 (橙/琥珀色系) -->
+                        <!-- 數據處理 -->
                         <div class="dropdown-select-container domain-data">
                             <div style="display: flex; align-items: center; gap: 6px;">
                                 <button class="dropdown-btn" onclick="toggleDropdown('dataDropdown')">
@@ -509,7 +528,7 @@
                 </div>
             </div>
 
-            <!-- 永遠浮在底部的 排序與套用列 -->
+            <!-- 排序與套用列 -->
             <div class="btn-group-action">
                 <select id="sortBy" class="sort-select">
                     <option value="type">📄 按卷別 (卷一 ➔ 卷二)</option>
@@ -526,16 +545,15 @@
 
     <div id="list"></div>
 
-    <!-- 多功能 Modal -->
-    <div class="modal-overlay" id="noteModal">
+    <!-- 通用 Modal (筆記 / 文字匯出 / 文字匯入) -->
+    <div class="modal-overlay" id="commonModal">
         <div class="modal-card">
             <div class="modal-header">
-                <span id="modalTitle">📝 編輯筆記</span>
+                <span id="modalTitle">📝 編輯</span>
             </div>
-            <textarea class="modal-textarea" id="modalNoteText" placeholder="輸入筆記內容..."></textarea>
-            <div class="modal-actions">
-                <button class="btn btn-reset" onclick="closeNoteModal()">取消</button>
-                <button class="btn btn-apply" id="modalSaveBtn" onclick="saveNoteModal()">儲存</button>
+            <textarea class="modal-textarea" id="modalTextarea" placeholder="輸入內容..."></textarea>
+            <div class="modal-actions" id="modalActions">
+                <!-- 動態按鈕生成區 -->
             </div>
         </div>
     </div>
@@ -556,7 +574,6 @@
     <script src="2012dsep1.js"></script><script src="2012dsep2.js"></script>
     
     <script>
-        // LocalStorage Keys
         const STORAGE_MISTAKES = 'dse_math_mistakes';
         const STORAGE_COMPLETED = 'dse_math_completed';
 
@@ -566,7 +583,6 @@
         let currentTargetQId = null;
         let currentTargetType = null;
 
-        // 生成年份 Chip 按鈕 ('25 至 '12)
         function initYearChips() {
             const container = document.getElementById('yearChipGroup');
             let html = '';
@@ -577,7 +593,6 @@
             container.innerHTML = html;
         }
 
-        // 讀寫 LocalStorage
         function getStorageData(key) {
             try { return JSON.parse(localStorage.getItem(key)) || {}; } 
             catch (e) { return {}; }
@@ -595,7 +610,6 @@
             document.getElementById('completedCount').innerText = Object.keys(completed).length;
         }
 
-        // 動態更新計數器 (#/#)
         function updateFilterCount() {
             updateDomainCount('algebraDropdown', 'algebraCountLabel');
             updateDomainCount('geoDropdown', 'geoCountLabel');
@@ -611,20 +625,14 @@
         function toggleDropdown(id) {
             const target = document.getElementById(id);
             const isShowing = target.classList.contains('show');
-            
-            // 先關閉所有下拉選單
             document.querySelectorAll('.dropdown-menu').forEach(menu => menu.classList.remove('show'));
 
             if (!isShowing) {
                 target.classList.add('show');
-                // 自動捲動讓選單可見
-                setTimeout(() => {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                }, 50);
+                setTimeout(() => { target.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }, 50);
             }
         }
 
-        // 點擊選單外部時關閉下拉選單
         window.onclick = function(event) {
             if (!event.target.matches('.dropdown-btn') && !event.target.closest('.dropdown-btn')) {
                 const dropdowns = document.getElementsByClassName("dropdown-menu");
@@ -640,40 +648,48 @@
         function toggleDropdownSelectAll(dropdownId, btn) {
             const checkboxes = document.querySelectorAll(`#${dropdownId} .topic-cb`);
             const allChecked = Array.from(checkboxes).every(cb => cb.checked);
-            
             checkboxes.forEach(cb => cb.checked = !allChecked);
             btn.innerText = allChecked ? "全選" : "取消全選";
             updateFilterCount();
         }
 
-        function togglePaperSelectAll(paperType, btn) {
+        /* 點擊標題實作全選功能 */
+        function togglePaperSelectAll(paperType) {
             const checkboxes = document.querySelectorAll(`.paper-cb[data-type="${paperType}"]`);
             const allChecked = Array.from(checkboxes).every(cb => cb.checked);
-
             checkboxes.forEach(cb => cb.checked = !allChecked);
-            btn.innerText = allChecked ? "全選" : "取消全選";
             updateFilterCount();
+        }
+
+        function toggleYearSelectAll() {
+            const chips = document.querySelectorAll('#yearChipGroup .chip-year');
+            const allActive = Array.from(chips).every(c => c.classList.contains('active'));
+            chips.forEach(c => {
+                if (allActive) c.classList.remove('active');
+                else c.classList.add('active');
+            });
         }
 
         function toggleChip(button) {
             button.classList.toggle('active');
         }
 
-        // 完成與錯題 Modal 操作
         function getFormattedNow() {
             const now = new Date();
             return `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')} ${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}`;
         }
 
+        /* 筆記視窗 */
         function addOrEditMistake(qId) {
             currentTargetQId = qId;
             currentTargetType = 'mistake';
             const mistakes = getStorageData(STORAGE_MISTAKES);
             const existingNote = mistakes[qId] ? mistakes[qId].note : '';
 
-            document.getElementById('modalTitle').innerText = `📌 ${qId} 的錯題筆記`;
-            document.getElementById('modalNoteText').value = existingNote;
-            document.getElementById('noteModal').classList.add('active');
+            openModal(`📌 ${qId} 的錯題筆記`, existingNote, [
+                `<button class="btn btn-reset" onclick="closeModal()">取消</button>`,
+                `<button class="btn btn-apply" onclick="saveNoteModal()">儲存</button>`
+            ]);
         }
 
         function addOrEditCompleted(qId) {
@@ -682,20 +698,28 @@
             const completed = getStorageData(STORAGE_COMPLETED);
             const existingNote = completed[qId] ? completed[qId].note : '';
 
-            document.getElementById('modalTitle').innerText = `✅ ${qId} 完成紀錄`;
-            document.getElementById('modalNoteText').value = existingNote;
-            document.getElementById('noteModal').classList.add('active');
+            openModal(`✅ ${qId} 完成紀錄`, existingNote, [
+                `<button class="btn btn-reset" onclick="closeModal()">取消</button>`,
+                `<button class="btn btn-apply" onclick="saveNoteModal()">儲存</button>`
+            ]);
         }
 
-        function closeNoteModal() {
-            document.getElementById('noteModal').classList.remove('active');
+        function openModal(title, text, actionBtnsHtml) {
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalTextarea').value = text;
+            document.getElementById('modalActions').innerHTML = actionBtnsHtml.join('');
+            document.getElementById('commonModal').classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('commonModal').classList.remove('active');
             currentTargetQId = null;
             currentTargetType = null;
         }
 
         function saveNoteModal() {
             if (!currentTargetQId || !currentTargetType) return;
-            const note = document.getElementById('modalNoteText').value.trim();
+            const note = document.getElementById('modalTextarea').value.trim();
             const timeStr = getFormattedNow();
 
             if (currentTargetType === 'mistake') {
@@ -708,8 +732,69 @@
                 saveStorageData(STORAGE_COMPLETED, completed);
             }
 
-            closeNoteModal();
+            closeModal();
             applyFilter(true);
+        }
+
+        /* 手機適用：純文字 匯出/匯入 功能 */
+        function openTextExportModal() {
+            const exportObj = {
+                version: "1.0",
+                exportTime: new Date().toISOString(),
+                mistakes: getStorageData(STORAGE_MISTAKES),
+                completed: getStorageData(STORAGE_COMPLETED)
+            };
+            const jsonStr = JSON.stringify(exportObj, null, 2);
+
+            openModal('💾 匯出紀錄 (自行保存以下文字，再次匯入時可復原目前的學習紀錄)', jsonStr, [
+                `<button class="btn btn-reset" onclick="closeModal()" style="width: 80px;">關閉</button>`,
+                `<button class="btn btn-apply" onclick="copyExportText()">🗐 複製</button>`
+            ]);
+        }
+
+        function copyExportText() {
+            const textarea = document.getElementById('modalTextarea');
+            textarea.select();
+            textarea.setSelectionRange(0, 99999);
+            navigator.clipboard.writeText(textarea.value).then(() => {
+                alert('已成功複製到剪貼簿！');
+            }).catch(() => {
+                document.execCommand('copy');
+                alert('已複製到剪貼簿！');
+            });
+        }
+
+        function openTextImportModal() {
+            openModal('📥 匯入紀錄 (貼上之前匯出的學習紀錄)', '', [
+                `<button class="btn btn-reset" onclick="closeModal()" style="width: 80px;">取消</button>`,
+                `<button class="btn btn-apply" onclick="applyTextImport()">確認匯入</button>`
+            ]);
+            document.getElementById('modalTextarea').placeholder = "請貼上之前匯出的學習紀錄...";
+        }
+
+        function applyTextImport() {
+            const rawText = document.getElementById('modalTextarea').value.trim();
+            if (!rawText) {
+                alert('請先貼上資料文字！');
+                return;
+            }
+
+            try {
+                const data = JSON.parse(rawText);
+                if (data.mistakes || data.completed) {
+                    if (confirm('匯入將會覆蓋目前的學習紀錄，是否繼續？')) {
+                        saveStorageData(STORAGE_MISTAKES, data.mistakes || {});
+                        saveStorageData(STORAGE_COMPLETED, data.completed || {});
+                        alert('匯入成功！');
+                        closeModal();
+                        applyFilter(true);
+                    }
+                } else {
+                    alert('資料格式無效，請確認是否貼上正確的資料。');
+                }
+            } catch (err) {
+                alert('無法解析文字，格式不正確。');
+            }
         }
 
         function removeMistake(qId) {
@@ -747,67 +832,10 @@
         function updateModeButtons() {
             const mBtn = document.getElementById('mistakeModeBtn');
             const cBtn = document.getElementById('completedModeBtn');
-            
-            if(isMistakeOnlyMode) mBtn.classList.add('active'); 
-            else mBtn.classList.remove('active');
-
-            if(isCompletedOnlyMode) cBtn.classList.add('active'); 
-            else cBtn.classList.remove('active');
+            if(isMistakeOnlyMode) mBtn.classList.add('active'); else mBtn.classList.remove('active');
+            if(isCompletedOnlyMode) cBtn.classList.add('active'); else cBtn.classList.remove('active');
         }
 
-        // 匯出與匯入功能
-        function exportData() {
-            const now = new Date();
-            const yyyymmdd = `${now.getFullYear()}${String(now.getMonth()+1).padStart(2,'0')}${String(now.getDate()).padStart(2,'0')}`;
-            const defaultName = `user-${yyyymmdd}`;
-
-            const exportObj = {
-                version: "1.0",
-                exportTime: now.toISOString(),
-                mistakes: getStorageData(STORAGE_MISTAKES),
-                completed: getStorageData(STORAGE_COMPLETED)
-            };
-
-            const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(exportObj, null, 2));
-            const downloadAnchor = document.createElement('a');
-            downloadAnchor.setAttribute("href", dataStr);
-            downloadAnchor.setAttribute("download", `${defaultName}.json`);
-            document.body.appendChild(downloadAnchor);
-            downloadAnchor.click();
-            downloadAnchor.remove();
-        }
-
-        function importData() {
-            document.getElementById('importFileInput').click();
-        }
-
-        function handleFileImport(event) {
-            const file = event.target.files[0];
-            if (!file) return;
-
-            const reader = new FileReader();
-            reader.onload = function(e) {
-                try {
-                    const data = JSON.parse(e.target.result);
-                    if (data.mistakes || data.completed) {
-                        if (confirm('匯入將會覆蓋目前紀錄，是否繼續？')) {
-                            saveStorageData(STORAGE_MISTAKES, data.mistakes || {});
-                            saveStorageData(STORAGE_COMPLETED, data.completed || {});
-                            alert('匯入成功！');
-                            applyFilter(true);
-                        }
-                    } else {
-                        alert('檔案格式不正確。');
-                    }
-                } catch (err) {
-                    alert('無法讀取 JSON 檔案。');
-                }
-            };
-            reader.readAsText(file);
-            event.target.value = '';
-        }
-
-        // 篩選與渲染
         function applyFilter(keepScroll = false, minimize = true) {
             const currentScroll = keepScroll ? window.scrollY : 0;
 
@@ -816,7 +844,6 @@
                 if (!container.classList.contains('minimized')) {
                     container.classList.add('minimized');
                     document.getElementById('toggleBtn').innerText = "🔍 顯示";
-                    document.getElementById('resetBtnContainer').style.display = "none";
                 }
             }
 
@@ -829,18 +856,13 @@
             const keyword = document.getElementById('keyword').value.toLowerCase();
             const sortBy = document.getElementById('sortBy').value;
 
-            // 卷別勾選
             const paperCBs = Array.from(document.querySelectorAll('.paper-cb:checked'));
             const selectedTypes = [...new Set(paperCBs.map(cb => cb.getAttribute('data-type')))];
             const selectedSections = paperCBs.map(cb => cb.getAttribute('data-section'));
 
-            // 年份 (來自 Chip)
             const selectedYears = Array.from(document.querySelectorAll('.chip.active[data-group="year"]')).map(c => c.getAttribute('data-value'));
-
-            // 課題
             const selectedTopics = Array.from(document.querySelectorAll('.topic-cb:checked')).map(cb => cb.value);
 
-            // 級別與難度 Chips
             const selectedLevels = Array.from(document.querySelectorAll('.chip.active[data-group="level"]')).map(c => c.getAttribute('data-value'));
             const selectedDiffs = Array.from(document.querySelectorAll('.chip.active[data-group="diff"]')).map(c => c.getAttribute('data-value'));
 
@@ -874,7 +896,6 @@
                 return matchKeyword && matchLevel && matchType && matchSection && matchYear && matchDiff && matchTopic;
             });
 
-            // 排序
             filtered.sort((a, b) => {
                 if (sortBy === 'year-desc') return parseInt(b.year) - parseInt(a.year);
                 if (sortBy === 'year-asc') return parseInt(a.year) - parseInt(b.year);
@@ -890,7 +911,7 @@
             });
 
             if(filtered.length === 0) {
-                list.innerHTML = `<p style="text-align:center; color:#999; margin-top:50px;">沒有符合條件的題目。</p>`;
+                list.innerHTML = `<p style="text-align:center; color:#999; margin-top:50px;">沒有符合條件的題目。請嘗試更改篩選條件！</p>`;
                 return;
             }
 
@@ -917,35 +938,33 @@
                         <div class="detail-content">${q.solution}</div>
                     </details>
 
-                    <!-- 筆記顯示 -->
                     ${isSaved ? `
                         <div class="note-box mistake-note-box">
                             <div class="note-header"><span>📝 錯題筆記</span><span>${mInfo.time}</span></div>
-                            <div>${mInfo.note || '（無筆記）'}</div>
+                            <div style="white-space: pre-wrap;">${mInfo.note}</div>
                         </div>
                     ` : ''}
 
                     ${isDone ? `
                         <div class="note-box completed-note-box">
                             <div class="note-header"><span>✅ 完成紀錄</span><span>${cInfo.time}</span></div>
-                            <div>${cInfo.note || '（無筆記）'}</div>
+                            <div style="white-space: pre-wrap;">${cInfo.note}</div>
                         </div>
                     ` : ''}
 
-                    <!-- 按鈕列 -->
                     <div class="card-actions">
                         ${isDone ? `
-                            <button class="btn-card is-done" onclick="addOrEditCompleted('${q.id}')">✏️ 完成筆記</button>
+                            <button class="btn-card is-done" onclick="addOrEditCompleted('${q.id}')">✏️ 筆記</button>
                             <button class="btn-card" onclick="removeCompleted('${q.id}')">取消完成</button>
                         ` : `
-                            <button class="btn-card" onclick="addOrEditCompleted('${q.id}')">✅ 完成</button>
+                            <button class="btn-card" onclick="addOrEditCompleted('${q.id}')">✅</button>
                         `}
 
                         ${isSaved ? `
                             <button class="btn-card is-saved" onclick="addOrEditMistake('${q.id}')">✏️ 錯題筆記</button>
                             <button class="btn-card" onclick="removeMistake('${q.id}')">移除錯題</button>
                         ` : `
-                            <button class="btn-card" onclick="addOrEditMistake('${q.id}')">📌 錯題</button>
+                            <button class="btn-card" onclick="addOrEditMistake('${q.id}')">📌</button>
                         `}
                     </div>
                 </div>
@@ -973,7 +992,6 @@
             document.querySelectorAll('.chip.active').forEach(chip => chip.classList.remove('active'));
             document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
             
-            // 重置全選按鈕文字
             document.querySelectorAll('.btn-select-all').forEach(btn => btn.innerText = "全選");
 
             updateFilterCount();
@@ -983,20 +1001,16 @@
         function toggleFilter() {
             const container = document.getElementById('filterContainer');
             const toggleBtn = document.getElementById('toggleBtn');
-            const resetContainer = document.getElementById('resetBtnContainer');
             
             if (container.classList.contains('minimized')) {
                 container.classList.remove('minimized');
-                toggleBtn.innerText = "🔍 隱藏";
-                resetContainer.style.display = "inline-block";
+                toggleBtn.innerText = "👀篩選器";
             } else {
                 container.classList.add('minimized');
-                toggleBtn.innerText = "🔍 顯示";
-                resetContainer.style.display = "none";
+                toggleBtn.innerText = "👀篩選器";
             }
         }
 
-        // 初始化
         initYearChips();
         updateBadges();
         updateFilterCount();
