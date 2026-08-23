@@ -246,7 +246,7 @@
             flex-shrink: 0;
         }
         .btn { padding: 3px 4px; border: none; border-radius: 8px; font-size: 9pt; cursor: pointer; font-weight: 500; transition: all 1s; white-space: nowrap; }
-        .btn-toggle { background: #5e1e96; color: white; border: 1px solid #9621ff; font-weight: bold; }
+        .btn-toggle { background: #5e1e96; color: white; border: 2px outset #9621ff; font-weight: bold; }
         .btn-reset { background: #4c3e5c; color: yellow; height: 30px; border: 2px outset red; }
         .btn-cancel { background: #e2e8f0; color: #334155; }
         
@@ -371,7 +371,7 @@
         <div class="filter-header">
             <div class="filter-header-left">
                 <button class="btn btn-toggle" id="toggleBtn" onclick="toggleFilter()">👀 篩選器</button>
-                <button class="btn btn-completed-mode" id="completedModeBtn" onclick="toggleCompletedMode()">✅ 已完成 (<span id="completedCount">0</span>)</button>
+                <button class="btn btn-completed-mode" id="completedModeBtn" onclick="toggleCompletedMode()">☑️ 已完成 (<span id="completedCount">0</span>)</button>
                 <button class="btn btn-mistake-mode" id="mistakeModeBtn" onclick="toggleMistakeMode()">📌 錯題簿 (<span id="mistakeCount">0</span>)</button>
                 <button class="btn btn-io" onclick="openTextExportModal()">💾</button>
                 <button class="btn btn-io" onclick="openTextImportModal()">📥</button>
@@ -589,7 +589,7 @@
             let html = '';
             for(let y = 2025; y >= 2012; y--) {
                 const shortYear = `'${y.toString().slice(-2)}`;
-                html += `<button class="chip chip-year" data-group="year" data-value="${y}" onclick="toggleChip(this)">${shortYear}</button>`;
+                html += `<button class="chip chip-year" style="font-family: SFMono-Regular, Consolas, Menlo, monospace;" data-group="year" data-value="${y}" onclick="toggleChip(this)">${shortYear}</button>`;
             }
             container.innerHTML = html;
         }
@@ -948,7 +948,7 @@
 
                     ${isDone ? `
                         <div class="note-box completed-note-box">
-                            <div class="note-header"><span>✅ 完成紀錄</span><span>${cInfo.time}</span></div>
+                            <div class="note-header"><span>☑️ 完成紀錄</span><span>${cInfo.time}</span></div>
                             <div style="white-space: pre-wrap;">${cInfo.note}</div>
                         </div>
                     ` : ''}
@@ -958,7 +958,7 @@
                             <button class="btn-card is-done" onclick="addOrEditCompleted('${q.id}')">✏️ 筆記</button>
                             <button class="btn-card" onclick="removeCompleted('${q.id}')">取消完成</button>
                         ` : `
-                            <button class="btn-card" onclick="addOrEditCompleted('${q.id}')">✅</button>
+                            <button class="btn-card" onclick="addOrEditCompleted('${q.id}')">☑️</button>
                         `}
 
                         ${isSaved ? `
