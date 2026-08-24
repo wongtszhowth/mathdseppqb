@@ -5,7 +5,7 @@
 questions.push(
     {
         id: "T-LKK01-CE-MATH 1",
-        year: [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
+        year: 2025,
         type: "P1",
         section: "B",
         level: ["Senior"],
