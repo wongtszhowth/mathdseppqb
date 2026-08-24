@@ -1,8 +1,5 @@
 // 2025dsep1.js
-// 這是主檔案，負責宣告全域變數
-window.questions = []; 
 
-// 您可以在這裡放第一批題目
 questions.push(
     {
         id: "2025-DSE-MATH-CP1-Q01",
