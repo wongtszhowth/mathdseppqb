@@ -59,7 +59,7 @@ questions.push(
         year: 2015,
         type: "P1",
         section: "A1",
-        level: ["Junior"],
+        level: ["Senior"],
         domain: ["Algebra"],
         topic: ["Linear Inequalities and Compound Inequalities"],
         difficulty: 1,
