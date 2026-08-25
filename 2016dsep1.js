@@ -321,7 +321,7 @@ questions.push(
         section: "B",
         level: ["Senior"],
         domain: ["Geometry"],
-        topic: ["Geometry (Triangles)", "Equations of Circles", "Coordinate Geometry"],
+        topic: ["Geometry (Triangles)", "Equations of Circles", "Coordinate Geometry", "Four Centres of a Triangle"],
         difficulty: 3,
         content: `$\\Delta OPQ$ 為一鈍角三角形。 將 $\\Delta OPQ$ 的內心及外心分別記為 $I$ 及 $J$。 已知 $P$、$I$ 與 $J$ 共線。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明 $OP = PQ$。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">引入一直角坐標系使得 $O$ 及 $Q$ 的坐標分別為 $(0, 0)$ 及 $(40, 30)$，而 $P$ 的 $y$ 坐標為 $19$。 設 $C$ 為通過 $O$、$P$ 及 $Q$ 的圓。</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求 $C$ 的方程。 </div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">設 $L_1$ 及 $L_2$ 為 $C$ 的兩切線使得每一切線的斜率均為 $\\dfrac{3}{4}$ 且 $L_1$ 的 $y$ 截距較 $L_2$ 大。 $L_1$ 分別與 $x$ 軸及 $y$ 軸相交於 $S$ 及 $T$，而 $L_2$ 分別與 $x$ 軸及 $y$ 軸相交於 $U$ 及 $V$。 某人宣稱梯形 $STUV$ 的面積超過 $17\\,000$。 該宣稱是否正確？ 試解釋你的答案。 <br><span class="marks">(9分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 利用內心外心性質。 <br>(b) 求圓方程後求切線及梯形面積。 `,
