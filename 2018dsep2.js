@@ -820,7 +820,7 @@ D.\t$78^\\circ$
         section: "MC_B",
         level: ["Senior"],
         domain: ["Geometry"],
-        topic: ["Coordinate Geometry"],
+        topic: ["Coordinate Geometry", "Four Centres of a Triangle"],
         difficulty: 3,
         content: `已知 $a$ 為一正常數。 直線 $2x+5y=a$ 分別與 $x$ 軸及 $y$ 軸相交於點 $P$ 及點 $Q$。 設 $R$ 為 $y$ 軸上的一點使得 $\\Delta PQR$ 的垂心的 $x$ 坐標為 $10$。 求 $R$ 的 $y$ 坐標。 
 <div class="q-mcopt">
