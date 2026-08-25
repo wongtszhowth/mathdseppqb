@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HKDSE 數學題目庫</title>
+    <title id="pageTitle">HKDSE 數學題目庫</title>
     <script>
         window.MathJax = {
             tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }, 
@@ -246,6 +246,7 @@
         }
         .btn { padding: 3px 4px; border: none; border-radius: 8px; font-size: 9pt; cursor: pointer; font-weight: 500; transition: all 1s; white-space: nowrap; }
         .btn-toggle { background: #5e1e96; color: white; border: 2px outset #9621ff; font-weight: bold; padding: 0 10px; }
+        .btn-lang { background: #0284c7; color: white; border: 2px outset #38bdf8; font-weight: bold; padding: 0 8px; }
         .btn-reset { background: #4c3e5c; color: yellow; height: 30px; border: 2px outset red; }
         .btn-cancel { background: #e2e8f0; color: #334155; }
         
@@ -261,7 +262,6 @@
         .btn-apply:hover { background: #6d28d9; }
 
         .btn-select-all { font-size: 8pt; padding: 1px 4px; border-radius: 4px; background: #e2e8f0; border: 1px solid #cbd5e1; cursor: pointer; width: 80px; height: 33px; }
-
 
         /* 題目卡片 */
         #list { max-width: 800px; margin: 0 auto; padding-bottom: 8px; }
@@ -294,49 +294,30 @@
         summary { padding: 3px 5px; font-weight: bold; color: #475569; cursor: pointer; }
         .detail-content { padding: 0px 5px; background: #ffffff; }
 
-	.ms-container {
-      width: 100%;
-      margin: 12px 0;
-      font-family: Times, "Times New Roman", "PMingLiU", "新細明體", serif;
-      font-size: 10pt;
-      letter-spacing: 0em;
-      white-space: pre-wrap;
-    }
-    .ms-row {
-      display: grid;
-      grid-template-columns: 25px 25px 25px 1fr 65px;
-      align-items: start;
-	  line-height: 1.7;
-	  padding: 1px 0px;
-      margin-bottom: 0px;
-    }
-    /* 各層編號 */
-    .ms-num1 { grid-column: 1; }
-    .ms-num2 { grid-column: 2; }
-    .ms-num3 { grid-column: 3; }
-    /* 內容區塊 */
-    .ms-content {
-      grid-column: 4;
-    }
-    /* 讓內容從「第一層」位置開始 (欄 1 至 4) */
-    .ms-content.ms-from-l1 {
-      grid-column: 1 / 5;
-    }
-	/* 讓內容從「第二層」位置開始 (欄 2 至 4) */
-    .ms-content.ms-from-l2 {
-      grid-column: 2 / 5;
-    }
-    /* 讓內容從「第三層」位置開始 (欄 3 至 4) */
-    .ms-content.ms-from-l3 {
-      grid-column: 3 / 5;
-    }
-    /* 右側分數 (欄位內置中) */
-    .ms-mark {
-      grid-column: 5;
-      text-align: center;
-      white-space: nowrap;
-	  align-self: center;
-    }
+        .ms-container {
+            width: 100%;
+            margin: 12px 0;
+            font-family: Times, "Times New Roman", "PMingLiU", "新細明體", serif;
+            font-size: 10pt;
+            letter-spacing: 0em;
+            white-space: pre-wrap;
+        }
+        .ms-row {
+            display: grid;
+            grid-template-columns: 25px 25px 25px 1fr 65px;
+            align-items: start;
+            line-height: 1.7;
+            padding: 1px 0px;
+            margin-bottom: 0px;
+        }
+        .ms-num1 { grid-column: 1; }
+        .ms-num2 { grid-column: 2; }
+        .ms-num3 { grid-column: 3; }
+        .ms-content { grid-column: 4; }
+        .ms-content.ms-from-l1 { grid-column: 1 / 5; }
+        .ms-content.ms-from-l2 { grid-column: 2 / 5; }
+        .ms-content.ms-from-l3 { grid-column: 3 / 5; }
+        .ms-mark { grid-column: 5; text-align: center; white-space: nowrap; align-self: center; }
 
         .card-actions { display: flex; justify-content: flex-end; margin-top: 10px; gap: 8px; }
         .btn-card { padding: 4px 10px; font-size: 10pt; border-radius: 6px; border: 1px solid #cbd5e1; background: #f8fafc; cursor: pointer; transition: all 0.2s; color: #475569; }
@@ -364,16 +345,17 @@
 </head>
 <body>
 
-    <h1>🔍 HKDSE 數學題目庫 🔎</h1>
+    <h1 id="mainHeader">🔍 HKDSE 數學題目庫 🔎</h1>
     
     <div class="filter-container" id="filterContainer">
         <div class="filter-header">
             <div class="filter-header-left">
                 <button class="btn btn-toggle" id="toggleBtn" onclick="toggleFilter()">👀 篩選器</button>
-                <button class="btn btn-completed-mode" id="completedModeBtn" onclick="toggleCompletedMode()">☑️ 已完成 (<span id="completedCount">0</span>)</button>
-                <button class="btn btn-mistake-mode" id="mistakeModeBtn" onclick="toggleMistakeMode()">📌 錯題簿 (<span id="mistakeCount">0</span>)</button>
+                <button class="btn btn-completed-mode" id="completedModeBtn" onclick="toggleCompletedMode()">☑️ (<span id="completedCount">0</span>)</button>
+                <button class="btn btn-mistake-mode" id="mistakeModeBtn" onclick="toggleMistakeMode()">📌 (<span id="mistakeCount">0</span>)</button>
                 <button class="btn btn-io" onclick="openTextExportModal()">💾</button>
                 <button class="btn btn-io" onclick="openTextImportModal()">📥</button>
+                <button class="btn btn-lang" id="langBtn" onclick="toggleLanguage()">🌐 Eng</button>
             </div>
         </div>
         
@@ -382,7 +364,7 @@
                 <!-- 搜尋欄位與重設條件按鈕同列 -->
                 <div class="search-sort-row">
                     <input type="text" id="keyword" placeholder="搜尋題目關鍵字..." onkeydown="if(event.key === 'Enter') applyFilter(false, false)">
-                    <button class="btn btn-reset" onclick="resetFilters()">重設條件</button>
+                    <button class="btn btn-reset" id="resetBtn" onclick="resetFilters()">重設條件</button>
                 </div>
 
                 <!-- 三欄式排版：卷一、卷二、年份 (標題點擊可全選) -->
@@ -390,30 +372,30 @@
                     <!-- 第一欄：卷一 -->
                     <div class="paper-card">
                         <div class="paper-header">
-                            <span class="paper-title-btn" onclick="togglePaperSelectAll('P1')" title="點擊全選/取消全選">📄 卷一 🔄</span>
+                            <span class="paper-title-btn" id="titleP1" onclick="togglePaperSelectAll('P1')" title="點擊全選/取消全選">📄 卷一 🔄</span>
                         </div>
                         <div class="paper-options">
-                            <label class="checkbox-label"><input type="checkbox" class="paper-cb" data-type="P1" data-section="A1" onchange="updateFilterCount()"> 甲部(1)</label>
-                            <label class="checkbox-label"><input type="checkbox" class="paper-cb" data-type="P1" data-section="A2" onchange="updateFilterCount()"> 甲部(2)</label>
-                            <label class="checkbox-label"><input type="checkbox" class="paper-cb" data-type="P1" data-section="B" onchange="updateFilterCount()"> 乙部</label>
+                            <label class="checkbox-label"><input type="checkbox" class="paper-cb" data-type="P1" data-section="A1" onchange="updateFilterCount()"> <span id="lblP1A1">甲部(1)</span></label>
+                            <label class="checkbox-label"><input type="checkbox" class="paper-cb" data-type="P1" data-section="A2" onchange="updateFilterCount()"> <span id="lblP1A2">甲部(2)</span></label>
+                            <label class="checkbox-label"><input type="checkbox" class="paper-cb" data-type="P1" data-section="B" onchange="updateFilterCount()"> <span id="lblP1B">乙部</span></label>
                         </div>
                     </div>
 
                     <!-- 第二欄：卷二 -->
                     <div class="paper-card">
                         <div class="paper-header">
-                            <span class="paper-title-btn" onclick="togglePaperSelectAll('P2')" title="點擊全選/取消全選">📄 卷二 🔄</span>
+                            <span class="paper-title-btn" id="titleP2" onclick="togglePaperSelectAll('P2')" title="點擊全選/取消全選">📄 卷二 🔄</span>
                         </div>
                         <div class="paper-options">
-                            <label class="checkbox-label"><input type="checkbox" class="paper-cb" data-type="P2" data-section="MC_A" onchange="updateFilterCount()"> 甲部</label>
-                            <label class="checkbox-label"><input type="checkbox" class="paper-cb" data-type="P2" data-section="MC_B" onchange="updateFilterCount()"> 乙部</label>
+                            <label class="checkbox-label"><input type="checkbox" class="paper-cb" data-type="P2" data-section="MC_A" onchange="updateFilterCount()"> <span id="lblP2A">甲部</span></label>
+                            <label class="checkbox-label"><input type="checkbox" class="paper-cb" data-type="P2" data-section="MC_B" onchange="updateFilterCount()"> <span id="lblP2B">乙部</span></label>
                         </div>
                     </div>
 
                     <!-- 第三欄：年份 (標題點擊可全選) -->
                     <div class="paper-card">
                         <div class="paper-header">
-                            <span class="paper-title-btn" onclick="toggleYearSelectAll()" title="點擊全選/取消全選">📅 年份 🔄</span>
+                            <span class="paper-title-btn" id="titleYear" onclick="toggleYearSelectAll()" title="點擊全選/取消全選">📅 年份 🔄</span>
                         </div>
                         <div class="year-scroll-box">
                             <div class="chip-group" id="yearChipGroup">
@@ -425,10 +407,10 @@
 
                 <!-- 級別與難度 -->
                 <div>
-                    <div class="filter-title">🔥 級別 及 難度</div>
+                    <div class="filter-title" id="titleLevelDiff">🔥 級別 及 難度</div>
                     <div class="chip-group">
-                        <button class="chip" data-group="level" data-value="Junior" onclick="toggleChip(this)" style="width: 55px; height: 33px;">初中</button>
-                        <button class="chip" data-group="level" data-value="Senior" onclick="toggleChip(this)" style="width: 55px; height: 33px;">高中</button>
+                        <button class="chip" id="chipJunior" data-group="level" data-value="Junior" onclick="toggleChip(this)" style="width: 55px; height: 33px;">初中</button>
+                        <button class="chip" id="chipSenior" data-group="level" data-value="Senior" onclick="toggleChip(this)" style="width: 55px; height: 33px;">高中</button>
                         <span style="color:#cbd5e1; font-weight:bold; margin: 0 4px;">|</span>
                         <button class="chip chip-diff" data-group="diff" data-value="1" onclick="toggleChip(this)" style="width: 55px; height: 33px;">Lv.2</button>
                         <button class="chip chip-diff" data-group="diff" data-value="2" onclick="toggleChip(this)" style="width: 55px; height: 33px;">Lv.3-4</button>
@@ -438,43 +420,43 @@
 
                 <!-- 範疇與課題 -->
                 <div>
-                    <div class="filter-title">🧩 範疇 與 課題</div>
+                    <div class="filter-title" id="titleDomainTopic">🧩 範疇 與 課題</div>
                     <div style="display: flex; flex-direction: column; gap: 8px;">
                         
                         <!-- 數與代數 -->
                         <div class="dropdown-select-container domain-algebra">
                             <div style="display: flex; align-items: center; gap: 6px;">
                                 <button class="dropdown-btn" onclick="toggleDropdown('algebraDropdown')">
-                                    <span>數與代數 <span id="algebraCountLabel">(0/25)</span></span> ▾
+                                    <span><span id="domainAlgebra">數與代數</span> <span id="algebraCountLabel">(0/25)</span></span> ▾
                                 </button>
-                                <button class="btn-select-all" onclick="toggleDropdownSelectAll('algebraDropdown', this)">全選</button>
+                                <button class="btn-select-all btn-sel-all" onclick="toggleDropdownSelectAll('algebraDropdown', this)">全選</button>
                             </div>
                             <div class="dropdown-menu" id="algebraDropdown">
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Laws of Indices" onchange="updateFilterCount()"> 指數律</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Factorization" onchange="updateFilterCount()"> 因式分解</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Change of Subject" onchange="updateFilterCount()"> 主項變換</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Algebraic Expressions" onchange="updateFilterCount()"> 代數式</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Algebraic Fractions and Fractional Equations" onchange="updateFilterCount()"> 代數分式及分式方程</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Identities" onchange="updateFilterCount()"> 恆等式</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Base Conversion" onchange="updateFilterCount()"> 進制轉換</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Approximation and Errors" onchange="updateFilterCount()"> 近似與誤差</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Estimation" onchange="updateFilterCount()"> 估算</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Complex Numbers" onchange="updateFilterCount()"> 複數</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Percentages" onchange="updateFilterCount()"> 百分法</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Rates, Ratios and Proportions" onchange="updateFilterCount()"> 率、比及比例</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Linear Equations in Two Unknowns" onchange="updateFilterCount()"> 二元一次方程</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Quadratic Equations in One Unknown" onchange="updateFilterCount()"> 一元二次方程</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Linear Inequalities and Compound Inequalities" onchange="updateFilterCount()"> 一元一次不等式及複合不等式</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Quadratic Inequalities in One Unknown" onchange="updateFilterCount()"> 一元二次不等式</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Linear Inequalities in Two Unknowns" onchange="updateFilterCount()"> 二元一次不等式</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Linear Programming" onchange="updateFilterCount()"> 線性規劃</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Sequences" onchange="updateFilterCount()"> 數列</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Variations" onchange="updateFilterCount()"> 變分</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Polynomials" onchange="updateFilterCount()"> 多項式</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Remainder Theorem and Factor Theorem" onchange="updateFilterCount()"> 餘式定理及因式定理</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="H.C.F. and L.C.M." onchange="updateFilterCount()"> 最大公因式及最小公倍式</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Functions and Graphs" onchange="updateFilterCount()"> 函數及其圖像</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Exponential Functions and Logarithm Functions" onchange="updateFilterCount()"> 指數函數與對數函數</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Laws of Indices" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Laws of Indices">指數律</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Factorization" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Factorization">因式分解</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Change of Subject" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Change of Subject">主項變換</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Algebraic Expressions" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Algebraic Expressions">代數式</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Algebraic Fractions and Fractional Equations" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Algebraic Fractions and Fractional Equations">代數分式及分式方程</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Identities" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Identities">恆等式</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Base Conversion" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Base Conversion">進制轉換</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Approximation and Errors" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Approximation and Errors">近似與誤差</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Estimation" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Estimation">估算</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Complex Numbers" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Complex Numbers">複數</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Percentages" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Percentages">百分法</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Rates, Ratios and Proportions" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Rates, Ratios and Proportions">率、比及比例</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Linear Equations in Two Unknowns" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Linear Equations in Two Unknowns">二元一次方程</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Quadratic Equations in One Unknown" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Quadratic Equations in One Unknown">一元二次方程</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Linear Inequalities and Compound Inequalities" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Linear Inequalities and Compound Inequalities">一元一次不等式及複合不等式</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Quadratic Inequalities in One Unknown" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Quadratic Inequalities in One Unknown">一元二次不等式</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Linear Inequalities in Two Unknowns" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Linear Inequalities in Two Unknowns">二元一次不等式</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Linear Programming" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Linear Programming">線性規劃</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Sequences" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Sequences">數列</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Variations" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Variations">變分</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Polynomials" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Polynomials">多項式</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Remainder Theorem and Factor Theorem" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Remainder Theorem and Factor Theorem">餘式定理及因式定理</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="H.C.F. and L.C.M." onchange="updateFilterCount()"> <span class="topic-text" data-topic="H.C.F. and L.C.M.">最大公因式及最小公倍式</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Functions and Graphs" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Functions and Graphs">函數及其圖像</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Exponential Functions and Logarithm Functions" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Exponential Functions and Logarithm Functions">指數函數與對數函數</span></label>
                             </div>
                         </div>
 
@@ -482,26 +464,26 @@
                         <div class="dropdown-select-container domain-geo">
                             <div style="display: flex; align-items: center; gap: 6px;">
                                 <button class="dropdown-btn" onclick="toggleDropdown('geoDropdown')">
-                                    <span>度量、圖形與空間 <span id="geoCountLabel">(0/15)</span></span> ▾
+                                    <span><span id="domainGeo">度量、圖形與空間</span> <span id="geoCountLabel">(0/15)</span></span> ▾
                                 </button>
-                                <button class="btn-select-all" onclick="toggleDropdownSelectAll('geoDropdown', this)">全選</button>
+                                <button class="btn-select-all btn-sel-all" onclick="toggleDropdownSelectAll('geoDropdown', this)">全選</button>
                             </div>
                             <div class="dropdown-menu" id="geoDropdown">
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Perimeters and Areas" onchange="updateFilterCount()"> 周界及面積</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Mensuration" onchange="updateFilterCount()"> 求積法</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Geometry (Triangles)" onchange="updateFilterCount()"> 幾何 (三角形)</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Geometry (Polygons)" onchange="updateFilterCount()"> 幾何 (多邊形)</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Geometry (Circles)" onchange="updateFilterCount()"> 幾何 (圓形)</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Four Centres of a Triangle" onchange="updateFilterCount()"> 三角形的四心</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Pythagoras Theorem" onchange="updateFilterCount()"> 畢氏定理</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Equations of Straight Lines" onchange="updateFilterCount()"> 直線方程</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Equations of Circles" onchange="updateFilterCount()"> 圓方程</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Coordinate Geometry" onchange="updateFilterCount()"> 坐標幾何</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Intersection of Straight Line and Circle" onchange="updateFilterCount()"> 直線與圓的相交</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Trigonometric Ratios" onchange="updateFilterCount()"> 三角比</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Trigonometry (2D)" onchange="updateFilterCount()"> 三角學 (2D)</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Trigonometry (3D)" onchange="updateFilterCount()"> 三角學 (3D)</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Loci" onchange="updateFilterCount()"> 軌跡</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Perimeters and Areas" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Perimeters and Areas">周界及面積</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Mensuration" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Mensuration">求積法</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Geometry (Triangles)" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Geometry (Triangles)">幾何 (三角形)</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Geometry (Polygons)" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Geometry (Polygons)">幾何 (多邊形)</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Geometry (Circles)" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Geometry (Circles)">幾何 (圓形)</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Four Centres of a Triangle" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Four Centres of a Triangle">三角形的四心</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Pythagoras Theorem" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Pythagoras Theorem">畢氏定理</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Equations of Straight Lines" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Equations of Straight Lines">直線方程</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Equations of Circles" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Equations of Circles">圓方程</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Coordinate Geometry" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Coordinate Geometry">坐標幾何</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Intersection of Straight Line and Circle" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Intersection of Straight Line and Circle">直線與圓的相交</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Trigonometric Ratios" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Trigonometric Ratios">三角比</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Trigonometry (2D)" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Trigonometry (2D)">三角學 (2D)</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Trigonometry (3D)" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Trigonometry (3D)">三角學 (3D)</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Loci" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Loci">軌跡</span></label>
                             </div>
                         </div>
 
@@ -509,18 +491,18 @@
                         <div class="dropdown-select-container domain-data">
                             <div style="display: flex; align-items: center; gap: 6px;">
                                 <button class="dropdown-btn" onclick="toggleDropdown('dataDropdown')">
-                                    <span>數據處理 <span id="dataCountLabel">(0/7)</span></span> ▾
+                                    <span><span id="domainData">數據處理</span> <span id="dataCountLabel">(0/7)</span></span> ▾
                                 </button>
-                                <button class="btn-select-all" onclick="toggleDropdownSelectAll('dataDropdown', this)">全選</button>
+                                <button class="btn-select-all btn-sel-all" onclick="toggleDropdownSelectAll('dataDropdown', this)">全選</button>
                             </div>
                             <div class="dropdown-menu" id="dataDropdown">
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Statistical Graphs" onchange="updateFilterCount()"> 統計圖表</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Measures of Central Tendency" onchange="updateFilterCount()"> 集中趨勢的量度</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Measures of Dispersion" onchange="updateFilterCount()"> 離差的量度</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Standard Score" onchange="updateFilterCount()"> 標準分</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Change of Data" onchange="updateFilterCount()"> 數據的改變</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Permutations and Combinations" onchange="updateFilterCount()"> 排列與組合</label>
-                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Probability" onchange="updateFilterCount()"> 概率</label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Statistical Graphs" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Statistical Graphs">統計圖表</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Measures of Central Tendency" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Measures of Central Tendency">集中趨勢的量度</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Measures of Dispersion" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Measures of Dispersion">離差的量度</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Standard Score" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Standard Score">標準分</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Change of Data" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Change of Data">數據的改變</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Permutations and Combinations" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Permutations and Combinations">排列與組合</span></label>
+                                <label class="checkbox-label"><input type="checkbox" class="topic-cb" value="Probability" onchange="updateFilterCount()"> <span class="topic-text" data-topic="Probability">概率</span></label>
                             </div>
                         </div>
 
@@ -531,14 +513,14 @@
             <!-- 排序與套用列 -->
             <div class="btn-group-action">
                 <select id="sortBy" class="sort-select">
-                    <option value="type">📄 按卷別 (卷一 ➔ 卷二)</option>
-                    <option value="year-desc">📅 按年份 (新 ➔ 舊)</option>
-                    <option value="year-asc">📅 按年份 (舊 ➔ 新)</option>
-                    <option value="diff-asc">🔥 按難度 (低 ➔ 高)</option>
-                    <option value="diff-desc">🔥 按難度 (高 ➔ 低)</option>
-                    <option value="time-desc">⏱️ 按紀錄時間 (新 ➔ 舊)</option>
+                    <option value="type" id="optSortType">📄 按卷別 (卷一 ➔ 卷二)</option>
+                    <option value="year-desc" id="optSortYearDesc">📅 按年份 (新 ➔ 舊)</option>
+                    <option value="year-asc" id="optSortYearAsc">📅 按年份 (舊 ➔ 新)</option>
+                    <option value="diff-asc" id="optSortDiffAsc">🔥 按難度 (低 ➔ 高)</option>
+                    <option value="diff-desc" id="optSortDiffDesc">🔥 按難度 (高 ➔ 低)</option>
+                    <option value="time-desc" id="optSortTimeDesc">⏱️ 按紀錄時間 (新 ➔ 舊)</option>
                 </select>
-                <button class="btn btn-apply" onclick="applyFilter(false)">🔍 篩選</button>
+                <button class="btn btn-apply" id="applyBtn" onclick="applyFilter(false)">🔍 篩選</button>
             </div>
         </div>
     </div>
@@ -559,7 +541,7 @@
     </div>
 
     <script src="teachers.js"></script>
-	<script src="2025dsep1.js"></script><script src="2025dsep2.js"></script>
+    <script src="2025dsep1.js"></script><script src="2025dsep2.js"></script>
     <script src="2024dsep1.js"></script><script src="2024dsep2.js"></script>
     <script src="2023dsep1.js"></script><script src="2023dsep2.js"></script>
     <script src="2022dsep1.js"></script><script src="2022dsep2.js"></script>
@@ -574,15 +556,298 @@
     <script src="2013dsep1.js"></script><script src="2013dsep2.js"></script>
     <script src="2012dsep1.js"></script><script src="2012dsep2.js"></script>
 	
-	<script>
+    <script>
         const STORAGE_MISTAKES = 'dse_math_mistakes';
         const STORAGE_COMPLETED = 'dse_math_completed';
 
+        let currentLang = 'tc'; // 'tc' 或 'en'
         let isMistakeOnlyMode = false;
         let isCompletedOnlyMode = false;
         
         let currentTargetQId = null;
         let currentTargetType = null;
+
+        /* 雙語字典數據 */
+        const i18n = {
+            tc: {
+                pageTitle: "HKDSE 數學題目庫",
+                mainHeader: "🔍 HKDSE 數學題目庫 🔎",
+                langBtn: "🌐 Eng",
+                toggleFilter: "👀 篩選器",
+                searchPlaceholder: "搜尋題目關鍵字...",
+                resetBtn: "重設條件",
+                titleP1: "📄 卷一 🔄",
+                titleP2: "📄 卷二 🔄",
+                titleYear: "📅 年份 🔄",
+                lblP1A1: "甲部(1)",
+                lblP1A2: "甲部(2)",
+                lblP1B: "乙部",
+                lblP2A: "甲部",
+                lblP2B: "乙部",
+                titleLevelDiff: "🔥 級別 及 難度",
+                chipJunior: "初中",
+                chipSenior: "高中",
+                titleDomainTopic: "🧩 範疇 與 課題",
+                domainAlgebra: "數與代數",
+                domainGeo: "度量、圖形與空間",
+                domainData: "數據處理",
+                selectAll: "全選",
+                deselectAll: "取消全選",
+                optSortType: "📄 按卷別 (卷一 ➔ 卷二)",
+                optSortYearDesc: "📅 按年份 (新 ➔ 舊)",
+                optSortYearAsc: "📅 按年份 (舊 ➔ 新)",
+                optSortDiffAsc: "🔥 按難度 (低 ➔ 高)",
+                optSortDiffDesc: "🔥 按難度 (高 ➔ 低)",
+                optSortTimeDesc: "⏱️ 按紀錄時間 (新 ➔ 舊)",
+                applyBtn: "🔍 篩選",
+                loading: "載入中...",
+                noConditionPrompt: "請選擇篩選條件或輸入關鍵字，並點擊「🔍 篩選」。<br>點擊 ☑️ 打開已完成題目；點擊 📌 打開錯題簿。",
+                noResultPrompt: "沒有符合條件的題目。請嘗試更改篩選條件！",
+                mistakeNoteTitle: "📝 錯題筆記",
+                completedRecordTitle: "☑️ 完成紀錄",
+                editNoteBtn: "✏️ 筆記",
+                editMistakeNoteBtn: "✏️ 錯題筆記",
+                removeCompletedBtn: "取消完成",
+                removeMistakeBtn: "移除錯題",
+                cancelBtn: "取消",
+                closeBtn: "關閉",
+                saveBtn: "儲存",
+                copyBtn: "🗐 複製",
+                confirmImportBtn: "確認匯入",
+                modalPlaceholder: "內容...",
+                exportTitle: "💾 匯出紀錄 (請自行保存以下文字，再次匯入時可復原目前的學習紀錄)",
+                importTitle: "📥 匯入紀錄 (請貼上之前匯出的學習紀錄)",
+                copiedSuccess: "已成功複製到剪貼簿！",
+                pastePrompt: "請先貼上資料文字！",
+                importConfirm: "匯入將會覆蓋目前的學習紀錄，是否繼續？",
+                importSuccess: "匯入成功！",
+                invalidFormat: "資料格式無效，請確認是否貼上正確的資料。",
+                parseError: "無法解析文字，格式不正確。",
+                removeMistakeConfirm: (id) => `確定從錯題簿移除 ${id} 嗎？`,
+                removeCompletedConfirm: (id) => `確定取消 ${id} 的完成狀態嗎？`,
+                mistakeModalTitle: (id) => `📌 ${id} 的錯題筆記`,
+                completedModalTitle: (id) => `✅ ${id} 完成紀錄`,
+                topics: {
+                    "Laws of Indices": "指數律",
+                    "Factorization": "因式分解",
+                    "Change of Subject": "主項變換",
+                    "Algebraic Expressions": "代數式",
+                    "Algebraic Fractions and Fractional Equations": "代數分式及分式方程",
+                    "Identities": "恆等式",
+                    "Base Conversion": "進制轉換",
+                    "Approximation and Errors": "近似與誤差",
+                    "Estimation": "估算",
+                    "Complex Numbers": "複數",
+                    "Percentages": "百分法",
+                    "Rates, Ratios and Proportions": "率、比及比例",
+                    "Linear Equations in Two Unknowns": "二元一次方程",
+                    "Quadratic Equations in One Unknown": "一元二次方程",
+                    "Linear Inequalities and Compound Inequalities": "一元一次不等式及複合不等式",
+                    "Quadratic Inequalities in One Unknown": "一元二次不等式",
+                    "Linear Inequalities in Two Unknowns": "二元一次不等式",
+                    "Linear Programming": "線性規劃",
+                    "Sequences": "數列",
+                    "Variations": "變分",
+                    "Polynomials": "多項式",
+                    "Remainder Theorem and Factor Theorem": "餘式定理及因式定理",
+                    "H.C.F. and L.C.M.": "最大公因式及最小公倍式",
+                    "Functions and Graphs": "函數及其圖像",
+                    "Exponential Functions and Logarithm Functions": "指數函數與對數函數",
+                    "Perimeters and Areas": "周界及面積",
+                    "Mensuration": "求積法",
+                    "Geometry (Triangles)": "幾何 (三角形)",
+                    "Geometry (Polygons)": "幾何 (多邊形)",
+                    "Geometry (Circles)": "幾何 (圓形)",
+                    "Four Centres of a Triangle": "三角形的四心",
+                    "Pythagoras Theorem": "畢氏定理",
+                    "Equations of Straight Lines": "直線方程",
+                    "Equations of Circles": "圓方程",
+                    "Coordinate Geometry": "坐標幾何",
+                    "Intersection of Straight Line and Circle": "直線與圓的相交",
+                    "Trigonometric Ratios": "三角比",
+                    "Trigonometry (2D)": "三角學 (2D)",
+                    "Trigonometry (3D)": "三角學 (3D)",
+                    "Loci": "軌跡",
+                    "Statistical Graphs": "統計圖表",
+                    "Measures of Central Tendency": "集中趨勢的量度",
+                    "Measures of Dispersion": "離差的量度",
+                    "Standard Score": "標準分",
+                    "Change of Data": "數據的改變",
+                    "Permutations and Combinations": "排列與組合",
+                    "Probability": "概率"
+                }
+            },
+            en: {
+                pageTitle: "HKDSE Math Question Bank",
+                mainHeader: "🔍 HKDSE Math Question Bank 🔎",
+                langBtn: "🌐 繁中",
+                toggleFilter: "👀 Filter",
+                searchPlaceholder: "Search keywords...",
+                resetBtn: "Reset",
+                titleP1: "📄 Paper 1 🔄",
+                titleP2: "📄 Paper 2 🔄",
+                titleYear: "📅 Year 🔄",
+                lblP1A1: "Sec A(1)",
+                lblP1A2: "Sec A(2)",
+                lblP1B: "Sec B",
+                lblP2A: "Sec A",
+                lblP2B: "Sec B",
+                titleLevelDiff: "🔥 Level & Difficulty",
+                chipJunior: "Junior",
+                chipSenior: "Senior",
+                titleDomainTopic: "🧩 Domain & Topic",
+                domainAlgebra: "Number & Algebra",
+                domainGeo: "Measures, Shape & Space",
+                domainData: "Data Handling",
+                selectAll: "Select All",
+                deselectAll: "Deselect All",
+                optSortType: "📄 By Paper (P1 ➔ P2)",
+                optSortYearDesc: "📅 By Year (New ➔ Old)",
+                optSortYearAsc: "📅 By Year (Old ➔ New)",
+                optSortDiffAsc: "🔥 By Difficulty (Low ➔ High)",
+                optSortDiffDesc: "🔥 By Difficulty (High ➔ Low)",
+                optSortTimeDesc: "⏱️ By Record Time (New ➔ Old)",
+                applyBtn: "🔍 Apply Filter",
+                loading: "Loading...",
+                noConditionPrompt: "Please select filter conditions or enter keywords, then click '🔍 Apply Filter'.<br>Press ☑️ to open completed questions; press 📌 to open correction book.",
+                noResultPrompt: "No matching questions found. Try changing your filters!",
+                mistakeNoteTitle: "📝 Mistake Note",
+                completedRecordTitle: "☑️ Completion Record",
+                editNoteBtn: "✏️ Note",
+                editMistakeNoteBtn: "✏️ Mistake Note",
+                removeCompletedBtn: "Undo Completed",
+                removeMistakeBtn: "Remove Mistake",
+                cancelBtn: "Cancel",
+                closeBtn: "Close",
+                saveBtn: "Save",
+                copyBtn: "🗐 Copy",
+                confirmImportBtn: "Import",
+                modalPlaceholder: "Content...",
+                exportTitle: "💾 Export Records (Copy the text below to restore learning data later)",
+                importTitle: "📥 Import Records (Paste your previously exported text below)",
+                copiedSuccess: "Copied to clipboard!",
+                pastePrompt: "Please paste your data text first!",
+                importConfirm: "Importing will overwrite current learning records. Continue?",
+                importSuccess: "Import successful!",
+                invalidFormat: "Invalid data format. Please make sure the text is correct.",
+                parseError: "Failed to parse text. Format is invalid.",
+                removeMistakeConfirm: (id) => `Remove ${id} from mistake bank?`,
+                removeCompletedConfirm: (id) => `Cancel completed status for ${id}?`,
+                mistakeModalTitle: (id) => `📌 Mistake Note for ${id}`,
+                completedModalTitle: (id) => `✅ Completion Record for ${id}`,
+                topics: {
+                    "Laws of Indices": "Laws of Indices",
+                    "Factorization": "Factorization",
+                    "Change of Subject": "Change of Subject",
+                    "Algebraic Expressions": "Algebraic Expressions",
+                    "Algebraic Fractions and Fractional Equations": "Algebraic Fractions & Equations",
+                    "Identities": "Identities",
+                    "Base Conversion": "Base Conversion",
+                    "Approximation and Errors": "Approximation & Errors",
+                    "Estimation": "Estimation",
+                    "Complex Numbers": "Complex Numbers",
+                    "Percentages": "Percentages",
+                    "Rates, Ratios and Proportions": "Rates, Ratios & Proportions",
+                    "Linear Equations in Two Unknowns": "Linear Equations in 2 Unknowns",
+                    "Quadratic Equations in One Unknown": "Quadratic Equations in 1 Unknown",
+                    "Linear Inequalities and Compound Inequalities": "Linear & Compound Inequalities",
+                    "Quadratic Inequalities in One Unknown": "Quadratic Inequalities in 1 Unknown",
+                    "Linear Inequalities in Two Unknowns": "Linear Inequalities in 2 Unknowns",
+                    "Linear Programming": "Linear Programming",
+                    "Sequences": "Sequences",
+                    "Variations": "Variations",
+                    "Polynomials": "Polynomials",
+                    "Remainder Theorem and Factor Theorem": "Remainder & Factor Theorem",
+                    "H.C.F. and L.C.M.": "H.C.F. & L.C.M.",
+                    "Functions and Graphs": "Functions & Graphs",
+                    "Exponential Functions and Logarithm Functions": "Exponential & Logarithmic Functions",
+                    "Perimeters and Areas": "Perimeters & Areas",
+                    "Mensuration": "Mensuration",
+                    "Geometry (Triangles)": "Geometry (Triangles)",
+                    "Geometry (Polygons)": "Geometry (Polygons)",
+                    "Geometry (Circles)": "Geometry (Circles)",
+                    "Four Centres of a Triangle": "Four Centres of a Triangle",
+                    "Pythagoras Theorem": "Pythagoras' Theorem",
+                    "Equations of Straight Lines": "Equations of Straight Lines",
+                    "Equations of Circles": "Equations of Circles",
+                    "Coordinate Geometry": "Coordinate Geometry",
+                    "Intersection of Straight Line and Circle": "Intersection of Line & Circle",
+                    "Trigonometric Ratios": "Trigonometric Ratios",
+                    "Trigonometry (2D)": "Trigonometry (2D)",
+                    "Trigonometry (3D)": "Trigonometry (3D)",
+                    "Loci": "Loci",
+                    "Statistical Graphs": "Statistical Graphs",
+                    "Measures of Central Tendency": "Measures of Central Tendency",
+                    "Measures of Dispersion": "Measures of Dispersion",
+                    "Standard Score": "Standard Score",
+                    "Change of Data": "Change of Data",
+                    "Permutations and Combinations": "Permutations & Combinations",
+                    "Probability": "Probability"
+                }
+            }
+        };
+
+        function toggleLanguage() {
+            currentLang = (currentLang === 'tc') ? 'en' : 'tc';
+            updateUIStrings();
+            applyFilter(true);
+        }
+
+        function updateUIStrings() {
+            const lang = i18n[currentLang];
+            document.documentElement.lang = currentLang === 'tc' ? 'zh-HK' : 'en';
+            document.getElementById('pageTitle').innerText = lang.pageTitle;
+            document.getElementById('mainHeader').innerText = lang.mainHeader;
+            document.getElementById('langBtn').innerText = lang.langBtn;
+            document.getElementById('toggleBtn').innerText = lang.toggleFilter;
+            document.getElementById('keyword').placeholder = lang.searchPlaceholder;
+            document.getElementById('resetBtn').innerText = lang.resetBtn;
+            
+            document.getElementById('titleP1').innerText = lang.titleP1;
+            document.getElementById('titleP2').innerText = lang.titleP2;
+            document.getElementById('titleYear').innerText = lang.titleYear;
+            
+            document.getElementById('lblP1A1').innerText = lang.lblP1A1;
+            document.getElementById('lblP1A2').innerText = lang.lblP1A2;
+            document.getElementById('lblP1B').innerText = lang.lblP1B;
+            document.getElementById('lblP2A').innerText = lang.lblP2A;
+            document.getElementById('lblP2B').innerText = lang.lblP2B;
+
+            document.getElementById('titleLevelDiff').innerText = lang.titleLevelDiff;
+            document.getElementById('chipJunior').innerText = lang.chipJunior;
+            document.getElementById('chipSenior').innerText = lang.chipSenior;
+
+            document.getElementById('titleDomainTopic').innerText = lang.titleDomainTopic;
+            document.getElementById('domainAlgebra').innerText = lang.domainAlgebra;
+            document.getElementById('domainGeo').innerText = lang.domainGeo;
+            document.getElementById('domainData').innerText = lang.domainData;
+
+            document.querySelectorAll('.btn-sel-all').forEach(btn => {
+                const isDeselect = btn.getAttribute('data-is-all') === 'true';
+                btn.innerText = isDeselect ? lang.deselectAll : lang.selectAll;
+            });
+
+            document.getElementById('optSortType').innerText = lang.optSortType;
+            document.getElementById('optSortYearDesc').innerText = lang.optSortYearDesc;
+            document.getElementById('optSortYearAsc').innerText = lang.optSortYearAsc;
+            document.getElementById('optSortDiffAsc').innerText = lang.optSortDiffAsc;
+            document.getElementById('optSortDiffDesc').innerText = lang.optSortDiffDesc;
+            document.getElementById('optSortTimeDesc').innerText = lang.optSortTimeDesc;
+            document.getElementById('applyBtn').innerText = lang.applyBtn;
+
+            document.querySelectorAll('.topic-text').forEach(span => {
+                const topicKey = span.getAttribute('data-topic');
+                if (lang.topics[topicKey]) {
+                    span.innerText = lang.topics[topicKey];
+                }
+            });
+        }
+
+        function getTextByLang(field) {
+            if (!field) return '';
+            if (typeof field === 'string') return field;
+            return field[currentLang] || field['tc'] || '';
+        }
 
         function initYearChips() {
             const container = document.getElementById('yearChipGroup');
@@ -650,7 +915,8 @@
             const checkboxes = document.querySelectorAll(`#${dropdownId} .topic-cb`);
             const allChecked = Array.from(checkboxes).every(cb => cb.checked);
             checkboxes.forEach(cb => cb.checked = !allChecked);
-            btn.innerText = allChecked ? "全選" : "取消全選";
+            btn.setAttribute('data-is-all', (!allChecked).toString());
+            btn.innerText = !allChecked ? i18n[currentLang].deselectAll : i18n[currentLang].selectAll;
             updateFilterCount();
         }
 
@@ -687,9 +953,9 @@
             const mistakes = getStorageData(STORAGE_MISTAKES);
             const existingNote = mistakes[qId] ? mistakes[qId].note : '';
 
-            openModal(`📌 ${qId} 的錯題筆記`, existingNote, [
-                `<button class="btn btn-cancel" onclick="closeModal()" style="width: 80px;">取消</button>`,
-                `<button class="btn btn-apply" onclick="saveNoteModal()">儲存</button>`
+            openModal(i18n[currentLang].mistakeModalTitle(qId), existingNote, [
+                `<button class="btn btn-cancel" onclick="closeModal()" style="width: 80px;">${i18n[currentLang].cancelBtn}</button>`,
+                `<button class="btn btn-apply" onclick="saveNoteModal()">${i18n[currentLang].saveBtn}</button>`
             ]);
         }
 
@@ -699,9 +965,9 @@
             const completed = getStorageData(STORAGE_COMPLETED);
             const existingNote = completed[qId] ? completed[qId].note : '';
 
-            openModal(`✅ ${qId} 完成紀錄`, existingNote, [
-                `<button class="btn btn-cancel" onclick="closeModal()" style="width: 80px;">取消</button>`,
-                `<button class="btn btn-apply" onclick="saveNoteModal()">儲存</button>`
+            openModal(i18n[currentLang].completedModalTitle(qId), existingNote, [
+                `<button class="btn btn-cancel" onclick="closeModal()" style="width: 80px;">${i18n[currentLang].cancelBtn}</button>`,
+                `<button class="btn btn-apply" onclick="saveNoteModal()">${i18n[currentLang].saveBtn}</button>`
             ]);
         }
 
@@ -747,9 +1013,9 @@
             };
             const jsonStr = JSON.stringify(exportObj, null, 2);
 
-            openModal('💾 匯出紀錄 (請自行保存以下文字，再次匯入時可復原目前的學習紀錄)', jsonStr, [
-                `<button class="btn btn-cancel" onclick="closeModal()" style="width: 80px;">關閉</button>`,
-                `<button class="btn btn-apply" onclick="copyExportText()">🗐 複製</button>`
+            openModal(i18n[currentLang].exportTitle, jsonStr, [
+                `<button class="btn btn-cancel" onclick="closeModal()" style="width: 80px;">${i18n[currentLang].closeBtn}</button>`,
+                `<button class="btn btn-apply" onclick="copyExportText()">${i18n[currentLang].copyBtn}</button>`
             ]);
         }
 
@@ -758,48 +1024,48 @@
             textarea.select();
             textarea.setSelectionRange(0, 99999);
             navigator.clipboard.writeText(textarea.value).then(() => {
-                alert('已成功複製到剪貼簿！');
+                alert(i18n[currentLang].copiedSuccess);
             }).catch(() => {
                 document.execCommand('copy');
-                alert('已複製到剪貼簿！');
+                alert(i18n[currentLang].copiedSuccess);
             });
         }
 
         function openTextImportModal() {
-            openModal('📥 匯入紀錄 (請貼上之前匯出的學習紀錄)', '', [
-                `<button class="btn btn-cancel" onclick="closeModal()" style="width: 80px;">取消</button>`,
-                `<button class="btn btn-apply" onclick="applyTextImport()">確認匯入</button>`
+            openModal(i18n[currentLang].importTitle, '', [
+                `<button class="btn btn-cancel" onclick="closeModal()" style="width: 80px;">${i18n[currentLang].cancelBtn}</button>`,
+                `<button class="btn btn-apply" onclick="applyTextImport()">${i18n[currentLang].confirmImportBtn}</button>`
             ]);
-            document.getElementById('modalTextarea').placeholder = "內容...";
+            document.getElementById('modalTextarea').placeholder = i18n[currentLang].modalPlaceholder;
         }
 
         function applyTextImport() {
             const rawText = document.getElementById('modalTextarea').value.trim();
             if (!rawText) {
-                alert('請先貼上資料文字！');
+                alert(i18n[currentLang].pastePrompt);
                 return;
             }
 
             try {
                 const data = JSON.parse(rawText);
                 if (data.mistakes || data.completed) {
-                    if (confirm('匯入將會覆蓋目前的學習紀錄，是否繼續？')) {
+                    if (confirm(i18n[currentLang].importConfirm)) {
                         saveStorageData(STORAGE_MISTAKES, data.mistakes || {});
                         saveStorageData(STORAGE_COMPLETED, data.completed || {});
-                        alert('匯入成功！');
+                        alert(i18n[currentLang].importSuccess);
                         closeModal();
                         applyFilter(true);
                     }
                 } else {
-                    alert('資料格式無效，請確認是否貼上正確的資料。');
+                    alert(i18n[currentLang].invalidFormat);
                 }
             } catch (err) {
-                alert('無法解析文字，格式不正確。');
+                alert(i18n[currentLang].parseError);
             }
         }
 
         function removeMistake(qId) {
-            if (confirm(`確定從錯題簿移除 ${qId} 嗎？`)) {
+            if (confirm(i18n[currentLang].removeMistakeConfirm(qId))) {
                 const mistakes = getStorageData(STORAGE_MISTAKES);
                 delete mistakes[qId];
                 saveStorageData(STORAGE_MISTAKES, mistakes);
@@ -808,7 +1074,7 @@
         }
 
         function removeCompleted(qId) {
-            if (confirm(`確定取消 ${qId} 的完成狀態嗎？`)) {
+            if (confirm(i18n[currentLang].removeCompletedConfirm(qId))) {
                 const completed = getStorageData(STORAGE_COMPLETED);
                 delete completed[qId];
                 saveStorageData(STORAGE_COMPLETED, completed);
@@ -844,12 +1110,12 @@
                 const container = document.getElementById('filterContainer');
                 if (!container.classList.contains('minimized')) {
                     container.classList.add('minimized');
-                    document.getElementById('toggleBtn').innerText = "👀 篩選器";
+                    document.getElementById('toggleBtn').innerText = i18n[currentLang].toggleFilter;
                 }
             }
 
             const list = document.getElementById('list');
-            list.innerHTML = `<div class="loading-box"><div class="spinner"></div><div>載入中...</div></div>`;
+            list.innerHTML = `<div class="loading-box"><div class="spinner"></div><div>${i18n[currentLang].loading}</div></div>`;
             setTimeout(() => filterData(currentScroll), 50);
         }
 
@@ -876,7 +1142,7 @@
             const list = document.getElementById('list');
 
             if (!isMistakeOnlyMode && !isCompletedOnlyMode && isNoCondition) {
-                list.innerHTML = `<p style="text-align:center; color:#777; margin-top:50px;">請選擇篩選條件或輸入關鍵字，並點擊「🔍 篩選」。</p>`;
+                list.innerHTML = `<p style="text-align:center; color:#777; margin-top:50px;">${i18n[currentLang].noConditionPrompt}</p>`;
                 return;
             }
 
@@ -886,7 +1152,15 @@
                 if (isMistakeOnlyMode && !mistakes[q.id]) return false;
                 if (isCompletedOnlyMode && !completed[q.id]) return false;
 
-                const matchKeyword = q.content.toLowerCase().includes(keyword) || q.id.toLowerCase().includes(keyword) || q.solution.toLowerCase().includes(keyword) || q.hint.toLowerCase().includes(keyword);
+                const qContent = getTextByLang(q.content);
+                const qHint = getTextByLang(q.hint);
+                const qSolution = getTextByLang(q.solution);
+
+                const matchKeyword = qContent.toLowerCase().includes(keyword) || 
+                                     q.id.toLowerCase().includes(keyword) || 
+                                     qSolution.toLowerCase().includes(keyword) || 
+                                     qHint.toLowerCase().includes(keyword);
+                                     
                 const matchLevel = selectedLevels.length === 0 || (Array.isArray(q.level) ? q.level.some(l => selectedLevels.includes(l)) : selectedLevels.includes(q.level));
                 const matchType = selectedTypes.length === 0 || selectedTypes.includes(q.type);
                 const matchSection = selectedSections.length === 0 || (q.section && selectedSections.includes(q.section));
@@ -899,7 +1173,7 @@
 
             filtered.sort((a, b) => {
                 if (sortBy === 'year-desc') return parseInt(b.year) - parseInt(a.year);
-                if (sortBy === 'year-asc') return parseInt(a.year) - parseInt(b.year);
+                if (sortBy === 'year-asc') return parseInt(a.year) - parseInt(a.year);
                 if (sortBy === 'type') return a.type.localeCompare(b.type);
                 if (sortBy === 'diff-asc') return (a.difficulty || 0) - (b.difficulty || 0);
                 if (sortBy === 'diff-desc') return (b.difficulty || 0) - (a.difficulty || 0);
@@ -912,7 +1186,7 @@
             });
 
             if(filtered.length === 0) {
-                list.innerHTML = `<p style="text-align:center; color:#999; margin-top:50px;">沒有符合條件的題目。請嘗試更改篩選條件！</p>`;
+                list.innerHTML = `<p style="text-align:center; color:#999; margin-top:50px;">${i18n[currentLang].noResultPrompt}</p>`;
                 return;
             }
 
@@ -922,48 +1196,55 @@
                 const isSaved = !!mInfo;
                 const isDone = !!cInfo;
 
+                const contentText = getTextByLang(q.content);
+                const hintText = getTextByLang(q.hint);
+                const solutionText = getTextByLang(q.solution);
+
                 return `
                 <div class="question-card ${isDone ? 'is-completed' : ''}">
                     <div class="card-header">
                         <div class="q-id">${q.id}</div>
                         ${getDifficultyBadge(q.difficulty)}
                     </div>
-                    <div class="question-content">${q.content}</div>
+                    <div class="question-content">${contentText}</div>
                     
+                    ${hintText ? `
                     <details>
                         <summary>💡</summary>
-                        <div class="detail-content">${q.hint}</div>
-                    </details>
+                        <div class="detail-content">${hintText}</div>
+                    </details>` : ''}
+                    
+                    ${solutionText ? `
                     <details>
                         <summary>🔑</summary>
-                        <div class="detail-content">${q.solution}</div>
-                    </details>
+                        <div class="detail-content">${solutionText}</div>
+                    </details>` : ''}
 
                     ${isSaved ? `
                         <div class="note-box mistake-note-box">
-                            <div class="note-header"><span>📝 錯題筆記</span><span>${mInfo.time}</span></div>
+                            <div class="note-header"><span>${i18n[currentLang].mistakeNoteTitle}</span><span>${mInfo.time}</span></div>
                             <div style="white-space: pre-wrap;">${mInfo.note}</div>
                         </div>
                     ` : ''}
 
                     ${isDone ? `
                         <div class="note-box completed-note-box">
-                            <div class="note-header"><span>☑️ 完成紀錄</span><span>${cInfo.time}</span></div>
+                            <div class="note-header"><span>${i18n[currentLang].completedRecordTitle}</span><span>${cInfo.time}</span></div>
                             <div style="white-space: pre-wrap;">${cInfo.note}</div>
                         </div>
                     ` : ''}
 
                     <div class="card-actions">
                         ${isDone ? `
-                            <button class="btn-card is-done" onclick="addOrEditCompleted('${q.id}')">✏️ 筆記</button>
-                            <button class="btn-card" onclick="removeCompleted('${q.id}')">取消完成</button>
+                            <button class="btn-card is-done" onclick="addOrEditCompleted('${q.id}')">${i18n[currentLang].editNoteBtn}</button>
+                            <button class="btn-card" onclick="removeCompleted('${q.id}')">${i18n[currentLang].removeCompletedBtn}</button>
                         ` : `
                             <button class="btn-card" style="border: 1px solid #86efac;" onclick="addOrEditCompleted('${q.id}')">☑️</button>
                         `}
 
                         ${isSaved ? `
-                            <button class="btn-card is-saved" onclick="addOrEditMistake('${q.id}')">✏️ 錯題筆記</button>
-                            <button class="btn-card" onclick="removeMistake('${q.id}')">移除錯題</button>
+                            <button class="btn-card is-saved" onclick="addOrEditMistake('${q.id}')">${i18n[currentLang].editMistakeNoteBtn}</button>
+                            <button class="btn-card" onclick="removeMistake('${q.id}')">${i18n[currentLang].removeMistakeBtn}</button>
                         ` : `
                             <button class="btn-card" style="border: 1px solid #fca5a5;"  onclick="addOrEditMistake('${q.id}')">📌</button>
                         `}
@@ -993,7 +1274,10 @@
             document.querySelectorAll('.chip.active').forEach(chip => chip.classList.remove('active'));
             document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
             
-            document.querySelectorAll('.btn-select-all').forEach(btn => btn.innerText = "全選");
+            document.querySelectorAll('.btn-select-all').forEach(btn => {
+                btn.removeAttribute('data-is-all');
+                btn.innerText = i18n[currentLang].selectAll;
+            });
 
             updateFilterCount();
             applyFilter(false);
@@ -1005,14 +1289,15 @@
             
             if (container.classList.contains('minimized')) {
                 container.classList.remove('minimized');
-                toggleBtn.innerText = "👀 篩選器";
+                toggleBtn.innerText = i18n[currentLang].toggleFilter;
             } else {
                 container.classList.add('minimized');
-                toggleBtn.innerText = "👀 篩選器";
+                toggleBtn.innerText = i18n[currentLang].toggleFilter;
             }
         }
 
         initYearChips();
+        updateUIStrings();
         updateBadges();
         updateFilterCount();
         applyFilter(false, false);
