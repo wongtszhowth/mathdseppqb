@@ -802,7 +802,7 @@ D.\t$60^\\circ<\\beta<\\alpha$
         section: "MC_B",
         level: ["Senior"],
         domain: ["Geometry"],
-        topic: ["Coordinate Geometry", "Equations of Straight Lines"],
+        topic: ["Coordinate Geometry", "Equations of Straight Lines", "Four Centres of a Triangle"],
         difficulty: 3,
         content: `設 $O$ 為原點。 點 $A$ 及點 $B$ 的坐標分別為 $(a,0)$ 及 $(0,b)$，其中 $a$ 及 $b$ 均為正數。 若 $\\Delta OAB$ 的外心在直線 $4x+16y=17a$ 上，則 $a:b=$
 <div class="q-mcopt">
