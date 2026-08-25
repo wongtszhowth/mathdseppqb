@@ -783,7 +783,7 @@ D.\t$80^\\circ$。
         section: "MC_B",
         level: ["Senior"],
         domain: ["Geometry"],
-        topic: ["Coordinate Geometry"],
+        topic: ["Coordinate Geometry", "Four Centres of a Triangle"],
         difficulty: 3,
         content: `某三角形的三邊的方程為 $4x+3y=24$ 、 $4x-3y=24$ 及 $x=a$，其中 $a$ 為一常數。 若該三角形的內心的 $x$ 坐標為 $31$，則 $a=$
 <div class="q-mcopt">
