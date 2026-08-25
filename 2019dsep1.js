@@ -271,7 +271,7 @@ questions.push(
         section: "B",
         level: ["Senior"],
         domain: ["Algebra"],
-        topic: ["Functions and Graphs", "Coordinate Geometry"],
+        topic: ["Functions and Graphs", "Coordinate Geometry", "Geometry (Circles)"],
         difficulty: 3,
         content: `設 $f(x) = \\dfrac{1}{1+k}\\bigl(x^2 + (6k-2)x + (9k+25)\\bigr)$，其中 $k$ 為一正常數。 將點 $(4,33)$ 記為 $F$。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">證明 $y=\\mathrm{f}(x)$ 的圖像通過 $F$。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">將 $y=\\mathrm{f}(x)$ 的圖像對 $y$ 軸反射，然後將所得的圖像向上平移 $4$ 單位得出 $y=\\mathrm{g}(x)$ 的圖像。 設 $U$ 為 $y=\\mathrm{g}(x)$ 的圖像的頂點。 將原點記為 $O$。</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">利用配方法，以 $k$ 表 $U$ 的坐標。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">求 $k$ 使得通過 $F$、$O$ 及 $U$ 的圓的面積最小。</div></div><div class="q-line q-level-2"><span class="q-label">(iii)</span><div class="q-text-content">對任意正常數 $k$，$y=\\mathrm{g}(x)$ 的圖像均通過同一點 $G$。 設 $V$ 為 $y=\\mathrm{g}(x)$ 的圖像的頂點使得通過 $F$、$O$ 及 $V$ 的圓的面積最小。 $F$、$G$、$O$ 與 $V$ 是否共圓？ 試解釋你的答案。 <br><span class="marks">(11分)</span></div></div><div class="q-clearfix"></div>`,
         hint: `<a href="https://www.geogebra.org/m/d25yk2a6" target="_blank">Geogebra 動態模型</a><br>(a) 代入 $x=4$ 驗證。 <br>(b) 先求 $\\mathrm{g}(x)$，配方找頂點，再求最小面積對應的 $k$，最後檢查共圓條件。`,
