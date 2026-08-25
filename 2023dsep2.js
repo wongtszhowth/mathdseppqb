@@ -797,7 +797,7 @@ D.\t$0$。
         section: "MC_B",
         level: ["Senior"],
         domain: ["Geometry"],
-        topic: ["Coordinate Geometry"],
+        topic: ["Coordinate Geometry", "Four Centres of a Triangle"],
         difficulty: 2,
         content: `直線 $L_1$ 及直線 $L_2$ 的方程分別為 $3x-4y+k=0$ 及 $4x+3y-k=0$，其中 $k$ 為一正常數。已知 $L_1$ 與 $x$ 軸相交於點 $P$。將 $L_1$ 與 $L_2$ 的交點記為 $Q$。若 $R$ 為 $L_2$ 上的一點使得 $\\Delta PQR$ 的內心在 $x$ 軸上，則 $R$ 的 $x$ 坐標為
 <div class="q-mcopt">
