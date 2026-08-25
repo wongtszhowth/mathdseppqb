@@ -209,7 +209,7 @@ questions.push(
         section: "A2",
         level: ["Senior"],
         domain: ["Algebra"],
-        topic: ["Polynomials", "Quadratic Equations in One Unknown"],
+        topic: ["Polynomials", "Quadratic Equations in One Unknown", "Remainder Theorem and Factor Theorem"],
         difficulty: 2,
         content: `定義 $\\mathrm{g}(x) = x^3 + 5x^2 - 12x - 1$。 設 $\\mathrm{h}(x) = 3x^4 + ax^3 - 16x^2 + bx + c$，其中 $a$ 、 $b$ 及 $c$ 均為常數。 當 $\\mathrm{h}(x)$ 除以 $\\mathrm{g}(x)$ 時，商式與餘式相等。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求當 $\\mathrm{h}(x)$ 除以 $\\mathrm{g}(x)$ 時的商式。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">方程 $\\mathrm{h}(x)=0$ 有多少個有理根？ 試解釋你的答案。<span class="marks">(4分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 設商式 $=$ 餘式 $= px + q$，則 $h(x) = g(x)(px+q) + (px+q)$，比較係數。<br>(b) 寫出 $h(x)$ 後用有理根定理檢查。`,
