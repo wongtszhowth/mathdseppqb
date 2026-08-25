@@ -822,7 +822,7 @@ D.\t$(x-8)^2+(y-6)^2=100$。
         section: "MC_B",
         level: ["Senior"],
         domain: ["Geometry"],
-        topic: ["Coordinate Geometry"],
+        topic: ["Coordinate Geometry", "Four Centres of a Triangle"],
         difficulty: 2,
         content: `設 $O$ 為原點。 點 $P$ 的坐標為 $(26,-18)$。 若 $\\Delta OPQ$ 的垂心的坐標為 $(21,-3)$，則 $Q$ 的 $y$ 坐標為
 <div class="q-mcopt">
