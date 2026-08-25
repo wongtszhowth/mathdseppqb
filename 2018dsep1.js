@@ -255,7 +255,7 @@ questions.push(
         section: "B",
         level: ["Senior"],
         domain: ["Algebra"],
-        topic: ["Variations", "Functions and Graphs"],
+        topic: ["Variations", "Functions and Graphs", "Four Centres of a Triangle"],
         difficulty: 3,
         content: `已知 $\\mathrm{f}(x)$ 的一部分隨 $x^2$ 正變，而另一部分則隨 $x$ 正變。 假定 $\\mathrm{f}(2)=60$ 及 $\\mathrm{f}(3)=99$。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $\\mathrm{f}(x)$。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">設 $Q$ 為 $y=\\mathrm{f}(x)$ 的圖像的頂點及 $R$ 為 $y=27-\\mathrm{f}(x)$ 的圖像的頂點。</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">利用配方法，求 $Q$ 的坐標。 </div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">寫出 $R$ 的坐標。 </div></div><div class="q-line q-level-2"><span class="q-label">(iii)</span><div class="q-text-content">點 $S$ 的坐標為 $(56,0)$。 設 $P$ 為 $\\Delta QRS$ 的外心。 描述 $P$、$Q$ 與 $R$ 之間的幾何關係。 試解釋你的答案。 <br><span class="marks">(5分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 設 $f(x)=Ax^2+Bx$，代入求 $A$、$B$。 <br>(b) 配方找頂點，再分析外心位置。 `,
