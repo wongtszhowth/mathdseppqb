@@ -277,7 +277,7 @@ questions.push(
         section: "B",
         level: ["Senior"],
         domain: ["Algebra"],
-        topic: ["Functions and Graphs", "Quadratic Equations in One Unknown", "Loci"],
+        topic: ["Functions and Graphs", "Quadratic Equations in One Unknown", "Loci", "Four Centres of a Triangle"],
         difficulty: 3,
         content: `設 $\\mathrm{f}(x) = 2x^2 - 4kx + 3k^2 + 5$，其中 $k$ 為一實常數。 <br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">$y = \\mathrm{f}(x)$ 的圖像是否與 $x$ 軸相交？ 試解釋你的答案。 <span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">利用配方法，以 $k$ 表 $y = \\mathrm{f}(x)$ 的圖像的頂點的坐標。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">在同一直角坐標系中，設 $S$ 及 $T$ 分別為 $y = \\mathrm{f}(x)$ 的圖像及 $y = 2 - \\mathrm{f}(x)$ 的圖像上的動點。 將原點記為 $O$。 某人宣稱當 $S$ 與 $T$ 最接近時，$\\Delta OST$ 的外心在 $x$ 軸上。 該宣稱是否正確？ 試解釋你的答案。 <span class="marks">(4分)</span><div class="q-clearfix"></div></div></div>`,
         hint: `(a) 判別式檢查。 <br>(b) 配方求頂點。 <br>(c) 分析最接近情況的幾何關係。 `,
