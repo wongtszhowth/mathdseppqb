@@ -69,10 +69,10 @@ D.\t$u^3-u^2-uv^2+v^2$。
         difficulty: 1,
         content: `$\\dfrac{6}{n-6} - \\dfrac{7}{n-7} =$
 <div class="q-mcopt">
-A.\t$\\dfrac{n}{(n-6)(n-7)}$<br>
-B.\t$\\dfrac{n}{(n-6)(7-n)}$<br>
-C.\t$\\dfrac{n+84}{(n-6)(n-7)}$<br>
-D.\t$\\dfrac{n+84}{(n-6)(7-n)}$
+A.\t$\\dfrac{n}{(n-6)(n-7)}$。<br>
+B.\t$\\dfrac{n}{(n-6)(7-n)}$。<br>
+C.\t$\\dfrac{n+84}{(n-6)(n-7)}$。<br>
+D.\t$\\dfrac{n+84}{(n-6)(7-n)}$。
 </div>`,
         hint: `通分後合併分子。`,
         solution: `B (76%)<p><iframe src="https://www.youtube.com/embed/62DvVymnNDs?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
