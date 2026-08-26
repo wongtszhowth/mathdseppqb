@@ -942,7 +942,7 @@ B.\t$275$<br>
 C.\t$336$<br>
 D.\t$360$
 </div>`,
-          en: `The box-and-whisker diagram below shows the distribution of the numbers of tokens got by a group of children in a game. If the range of the distribution is the triple of its inter-quartile range, find $m$.<img src="img/2024dsep2q29zh.jpg" class="q-img" alt="題目附圖" style="max-width: 75%;"><div class="q-mcopt">
+          en: `The box-and-whisker diagram below shows the distribution of the numbers of tokens got by a group of children in a game. If the range of the distribution is the triple of its inter-quartile range, find $m$.<img src="img/2024dsep2q29en.jpg" class="q-img" alt="題目附圖" style="max-width: 75%;"><div class="q-mcopt">
 A.\t$248$<br>
 B.\t$275$<br>
 C.\t$336$<br>
