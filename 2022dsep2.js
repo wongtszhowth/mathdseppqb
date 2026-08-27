@@ -10,14 +10,26 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Factorization"],
         difficulty: 1,
-        content: `$\\alpha^2 - \\alpha - \\beta^2 + \\beta =$
+        content: {
+            tc: `$\\alpha^2 - \\alpha - \\beta^2 + \\beta =$
 <div class="q-mcopt">
 A.\t$(\\alpha + \\beta)(\\alpha - \\beta + 1)$。<br>
 B.\t$(\\alpha + \\beta)(\\alpha - \\beta - 1)$。<br>
 C.\t$(\\alpha - \\beta)(\\alpha + \\beta + 1)$。<br>
 D.\t$(\\alpha - \\beta)(\\alpha + \\beta - 1)$。
 </div>`,
-        hint: `分組後因式分解。`,
+            en: `$\\alpha^2 - \\alpha - \\beta^2 + \\beta =$
+<div class="q-mcopt">
+A.\t$(\\alpha + \\beta)(\\alpha - \\beta + 1)$.<br>
+B.\t$(\\alpha + \\beta)(\\alpha - \\beta - 1)$.<br>
+C.\t$(\\alpha - \\beta)(\\alpha + \\beta + 1)$.<br>
+D.\t$(\\alpha - \\beta)(\\alpha + \\beta - 1)$.
+</div>`
+        },
+        hint: {
+            tc: `分組後因式分解。`,
+            en: `Factorize after grouping.`
+        },
         solution: `D (77%)<p><iframe src="https://www.youtube.com/embed/QltYkUSe2Ws?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
