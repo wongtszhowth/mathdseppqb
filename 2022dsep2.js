@@ -958,7 +958,7 @@ D.\t$60\\text{ kg}$.
         topic: ["Measures of Central Tendency", "Measures of Dispersion"],
         difficulty: 3,
         content: {
-            tc: `考慮以下正整數：<div style="text-align: center;">$2$   $5$   $6$   $6$   $x$   $x$   $x$   $y$</div>若以上正整數的平均值及中位數均為 $6$，則下列何者必為正確？
+            tc: `考慮以下正整數：<div style="text-align: center;">$2$　　$5$　　$6$　　$6$　　$x$　　$x$　　$x$　　$y$</div>若以上正整數的平均值及中位數均為 $6$，則下列何者必為正確？
 <div class="q-mcms">
 I.\t以上正整數的眾數為 $6$。
 II.\t以上正整數的最小可取分佈域為 $6$。
@@ -970,7 +970,7 @@ B.\t只有 II<br>
 C.\t只有 I 及 III<br>
 D.\t只有 II 及 III
 </div>`,
-            en: `Consider the following positive integers:<div style="text-align: center;">$2$   $5$   $6$   $6$   $x$   $x$   $x$   $y$</div>If both the mean and the median of the above positive integers are $6$, which of the following must be true?
+            en: `Consider the following positive integers:<div style="text-align: center;">$2$　　$5$　　$6$　　$6$　　$x$　　$x$　　$x$　　$y$</div>If both the mean and the median of the above positive integers are $6$, which of the following must be true?
 <div class="q-mcms">
 I.\tThe mode of the above positive integers is $6$.
 II.\tThe least possible range of the above positive integers is $6$.
