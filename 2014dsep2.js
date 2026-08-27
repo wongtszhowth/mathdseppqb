@@ -10,14 +10,26 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Laws of Indices"],
         difficulty: 1,
-        content: `$(2n^3)^{-5} =$
+        content: {
+            tc: `$(2n^3)^{-5} =$
 <div class="q-mcopt">
 A.\t$\\dfrac{1}{32n^2}$。<br>
 B.\t$\\dfrac{1}{32n^{15}}$。<br>
 C.\t$\\dfrac{1}{10n^{125}}$。<br>
 D.\t$\\dfrac{1}{10n^{243}}$。
 </div>`,
-        hint: `先處理負指數再簡化。 `,
+            en: `$(x+1)(x^2+x+1)=$
+<div class="q-mcopt">
+A.\t$x^3+1$.<br>
+B.\t$(x+1)^3$.<br>
+C.\t$x^3+x^2+x+1$.<br>
+D.\t$x^3+2x^2+2x+1$.
+</div>`
+        },
+        hint: {
+            tc: `先處理負指數再簡化。`,
+            en: `Handle the negative exponents, then simplify.`
+        },
         solution: `B (94%)<p><iframe src="https://www.youtube.com/embed/_e6sR_iVv6g?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
