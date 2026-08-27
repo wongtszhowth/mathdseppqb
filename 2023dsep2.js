@@ -10,14 +10,26 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Change of Subject"],
         difficulty: 1,
-        content: `若 $\\dfrac{a+5b}{7a+2b} = \\dfrac{1}{b+3}$，則 $a=$
+        content: {
+          tc: `若 $\\dfrac{a+5b}{7a+2b} = \\dfrac{1}{b+3}$，則 $a=$
 <div class="q-mcopt">
 A.\t$\\dfrac{4-b}{5b^2+13b}$。<br>
 B.\t$\\dfrac{4+b}{5b^2+13b}$。<br>
 C.\t$\\dfrac{5b^2+13b}{4-b}$。<br>
 D.\t$\\dfrac{5b^2+13b}{4+b}$。
 </div>`,
-        hint: `交叉相乘後整理含 $a$ 的項。`,
+          en: `If $\\dfrac{a+5b}{7a+2b} = \\dfrac{1}{b+3}$, then $a=$
+<div class="q-mcopt">
+A.\t$\\dfrac{4-b}{5b^2+13b}$.<br>
+B.\t$\\dfrac{4+b}{5b^2+13b}$.<br>
+C.\t$\\dfrac{5b^2+13b}{4-b}$.<br>
+D.\t$\\dfrac{5b^2+13b}{4+b}$.
+</div>`
+        },
+        hint: {
+          tc: `交叉相乘後整理含 $a$ 的項。`,
+          en: `Cross-multiply and rearrange terms containing $a$.`
+        },
         solution: `C (78%)<p><iframe src="https://www.youtube.com/embed/oOzYNlK8iSo?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -29,14 +41,26 @@ D.\t$\\dfrac{5b^2+13b}{4+b}$。
         domain: ["Algebra"],
         topic: ["Algebraic Fractions and Fractional Equations"],
         difficulty: 1,
-        content: `$\\dfrac{2}{5-4x} - \\dfrac{1}{5+4x} =$
+        content: {
+          tc: `$\\dfrac{2}{5-4x} - \\dfrac{1}{5+4x} =$
 <div class="q-mcopt">
 A.\t$\\dfrac{5+4x}{25-16x^2}$。<br>
 B.\t$\\dfrac{5-4x}{25-16x^2}$。<br>
 C.\t$\\dfrac{5+12x}{25-16x^2}$。<br>
 D.\t$\\dfrac{5-12x}{25-16x^2}$。
 </div>`,
-        hint: `通分後合併分子。`,
+          en: `$\\dfrac{2}{5-4x} - \\dfrac{1}{5+4x} =$
+<div class="q-mcopt">
+A.\t$\\dfrac{5+4x}{25-16x^2}$.<br>
+B.\t$\\dfrac{5-4x}{25-16x^2}$.<br>
+C.\t$\\dfrac{5+12x}{25-16x^2}$.<br>
+D.\t$\\dfrac{5-12x}{25-16x^2}$.
+</div>`
+        },
+        hint: {
+          tc: `通分後合併分子。`,
+          en: `Find a common denominator and combine the numerators.`
+        },
         solution: `C (80%)<p><iframe src="https://www.youtube.com/embed/a-1WJDR1ISw?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -48,14 +72,26 @@ D.\t$\\dfrac{5-12x}{25-16x^2}$。
         domain: ["Algebra"],
         topic: ["Laws of Indices"],
         difficulty: 1,
-        content: `$4^{n+2}~3^{2n+4} =$
+        content: {
+          tc: `$4^{n+2}~3^{2n+4} =$
 <div class="q-mcopt">
 A.\t$6^{2n+4}$。<br>
 B.\t$6^{4n+8}$。<br>
 C.\t$12^{2n+4}$。<br>
 D.\t$12^{3n+6}$。
 </div>`,
-        hint: `先寫成相同底數或合併指數。`,
+          en: `$4^{n+2}~3^{2n+4} =$
+<div class="q-mcopt">
+A.\t$6^{2n+4}$.<br>
+B.\t$6^{4n+8}$.<br>
+C.\t$12^{2n+4}$.<br>
+D.\t$12^{3n+6}$.
+</div>`
+        },
+        hint: {
+          tc: `先寫成相同底數或合併指數。`,
+          en: `Rewrite with the same base or combine the indices.`
+        },
         solution: `A (72%)<p><iframe src="https://www.youtube.com/embed/0_ipT8TfROM?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -67,14 +103,26 @@ D.\t$12^{3n+6}$。
         domain: ["Algebra"],
         topic: ["Factorization"],
         difficulty: 1,
-        content: `$2x^2 + xy - y^2 + 4x + 4y =$
+        content: {
+          tc: `$2x^2 + xy - y^2 + 4x + 4y =$
 <div class="q-mcopt">
 A.\t$(x+y)(2x+y-4)$。<br>
 B.\t$(x+y)(2x-y+4)$。<br>
 C.\t$(x-y)(2x+y-4)$。<br>
 D.\t$(x-y)(2x-y+4)$。
 </div>`,
-        hint: `分組因式分解或試根。`,
+          en: `$2x^2 + xy - y^2 + 4x + 4y =$
+<div class="q-mcopt">
+A.\t$(x+y)(2x+y-4)$.<br>
+B.\t$(x+y)(2x-y+4)$.<br>
+C.\t$(x-y)(2x+y-4)$.<br>
+D.\t$(x-y)(2x-y+4)$.
+</div>`
+        },
+        hint: {
+          tc: `分組因式分解或試根。`,
+          en: `Factorise by grouping or trial and error.`
+        },
         solution: `B (87%)<p><iframe src="https://www.youtube.com/embed/xKVPQLv2YJI?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -86,14 +134,26 @@ D.\t$(x-y)(2x-y+4)$。
         domain: ["Algebra"],
         topic: ["Identities"],
         difficulty: 1,
-        content: `若 $c$ 及 $d$ 均為常數使得 $(x+2)(x+c)+12 \\equiv x(x+d)+6c(x+1)$，則 $d=$
+        content: {
+          tc: `若 $c$ 及 $d$ 均為常數使得 $(x+2)(x+c)+12 \\equiv x(x+d)+6c(x+1)$，則 $d=$
 <div class="q-mcopt">
 A.\t$-13$。<br>
 B.\t$-3$。<br>
 C.\t$3$。<br>
 D.\t$17$。
 </div>`,
-        hint: `展開兩邊並比較係數。`,
+          en: `If $c$ and $d$ are constants such that $(x+2)(x+c)+12 \\equiv x(x+d)+6c(x+1)$, then $d=$
+<div class="q-mcopt">
+A.\t$-13$.<br>
+B.\t$-3$.<br>
+C.\t$3$.<br>
+D.\t$17$.
+</div>`
+        },
+        hint: {
+          tc: `展開兩邊並比較係數。`,
+          en: `Expand both sides and compare coefficients.`
+        },
         solution: `A (70%)<p><iframe src="https://www.youtube.com/embed/ndD-knUC07A?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -105,14 +165,26 @@ D.\t$17$。
         domain: ["Algebra"],
         topic: ["Linear Inequalities and Compound Inequalities"],
         difficulty: 1,
-        content: `$x-3<-5$  或  $\\dfrac{6-x}{4}<2$  的解為
+        content: {
+          tc: `$x-3<-5$  或  $\\dfrac{6-x}{4}<2$  的解為
 <div class="q-mcopt">
 A.\t$x<-2$。<br>
 B.\t$x>-2$。<br>
 C.\t$x=-2$。<br>
 D.\t$x \\neq -2$。
 </div>`,
-        hint: `分別解兩個不等式再取聯集。`,
+          en: `The solution of $x-3<-5$  or  $\\dfrac{6-x}{4}<2$ is
+<div class="q-mcopt">
+A.\t$x<-2$.<br>
+B.\t$x>-2$.<br>
+C.\t$x=-2$.<br>
+D.\t$x \\neq -2$.
+</div>`
+        },
+        hint: {
+          tc: `分別解兩個不等式再取聯集。`,
+          en: `Solve each inequality separately then take the union.`
+        },
         solution: `D (77%)<p><iframe src="https://www.youtube.com/embed/GchKspcdwJ8?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -124,14 +196,26 @@ D.\t$x \\neq -2$。
         domain: ["Algebra"],
         topic: ["Approximation and Errors"],
         difficulty: 1,
-        content: `若 $y=73.8$（準確至三位有效數字），求 $y$ 值的範圍。
+        content: {
+          tc: `若 $y=73.8$（準確至三位有效數字），求 $y$ 值的範圍。
 <div class="q-mcopt">
 A.\t$73.7 \\le y < 73.9$<br>
 B.\t$73.7 < y \\le 73.9$<br>
 C.\t$73.75 \\le y < 73.85$<br>
 D.\t$73.75 < y \\le 73.85$
 </div>`,
-        hint: `三位有效數字的誤差範圍為中間值的一半單位。`,
+          en: `If $y = 73.8$ (correct to 3 significant figures), find the range of values of $y$.
+<div class="q-mcopt">
+A.\t$73.7 \\le y < 73.9$<br>
+B.\t$73.7 < y \\le 73.9$<br>
+C.\t$73.75 \\le y < 73.85$<br>
+D.\t$73.75 < y \\le 73.85$
+</div>`
+        },
+        hint: {
+          tc: `三位有效數字的誤差範圍為中間值的一半單位。`,
+          en: `The maximum error for 3 significant figures is half of one unit at the last significant place.`
+        },
         solution: `C (82%)<p><iframe src="https://www.youtube.com/embed/JmbCaXBV3qI?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -143,14 +227,26 @@ D.\t$73.75 < y \\le 73.85$
         domain: ["Algebra"],
         topic: ["Functions and Graphs"],
         difficulty: 1,
-        content: `設 $\\mathrm{g}(x) = 13 - 5x^2$。 若 $\\alpha$ 為一常數，求 $\\mathrm{g}(1-3\\alpha)$。
+        content: {
+          tc: `設 $\\mathrm{g}(x) = 13 - 5x^2$。 若 $\\alpha$ 為一常數，求 $\\mathrm{g}(1-3\\alpha)$。
 <div class="q-mcopt">
 A.\t$8 - 45\\alpha^2$<br>
 B.\t$8 + 45\\alpha^2$<br>
 C.\t$8 - 30\\alpha + 45\\alpha^2$<br>
 D.\t$8 + 30\\alpha - 45\\alpha^2$
 </div>`,
-        hint: `直接代入並展開。`,
+          en: `Let $\\mathrm{g}(x) = 13 - 5x^2$. If $\\alpha$ is a constant, find $\\mathrm{g}(1-3\\alpha)$.
+<div class="q-mcopt">
+A.\t$8 - 45\\alpha^2$<br>
+B.\t$8 + 45\\alpha^2$<br>
+C.\t$8 - 30\\alpha + 45\\alpha^2$<br>
+D.\t$8 + 30\\alpha - 45\\alpha^2$
+</div>`
+        },
+        hint: {
+          tc: `直接代入並展開。`,
+          en: `Substitute directly and expand.`
+        },
         solution: `D (75%)<p><iframe src="https://www.youtube.com/embed/gZTVfGqVlpk?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -162,14 +258,26 @@ D.\t$8 + 30\\alpha - 45\\alpha^2$
         domain: ["Algebra"],
         topic: ["Remainder Theorem and Factor Theorem"],
         difficulty: 2,
-        content: `設 $\\mathrm{h}(x) = ax^6 + 16x^3 + b$，其中 $a$ 及 $b$ 均為常數。 若 $\\mathrm{h}(x)$ 可被 $2x-3$ 整除，求當 $\\mathrm{h}(x)$ 除以 $2x+3$ 時的餘數。
+        content: {
+          tc: `設 $\\mathrm{h}(x) = ax^6 + 16x^3 + b$，其中 $a$ 及 $b$ 均為常數。 若 $\\mathrm{h}(x)$ 可被 $2x-3$ 整除，求當 $\\mathrm{h}(x)$ 除以 $2x+3$ 時的餘數。
 <div class="q-mcopt">
 A.\t$-108$<br>
 B.\t$-54$<br>
 C.\t$54$<br>
 D.\t$108$
 </div>`,
-        hint: `用因式定理求 $a$、$b$ 關係，再用餘式定理。`,
+          en: `Let $\\mathrm{h}(x) = ax^6 + 16x^3 + b$, where $a$ and $b$ are constants. If $\\mathrm{h}(x)$ is divisible by $2x-3$, find the remainder when $\\mathrm{h}(x)$ is divided by $2x+3$.
+<div class="q-mcopt">
+A.\t$-108$<br>
+B.\t$-54$<br>
+C.\t$54$<br>
+D.\t$108$
+</div>`
+        },
+        hint: {
+          tc: `用因式定理求 $a$、$b$ 關係，再用餘式定理。`,
+          en: `Use the factor theorem to find the relation between $a$ and $b$, then use the remainder theorem.`
+        },
         solution: `A (43%)<p><iframe src="https://www.youtube.com/embed/76vCKapZk0I?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -181,14 +289,26 @@ D.\t$108$
         domain: ["Algebra"],
         topic: ["Functions and Graphs"],
         difficulty: 2,
-        content: `下列有關 $y = 5 + (x-3)^2$ 的圖像之敍述，何者正確？
+        content: {
+          tc: `下列有關 $y = 5 + (x-3)^2$ 的圖像之敍述，何者正確？
 <div class="q-mcopt">
 A.\t該圖像開口向下。<br>
 B.\t該圖像的 $x$ 截距為 $3$。<br>
 C.\t該圖像的 $y$ 截距為 $5$。<br>
 D.\t該圖像通過點 $(3, 5)$。
 </div>`,
-        hint: `觀察頂點及開口方向。`,
+          en: `Which of the following statements about the graph of $y = 5 + (x-3)^2$ is true?
+<div class="q-mcopt">
+A.\tThe graph opens downwards.<br>
+B.\tThe $x$-intercept of the graph is $3$.<br>
+C.\tThe $y$-intercept of the graph is $5$.<br>
+D.\tThe graph passes through the point $(3, 5)$.
+</div>`
+        },
+        hint: {
+          tc: `觀察頂點及開口方向。`,
+          en: `Observe the vertex and the direction of opening.`
+        },
         solution: `D (67%)<p><iframe src="https://www.youtube.com/embed/syRrNGGU4ko?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -200,14 +320,26 @@ D.\t該圖像通過點 $(3, 5)$。
         domain: ["Algebra"],
         topic: ["Percentages"],
         difficulty: 1,
-        content: `某外套的標價較其成本高 $60\\%$。 該外套以其標價七五折售出並獲利 $\\$104$。 求該外套的成本。
+        content: {
+          tc: `某外套的標價較其成本高 $60\\%$。 該外套以其標價七五折售出並獲利 $\\$104$。 求該外套的成本。
 <div class="q-mcopt">
 A.\t$\\$416$<br>
 B.\t$\\$520$<br>
 C.\t$\\$728$<br>
 D.\t$\\$832$
 </div>`,
-        hint: `設成本為 $x$，列方程求解。`,
+          en: `The marked price of a jacket is $60\\%$ above its cost. A profit of $\\$104$ is made by selling the jacket at a discount of $25\\%$ on its marked price. Find the cost of the jacket.
+<div class="q-mcopt">
+A.\t$\\$416$<br>
+B.\t$\\$520$<br>
+C.\t$\\$728$<br>
+D.\t$\\$832$
+</div>`
+        },
+        hint: {
+          tc: `設成本為 $x$，列方程求解。`,
+          en: `Let the cost be $x$ and form an equation.`
+        },
         solution: `B (81%)<p><iframe src="https://www.youtube.com/embed/ZaE5A4OmqrE?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -219,14 +351,26 @@ D.\t$\\$832$
         domain: ["Geometry"],
         topic: ["Mensuration"],
         difficulty: 2,
-        content: `某地圖的比例尺為 $1:50\\,000$。 若一機場的實際面積為 $10$ km$^2$，則這機場在該地圖上的面積為
+        content: {
+          tc: `某地圖的比例尺為 $1:50\\,000$。 若一機場的實際面積為 $10$ km$^2$，則這機場在該地圖上的面積為
 <div class="q-mcopt">
 A.\t$2\\text{ cm}^2$。<br>
 B.\t$4\\text{ cm}^2$。<br>
 C.\t$20\\text{ cm}^2$。<br>
 D.\t$40\\text{ cm}^2$。
 </div>`,
-        hint: `面積比為長度比的平方。`,
+          en: `The scale of a map is $1:50\\,000$. If the actual area of an airport is $10\\text{ km}^2$, then the area of this airport on the map is
+<div class="q-mcopt">
+A.\t$2\\text{ cm}^2$.<br>
+B.\t$4\\text{ cm}^2$.<br>
+C.\t$20\\text{ cm}^2$.<br>
+D.\t$40\\text{ cm}^2$.
+</div>`
+        },
+        hint: {
+          tc: `面積比為長度比的平方。`,
+          en: `The ratio of areas is the square of the ratio of lengths.`
+        },
         solution: `D (38%)<p><iframe src="https://www.youtube.com/embed/H2vtag91w_w?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -238,14 +382,26 @@ D.\t$40\\text{ cm}^2$。
         domain: ["Algebra"],
         topic: ["Variations"],
         difficulty: 2,
-        content: `已知 $z$ 隨 $x$ 的平方及 $y$ 的立方根正變。 當 $x=12$ 及 $y=64$ 時，$z=36$。 當 $x=16$ 及 $y=729$ 時，$z=$
+        content: {
+          tc: `已知 $z$ 隨 $x$ 的平方及 $y$ 的立方根正變。 當 $x=12$ 及 $y=64$ 時，$z=36$。 當 $x=16$ 及 $y=729$ 時，$z=$
 <div class="q-mcopt">
 A.\t$108$。<br>
 B.\t$144$。<br>
 C.\t$162$。<br>
 D.\t$216$。
 </div>`,
-        hint: `寫出 $z = k x^2 y^{1/3}$ 並求 $k$。`,
+          en: `It is given that $z$ varies as the square of $x$ and the cube root of $y$. When $x=12$ and $y=64$, $z=36$. When $x=16$ and $y=729$, $z=$
+<div class="q-mcopt">
+A.\t$108$.<br>
+B.\t$144$.<br>
+C.\t$162$.<br>
+D.\t$216$.
+</div>`
+        },
+        hint: {
+          tc: `寫出 $z = k x^2 y^{1/3}$ 並求 $k$。`,
+          en: `Write $z = k x^2 y^{1/3}$ and find $k$.`
+        },
         solution: `B (66%)<p><iframe src="https://www.youtube.com/embed/yHY6ckY-wwA?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -257,14 +413,26 @@ D.\t$216$。
         domain: ["Algebra"],
         topic: ["Sequences"],
         difficulty: 2,
-        content: `設 $a_n$ 為某數列的第 $n$ 項。 若 $a_6 = 23$ 、 $a_8 = 60$ 及對任意正整數 $n$，$a_{n+2} = a_{n+1} + a_n$，則 $a_3 =$
+        content: {
+          tc: `設 $a_n$ 為某數列的第 $n$ 項。 若 $a_6 = 23$ 、 $a_8 = 60$ 及對任意正整數 $n$，$a_{n+2} = a_{n+1} + a_n$，則 $a_3 =$
 <div class="q-mcopt">
 A.\t$4$。<br>
 B.\t$5$。<br>
 C.\t$9$。<br>
 D.\t$14$。
 </div>`,
-        hint: `由遞推關係逆向求前幾項。`,
+          en: `Let $a_n$ be the $n$th term of a sequence. If $a_6 = 23$, $a_8 = 60$ and $a_{n+2} = a_{n+1} + a_n$ for any positive integer $n$, then $a_3 =$
+<div class="q-mcopt">
+A.\t$4$.<br>
+B.\t$5$.<br>
+C.\t$9$.<br>
+D.\t$14$.
+</div>`
+        },
+        hint: {
+          tc: `由遞推關係逆向求前幾項。`,
+          en: `Work backwards using the recurrence relation to find earlier terms.`
+        },
         solution: `B (62%)<p><iframe src="https://www.youtube.com/embed/ySQ7JNhMXyI?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -276,14 +444,26 @@ D.\t$14$。
         domain: ["Geometry"],
         topic: ["Mensuration"],
         difficulty: 2,
-        content: `某實心正方體的邊長為 $60\\text{ cm}$。 一實心直立圓柱體的體積等於該正方體的體積，而該圓柱體的曲面面積等於該正方體的總表面面積。 求該圓柱體的底半徑。
+        content: {
+          tc: `某實心正方體的邊長為 $60\\text{ cm}$。 一實心直立圓柱體的體積等於該正方體的體積，而該圓柱體的曲面面積等於該正方體的總表面面積。 求該圓柱體的底半徑。
 <div class="q-mcopt">
 A.\t$20\\text{ cm}$<br>
 B.\t$30\\text{ cm}$<br>
 C.\t$76\\text{ cm}$<br>
 D.\t$172\\text{ cm}$
 </div>`,
-        hint: `設半徑及高，列聯立方程。`,
+          en: `The length of a side of a solid cube is $60\\text{ cm}$. The volume of a solid right circular cylinder is equal to the volume of the cube while the curved surface area of the circular cylinder is equal to the total surface area of the cube. Find the base radius of the circular cylinder.
+<div class="q-mcopt">
+A.\t$20\\text{ cm}$<br>
+B.\t$30\\text{ cm}$<br>
+C.\t$76\\text{ cm}$<br>
+D.\t$172\\text{ cm}$
+</div>`
+        },
+        hint: {
+          tc: `設半徑及高，列聯立方程。`,
+          en: `Set up the radius and height and form simultaneous equations.`
+        },
         solution: `A (50%)<p><iframe src="https://www.youtube.com/embed/yEEJzQcgMqo?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -295,14 +475,26 @@ D.\t$172\\text{ cm}$
         domain: ["Geometry"],
         topic: ["Mensuration"],
         difficulty: 3,
-        content: `圖中，$AC$ 為圓 $ABCD$ 的一直徑而 $BD$ 及 $EF$ 均為圓 $BEDF$ 的直徑。 已知 $C$ 及 $E$ 均在 $AF$ 上。 設 $G$ 為 $AF$ 與 $BD$ 的交點。 若 $AG=30\\text{ cm}$ 及 $CG=10\\text{ cm}$，求陰影區域的面積準確至最接近的 $\\text{cm}^2$。
+        content: {
+          tc: `圖中，$AC$ 為圓 $ABCD$ 的一直徑而 $BD$ 及 $EF$ 均為圓 $BEDF$ 的直徑。 已知 $C$ 及 $E$ 均在 $AF$ 上。 設 $G$ 為 $AF$ 與 $BD$ 的交點。 若 $AG=30\\text{ cm}$ 及 $CG=10\\text{ cm}$，求陰影區域的面積準確至最接近的 $\\text{cm}^2$。
 <div class="q-mcopt"><img src="img/2023dsep2q16.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px;">
 A.\t$209\\text{ cm}^2$<br>
 B.\t$367\\text{ cm}^2$<br>
 C.\t$383\\text{ cm}^2$<br>
 D.\t$540\\text{ cm}^2$
 </div><div style="clear: both;"></div>`,
-        hint: `先求各圓半徑，再計算扇形或弓形面積。`,
+          en: `In the figure, $AC$ is a diameter of the circle $ABCD$ while $BD$ and $EF$ are diameters of the circle $BEDF$. It is given that $C$ and $E$ lie on $AF$. Let $G$ be the point of intersection of $AF$ and $BD$. If $AG=30\\text{ cm}$ and $CG=10\\text{ cm}$, find the area of the shaded region correct to the nearest $\\text{cm}^2$.
+<div class="q-mcopt"><img src="img/2023dsep2q16.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px;">
+A.\t$209\\text{ cm}^2$<br>
+B.\t$367\\text{ cm}^2$<br>
+C.\t$383\\text{ cm}^2$<br>
+D.\t$540\\text{ cm}^2$
+</div><div style="clear: both;"></div>`
+        },
+        hint: {
+          tc: `先求各圓半徑，再計算扇形或弓形面積。`,
+          en: `Find the radius of each circle first, then calculate the sector or segment areas.`
+        },
         solution: `D (27%)<p><iframe src="https://www.youtube.com/embed/uSztQrLgQXo?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -314,14 +506,26 @@ D.\t$540\\text{ cm}^2$
         domain: ["Geometry"],
         topic: ["Geometry (Polygons)"],
         difficulty: 2,
-        content: `圖中，$PQRS$ 為一平行四邊形。 設 $X$ 為 $PQ$ 上的一點。 將 $PR$ 與 $SX$ 的交點記為 $Y$。 若 $\\Delta PXY$ 的面積及四邊形 $QRYX$ 的面積分別為 $32\\text{ cm}^2$ 及 $58\\text{ cm}^2$，則 $\\Delta RSY$ 的面積為
+        content: {
+          tc: `圖中，$PQRS$ 為一平行四邊形。 設 $X$ 為 $PQ$ 上的一點。 將 $PR$ 與 $SX$ 的交點記為 $Y$。 若 $\\Delta PXY$ 的面積及四邊形 $QRYX$ 的面積分別為 $32\\text{ cm}^2$ 及 $58\\text{ cm}^2$，則 $\\Delta RSY$ 的面積為
 <div class="q-mcopt"><img src="img/2023dsep2q17.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 60%; margin-left: 15px; margin-bottom: 5px;">
 A.\t$40\\text{ cm}^2$。<br>
 B.\t$50\\text{ cm}^2$。<br>
 C.\t$58\\text{ cm}^2$。<br>
 D.\t$72\\text{ cm}^2$。
 </div><div style="clear: both;"></div>`,
-        hint: `利用面積比與底或高的比例關係。`,
+          en: `In the figure, $PQRS$ is a parallelogram. Let $X$ be a point lying on $PQ$. Denote the point of intersection of $PR$ and $SX$ by $Y$. If the area of $\\Delta PXY$ and the area of the quadrilateral $QRYX$ are $32\\text{ cm}^2$ and $58\\text{ cm}^2$ respectively, then the area of $\\Delta RSY$ is
+<div class="q-mcopt"><img src="img/2023dsep2q17.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 60%; margin-left: 15px; margin-bottom: 5px;">
+A.\t$40\\text{ cm}^2$.<br>
+B.\t$50\\text{ cm}^2$.<br>
+C.\t$58\\text{ cm}^2$.<br>
+D.\t$72\\text{ cm}^2$.
+</div><div style="clear: both;"></div>`
+        },
+        hint: {
+          tc: `利用面積比與底或高的比例關係。`,
+          en: `Use the relationship between area ratios and ratios of bases or heights.`
+        },
         solution: `B (43%)<p><iframe src="https://www.youtube.com/embed/rFMO1MglJfE?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -333,7 +537,8 @@ D.\t$72\\text{ cm}^2$。
         domain: ["Geometry"],
         topic: ["Geometry (Polygons)"],
         difficulty: 2,
-        content: `根據圖中所示，下列何者必為正確？
+        content: {
+          tc: `根據圖中所示，下列何者必為正確？
 <div class="q-mcms"><img src="img/2023dsep2q18.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 40%; margin-left: 15px; margin-bottom: 5px;">
 I.\t$a+b=90^\\circ$
 II.\t$c+d=180^\\circ$
@@ -345,7 +550,23 @@ B.\t只有 I 及 III<br>
 C.\t只有 II 及 III<br>
 D.\tI、II 及 III
 </div><div style="clear: both;"></div>`,
-        hint: `利用直線上的角及三角形內角和。`,
+          en: `According to the figure, which of the following must be true?
+<div class="q-mcms"><img src="img/2023dsep2q18.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 40%; margin-left: 15px; margin-bottom: 5px;">
+I.\t$a+b=90^\\circ$
+II.\t$c+d=180^\\circ$
+III.\t$a+b+c=d$
+</div>
+<div class="q-mcopt">
+A.\tI and II only<br>
+B.\tI and III only<br>
+C.\tII and III only<br>
+D.\tI, II and III
+</div><div style="clear: both;"></div>`
+        },
+        hint: {
+          tc: `利用直線上的角及三角形內角和。`,
+          en: `Use angles on a straight line and the angle sum of a triangle.`
+        },
         solution: `A (59%)<p><iframe src="https://www.youtube.com/embed/2qPUAPlRugc?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -357,7 +578,8 @@ D.\tI、II 及 III
         domain: ["Geometry"],
         topic: ["Geometry (Polygons)"],
         difficulty: 2,
-        content: `已知 $ABCD$ 為一菱形。 將 $AC$ 與 $BD$ 的交點記為 $E$。 下列何者必為正確？
+        content: {
+          tc: `已知 $ABCD$ 為一菱形。 將 $AC$ 與 $BD$ 的交點記為 $E$。 下列何者必為正確？
 <div class="q-mcms">
 I.\t$AE = BE$
 II.\t$\\dfrac{AE}{AC} = \\dfrac{BE}{BD}$
@@ -369,7 +591,23 @@ B.\t只有 I 及 III<br>
 C.\t只有 II 及 III<br>
 D.\tI、II 及 III
 </div>`,
-        hint: `利用菱形對角線互相垂直平分的性質。`,
+          en: `It is given that $ABCD$ is a rhombus. Denote the point of intersection of $AC$ and $BD$ by $E$. Which of the following must be true?
+<div class="q-mcms">
+I.\t$AE = BE$
+II.\t$\\dfrac{AE}{AC} = \\dfrac{BE}{BD}$
+III.\t$AE^2 + BE^2 = CD^2$
+</div>
+<div class="q-mcopt">
+A.\tI and II only<br>
+B.\tI and III only<br>
+C.\tII and III only<br>
+D.\tI, II and III
+</div>`
+        },
+        hint: {
+          tc: `利用菱形對角線互相垂直平分的性質。`,
+          en: `Use the property that the diagonals of a rhombus bisect each other at right angles.`
+        },
         solution: `C (54%)<p><iframe src="https://www.youtube.com/embed/7PUtL4lL6vo?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -381,14 +619,26 @@ D.\tI、II 及 III
         domain: ["Geometry"],
         topic: ["Geometry (Polygons)"],
         difficulty: 2,
-        content: `圖中所示為正方形 $ABCD$、正五邊形 $ADEFG$ 及正六邊形 $AGHIJK$。 求 $\\angle ABK$。
+        content: {
+          tc: `圖中所示為正方形 $ABCD$、正五邊形 $ADEFG$ 及正六邊形 $AGHIJK$。 求 $\\angle ABK$。
 <div class="q-mcopt"><img src="img/2023dsep2q20.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 60%; margin-left: 15px; margin-bottom: 5px;">
 A.\t$69^\\circ$<br>
 B.\t$72^\\circ$<br>
 C.\t$74^\\circ$<br>
 D.\t$75^\\circ$
 </div><div style="clear: both;"></div>`,
-        hint: `計算各正多邊形的內角後相減。`,
+          en: `The figure shows the square $ABCD$, the regular pentagon $ADEFG$ and the regular hexagon $AGHIJK$. Find $\\angle ABK$.
+<div class="q-mcopt"><img src="img/2023dsep2q20.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 60%; margin-left: 15px; margin-bottom: 5px;">
+A.\t$69^\\circ$<br>
+B.\t$72^\\circ$<br>
+C.\t$74^\\circ$<br>
+D.\t$75^\\circ$
+</div><div style="clear: both;"></div>`
+        },
+        hint: {
+          tc: `計算各正多邊形的內角後相減。`,
+          en: `Calculate the interior angles of each regular polygon and subtract.`
+        },
         solution: `A (52%)<p><iframe src="https://www.youtube.com/embed/asRSKwiGHjM?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -400,14 +650,26 @@ D.\t$75^\\circ$
         domain: ["Geometry"],
         topic: ["Geometry (Polygons)"],
         difficulty: 2,
-        content: `圖中，$PQRS$ 為一長方形。 設 $T$ 為 $QR$ 上的一點使得 $\\angle PTS = 90^\\circ$。 $PQ$ 的延線與 $ST$ 的延線相交於點 $U$。 延長 $PT$ 至點 $V$ 使得 $RT = RV$。 下列何者必為正確？
+        content: {
+          tc: `圖中，$PQRS$ 為一長方形。 設 $T$ 為 $QR$ 上的一點使得 $\\angle PTS = 90^\\circ$。 $PQ$ 的延線與 $ST$ 的延線相交於點 $U$。 延長 $PT$ 至點 $V$ 使得 $RT = RV$。 下列何者必為正確？
 <div class="q-mcopt"><img src="img/2023dsep2q21.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 40%; margin-left: 15px; margin-bottom: 5px;">
 A.\t$RV // ST$<br>
 B.\t$\\angle PTQ = \\angle RTS$<br>
 C.\t$\\Delta PST \\sim \\Delta UTQ$<br>
 D.\t$\\Delta PQT \\cong \\Delta TRS$
 </div><div style="clear: both;"></div>`,
-        hint: `利用直角及相似三角形條件。`,
+          en: `In the figure, $PQRS$ is a rectangle. Let $T$ be a point lying on $QR$ such that $\\angle PTS = 90^\\circ$. $PQ$ produced and $ST$ produced meet at the point $U$. $PT$ is produced to the point $V$ such that $RT = RV$. Which of the following must be true?
+<div class="q-mcopt"><img src="img/2023dsep2q21.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 40%; margin-left: 15px; margin-bottom: 5px;">
+A.\t$RV // ST$<br>
+B.\t$\\angle PTQ = \\angle RTS$<br>
+C.\t$\\Delta PST \\sim \\Delta UTQ$<br>
+D.\t$\\Delta PQT \\cong \\Delta TRS$
+</div><div style="clear: both;"></div>`
+        },
+        hint: {
+          tc: `利用直角及相似三角形條件。`,
+          en: `Use the right angle and conditions for similar triangles.`
+        },
         solution: `C (34%)<p><iframe src="https://www.youtube.com/embed/CmL9hlbsJeQ?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -419,14 +681,26 @@ D.\t$\\Delta PQT \\cong \\Delta TRS$
         domain: ["Geometry"],
         topic: ["Geometry (Circles)"],
         difficulty: 2,
-        content: `圖中所示為圓內接四邊形 $RSTU$，其中 $ST = TU$。 $RS$ 的延線與 $UT$ 的延線相交於點 $V$ 而 $RU$ 的延線與 $ST$ 的延線相交於點 $W$。 若 $\\angle RWS = 32^\\circ$ 及 $\\angle RVU = 48^\\circ$，則 $\\angle RSU =$
+        content: {
+          tc: `圖中所示為圓內接四邊形 $RSTU$，其中 $ST = TU$。 $RS$ 的延線與 $UT$ 的延線相交於點 $V$ 而 $RU$ 的延線與 $ST$ 的延線相交於點 $W$。 若 $\\angle RWS = 32^\\circ$ 及 $\\angle RVU = 48^\\circ$，則 $\\angle RSU =$
 <div class="q-mcopt"><img src="img/2023dsep2q22.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 60%; margin-left: 15px; margin-bottom: 5px;">
 A.\t$65^\\circ$。<br>
 B.\t$73^\\circ$。<br>
 C.\t$80^\\circ$。<br>
 D.\t$82^\\circ$。
 </div><div style="clear: both;"></div>`,
-        hint: `利用圓內接四邊形及等腰三角形性質。`,
+          en: `The figure shows the cyclic quadrilateral $RSTU$, where $ST = TU$. $RS$ produced and $UT$ produced meet at the point $V$ while $RU$ produced and $ST$ produced meet at the point $W$. If $\\angle RWS = 32^\\circ$ and $\\angle RVU = 48^\\circ$, then $\\angle RSU =$
+<div class="q-mcopt"><img src="img/2023dsep2q22.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 60%; margin-left: 15px; margin-bottom: 5px;">
+A.\t$65^\\circ$.<br>
+B.\t$73^\\circ$.<br>
+C.\t$80^\\circ$.<br>
+D.\t$82^\\circ$.
+</div><div style="clear: both;"></div>`
+        },
+        hint: {
+          tc: `利用圓內接四邊形及等腰三角形性質。`,
+          en: `Use properties of cyclic quadrilaterals and isosceles triangles.`
+        },
         solution: `B (42%)<p><iframe src="https://www.youtube.com/embed/-mYkQIkihY8?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -438,14 +712,26 @@ D.\t$82^\\circ$。
         domain: ["Geometry"],
         topic: ["Trigonometry (2D)"],
         difficulty: 2,
-        content: `圖中，$ABCD$ 為一梯形且 $AD//BC$。 設 $E$ 為 $AD$ 的中點。 已知 $\\angle ABE = \\angle BCE = 90^\\circ$。 求 $\\dfrac{CE}{DE}$。
+        content: {
+          tc: `圖中，$ABCD$ 為一梯形且 $AD//BC$。 設 $E$ 為 $AD$ 的中點。 已知 $\\angle ABE = \\angle BCE = 90^\\circ$。 求 $\\dfrac{CE}{DE}$。
 <div class="q-mcopt"><img src="img/2023dsep2q23.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 70%; margin-left: 15px; margin-bottom: 5px;">
 A.\t$\\dfrac{1}{2}$<br>
 B.\t$1$<br>
 C.\t$\\tan\\alpha$<br>
 D.\t$\\sin\\alpha\\cos\\alpha$
 </div><div style="clear: both;"></div>`,
-        hint: `在直角三角形中表達各邊長度。`,
+          en: `In the figure, $ABCD$ is a trapezium with $AD//BC$. Let $E$ be the mid-point of $AD$. It is given that $\\angle ABE = \\angle BCE = 90^\\circ$. Find $\\dfrac{CE}{DE}$.
+<div class="q-mcopt"><img src="img/2023dsep2q23.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 70%; margin-left: 15px; margin-bottom: 5px;">
+A.\t$\\dfrac{1}{2}$<br>
+B.\t$1$<br>
+C.\t$\\tan\\alpha$<br>
+D.\t$\\sin\\alpha\\cos\\alpha$
+</div><div style="clear: both;"></div>`
+        },
+        hint: {
+          tc: `在直角三角形中表達各邊長度。`,
+          en: `Express each side length in the right-angled triangles.`
+        },
         solution: `D (38%)<p><iframe src="https://www.youtube.com/embed/Y9epxK0zAbY?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -457,13 +743,24 @@ D.\t$\\sin\\alpha\\cos\\alpha$
         domain: ["Geometry"],
         topic: ["Coordinate Geometry"],
         difficulty: 2,
-        content: `<div style="color: red;">點 $P$ 的直角坐標為 $(\\sqrt{2}, -\\sqrt{2})$。 若 $P$ 繞原點逆時針方向旋轉 $90^\\circ$，則它的像的極坐標為</div><div class="q-mcopt" style="color: red;">
+        content: {
+          tc: `<div style="color: red;">點 $P$ 的直角坐標為 $(\\sqrt{2}, -\\sqrt{2})$。 若 $P$ 繞原點逆時針方向旋轉 $90^\\circ$，則它的像的極坐標為</div><div class="q-mcopt" style="color: red;">
 A.\t$(\\sqrt{2}, 45^\\circ)$。<br>
 B.\t$(\\sqrt{2}, 225^\\circ)$。<br>
 C.\t$(2, 45^\\circ)$。<br>
 D.\t$(2, 225^\\circ)$。
 </div>`,
-        hint: `先旋轉直角坐標再轉極坐標。`,
+          en: `<div style="color: red;">The rectangular coordinates of the point $P$ are $(\\sqrt{2}, -\\sqrt{2})$. If $P$ is rotated anticlockwise about the origin through $90^\\circ$, then the polar coordinates of its image are</div><div class="q-mcopt" style="color: red;">
+A.\t$(\\sqrt{2}, 45^\\circ)$.<br>
+B.\t$(\\sqrt{2}, 225^\\circ)$.<br>
+C.\t$(2, 45^\\circ)$.<br>
+D.\t$(2, 225^\\circ)$.
+</div>`
+        },
+        hint: {
+          tc: `先旋轉直角坐標再轉極坐標。`,
+          en: `Rotate the rectangular coordinates first, then convert to polar coordinates.`
+        },
         solution: `C (58%)<p><iframe src="https://www.youtube.com/embed/STeqr26m4bo?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -475,14 +772,26 @@ D.\t$(2, 225^\\circ)$。
         domain: ["Geometry"],
         topic: ["Equations of Straight Lines"],
         difficulty: 2,
-        content: `求常數 $a$ 使得直線 $2x+(a+3)y-5=0$ 與直線 $ax-4y+1=0$ 互相垂直。
+        content: {
+          tc: `求常數 $a$ 使得直線 $2x+(a+3)y-5=0$ 與直線 $ax-4y+1=0$ 互相垂直。
 <div class="q-mcopt">
 A.\t$-6$<br>
 B.\t$-5$<br>
 C.\t$-2$<br>
 D.\t$4$
 </div>`,
-        hint: `兩直線垂直時斜率乘積為 $-1$。`,
+          en: `Find the constant $a$ such that the straight lines $2x+(a+3)y-5=0$ and $ax-4y+1=0$ are perpendicular to each other.
+<div class="q-mcopt">
+A.\t$-6$<br>
+B.\t$-5$<br>
+C.\t$-2$<br>
+D.\t$4$
+</div>`
+        },
+        hint: {
+          tc: `兩直線垂直時斜率乘積為 $-1$。`,
+          en: `The product of the slopes of two perpendicular lines is $-1$.`
+        },
         solution: `A (56%)<p><iframe src="https://www.youtube.com/embed/BUMqenk7RuE?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -494,7 +803,8 @@ D.\t$4$
         domain: ["Geometry"],
         topic: ["Loci"],
         difficulty: 2,
-        content: `直線 $\\mathit{\\ell}$ 及直線 $L$ 的方程分別為 $9x+12y-37=0$ 及 $12x+16y+85=0$。 $\\mathit{\\ell}$ 與 $x$ 軸相交於點 $A$ 而 $L$ 與 $y$ 軸相交於點 $B$。 設 $P$ 為直角坐標平面上的一動點使得由 $P$ 至 $\\mathit{\\ell}$ 的垂直距離等於由 $P$ 至 $L$ 的垂直距離。 將 $P$ 的軌跡記為 $\\mathit{\\Gamma}$。 下列何者正確？
+        content: {
+          tc: `直線 $\\mathit{\\ell}$ 及直線 $L$ 的方程分別為 $9x+12y-37=0$ 及 $12x+16y+85=0$。 $\\mathit{\\ell}$ 與 $x$ 軸相交於點 $A$ 而 $L$ 與 $y$ 軸相交於點 $B$。 設 $P$ 為直角坐標平面上的一動點使得由 $P$ 至 $\\mathit{\\ell}$ 的垂直距離等於由 $P$ 至 $L$ 的垂直距離。 將 $P$ 的軌跡記為 $\\mathit{\\Gamma}$。 下列何者正確？
 <div class="q-mcms">
 I.\t$\\mathit{\\Gamma}$ 平行於 $L$。
 II.\t$\\mathit{\\Gamma}$ 垂直於 $AB$。
@@ -506,7 +816,23 @@ B.\t只有 I 及 III<br>
 C.\t只有 II 及 III<br>
 D.\tI、II 及 III
 </div>`,
-        hint: `軌跡是兩平行線的角平分線。`,
+          en: `The equations of the straight lines $\\mathit{\\ell}$ and $L$ are $9x+12y-37=0$ and $12x+16y+85=0$ respectively. $\\mathit{\\ell}$ cuts the $x$-axis at the point $A$ while $L$ cuts the $y$-axis at the point $B$. Let $P$ be a moving point in the rectangular coordinate plane such that the perpendicular distance from $P$ to $\\mathit{\\ell}$ is equal to the perpendicular distance from $P$ to $L$. Denote the locus of $P$ by $\\mathit{\\Gamma}$. Which of the following are true?
+<div class="q-mcms">
+I.\t$\\mathit{\\Gamma}$ is parallel to $L$.
+II.\t$\\mathit{\\Gamma}$ is perpendicular to $AB$.
+III.\t$\\mathit{\\Gamma}$ passes through the mid-point of $AB$.
+</div>
+<div class="q-mcopt">
+A.\tI and II only<br>
+B.\tI and III only<br>
+C.\tII and III only<br>
+D.\tI, II and III
+</div>`
+        },
+        hint: {
+          tc: `軌跡是兩平行線的角平分線。`,
+          en: `The locus is the angle bisector of the two parallel lines.`
+        },
         solution: `B (41%)<p><iframe src="https://www.youtube.com/embed/5qM6aX3AYQY?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -518,7 +844,8 @@ D.\tI、II 及 III
         domain: ["Geometry"],
         topic: ["Equations of Circles"],
         difficulty: 2,
-        content: `圓 $C_1$ 及圓 $C_2$ 的方程分別為 $x^2+y^2+7x-4y+15=0$ 及 $2x^2+2y^2-2x-16y-17=0$。 設 $G_1$ 及 $G_2$ 分別為 $C_1$ 的圓心及 $C_2$ 的圓心。 將原點記為 $O$。 下列何者正確？
+        content: {
+          tc: `圓 $C_1$ 及圓 $C_2$ 的方程分別為 $x^2+y^2+7x-4y+15=0$ 及 $2x^2+2y^2-2x-16y-17=0$。 設 $G_1$ 及 $G_2$ 分別為 $C_1$ 的圓心及 $C_2$ 的圓心。 將原點記為 $O$。 下列何者正確？
 <div class="q-mcms">
 I.\t$\\Delta OG_1G_2$ 為一等邊三角形。
 II.\t線段 $OG_1$ 位於 $C_2$ 以內。
@@ -530,7 +857,23 @@ B.\t只有 I 及 III<br>
 C.\t只有 II 及 III<br>
 D.\tI、II 及 III
 </div>`,
-        hint: `先求兩圓圓心及半徑。`,
+          en: `The equations of the circles $C_1$ and $C_2$ are $x^2+y^2+7x-4y+15=0$ and $2x^2+2y^2-2x-16y-17=0$ respectively. Let $G_1$ and $G_2$ be the centres of $C_1$ and $C_2$ respectively. Denote the origin by $O$. Which of the following are true?
+<div class="q-mcms">
+I.\t$\\Delta OG_1G_2$ is an equilateral triangle.
+II.\tThe line segment $OG_1$ lies inside $C_2$.
+III.\t$C_1$ and $C_2$ intersect at two distinct points.
+</div>
+<div class="q-mcopt">
+A.\tI and II only<br>
+B.\tI and III only<br>
+C.\tII and III only<br>
+D.\tI, II and III
+</div>`
+        },
+        hint: {
+          tc: `先求兩圓圓心及半徑。`,
+          en: `Find the centres and radii of the two circles first.`
+        },
         solution: `C (51%)<p><iframe src="https://www.youtube.com/embed/ZhdruYkFAxA?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -542,14 +885,26 @@ D.\tI、II 及 III
         domain: ["Data Handling"],
         topic: ["Probability"],
         difficulty: 2,
-        content: `一盒子內有五張分別記有數字 $1$、$2$、$3$、$4$ 及 $5$ 的紙卡，而另一盒子內有四張分別記有數字 $6$、$7$、$8$ 及 $9$ 的紙卡。 若從每一盒子中各隨機抽出一個數字，求抽出的兩個數字之積可被 $4$ 整除的概率。
+        content: {
+          tc: `一盒子內有五張分別記有數字 $1$、$2$、$3$、$4$ 及 $5$ 的紙卡，而另一盒子內有四張分別記有數字 $6$、$7$、$8$ 及 $9$ 的紙卡。 若從每一盒子中各隨機抽出一個數字，求抽出的兩個數字之積可被 $4$ 整除的概率。
 <div class="q-mcopt">
 A.\t$\\dfrac{1}{5}$<br>
 B.\t$\\dfrac{3}{10}$<br>
 C.\t$\\dfrac{7}{20}$<br>
 D.\t$\\dfrac{9}{20}$
 </div>`,
-        hint: `分別考慮奇偶情況後計算概率。`,
+          en: `A box contains five cards numbered $1$, $2$, $3$, $4$ and $5$ respectively while another box contains four cards numbered $6$, $7$, $8$ and $9$ respectively. If a number is randomly drawn from each box, find the probability that the product of the two numbers drawn is divisible by $4$.
+<div class="q-mcopt">
+A.\t$\\dfrac{1}{5}$<br>
+B.\t$\\dfrac{3}{10}$<br>
+C.\t$\\dfrac{7}{20}$<br>
+D.\t$\\dfrac{9}{20}$
+</div>`
+        },
+        hint: {
+          tc: `分別考慮奇偶情況後計算概率。`,
+          en: `Consider the odd/even cases separately and calculate the probability.`
+        },
         solution: `D (66%)<p><iframe src="https://www.youtube.com/embed/jdbL5URZncM?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -561,13 +916,24 @@ D.\t$\\dfrac{9}{20}$
         domain: ["Data Handling"],
         topic: ["Statistical Graphs", "Measures of Dispersion"],
         difficulty: 1,
-        content: `下面的框線圖顯示在某年一些工程師的培訓時數的分佈。 求該分佈的上四分位數。<img src="img/2023dsep2q29zh.jpg" class="q-img" alt="題目附圖" style="max-width: 55%;"><div class="q-mcopt">
+        content: {
+          tc: `下面的框線圖顯示在某年一些工程師的培訓時數的分佈。 求該分佈的上四分位數。<img src="img/2023dsep2q29zh.jpg" class="q-img" alt="題目附圖" style="max-width: 55%;"><div class="q-mcopt">
 A.\t$20$<br>
 B.\t$40$<br>
 C.\t$60$<br>
 D.\t$70$
 </div>`,
-        hint: `從框線圖直接讀取 $Q_3$。`,
+          en: `The box-and-whisker diagram below shows the distribution of the numbers of training hours of some engineers in a year. Find the upper quartile of the distribution.<img src="img/2023dsep2q29en.jpg" class="q-img" alt="題目附圖" style="max-width: 55%;"><div class="q-mcopt">
+A.\t$20$<br>
+B.\t$40$<br>
+C.\t$60$<br>
+D.\t$70$
+</div>`
+        },
+        hint: {
+          tc: `從框線圖直接讀取 $Q_3$。`,
+          en: `Read $Q_3$ directly from the box-and-whisker diagram.`
+        },
         solution: `C (76%)<p><iframe src="https://www.youtube.com/embed/jvnnhEdcDzA?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -579,14 +945,26 @@ D.\t$70$
         domain: ["Data Handling"],
         topic: ["Measures of Central Tendency"],
         difficulty: 1,
-        content: `某公司有 $14$ 名全職僱員及 $56$ 名兼職僱員。 該些全職僱員的平均薪金為 $\\$31\\,530$，而該些兼職僱員的平均薪金為 $\\$21\\,525$。 求該公司這些僱員的平均薪金。
+        content: {
+          tc: `某公司有 $14$ 名全職僱員及 $56$ 名兼職僱員。 該些全職僱員的平均薪金為 $\\$31\\,530$，而該些兼職僱員的平均薪金為 $\\$21\\,525$。 求該公司這些僱員的平均薪金。
 <div class="q-mcopt">
 A.\t$\\$23\\,526$<br>
 B.\t$\\$25\\,527$<br>
 C.\t$\\$27\\,528$<br>
 D.\t$\\$29\\,529$
 </div>`,
-        hint: `用加權平均計算。`,
+          en: `There are $14$ full-time employees and $56$ part-time employees in a company. The mean salary of the full-time employees is $\\$31\\,530$ while the mean salary of the part-time employees is $\\$21\\,525$. Find the mean salary of these employees of the company.
+<div class="q-mcopt">
+A.\t$\\$23\\,526$<br>
+B.\t$\\$25\\,527$<br>
+C.\t$\\$27\\,528$<br>
+D.\t$\\$29\\,529$
+</div>`
+        },
+        hint: {
+          tc: `用加權平均計算。`,
+          en: `Calculate using the weighted average.`
+        },
         solution: `A (84%)<p><iframe src="https://www.youtube.com/embed/nkwFB3YQhVM?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -598,14 +976,26 @@ D.\t$\\$29\\,529$
         domain: ["Algebra"],
         topic: ["Base Conversion"],
         difficulty: 2,
-        content: `$1011001011001011_2=$
+        content: {
+          tc: `$1011001011001011_2=$
 <div class="q-mcopt">
 A.\t$11 \\times 2^{11} + 11 \\times 2^5 + 11$。<br>
 B.\t$11 \\times 2^{12} + 11 \\times 2^6 + 11$。<br>
 C.\t$11 \\times 2^{13} + 11 \\times 2^7 + 11$。<br>
 D.\t$11 \\times 2^{14} + 11 \\times 2^8 + 11$。
 </div>`,
-        hint: `分組後轉成十進制。`,
+          en: `$1011001011001011_2=$
+<div class="q-mcopt">
+A.\t$11 \\times 2^{11} + 11 \\times 2^5 + 11$.<br>
+B.\t$11 \\times 2^{12} + 11 \\times 2^6 + 11$.<br>
+C.\t$11 \\times 2^{13} + 11 \\times 2^7 + 11$.<br>
+D.\t$11 \\times 2^{14} + 11 \\times 2^8 + 11$.
+</div>`
+        },
+        hint: {
+          tc: `分組後轉成十進制。`,
+          en: `Group the digits and convert to decimal.`
+        },
         solution: `B (62%)<p><iframe src="https://www.youtube.com/embed/9vExkGThVsU?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -617,14 +1007,26 @@ D.\t$11 \\times 2^{14} + 11 \\times 2^8 + 11$。
         domain: ["Algebra"],
         topic: ["H.C.F. and L.C.M."],
         difficulty: 2,
-        content: `$a^4b^2c$ 、 $a^3b^4c$  及  $a^2b^5c^2$  的 L.C.M. 為
+        content: {
+          tc: `$a^4b^2c$ 、 $a^3b^4c$  及  $a^2b^5c^2$  的 L.C.M. 為
 <div class="q-mcopt">
 A.\t$a^2b^2c$。<br>
 B.\t$a^2b^2c^2$。<br>
 C.\t$a^4b^5c$。<br>
 D.\t$a^4b^5c^2$。
 </div>`,
-        hint: `取各變數的最高次冪。`,
+          en: `The L.C.M. of $a^4b^2c$, $a^3b^4c$ and $a^2b^5c^2$ is
+<div class="q-mcopt">
+A.\t$a^2b^2c$.<br>
+B.\t$a^2b^2c^2$.<br>
+C.\t$a^4b^5c$.<br>
+D.\t$a^4b^5c^2$.
+</div>`
+        },
+        hint: {
+          tc: `取各變數的最高次冪。`,
+          en: `Take the highest power of each variable.`
+        },
         solution: `D (64%)<p><iframe src="https://www.youtube.com/embed/5PYDAgYVPWQ?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -636,14 +1038,26 @@ D.\t$a^4b^5c^2$。
         domain: ["Algebra"],
         topic: ["Exponential Functions and Logarithm Functions"],
         difficulty: 2,
-        content: `已知 $\\log_8 y$ 為 $\\log_4 x$ 的線性函數。 該線性函數的圖像在垂直軸上的截距及在水平軸上的截距分別為 $5$ 及 $3$。 下列何者必為正確？
+        content: {
+          tc: `已知 $\\log_8 y$ 為 $\\log_4 x$ 的線性函數。 該線性函數的圖像在垂直軸上的截距及在水平軸上的截距分別為 $5$ 及 $3$。 下列何者必為正確？
 <div class="q-mcopt">
 A.\t$x^5y^2 = 8^{10}$<br>
 B.\t$x^6y^5 = 8^{20}$<br>
 C.\t$x^{10}y^3 = 8^{20}$<br>
 D.\t$x^9y^{10} = 8^{30}$
 </div>`,
-        hint: `寫出線性關係並換底。`,
+          en: `It is given that $\\log_8 y$ is a linear function of $\\log_4 x$. The intercepts on the vertical axis and on the horizontal axis of the graph of the linear function are $5$ and $3$ respectively. Which of the following must be true?
+<div class="q-mcopt">
+A.\t$x^5y^2 = 8^{10}$<br>
+B.\t$x^6y^5 = 8^{20}$<br>
+C.\t$x^{10}y^3 = 8^{20}$<br>
+D.\t$x^9y^{10} = 8^{30}$
+</div>`
+        },
+        hint: {
+          tc: `寫出線性關係並換底。`,
+          en: `Write out the linear relationship and change the base.`
+        },
         solution: `A (39%)<p><iframe src="https://www.youtube.com/embed/JoHWEugGvH4?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -655,14 +1069,26 @@ D.\t$x^9y^{10} = 8^{30}$
         domain: ["Algebra"],
         topic: ["Complex Numbers"],
         difficulty: 2,
-        content: `若 $k$ 為一實數，則 $\\dfrac{i}{k-i} + \\dfrac{2}{k+i}$ 的實部為
+        content: {
+          tc: `若 $k$ 為一實數，則 $\\dfrac{i}{k-i} + \\dfrac{2}{k+i}$ 的實部為
 <div class="q-mcopt">
 A.\t$\\dfrac{2k+1}{k^2-1}$。<br>
 B.\t$\\dfrac{2k-1}{k^2+1}$。<br>
 C.\t$\\dfrac{k+2}{k^2-1}$。<br>
 D.\t$\\dfrac{k-2}{k^2+1}$。
 </div>`,
-        hint: `分別化簡兩個分式後相加。`,
+          en: `If $k$ is a real number, then the real part of $\\dfrac{i}{k-i} + \\dfrac{2}{k+i}$ is
+<div class="q-mcopt">
+A.\t$\\dfrac{2k+1}{k^2-1}$.<br>
+B.\t$\\dfrac{2k-1}{k^2+1}$.<br>
+C.\t$\\dfrac{k+2}{k^2-1}$.<br>
+D.\t$\\dfrac{k-2}{k^2+1}$.
+</div>`
+        },
+        hint: {
+          tc: `分別化簡兩個分式後相加。`,
+          en: `Simplify each fraction separately and then add.`
+        },
         solution: `B (63%)<p><iframe src="https://www.youtube.com/embed/p0S-DQHLFFI?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -674,7 +1100,8 @@ D.\t$\\dfrac{k-2}{k^2+1}$。
         domain: ["Algebra"],
         topic: ["Functions and Graphs"],
         difficulty: 2,
-        content: `設 $\\mathrm{f}(x) = 3x^2 + 18mx + 22m^2$，其中 $m$ 為一實常數。 下列有關 $y = -\\mathrm{f}(3x)$ 的圖像之敍述，何者必為正確？
+        content: {
+          tc: `設 $\\mathrm{f}(x) = 3x^2 + 18mx + 22m^2$，其中 $m$ 為一實常數。 下列有關 $y = -\\mathrm{f}(3x)$ 的圖像之敍述，何者必為正確？
 <div class="q-mcms">
 I.\t該圖像的頂點的 $x$ 坐標為 $m$。
 II.\t該圖像的頂點的 $y$ 坐標為 $5m^2$。
@@ -686,7 +1113,23 @@ B.\t只有 II<br>
 C.\t只有 I 及 III<br>
 D.\t只有 II 及 III
 </div>`,
-        hint: `先展開 $y=-\\mathrm{f}(3x)$ 再求頂點。`,
+          en: `Let $\\mathrm{f}(x) = 3x^2 + 18mx + 22m^2$, where $m$ is a real constant. Which of the following statements about the graph of $y = -\\mathrm{f}(3x)$ must be true?
+<div class="q-mcms">
+I.\tThe $x$-coordinate of the vertex of the graph is $m$.
+II.\tThe $y$-coordinate of the vertex of the graph is $5m^2$.
+III.\tThe equation of the axis of symmetry of the graph is $x+m=0$.
+</div>
+<div class="q-mcopt">
+A.\tI only<br>
+B.\tII only<br>
+C.\tI and III only<br>
+D.\tII and III only
+</div>`
+        },
+        hint: {
+          tc: `先展開 $y=-\\mathrm{f}(3x)$ 再求頂點。`,
+          en: `Expand $y=-\\mathrm{f}(3x)$ first and then find the vertex.`
+        },
         solution: `D (32%)<p><iframe src="https://www.youtube.com/embed/FTgq3WeQhHo?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -698,14 +1141,26 @@ D.\t只有 II 及 III
         domain: ["Algebra"],
         topic: ["Sequences"],
         difficulty: 2,
-        content: `設 $\\mathrm{T}(n)$ 為一等差數列的第 $n$ 項。 若 $\\mathrm{T}(11)=83$ 及 $\\mathrm{T}(25)+\\mathrm{T}(30)=463$，求 $k$ 的最小值使得 $\\mathrm{T}(1)+\\mathrm{T}(2)+\\mathrm{T}(3)+\\cdots+\\mathrm{T}(k)>4\\times10^5$。
+        content: {
+          tc: `設 $\\mathrm{T}(n)$ 為一等差數列的第 $n$ 項。 若 $\\mathrm{T}(11)=83$ 及 $\\mathrm{T}(25)+\\mathrm{T}(30)=463$，求 $k$ 的最小值使得 $\\mathrm{T}(1)+\\mathrm{T}(2)+\\mathrm{T}(3)+\\cdots+\\mathrm{T}(k)>4\\times10^5$。
 <div class="q-mcopt">
 A.\t$299$<br>
 B.\t$300$<br>
 C.\t$944$<br>
 D.\t$945$
 </div>`,
-        hint: `先求首項及公差，再解不等式。`,
+          en: `Let $\\mathrm{T}(n)$ be the $n$th term of an arithmetic sequence. If $\\mathrm{T}(11)=83$ and $\\mathrm{T}(25)+\\mathrm{T}(30)=463$, find the least value of $k$ such that $\\mathrm{T}(1)+\\mathrm{T}(2)+\\mathrm{T}(3)+\\cdots+\\mathrm{T}(k)>4\\times10^5$.
+<div class="q-mcopt">
+A.\t$299$<br>
+B.\t$300$<br>
+C.\t$944$<br>
+D.\t$945$
+</div>`
+        },
+        hint: {
+          tc: `先求首項及公差，再解不等式。`,
+          en: `Find the first term and common difference first, then solve the inequality.`
+        },
         solution: `B (40%)<p><iframe src="https://www.youtube.com/embed/HaqeU75Z5sc?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -717,7 +1172,8 @@ D.\t$945$
         domain: ["Algebra"],
         topic: ["Linear Programming"],
         difficulty: 3,
-        content: `考慮以下的不等式組：<br>
+        content: {
+          tc: `考慮以下的不等式組：<br>
 \t$\\begin{cases}
 x+3 \\ge 0 \\\\[1.2ex]
 2x+3y-12 \\le 0 \\\\[1.2ex]
@@ -730,7 +1186,24 @@ B.\t$\\beta \\ge -10$<br>
 C.\t$\\beta \\le 4$<br>
 D.\t$\\beta \\ge 4$
 </div>`,
-        hint: `找出可行域頂點並代入目標函數。`,
+          en: `Consider the following system of inequalities:<br>
+\t$\\begin{cases}
+x+3 \\ge 0 \\\\[1.2ex]
+2x+3y-12 \\le 0 \\\\[1.2ex]
+5x-3y+12 \\le 0
+\\end{cases}$<br>
+Let $D$ be the region which represents the solution of the above system of inequalities. Find the range of values of $\\beta$ such that the greatest value of $\\beta x+6y$ is $24$, where $(x, y)$ is a point lying in $D$.
+<div class="q-mcopt">
+A.\t$\\beta \\le -10$<br>
+B.\t$\\beta \\ge -10$<br>
+C.\t$\\beta \\le 4$<br>
+D.\t$\\beta \\ge 4$
+</div>`
+        },
+        hint: {
+          tc: `找出可行域頂點並代入目標函數。`,
+          en: `Find the vertices of the feasible region and substitute into the objective function.`
+        },
         solution: `D (25%)<p><iframe src="https://www.youtube.com/embed/241Bd1Sp9QA?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -742,14 +1215,26 @@ D.\t$\\beta \\ge 4$
         domain: ["Geometry"],
         topic: ["Geometry (Circles)"],
         difficulty: 2,
-        content: `圖中，$P$、$Q$ 及 $R$ 均為圓上的點。 $ST$、$TU$ 及 $SU$ 分別為該圓在 $P$、$Q$ 及 $R$ 的切線。 $RQ$ 的延線與 $ST$ 的延線相交於點 $V$。 若 $\\angle PSR = 34^\\circ$ 及 $\\angle QPT = 46^\\circ$，則 $\\angle PVQ =$
+        content: {
+          tc: `圖中，$P$、$Q$ 及 $R$ 均為圓上的點。 $ST$、$TU$ 及 $SU$ 分別為該圓在 $P$、$Q$ 及 $R$ 的切線。 $RQ$ 的延線與 $ST$ 的延線相交於點 $V$。 若 $\\angle PSR = 34^\\circ$ 及 $\\angle QPT = 46^\\circ$，則 $\\angle PVQ =$
 <div class="q-mcopt"><img src="img/2023dsep2q38.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 70%; margin-left: 15px; margin-bottom: 5px;">
 A.\t$17^\\circ$。<br>
 B.\t$22^\\circ$。<br>
 C.\t$27^\\circ$。<br>
 D.\t$28^\\circ$。
 </div><div style="clear: both;"></div>`,
-        hint: `利用切線與弦的夾角相等性質。`,
+          en: `In the figure, $P$, $Q$ and $R$ are points lying on a circle. $ST$, $TU$ and $SU$ are the tangents to the circle at $P$, $Q$ and $R$ respectively. $RQ$ produced and $ST$ produced meet at the point $V$. If $\\angle PSR = 34^\\circ$ and $\\angle QPT = 46^\\circ$, then $\\angle PVQ =$
+<div class="q-mcopt"><img src="img/2023dsep2q38.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 70%; margin-left: 15px; margin-bottom: 5px;">
+A.\t$17^\\circ$.<br>
+B.\t$22^\\circ$.<br>
+C.\t$27^\\circ$.<br>
+D.\t$28^\\circ$.
+</div><div style="clear: both;"></div>`
+        },
+        hint: {
+          tc: `利用切線與弦的夾角相等性質。`,
+          en: `Use the tangent-chord angle property.`
+        },
         solution: `C (50%)<p><iframe src="https://www.youtube.com/embed/mlsn-UMqQ_k?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -761,14 +1246,26 @@ D.\t$28^\\circ$。
         domain: ["Geometry"],
         topic: ["Equations of Circles"],
         difficulty: 2,
-        content: `直線 $hx+ky=6$ 與圓 $x^2+y^2-8x-4y-18=0$ 相交於點 $M$ 及點 $N$，其中 $h$ 及 $k$ 均為常數。 若 $MN$ 的中點的坐標為 $(1, 0)$，求 $k$。
+        content: {
+          tc: `直線 $hx+ky=6$ 與圓 $x^2+y^2-8x-4y-18=0$ 相交於點 $M$ 及點 $N$，其中 $h$ 及 $k$ 均為常數。 若 $MN$ 的中點的坐標為 $(1, 0)$，求 $k$。
 <div class="q-mcopt">
 A.\t$4$<br>
 B.\t$6$<br>
 C.\t$9$<br>
 D.\t$12$
 </div>`,
-        hint: `弦的中點在圓心與弦垂直的直線上。`,
+          en: `The straight line $hx+ky=6$ and the circle $x^2+y^2-8x-4y-18=0$ intersect at the points $M$ and $N$, where $h$ and $k$ are constants. If the coordinates of the mid-point of $MN$ are $(1, 0)$, find $k$.
+<div class="q-mcopt">
+A.\t$4$<br>
+B.\t$6$<br>
+C.\t$9$<br>
+D.\t$12$
+</div>`
+        },
+        hint: {
+          tc: `弦的中點在圓心與弦垂直的直線上。`,
+          en: `The mid-point of a chord lies on the line from the centre perpendicular to the chord.`
+        },
         solution: `A (31%)<p><iframe src="https://www.youtube.com/embed/8ErPGU1wfqQ?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -780,14 +1277,26 @@ D.\t$12$
         domain: ["Geometry"],
         topic: ["Trigonometry (3D)"],
         difficulty: 3,
-        content: `直立角錐體 $VABCD$ 的底為正方形 $ABCD$。 設 $\\theta$ 為 $\\Delta ABV$ 與 $\\Delta BCV$ 間的交角。 若 $AB : AV = 5 : 4$，則 $\\cos \\theta =$
+        content: {
+          tc: `直立角錐體 $VABCD$ 的底為正方形 $ABCD$。 設 $\\theta$ 為 $\\Delta ABV$ 與 $\\Delta BCV$ 間的交角。 若 $AB : AV = 5 : 4$，則 $\\cos \\theta =$
 <div class="q-mcopt">
 A.\t$\\dfrac{-25}{39}$。<br>
 B.\t$\\dfrac{-17}{33}$。<br>
 C.\t$\\dfrac{-9}{16}$。<br>
 D.\t$0$。
 </div>`,
-        hint: `設邊長並用餘弦定理求兩面角。`,
+          en: `The base of the right pyramid $VABCD$ is the square $ABCD$. Let $\\theta$ be the angle between $\\Delta ABV$ and $\\Delta BCV$. If $AB : AV = 5 : 4$, then $\\cos\\theta =$
+<div class="q-mcopt">
+A.\t$\\dfrac{-25}{39}$.<br>
+B.\t$\\dfrac{-17}{33}$.<br>
+C.\t$\\dfrac{-9}{16}$.<br>
+D.\t$0$.
+</div>`
+        },
+        hint: {
+          tc: `設邊長並用餘弦定理求兩面角。`,
+          en: `Set side lengths and use the cosine rule to find the dihedral angle.`
+        },
         solution: `A (28%)<p><iframe src="https://www.youtube.com/embed/5ma-m-HGcFQ?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -799,14 +1308,26 @@ D.\t$0$。
         domain: ["Geometry"],
         topic: ["Coordinate Geometry", "Four Centres of a Triangle"],
         difficulty: 2,
-        content: `直線 $L_1$ 及直線 $L_2$ 的方程分別為 $3x-4y+k=0$ 及 $4x+3y-k=0$，其中 $k$ 為一正常數。已知 $L_1$ 與 $x$ 軸相交於點 $P$。將 $L_1$ 與 $L_2$ 的交點記為 $Q$。若 $R$ 為 $L_2$ 上的一點使得 $\\Delta PQR$ 的內心在 $x$ 軸上，則 $R$ 的 $x$ 坐標為
+        content: {
+          tc: `直線 $L_1$ 及直線 $L_2$ 的方程分別為 $3x-4y+k=0$ 及 $4x+3y-k=0$，其中 $k$ 為一正常數。已知 $L_1$ 與 $x$ 軸相交於點 $P$。將 $L_1$ 與 $L_2$ 的交點記為 $Q$。若 $R$ 為 $L_2$ 上的一點使得 $\\Delta PQR$ 的內心在 $x$ 軸上，則 $R$ 的 $x$ 坐標為
 <div class="q-mcopt">
 A.\t$-7k$。<br>
 B.\t$-k$。<br>
 C.\t$k$。<br>
 D.\t$7k$。
 </div>`,
-        hint: `利用內心坐標公式及垂直條件。`,
+          en: `The equations of the straight lines $L_1$ and $L_2$ are $3x-4y+k=0$ and $4x+3y-k=0$ respectively, where $k$ is a positive constant. It is given that $L_1$ cuts the $x$-axis at the point $P$. Denote the point of intersection of $L_1$ and $L_2$ by $Q$. If $R$ is a point lying on $L_2$ such that the in-centre of $\\Delta PQR$ lies on the $x$-axis, then the $x$-coordinate of $R$ is
+<div class="q-mcopt">
+A.\t$-7k$.<br>
+B.\t$-k$.<br>
+C.\t$k$.<br>
+D.\t$7k$.
+</div>`
+        },
+        hint: {
+          tc: `利用內心坐標公式及垂直條件。`,
+          en: `Use the in-centre coordinate formula and perpendicularity conditions.`
+        },
         solution: `C (33%)<p><iframe src="https://www.youtube.com/embed/c-v24pv-vr0?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -818,14 +1339,26 @@ D.\t$7k$。
         domain: ["Data Handling"],
         topic: ["Permutations and Combinations"],
         difficulty: 2,
-        content: `某群有 $15$ 名教師。 若從該群中選出 $5$ 名教師組成一個有 $1$ 名主席及 $4$ 名委員的委員會，則可組成多少個不同的委員會？
+        content: {
+          tc: `某群有 $15$ 名教師。 若從該群中選出 $5$ 名教師組成一個有 $1$ 名主席及 $4$ 名委員的委員會，則可組成多少個不同的委員會？
 <div class="q-mcopt">
 A.\t$3\\,003$<br>
 B.\t$15\\,015$<br>
 C.\t$20\\,475$<br>
 D.\t$360\\,360$
 </div>`,
-        hint: `先選 5 人再從中選主席。`,
+          en: `There are $15$ teachers in a group. If $5$ teachers are selected from the group to form a committee consisting of $1$ chairperson and $4$ members, how many different committees can be formed?
+<div class="q-mcopt">
+A.\t$3\\,003$<br>
+B.\t$15\\,015$<br>
+C.\t$20\\,475$<br>
+D.\t$360\\,360$
+</div>`
+        },
+        hint: {
+          tc: `先選 5 人再從中選主席。`,
+          en: `Choose 5 people first, then select the chairperson from them.`
+        },
         solution: `B (44%)<p><iframe src="https://www.youtube.com/embed/pSDBYb1mWmM?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -837,14 +1370,26 @@ D.\t$360\\,360$
         domain: ["Data Handling"],
         topic: ["Probability"],
         difficulty: 2,
-        content: `當某男生擲一飛鏢時，他擲中目標的概率為 $0.6$。 若這男生擲該飛鏢 $4$ 次，求他擲中目標至少 $2$ 次的概率。
+        content: {
+          tc: `當某男生擲一飛鏢時，他擲中目標的概率為 $0.6$。 若這男生擲該飛鏢 $4$ 次，求他擲中目標至少 $2$ 次的概率。
 <div class="q-mcopt">
 A.\t$0.5248$<br>
 B.\t$0.7056$<br>
 C.\t$0.8208$<br>
 D.\t$0.8464$
 </div>`,
-        hint: `用二項分布計算 $P(X\\ge 2)$。`,
+          en: `When a boy throws a dart, the probability that he hits the target is $0.6$. If this boy throws the dart $4$ times, find the probability that he hits the target at least $2$ times.
+<div class="q-mcopt">
+A.\t$0.5248$<br>
+B.\t$0.7056$<br>
+C.\t$0.8208$<br>
+D.\t$0.8464$
+</div>`
+        },
+        hint: {
+          tc: `用二項分布計算 $P(X\\ge 2)$。`,
+          en: `Use the binomial distribution to calculate $P(X\\ge 2)$.`
+        },
         solution: `C (39%)<p><iframe src="https://www.youtube.com/embed/A7b9_LON0xM?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -856,7 +1401,8 @@ D.\t$0.8464$
         domain: ["Data Handling"],
         topic: ["Standard Score"],
         difficulty: 2,
-        content: `下表顯示三名學生在某考試的得分（以分為單位）及其對應的標準分。<table class="q-table" style="margin-top: 12px; margin-bottom: 12px; margin-left: auto; margin-right: auto; border-collapse: collapse; table-layout: auto;">
+        content: {
+          tc: `下表顯示三名學生在某考試的得分（以分為單位）及其對應的標準分。<table class="q-table" style="margin-top: 12px; margin-bottom: 12px; margin-left: auto; margin-right: auto; border-collapse: collapse; table-layout: auto;">
     <colgroup>
       <col style="width: auto;">
       <col style="width: 4em;">
@@ -882,7 +1428,37 @@ B.\t$66$<br>
 C.\t$70$<br>
 D.\t$78$
 </div>`,
-        hint: `用標準分公式建立方程求平均值及標準差。`,
+          en: `The table below shows the scores (in marks) and the corresponding standard scores of three students in an examination.<table class="q-table" style="margin-top: 12px; margin-bottom: 12px; margin-left: auto; margin-right: auto; border-collapse: collapse; table-layout: auto;">
+    <colgroup>
+      <col style="width: auto;">
+      <col style="width: 4em;">
+      <col style="width: 4em;">
+      <col style="width: 4em;">
+    </colgroup>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">Score (marks)</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$46$</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$x$</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$86$</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">Standard score</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$-3$</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$1$</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$2$</td>
+    </tr>
+  </table>Find $x$.
+<div class="q-mcopt">
+A.\t$64$<br>
+B.\t$66$<br>
+C.\t$70$<br>
+D.\t$78$
+</div>`
+        },
+        hint: {
+          tc: `用標準分公式建立方程求平均值及標準差。`,
+          en: `Use the standard score formula to form equations and find the mean and standard deviation.`
+        },
         solution: `D (60%)<p><iframe src="https://www.youtube.com/embed/1fHL0gaDlno?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
@@ -894,7 +1470,8 @@ D.\t$78$
         domain: ["Data Handling"],
         topic: ["Change of Data"],
         difficulty: 2,
-        content: `已知 $n$ 為一整數。 設 $u$、$v$ 及 $w$ 分別為 $\\{1-9n, 3-9n, 4-9n, 5-9n, 7-9n\\}$ 這組數的標準差、中位數及分佈域。 下列何者必為正確？
+        content: {
+          tc: `已知 $n$ 為一整數。 設 $u$、$v$ 及 $w$ 分別為 $\\{1-9n, 3-9n, 4-9n, 5-9n, 7-9n\\}$ 這組數的標準差、中位數及分佈域。 下列何者必為正確？
 <div class="q-mcms">
 I.\t$u = 2$
 II.\t$v < 4$
@@ -906,7 +1483,23 @@ B.\t只有 II<br>
 C.\t只有 I 及 III<br>
 D.\t只有 II 及 III
 </div>`,
-        hint: `平移不影響標準差及分佈域，中位數則隨平移改變。`,
+          en: `It is given that $n$ is an integer. Let $u$, $v$ and $w$ be the standard deviation, the median and the range of the group of numbers $\\{1-9n, 3-9n, 4-9n, 5-9n, 7-9n\\}$ respectively. Which of the following must be true?
+<div class="q-mcms">
+I.\t$u = 2$
+II.\t$v < 4$
+III.\t$w > 6$
+</div>
+<div class="q-mcopt">
+A.\tI only<br>
+B.\tII only<br>
+C.\tI and III only<br>
+D.\tII and III only
+</div>`
+        },
+        hint: {
+          tc: `平移不影響標準差及分佈域，中位數則隨平移改變。`,
+          en: `Translation does not affect the standard deviation or range, but does affect the median.`
+        },
         solution: `A (47%)<p><iframe src="https://www.youtube.com/embed/gUeGQ9ixWwc?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     }
 );
