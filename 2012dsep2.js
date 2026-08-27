@@ -1000,7 +1000,7 @@ D.\t$2.09$
         topic: ["Measures of Central Tendency"],
         difficulty: 2,
         content: {
-            tc: `考慮以下數據：<div style="text-align: center;">19 10 12 12 1313 14 15 16 $m$ $n$</div>若以上數據的平均值及中位數均為 $14$，則下列何者正確？
+            tc: `考慮以下數據：<div style="text-align: center;">$19$  $10$  $12$  $12$  $13$  $13$  $14$  $15$  $16$  $m$  $n$</div>若以上數據的平均值及中位數均為 $14$，則下列何者正確？
 <div class="q-mcms">
 I.\t$m \\ge 14$
 II.\t$n \\le 16$
@@ -1012,9 +1012,7 @@ B.\t只有 I 及 III<br>
 C.\t只有 II 及 III<br>
 D.\tI、II 及 III
 </div>`,
-            en: `Consider the following data:
-<div style="text-align: center;">19 10 12 12 13 13 14 15 16 $m$ $n$</div>
-If both the mean and the median of the above data are $14$, which of the following are true?
+            en: `Consider the following data:<div style="text-align: center;">$19$  $10$  $12$  $12$  $13$  $13$  $14$  $15$  $16$  $m$  $n$</div>If both the mean and the median of the above data are $14$, which of the following are true?
 <div class="q-mcms">
 I.\t$m \\ge 14$
 II.\t$n \\le 16$
@@ -1280,12 +1278,12 @@ D.\tI, II and III
         content: {
             tc: `下列何者可表示在同一直角坐標系上 $y=\\mathrm{f}(x)$ 的圖像及 $y=\\mathrm{f}(x-2)+1$ 的圖像？
 <div class="q-mcopt">
-<img src="img/2012dsep2q38A.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 35%;">\t\t\t<img src="img/2012dsep2q38B.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 35%;"><br>
+<img src="img/2012dsep2q38A.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 35%;">\t\t<img src="img/2012dsep2q38B.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 35%;"><br>
 <img src="img/2012dsep2q38C.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 40%;">\t\t<img src="img/2012dsep2q38D.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 35%;">
 </div>`,
             en: `Which of the following may represent the graph of $y = \\mathrm{f}(x)$ and the graph of $y = \\mathrm{f}(x-2)+1$ on the same rectangular coordinate system?
 <div class="q-mcopt">
-<img src="img/2012dsep2q38A.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 35%;">\t\t\t<img src="img/2012dsep2q38B.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 35%;"><br>
+<img src="img/2012dsep2q38A.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 35%;">\t\t<img src="img/2012dsep2q38B.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 35%;"><br>
 <img src="img/2012dsep2q38C.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 40%;">\t\t<img src="img/2012dsep2q38D.jpg" class="q-img" alt="題目附圖" style="display: inline-block; vertical-align: top; max-width: 35%;">
 </div>`
         },
