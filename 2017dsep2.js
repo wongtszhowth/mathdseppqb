@@ -10,14 +10,26 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Factorization"],
         difficulty: 1,
-        content: `$3m^2 - 5mn + 2n^2 + m - n =$
+        content: {
+            tc: `$3m^2 - 5mn + 2n^2 + m - n =$
 <div class="q-mcopt">
-A.\t$(m-n)(3m-2n+1)$。 <br>
-B.\t$(m-n)(3m+2n+1)$。 <br>
-C.\t$(m+n)(3m-2n-1)$。 <br>
-D.\t$(m+n)(3m+2n-1)$。 
+A.\t$(m-n)(3m-2n+1)$。<br>
+B.\t$(m-n)(3m+2n+1)$。<br>
+C.\t$(m+n)(3m-2n-1)$。<br>
+D.\t$(m+n)(3m+2n-1)$。
 </div>`,
-        hint: `分組後因式分解。 `,
+            en: `$3m^2 - 5mn + 2n^2 + m - n =$
+<div class="q-mcopt">
+A.\t$(m-n)(3m-2n+1)$.<br>
+B.\t$(m-n)(3m+2n+1)$.<br>
+C.\t$(m+n)(3m-2n-1)$.<br>
+D.\t$(m+n)(3m+2n-1)$.
+</div>`
+        },
+        hint: {
+            tc: `先因式分解首三項。`,
+            en: `Factorize the first three terms first.`
+        },
         solution: `A (89%)<p><iframe src="https://www.youtube.com/embed/m54oHm6JjxA?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
