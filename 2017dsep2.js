@@ -938,7 +938,7 @@ D.\t$40$
         topic: ["Measures of Central Tendency", "Measures of Dispersion"],
         difficulty: 2,
         content: {
-            tc: `考慮以下正整數：<div style="text-align: center;">$2$  $3$  $4$  $6$  $7$  $9$  $10$  $m$  $n$</div>設 $a$、$b$ 及 $c$ 分別為以上正整數的眾數、中位數及分佈域。 若以上正整數的平均值為 $5$，則下列何者必為正確？
+            tc: `考慮以下正整數：<div style="text-align: center;">$2$　　$3$　　$4$　　$6$　　$7$　　$9$　　$10$　　$m$　　$n$</div>設 $a$、$b$ 及 $c$ 分別為以上正整數的眾數、中位數及分佈域。 若以上正整數的平均值為 $5$，則下列何者必為正確？
 <div class="q-mcms">
 I.\t$a=2$
 II.\t$b=4$
@@ -950,7 +950,7 @@ B.\t只有 II<br>
 C.\t只有 I 及 III<br>
 D.\t只有 II 及 III
 </div>`,
-            en: `Consider the following positive integers:<div style="text-align: center;">$2$  $3$  $4$  $6$  $7$  $9$  $10$  $m$  $n$</div>Let $a$, $b$ and $c$ be the mode, the median and the range of the above positive integers respectively. If the mean of the above positive integers is $5$, which of the following must be true?
+            en: `Consider the following positive integers:<div style="text-align: center;">$2$　　$3$　　$4$　　$6$　　$7$　　$9$　　$10$　　$m$　　$n$</div>Let $a$, $b$ and $c$ be the mode, the median and the range of the above positive integers respectively. If the mean of the above positive integers is $5$, which of the following must be true?
 <div class="q-mcms">
 I.\t$a=2$
 II.\t$b=4$
