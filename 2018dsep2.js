@@ -10,14 +10,26 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Laws of Indices"],
         difficulty: 1,
-        content: `$\\dfrac{8^{2n+1}}{4^{3n+1}} =$
+        content: {
+            tc: `$\\dfrac{8^{2n+1}}{4^{3n+1}} =$
 <div class="q-mcopt">
-A.\t$1$。 <br>
-B.\t$2$。 <br>
-C.\t$2^n$。 <br>
+A.\t$1$。<br>
+B.\t$2$。<br>
+C.\t$2^n$。<br>
 D.\t$2^{-n}$。 
 </div>`,
-        hint: `先化成相同底數再簡化指數。`,
+            en: `$\\dfrac{8^{2n+1}}{4^{3n+1}} =$
+<div class="q-mcopt">
+A.\t$1$.<br>
+B.\t$2$.<br>
+C.\t$2^n$.<br>
+D.\t$2^{-n}$. 
+</div>`
+        },
+        hint: {
+            tc: `先化成相同底數再簡化指數。`,
+            en: `Convert them to the same base, then simplify the exponent.`
+        },
         solution: `B (71%)<p><iframe src="https://www.youtube.com/embed/uemx3U3O3EY?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
