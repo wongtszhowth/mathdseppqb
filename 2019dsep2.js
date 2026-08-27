@@ -921,9 +921,9 @@ D.\tI、II 及 III
 </div>`,
             en: `Which of the following can be obtained from any box-and-whisker diagram?
 <div class="q-mcms">
-I.\tThe range
-II.\tThe standard deviation
-III.\tThe inter-quartile range
+I.\tRange
+II.\tStandard deviation
+III.\tInter-quartile range
 </div>
 <div class="q-mcopt">
 A.\tI and II only<br>
