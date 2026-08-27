@@ -938,7 +938,7 @@ D.\t$6$
         topic: ["Measures of Central Tendency", "Measures of Dispersion"],
         difficulty: 2,
         content: {
-            tc: `考慮以下整數：<div style="text-align: center;">$3$　　$3$　　$8$　　$8$　　$8$　　$10$　　$12$　　$m$　　$n$</div>設 $x$、$y$ 及 $z$ 分別為以上整數的中位數、平均值及眾數。 若以上整數的分佈域為 $9$，則下列何者必為正確？
+            tc: `考慮以下整數：<div style="text-align: center;">$3$   $3$   $8$   $8$   $8$   $10$   $12$   $m$   $n$</div>設 $x$、$y$ 及 $z$ 分別為以上整數的中位數、平均值及眾數。 若以上整數的分佈域為 $9$，則下列何者必為正確？
 <div class="q-mcms">
 I.\t$x=8$
 II.\t$y=8$
@@ -951,7 +951,7 @@ C.\t只有 I 及 III<br>
 D.\t只有 II 及 III
 </div>`,
             en: `Consider the following integers:
-<div style="text-align: center;">$3$　　$3$　　$8$　　$8$　　$8$　　$10$　　$12$　　$m$　　$n$</div>Let $x$, $y$ and $z$ be the median, the mean and the mode of the above integers respectively. If the range of the above integers is $9$, which of the following must be true?
+<div style="text-align: center;">$3$   $3$   $8$   $8$   $8$   $10$   $12$   $m$   $n$</div>Let $x$, $y$ and $z$ be the median, the mean and the mode of the above integers respectively. If the range of the above integers is $9$, which of the following must be true?
 <div class="q-mcms">
 I.\t$x=8$<br>
 II.\t$y=8$<br>
