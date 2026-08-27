@@ -10,14 +10,26 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Laws of Indices"],
         difficulty: 1,
-        content: `$\\dfrac{(2^n)(8^{3n})}{64^n} =$
+        content: {
+            tc: `$\\dfrac{(2^n)(8^{3n})}{64^n} =$
 <div class="q-mcopt">
-A.\t$4^n$。 <br>
-B.\t$4^{2n}$。 <br>
-C.\t$4^{-3n}$。 <br>
-D.\t$4^{-4n}$。 
+A.\t$4^n$。<br>
+B.\t$4^{2n}$。<br>
+C.\t$4^{-3n}$。<br>
+D.\t$4^{-4n}$。
 </div>`,
-        hint: `先化成相同底數再簡化指數。`,
+            en: `$\\dfrac{(2^n)(8^{3n})}{64^n} =$
+<div class="q-mcopt">
+A.\t$4^n$.<br>
+B.\t$4^{2n}$.<br>
+C.\t$4^{-3n}$.<br>
+D.\t$4^{-4n}$.
+</div>`
+        },
+        hint: {
+            tc: `先化成相同底數再簡化指數。`,
+            en: `Convert them to the same base, then simplify the exponent.`
+        },
         solution: `B (73%)<p><iframe src="https://www.youtube.com/embed/MsjuSiGKxWc?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
