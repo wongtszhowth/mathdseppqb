@@ -929,7 +929,7 @@ D.\t$45$
         topic: ["Measures of Central Tendency"],
         difficulty: 2,
         content: {
-            tc: `考慮以下整數：<div style="text-align: center;">2 2 3 3 3 3 3 5{5} 6 8 8910 $m$</div>設 $p$、$q$ 及 $r$ 分別為以上整數的平均值、中位數及眾數。 若 $3 \\le m \\le 5$，則下列何者必為正確？
+            tc: `考慮以下整數：<div style="text-align: center;">2  2  3  3  3  3  3  5  5  6  8  8  9  10  $m$</div>設 $p$、$q$ 及 $r$ 分別為以上整數的平均值、中位數及眾數。 若 $3 \\le m \\le 5$，則下列何者必為正確？
 <div class="q-mcms">
 I.\t$p \\gt q$
 II.\t$p \\gt r$
@@ -942,7 +942,7 @@ C.\t只有 I 及 III<br>
 D.\t只有 II 及 III
 </div>`,
             en: `Consider the following integers:
-<div style="text-align: center;">2 2 3 3 3 3 3 5 5 6 8 8 910 $m$</div>Let $p$, $q$ and $r$ be the mean, the median and the mode of the above integers respectively. If $3 \\le m \\le 5$, which of the following must be true?
+<div style="text-align: center;">2  2  3  3  3  3  3  5  5  6  8  8  9  10  $m$</div>Let $p$, $q$ and $r$ be the mean, the median and the mode of the above integers respectively. If $3 \\le m \\le 5$, which of the following must be true?
 <div class="q-mcms">
 I.\t$p \\gt q$
 II.\t$p \\gt r$
