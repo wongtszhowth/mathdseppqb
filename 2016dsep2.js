@@ -974,14 +974,14 @@ D.\t$61$
         topic: ["Measures of Central Tendency"],
         difficulty: 1,
         content: {
-            tc: `考慮以下數據：<div style="text-align: center;">$32$  $68$  $79$  $86$  $88$  $98$  $98$  $a$  $b$  $c$</div>若以上數據的平均值及眾數分別為 $77$ 及 $68$，則以上數據的中位數為
+            tc: `考慮以下數據：<div style="text-align: center;">$32$   $68$   $79$   $86$   $88$   $98$   $98$   $a$   $b$   $c$</div>若以上數據的平均值及眾數分別為 $77$ 及 $68$，則以上數據的中位數為
 <div class="q-mcopt">
 A.\t$76$。 <br>
 B.\t$82$。 <br>
 C.\t$85$。 <br>
 D.\t$93$。 
 </div>`,
-            en: `Consider the following data:<div style="text-align: center;">$32$  $68$  $79$  $86$  $88$  $98$  $98$  $a$  $b$  $c$</div>If the mean and the mode of the above data are $77$ and $68$ respectively, then the median of the above data is
+            en: `Consider the following data:<div style="text-align: center;">$32$   $68$   $79$   $86$   $88$   $98$   $98$   $a$   $b$   $c$</div>If the mean and the mode of the above data are $77$ and $68$ respectively, then the median of the above data is
 <div class="q-mcopt">
 A.\t$76$. <br>
 B.\t$82$. <br>
