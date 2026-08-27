@@ -10,14 +10,26 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Laws of Indices"],
         difficulty: 2,
-        content: `$(27 \\cdot 9^{n+1})^3 =$
+        content: {
+            tc: `$(27 \\cdot 9^{n+1})^3 =$
 <div class="q-mcopt">
 A.\t$3^{6n+12}$。<br>
 B.\t$3^{6n+15}$。<br>
 C.\t$3^{9n+12}$。<br>
 D.\t$3^{9n+18}$。
 </div>`,
-        hint: `先化成相同底數再簡化指數。 `,
+            en: `$(27 \\cdot 9^{n+1})^3 =$
+<div class="q-mcopt">
+A.\t$3^{6n+12}$.<br>
+B.\t$3^{6n+15}$.<br>
+C.\t$3^{9n+12}$.<br>
+D.\t$3^{9n+18}$.
+</div>`
+        },
+        hint: {
+            tc: `先化成相同底數再簡化指數。`,
+            en: `Convert them to the same base, then simplify the exponent.`
+        },
         solution: `B (69%)<p><iframe src="https://www.youtube.com/embed/z9OzWJ5UmEw?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
