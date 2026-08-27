@@ -10,14 +10,26 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Factorization"],
         difficulty: 1,
-        content: `$(x+1)(x^2+x+1)=$
+        content: {
+            tc: `$(x+1)(x^2+x+1)=$
 <div class="q-mcopt">
-A.\t$x^3+1$。 <br>
-B.\t$(x+1)^3$。 <br>
-C.\t$x^3+x^2+x+1$。 <br>
-D.\t$x^3+2x^2+2x+1$。 
+A.\t$x^3+1$。<br>
+B.\t$(x+1)^3$。<br>
+C.\t$x^3+x^2+x+1$。<br>
+D.\t$x^3+2x^2+2x+1$。
 </div>`,
-        hint: `直接展開。 `,
+            en: `$(x+1)(x^2+x+1)=$
+<div class="q-mcopt">
+A.\t$x^3+1$.<br>
+B.\t$(x+1)^3$.<br>
+C.\t$x^3+x^2+x+1$.<br>
+D.\t$x^3+2x^2+2x+1$.
+</div>`
+        },
+        hint: {
+            tc: `直接展開。`,
+            en: `Expand it.`
+        },
         solution: `D (90%)<p><iframe src="https://www.youtube.com/embed/9HJ8aktHw_I?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
