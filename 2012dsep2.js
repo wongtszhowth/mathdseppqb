@@ -10,14 +10,26 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Laws of Indices"],
         difficulty: 1,
-        content: `$\\dfrac{(2x^4)^3}{2x^5} =$
+        content: {
+            tc: `$\\dfrac{(2x^4)^3}{2x^5} =$
 <div class="q-mcopt">
-A.\t$3x^2$。 <br>
-B.\t$3x^7$。 <br>
-C.\t$4x^7$。 <br>
-D.\t$4x^{59}$。 
+A.\t$3x^2$。<br>
+B.\t$3x^7$。<br>
+C.\t$4x^7$。<br>
+D.\t$4x^{59}$。
 </div>`,
-        hint: `先處理指數再簡化。 `,
+            en: `$\\dfrac{(2x^4)^3}{2x^5} =$
+<div class="q-mcopt">
+A.\t$3x^2$.<br>
+B.\t$3x^7$.<br>
+C.\t$4x^7$.<br>
+D.\t$4x^{59}$.
+</div>`
+        },
+        hint: {
+            tc: `先處理指數再簡化。`,
+            en: `Process the exponent first, then simplify.`
+        },
         solution: `C (94%)<p><iframe src="https://www.youtube.com/embed/9ay9UMBFSsk?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
