@@ -242,8 +242,8 @@ D.\tI、II 及 III
 </div><div style="clear: both;"></div>`,
             en: `In the figure, the equations of the straight lines $L_1$ and $L_2$ are $x+ay+b=0$ and $bx+y+c=0$ respectively. Which of the following are true?
 <div class="q-mcms"><img src="img/2020dsep2q08.jpg" class="q-img" alt="Figure" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
-I.\t$c<0$<br>
-II.\t$ab<1$<br>
+I.\t$c<0$
+II.\t$ab<1$
 III.\t$ac \\lt b$
 </div>
 <div class="q-mcopt">
@@ -593,8 +593,8 @@ D.\t只有 II 及 III
 </div><div style="clear: both;"></div>`,
             en: `According to the figure, which of the following must be true?
 <div class="q-mcms"><img src="img/2020dsep2q19.jpg" class="q-img" alt="Figure" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
-I.\t$u-v+w=0^\\circ$<br>
-II.\t$u+v-w=180^\\circ$<br>
+I.\t$u-v+w=0^\\circ$
+II.\t$u+v-w=180^\\circ$
 III.\t$u+v+w=450^\\circ$
 </div>
 <div class="q-mcopt">
@@ -849,8 +849,8 @@ D.\t只有 II 及 III
 </div>`,
             en: `The equations of the circles $C_1$ and $C_2$ are $2x^2+2y^2+4x+8y-149=0$ and $x^2+y^2-8x-20y-53=0$ respectively. Which of the following is/are true?
 <div class="q-mcms">
-I.\tThe centre of $C_1$ lies on $C_2$.<br>
-II.\tThe radii of $C_1$ and $C_2$ are equal.<br>
+I.\tThe centre of $C_1$ lies on $C_2$.
+II.\tThe radii of $C_1$ and $C_2$ are equal.
 III.\t$C_1$ and $C_2$ intersect at two distinct points.
 </div>
 <div class="q-mcopt">
@@ -953,8 +953,8 @@ D.\t只有 II 及 III
             en: `Consider the following integers:
 <div style="text-align: center;">$3$   $3$   $8$   $8$   $8$   $10$   $12$   $m$   $n$</div>Let $x$, $y$ and $z$ be the median, the mean and the mode of the above integers respectively. If the range of the above integers is $9$, which of the following must be true?
 <div class="q-mcms">
-I.\t$x=8$<br>
-II.\t$y=8$<br>
+I.\t$x=8$
+II.\t$y=8$
 III.\t$z=8$
 </div>
 <div class="q-mcopt">
@@ -1054,8 +1054,8 @@ D.\tI、II 及 III
 </div><div style="clear: both;"></div>`,
             en: `The figure shows the graph of $y=a^x$ and the graph of $y=b^x$ on the same rectangular coordinate system, where $a$ and $b$ are positive constants. If the graph of $y=a^x$ is the reflection image of the graph of $y=b^x$ with respect to the $y$-axis, which of the following are true?
 <div class="q-mcms"><img src="img/2020dsep2q33.jpg" class="q-img" alt="Figure" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
-I.\t$a<1$<br>
-II.\t$b>1$<br>
+I.\t$a<1$
+II.\t$b>1$
 III.\t$ab=1$
 </div>
 <div class="q-mcopt">
@@ -1126,8 +1126,8 @@ D.\tI、II 及 III
 </div>`,
             en: `If $a>0$, which of the following are arithmetic sequences?
 <div class="q-mcms">
-I.\t$\\log a^{-3}$ ,  $\\log a$ ,  $\\log a^5$<br>
-II.\t$8-4a$ ,  $9-5a$ ,  $10-6a$<br>
+I.\t$\\log a^{-3}$ ,  $\\log a$ ,  $\\log a^5$
+II.\t$8-4a$ ,  $9-5a$ ,  $10-6a$
 III.\t$\\cos(90-a)^\\circ$ ,  $\\cos 90^\\circ$ ,  $\\cos(90+a)^\\circ$
 </div>
 <div class="q-mcopt">
