@@ -10,14 +10,26 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Laws of Indices"],
         difficulty: 1,
-        content: `$\\dfrac{6x}{(3x^{-5})^{-2}} =$
+        content: {
+            tc: `$\\dfrac{6x}{(3x^{-5})^{-2}} =$
 <div class="q-mcopt">
 A.\t$54x^8$。<br>
 B.\t$\\dfrac{2x^8}{3}$。<br>
 C.\t$\\dfrac{54}{x^9}$。<br>
 D.\t$\\dfrac{2}{3x^9}$。
 </div>`,
-        hint: `先處理負指數再簡化。`,
+            en: `$\\dfrac{6x}{(3x^{-5})^{-2}} =$
+<div class="q-mcopt">
+A.\t$54x^8$.<br>
+B.\t$\\dfrac{2x^8}{3}$.<br>
+C.\t$\\dfrac{54}{x^9}$.<br>
+D.\t$\\dfrac{2}{3x^9}$.
+</div>`
+        },
+        hint: {
+            tc: `先處理負指數再簡化。`,
+            en: `Handle the negative exponents, then simplify.`
+        },
         solution: `C (77%)<p><iframe src="https://www.youtube.com/embed/nIbFzCl5gD8?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
