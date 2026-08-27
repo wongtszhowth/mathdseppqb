@@ -10,14 +10,26 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Factorization"],
         difficulty: 2,
-        content: `$(a-b)(a^2+ab-b^2) =$
+        content: {
+            tc: `$(a-b)(a^2+ab-b^2) =$
 <div class="q-mcopt">
 A.\t$(a-b)^3$。<br>
 B.\t$a^3-b^3$。<br>
 C.\t$a^3-2ab^2+b^3$。<br>
 D.\t$a^3-2a^2b+2ab^2+b^3$。
 </div>`,
-        hint: `直接展開後整理。`,
+            en: `$(a-b)(a^2+ab-b^2) =$
+<div class="q-mcopt">
+A.\t$(a-b)^3$.<br>
+B.\t$a^3-b^3$.<br>
+C.\t$a^3-2ab^2+b^3$.<br>
+D.\t$a^3-2a^2b+2ab^2+b^3$.
+</div>`
+        },
+        hint: {
+            tc: `直接展開後整理。`,
+            en: `Expand and simplify.`
+        },
         solution: `C (67%)<p><iframe src="https://www.youtube.com/embed/mqb2rhVy26E?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     },
     {
