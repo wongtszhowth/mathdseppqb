@@ -11,8 +11,14 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Change of Subject"],
         difficulty: 1,
-        content: `令 $y$ 成為公式 $k = \\dfrac{3x - y}{y}$ 的主項。 <span class="marks">(3分)</span>`,
-        hint: `交叉相乘後解出 $y$。 `,
+        content: {
+            tc: `令 $y$ 成為公式 $k = \\dfrac{3x - y}{y}$ 的主項。 <span class="marks">(3分)</span>`,
+            en: `Make $y$ the subject of the formula $k = \\dfrac{3x - y}{y}$.<span class="marks">(3 marks)</span>`
+        },
+        hint: {
+            tc: `交叉相乘後解出 $y$。`,
+            en: `Cross-multiply and solve for $y$.`
+        },
         solution: `<div class="ms-container"><div class="ms-row"><div class="ms-content ms-from-l1">$k=\\dfrac{3x-y}{y}$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l1">$ky=\\left(\\dfrac{3x-y}{y}\\right)y$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$ky=3x-y$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l1">$ky+y=3x$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$y(k+1)=3x$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l1">$y=\\dfrac{3x}{k+1}$</div><div class="ms-mark">1A</div></div><p><div class="ms-row"><div class="ms-content ms-from-l1"><span style="background-color: #42b4ff;">另解：</span><br>$k=\\dfrac{3x-y}{y}$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l1">$k=\\dfrac{3x}{y}-1$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$k+1=\\dfrac{3x}{y}$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$y=\\dfrac{3x}{k+1}$</div><div class="ms-mark">1A</div></div></div>`
     },
     {
