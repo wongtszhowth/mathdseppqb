@@ -233,7 +233,7 @@ questions.push(
             en: `The frequency distribution table and the cumulative frequency distribution table below show the distribution of the heights of the plants in a garden.<div class="q-text-content"><table class="q-table" style="float: left; margin-top: 12px; margin-bottom: 12px; margin-left: 3em; margin-right: auto; border-collapse: collapse; table-layout: auto;">
     <colgroup>
       <col style="width: 8em;">
-      <col style="width: 4em;">
+      <col style="width: 7em;">
     </colgroup>
     <tr>
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">Height (m)</td>
@@ -264,8 +264,8 @@ questions.push(
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">3</td>
     </tr></table><table class="q-table" style="float: right; margin-top: 12px; margin-bottom: 12px; margin-left: auto; margin-right: 3em; border-collapse: collapse; table-layout: auto;">
     <colgroup>
-      <col style="width: 10em;">
-      <col style="width: 6em;">
+      <col style="width: auto;">
+      <col style="width: auto;">
     </colgroup>
     <tr>
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">Height less than (m)</td>
@@ -352,7 +352,7 @@ questions.push(
         difficulty: 2,
         content: {
             tc: `下面的棒型圖顯示一群小童的年歲的分佈，其中 $a > 11$ 及 $4 < b < 10$。 該群小童的年歲的中位數為 $7.5$。<img src="img/2016dsep1q12zh.jpg" class="q-img" alt="題目附圖" style="max-width: 70%;"><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $a$ 及 $b$。 <span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">現再有四名小童加入該群。 得知該四名小童的年歲全不相同且該群小童的年歲的分佈域維持不變。 求</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">該群小童的年歲的最大可取中位數，</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">該群小童的年歲的最小可取平均值。 <br><span class="marks">(4分)</span><div class="q-clearfix"></div></div></div>`,
-            en: `The bar chart below shows the distribution of the ages of the children in a group, where $a > 11$ and $4 < b < 10$. The median of the ages of the children in the group is $7.5$.<img src="img/2016dsep1q12zh.jpg" class="q-img" alt="題目附圖" style="max-width: 70%;"><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">Find $a$ and $b$. <span class="marks">(3 marks)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">Four more children now join the group. It is found that the ages of these four children are all different and the range of the ages of the children in the group remains unchanged. Find</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">the greatest possible median of the ages of the children in the group,</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">the least possible mean of the ages of the children in the group. <br><span class="marks">(4 marks)</span><div class="q-clearfix"></div></div></div>`
+            en: `The bar chart below shows the distribution of the ages of the children in a group, where $a > 11$ and $4 < b < 10$. The median of the ages of the children in the group is $7.5$.<img src="img/2016dsep1q12en.jpg" class="q-img" alt="題目附圖" style="max-width: 70%;"><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">Find $a$ and $b$. <span class="marks">(3 marks)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">Four more children now join the group. It is found that the ages of these four children are all different and the range of the ages of the children in the group remains unchanged. Find</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">the greatest possible median of the ages of the children in the group,</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">the least possible mean of the ages of the children in the group. <br><span class="marks">(4 marks)</span><div class="q-clearfix"></div></div></div>`
         },
         hint: {
             tc: `(a) 由中位數位置求 $a$、$b$。 <br>(b) 考慮加入後中位數與平均值的極值。 `,
