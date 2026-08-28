@@ -10,8 +10,14 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Change of Subject"],
         difficulty: 1,
-        content: `令 $h$ 成為公式 $\\dfrac{5}{h+k}=\\dfrac{k}{h-3}$ 的主項。<span class="marks">(3分)</span>`,
-        hint: `交叉相乘展開方程，將所有含有 $h$ 的項移到等號左邊，抽公因式後即可單獨導出 $h$。`,
+        content: {
+            tc: `令 $h$ 成為公式 $\\dfrac{5}{h+k}=\\dfrac{k}{h-3}$ 的主項。<span class="marks">(3分)</span>`,
+            en: `Make $h$ the subject of the formula $\\dfrac{5}{h+k}=\\dfrac{k}{h-3}$.<span class="marks">(3 marks)</span>`
+        },
+        hint: {
+            tc: `交叉相乘展開方程，將所有含有 $h$ 的項移到等號左邊，抽公因式後即可單獨導出 $h$。`,
+            en: `Expand the equation by cross-multiplication, move all terms containing $h$ to the left side of the equal sign, and then factor out the common factor to derive $h$ separately.`
+        },
         solution: `<div class="ms-container"><div class="ms-row"><div class="ms-content ms-from-l1">$\\dfrac{5}{h+k}=\\dfrac{k}{h-3}$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l1">$5(h-3)=k(h+k)$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$5h-15=hk+k^2$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l1">$5h-hk=15+k^2$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$h=\\dfrac{15+k^2}{5-k}$</div><div class="ms-mark">1A</div></div><p><div class="ms-row"><div class="ms-content ms-from-l1"><span style="background-color: #42b4ff;">另解：</span><br>$\\dfrac{5}{h+k}=\\dfrac{k}{h-3}$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l1">$\\dfrac{h+k}{5}=\\dfrac{h-3}{k}$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$\\dfrac{h}{5}-\\dfrac{h}{k}=\\dfrac{-3}{k}-\\dfrac{k}{5}$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$h\\left(\\dfrac{1}{5}-\\dfrac{1}{k}\\right)=\\dfrac{-3}{k}-\\dfrac{k}{5}$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l1">$h\\left(\\dfrac{k-5}{5k}\\right)=\\dfrac{-15-k^2}{5k}$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l1">$h=\\dfrac{15+k^2}{5-k}$</div><div class="ms-mark">1A</div></div></div>`
     },
     {
