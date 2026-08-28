@@ -219,7 +219,7 @@ questions.push(
 <div class="q-text-content"><table class="q-table" style="float: left; margin-top: 12px; margin-bottom: 12px; margin-left: 3em; margin-right: auto; border-collapse: collapse; table-layout: auto;">
     <colgroup>
       <col style="width: 11em;">
-      <col style="width: 4em;">
+      <col style="width: 7em;">
     </colgroup>
     <tr>
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">Time taken (minutes)</td>
@@ -242,8 +242,8 @@ questions.push(
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">3</td>
     </tr></table><table class="q-table" style="float: right; margin-top: 12px; margin-bottom: 12px; margin-left: auto; margin-right: 3em; border-collapse: collapse; table-layout: auto;">
     <colgroup>
-      <col style="width: 13em;">
-      <col style="width: 6em;">
+      <col style="width: auto;">
+      <col style="width: auto;">
     </colgroup>
     <tr>
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">Time taken less than (minutes)</td>
