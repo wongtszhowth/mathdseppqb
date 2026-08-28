@@ -175,15 +175,15 @@ questions.push(
     </tr>
     <tr>
       <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">2</td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">$a$ 5 5 6 6 8 8</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">$a$　5　5　6　6　8　8</td>
     </tr>
     <tr>
       <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">3</td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">3 3 3 4 5{5} 9 9</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">3　3　3　4　5　5　9　9</td>
     </tr>
     <tr>
       <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">4</td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">0 1 4 4 5 6 7 7 9</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">0　1　4　4　5　6　7　7　9</td>
     </tr>    
   </table>
 該分佈的分佈域為 $27$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求該分佈的平均值及眾數。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">若從該群中隨機選出一名工人，求所選出的工人在該星期的工作時數超過該分佈的眾數的概率。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
@@ -199,15 +199,15 @@ questions.push(
     </tr>
     <tr>
       <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">2</td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">$a$ 5 5 6 6 8 8</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">$a$　5　5　6　6　8　8</td>
     </tr>
     <tr>
       <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">3</td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">3 3 3 4{5} 5 9 9</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">3　3　3　4　5　5　9　9</td>
     </tr>
     <tr>
       <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">4</td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">0 1 4 4 5 6 7 7 9</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">0　1　4　4　5　6　7　7　9</td>
     </tr>    
   </table>
 The range of the distribution is 27.
