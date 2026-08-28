@@ -10,8 +10,14 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Laws of Indices"],
         difficulty: 1,
-        content: `化簡 $\\dfrac{(x^{4}y^{-5})^{3}}{xy^{2}}$，並以正指數表示答案。<span class="marks">(3分)</span>`,
-        hint: `先處理分子括號外的次方 $(a^m)^n = a^{mn}$，再利用指數定律化簡乘除法。`,
+        content: {
+            tc: `化簡 $\\dfrac{(x^{4}y^{-5})^{3}}{xy^{2}}$，並以正指數表示答案。<span class="marks">(3分)</span>`,
+            en: `Simplify $\\dfrac{(x^{4}y^{-5})^{3}}{xy^{2}}$ and express your answer with positive indices.<span class="marks">(3 marks)</span>`
+        },
+        hint: {
+            tc: `先處理分子 $(a^m)^n = a^{mn}$，再利用指數律化簡。`,
+            en: `Handle the numerator first $(a^m)^n = a^{mn}$, then simplify using the index laws.`
+        },
         solution: `<div class="ms-container"><div class="ms-row"><div class="ms-content ms-from-l1">    $\\dfrac{(x^4 y^{-5})^3}{xy^2}$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=\\dfrac{x^{12}y^{-15}}{xy^2}$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=\\dfrac{x^{12-1}}{y^{2+15}}$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=\\dfrac{x^{11}}{y^{17}}$</div><div class="ms-mark">1A</div></div></div>`
     },
     {
