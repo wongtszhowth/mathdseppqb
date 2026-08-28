@@ -11,8 +11,14 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Laws of Indices"],
         difficulty: 1,
-        content: `化簡 $(\\alpha\\beta^3)(\\alpha^{-2}\\beta^4)^5$，並以正指數表示答案。<span class="marks">(3分)</span>`,
-        hint: `利用指數定律 $\\alpha^m \\cdot \\alpha^n = \\alpha^{m+n}$ 及 $\\beta^m \\cdot \\beta^n = \\beta^{m+n}$ 將同底數的項合併。`,
+        content: {
+            tc: `化簡 $(\\alpha\\beta^3)(\\alpha^{-2}\\beta^4)^5$，並以正指數表示答案。<span class="marks">(3分)</span>`,
+            en: `Simplify $(\\alpha\\beta^3)(\\alpha^{-2}\\beta^4)^5$ and express your answer with positive indices.<span class="marks">(3 marks)</span>`
+        },
+        hint: {
+            tc: `利用指數定律 $\\alpha^m \\cdot \\alpha^n = \\alpha^{m+n}$ 及 $\\beta^m \\cdot \\beta^n = \\beta^{m+n}$ 將同底數的項合併。`,
+            en: `By the index laws $\\alpha^m \\cdot \\alpha^n = \\alpha^{m+n}$ and $\\beta^m \\cdot \\beta^n = \\beta^{m+n}$, combine terms with same base.`
+        },
         solution: `<div class="ms-container"><div class="ms-row"><div class="ms-content ms-from-l1">    $(\\alpha\\beta^3)(\\alpha^{-2}\\beta^4)^5$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=(\\alpha\\beta^3)(\\alpha^{-10}\\beta^{20})$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=\\alpha^{-9}\\beta^{23}$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=\\dfrac{\\beta^{23}}{\\alpha^9}$</div><div class="ms-mark">1A</div></div></div>`
     },
     {
