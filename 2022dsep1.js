@@ -11,8 +11,14 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Laws of Indices"],
         difficulty: 1,
-        content: `化簡 $\\dfrac{(a^3b^{-2})^4}{a^{-5}b^6}$ ，並以正指數表示答案。<span class="marks">(3分)</span>`,
-        hint: `先利用指數定律 $(x^m)^n = x^{mn}$ 展開分子，再利用 $x^m \\div x^n = x^{m-n}$ 化簡，最後把負指數項移到分母。`,
+        content: {
+            tc: `化簡 $\\dfrac{(a^3b^{-2})^4}{a^{-5}b^6}$ ，並以正指數表示答案。<span class="marks">(3分)</span>`,
+            en: `Simplify $\\dfrac{(a^3b^{-2})^4}{a^{-5}b^6}$ and express your answer with positive indices.<span class="marks">(3 marks)</span>`
+        },
+        hint: {
+            tc: `先利用指數定律 $(x^m)^n = x^{mn}$ 展開分子，再利用 $x^m \\div x^n = x^{m-n}$ 化簡，最後處理負指數。`,
+            en: `Expand the numerator using the index law $(x^m)^n = x^{mn}$, then simplify it using $x^m \\div x^n = x^{m-n}$, and finally handle the negative index.`
+        },
         solution: `<div class="ms-container"><div class="ms-row"><div class="ms-content ms-from-l1">    $\\dfrac{(a^3b^{-2})^4}{a^{-5}b^6}$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=\\dfrac{a^{12}b^{-8}}{a^{-5}b^6}$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=\\dfrac{a^{12+5}}{b^{6+8}}$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=\\dfrac{a^{17}}{b^{14}}$</div><div class="ms-mark">1A</div></div></div>`
     },
     {
