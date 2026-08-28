@@ -269,15 +269,15 @@ questions.push(
     </tr>
     <tr>
       <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">2</td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">0 0 1 $a$ $a$ $a$ 8 89 9</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">0　0　1　$a$　$a$　$a$　8　8　9　9</td>
     </tr>
     <tr>
       <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">3</td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">0 0 2 3 4 4 79</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">0　0　2　3　4　4　7　9</td>
     </tr>
     <tr>
       <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">4</td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">0 $b$</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">0　$b$</td>
     </tr>
 </table>
 該分佈的平均值為 $30$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $a$ 及 $b$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出該分佈的最小可取分佈域。<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">求該分佈的最大可取四分位數間距。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
@@ -293,15 +293,15 @@ questions.push(
     </tr>
     <tr>
       <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">2</td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">0 0 1 $a$ $a$ $a$ 8 8 9 9</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">0　0　1　$a$　$a$　$a$　8　8　9　9</td>
     </tr>
     <tr>
       <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">3</td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">0 0 2=" border-left: 1px solid black; text-align: left; padding: 0px 10px;">0 0 2 3 4 4 7 9</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">0　0　2　3　4　4　7　9</td>
     </tr>
     <tr>
       <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">4</td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">0 $b$</td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">0　$b$</td>
     </tr>
 </table>
 The mean of the distribution is $30$.<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">Find $a$ and $b$.<span class="marks">(3 marks)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">Write down the least possible range of the distribution.<span class="marks">(1 mark)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">Find the greatest possible inter-quartile range of the distribution.<span class="marks">(3 marks)</span><div class="q-clearfix"></div></div></div>`
