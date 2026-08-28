@@ -11,8 +11,14 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Laws of Indices"],
         difficulty: 1,
-        content: `化簡 $\\dfrac{m^9}{(m^3 n^{-7})^5}$，並以正指數表示答案。<span class="marks">(3分)</span>`,
-        hint: `先展開分母指數，再應用指數定律。 `,
+        content: {
+            tc: `化簡 $\\dfrac{m^9}{(m^3 n^{-7})^5}$，並以正指數表示答案。<span class="marks">(3分)</span>`,
+            en: `Simplify $\\dfrac{m^9}{(m^3 n^{-7})^5}$ and express your answer with positive indices.<span class="marks">(3 marks)</span>`
+        },
+        hint: {
+            tc: `先展開分母指數，再應用指數定律。`,
+            en: `Expand the exponent in the denominator, then apply the index laws.`
+        },
         solution: `<div class="ms-container"><div class="ms-row"><div class="ms-content ms-from-l1">    $\\dfrac{m^9}{(m^3 n^{-7})^5}$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=\\dfrac{m^9}{m^{15} n^{-35}}$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=\\dfrac{n^{35}}{m^6}$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=\\dfrac{n^{35}}{m^6}$</div><div class="ms-mark">1A</div></div></div>`
     },
     {
