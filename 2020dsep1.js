@@ -11,8 +11,14 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Laws of Indices"],
         difficulty: 1,
-        content: `化簡 $\\dfrac{(mn^{-2})^5}{m^{-4}}$ ，並以正指數表示答案。<span class="marks">(3分)</span><div class="q-clearfix"></div>`,
-        hint: `先利用指數定律 $(x^m)^n = x^{mn}$ 展開分子，再利用 $x^m \\div x^n = x^{m-n}$ 化簡，最後把負指數項移到分母。`,
+        content: {
+            tc: `化簡 $\\dfrac{(mn^{-2})^5}{m^{-4}}$ ，並以正指數表示答案。<span class="marks">(3分)</span><div class="q-clearfix"></div>`,
+            en: `Simplify $\\dfrac{(mn^{-2})^5}{m^{-4}}$ and express your answer with positive indices.<span class="marks">(3 marks)</span><div class="q-clearfix"></div>`
+        },
+        hint: {
+            tc: `先利用指數定律 $(x^m)^n = x^{mn}$ 展開分子，再利用 $x^m \\div x^n = x^{m-n}$ 化簡，最後處理負指數。`,
+            en: `Expand the numerator using the index law $(x^m)^n = x^{mn}$, then simplify it using $x^m \\div x^n = x^{m-n}$, and finally handle the negative indices.`
+        },
         solution: `<div class="ms-container"><div class="ms-row"><div class="ms-content ms-from-l1">    $\\dfrac{(mn^{-2})^5}{m^{-4}}$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=\\dfrac{m^5 n^{-10}}{m^{-4}}$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=\\dfrac{m^{5-(-4)}}{n^{10}}$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=\\dfrac{m^9}{n^{10}}$</div><div class="ms-mark">1A</div></div></div>`
     },
     {
