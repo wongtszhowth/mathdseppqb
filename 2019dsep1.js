@@ -11,8 +11,14 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Change of Subject"],
         difficulty: 1,
-        content: `令 $h$ 成為公式 $9(h+6k)=7h+8$ 的主項。 <span class="marks">(3分)</span>`,
-        hint: `展開後將含 $h$ 的項移到一邊，再解出 $h$。 `,
+        content: {
+			tc: `令 $h$ 成為公式 $9(h+6k)=7h+8$ 的主項。<span class="marks">(3分)</span>`,
+			en: `Make $h$ the subject of the formula $9(h+6k)=7h+8$.<span class="marks">(3 marks)</span>`
+		},
+        hint: {
+			tc: `展開後將含 $h$ 的項移到一邊，再解出 $h$。`,
+			en: `After expanding, move the terms containing $h$ to one side and then solve for $h$.`
+		},
         solution: `<div class="ms-container"><div class="ms-row"><div class="ms-content ms-from-l1">$9(h+6k)=7h+8$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l1">$9h+54k=7h+8$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$9h-7h=8-54k$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$2h=8-54k$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l1">$h=4-27k$</div><div class="ms-mark">1A</div></div><p><div class="ms-row"><div class="ms-content ms-from-l1"><span style="background-color: #42b4ff;">另解：</span><br>$9(h+6k)=7h+8$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l1">$h+6k=\\dfrac{7h+8}{9}$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$h-\\dfrac{7h}{9}=\\dfrac{8}{9}-6k$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$\\dfrac{2h}{9}=\\dfrac{8-54k}{9}$<br>$2h=8-54k$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l1">$h=4-27k$</div><div class="ms-mark">1A</div></div></div>`
     },
     {
