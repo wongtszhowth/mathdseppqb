@@ -11,8 +11,14 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Laws of Indices"],
         difficulty: 1,
-        content: `化簡 $\\dfrac{m^{-12}n^8}{n^3}$，並以正指數表示答案。 <span class="marks">(3分)</span>`,
-        hint: `應用指數定律簡化。 `,
+        content: {
+            tc: `化簡 $\\dfrac{m^{-12}n^8}{n^3}$，並以正指數表示答案。<span class="marks">(3分)</span>`,
+            en: `Simplify $\\dfrac{m^{-12}n^8}{n^3}$ and express your answer with positive indices.<span class="marks">(3 marks)</span>`
+        },
+        hint: {
+            tc: `應用指數定律簡化。`,
+            en: `Apply the index laws.`
+        },
         solution: `<div class="ms-container"><div class="ms-row"><div class="ms-content ms-from-l1">    $\\dfrac{m^{-12}n^8}{n^3}$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=\\dfrac{n^8}{m^{12}n^3}$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=\\dfrac{n^{8-3}}{m^{12}}$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=\\dfrac{n^5}{m^{12}}$</div><div class="ms-mark">1A</div></div></div>`
     },
     {
