@@ -11,8 +11,14 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Laws of Indices"],
         difficulty: 1,
-        content: `化簡 $\\dfrac{(x^8 y^7)^2}{x^3 y^{-6}}$，並以正指數表示答案。 <span class="marks">(3分)</span>`,
-        hint: `先展開分子指數，再應用指數定律。 `,
+        content: {
+            tc: `化簡 $\\dfrac{(x^8 y^7)^2}{x^3 y^{-6}}$，並以正指數表示答案。<span class="marks">(3分)</span>`,
+            en: `Simplify $\\dfrac{(x^8 y^7)^2}{x^3 y^{-6}}$ and express your answer with positive indices.<span class="marks">(3 marks)</span>`
+        },
+        hint: {
+            tc: `先展開分子指數，再應用指數定律。`,
+            en: `Expand the numerator, then apply the index laws.`
+        },
         solution: `<div class="ms-container"><div class="ms-row"><div class="ms-content ms-from-l1">    $\\dfrac{(x^8 y^7)^2}{x^5 y^{-6}}$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=\\dfrac{x^{16} y^{14}}{x^5 y^{-6}}$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=x^{16-5} y^{14-(-6)}$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=x^{11} y^{20}$</div><div class="ms-mark">1A</div></div></div>`
     },
     {
