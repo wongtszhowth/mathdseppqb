@@ -10,8 +10,14 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Algebraic Fractions and Fractional Equations"],
         difficulty: 1,
-        content: `化簡 $\\dfrac{2}{4h-7} - \\dfrac{3}{6h-5}$。<span class="marks">(3分)</span>`,
-        hint: `先通分母，然後展開分子並小心合併同類項（注意負號的分配）。`,
+        content: {
+            tc: `化簡 $\\dfrac{2}{4h-7} - \\dfrac{3}{6h-5}$。<span class="marks">(3分)</span>`,
+            en: `Simplify $\\dfrac{2}{4h-7} - \\dfrac{3}{6h-5}$.<span class="marks">(3 marks)</span>`
+        },
+        hint: {
+            tc: `先通分母，然後展開分子並合併同類項（注意負號）。`,
+            en: `Find a common denominator, then expand the numerator and combine like terms (pay attention to the negative signs).`
+        },
         solution: `<div class="ms-container"><div class="ms-row"><div class="ms-content ms-from-l1">    $\\dfrac{2}{4h-7}-\\dfrac{3}{6h-5}$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=\\dfrac{2(6h-5)-3(4h-7)}{(4h-7)(6h-5)}$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=\\dfrac{12h-10-12h+21}{(4h-7)(6h-5)}$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$=\\dfrac{11}{(4h-7)(6h-5)}$</div><div class="ms-mark">1A</div></div></div>`
     },
     {
