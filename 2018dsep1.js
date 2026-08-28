@@ -11,8 +11,14 @@ questions.push(
         domain: ["Algebra"],
         topic: ["Change of Subject"],
         difficulty: 1,
-        content: `令 $b$ 成為公式 $\\dfrac{a+4}{3}=\\dfrac{b+1}{2}$ 的主項。 <span class="marks">(3分)</span>`,
-        hint: `交叉相乘後解出 $b$。 `,
+        content: {
+            tc: `令 $b$ 成為公式 $\\dfrac{a+4}{3}=\\dfrac{b+1}{2}$ 的主項。<span class="marks">(3分)</span>`,
+            en: `Make $b$ the subject of the formula $\\dfrac{a+4}{3}=\\dfrac{b+1}{2}$.<span class="marks">(3 marks)</span>`
+        },
+        hint: {
+            tc: `交叉相乘後解出 $b$。`,
+            en: `Cross-multiply then solve for $b$.`
+        },
         solution: `<div class="ms-container"><div class="ms-row"><div class="ms-content ms-from-l1">$\\dfrac{a+4}{3}=\\dfrac{b+1}{2}$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l1">$2(a+4)=3(b+1)$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$2a+8=3b+3$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l1">$3b=2a+5$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$b=\\dfrac{2a+5}{3}$</div><div class="ms-mark">1A</div></div><p><div class="ms-row"><div class="ms-content ms-from-l1"><span style="background-color: #42b4ff;">另解：</span><br>$\\dfrac{a+4}{3}=\\dfrac{b+1}{2}$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l1">$2\\left(\\dfrac{a+4}{3}\\right)=b+1$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$\\dfrac{2a+8}{3}=b+1$</div><div class="ms-mark"></div></div><div class="ms-row"><div class="ms-content ms-from-l1">$b=\\dfrac{2a+8}{3}-1$</div><div class="ms-mark">1M</div></div><div class="ms-row"><div class="ms-content ms-from-l1">$b=\\dfrac{2a+5}{3}$</div><div class="ms-mark">1A</div></div></div>`
     },
     {
