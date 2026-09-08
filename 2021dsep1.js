@@ -72,7 +72,7 @@ questions.push(
         topic: ["Linear Inequalities and Compound Inequalities"],
         difficulty: 1,
         content: {
-            tc: `<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求同時滿足  $\\dfrac{7(x-2)}{5}+11>3(x-1)$  及  $x+42 \\ge 0$  的 $x$ 值的範圍。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">有多少個正整數同時滿足 (a) 的不等式？<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div>`,
+            tc: `<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求同時滿足  $\\dfrac{7(x-2)}{5}+11>3(x-1)$  及  $x+4 \\ge 0$  的 $x$ 值的範圍。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">有多少個正整數同時滿足 (a) 的不等式？<span class="marks">(1分)</span><div class="q-clearfix"></div></div></div>`,
             en: `<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">Find the range of values of $x$ which satisfy both $\\dfrac{7(x-2)}{5}+11>3(x-1)$ and $x+4 \\ge 0$.<span class="marks">(3 marks)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">How many positive integers satisfy both inequalities in (a)?<span class="marks">(1 mark)</span><div class="q-clearfix"></div></div></div>`
         },
         hint: {
