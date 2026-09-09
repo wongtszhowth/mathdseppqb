@@ -197,14 +197,14 @@ D.\t$x=0.0656$ (correct to 3 significant figures)
         topic: ["Linear Inequalities and Compound Inequalities"],
         difficulty: 2,
         content: {
-            tc: `滿足複合不等式  $-2(x-5)+5 < 21$  或  $\\dfrac{3x-5}{-7} > 1$  的最小整數為
+            tc: `滿足複合不等式  $-2(x-5)+5 < 21$  或  $\\dfrac{3x-5}{7} > 1$  的最小整數為
 <div class="q-mcopt">
 A.\t$-3$。 <br>
 B.\t$-2$。 <br>
 C.\t$4$。 <br>
 D.\t$5$。 
 </div>`,
-            en: `The least integer satisfying the compound inequality  $-2(x-5)+5 < 21$  or  $\\dfrac{3x-5}{-7} > 1$  is
+            en: `The least integer satisfying the compound inequality  $-2(x-5)+5 < 21$  or  $\\dfrac{3x-5}{7} > 1$  is
 <div class="q-mcopt">
 A.\t$-3$. <br>
 B.\t$-2$. <br>
