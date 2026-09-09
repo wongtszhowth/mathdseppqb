@@ -135,14 +135,14 @@ D.\t$0.05046$ (correct to $5$ decimal places).
         topic: ["Linear Inequalities and Compound Inequalities"],
         difficulty: 2,
         content: {
-            tc: `$x - \\dfrac{x-1}{2} > 5$ 或 $1 < x - 11$ 的解為
+            tc: `$x - \\dfrac{x-1}{2} > 5$  或  $1 < x - 11$  的解為
 <div class="q-mcopt">
 A.\t$x > 9$。<br>
 B.\t$x > 10$。<br>
 C.\t$x > 11$。<br>
 D.\t$x > 12$。
 </div>`,
-            en: `The solution of $x - \\dfrac{x-1}{2} > 5$ or $1 < x - 11$ is
+            en: `The solution of  $x - \\dfrac{x-1}{2} > 5$  or  $1 < x - 11$  is
 <div class="q-mcopt">
 A.\t$x > 9$.<br>
 B.\t$x > 10$.<br>
