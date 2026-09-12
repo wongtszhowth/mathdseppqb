@@ -1275,14 +1275,14 @@ D.	II and III only
         difficulty: 2,
         content: {
           tc: `圖中，$AC$ 為圓 $ABCD$ 的一直徑。 將 $AC$ 與 $BD$ 的交點記為 $E$。 已知 $TD$ 為該圓在 $D$ 的切線。 若 $\\angle BEC = 96^\\circ$ 及 $\\angle CDT = 41^\\circ$，則 $\\angle CDE =$
-<div class="q-mcopt"><img src="img/2025dsep2q17.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 60%; margin-left: 15px; margin-bottom: 5px;">
+<div class="q-mcopt"><img src="img/2025dsep2q38.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 60%; margin-left: 15px; margin-bottom: 5px;">
 A.	$47^\\circ$。 <br>
 B.	$48^\\circ$。 <br>
 C.	$52^\\circ$。 <br>
 D.	$55^\\circ$。 
 </div><div style="clear: both;"></div>`,
           en: `In the figure, $AC$ is a diameter of the circle $ABCD$. Denote the point of intersection of $AC$ and $BD$ by $E$. It is given that $TD$ is the tangent to the circle at $D$. If $\\angle BEC = 96^\\circ$ and $\\angle CDT = 41^\\circ$, then $\\angle CDE =$
-<div class="q-mcopt"><img src="img/2025dsep2q17.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 60%; margin-left: 15px; margin-bottom: 5px;">
+<div class="q-mcopt"><img src="img/2025dsep2q38.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 60%; margin-left: 15px; margin-bottom: 5px;">
 A.	$47^\\circ$. <br>
 B.	$48^\\circ$. <br>
 C.	$52^\\circ$. <br>
