@@ -1518,6 +1518,6 @@ D.\tI, II and III
             tc: `加入平均值不改變平均值及分佈域。 `,
             en: `Adding the mean value does not change the mean or range.`
         },
-        solution: `C (36%)<p><iframe src="https://www.youtube.com/embed/cS3FauMoPkQ?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
+        solution: `A (36%)<p><iframe src="https://www.youtube.com/embed/cS3FauMoPkQ?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     }
 );
