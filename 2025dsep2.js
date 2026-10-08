@@ -1118,7 +1118,7 @@ D.	$-1$.
         topic: ["Exponential Functions and Logarithm Functions", "Functions and Graphs"],
         difficulty: 3,
         content: {
-          tc: `在同一直角坐标系上，$y = \\log_a x$ 的圖像分別與 $y = a^x$ 的圖像及 $x$ 軸相交於點 $P$ 及點 $Q$，其中 $a$ 為一正常數。 將原點記為 $O$。 下列何者正確？
+          tc: `在同一直角坐標系上，$y = \\log_a x$ 的圖像分別與 $y = a^x$ 的圖像及 $x$ 軸相交於點 $P$ 及點 $Q$，其中 $a$ 為一正常數。 將原點記為 $O$。 下列何者正確？
 <div class="q-mcms">
 I.	$a < 1$
 II.	$OQ > a$
