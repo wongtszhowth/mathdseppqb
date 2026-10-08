@@ -1080,7 +1080,7 @@ D.\tthe graph of $y=\\mathrm{f}(-x+11)$.
         topic: ["Exponential Functions and Logarithm Functions"],
         difficulty: 2,
         content: {
-            tc: `圖中所示為在同一直角坐标系上 $y=\\log_a x$ 的圖像及 $y=\\log_b x$ 的圖像，其中 $a$ 及 $b$ 均為正常數。 若一垂直線分別與 $y=\\log_a x$ 的圖像、$y=\\log_b x$ 的圖像及 $x$ 軸相交於點 $A$、點 $B$ 及點 $C$，則下列何者正確？
+            tc: `圖中所示為在同一直角坐標系上 $y=\\log_a x$ 的圖像及 $y=\\log_b x$ 的圖像，其中 $a$ 及 $b$ 均為正常數。 若一垂直線分別與 $y=\\log_a x$ 的圖像、$y=\\log_b x$ 的圖像及 $x$ 軸相交於點 $A$、點 $B$ 及點 $C$，則下列何者正確？
 <div class="q-mcms"><img src="img/2018dsep2q32.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 55%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 I.\t$a>1$
 II.\t$a>b$
