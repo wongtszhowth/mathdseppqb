@@ -8,7 +8,7 @@ window.questions = [];
 questions.push(
     {
         id: "T-LKK01-CE-MATH 1",
-        year: ,
+        year: 2027,
         type: "P1",
         section: "B",
         level: ["Senior"],
