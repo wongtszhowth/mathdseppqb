@@ -53,8 +53,8 @@ questions.push(
         topic: ["Coordinate Geometry"],
         difficulty: 1,
         content: {
-            tc: `點 $P$ 及點 $Q$ 的坐標分別為 $(-6,5)$ 及 $(2,1)$。 $P$ 向下平移 $r$ 單位至 $R$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出 $R$ 的坐標，答案以 $r$ 表示。<span class="marks">(1分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求 $r$ 使得 $\angle PQR={{90}^{\circ }}$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
-            en: `點 $P$ 及點 $Q$ 的坐標分別為 $(-6,5)$ 及 $(2,1)$。 $P$ 向下平移 $r$ 單位至 $R$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出 $R$ 的坐標，答案以 $r$ 表示。<span class="marks">(1分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求 $r$ 使得 $\angle PQR={{90}^{\circ }}$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`
+            tc: `點 $P$ 及點 $Q$ 的坐標分別為 $(-6,5)$ 及 $(2,1)$。 $P$ 向下平移 $r$ 單位至 $R$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出 $R$ 的坐標，答案以 $r$ 表示。<span class="marks">(1分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求 $r$ 使得 $\\angle PQR=90^\\circ$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
+            en: `點 $P$ 及點 $Q$ 的坐標分別為 $(-6,5)$ 及 $(2,1)$。 $P$ 向下平移 $r$ 單位至 $R$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出 $R$ 的坐標，答案以 $r$ 表示。<span class="marks">(1分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求 $r$ 使得 $\\angle PQR=90^\\circ$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`
         },
         hint: {
             tc: ``,
@@ -91,8 +91,8 @@ questions.push(
         topic: ["Percentages", "Linear Equations in Two Unknowns"],
         difficulty: 1,
         content: {
-            tc: `某箱子內藍筆的數目與紅筆的數目之和為 $795$ 。 若從該箱子中取出 $123$ 枝藍筆，則該箱子內藍筆的數目	較該箱子內紅筆的數目少 25%。 求該箱子內紅筆的數目。<span class="marks">(4分)</span>`,
-            en: `某箱子內藍筆的數目與紅筆的數目之和為 $795$ 。 若從該箱子中取出 $123$ 枝藍筆，則該箱子內藍筆的數目	較該箱子內紅筆的數目少 25%。 求該箱子內紅筆的數目。<span class="marks">(4 marks)</span>`
+            tc: `某箱子內藍筆的數目與紅筆的數目之和為 $795$ 。 若從該箱子中取出 $123$ 枝藍筆，則該箱子內藍筆的數目較該箱子內紅筆的數目少 $25\\%$。 求該箱子內紅筆的數目。<span class="marks">(4分)</span>`,
+            en: `某箱子內藍筆的數目與紅筆的數目之和為 $795$ 。 若從該箱子中取出 $123$ 枝藍筆，則該箱子內藍筆的數目較該箱子內紅筆的數目少 $25\\%$。 求該箱子內紅筆的數目。<span class="marks">(4 marks)</span>`
         },
         hint: {
             tc: ``,
@@ -182,7 +182,7 @@ questions.push(
             tc: `下面的頻數分佈表及累積頻數分佈表均顯示 $20$ 個蘋果的重量的分佈。        
 <div class="q-text-content"><table class="q-table" style="float: left; margin-top: 12px; margin-bottom: 12px; margin-left: 3em; margin-right: auto; border-collapse: collapse; table-layout: auto;">
     <colgroup>
-      <col style="width: 11em;">
+      <col style="width: 9em;">
       <col style="width: 4em;">
     </colgroup>
     <tr>
@@ -210,7 +210,7 @@ questions.push(
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$h$</td>
     </tr></table><table class="q-table" style="float: right; margin-top: 12px; margin-bottom: 12px; margin-left: auto; margin-right: 3em; border-collapse: collapse; table-layout: auto;">
     <colgroup>
-      <col style="width: 13em;">
+      <col style="width: 10em;">
       <col style="width: 6em;">
     </colgroup>
     <tr>
@@ -344,7 +344,7 @@ questions.push(
       <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">$w$</td>
     </tr>    
   </table>
-該分佈的分佈域與四分位數間距之比為 $7:3$。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $w$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">寫出該分佈的眾數。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">若從該群中隨機選出兩名的士司機，求他們在該星期的駕駛時數的平均值超過該分佈的眾數的概率。</div></div><div class="q-text-content"><span class="marks">(3分)</span></div><div class="q-clearfix"></div>`,
+該分佈的分佈域與四分位數間距之比為 $7:3$。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $w$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><span class="q-label">(i)</span><div class="q-text-content">寫出該分佈的眾數。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">若從該群中隨機選出兩名的士司機，求他們在該星期的駕駛時數的平均值超過該分佈的眾數的概率。</div></div><div class="q-text-content"><span class="marks">(3分)</span></div><div class="q-clearfix"></div>`,
             en: `下面的幹葉圖顯示一群的士司機在某星期的駕駛時數的分佈。
         <table class="q-table" style="border-collapse: collapse; table-layout: auto; width: auto; white-space: pre;" align="center">
     <colgroup>
@@ -393,8 +393,8 @@ questions.push(
         topic: ["Variations", "Functions and Graphs", "Coordinate Geometry"],
         difficulty: 1,
         content: {
-            tc: `已知 $\\mathrm{f}(x)$ 的一部分隨 $x^2$ 正變，而另一部分則為常數。 假定 $\\mathrm{f}(4)=0$ 及 $\\mathrm{f}(8)=-9$。 將 $y=\\mathrm{f}(x)$ 的圖像記為 $\\Gamma$ 。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $\\Gamma$ 的 $y$ 截距。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$\\Gamma$ 與 $x$ 軸相交於點 $U$ 及點 $V$，而 $\\Gamma$ 與 $y$ 軸相交於點 $W$。 求 $\\Delta UVW$ 的周界。</div></div><span class="marks">(3分)</span><div class="q-clearfix"></div>`,
-            en: `已知 $\\mathrm{f}(x)$ 的一部分隨 $x^2$ 正變，而另一部分則為常數。 假定 $\\mathrm{f}(4)=0$ 及 $\\mathrm{f}(8)=-9$。 將 $y=\\mathrm{f}(x)$ 的圖像記為 $\\Gamma$ 。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $\\Gamma$ 的 $y$ 截距。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$\\Gamma$ 與 $x$ 軸相交於點 $U$ 及點 $V$，而 $\\Gamma$ 與 $y$ 軸相交於點 $W$。 求 $\\Delta UVW$ 的周界。</div></div><span class="marks">(3分)</span><div class="q-clearfix"></div>`
+            tc: `已知 $\\mathrm{f}(x)$ 的一部分隨 $x^2$ 正變，而另一部分則為常數。 假定 $\\mathrm{f}(4)=0$ 及 $\\mathrm{f}(8)=-9$。 將 $y=\\mathrm{f}(x)$ 的圖像記為 $\\mathit{\\Gamma}$ 。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $\\mathit{\\Gamma}$ 的 $y$ 截距。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$\\mathit{\\Gamma}$ 與 $x$ 軸相交於點 $U$ 及點 $V$，而 $\\mathit{\\Gamma}$ 與 $y$ 軸相交於點 $W$。 求 $\\Delta UVW$ 的周界。</div></div><span class="marks">(3分)</span><div class="q-clearfix"></div>`,
+            en: `已知 $\\mathrm{f}(x)$ 的一部分隨 $x^2$ 正變，而另一部分則為常數。 假定 $\\mathrm{f}(4)=0$ 及 $\\mathrm{f}(8)=-9$。 將 $y=\\mathrm{f}(x)$ 的圖像記為 $\\mathit{\\Gamma}$ 。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $\\mathit{\\Gamma}$ 的 $y$ 截距。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$\\mathit{\\Gamma}$ 與 $x$ 軸相交於點 $U$ 及點 $V$，而 $\\mathit{\\Gamma}$ 與 $y$ 軸相交於點 $W$。 求 $\\Delta UVW$ 的周界。</div></div><span class="marks">(3分)</span><div class="q-clearfix"></div>`
         },
         hint: {
             tc: ``,
@@ -525,10 +525,8 @@ questions.push(
         topic: ["Trigonometry (2D)", "Trigonometry (3D)"],
         difficulty: 3,
         content: {
-            tc: `圖中，角錐體 $VABCD$ 的底為四邊形 $ABCD$。 該角錐體的面 $VAB$ 位於水平地面上。 已知 $AB=90\\text{ cm}$ 、 $AD=70\\text{ cm}$ 、 $CD=100\\text{ cm}$ 、 $\\angle ADC=55^\\circ$ 及 $\\angle BCD=130^\\circ$。
-<br><img src="img/2026dsep1q17.jpg" class="q-img" alt="題目附圖" style="max-width: 90%;"><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">$A$ 與 $C$ 間的距離，</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">$\\angle BAD$。</div></div><div class="q-text-content"><span class="marks">(4分)</span></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">已知 $VD=80\\text{ cm}$。 學生得知平面 $ABCD$ 與水平地面間的交角為 $65^\\circ$。 該學生宣稱 $VD$ 與水平地面間的交角小於 $50^\\circ$。 該宣稱是否正確？ 試解釋你的答案。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
-            en: `圖中，角錐體 $VABCD$ 的底為四邊形 $ABCD$。 該角錐體的面 $VAB$ 位於水平地面上。 已知 $AB=90\\text{ cm}$ 、 $AD=70\\text{ cm}$ 、 $CD=100\\text{ cm}$ 、 $\\angle ADC=55^\\circ$ 及 $\\angle BCD=130^\\circ$。
-<br><img src="img/2026dsep1q17.jpg" class="q-img" alt="題目附圖" style="max-width: 90%;"><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">$A$ 與 $C$ 間的距離，</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">$\\angle BAD$。</div></div><div class="q-text-content"><span class="marks">(4分)</span></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">已知 $VD=80\\text{ cm}$。 學生得知平面 $ABCD$ 與水平地面間的交角為 $65^\\circ$。 該學生宣稱 $VD$ 與水平地面間的交角小於 $50^\\circ$。 該宣稱是否正確？ 試解釋你的答案。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`
+            tc: `圖中，角錐體 $VABCD$ 的底為四邊形 $ABCD$。 該角錐體的面 $VAB$ 位於水平地面上。 已知 $AB=90\\text{ cm}$ 、 $AD=70\\text{ cm}$ 、 $CD=100\\text{ cm}$ 、 $\\angle ADC=55^\\circ$ 及 $\\angle BCD=130^\\circ$。<br><img src="img/2026dsep1q17.jpg" class="q-img" alt="題目附圖" style="max-width: 90%;"><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">$A$ 與 $C$ 間的距離，</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">$\\angle BAD$。</div></div><div class="q-text-content"><span class="marks">(4分)</span></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">已知 $VD=80\\text{ cm}$。 學生得知平面 $ABCD$ 與水平地面間的交角為 $65^\\circ$。 該學生宣稱 $VD$ 與水平地面間的交角小於 $50^\\circ$。 該宣稱是否正確？ 試解釋你的答案。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
+            en: `圖中，角錐體 $VABCD$ 的底為四邊形 $ABCD$。 該角錐體的面 $VAB$ 位於水平地面上。 已知 $AB=90\\text{ cm}$ 、 $AD=70\\text{ cm}$ 、 $CD=100\\text{ cm}$ 、 $\\angle ADC=55^\\circ$ 及 $\\angle BCD=130^\\circ$。<br><img src="img/2026dsep1q17.jpg" class="q-img" alt="題目附圖" style="max-width: 90%;"><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">$A$ 與 $C$ 間的距離，</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">$\\angle BAD$。</div></div><div class="q-text-content"><span class="marks">(4分)</span></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">已知 $VD=80\\text{ cm}$。 學生得知平面 $ABCD$ 與水平地面間的交角為 $65^\\circ$。 該學生宣稱 $VD$ 與水平地面間的交角小於 $50^\\circ$。 該宣稱是否正確？ 試解釋你的答案。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`
         },
         hint: {
             tc: ``,
@@ -571,8 +569,8 @@ questions.push(
         topic: ["Quadratic Equations in One Unknown", "Functions and Graphs", "Equations of Circles", "Four Centres of a Triangle", "Geometry (Polygons)", "Coordinate Geometry"],
         difficulty: 3,
         content: {
-            tc: `設 $\\mathrm{h}(x)=-x^2+30kx+4x-225k^2-40k+3$ ，其中 $k$ 為一正常數。 在同一直角坐標系中，將 $y=\\mathrm{h}(x)$ 的圖像的頂點及 $y=14-\\mathrm{h}(4-x)$ 的圖像的頂點分別記為 $A$ 及 $B$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">利用配方法，以 $k$ 表 $A$ 的坐標。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出 $B$ 的坐標，答案以 $k$ 表示。<span class="marks">(1分)</span></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">點 $C$ 的坐標為 $(2+48k,7-36k)$。 設 $I$ 及 $J$ 分別為 $\\Delta ABC$ 的內心及外心。</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">設 $M$ 為 $AB$ 的中點。 描述 $CM$ 與 $AB$ 之間的幾何關係。 試解釋你的答案。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">以 $k$ 表 $I$ 與 $J$ 間的距離。</div></div><div class="q-line q-level-2"><span class="q-label">(iii)</span><div class="q-text-content">點 $D$ 的坐標為 $(6-22k,6-15k)$。 $BDIJ$ 有沒有可能為一平行四邊形？ 試解釋你的答案。</div></div><div class="q-text-content"><span class="marks">(9分)</span></div><div class="q-clearfix"></div></div></div>`,
-            en: `設 $\\mathrm{h}(x)=-x^2+30kx+4x-225k^2-40k+3$ ，其中 $k$ 為一正常數。 在同一直角坐標系中，將 $y=\\mathrm{h}(x)$ 的圖像的頂點及 $y=14-\\mathrm{h}(4-x)$ 的圖像的頂點分別記為 $A$ 及 $B$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">利用配方法，以 $k$ 表 $A$ 的坐標。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出 $B$ 的坐標，答案以 $k$ 表示。<span class="marks">(1分)</span></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">點 $C$ 的坐標為 $(2+48k,7-36k)$。 設 $I$ 及 $J$ 分別為 $\\Delta ABC$ 的內心及外心。</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">設 $M$ 為 $AB$ 的中點。 描述 $CM$ 與 $AB$ 之間的幾何關係。 試解釋你的答案。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">以 $k$ 表 $I$ 與 $J$ 間的距離。</div></div><div class="q-line q-level-2"><span class="q-label">(iii)</span><div class="q-text-content">點 $D$ 的坐標為 $(6-22k,6-15k)$。 $BDIJ$ 有沒有可能為一平行四邊形？ 試解釋你的答案。</div></div><div class="q-text-content"><span class="marks">(9分)</span></div><div class="q-clearfix"></div></div></div>`
+            tc: `設 $\\mathrm{h}(x)=-x^2+30kx+4x-225k^2-40k+3$ ，其中 $k$ 為一正常數。 在同一直角坐標系中，將 $y=\\mathrm{h}(x)$ 的圖像的頂點及 $y=14-\\mathrm{h}(4-x)$ 的圖像的頂點分別記為 $A$ 及 $B$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">利用配方法，以 $k$ 表 $A$ 的坐標。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出 $B$ 的坐標，答案以 $k$ 表示。<span class="marks">(1分)</span></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">點 $C$ 的坐標為 $(2+48k,7-36k)$。 設 $I$ 及 $J$ 分別為 $\\Delta ABC$ 的內心及外心。</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">設 $M$ 為 $AB$ 的中點。 描述 $CM$ 與 $AB$ 之間的幾何關係。 試解釋你的答案。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">以 $k$ 表 $I$ 與 $J$ 間的距離。</div></div><div class="q-line q-level-2"><span class="q-label">(iii)</span><div class="q-text-content">點 $D$ 的坐標為 $(6-22k,6-15k)$。 $BDIJ$ 有沒有可能為一平行四邊形？ 試解釋你的答案。</div></div><div class="q-text-content"><span class="marks">(9分)</span></div><div class="q-clearfix"></div>`,
+            en: `設 $\\mathrm{h}(x)=-x^2+30kx+4x-225k^2-40k+3$ ，其中 $k$ 為一正常數。 在同一直角坐標系中，將 $y=\\mathrm{h}(x)$ 的圖像的頂點及 $y=14-\\mathrm{h}(4-x)$ 的圖像的頂點分別記為 $A$ 及 $B$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">利用配方法，以 $k$ 表 $A$ 的坐標。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出 $B$ 的坐標，答案以 $k$ 表示。<span class="marks">(1分)</span></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">點 $C$ 的坐標為 $(2+48k,7-36k)$。 設 $I$ 及 $J$ 分別為 $\\Delta ABC$ 的內心及外心。</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">設 $M$ 為 $AB$ 的中點。 描述 $CM$ 與 $AB$ 之間的幾何關係。 試解釋你的答案。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">以 $k$ 表 $I$ 與 $J$ 間的距離。</div></div><div class="q-line q-level-2"><span class="q-label">(iii)</span><div class="q-text-content">點 $D$ 的坐標為 $(6-22k,6-15k)$。 $BDIJ$ 有沒有可能為一平行四邊形？ 試解釋你的答案。</div></div><div class="q-text-content"><span class="marks">(9分)</span></div><div class="q-clearfix"></div>`
         },
         hint: {
             tc: ``,
