@@ -257,10 +257,10 @@ D.\t$515$。
         domain: ["Geometry"],
         topic: ["Equations of Straight Lines"],
         difficulty: 2,
-        content: `圖中，直線 $L_1$ 及直線 $L_2$ 的方程分別為 $ax + y = b$ 及 $cx + y = d$。 已知 $L_1$ 與 $L_2$ 相交於正 $x$ 軸上的一點。下列何者正確？
-<div class="q-mcms">
-I.\t$a < c$<br>
-II.\t$b > d$<br>
+        content: `圖中，直線 $L_1$ 及直線 $L_2$ 的方程分別為 $ax + y = b$ 及 $cx + y = d$。 已知 $L_1$ 與 $L_2$ 相交於正 $x$ 軸上的一點。 下列何者正確？
+<div class="q-mcms"><img src="img/2026dsep2q14.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
+I.\t$a < c$
+II.\t$b > d$
 III.\t$ad = bc$
 </div>
 <div class="q-mcopt">
@@ -281,10 +281,10 @@ D.\tI、II 及 III
         domain: ["Algebra"],
         topic: ["Functions and Graphs"],
         difficulty: 2,
-        content: `設 $p$ 及 $q$ 均為實常數使得 $pq<0$。下列有關 $y=(px+1)(qx+2)$ 的圖像之敍述，何者正確？
+        content: `設 $p$ 及 $q$ 均為實常數使得 $pq<0$。 下列有關 $y=(px+1)(qx+2)$ 的圖像之敍述，何者正確？
 <div class="q-mcms">
-I.\t該圖像開口向下。<br>
-II.\t該圖像有兩個 $x$ 截距。<br>
+I.\t該圖像開口向下。
+II.\t該圖像有兩個 $x$ 截距。
 III.\t該圖像通過原點。
 </div>
 <div class="q-mcopt">
@@ -305,7 +305,7 @@ D.\tI、II 及 III
         domain: ["Geometry"],
         topic: ["Mensuration"],
         difficulty: 2,
-        content: `某扇形的周界及面積分別為 $k\\text{ cm}$ 及 $3k\\text{ cm}^2$。若該扇形的半徑為 $14\\text{ cm}$，則該扇形的弧長為
+        content: `某扇形的周界及面積分別為 $k\\text{ cm}$ 及 $3k\\text{ cm}^2$。 若該扇形的半徑為 $14\\text{ cm}$，則該扇形的弧長為
 <div class="q-mcopt">
 A.\t$19\\text{ cm}$。<br>
 B.\t$21\\text{ cm}$。<br>
@@ -324,7 +324,7 @@ D.\t$49\\text{ cm}$。
         domain: ["Geometry"],
         topic: ["Mensuration"],
         difficulty: 2,
-        content: `某直立角錐體的底為一長方形。該底的長及闊分別為 $18\\text{ cm}$ 及 $16\\text{ cm}$。該角錐體的高為 $12\\text{ cm}$。將該角錐體以一平行於其底的平面分成一角錐體 $X$ 及一平截頭體 $Y$。若 $X$ 的底的闊為 $12\\text{ cm}$，則 $Y$ 的體積為
+        content: `某直立角錐體的底為一長方形。 該底的長及闊分別為 $18\\text{ cm}$ 及 $16\\text{ cm}$。 該角錐體的高為 $12\\text{ cm}$。 將該角錐體以一平行於其底的平面分成一角錐體 $X$ 及一平截頭體 $Y$。 若 $X$ 的底的闊為 $12\\text{ cm}$，則 $Y$ 的體積為
 <div class="q-mcopt">
 A.\t$486\\text{ cm}^3$。<br>
 B.\t$666\\text{ cm}^3$。<br>
@@ -343,8 +343,8 @@ D.\t$944\\text{ cm}^3$。
         domain: ["Geometry"],
         topic: ["Geometry (Polygons)", "Mensuration"],
         difficulty: 2,
-        content: `圖中，$ABCD$ 為一梯形且 $AB \\parallel DC$ 及 $AB:CD = 3:5$。設 $E$ 為 $BD$ 上的一點使得 $BE:ED = 2:3$。已知 $AB \\parallel EF$ 及 $AD \\parallel BF$。若 $\\triangle ABD$ 的面積為 $225\\text{ cm}^2$，則梯形 $CDEF$ 的面積為
-<div class="q-mcopt">
+        content: `圖中，$ABCD$ 為一梯形且 $AB//DC$ 及 $AB:CD = 3:5$。 設 $E$ 為 $BD$ 上的一點使得 $BE:ED = 2:3$。 已知 $AB//EF$ 及 $AD///BF$。 若 $\\Delta ABD$ 的面積為 $225\\text{ cm}^2$，則梯形 $CDEF$ 的面積為
+<div class="q-mcopt"><img src="img/2026dsep2q18.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 40%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$222\\text{ cm}^2$。<br>
 B.\t$260\\text{ cm}^2$。<br>
 C.\t$279\\text{ cm}^2$。<br>
@@ -362,7 +362,7 @@ D.\t$285\\text{ cm}^2$。
         domain: ["Geometry"],
         topic: ["Trigonometry (2D)"],
         difficulty: 2,
-        content: `已知 $\\triangle PQR$ 為一直角三角形且 $\\angle QPR = 90^\\circ$。將 $\\triangle PQR$ 的面積記為 $S$。若 $QR = p$、$PR = q$ 及 $\\angle PQR = \\theta$，則下列何者必為正確？
+        content: `已知 $\\Delta PQR$ 為一直角三角形且 $\\angle QPR = 90^\\circ$。 將 $\\Delta PQR$ 的面積記為 $S$。 若 $QR = p$ 、 $PR = q$ 及 $\\angle PQR = \\theta$，則下列何者必為正確？
 <div class="q-mcopt">
 A.\t$S = \\dfrac{1}{2}pq$<br>
 B.\t$S = \\dfrac{1}{2}pq\\sin\\theta$<br>
@@ -381,8 +381,8 @@ D.\t$S = \\dfrac{1}{2}pq\\tan\\theta$
         domain: ["Geometry"],
         topic: ["Geometry (Polygons)", "Coordinate Geometry"],
         difficulty: 2,
-        content: `圖中，$ABCD$ 為一長方形。設 $E$ 為 $BC$ 上的一點，$AB$ 的延線與 $DE$ 的延線相交於點 $F$。若 $AB = 3\\text{ cm}$、$BE = 12\\text{ cm}$ 及 $CE = 4\\text{ cm}$，則 $EF =$
-<div class="q-mcopt">
+        content: `圖中，$ABCD$ 為一長方形。 設 $E$ 為 $BC$ 上的一點，$AB$ 的延線與 $DE$ 的延線相交於點 $F$。 若 $AB = 3\\text{ cm}$、$BE = 12\\text{ cm}$ 及 $CE = 4\\text{ cm}$，則 $EF =$
+<div class="q-mcopt"><img src="img/2026dsep2q20.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 50%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$13\\text{ cm}$。<br>
 B.\t$15\\text{ cm}$。<br>
 C.\t$16\\text{ cm}$。<br>
@@ -400,7 +400,7 @@ D.\t$20\\text{ cm}$。
         domain: ["Geometry"],
         topic: ["Geometry (Triangles)", "Geometry (Polygons)"],
         difficulty: 2,
-        content: `已知 $WXYZ$ 為四邊形，其中 $\\angle WXY = \\angle YWZ$ 及 $\\angle WYX = \\angle WZY$。若 $WX = 9\\text{ cm}$、$WY = 40\\text{ cm}$ 及 $XY = 41\\text{ cm}$，求四邊形 $WXYZ$ 的周界。
+        content: `已知 $WXYZ$ 為四邊形，其中 $\\angle WXY = \\angle YWZ$ 及 $\\angle WYX = \\angle WZY$。 若 $WX = 9\\text{ cm}$、$WY = 40\\text{ cm}$ 及 $XY = 41\\text{ cm}$，求四邊形 $WXYZ$ 的周界。
 <div class="q-mcopt">
 A.\t$100\\text{ cm}$<br>
 B.\t$180\\text{ cm}$<br>
@@ -420,7 +420,7 @@ D.\t$490\\text{ cm}$
         topic: ["Geometry (Polygons)"],
         difficulty: 1,
         content: `根據圖中所示，下列何者必為正確？
-<div class="q-mcopt">
+<div class="q-mcopt"><img src="img/2026dsep2q22.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 40%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$p=r$<br>
 B.\t$q=90^\\circ$<br>
 C.\t$p+r=q$<br>
@@ -438,11 +438,11 @@ D.\t$p+q+r=180^\\circ$
         domain: ["Geometry"],
         topic: ["Geometry (Polygons)"],
         difficulty: 2,
-        content: `已知 $ABCDEF$ 為一正 $6$ 邊形。若 $AC$ 與 $BF$ 相交於點 $G$，則下列何者正確？
+        content: `已知 $ABCDEF$ 為一正 6 邊形。 若 $AC$ 與 $BF$ 相交於點 $G$，則下列何者正確？
 <div class="q-mcms">
-I.\t$BG \\parallel CE$<br>
-II.\t$\\triangle ABG \\sim \\triangle BDC$<br>
-III.\t$\\triangle AGF \\cong \\triangle BGC$
+I.\t$BG//CE$
+II.\t$\\Delta ABG \\sim \\Delta BDC$
+III.\t$\\Delta AGF \\cong \\Delta BGC$
 </div>
 <div class="q-mcopt">
 A.\t只有 I 及 II<br>
@@ -462,7 +462,7 @@ D.\tI、II 及 III
         domain: ["Geometry"],
         topic: ["Coordinate Geometry"],
         difficulty: 2,
-        content: `點 $(3,1)$ 向左平移 $5$ 單位至點 $U$，然後 $U$ 繞原點逆時針方向旋轉 $270^\\circ$ 至點 $V$。求 $V$ 的 $y$ 坐標。
+        content: `點 $(3,1)$ 向左平移 $5$ 單位至點 $U$，然後 $U$ 繞原點逆時針方向旋轉 $270^\\circ$ 至點 $V$。 求 $V$ 的 $y$ 坐標。
 <div class="q-mcopt">
 A.\t$-2$<br>
 B.\t$-1$<br>
@@ -481,8 +481,8 @@ D.\t$2$
         domain: ["Geometry"],
         topic: ["Geometry (Circles)"],
         difficulty: 2,
-        content: `圖中，$O$ 為圓 $PQRS$ 的圓心，$PR$ 與 $OQ$ 相交於點 $T$。若 $\\angle POT = 82^\\circ$ 及 $\\angle PTQ = 104^\\circ$，則 $\\angle QSR =$
-<div class="q-mcopt">
+        content: `圖中，$O$ 為圓 $PQRS$ 的圓心，$PR$ 與 $OQ$ 相交於點 $T$。 若 $\\angle POT = 82^\\circ$ 及 $\\angle PTQ = 104^\\circ$，則 $\\angle QSR =$
+<div class="q-mcopt"><img src="img/2026dsep2q25.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 40%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$22^\\circ$。<br>
 B.\t$27^\\circ$。<br>
 C.\t$30^\\circ$。<br>
@@ -500,7 +500,7 @@ D.\t$49^\\circ$。
         domain: ["Geometry"],
         topic: ["Loci"],
         difficulty: 2,
-        content: `直線 $L_1$ 及直線 $L_2$ 的方程分別為 $3x + 5y = 6$ 及 $6x - 10y = 13$。設 $P$ 為直角坐標平面上的一動點使得由 $P$ 至 $L_1$ 的垂直距離等於由 $P$ 至 $L_2$ 的垂直距離。$P$ 的軌跡為
+        content: `直線 $L_1$ 及直線 $L_2$ 的方程分別為 $3x + 5y = 6$ 及 $6x - 10y = 13$。 設 $P$ 為直角坐標平面上的一動點使得由 $P$ 至 $L_1$ 的垂直距離等於由 $P$ 至 $L_2$ 的垂直距離。 $P$ 的軌跡為
 <div class="q-mcopt">
 A.\t一點。<br>
 B.\t一圓。<br>
@@ -519,7 +519,7 @@ D.\t一對直線。
         domain: ["Geometry"],
         topic: ["Equations of Circles"],
         difficulty: 2,
-        content: `圓 $C$ 的圓心的 $x$ 坐標為 $5$。若 $C$ 通過點 $(5, 0)$ 及點 $(11, 4)$，則 $C$ 的圓周為
+        content: `圓 $C$ 的圓心的 $x$ 坐標為 $5$。 若 $C$ 通過點 $(5, 0)$ 及點 $(11, 4)$，則 $C$ 的圓周為
 <div class="q-mcopt">
 A.\t$13\\pi$。<br>
 B.\t$14\\pi$。<br>
@@ -538,7 +538,7 @@ D.\t$42\\pi$。
         domain: ["Data Handling"],
         topic: ["Probability"],
         difficulty: 2,
-        content: `某袋子內有五張分別記有數字 $2$、$2$、$3$、$4$ 及 $6$ 的紙卡。從該袋子中隨機同時抽出兩張紙卡。求抽出數字之和大於 $7$ 的概率。
+        content: `某袋子內有五張分別記有數字 $2$、$2$、$3$、$4$ 及 $6$ 的紙卡。 從該袋子中隨機同時抽出兩張紙卡。 求抽出數字之和大於 $7$ 的概率。
 <div class="q-mcopt">
 A.\t$\\dfrac{1}{2}$<br>
 B.\t$\\dfrac{1}{5}$<br>
@@ -559,8 +559,8 @@ D.\t$\\dfrac{3}{10}$
         difficulty: 1,
         content: `下列何者能從任意一框線圖得出？
 <div class="q-mcms">
-I.\t平均值<br>
-II.\t下四分位數<br>
+I.\t平均值
+II.\t下四分位數
 III.\t四分位數間距
 </div>
 <div class="q-mcopt">
@@ -581,12 +581,10 @@ D.\t只有 II 及 III
         domain: ["Data Handling"],
         topic: ["Measures of Central Tendency", "Measures of Dispersion"],
         difficulty: 2,
-        content: `考慮以下整數：
-$$4 \\quad 7 \\quad 7 \\quad 7 \\quad 8 \\quad 11 \\quad 11 \\quad 13 \\quad x \\quad y$$
-設 $u$、$v$ 及 $w$ 分別為以上整數的方差、中位數及眾數。若以上整數的平均值及分佈域均為 $9$，則下列何者必為正確？
+        content: `考慮以下整數：<div style="text-align: center;">$4$　$7$　$7$　$7$　$8$　$11$　$11$　$13$　$x$　$y$</div>設 $u$、$v$ 及 $w$ 分別為以上整數的方差、中位數及眾數。 若以上整數的平均值及分佈域均為 $9$，則下列何者必為正確？
 <div class="q-mcms">
-I.\t$u<7$<br>
-II.\t$v>7$<br>
+I.\t$u<7$
+II.\t$v>7$
 III.\t$w=7$
 </div>
 <div class="q-mcopt">
