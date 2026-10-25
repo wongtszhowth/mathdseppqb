@@ -12,10 +12,10 @@ questions.push(
         difficulty: 1,
         content: `$\\dfrac{1}{k+2} + \\dfrac{3}{5k-6} =$
 <div class="q-mcopt">
-A.\t$\\dfrac{-8k}{(k+2)(5k-6)}$<br>
-B.\t$\\dfrac{-2k}{(k+2)(5k-6)}$<br>
-C.\t$\\dfrac{2k}{(k+2)(5k-6)}$<br>
-D.\t$\\dfrac{8k}{(k+2)(5k-6)}$
+A.\t$\\dfrac{-8k}{(k+2)(5k-6)}$。<br>
+B.\t$\\dfrac{-2k}{(k+2)(5k-6)}$。<br>
+C.\t$\\dfrac{2k}{(k+2)(5k-6)}$。<br>
+D.\t$\\dfrac{8k}{(k+2)(5k-6)}$。
 </div>`,
         hint: `通分後合併分子。`,
         solution: `D (89%)<p><iframe src="https://www.youtube.com/embed/5cLhYAQ1Uy0?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
@@ -31,10 +31,10 @@ D.\t$\\dfrac{8k}{(k+2)(5k-6)}$
         difficulty: 1,
         content: `$\\dfrac{9^{3n+1}}{(3^{2n+3})(27^{2n+1})} =$
 <div class="q-mcopt">
-A.\t$9^{-n-2}$<br>
-B.\t$9^{-n-1}$<br>
-C.\t$9^{n-2}$<br>
-D.\t$9^{n-1}$
+A.\t$9^{-n-2}$。<br>
+B.\t$9^{-n-1}$。<br>
+C.\t$9^{n-2}$。<br>
+D.\t$9^{n-1}$。
 </div>`,
         hint: `化成相同底數後簡化指數。`,
         solution: `A (75%)<p><iframe src="https://www.youtube.com/embed/HB1laOSopHk?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
@@ -50,10 +50,10 @@ D.\t$9^{n-1}$
         difficulty: 1,
         content: `$(2\\alpha - \\beta)^2 + (\\alpha - 2\\beta)^2 =$
 <div class="q-mcopt">
-A.\t$3\\alpha^2 - 4\\alpha\\beta + 3\\beta^2$<br>
-B.\t$3\\alpha^2 - 8\\alpha\\beta + 3\\beta^2$<br>
-C.\t$5\\alpha^2 - 4\\alpha\\beta + 5\\beta^2$<br>
-D.\t$5\\alpha^2 - 8\\alpha\\beta + 5\\beta^2$
+A.\t$3\\alpha^2 - 4\\alpha\\beta + 3\\beta^2$。<br>
+B.\t$3\\alpha^2 - 8\\alpha\\beta + 3\\beta^2$。<br>
+C.\t$5\\alpha^2 - 4\\alpha\\beta + 5\\beta^2$。<br>
+D.\t$5\\alpha^2 - 8\\alpha\\beta + 5\\beta^2$。
 </div>`,
         hint: `展開兩個完全平方後合併同類項。`,
         solution: `D (82%)<p><iframe src="https://www.youtube.com/embed/zGwkOPQodpg?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
@@ -109,8 +109,8 @@ D.\t$15$。
 <div class="q-mcopt">
 A.\t$x = -s$<br>
 B.\t$x = -2s$<br>
-C.\t$x = -s$ 或 $x = -t$<br>
-D.\t$x = -2s$ 或 $x = -t$
+C.\t$x = -s$  或  $x = -t$<br>
+D.\t$x = -2s$  或  $x = -t$
 </div>`,
         hint: `移項後因式分解。`,
         solution: `C (68%)<p><iframe src="https://www.youtube.com/embed/ffhGh7ddD7M?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
@@ -124,7 +124,7 @@ D.\t$x = -2s$ 或 $x = -t$
         domain: ["Algebra"],
         topic: ["Polynomials", "Remainder Theorem and Factor Theorem"],
         difficulty: 1,
-        content: `設 $\\mathrm{f}(x)=(x+d)(x-2)+9x$，其中 $d$ 為一常數。若 $\\mathrm{f}(1+d)=0$，則 $d=$
+        content: `設 $\\mathrm{f}(x)=(x+d)(x-2)+9x$，其中 $d$ 為一常數。 若 $\\mathrm{f}(1+d)=0$，則 $d=$
 <div class="q-mcopt">
 A.\t$-2$。<br>
 B.\t$-1$。<br>
@@ -143,7 +143,7 @@ D.\t$2$。
         domain: ["Algebra"],
         topic: ["Remainder Theorem and Factor Theorem"],
         difficulty: 2,
-        content: `設 $\\mathrm{g}(x)=hx^3+2x^2+kx-5$，其中 $h$ 及 $k$ 均為常數。若 $\\mathrm{g}(x)$ 可被 $x-4$ 整除，求當 $\\mathrm{g}(x)$ 除以 $x+4$ 時的餘數。
+        content: `設 $\\mathrm{g}(x)=hx^3+2x^2+kx-5$，其中 $h$ 及 $k$ 均為常數。 若 $\\mathrm{g}(x)$ 可被 $x-4$ 整除，求當 $\\mathrm{g}(x)$ 除以 $x+4$ 時的餘數。
 <div class="q-mcopt">
 A.\t$-27$<br>
 B.\t$-10$<br>
@@ -162,7 +162,7 @@ D.\t$54$
         domain: ["Algebra"],
         topic: ["Linear Inequalities and Compound Inequalities"],
         difficulty: 1,
-        content: `$x-1>\\dfrac{2x-9}{3}$ 或 $3x+12\\ge0$ 的解為
+        content: `$x-1>\\dfrac{2x-9}{3}$  或  $3x+12\\ge0$  的解為
 <div class="q-mcopt">
 A.\t$x\\le-4$。<br>
 B.\t$x\\ge-4$。<br>
@@ -181,7 +181,7 @@ D.\t$x>-6$。
         domain: ["Algebra"],
         topic: ["Rates, Ratios and Proportions"],
         difficulty: 2,
-        content: `$S$ 牌米及 $T$ 牌米的成本分別為 $\\$12/\\text{kg}$ 及 $\\$18/\\text{kg}$。若 $s\\text{ kg}$ 的 $S$ 牌米與 $t\\text{ kg}$ 的 $T$ 牌米混合使得混合後的米的成本為 $\\$16/\\text{kg}$，則 $s:t=$
+        content: `$S$ 牌米及 $T$ 牌米的成本分別為 $\\$12/\\text{kg}$ 及 $\\$18/\\text{kg}$。 若 $s\\text{ kg}$ 的 $S$ 牌米與 $t\\text{ kg}$ 的 $T$ 牌米混合使得混合後的米的成本為 $\\$16/\\text{kg}$，則 $s:t=$
 <div class="q-mcopt">
 A.\t$1:2$。<br>
 B.\t$2:1$。<br>
@@ -200,7 +200,7 @@ D.\t$3:2$。
         domain: ["Algebra"],
         topic: ["Percentages"],
         difficulty: 1,
-        content: `存款 $P$，年利率 $4\\%$，年期 $5$ 年，複利計算，每季一結。若本利和為 $\\$80\\,000$，求 $P$ 準確至最接近的整數。
+        content: `存款 $\\$P$，年利率 $4\\%$，年期 $5$ 年，複利計算，每季一結。 若本利和為 $\\$80\\,000$，求 $P$ 準確至最接近的整數。
 <div class="q-mcopt">
 A.\t$65\\,520$<br>
 B.\t$65\\,564$<br>
@@ -219,7 +219,7 @@ D.\t$66\\,667$
         domain: ["Algebra"],
         topic: ["Variations"],
         difficulty: 1,
-        content: `已知 $w$ 隨 $u$ 的平方根正變且隨 $v$ 反變。若 $u$ 增加 $44\\%$ 且 $v$ 減少 $20\\%$，則 $w$ 增加
+        content: `已知 $w$ 隨 $u$ 的平方根正變且隨 $v$ 反變。 若 $u$ 增加 $44\\%$ 且 $v$ 減少 $20\\%$，則 $w$ 增加
 <div class="q-mcopt">
 A.\t$40\\%$。<br>
 B.\t$50\\%$。<br>
@@ -238,7 +238,7 @@ D.\t$80\\%$。
         domain: ["Algebra"],
         topic: ["Sequences"],
         difficulty: 2,
-        content: `設 $a_n$ 為某數列的第 $n$ 項。若 $a_2 = 7$、$a_5 = 35$ 及對任意正整數 $n$，$a_{n+2} = 3a_{n+1} - 2a_n$，則 $a_8 =$
+        content: `設 $a_n$ 為某數列的第 $n$ 項。 若 $a_2 = 7$ 、 $a_5 = 35$ 及對任意正整數 $n$， $a_{n+2} = 3a_{n+1} - 2a_n$ ，則 $a_8 =$
 <div class="q-mcopt">
 A.\t$67$。<br>
 B.\t$131$。<br>
@@ -257,7 +257,7 @@ D.\t$515$。
         domain: ["Geometry"],
         topic: ["Equations of Straight Lines"],
         difficulty: 2,
-        content: `圖中，直線 $L_1$ 及直線 $L_2$ 的方程分別為 $ax + y = b$ 及 $cx + y = d$。已知 $L_1$ 與 $L_2$ 相交於正 $x$ 軸上的一點。下列何者正確？
+        content: `圖中，直線 $L_1$ 及直線 $L_2$ 的方程分別為 $ax + y = b$ 及 $cx + y = d$。 已知 $L_1$ 與 $L_2$ 相交於正 $x$ 軸上的一點。下列何者正確？
 <div class="q-mcms">
 I.\t$a < c$<br>
 II.\t$b > d$<br>
