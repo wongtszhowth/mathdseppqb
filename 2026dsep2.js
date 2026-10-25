@@ -869,7 +869,29 @@ D.\t$32\\,400$
         topic: ["Standard Score"],
         difficulty: 2,
         content: `下表顯示四名學生在某測驗的得分（以分為單位）及其對應的標準分。
-<div style="overflow-x: auto; width: 100%; margin-bottom: 8px;"><table class="q-table" style="width: 100%; min-width: 300px;"><tr><td>得分（分）</td><td>$\\alpha$</td><td>$40$</td><td>$58$</td><td>$\\beta$</td></tr><tr><td>標準分</td><td>$-1$</td><td>$0$</td><td>$2$</td><td>$3$</td></tr></table></div>
+        <table class="q-table" style="margin-left: auto; margin-right: auto; min-width: 300px; border-collapse: collapse; table-layout: auto;">
+    <colgroup>
+      <col style="width: auto;">
+      <col style="width: 3em;">
+      <col style="width: 3em;">
+      <col style="width: 3em;">
+      <col style="width: 3em;">
+    </colgroup>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">得分（分）</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$\\alpha$</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$40$</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$58$</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$\\beta$</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">標準分</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$-1$</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$0$</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$2$</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$3$</td>
+    </tr>
+  </table>
 求 $\\beta - \\alpha$。
 <div class="q-mcopt">
 A.\t$31$<br>
