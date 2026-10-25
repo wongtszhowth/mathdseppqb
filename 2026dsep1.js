@@ -13,7 +13,7 @@ questions.push(
         difficulty: 1,
         content: {
             tc: `令 $m$ 成為公式 $\\dfrac{m}{2}-1=\\dfrac{5m-n}{3}$ 的主項。<span class="marks">(3分)</span>`,
-            en: `令 $m$ 成為公式 $\\dfrac{m}{2}-1=\\dfrac{5m-n}{3}$ 的主項。<span class="marks">(3 marks)</span>`
+            en: `Make $m$ the subject of the formula $\\dfrac{m}{2}-1=\\dfrac{5m-n}{3}$.<span class="marks">(3 marks)</span>`
         },
         hint: {
             tc: ``,
@@ -32,7 +32,7 @@ questions.push(
         difficulty: 1,
         content: {
             tc: `化簡 $\\dfrac{{{(u{{v}^{2}})}^{5}}}{{{u}^{7}}{{v}^{-3}}}$，並以正指數表示答案。<span class="marks">(3分)</span>`,
-            en: `化簡 $\\dfrac{{{(u{{v}^{2}})}^{5}}}{{{u}^{7}}{{v}^{-3}}}$，並以正指數表示答案。<span class="marks">(3 marks)</span>`
+            en: `Simplify $\\dfrac{{{(u{{v}^{2}})}^{5}}}{{{u}^{7}}{{v}^{-3}}}$ and express your answer with positive indices.<span class="marks">(3 marks)</span>`
         },
         hint: {
             tc: ``,
@@ -54,7 +54,7 @@ questions.push(
         difficulty: 1,
         content: {
             tc: `點 $P$ 及點 $Q$ 的坐標分別為 $(-6,5)$ 及 $(2,1)$。 $P$ 向下平移 $r$ 單位至 $R$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出 $R$ 的坐標，答案以 $r$ 表示。<span class="marks">(1分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求 $r$ 使得 $\\angle PQR=90^\\circ$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
-            en: `點 $P$ 及點 $Q$ 的坐標分別為 $(-6,5)$ 及 $(2,1)$。 $P$ 向下平移 $r$ 單位至 $R$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">寫出 $R$ 的坐標，答案以 $r$ 表示。<span class="marks">(1分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求 $r$ 使得 $\\angle PQR=90^\\circ$。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`
+            en: `The coordinates of the points $P$ and $Q$ are $(-6,5)$ and $(2,1)$ respectively. $P$ is translated downwards by $r$ units to $R$.<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">Write down, in terms of $r$, the coordinates of $R$.<span class="marks">(1 mark)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">Find $r$ such that $\\angle PQR=90^\\circ$.<span class="marks">(2 marks)</span><div class="q-clearfix"></div></div></div>`
         },
         hint: {
             tc: ``,
@@ -92,7 +92,7 @@ questions.push(
         difficulty: 1,
         content: {
             tc: `某箱子內藍筆的數目與紅筆的數目之和為 $795$ 。 若從該箱子中取出 $123$ 枝藍筆，則該箱子內藍筆的數目較該箱子內紅筆的數目少 $25\\%$。 求該箱子內紅筆的數目。<span class="marks">(4分)</span>`,
-            en: `某箱子內藍筆的數目與紅筆的數目之和為 $795$ 。 若從該箱子中取出 $123$ 枝藍筆，則該箱子內藍筆的數目較該箱子內紅筆的數目少 $25\\%$。 求該箱子內紅筆的數目。<span class="marks">(4 marks)</span>`
+            en: `The sum of the number of blue pens and the number of red pens in a box is $795$. If $123$ blue pens are taken out from the box, then the number of blue pens in the box is $25\\%$ less than the number of red pens in the box. Find the number of red pens in the box.<span class="marks">(4 marks)</span>`
         },
         hint: {
             tc: ``,
@@ -136,7 +136,7 @@ questions.push(
         difficulty: 1,
         content: {
             tc: `某指環以其標價八五折售出，其盈利為 $\\$162$。 該指環的標價較其成本高 $\\$270$。 求盈利百分率。<span class="marks">(4分)</span>`,
-            en: `某指環以其標價八五折售出，其盈利為 $\\$162$。 該指環的標價較其成本高 $\\$270$。 求盈利百分率。<span class="marks">(4 marks)</span>`
+            en: `A profit of $\\$162$ is made by selling a ring at a discount of $15\\%$ on its marked price. The marked price of the ring is $\\$270$ above its cost. Find the percentage profit.<span class="marks">(4 marks)</span>`
         },
         hint: {
             tc: ``,
@@ -158,7 +158,7 @@ questions.push(
         difficulty: 2,
         content: {
             tc: `圖中， $ABC$ 為三角形。 $D$ 為 $AB$ 上的一點。 設 $E$ 及 $F$ 分別為 $CB$ 的延線及 $CD$ 的延線上的點使得 $BD//EF$ 及 $BC=EF$。 已知 $BD=8\\text{ cm}$ 及 $BE=6\\text{ cm}$。<br><img src="img/2026dsep1q08.jpg" class="q-img" alt="題目附圖" style="max-width: 60%;"><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">藉考慮一對相似三角形，求 $BC$ 的長度。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">假定 $AD=10\\text{ cm}$。 證明 $\\Delta ABC\\cong \\Delta CEF$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
-            en: `圖中， $ABC$ 為三角形。 $D$ 為 $AB$ 上的一點。 設 $E$ 及 $F$ 分別為 $CB$ 的延線及 $CD$ 的延線上的點使得 $BD//EF$ 及 $BC=EF$。 已知 $BD=8\\text{ cm}$ 及 $BE=6\\text{ cm}$。<br><img src="img/2026dsep1q08.jpg" class="q-img" alt="題目附圖" style="max-width: 60%;"><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">藉考慮一對相似三角形，求 $BC$ 的長度。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">假定 $AD=10\\text{ cm}$。 證明 $\\Delta ABC\\cong \\Delta CEF$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`
+            en: `In the figure, $ABC$ is a triangle. $D$ is a point lying on $AB$. Let $E$ and $F$ be points lying on $CB$ produced and $CD$ produced respectively such that $BD//EF$ and $BC=EF$. It is given that $BD=8\\text{ cm}$ and $BE=6\\text{ cm}$.<br><img src="img/2026dsep1q08.jpg" class="q-img" alt="題目附圖" style="max-width: 60%;"><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">By considering a pair of similar triangles, find the length of $BC$.<span class="marks">(2 marks)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">Suppose that $AD=10\\text{ cm}$. Prove that $\\Delta ABC\\cong \\Delta CEF$.<span class="marks">(3 marks)</span><div class="q-clearfix"></div></div></div>`
         },
         hint: {
             tc: ``,
@@ -238,15 +238,15 @@ questions.push(
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$k$</td>
     </tr></table></div>
     <div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $a$ 及 $b$。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求該分佈的平均值。<span class="marks">(2分)</span></div></div><div class="q-clearfix"></div>`,
-            en: `下面的頻數分佈表及累積頻數分佈表均顯示 $20$ 個蘋果的重量的分佈。        
+            en: `The frequency distribution table and the cumulative frequency distribution table below show the distribution of the weights of $20$ apples.        
 <div class="q-text-content"><table class="q-table" style="float: left; margin-top: 12px; margin-bottom: 12px; margin-left: 3em; margin-right: auto; border-collapse: collapse; table-layout: auto;">
     <colgroup>
       <col style="width: 11em;">
-      <col style="width: 4em;">
+      <col style="width: 7em;">
     </colgroup>
     <tr>
-      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">重量 (克)</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">頻數</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">Weight (grams)</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">Frequency</td>
     </tr>
     <tr>
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">91 – 100</td>
@@ -269,12 +269,12 @@ questions.push(
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$h$</td>
     </tr></table><table class="q-table" style="float: right; margin-top: 12px; margin-bottom: 12px; margin-left: auto; margin-right: 3em; border-collapse: collapse; table-layout: auto;">
     <colgroup>
-      <col style="width: 13em;">
-      <col style="width: 6em;">
+      <col style="width: auto;">
+      <col style="width: auto;">
     </colgroup>
     <tr>
-      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">重量少於 (克)</td>
-      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">累積頻數</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">Weight less than (grams)</td>
+      <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">Cumulative frequency</td>
     </tr>
     <tr>
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">100.5</td>
@@ -296,7 +296,7 @@ questions.push(
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">140.5</td>
       <td style="border: 1px solid #000; text-align: center; padding: 3px 10px;">$k$</td>
     </tr></table></div>
-    <div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $a$ 及 $b$。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">求該分佈的平均值。<span class="marks">(2分)</span></div></div><div class="q-clearfix"></div>`
+    <div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">Find $a$ and $b$.<span class="marks">(3 marks)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">Find the mean of the distribution.<span class="marks">(2 marks)</span></div></div><div class="q-clearfix"></div>`
         },
         hint: {
             tc: ``,
@@ -345,15 +345,15 @@ questions.push(
     </tr>    
   </table>
 該分佈的分佈域與四分位數間距之比為 $7:3$。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $w$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><span class="q-label">(i)</span><div class="q-text-content">寫出該分佈的眾數。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">若從該群中隨機選出兩名的士司機，求他們在該星期的駕駛時數的平均值超過該分佈的眾數的概率。</div></div><div class="q-text-content"><span class="marks">(3分)</span></div><div class="q-clearfix"></div>`,
-            en: `下面的幹葉圖顯示一群的士司機在某星期的駕駛時數的分佈。
+            en: `The stem-and-leaf diagram below shows the distribution of the numbers of driving hours of a group of taxi drivers in a week.
         <table class="q-table" style="border-collapse: collapse; table-layout: auto; width: auto; white-space: pre;" align="center">
     <colgroup>
       <col style="width: auto;">
       <col style="width: auto;">
     </colgroup>
     <tr>
-      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;"><u>幹（十位）</u></td>
-      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;"><u>葉（個位）</u></td>
+      <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;"><u>Stem (tens)</u></td>
+      <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;"><u>Leaf (units)</u></td>
     </tr>
     <tr>
       <td style="border-right: 1px solid black; text-align: right; padding: 0px 10px;">2</td>
@@ -372,7 +372,7 @@ questions.push(
       <td style="border-left: 1px solid black; text-align: left; padding: 0px 10px;">$w$</td>
     </tr>    
   </table>
-該分佈的分佈域與四分位數間距之比為 $7:3$。<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $w$。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">寫出該分佈的眾數。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">若從該群中隨機選出兩名的士司機，求他們在該星期的駕駛時數的平均值超過該分佈的眾數的概率。</div></div><div class="q-text-content"><span class="marks">(3分)</span></div><div class="q-clearfix"></div>`
+The ratio of the range to the inter-quartile range of the distribution is $7:3$.<br><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">Find $w$.<span class="marks">(3 marks)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">Write down the mode of the distribution.</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">If two taxi drivers are randomly selected from the group, find the probability that the mean of their numbers of driving hours in the week exceeds the mode of the distribution.</div></div><div class="q-text-content"><span class="marks">(3 marks)</span></div><div class="q-clearfix"></div>`
         },
         hint: {
             tc: ``,
@@ -394,7 +394,7 @@ questions.push(
         difficulty: 1,
         content: {
             tc: `已知 $\\mathrm{f}(x)$ 的一部分隨 $x^2$ 正變，而另一部分則為常數。 假定 $\\mathrm{f}(4)=0$ 及 $\\mathrm{f}(8)=-9$。 將 $y=\\mathrm{f}(x)$ 的圖像記為 $\\mathit{\\Gamma}$ 。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $\\mathit{\\Gamma}$ 的 $y$ 截距。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$\\mathit{\\Gamma}$ 與 $x$ 軸相交於點 $U$ 及點 $V$，而 $\\mathit{\\Gamma}$ 與 $y$ 軸相交於點 $W$。 求 $\\Delta UVW$ 的周界。</div></div><span class="marks">(3分)</span><div class="q-clearfix"></div>`,
-            en: `已知 $\\mathrm{f}(x)$ 的一部分隨 $x^2$ 正變，而另一部分則為常數。 假定 $\\mathrm{f}(4)=0$ 及 $\\mathrm{f}(8)=-9$。 將 $y=\\mathrm{f}(x)$ 的圖像記為 $\\mathit{\\Gamma}$ 。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $\\mathit{\\Gamma}$ 的 $y$ 截距。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$\\mathit{\\Gamma}$ 與 $x$ 軸相交於點 $U$ 及點 $V$，而 $\\mathit{\\Gamma}$ 與 $y$ 軸相交於點 $W$。 求 $\\Delta UVW$ 的周界。</div></div><span class="marks">(3分)</span><div class="q-clearfix"></div>`
+            en: `It is given that $\\mathrm{f}(x)$ partly varies as $x^2$ and is partly constant. Suppose that $\\mathrm{f}(4)=0$ and $\\mathrm{f}(8)=-9$. Denote the graph of $y=\\mathrm{f}(x)$ by $\\mathit{\\Gamma}$.<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">Find the $y$-intercept of $\\mathit{\\Gamma}$.<span class="marks">(3 marks)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$\\mathit{\\Gamma}$ cuts the $x$-axis at the points $U$ and $V$ while $\\mathit{\\Gamma}$ cuts the $y$-axis at the point $W$. Find the perimeter of $\\Delta UVW$.</div></div><span class="marks">(3 marks)</span><div class="q-clearfix"></div>`
         },
         hint: {
             tc: ``,
@@ -416,7 +416,7 @@ questions.push(
         difficulty: 2,
         content: {
             tc: `直線 $L$ 通過點 $(-10,11)$。 $L$ 的斜率為 $-2$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $L$ 的方程。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">點 $H$ 及點 $K$ 的坐標分別為 $(2,5)$ 及 $(-4,-7)$。 設 $P$ 為 $L$ 上的一點使得 $P$ 與 $H$ 及 $K$ 等距。</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求 $P$ 的坐標。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">設 $Q$ 為一點使得 $HPKQ$ 為四邊形，其中 $HP=HQ=KQ$。 求四邊形 $HPKQ$ 的面積。</div></div><div class="q-text-content"><span class="marks">(5分)</span></div><div class="q-clearfix"></div>`,
-            en: `直線 $L$ 通過點 $(-10,11)$。 $L$ 的斜率為 $-2$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $L$ 的方程。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">點 $H$ 及點 $K$ 的坐標分別為 $(2,5)$ 及 $(-4,-7)$。 設 $P$ 為 $L$ 上的一點使得 $P$ 與 $H$ 及 $K$ 等距。</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求 $P$ 的坐標。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">設 $Q$ 為一點使得 $HPKQ$ 為四邊形，其中 $HP=HQ=KQ$。 求四邊形 $HPKQ$ 的面積。</div></div><div class="q-text-content"><span class="marks">(5分)</span></div><div class="q-clearfix"></div>`
+            en: `The straight line $L$ passes through the point $(-10,11)$. The slope of $L$ is $-2$.<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">Find the equation of $L$.<span class="marks">(2 marks)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">The coordinates of the points $H$ and $K$ are $(2,5)$ and $(-4,-7)$ respectively. Let $P$ be a point lying on $L$ such that $P$ is equidistant from $H$ and $K$.</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">Find the coordinates of $P$.</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">Let $Q$ be a point such that $HPKQ$ is a quadrilateral, where $HP=HQ=KQ$. Find the area of the quadrilateral $HPKQ$.</div></div><div class="q-text-content"><span class="marks">(5 marks)</span></div><div class="q-clearfix"></div>`
         },
         hint: {
             tc: ``,
@@ -438,7 +438,7 @@ questions.push(
         difficulty: 2,
         content: {
             tc: `把半徑為 $10\\text{ cm}$ 的實心金屬球體熔化，並重鑄成三個相似的實心直立圓柱體 $X$ 、 $Y$ 及 $Z$。 設 $r_1\\text{ cm}$ 、 $r_2\\text{ cm}$ 及 $r_3\\text{ cm}$ 分別為 $X$ 、 $Y$ 及 $Z$ 的底半徑。 已知 $r_1:r_2:r_3=2:3:5$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">以 $\\pi$ 表 $Y$ 的體積。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">某工匠得知 $Y$ 的高為 $9\\text{ cm}$。</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求 $r_2$。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">該工匠宣稱 $Z$ 的總表面面積大於該球體的表面面積。 你是否同意？ 試解釋你的答案。</div></div><div class="q-text-content"><span class="marks">(5分)</span></div><div class="q-clearfix"></div>`,
-            en: `把半徑為 $10\\text{ cm}$ 的實心金屬球體熔化，並重鑄成三個相似的實心直立圓柱體 $X$ 、 $Y$ 及 $Z$。 設 $r_1\\text{ cm}$ 、 $r_2\\text{ cm}$ 及 $r_3\\text{ cm}$ 分別為 $X$ 、 $Y$ 及 $Z$ 的底半徑。 已知 $r_1:r_2:r_3=2:3:5$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">以 $\\pi$ 表 $Y$ 的體積。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">某工匠得知 $Y$ 的高為 $9\\text{ cm}$。</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">求 $r_2$。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">該工匠宣稱 $Z$ 的總表面面積大於該球體的表面面積。 你是否同意？ 試解釋你的答案。</div></div><div class="q-text-content"><span class="marks">(5分)</span></div><div class="q-clearfix"></div>`
+            en: `A solid metal sphere of radius $10\\text{ cm}$ is melted and recast into three similar solid right circular cylinders $X$, $Y$ and $Z$. Let $r_1\\text{ cm}$, $r_2\\text{ cm}$ and $r_3\\text{ cm}$ be the base radii of $X$, $Y$ and $Z$ respectively. It is given that $r_1:r_2:r_3=2:3:5$.<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">Express the volume of $Y$ in terms of $\\pi$.<span class="marks">(3 marks)</span><div class="q-clearfix"></div></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">A craftsman finds that the height of $Y$ is $9\\text{ cm}$.</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">Find $r_2$.</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">The craftsman claims that the total surface area of $Z$ is greater than the surface area of the sphere. Do you agree? Explain your answer.</div></div><div class="q-text-content"><span class="marks">(5 marks)</span></div><div class="q-clearfix"></div>`
         },
         hint: {
             tc: ``,
@@ -460,7 +460,7 @@ questions.push(
         difficulty: 2,
         content: {
             tc: `當多項式 $\\mathrm{g}(x)$ 除以 $x^2+2x+a$ 時，商式及餘式分別為 $x+13$ 及 $b(x-3)$，其中 $a$ 及 $b$ 均為常數。 已知 $\\mathrm{g}(x)$ 可被 $x-3$ 整除。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $a$。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">是否只有一個 $b$ 的可取值使得方程 $\\mathrm{g}(x)=0$ 有至少兩個根相等？ 試解釋你的答案。<span class="marks">(5分)</span><div class="q-clearfix"></div></div></div>`,
-            en: `當多項式 $\\mathrm{g}(x)$ 除以 $x^2+2x+a$ 時，商式及餘式分別為 $x+13$ 及 $b(x-3)$，其中 $a$ 及 $b$ 均為常數。 已知 $\\mathrm{g}(x)$ 可被 $x-3$ 整除。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $a$。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">是否只有一個 $b$ 的可取值使得方程 $\\mathrm{g}(x)=0$ 有至少兩個根相等？ 試解釋你的答案。<span class="marks">(5分)</span><div class="q-clearfix"></div></div></div>`
+            en: `When the polynomial $\\mathrm{g}(x)$ is divided by $x^2+2x+a$, the quotient and the remainder are $x+13$ and $b(x-3)$ respectively, where $a$ and $b$ are constants. It is given that $\\mathrm{g}(x)$ is divisible by $x-3$.<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">Find $a$.<span class="marks">(3 marks)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">Is there only one possible value of $b$ such that at least two roots of the equation $\\mathrm{g}(x)=0$ are equal? Explain your answer.<span class="marks">(5 marks)</span><div class="q-clearfix"></div></div></div>`
         },
         hint: {
             tc: ``,
@@ -482,7 +482,7 @@ questions.push(
         difficulty: 1,
         content: {
             tc: `某袋子內有 3 個紅球、3 個白球及 5 個黑球。 若從該袋子中隨機同時抽出 4 個球，求<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">抽出恰好 2 個紅球的概率；<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">抽出恰好 2 個紅球或恰好 2 個白球的概率。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
-            en: `某袋子內有 3 個紅球、3 個白球及 5 個黑球。 若從該袋子中隨機同時抽出 4 個球，求<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">抽出恰好 2 個紅球的概率；<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">抽出恰好 2 個紅球或恰好 2 個白球的概率。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`
+            en: `A bag contains 3 red balls, 3 white balls and 5 black balls. If 4 balls are randomly drawn from the bag at the same time, find<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">the probability that exactly 2 red balls are drawn;<span class="marks">(2 marks)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">the probability that exactly 2 red balls or exactly 2 white balls are drawn.<span class="marks">(2 marks)</span><div class="q-clearfix"></div></div></div>`
         },
         hint: {
             tc: ``,
@@ -504,7 +504,7 @@ questions.push(
         difficulty: 3,
         content: {
             tc: `已知 $P$ 、 $Q$ 及 $R$ 為直角坐標平面上的三點。 $P$ 及 $Q$ 的坐標分別為 $(7,8)$ 及 $(-13,20)$。 $PR$ 的垂直平分線的方程為 $3x+5y-27=0$。 設 $C$ 為通過 $P$ 、 $Q$ 及 $R$ 的圓。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $C$ 的方程。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$C$ 在 $P$ 的切線與 $C$ 在 $R$ 的切線相交於點 $H$。 $\\Delta HPR$ 是否一直角三角形？ 試解釋你的答案。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`,
-            en: `已知 $P$ 、 $Q$ 及 $R$ 為直角坐標平面上的三點。 $P$ 及 $Q$ 的坐標分別為 $(7,8)$ 及 $(-13,20)$。 $PR$ 的垂直平分線的方程為 $3x+5y-27=0$。 設 $C$ 為通過 $P$ 、 $Q$ 及 $R$ 的圓。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $C$ 的方程。<span class="marks">(3分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">$C$ 在 $P$ 的切線與 $C$ 在 $R$ 的切線相交於點 $H$。 $\\Delta HPR$ 是否一直角三角形？ 試解釋你的答案。<span class="marks">(3分)</span><div class="q-clearfix"></div></div></div>`
+            en: `It is given that $P$, $Q$ and $R$ are three points in a rectangular coordinate plane. The coordinates of $P$ and $Q$ are $(7,8)$ and $(-13,20)$ respectively. The equation of the perpendicular bisector of $PR$ is $3x+5y-27=0$. Let $C$ be the circle which passes through $P$, $Q$ and $R$.<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">Find the equation of $C$.<span class="marks">(3 marks)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">The tangent to $C$ at $P$ and the tangent to $C$ at $R$ intersect at the point $H$. Is $\\Delta HPR$ a right-angled triangle? Explain your answer.<span class="marks">(4 marks)</span><div class="q-clearfix"></div></div></div>`
         },
         hint: {
             tc: ``,
@@ -526,7 +526,7 @@ questions.push(
         difficulty: 3,
         content: {
             tc: `圖中，角錐體 $VABCD$ 的底為四邊形 $ABCD$。 該角錐體的面 $VAB$ 位於水平地面上。 已知 $AB=90\\text{ cm}$ 、 $AD=70\\text{ cm}$ 、 $CD=100\\text{ cm}$ 、 $\\angle ADC=55^\\circ$ 及 $\\angle BCD=130^\\circ$。<br><img src="img/2026dsep1q17.jpg" class="q-img" alt="題目附圖" style="max-width: 90%;"><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">$A$ 與 $C$ 間的距離，</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">$\\angle BAD$。</div></div><div class="q-text-content"><span class="marks">(4分)</span></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">已知 $VD=80\\text{ cm}$。 學生得知平面 $ABCD$ 與水平地面間的交角為 $65^\\circ$。 該學生宣稱 $VD$ 與水平地面間的交角小於 $50^\\circ$。 該宣稱是否正確？ 試解釋你的答案。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`,
-            en: `圖中，角錐體 $VABCD$ 的底為四邊形 $ABCD$。 該角錐體的面 $VAB$ 位於水平地面上。 已知 $AB=90\\text{ cm}$ 、 $AD=70\\text{ cm}$ 、 $CD=100\\text{ cm}$ 、 $\\angle ADC=55^\\circ$ 及 $\\angle BCD=130^\\circ$。<br><img src="img/2026dsep1q17.jpg" class="q-img" alt="題目附圖" style="max-width: 90%;"><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">$A$ 與 $C$ 間的距離，</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">$\\angle BAD$。</div></div><div class="q-text-content"><span class="marks">(4分)</span></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">已知 $VD=80\\text{ cm}$。 學生得知平面 $ABCD$ 與水平地面間的交角為 $65^\\circ$。 該學生宣稱 $VD$ 與水平地面間的交角小於 $50^\\circ$。 該宣稱是否正確？ 試解釋你的答案。<span class="marks">(2分)</span><div class="q-clearfix"></div></div></div>`
+            en: `In the figure, the base of the pyramid $VABCD$ is the quadrilateral $ABCD$. The face $VAB$ of the pyramid lies on the horizontal ground. It is given that $AB=90\\text{ cm}$, $AD=70\\text{ cm}$, $CD=100\\text{ cm}$, $\\angle ADC=55^\\circ$ and $\\angle BCD=130^\\circ$.<br><img src="img/2026dsep1q17.jpg" class="q-img" alt="題目附圖" style="max-width: 90%;"><div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">Find</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">the distance between $A$ and $C$,</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">$\\angle BAD$.</div></div><div class="q-text-content"><span class="marks">(4 marks)</span></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">It is given that $VD=80\\text{ cm}$. A student finds that the angle between the plane $ABCD$ and the horizontal ground is $65^\\circ$. The student claims that the angle between $VD$ and the horizontal ground is less than $50^\\circ$. Is the claim correct? Explain your answer.<span class="marks">(5 marks)</span><div class="q-clearfix"></div></div></div>`
         },
         hint: {
             tc: ``,
@@ -548,7 +548,7 @@ questions.push(
         difficulty: 3,
         content: {
             tc: `設 $\\mathrm{G}(n)$ 為一等比數列的第 $n$ 項。 已知 $\\mathrm{G}(2)=12$ 及 $\\mathrm{G}(5)=768$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $\\mathrm{G}(1)$。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">對所有正整數 $n$，定義 $\\mathrm{T}(n)={{\\log }_{2}}\\mathrm{G}(n)$。 求</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">$\\mathrm{T}(n+1)-\\mathrm{T}(n)$，</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">$k$ 的最大值使得 $\\mathrm{T}(1)+\\mathrm{T}(2)+\\mathrm{T}(3)+\\cdots +\\mathrm{T}(k) < 10^6$。</div></div><div class="q-text-content"><span class="marks">(5分)</span></div><div class="q-clearfix"></div>`,
-            en: `設 $\\mathrm{G}(n)$ 為一等比數列的第 $n$ 項。 已知 $\\mathrm{G}(2)=12$ 及 $\\mathrm{G}(5)=768$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">求 $\\mathrm{G}(1)$。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">對所有正整數 $n$，定義 $\\mathrm{T}(n)={{\\log }_{2}}\\mathrm{G}(n)$。 求</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">$\\mathrm{T}(n+1)-\\mathrm{T}(n)$，</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">$k$ 的最大值使得 $\\mathrm{T}(1)+\\mathrm{T}(2)+\\mathrm{T}(3)+\\cdots +\\mathrm{T}(k) < 10^6$。</div></div><div class="q-text-content"><span class="marks">(5分)</span></div><div class="q-clearfix"></div>`
+            en: `Let $\\mathrm{G}(n)$ be the $n$th term of a geometric sequence. It is given that $\\mathrm{G}(2)=12$ and $\\mathrm{G}(5)=768$.<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">Find $\\mathrm{G}(1)$.<span class="marks">(2 marks)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">Define $\\mathrm{T}(n)={{\\log }_{2}}(\\mathrm{G}(n))$ for all positive integers $n$. Find</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">$\\mathrm{T}(n+1)-\\mathrm{T}(n)$,</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">the greatest value of $k$ such that $\\mathrm{T}(1)+\\mathrm{T}(2)+\\mathrm{T}(3)+\\cdots +\\mathrm{T}(k) < 10^6$.</div></div><div class="q-text-content"><span class="marks">(5 marks)</span></div><div class="q-clearfix"></div>`
         },
         hint: {
             tc: ``,
@@ -570,7 +570,7 @@ questions.push(
         difficulty: 3,
         content: {
             tc: `設 $\\mathrm{h}(x)=-x^2+30kx+4x-225k^2-40k+3$ ，其中 $k$ 為一正常數。 在同一直角坐標系中，將 $y=\\mathrm{h}(x)$ 的圖像的頂點及 $y=14-\\mathrm{h}(4-x)$ 的圖像的頂點分別記為 $A$ 及 $B$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">利用配方法，以 $k$ 表 $A$ 的坐標。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出 $B$ 的坐標，答案以 $k$ 表示。<span class="marks">(1分)</span></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">點 $C$ 的坐標為 $(2+48k,7-36k)$。 設 $I$ 及 $J$ 分別為 $\\Delta ABC$ 的內心及外心。</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">設 $M$ 為 $AB$ 的中點。 描述 $CM$ 與 $AB$ 之間的幾何關係。 試解釋你的答案。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">以 $k$ 表 $I$ 與 $J$ 間的距離。</div></div><div class="q-line q-level-2"><span class="q-label">(iii)</span><div class="q-text-content">點 $D$ 的坐標為 $(6-22k,6-15k)$。 $BDIJ$ 有沒有可能為一平行四邊形？ 試解釋你的答案。</div></div><div class="q-text-content"><span class="marks">(9分)</span></div><div class="q-clearfix"></div>`,
-            en: `設 $\\mathrm{h}(x)=-x^2+30kx+4x-225k^2-40k+3$ ，其中 $k$ 為一正常數。 在同一直角坐標系中，將 $y=\\mathrm{h}(x)$ 的圖像的頂點及 $y=14-\\mathrm{h}(4-x)$ 的圖像的頂點分別記為 $A$ 及 $B$。<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">利用配方法，以 $k$ 表 $A$ 的坐標。<span class="marks">(2分)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">寫出 $B$ 的坐標，答案以 $k$ 表示。<span class="marks">(1分)</span></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">點 $C$ 的坐標為 $(2+48k,7-36k)$。 設 $I$ 及 $J$ 分別為 $\\Delta ABC$ 的內心及外心。</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">設 $M$ 為 $AB$ 的中點。 描述 $CM$ 與 $AB$ 之間的幾何關係。 試解釋你的答案。</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">以 $k$ 表 $I$ 與 $J$ 間的距離。</div></div><div class="q-line q-level-2"><span class="q-label">(iii)</span><div class="q-text-content">點 $D$ 的坐標為 $(6-22k,6-15k)$。 $BDIJ$ 有沒有可能為一平行四邊形？ 試解釋你的答案。</div></div><div class="q-text-content"><span class="marks">(9分)</span></div><div class="q-clearfix"></div>`
+            en: `Let $\\mathrm{h}(x)=-x^2+30kx+4x-225k^2-40k+3$, where $k$ is a positive constant. On the same rectangular coordinate system, denote the vertex of the graph of $y=\\mathrm{h}(x)$ and the vertex of the graph of $y=14-\\mathrm{h}(4-x)$ by $A$ and $B$ respectively.<div class="q-line"><span class="q-label">(a)</span><div class="q-text-content">Using the method of completing the square, express, in terms of $k$, the coordinates of $A$.<span class="marks">(2 marks)</span></div></div><div class="q-line"><span class="q-label">(b)</span><div class="q-text-content">Write down, in terms of $k$, the coordinates of $B$.<span class="marks">(1 mark)</span></div></div><div class="q-line"><span class="q-label">(c)</span><div class="q-text-content">The coordinates of the point $C$ are $(2+48k,7-36k)$. Let $I$ and $J$ be the in-centre and the circumcentre of $\\Delta ABC$ respectively.</div></div><div class="q-line q-level-2"><span class="q-label">(i)</span><div class="q-text-content">Let $M$ be the mid-point of $AB$. Describe the geometric relationship between $CM$ and $AB$. Explain your answer.</div></div><div class="q-line q-level-2"><span class="q-label">(ii)</span><div class="q-text-content">Express, in terms of $k$, the distance between $I$ and $J$.</div></div><div class="q-line q-level-2"><span class="q-label">(iii)</span><div class="q-text-content">The coordinates of the point $D$ are $(6-22k,6-15k)$. Is it possible that $BDIJ$ is a parallelogram? Explain your answer.</div></div><div class="q-text-content"><span class="marks">(9 marks)</span></div><div class="q-clearfix"></div>`
         },
         hint: {
             tc: ``,
