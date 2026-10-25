@@ -607,10 +607,10 @@ D.\t只有 II 及 III
         difficulty: 1,
         content: `$1010100000001110_2 =$
 <div class="q-mcopt">
-A.\t$21\\times 2^{11} + 14$<br>
-B.\t$21\\times 2^{11} + 28$<br>
-C.\t$21\\times 2^{12} + 14$<br>
-D.\t$21\\times 2^{12} + 28$
+A.\t$21\\times 2^{11} + 14$。<br>
+B.\t$21\\times 2^{11} + 28$。<br>
+C.\t$21\\times 2^{12} + 14$。<br>
+D.\t$21\\times 2^{12} + 28$。
 </div>`,
         hint: `分組計算高位及低位的十進制值。`,
         solution: `A (72%)<p><iframe src="https://www.youtube.com/embed/ra2hcbk0YQk?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
@@ -624,12 +624,12 @@ D.\t$21\\times 2^{12} + 28$
         domain: ["Algebra"],
         topic: ["H.C.F. and L.C.M."],
         difficulty: 1,
-        content: `三個數式的 H.C.F. 及 L.C.M. 分別為 $xy^2z^3$ 及 $x^2y^4z^6$。若第一個數式及第二個數式分別為 $xy^3z^6$ 及 $xy^2z^4$，則第三個數式為
+        content: `三個數式的 H.C.F. 及 L.C.M. 分別為 $xy^2z^3$ 及 $x^2y^4z^6$。 若第一個數式及第二個數式分別為 $xy^3z^6$ 及 $xy^2z^4$，則第三個數式為
 <div class="q-mcopt">
-A.\t$xy^3z^3$<br>
-B.\t$xy^4z^4$<br>
-C.\t$x^2y^3z^4$<br>
-D.\t$x^2y^4z^3$
+A.\t$xy^3z^3$。<br>
+B.\t$xy^4z^4$。<br>
+C.\t$x^2y^3z^4$。<br>
+D.\t$x^2y^4z^3$。
 </div>`,
         hint: `比較各變數的指數範圍求第三個式。`,
         solution: `D (73%)<p><iframe src="https://www.youtube.com/embed/XzKFy4zdEn8?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
@@ -643,10 +643,10 @@ D.\t$x^2y^4z^3$
         domain: ["Algebra"],
         topic: ["Sequences"],
         difficulty: 2,
-        content: `某數列的首 $n$ 項之和為 $3n - 1$。下列何者正確？
+        content: `某數列的首 $n$ 項之和為 $3^n - 1$。 下列何者正確？
 <div class="q-mcms">
-I.\t該數列的第 $2$ 項為 $8$。<br>
-II.\t該數列為一等比數列。<br>
+I.\t該數列的第 $2$ 項為 $8$。
+II.\t該數列為一等比數列。
 III.\t該數列的所有項均為偶數。
 </div>
 <div class="q-mcopt">
@@ -688,8 +688,8 @@ D.\t$2$。
         difficulty: 2,
         content: `下列有關 $y = 2 - \\log_3(x + 4)$ 的圖像之敍述，何者正確？
 <div class="q-mcms">
-I.\t當 $x$ 增加時，$y$ 增加。<br>
-II.\t該圖像的 $x$ 截距為 $5$。<br>
+I.\t當 $x$ 增加時，$y$ 增加。
+II.\t該圖像的 $x$ 截距為 $5$。
 III.\t該圖像的 $y$ 截距為 $2$。
 </div>
 <div class="q-mcopt">
@@ -710,7 +710,7 @@ D.\t只有 II 及 III
         domain: ["Algebra"],
         topic: ["Exponential Functions and Logarithm Functions"],
         difficulty: 2,
-        content: `已知 $\\log y$ 為 $x$ 的線性函數。該線性函數的圖像在垂直軸上的截距及在水平軸上的截距分別為 $2$ 及 $1$。若 $y = ab^x$，求 $a$。
+        content: `已知 $\\log y$ 為 $x$ 的線性函數。 該線性函數的圖像在垂直軸上的截距及在水平軸上的截距分別為 $2$ 及 $1$。 若 $y = ab^x$，求 $a$。
 <div class="q-mcopt">
 A.\t$0.01$<br>
 B.\t$0.1$<br>
@@ -729,9 +729,13 @@ D.\t$100$
         domain: ["Algebra"],
         topic: ["Linear Programming"],
         difficulty: 2,
-        content: `考慮以下的不等式組：
-$$\\begin{cases} y \\le 7 \\\\ 3x - 4y \\le 2 \\\\ 6x + 13y \\ge 25 \\end{cases}$$
-設 $R$ 為表示以上的不等式組的解之區域。若 $(x, y)$ 為 $R$ 中的一點，則 $5x+4y+28$ 的最小值為
+        content: `考慮以下的不等式組：<br>
+\t$\\begin{cases}
+y \\le 7 \\\\[1.2ex]
+3x - 4y \\le 2 \\\\[1.2ex]
+6x + 13y \\ge 25
+\\end{cases}$<br>
+設 $R$ 為表示以上的不等式組的解之區域。 若 $(x, y)$ 為 $R$ 中的一點，則 $5x+4y+28$ 的最小值為
 <div class="q-mcopt">
 A.\t$1$。<br>
 B.\t$19$。<br>
@@ -750,8 +754,8 @@ D.\t$106$。
         domain: ["Geometry"],
         topic: ["Geometry (Circles)"],
         difficulty: 2,
-        content: `圖中，$ABCD$ 為一圓。$AC$ 與 $BD$ 相交於點 $E$。延長 $BD$ 至點 $T$ 使得 $TC$ 與該圓相切。已知 $AB \\parallel TC$。若 $\\angle AED = 85^\\circ$ 及 $\\angle CTE = 23^\\circ$，則 $\\angle ADE =$
-<div class="q-mcopt">
+        content: `圖中，$ABCD$ 為一圓。 $AC$ 與 $BD$ 相交於點 $E$。 延長 $BD$ 至點 $T$ 使得 $TC$ 與該圓相切。 已知 $AB//TC$。 若 $\\angle AED = 85^\\circ$ 及 $\\angle CTE = 23^\\circ$，則 $\\angle ADE =$
+<div class="q-mcopt"><img src="img/2026dsep2q38.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 65%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$39^\\circ$。<br>
 B.\t$56^\\circ$。<br>
 C.\t$62^\\circ$。<br>
@@ -769,12 +773,12 @@ D.\t$72^\\circ$。
         domain: ["Geometry"],
         topic: ["Trigonometry (2D)"],
         difficulty: 3,
-        content: `圖中所示為四邊形 $STUV$，其中 $ST = 8\\text{ cm}$ 及 $SV = 5\\text{ cm}$。若 $\\angle UTV = 30^\\circ$ 及 $\\angle TSU = \\angle TVU = 90^\\circ$，求 $\\angle SUV$ 準確至最接近的度。
-<div class="q-mcopt">
-A.\t$22^\\circ$。<br>
-B.\t$28^\\circ$。<br>
-C.\t$30^\\circ$。<br>
-D.\t$38^\\circ$。
+        content: `圖中所示為四邊形 $STUV$，其中 $ST = 8\\text{ cm}$ 及 $SV = 5\\text{ cm}$。 若 $\\angle UTV = 30^\\circ$ 及 $\\angle TSU = \\angle TVU = 90^\\circ$，求 $\\angle SUV$ 準確至最接近的度。
+<div class="q-mcopt"><img src="img/2026dsep2q39.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 45%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
+A.\t$22^\\circ$<br>
+B.\t$28^\\circ$<br>
+C.\t$30^\\circ$<br>
+D.\t$38^\\circ$
 </div>`,
         hint: `分拆直角三角形，用三角函數求角。`,
         solution: `A (24%)<p><iframe src="https://www.youtube.com/embed/kx_pUD59Si4?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
@@ -788,8 +792,8 @@ D.\t$38^\\circ$。
         domain: ["Geometry"],
         topic: ["Trigonometry (3D)"],
         difficulty: 2,
-        content: `圖中所示為直立角柱體 $ABCDEF$，其中 $AB:AC:AE=1:1:2$。設 $\\theta$ 為平面 $ABC$ 與平面 $BCE$ 間之交角。若 $\\angle BAC=90^\\circ$，求 $\\sin\\theta$。
-<div class="q-mcopt">
+        content: `圖中所示為直立角柱體 $ABCDEF$，其中 $AB:AC:AE=1:1:2$。 設 $\\theta$ 為平面 $ABC$ 與平面 $BCE$ 間之交角。 若 $\\angle BAC=90^\\circ$，求 $\\sin\\theta$。
+<div class="q-mcopt"><img src="img/2026dsep2q40.jpg" class="q-img" alt="題目附圖" style="float: right; max-width: 40%; margin-left: 15px; margin-bottom: 5px; overflow: hidden;">
 A.\t$\\dfrac{1}{3}$<br>
 B.\t$\\dfrac{2}{3}$<br>
 C.\t$\\dfrac{\\sqrt{2}}{4}$<br>
@@ -826,7 +830,7 @@ D.\t$8$
         domain: ["Data Handling"],
         topic: ["Probability", "Permutations and Combinations"],
         difficulty: 1,
-        content: `某班有 $3$ 名男生及 $7$ 名女生。若從該班中隨機選出 $5$ 名學生組成一委員會，求選出至多 $2$ 名男生的概率。
+        content: `某班有 $3$ 名男生及 $7$ 名女生。 若從該班中隨機選出 $5$ 名學生組成一委員會，求選出至多 $2$ 名男生的概率。
 <div class="q-mcopt">
 A.\t$\\dfrac{5}{6}$<br>
 B.\t$\\dfrac{11}{12}$<br>
@@ -845,12 +849,12 @@ D.\t$\\dfrac{251}{252}$
         domain: ["Data Handling"],
         topic: ["Permutations and Combinations"],
         difficulty: 2,
-        content: `某公司有 $5$ 名全職僱員及 $3$ 名兼職僱員。從該公司中選出 $7$ 名僱員排成一隊。若沒有兼職僱員相鄰而排，則可排成多少不同的隊？
+        content: `某公司有 $5$ 名全職僱員及 $3$ 名兼職僱員。 從該公司中選出 $7$ 名僱員排成一隊。 若沒有兼職僱員相鄰而排，則可排成多少不同的隊？
 <div class="q-mcopt">
-A.\t$5040$<br>
-B.\t$14400$<br>
-C.\t$18000$<br>
-D.\t$32400$
+A.\t$5\\,040$<br>
+B.\t$14\\,400$<br>
+C.\t$18\\,000$<br>
+D.\t$32\\,400$
 </div>`,
         hint: `先排全職再插入兼職的空位。`,
         solution: `C (35%)<p><iframe src="https://www.youtube.com/embed/231obb7k71w?autoplay=0&rel=0" title="解題影片" loading="lazy" style="max-width: 100%; max-height: 40vh; aspect-ratio: 16/9;" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
