@@ -348,8 +348,8 @@ D.\t$\\$832$
         type: "P2",
         section: "MC_A",
         level: ["Junior"],
-        domain: ["Geometry"],
-        topic: ["Mensuration"],
+        domain: ["Algebra"],
+        topic: ["Rates, Ratios and Proportions"],
         difficulty: 2,
         content: {
           tc: `某地圖的比例尺為 $1:50\\,000$。 若一機場的實際面積為 $10$ km$^2$，則這機場在該地圖上的面積為
