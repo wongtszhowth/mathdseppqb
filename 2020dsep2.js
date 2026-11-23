@@ -296,8 +296,8 @@ D.\t$80$
         type: "P2",
         section: "MC_A",
         level: ["Junior"],
-        domain: ["Geometry"],
-        topic: ["Mensuration"],
+        domain: ["Algebra"],
+        topic: ["Rates, Ratios and Proportions"],
         difficulty: 2,
         content: {
             tc: `某高爾夫球場的實際面積為 $0.75\\text{ km}^2$。 若該球場在某地圖上的面積為 $300\\text{ cm}^2$，則該地圖的比例尺為
