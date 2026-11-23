@@ -349,7 +349,7 @@ D.\t$\\$4\\,150$
         section: "MC_A",
         level: ["Junior"],
         domain: ["Algebra"],
-        topic: ["Rates, Ratios and Proportions", "Mensuration"],
+        topic: ["Rates, Ratios and Proportions"],
         difficulty: 2,
         content: {
             tc: `某遊樂場的實際面積為 $900\\text{ m}^2$。 若該遊樂場在某地圖上的面積為 $36\\text{ cm}^2$，則該地圖的比例尺為
