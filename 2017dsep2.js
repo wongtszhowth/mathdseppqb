@@ -318,7 +318,7 @@ D.\t$\\$440$
         section: "MC_A",
         level: ["Junior"],
         domain: ["Algebra"],
-        topic: ["Rates, Ratios and Proportions", "Mensuration"],
+        topic: ["Rates, Ratios and Proportions"],
         difficulty: 2,
         content: {
             tc: `某地圖的比例尺為 $1:20\\,000$。 若某動物園在該地圖上的面積為 $4\\text{ cm}^2$，則該動物園的實際面積為
