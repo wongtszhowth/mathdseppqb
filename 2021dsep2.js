@@ -166,14 +166,14 @@ D.\t$6.235 \\le x < 6.245$
         topic: ["Rates, Ratios and Proportions"],
         difficulty: 2,
         content: {
-            tc: `若 $a$、$b$ 及 $c$ 均為非零的常數使得 $a(x+3)+b(3x+1)=c(x+2)$，則 $a:b=$
+            tc: `若 $a$、$b$ 及 $c$ 均為非零的常數使得 $a(x+3)+b(3x+1) \\equiv c(x+2)$，則 $a:b=$
 <div class="q-mcopt">
 A.\t$1:3$<br>
 B.\t$1:5$<br>
 C.\t$3:1$<br>
 D.\t$5:1$
 </div>`,
-            en: `If $a$, $b$ and $c$ are non-zero constants such that $a(x+3)+b(3x+1)=c(x+2)$, then $a:b=$
+            en: `If $a$, $b$ and $c$ are non-zero constants such that $a(x+3)+b(3x+1) \\equiv c(x+2)$, then $a:b=$
 <div class="q-mcopt">
 A.\t$1:3$<br>
 B.\t$1:5$<br>
